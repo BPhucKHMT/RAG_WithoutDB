@@ -22,6 +22,7 @@
 ├── README.md
 └── requirements.txt
 ```
-## Cha
+## Chaỵ file riêng lẻ
+python -m rag.main
 
 
