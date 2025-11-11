@@ -1,0 +1,167 @@
+[
+    {
+        "page_content": "Tiếp theo, chúng ta sẽ cùng tiến hành ôn tập một trong những kiến thức toán nền tảng rất quan trọng trong môn này, đó chính là đại số tuyến tính. Tại sao chúng ta cần phải tìm hiểu về đại số tuyến tính? Vì nó giúp chúng ta có được công cụ để chúng ta có thể biểu diễn được dữ liệu. Cái thứ hai là một công cụ để giúp chúng ta có thể biến đổi dữ liệu từ cái dạng này sang dạng khác. Và hay nói trong ngôn ngữ của không gian đại số tuyến tính thì chúng ta biến đổi từ không gian này sang một không gian khác. Còn trong chủ đề về mô hình máy học thì nó sẽ biến đổi từ đặc trưng từ dạng này sang dạng khác. Từ đặc trưng đơn giản lên đặc trưng vừa, đặc trưng vừa lên đặc trưng cấp cao. Nhờ cái công cụ là đại số tuyến tính. Vậy thì đầu tiên chúng ta sẽ tìm hiểu về các khái niệm cơ bản trong đại số tuyến tính, đó chính là khái niệm về tensor. Khi nói tensor thì chúng ta có thể nâng từ số chiều từ không chiều cho đến nhiều chiều. Thì tensor không chiều tương đương với một cái giá trị scalar để biểu diễn cho những cái đại lượng vô hướng. Ngoài ra thì chúng ta sẽ có cái tensor một chiều để biểu diễn cho dạng là vector. Vector sẽ là tập hợp của các giá trị vô hướng là scalar. Thì đây là một cái tensor. Nếu mà dùng để biểu diễn dữ liệu thì có thể dùng để biểu diễn các thuộc tính hoặc các đặc trưng của một đối tượng nào đó. Và khi chúng ta nâng nó lên từ một chiều lên hai chiều thì nó tương đương với việc chúng ta lấy nhiều cái tensor 1D ghép lại với nhau. Ví dụ như trong hình này thì chúng ta thấy là nó sẽ ghép các cái cột này lại.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:00:14",
+            "end_timestamp": "0:02:29",
+            "chunk_id": 0
+        }
+    },
+    {
+        "page_content": "Và mỗi một cái đặc trưng này thì nó sẽ là một đối tượng. Như vậy thì hoặc là một đặc trưng, một loại đặc trưng. Như vậy thì toàn bộ cái ma trận này hay còn gọi là 2D tensor này sẽ là một tập hợp các cái đối tượng hoặc là một tập hợp các cái đặc trưng. Và khi chúng ta nâng lên là ba chiều thì chúng ta sẽ có các cái lát cắt khác nhau. Ví dụ như mỗi một cái lát cắt này sẽ là một tập hợp các cái đặc trưng. Ghép các cái lát cắt đó lại với nhau thì chúng ta sẽ có một tensor ba chiều. Và nhiều cái tensor ba chiều chồng lên thì chúng ta sẽ có 4D. Rồi cứ như vậy thì chúng ta lại nối, thì chúng ta thấy cái quy luật này nó sẽ cứ lặp đi lặp lại để chúng ta có thể trực quan hóa được cái dữ liệu của mình. Thì chúng ta sử dụng cái tensor.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:02:25",
+            "end_timestamp": "0:03:27",
+            "chunk_id": 1
+        }
+    },
+    {
+        "page_content": "Và đây là một trong những cái công cụ rất là hiệu quả. Nhưng mà thông thường trong lập trình thì thường chúng ta sẽ dùng đến 4D tensor. Thường chúng ta sẽ dùng đến một cấp độ là 4D tensor. Trong đó cái chiều đầu tiên có thể là cái chiều về số lượng cái mẫu dữ liệu của mình. Ví dụ như là batch size, tức là cái kích thước dữ liệu của mình. Sau đó là chúng ta sẽ đến cái chiều độ sâu, depth.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:03:25",
+            "end_timestamp": "0:03:53",
+            "chunk_id": 2
+        }
+    },
+    {
+        "page_content": "Thì ở đây chính là cái số đặc trưng của mình. Số đặc trưng của một cái layer. Sau đó sẽ đến là width và height. Tương ứng là hai cái chiều không gian của mình. Chiều ngang và chiều cao trong chiều trục không gian của mình. Thì đây là một cái dạng biểu diễn hoặc ứng dụng của 4D tensor khi chúng ta áp vào bên trong cái dữ liệu khi huấn luyện với các môn học sâu. Ngoài ra thì chúng ta sẽ có một số cái phép toán.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:03:51",
+            "end_timestamp": "0:04:27",
+            "chunk_id": 3
+        }
+    },
+    {
+        "page_content": "Cái phép toán đầu tiên và được sử dụng rất là nhiều đó chính là phép chuyển vị. Mục tiêu của cái phép chuyển vị này đó là để biến các cái vector dạng cột của ma trận thành dòng. Biến từ cột thành dạng dòng hoặc ngược lại. Ví dụ như ma trận A chúng ta đang ở dạng cột chúng ta sẽ biến nó thành dòng. Thì mục tiêu của cái việc là chuyển về cái dạng chuyển vị để phục vụ cho cái việc là tương tác nhân giữa các cái vector với nhau. Hoặc là nhân giữa các cái ma trận với nhau.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:04:24",
+            "end_timestamp": "0:04:55",
+            "chunk_id": 4
+        }
+    },
+    {
+        "page_content": "Sao cho nó đồng bộ. Tiếp theo đó là cái phép cộng vector. Thì việc cộng vector nó cũng khá là đơn giản. Chúng ta sẽ cộng theo từng phần tử. Ví dụ như ở đây chúng ta có x2 và y2 thì cộng cho cái phần tử x2 và y2 chúng ta sẽ ra được cái vector mới như thế này. Và chiếu trong cái không gian thì cái vector x của mình và vector y thì khi chúng ta cộng lại nó sẽ biến thành một cái vector khác. Ví dụ như đây là x cộng y. Vector x cộng y này hiểu một cách nôm na. Ý nghĩa của nó là vector x là đặc trưng ban đầu. Nó sẽ bị điều hướng và chuyển hướng sang một cái hướng khác. Vector y ở đây chúng ta sẽ tương đương với việc chúng ta đưa vector y lên. Và khi đó x cộng y thì nó đã bị điều hướng về hướng tại vị trí mới là ở đây. Y là giống như là một vector để chúng ta thay đổi hướng. Cái này trong vật lý chúng ta thấy dùng rất là nhiều.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:04:53",
+            "end_timestamp": "0:06:08",
+            "chunk_id": 5
+        }
+    },
+    {
+        "page_content": "Trong máy học thì cũng vậy. Các phép cộng hai ma trận và hai vector. Phép cộng ma trận thì nâng số chiều lên thay vì chúng ta cộng trên hai tensor một chiều, tức là vector. Thì chúng ta sẽ cộng hai tensor hai chiều. Và chúng ta cũng sẽ cộng theo element-wise, tức là cộng theo từng phần tử. Thì chúng ta sẽ lấy phần tử này, cộng với phần tử này để cộng với phần tử này. Thì chúng ta sẽ lấy phần tử này, cộng với phần tử này để ra được phần tử ở đây. Là thực hiện theo đúng thứ tự và vị trí. Tương tự như vậy thì chúng ta sẽ có phép tích Hadamard cho từng phần tử. Tức là lấy tại một vị trí, nhân với một vị trí tương ứng.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:06:04",
+            "end_timestamp": "0:06:52",
+            "chunk_id": 6
+        }
+    },
+    {
+        "page_content": "Sau đó sẽ ra được giá trị tại vị trí đó. Nhân element-wise. Và khi đó thì kích thước của ma trận Output của mình sẽ là giống như là một phần tử. Giống với lại cái kích thước của hai ma trận Output vào. Thì cái phép này hiểu một cách nôm na là chúng ta đang đi nhân từng phần tử và chúng ta sẽ nhân trọng số. Ví dụ như ma trận A là một đặc trưng gốc. Đây là đặc trưng gốc. Còn ma trận B tương ứng là một trọng số. Thể hiện cái vai trò của từng đặc trưng ở trên ma trận A.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:06:48",
+            "end_timestamp": "0:07:32",
+            "chunk_id": 7
+        }
+    },
+    {
+        "page_content": "Thế thì khi chúng ta lấy cái đặc trưng A này, chúng ta nhân với lại cái trọng số tại vị trí này. Để tạo ra một cái đặc trưng mới có cái sự gia giảm về cái việc mà tính toán. Ví dụ như đặc trưng này. Mình nhân với một cái hệ số là bằng 0 đi. Mình nhân với một cái trọng số là bằng 0. Thì cái kết quả ra ở đây sẽ là bằng 0. Thì hàm ý đó là cái đặc trưng ở đây sẽ không được sử dụng. Nhưng nếu ví dụ ở đây chúng ta có một cái đặc trưng và trọng số ở đây là bằng 1. Thì hàm ý đó là chúng ta sẽ lấy toàn bộ cái đặc trưng này. Vào đây, chép qua đây. Còn nếu như cái trọng số của chúng ta là 0.5. Thì tức là chúng ta chỉ lấy 50% cái lượng thông tin tại cái vị trí này để chép qua đây. Thì ý nghĩa về mặt tương tác trong máy tính trong mô hình máy học. Đó là có thể là một cái phép nhân trọng số từng phần tử.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:07:26",
+            "end_timestamp": "0:08:32",
+            "chunk_id": 8
+        }
+    },
+    {
+        "page_content": "Rồi khi chúng ta nói đến cái phép nhân thì chúng ta phải chú ý. Đó là cái phép vừa rồi là tích phần tử từng phần tử. Còn bây giờ chúng ta sẽ có cái khái niệm nhân nữa. Nhưng mà nhân theo kiểu là phép chiếu. Thì đây chính là một cái phép chiếu. Bản chất của đó là một phép chiếu. Ví dụ, chúng ta nhân vô hướng 2 cái vector. Cái này còn có một cái từ khóa khác gọi là dot và dot. Thì bản chất của cái phép nhân A, Hai vector A với vector B, Trong cái không gian n chiều, Vector này gồm có n chiều. Về mặt tính toán thì chúng ta sẽ lấy từng phần tử nhân.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:08:29",
+            "end_timestamp": "0:09:15",
+            "chunk_id": 9
+        }
+    },
+    {
+        "page_content": "Nhưng mà sau đó chúng ta sẽ đi cộng lại hết lại với nhau. Để ra một cái tổng. Và đây sẽ là một cái giá trị là scalar. Và ý nghĩa về mặt đại số của nó đó là gì? Vector A và vector B ở đây thì chúng ta sẽ chiếu A xuống B. Chiếu A xuống B. Và được một cái điểm này. Thì cái giá trị tích vô hướng của A và B chính là cái độ dài của đoạn thẳng. Ví dụ đây là OH, đây là H.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:09:10",
+            "end_timestamp": "0:09:45",
+            "chunk_id": 10
+        }
+    },
+    {
+        "page_content": "Của OH nhân với lại OB. Đây là OA. Thì nó sẽ là bằng OH nhân với lại OB. Và nó sẽ là một cái giá trị scalar. Thì ở một góc độ khác, Cái phép tích vô hướng này có thể hiểu là cái sự tương đồng giữa hai vector A và B. Nếu như hai vector A và B lớn thì cái độ tương đồng của nó sẽ cao. Còn ở một cái góc độ đặc trưng, Chúng ta đang chuyển đổi từ một cái điểm A chiếu xuống dưới một cái điểm B để đưa về cái không gian của B. Và chúng ta có một chú ý đó là A chiếu lên B cũng là bằng B chiếu xuống A. Do đó A chuyển vị nhân B sẽ là bằng B nhân A. Sau đó chúng ta nâng cấp lên. Đó là phép nhân giữa ma trận với lại vector. Thay vì chúng ta thực hiện giữa vector với vector, Bây giờ chúng ta sẽ làm hàng loạt. Chúng ta sẽ có vector x và chúng ta sẽ lần lượt nhân hàng loạt với lại vector A, A1, A2, A3, cho đến An. Và các cái giá trị tích vô hướng đó sẽ được đưa vào cái vector như thế này. Đó là A1 x A2 chuyển về x, An chuyển về x. Thì đây chúng ta đang thực hiện nhân hàng loạt x với lại các cái vector hàng của ma trận A. Và cái phép này thì hiểu nôm na nó cũng là một cái phép chiếu hoặc là một cái phép chuyển không gian.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:09:43",
+            "end_timestamp": "0:11:16",
+            "chunk_id": 11
+        }
+    },
+    {
+        "page_content": "Chuyển không gian. Ví dụ như chúng ta có một cái không gian là như thế này. Và một cái điểm trong cái không gian thì khi chúng ta chiếu xuống dưới một cái mặt phẳng nào đó, ví dụ vậy. Rồi, thì khi chúng ta chiếu xuống, để đại diện cho cái mặt phẳng này, đại diện cho cái mặt phẳng này, mặt phẳng P đi, thì nó sẽ có cái tham số và tham số đó chính là cái ma trận A của mình. Và khi chiếu, khi chiếu xuống cái không gian của A thì chúng ta sẽ chuyển từ một cái vector là 3 chiều, Ví dụ vậy, thuộc R3, chuyển xuống một cái không gian 2 chiều thì lúc đó là chúng ta chỉ còn là một cái điểm, nhưng mà nằm trong cái không gian chỉ có 2 chiều, chứ không gian mặt phẳng. Ở đây là một cái phép chiếu từ một cái không gian lớn chiều là 3 chiều xuống một cái không gian mặt phẳng là 2 chiều. Và ngược lại, chúng ta cũng sẽ có cái phép chiếu từ không gian thấp chiều lên không gian cao chiều.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:11:09",
+            "end_timestamp": "0:12:25",
+            "chunk_id": 12
+        }
+    },
+    {
+        "page_content": "Ví dụ từ không gian 2 chiều lên không gian 3 chiều. Và tiếp theo thì chúng ta sẽ có cái phép nhân giữa ma trận với ma trận, tức là chúng ta cũng sẽ thực hiện hàng loạt giữa các cái cặp AI với lại BZ. A sẽ là chạy theo, từ trên xuống dưới là theo hàng, còn B sẽ là theo cột, là từ trái sang phải. Và khi lấy hai cái ma trận này nhân với nhau thì chúng ta sẽ ra một cái ma trận, trong đó các cái phần tử của mình thì sẽ được nhân lần lượt từ trái sang phải và từ trên xuống dưới.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:12:20",
+            "end_timestamp": "0:13:00",
+            "chunk_id": 13
+        }
+    },
+    {
+        "page_content": "Thì chúng ta sẽ ra được cái ma trận như thế này. Và đây cũng hiểu một cách nôm na, đó là một cái phép chiếu, nhưng mà chiếu hàng loạt trên rất nhiều ma trận và các cái không gian. Và tính chất của cái việc mà nhân ma trận với ma trận đó là, thứ nhất cái phép nhân ma trận này không có tính giao hoán, tức là A nhân B thì không có bằng B nhân A. Cái thứ hai đó là cái kết hợp, cái tính chất kết hợp là A nhân B, tất cả nhân C thì sẽ là bằng A nhân BC. Tính chất kết hợp theo kiểu là, cái này giống như phân phối từ A, B cộng C thì sẽ là A nhân B và A cộng C. Cái này là cái phép tính chất phân phối. Và chúng ta sẽ chuyển vị, thì ma trận A mà chuyển vị, rồi chuyển vị lại thì nó sẽ bằng A. Thì khi đó là A, B, tất cả chuyển vị sẽ bằng là B chuyển vị nhân với A chuyển vị. Rồi A cộng B chuyển vị sẽ là bằng A chuyển vị cộng cho B chuyển vị. Và một số cái ma trận đặc biệt, ví dụ như là ma trận đơn vị, thì đây là một cái ma trận mà có tính chất đó là X mà nhân với lại một cái ma trận chuyển vị thì nó sẽ bằng 9X. Hiểu một cách nôm na đây giống như là số 1, 1 nhân với cái gì thì cũng bằng cái số 9. ma trận nghịch đảo là một cái ma trận vuông, là một cái ma trận vuông mà thỏa mãn tính chất đó là A nhân với lại A. Nghịch đảo thì nó sẽ là bằng ma trận đơn vị.",
+        "metadata": {
+            "video_url": "https://youtube.com/watch?v=_HLKpylxwMw",
+            "filename": "_HLKpylxwMw",
+            "title": "[CS315 - Chương 0] Giới thiệu môn học (Phần 2)",
+            "start_timestamp": "0:12:55",
+            "end_timestamp": "0:14:39",
+            "chunk_id": 14
+        }
+    }
+]
