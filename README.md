@@ -5,27 +5,22 @@
 ├── data
 ├── database
 │   ├── notebook_baseline
-│   │   ├── __pycache__
-│   │   ├── 0.26.0
-│   │   ├── pipeline.ipynb
-│   │   ├── reranking.py
+│   │   ├── pipeline.ipynb: pipeline toàn bộ chương trình
 │   │   └── test.py
 │   ├── preprocess
-│   │   ├── __pycache__
-│   │   ├── __init__.py
-│   │   ├── preprocess_transcript.ipynb
-│   │   └── preprocess.py
+│   │   ├── preprocess_transcript.ipynb : sửa lỗi chính tả và format định dạng file txt transcript
+│   │   └── preprocess.py: sửa lỗi chính tả
 │   └── rag
-│       ├── __pycache__
-│       ├── file_loader.py
-│       ├── llm_model.py
-│       ├── main.py
-│       ├── offline_rag.py
-│       ├── reranking.py
-│       └── vectorstore.py
+│       ├── file_loader.py : load file txt transcript để chunk
+│       ├── llm_model.py: define model
+│       ├── main.py: tạo rag chain 
+│       ├── offline_rag.py: 
+│       ├── reranking.py: rerank
+│       └── vectorstore.py: load db
 ├── .env
 ├── .gitignore
-├── rag_chain.png
 ├── README.md
 └── requirements.txt
 ```
+
+
