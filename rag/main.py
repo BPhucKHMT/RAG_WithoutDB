@@ -1,18 +1,29 @@
 from pydantic import BaseModel, Field
 
-from rag.file_loader import Loader
-from rag.vectorstore import VectorDB
+from data_loader.file_loader import Loader
+from vector_store.vectorstore import VectorDB
 from rag.offline_rag import Offline_RAG
-from rag.reranking import CrossEncoderReranker
-from rag.llm_model import get_llm
+from retriever.reranking import CrossEncoderReranker
+from retriever.keyword_search import BM25KeywordSearch
+from retriever.hybrid_search import HybridSearch
+from generation.llm_model import get_llm
 
 
 def build_rag_chain():
+    # llm
     llm = get_llm()
+    # vector db
     vector_db = VectorDB()
-    retriever = vector_db.get_retriever()
+    #search retriever
+    vector_retriever = vector_db.get_retriever()
+    documents = vector_db.get_documents()
+    bm25_search = BM25KeywordSearch(documents).get_retriever()
+    hybrid_search = HybridSearch(vector_retriever, bm25_search).get_retriever()
+
+    # reranker
     reranker = CrossEncoderReranker()
-    rag_chain = Offline_RAG(llm, retriever, reranker)
+    #chain 
+    rag_chain = Offline_RAG(llm, hybrid_search, reranker)
     return rag_chain.get_chain()
 
 if __name__ == "__main__":
