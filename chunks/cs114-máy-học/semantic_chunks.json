@@ -1,0 +1,218 @@
+[
+    {
+        "page_content": "Tiếp theo thì chúng ta sẽ cùng minh họa cho cái ý tưởng của feature engineering. Thì đầu tiên chúng ta cũng sẽ import thư viện NP. Và bước đầu tiên đó là chúng ta sẽ khởi tạo các cái dữ liệu. Thế thì giả sử như cái mô hình của mình nó được tạo bởi các cái điểm ờ có cái mối quan hệ là một cái dạng đường cong và giả sử như ở đây chúng ta xét là đường cong bậc hai thì x thì chúng ta cũng sẽ lấy là np.range Range từ 0 à cục hiệu từ 1 cho đến 3 đi và bước nhảy là 0.2 2 và y thì sẽ là bằng x cộng cho x bình phương cộng cho x bình cộng cho x - 3. Ví dụ vậy.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:00:13",
+            "end_timestamp": "0:01:17",
+            "chunk_id": 0
+        }
+    },
+    {
+        "page_content": "Và hệ số ở đây ví dụ như là à -4 cộng cho y à cộng cho 5 nhân x - 3. Đó. Và đương nhiên chúng ta cũng phải thêm vô một cái đại lượng nhiễu tại vì không phải lúc nào nó cũng có thể là à ra một cái gọi là lấy mẫu chúng ta lấy chính xác được mà có thể có cái size số trong cái quá trình chúng ta lấy mẫu thì dẫn đến là mô hình của mình nó có khả năng sẽ dự đoán sai. Do đó thì cái việc thêm mua một cái đại lượng nhiễu nó cũng giúp cho chúng ta xác định xem mô hình của mình có ổn định trước các cái nhiễu này hay không. Rồi thì ở đây chúng ta sẽ lấy theo nhiễu phân phối chuẩn với tâm mi là bằng 0, standard deviation là bằng 1 và số mẫu của chúng ta thì là sẽ bằng lens của x. Rồi bây giờ chúng ta sẽ à import m plotlift chp plot splt và chúng ta sẽ show chúng ta sẽ đưa lên trên cái sơ đồ để chúng ta xem coi xi của mình nhìn nó như thế nào. Rồi plt.S và chúng ta sẽ chạy thì à đó thì với cái x khoảng này thì nó chưa có đạt được cái à cái hình vẽ gì chúng ta mong muốn. Đó chúng ta phải lấy cái khoảng nó rộng hơn.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:01:10",
+            "end_timestamp": "0:03:01",
+            "chunk_id": 1
+        }
+    },
+    {
+        "page_content": "Thì ví dụ như ở đây chúng ta lấy là từ trừ 3 cho đến 3 và bước nhãy là 0.5. 5 chúng ta nâng cái khoảng giá trị của x lên đó thì chúng ta thấy là nó đã có cái đường cong như thế này và chúng ta có thể tăng lên cái size số cho cái đường cong này bằng cách đó là nhân với 2 và giá trị ở đầu ra bên đây cái bên tay phải có thể tăng lên là bằng 4 đó thì nó sẽ ra cái dạng đường cong bậc hai. Rồi thì bây giờ chúng ta sẽ à nếu đúng như bình thường thì chúng ta chỉ sử dụng một cái đặc trưng X nhưng mà bây giờ chúng ta sẽ đưa thêm cái x bình phương như là một cái đặc trưng mới ha. Thì bây giờ mình sẽ có thêm một cái nữa là xỉ thừa 2 thì sẽ là bằng x mũ 2. Tuy nhiên ở đây chúng ta kiểm chứng lại thì không biết là cái x m 2 này á là nó đang tính có đúng hay không thì chúng ta sẽ in ra x và in ra x bình phương để xem xem là cái giá trị đặc trưng mà chúng ta bình phương ở đây có đúng như những gì chúng ta kỳ vọng hay không. Thì đây chúng ta thấy là à -3 - 2,5 thì tương ứng bình phương nó sẽ ra là 9 6,25 rồi -2 thì là thành 4 đó 3 thì sẽ là thành 9.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:02:53",
+            "end_timestamp": "0:04:27",
+            "chunk_id": 2
+        }
+    },
+    {
+        "page_content": "Như vậy là nó đã tính đúng. Bây giờ chúng ta sẽ khởi tạo à khởi tạo các cái à trọng số của mô hình. Thì à ở đây sẽ có bao ba bao gồm là x1 à w1 tương ứng cho x và w2 là tương ứng cho x bình phương. Thì ví dụ như ở đây chúng ta có là ờ khởi tạo là bằng 10 đi. Rồi W2 thì sẽ là bằng à -10. B là bias thì sẽ là bằng -5. Rồi thì bây giờ chúng ta sẽ huấn chúng ta sẽ cài đặt cho cái thực toán desend Y tr thì bước đầu tiên đó là chúng ta sẽ tính đạo hàm. Bước thứ hai đó là chúng ta sẽ cập nhật các cái tham số của mô hình. Và bước số ba đó là chúng ta sẽ trực quan hóa. Và cuối cùng đó là chúng ta sẽ kiểm tra cái điều kiện dừng. Rồi thì à để tính đạo hàm thì cái công thức cũng tương tự như trong slide trước về cái mô hình hồi quy đa biến. Thì ở đây chúng ta sẽ có cái công thức đó là ờ derivative của J.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:04:19",
+            "end_timestamp": "0:05:53",
+            "chunk_id": 3
+        }
+    },
+    {
+        "page_content": "đúng không? À ở đây derivative theo W1 thì nó sẽ là bằng NP. Min của nó sẽ là giá trị dự đoán trừ cho giá trị thực tế. Thì giá trị dự đoán của chúng ta chính là x W1 nhân với X cộng cho W2 nhân với lại à X bình phương cộng cho và tất cả thì chúng ta sẽ trừ cho trừ cho Y. Rồi và ở đây là cái thành phần ờ vì chúng ta đang xét trên cái thành phần là W nên nó sẽ có nhân với lại cái đạo hàm của ờ của cái W1 theo cái vế này thì đạo hàm của W1 theo cái vế này thì nó sẽ là bằng X. Do đó ở đây chúng ta sẽ nhân thêm với X. Tương tự như vậy thì chúng ta sẽ có cái đạo hàm bậc hai à xin lỗi đạo hàm cho w2 thì nó sẽ là bằng w1x + w2x2 + b - y và nhân cho cái đạo hàm của cái vế bên trong này theo w2 thì đạo hàm của cái này theo w2 nó sẽ là bằng x2 tức là x bình. À tương tự như vậy cho bias B thì chúng ta sẽ nhân cho cái đạo hàm của cái vế bên trong này theo B. Thì chúng rõ ràng là các cái thành phần này đối với B nó là hằng số do đó đạo hàm bằng 0. Còn đạo hàm của B à theo B thì nó sẽ là bằng 1.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:05:47",
+            "end_timestamp": "0:07:31",
+            "chunk_id": 4
+        }
+    },
+    {
+        "page_content": "Do đó thì chúng ta sẽ không có phải nhân ở đây. Bước tiếp theo cập nhật tham số thì rất là đơn giản đó là W1 sẽ là bằng W1 trừ cho alpha nhân cho đạo hàm của W1. Tương tự như vậy cho W2 W2 và tương tự cho B. đạo hàm theo B. Sau khi chúng ta cập nhật xong thì chúng ta sẽ kiểm tra điểm dừng đó là if ABS của derivative của W1 mà bé hơn một cái ngưỡng epsilon và trị tuyệt đối của derivative của W2 bé hơn và trị tuyệt đối của derivative theo B. bé hơn silon thì chúng ta sẽ và ở đây chúng ta sẽ có thêm hai cái siêu tham số đó là alpha là bằng 0.0 à 0.01. Nếu mà nó chậm quá thì chúng ta có thể tăng cái alpha này lên và ngưỡng dừng thì là bằng 0.001.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:07:26",
+            "end_timestamp": "0:08:45",
+            "chunk_id": 5
+        }
+    },
+    {
+        "page_content": "Thì đây là điều kiện dừng. Bây giờ chúng ta sẽ chạy trước để xem xem là cái W1, W2, W1 và B có tiến về các cái giá trị hệ số ở đây không. Nếu đúng thì W1 là tương ứng à với lại X. À ở đây nó thứ tự nó hơi bị ngược ha. Tức là ở đây chúng ta đang xét là x bình phương xong rồi mới đến xong rồi mới đến bias. Thì ở đây chúng ta sẽ sửa lại một chút xíu W1 thì chúng ta sẽ đi theo cái biến x bình phương. Do đó chúng ta sẽ để là x 2. W thì đi theo với biến x và b là bias. Do đó thì tính đạo hàm của cái vế bên trong này theo W1 thì chúng ta sẽ ra là X2 tức là x bình phương rồi cộng B - Y. Đạo hàm của nguyên cái vế này theo W2 thì nó sẽ là bằng X. Do đó ở đây chúng ta sẽ sửa lại là bằng nhân với X. Rồi bây giờ chúng ta sẽ cho chạy và kiểm tra xem là W1 có tiến về -4 và W2 có tiến về 5 và byas có tiến về -3 hay không. Thì ở đây chúng ta sẽ in ra ha.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:08:40",
+            "end_timestamp": "0:10:03",
+            "chunk_id": 6
+        }
+    },
+    {
+        "page_content": "Rồi đây sẽ là W2, đây sẽ là bias. Và chúng ta nên có một cái câu thông báo đó là cái tham số của mô hình sau khi tham số của mô hình mà sau khi chúng ta huấn luyện. Rồi thì à sau khi huấn luyện chúng ta thấy là W1 là nó tiến về à 0.2, W2 thì tiến về là 0.7 và B là -33. Thì có vẻ như là ở đây nó vẫn chưa có hội tụ. Thì chúng ta sẽ cùng kiểm tra một lần nữa xem cái công thức của mình cũng như là cái à cách tính đã chính xác hay chưa ha. Thì đạo hàm theo ờ W1 thì nó sẽ là bằng trung bình cộng đúng không? trung bình của các cái size số này à trung bình của cái size số này nhân với lại x2 rồi à nhân với x và wa trong cái công thức của đạo hàm theo b chúng ta cũng đã nhân sai đúng không chúng ta chưa có sửa lại thì w1 phải nhân với lại x bình phương và w2 thì phải nhân với x rồi Và ở đây chúng ta tạm bỏ cái này để chúng ta xem coi thuậc toán nó chạy đúng hay không. Đó.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:09:58",
+            "end_timestamp": "0:11:53",
+            "chunk_id": 7
+        }
+    },
+    {
+        "page_content": "Rồi như vậy thì sau khi chạy xong chúng ta thấy là W1 thì đã tiến đến -4 đúng như ở đây. W thì tiến đến 5 đúng như ở đây và B thì tiến đến là trừ 20 2,8. Thì rõ ràng chúng ta thấy là công thức này à cái thuật toán gradient nó rất là hiệu quả và nó vẫn có thể tính đúng khi chúng ta cung cấp thêm một cái feature phù hợp. Bây giờ tiếp theo chúng ta sẽ thử trực quan hóa thì chúng ta sẽ dùng là PLT.plot của X và Y kèm theo đó là à R0 rồi plt.p à ví dụ như là 0.2 đi. Rồi và đồng thời chúng ta cũng sẽ vẽ cái đường cong của mình.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:11:48",
+            "end_timestamp": "0:12:50",
+            "chunk_id": 8
+        }
+    },
+    {
+        "page_content": "Thế thì cái đường cong của mình mình sẽ dựa trên x và mình sẽ tính toán theo cái công thức này. Nhưng mà chúng ta sẽ không tính theo cái à bộ trọng số round tức là cái bộ trọng số -4 5 - 3 mà chúng ta sẽ tính theo đúng cái công thức nguyên bản của mình. Đó là B. Ở đây sẽ là cộng B. Đây sẽ là W1. Rồi đây sẽ là W2 và X thì chúng ta không có phải tạo lại nữa. Chúng ta đã có rồi.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:12:45",
+            "end_timestamp": "0:13:27",
+            "chunk_id": 9
+        }
+    },
+    {
+        "page_content": "X và X bình phương chúng ta đã có rồi. Rồi Y chính là cái giá trị mà chúng ta cần phải vẽ. Thế thì ở đây chúng ta sẽ vẽ bằng dạng đường. Do đó chúng ta sẽ không có cái R0 ở đây. Và X thì thay vì chúng ta vẽ là X và Y thì chúng ta sẽ vẽ X và cái giá trị chúng ta dự đoán. Thì nếu mà chúng ta muốn ký hiệu thì cũng được. Đó là y predict ha. Viết tắc của chữ predict sẽ là bằng w1 nhân cho x bình cộng cho w2 nh x cộng cho b. Và ở đây thì chúng ta sẽ để là y predict. Rồi bây giờ chúng ta sẽ chạy thử cái à chương trình này ha. Đó, chúng ta thấy ban đầu cái đường cong của mình là nó cong lên như thế này đó. Sau đó thì đường cong của mình nó dành fit vào các cái tập điểm lấy mẫu đã lấy mẫu của chúng ta đó. đã dần lấy vào fit vào. Rồi thì đây là chúng ta đang minh họa cho cái tình huống đó là good fitting. Điều gì xảy ra nếu như chúng ta underfitting thì chúng ta sẽ thay cái mô hình này bằng một cái mô hình chỉ có một tham số thôi. Đó là W1 thôi. Thôi thì ở đây chúng ta vẫn cứ để là W2 ha. Nhưng mà cái mô hình của mình sẽ giảm số tham số xuống. tính đạo hàm thì đây là cái tình huống gọi là good fitting. Còn ở đây sẽ là underfitting. Thì lúc này chỉ có W1 và công thức của mình là chỉ có X thôi. w1 nh x + b - y rồi w1 nh x cộng b tr- y và ở đây sẽ là nhân với x tại vì đạo hàm của w1 à đạo hàm của cái hàm này theo w1 thì nó sẽ là bằng x rồi à ở đây thì chúng ta sẽ không có cập nhật w2 chúng ta chỉ cập nhật w1 và b thôi. Và khi chúng ta trực quan thì chúng ta cũng sẽ à chỉ có W1 và X rồi cộng cho B pa. Rồi đạo hàm điều kiện dừng thì ở đây chúng ta sẽ không có W2 mà chỉ có W1 và B. Rồi ờ bây giờ chúng ta sẽ chạy thử.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:13:21",
+            "end_timestamp": "0:16:19",
+            "chunk_id": 10
+        }
+    },
+    {
+        "page_content": "Đó thì rõ ràng là cái đường thẳng của chúng ta sẽ không thể nào mà có thể fit được vào khi mà cái đường cái phía bên trên này nó đi rớt xuống đúng không? Nó đi xuống thì đồng thời cái cạnh còn lại nó sẽ đi lên nó sẽ thoát ra khỏi các cái điểm bên dưới. Thì đây là cái tình huống underfitting. Nó tiến rất là chậm.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:16:13",
+            "end_timestamp": "0:16:44",
+            "chunk_id": 11
+        }
+    },
+    {
+        "page_content": "Tức là nó đã gần như hội tụ rồi. Và rõ ràng là à không thể nào mà có thể dùng một cái đường thẳng để xắp xỉ được cái à các cái điểm mà dạng parabol như thế này. Rồi tiếp theo thì chúng ta sẽ cùng thử nghiệm cho cái tình huống gọi là overfitting. Thế thì ở đây chúng ta sẽ tạo ra một cái mô hình mà gồm có bậc ví dụ như là bậc 4 thì chúng ta sẽ tạo thêm là W3 W4. Đó.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:16:39",
+            "end_timestamp": "0:17:17",
+            "chunk_id": 12
+        }
+    },
+    {
+        "page_content": "Rồi mô hình của chúng ta thì ở đây là good fitting đúng không? Thì à chúng ta bỏ đi good fitting và underfitting. À rồi chúng ta chỉ để là overfitting. Và với cái công thức của overfitting thì chúng ta sẽ mượn lại cái code của good fitting chúng ta bổ sung thêm. Rồi thì bây giờ giả sử W1 sẽ là X mũ ở đây chúng ta có bao nhiêu bậc? Có bốn bậc.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:17:12",
+            "end_timestamp": "0:18:04",
+            "chunk_id": 13
+        }
+    },
+    {
+        "page_content": "Do đó chúng ta sẽ bổ sung thêm à bậc 3 và bậc 4. 3 và bậc 4. Rồi à W1, W2, W3, W4 và ở đây sẽ là W 1 nhân với lại X m 4, W2 nhân với lại X mũ 3 cộng cho W3 nhân cho X và mũ 2 cộng cho W1 nhân với à W4. Ok. Để cho nó có cái sự tương đồng thì lẽ ra chúng ta nên để W1 với X W4 với X4 đi ha. W4, W3 và W2, W1 nhân với lại X nhân với lại X1 cộng cho B. Rồi các cái công thức ở dưới đây chúng ta không nên tái sử dụng lại tại vì à nó rất là phức tạp nên chúng ta nên copy từ công thức ở phía trên xuống. Thế thì W1 ờ rồi thì chúng ta sẽ có cái sai số giữa giá trị dự đoán và giá trị thực tế ở đây và nhân với lại cái đạo hàm của cái vế bên trong theo W1 thì W1 nó sẽ là đạo hàm của nó sẽ là X. Do đó ở đây chúng ta sẽ sửa lại là X. Rồi tương tự như vậy chúng ta sẽ có cái công thức cho x2 W2 W3 và W4 và B. Thì đối với W2 thì khi chúng ta lấy cái phần đạo hàm của cái vế bên trong này theo W2 thì nó sẽ ra là x bình phương. Rồi cứ như vậy tăng lên x lũy thừ 3 x lũy thừ 4 và cuối cùng là B thì nó sẽ không có đó. Tại vì đạo hàm của cái vế bên trong này theo B thì đạo hàm của B theo B là 1. Còn các cái thành phần còn lại thì nó xem như là hàng số.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:17:57",
+            "end_timestamp": "0:20:12",
+            "chunk_id": 14
+        }
+    },
+    {
+        "page_content": "Và bây giờ chúng ta sẽ cập nhật. Thì cái công thức cập nhật ở đây cũng không có thay đổi nhiều. W đạo hàm bậc hai đạo hàm theo W3 và đạo hàm theo W4. đạo hàm theo W4B. Rồi và khi chúng ta plot thì chúng ta sẽ dùng cái công thức này để chúng ta plot. Thì đây chính là cái y dự đoán à chúng ta thiếu cho cộng B nữa ha. Đó.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:20:06",
+            "end_timestamp": "0:20:50",
+            "chunk_id": 15
+        }
+    },
+    {
+        "page_content": "Rồi sau đó chúng ta sẽ xem cái mô hình. Ok. Ở đây chúng ta chủ yếu là trực quan hóa. Còn tham số thì chắc chắn là sai rồi. Do đó chúng ta cũng không cần thiết phải hiển thị kiểu này ha. Bây giờ chúng ta sẽ chạy thử cái mô hình khi mà nó bị underfitting. Thì chúng ta thấy là à nó cứ nhảy lên nhảy xuống.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:20:44",
+            "end_timestamp": "0:21:09",
+            "chunk_id": 16
+        }
+    },
+    {
+        "page_content": "Lý do đó là vì cái ờ đường đi đúng không? Một cái cái cái bước nhảy của mình nó quá lớn dẫn đến là mô hình của mình nó không hồi tụ được. Đó. Thế thì bây giờ để không có cái hiện tượng này thì có thể chúng ta sẽ phải giảm cái learning rate xuống. Ví dụ như là 0.00 01 rồi. Thế thì chúng ta nhìn thấy là một lúc sau thì chúng ta cũng sẽ thấy là cái đường của mình nó sẽ cố gắng nó bám theo các cái điểm. Thì đó là cái hiện tượng overfitting. Đó là cái hiện tượng overfitting. Nhưng mà thực tế thì nó có cái dữ liệu của mình nó đâu có đi theo cái đường cong à nó đâu có đi theo các cái đường cong à bậc hai à xin lộ đâu có đi theo các đường cong bậc 4 rất là lớn như thế này đâu đúng không? Thì rõ ràng là có thể là nó đúng ở một vài điểm ở bên trong nhưng mà khi đi ra ngoài biên thì cái mô hình của mình nó chắc chắn là sẽ bị lệch lạc. Thì đây là cái hiện tượng là underfitting à overfitting.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9wDaL2dnF_5J8f49e_YNi2f",
+            "video_url": "https://www.youtube.com/watch?v=_nPettH0cXg",
+            "filename": "_nPettH0cXg",
+            "title": "[CS114 - Chương 3] Minh họa Feature Engineering (Phần 1)",
+            "start_timestamp": "0:21:03",
+            "end_timestamp": "0:22:19",
+            "chunk_id": 17
+        }
+    }
+]

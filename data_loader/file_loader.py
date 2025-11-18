@@ -33,8 +33,8 @@ load_dotenv()
 gptkey = os.getenv("myAPIKey")
 
 # các đường dẫn
-root_data_dir = "data_test/"
-transcript_dir = "transcripts/processed_transcripts/"
+root_data_dir = "data/"
+transcript_dir = "processed_transcripts/"
 metadata_dir = "metadata.json"
 output_dir = "chunks/"
 # ==========================================================
@@ -137,11 +137,11 @@ class TranscriptLoader(BaseLoader):
 
 class Loader:
     """Class chính: Load + Chunk transcript."""
-    def __init__(self, open_api_key: str, split_kwargs: dict = None) -> None:
+    def __init__(self, open_api_key: str, vector_db = None,split_kwargs: dict = None) -> None:
         self.transcript_loader = TranscriptLoader()
         self.chunker = TranscriptChunker(open_api_key=open_api_key)
         self.split_kwargs = split_kwargs or {}
-        self.db = VectorDB().db  # khởi tạo vector db để kiểm tra các file đã chunk
+        self.db = vector_db if vector_db is not None else VectorDB().db  # khởi tạo vector db để kiểm tra các file đã chunk
 
     def load(self, txt_files: Union[str, List[str]], metadata_path: str, workers: int = 1):
         if isinstance(txt_files, str):
@@ -168,34 +168,46 @@ class Loader:
     def load_dir(self, root_data_dir: str, transcript_dir: str, metadata_dir: str, output_dir: str, workers: int = 1):
         all_chunks = []
         try:
-            filename_already_chunked =  self.get_filename_already_chunks(chroma_db=self.db)  # truyền db nếu cần kiểm tra
+            filename_already_chunked = self.get_filename_already_chunks(chroma_db=self.db)
         except Exception as e:
             print(f"Không thể kết nối đến vector DB: {e}")
             filename_already_chunked = set()
 
-        for playlist_folder in os.listdir(root_data_dir):
+        playlists = [
+            p for p in os.listdir(root_data_dir)
+            if os.path.isdir(os.path.join(root_data_dir, p)) and p != "logs"
+        ]
+
+        for playlist_folder in tqdm(playlists, desc="Playlists", unit="playlist"):
             try:
-                playlist_path = os.path.join(root_data_dir, playlist_folder) # data/playlist1
-                output_path = os.path.join(output_dir, playlist_folder) # data/chunks/playlist1
-                os.makedirs(output_path, exist_ok=True) #tạo output folder nếu chưa có
+                playlist_path = os.path.join(root_data_dir, playlist_folder)
+                output_path = os.path.join(output_dir, playlist_folder)
+                os.makedirs(output_path, exist_ok=True)
 
-                metadata_path = os.path.join(playlist_path, metadata_dir) # data/playlist1/metadata.json
-                transcript_path = os.path.join(playlist_path, transcript_dir) # data/playlist1/transcripts/processed_transcript
+                metadata_path = os.path.join(playlist_path, metadata_dir)
+                transcript_path = os.path.join(playlist_path, transcript_dir)
 
-                pattern =  os.path.join(transcript_path, "*.txt")
-                txt_list = glob.glob(pattern)
-                print(f"Tìm thấy {len(txt_list)} file transcript trong playlist {playlist_folder}.")
-                txt_files = [f for f in txt_list if os.path.basename(f).replace(".txt", "") not in filename_already_chunked]
-                print(f"Có {len(txt_files)} file cần được load và chunk trong playlist {playlist_folder}.")
-                # kiểm tra nếu tất cả các file đã được chunk
-                assert len(txt_files) > 0, "Tất cả các transcript đã được chunk"
+                txt_list = glob.glob(os.path.join(transcript_path, "*.txt"))
 
-                docs = self.load(txt_files, metadata_path, workers=workers)
+                print(f"[{playlist_folder}] tổng transcript: {len(txt_list)}")
 
-                chunks = self.chunker(docs, output_path)
-                all_chunks.extend(chunks)
+                txt_files = [
+                    f for f in txt_list
+                    if os.path.basename(f).replace(".txt", "") not in filename_already_chunked
+                ]
+                print(f"[{playlist_folder}] cần xử lý: {len(txt_files)} file")
+
+                assert len(txt_files) > 0, "Tất cả transcript đã được chunk"
+
+                docs = self.load(txt_files, metadata_path, workers)
+
+                # Progress bar cho chunk
+                for d in tqdm(docs, desc=f"Chunking {playlist_folder}", unit="doc"):
+                    out = self.chunker([d], output_path)
+                    all_chunks.extend(out)
+
             except Exception as e:
-                print(f"Lỗi khi xử lý playlist {playlist_folder}: {e}")
+                print(f"Lỗi playlist {playlist_folder}: {e}")
 
         return all_chunks
         

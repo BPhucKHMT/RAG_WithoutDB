@@ -1,0 +1,122 @@
+[
+    {
+        "page_content": "Chủ đề, học sâu, machine learning, imageNet. Chủ đề, học sâu, machine learning, imageNet. Đầu của Deep Learning trong xử lý ngôn ngữ tự nhiên thì RNN là gần như là một trong những kiến trúc mà được sử dụng rất là phổ biến và gần như tất cả các bài báo đều xoay xung quanh các biến thể của mạng RNN này. Và nội dung chính của ngày hôm nay chúng ta sẽ cùng giới thiệu qua loại dữ liệu dạng chuỗi. thì đối với những loại dữ liệu dạng chuỗi, nó sẽ có những tính chất gì, nó có gì khác so với những loại dữ liệu khác. Và từ đó thì chúng ta sẽ biết rằng là liệu có thể sử dụng được các kiến trúc mạng trước đây, ví dụ như là Neural Network bình thường cho loại dữ liệu dạng chuỗi này hay không. Trong phần thứ hai thì chúng ta sẽ cùng tìm hiểu sâu hơn về kiến trúc mạng Recurrent Neural Network, xem các cấu phần của mạng Recurrent Neural Network là cái gì và cách thức tính toán như thế nào. Và cuối cùng, chúng ta sẽ cùng tìm hiểu về một số vấn đề của mạng RNN hiện nay đang gặp phải và các giải pháp để giúp chúng ta giải quyết những vấn đề đó như thế nào. Đầu tiên đó là loại dữ liệu dạng chuỗi.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:00:00",
+            "end_timestamp": "0:01:48",
+            "chunk_id": 0
+        }
+    },
+    {
+        "page_content": "thì dữ liệu dạng chuỗi nó xuất hiện ở trong một số hình thức ví dụ như là loại dữ liệu văn bản, là dữ liệu âm thanh, hoặc là dữ liệu giá chứng khoán thế thì thế nào gọi là dữ liệu dạng chuỗi? Dữ liệu dạng chuỗi nó sẽ được mô hình hóa dưới dạng là XT, XT cộng 1, v.v. thì đầu ra giá trị tiếp theo nó sẽ đi phụ thuộc vào giá trị ở phía trước thông thường trong các nội dung của mình, các từ xt và xt cộng 1 không độc lập nhau mà nó có sự phụ thuộc lẫn nhau cái từ thứ t cộng 1 nó sẽ có mối quan hệ phụ thuộc với lại từ thứ t Và trong toàn thể một câu hoặc là một đoạn âm thanh hoặc là giá chứng khoán v.v. thì tùy vào trình tự xuất hiện của các giá trị đầu vào mà mình sẽ có ý nghĩa khác nhau hoàn toàn Ví dụ, đối với văn bản thì chúng ta hay có câu đó là ví dụ từ tiếng Anh đi là mình sẽ dễ minh họa nhất là Do you understand?",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:01:44",
+            "end_timestamp": "0:03:01",
+            "chunk_id": 1
+        }
+    },
+    {
+        "page_content": "Chắc là bạn có hiểu không? Thì cái từ do này nó đặt ở phía trước nên ở đây chính là cái câu hỏi Nhưng cũng ba cái từ này nếu như chúng ta đặt ở cái trình tự khác Ví dụ như là you do understand thì nó lại ra một câu khẳng định là bạn hiểu rồi đó còn ở trên đó là bạn có hiểu không? đó thì trình tự xuất hiện của các từ xt và xt cộng 1 rất là quan trọng do đó dữ liệu dạng chuỗi chúng ta cần phải chú ý đến cái yếu tố này đó là trình tự Và chúng ta sẽ so sánh một số loại dữ liệu với nhau để xem cái sự khác biệt của nó là gì. Đối với dữ liệu chuỗi và cụ thể ở đây, chúng ta sẽ lấy một ví dụ đó là dữ liệu văn bản.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:02:57",
+            "end_timestamp": "0:04:01",
+            "chunk_id": 2
+        }
+    },
+    {
+        "page_content": "Ví dụ để minh họa cho dữ liệu này là một câu, một đoạn văn. Ví dụ như là bầu trời xanh và bãi biển ống ánh. thì dữ liệu hình ảnh chúng ta sẽ có ví dụ đó là 1 tấm hình như thế này rồi đối với dữ liệu mà dạng đặc trưng ví dụ như các thuộc tính của 1 học sinh chúng ta có các thuộc tính ví dụ như là thuộc tính đầu tiên là lớp 7 thuộc tính thứ 2 15 tuổi thuộc tính thứ 3 là điểm toán thuộc tính thứ 4 là điểm văn Thuộc tính thứ 5, đó là điểm trung bình, ví dụ vậy Về các biểu diễn thông thường của loại dữ liệu dạng chuỗi đó chính là chúng ta sẽ sử dụng dạng danh sách các từ hay gọi là string trong lập trình của mình, gọi là string hoặc là mảng các ký tự Ờ? Rồi Trong loại dữ liệu là hình ảnh thì chúng ta sẽ có cách biểu diễn phổ biến đó chính là dữ liệu ma trận 2 chiều đối với những cái ảnh mà không có màu hay còn gọi là ảnh mức sáng, ảnh grayscale Và tensor 3 chiều đối với ảnh màu Và ảnh màu này có 3 kênh màu thông thường là Red, Green, Blue, Đỏ, Xanh lá và Xanh dương. Còn để biểu diễn cho dữ liệu dưới dạng đặc trưng của một đối tượng, người ta thường hay sử dụng đó là biểu diễn dưới dạng vector.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:03:52",
+            "end_timestamp": "0:05:46",
+            "chunk_id": 3
+        }
+    },
+    {
+        "page_content": "Rồi, và tiếp theo đó là về hệ thống ký hiệu. Đối với dữ liệu dạng chuỗi, chúng ta hay ký hiệu đó là W1, W2, cho đến Wt trong đó t chính là số từ trong một câu hoặc là độ dài Và chúng ta có một lưu ý đó là độ dài của văn bản t này là có thể thay đổi, t có thể là rất ít, ví dụ như chỉ là bằng một nhưng nó cũng có thể rất là nhiều, ví dụ như có thể lên đến hàng ngàn. Còn đối với dữ liệu hình ảnh, chúng ta sẽ ký hiệu nó dưới dạng là ma trận. Ví dụ trong trường hợp này, chúng ta sử dụng ma trận 2 chiều. Còn đối với tensor 3 chiều thì nó sẽ phức tạp hơn một chút. Đối với ma trận 2 chiều, chúng ta sẽ có 2 thông số, đó là bề ngang và bề cao là để thể hiện kích thước của hình ảnh của mình. Bề ngang và bề cao, và chúng ta cũng lưu ý, đó là bề ngang và bề cao, bề rộng và bề dài, trong đây là dùng từ bề rộng và bề dài thì hoàn toàn có thể thay đổi được. Có thể thay đổi, thì chúng ta thấy là các ảnh của mình có thể có những độ phân giải khác nhau. Có những ảnh rất là nhỏ nhưng mà có những ảnh rất là to. Còn khi biểu diễn cho đặc trưng của một đối tượng thì thông thường chúng ta sẽ phải biểu diễn dưới dạng là một vector với n phần tử và n này phải là cố định, n này sẽ là không thay đổi. và không thay đổi. Và tính chất của các phần tử trong dữ liệu này của mình đó là, đầu tiên đối với dữ liệu dạng chuỗi thì hồi nãy chúng ta đã có trình bày rồi là tính trình tự.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:05:35",
+            "end_timestamp": "0:07:43",
+            "chunk_id": 4
+        }
+    },
+    {
+        "page_content": "Nó rất là quan trọng. Từ thứ hai, mà đứng sau từ thứ một thì nó sẽ có một ý nghĩa Nhưng từ thứ W2 mà đứng trước từ W1 thì nó lại có một ý nghĩa khác giống như ví dụ ở trên Do đó thì ở đây chúng ta sẽ có mối quan hệ đó là các phần tử trong dữ liệu phụ thuộc theo một chiều thời gian Tại sao ở đây mình lại dùng cái từ là thời gian? Tại vì nguồn gốc của ngôn ngữ nó xuất phát là từ giọng nói, từ tiếng nói.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:07:27",
+            "end_timestamp": "0:08:15",
+            "chunk_id": 5
+        }
+    },
+    {
+        "page_content": "Thì khi tiếng nói của mình mà mình cất ra, thì nó đi theo cái chuỗi là cái chuỗi thời gian. Lúc mà nó đưa vô bên trong qua cái đường là thính giác, thì nó sẽ là đi theo cái chuỗi thời gian. thì đó là tại sao mình lại dùng cái từ đó là phụ thuộc theo chiều thời gian tương tự như vậy cho dữ liệu âm thanh và chứng khoán, thì cái T này hàm ý đó là thời gian Đối với dữ liệu hình ảnh thì cái sự phụ thuộc này là nó sẽ phụ thuộc ở hai chiều nó phụ thuộc ở cả hai chiều và hai chiều này nó gọi là chiều không gian bề ngang, bề cao, nó gọi là chiều không gian Trong khi đó, dữ liệu đặc trưng thì các phần tử này độc lập nhau. Nghĩa là sao?",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:08:07",
+            "end_timestamp": "0:09:12",
+            "chunk_id": 6
+        }
+    },
+    {
+        "page_content": "Nếu như chúng ta quy ước là thành phần đầu tiên là lớp, thành phần thứ hai là tuổi, thành phần thứ ba là điểm toán, thành phần thứ tư là điểm văn, thành phần thứ năm là điểm trung bình. Vì nếu như chúng ta đổi lại trình tự này, ví dụ chúng ta đưa điểm toán lên trước, sau đó sẽ đến điểm văn, sau đó đến điểm trung bình, sau đó là lớp và sau đó là tuổi Thì cái thông tin của cái đặc trưng này nó vẫn bảo toàn, nó không hề thay đổi cái nội dung Nó không thay đổi cái nội dung của cái đặc trưng Trong khi đó cũng là cái từ do từ you từ understand nhưng nếu chúng ta đảo lại thứ tự cho nhau Do lên trước, do ra sau thì đó là khẳng định Nhưng mà do lên trước, do ra sau thì đó là câu hỏi thì tự nhiên cái ý nghĩa của cái đoạn văn, của cái văn bản đó là bị thay đổi hoàn toàn. Cũng tương tự như vậy cho hình ảnh.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:09:00",
+            "end_timestamp": "0:10:01",
+            "chunk_id": 7
+        }
+    },
+    {
+        "page_content": "Nếu như chúng ta đưa các đối tượng hình ảnh này lên trên các vị trí khác nhau, ví dụ như đưa đám mây xuống dưới, đưa mặt trời lên trên, thì tự nhiên nó sẽ tạo ra một tấm hình có cái bố cục, dẫn tới nó có cái ý nghĩa khác nhau hoàn toàn. Do đó thì ở đây hai cái loại dữ liệu chuỗi và hình ảnh thì nó bị phụ thuộc lẫn nhau, nó bị ràng buộc lẫn nhau. Trong khi đó, dữ liệu vector thì nó sẽ độc lập. Và ý tưởng để áp dụng cho loại dữ liệu văn bản lên trên các mô hình máy học, đúng không? Thì đó chính là chúng ta có những ý tưởng đầu tiên để kế thừa những thành tựu của mạng Neural Network trước đây. Thế thì, khó khăn đầu tiên mà chúng ta khi áp dụng dữ liệu dạng chuỗi vào một mạng Neural Network là chúng ta có một nhận xét như sau. Văn bản có độ dài không cố định. Ví dụ, đối với câu này, ở đây độ dài của văn bản này là 2. Nhưng ở câu sau, bầu trời xanh và biển vàng ống ánh ví dụ vậy, thì cái độ dài của mình có thể lên đến là 10 chữ trong khi đó, cái mạng Neural Network của mình, cái đầu vào của mình nó lại cố định thì chúng ta đã học cái mạng Neural Network rồi đầu vào của mình nếu như nó chỉ có 4 Neuron thì xuyên suốt từ cái quá trình huấn luyện cho đến quá trình dự đoán nó cũng hoàn toàn có thể là, nó sẽ giữ nguyên là 4 Neuron Có bạn sẽ hỏi là tại sao ở trong cái mạng CNN, đúng không? thì các cái ảnh của mình khi chúng ta đưa vào một cái mạng CNN đưa vào một cái mạng CNN thì nó sẽ làm một cái thao tác đó là Scale mình sẽ đưa một cái ảnh rất to Scale về đúng cái tỷ lệ scale về đúng tỷ lệ mà cái mạng CNN này nó nhận làm đầu vào, đúng không? thì đối với ảnh, nó lại là một loại dữ liệu đặc biệt các cái trình tự, các cái điểm ảnh nó phụ thuộc theo trình tự không gian, đúng không? nhưng mà một cái ảnh to, một cái ảnh to đó, ví dụ như chúng ta có một cái đối tượng ở đây khi chúng ta thu nhỏ nó lại để tạo ra thành một cái ảnh nhỏ Đáp ứng được cái yêu cầu đầu vào của cái mạng CNN thì về mặt ngữ nghĩa là chúng ta nhìn vô tấm ảnh này chúng ta vẫn biết được cái ý nghĩa của nó hay nói cách khác là ý nghĩa nó không thay đổi Còn ở đây, cái đoạn văn của mình mình sẽ không có cái cách nào để mà mình nén mình nén cái đoạn văn này về cái dạng là một cái vector 4 chiều cố định là số chiều Có bạn sẽ nói, tôi dùng giải pháp là Bag-of-Words có được hay không? Tức là mọi câu trong văn bản, hoặc mọi từ trong văn bản sẽ đưa về cái dạng là một cái vector cố định số chiều. Ví dụ cái từ tuyệt, nó tương ứng sẽ là 0100. Từ quá là 0010 Và khi chúng ta sử dụng mô hình Bag-of-Words thì chúng ta sẽ trộn hai vector này lại với nhau để tạo thành một vector đó là 0,1,1,0 để ra vector biểu diễn cho kết quả và số từ của vector biểu diễn này nó sẽ đều cố định là V tức là số phần tử trong tập Dictionary, trong tập từ điển tương tự như vậy cho câu bầu trời xanh và biển vàng ống ánh, ví dụ vậy thì nó cũng sẽ biểu diễn với một vector có số chiều là V như vậy thì nó cố định số chiều Với giải pháp này, nó sẽ bị một vấn đề là nó không đảm bảo được yếu tố về mặt trình tự Trình tự Tại sao? Tại vì cái câu Do you understand?",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:10:00",
+            "end_timestamp": "0:14:38",
+            "chunk_id": 8
+        }
+    },
+    {
+        "page_content": "Với cái câu là You do understand Sẽ có cùng cái vector biểu diễn Nó sẽ có cùng một cái vector biểu diễn Ví dụ như là Một, không, không, không, một, một, không, ví dụ vậy cả hai từ này đều có cùng cách biểu diễn. Thì như vậy là tính đảm bảo của mạng Neural Network là cho cái phần tính thứ tự của văn bản là không đảm bảo. Và đó chính là những cái rào cản để cho chúng ta không thể sử dụng cái mạng Neural Network một cách trực tiếp với cái loại dữ liệu là văn bản hoặc là cho các cái loại dữ liệu dạng chuỗi khác.",
+        "metadata": {
+            "playlist": "PLb62OySGqC9xl1_deMF_UXP5tA2Tvt17_",
+            "video_url": "https://www.youtube.com/watch?v=_KvZN8-SyvQ",
+            "filename": "_KvZN8-SyvQ",
+            "title": "[CS431 - Chương 7] Part 1: Giới thiệu mạng RNN - Xử lý dữ liệu dạng chuỗi",
+            "start_timestamp": "0:14:35",
+            "end_timestamp": "0:15:27",
+            "chunk_id": 9
+        }
+    }
+]
