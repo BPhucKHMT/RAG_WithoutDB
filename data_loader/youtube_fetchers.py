@@ -22,6 +22,7 @@ import json
 import re
 import whisper
 import subprocess
+import torch
 
 # --------------------------------------------------------
 # Khởi tạo YouTube API client
@@ -43,7 +44,6 @@ def _resolve_device(device: Optional[str]) -> str:
         return device
 
     try:
-        import torch
 
         if torch.cuda.is_available():
             return "cuda"

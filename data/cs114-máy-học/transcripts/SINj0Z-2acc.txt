@@ -1,0 +1,62 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:19, Chúng ta sẽ cùng bàn về những cái ưu
+0:00:15 - 0:00:21, điểm của thực toán PCA. PCA à nó là một
+0:00:19 - 0:00:23, cái công cụ để hỗ trợ cho việc trực quan
+0:00:21 - 0:00:26, hóa dữ liệu. Hãy tưởng tượng rằng là cái
+0:00:23 - 0:00:29, dữ liệu của chúng ta có D chiều và D này
+0:00:26 - 0:00:31, thì nó lớn hơn 3. Thì trong cái khả năng
+0:00:29 - 0:00:33, tưởng tượng của chúng ta thì chúng ta
+0:00:31 - 0:00:35, chỉ có thể hình dung được cái không gian
+0:00:33 - 0:00:37, hai chiều hoặc là ba chiều là cùng. Khi
+0:00:35 - 0:00:40, cái số chiều lớn hơn, chúng ta sẽ không
+0:00:37 - 0:00:41, thể quan sát và chúng ta có thể thấy
+0:00:40 - 0:00:44, được cái mối quan hệ giữa các cái dữ
+0:00:41 - 0:00:50, liệu với nhau. Do đó thì cái việc giảm
+0:00:44 - 0:00:53, dữ liệu từ X ờ D chiều xuống còn à một
+0:00:50 - 0:00:58, cái vecơ là
+0:00:53 - 0:01:01, R ờ P chiều trong đó P nhỏ hơn D thì và
+0:00:58 - 0:01:05, cụ thể luôn P ở đây có thể là bằng 2
+0:01:01 - 0:01:08, hoặc là P là bằng 3
+0:01:05 - 0:01:09, thì nó sẽ đưa về cái không gian hai
+0:01:08 - 0:01:12, chiều hoặc là ba chiều thì chúng ta có
+0:01:09 - 0:01:14, thể vẽ biểu đồ và quan sát cái mối mối
+0:01:12 - 0:01:17, quan hệ giữa các dữ liệu một cách dễ
+0:01:14 - 0:01:19, dàng. Và một cái ứng dụng, một cái ưu
+0:01:17 - 0:01:21, điểm nữa của PC đó là loại bỏ đa cộng
+0:01:19 - 0:01:23, tuyến. À tức là cái vấn đề mà cái đặc
+0:01:21 - 0:01:25, trưng nó bị phụ thuộc lẫn nhau. Giả sử
+0:01:23 - 0:01:29, như trong một cái mô hình máy học, chúng
+0:01:25 - 0:01:32, ta có các cái trường thông tin là x1, x2
+0:01:29 - 0:01:37, và x3. Trong đó x1 là một cái hàm tuyến
+0:01:32 - 0:01:40, tính của x2 và x3, tức là một cái mối
+0:01:37 - 0:01:43, quan hệ phụ thuộc tiến tính. Thế thì
+0:01:40 - 0:01:46, việc xử lý tính toán trên cả x1, x2, x3
+0:01:43 - 0:01:48, nó sẽ vừa tốn tài nguyên tính toán cũng
+0:01:46 - 0:01:50, như là có thể gây cái sai lệch trong cái
+0:01:48 - 0:01:53, xây dựng mô hình. Do đó chúng ta có thể
+0:01:50 - 0:01:56, loại bỏ đi một cái thành phần đa cộng
+0:01:53 - 0:01:59, tuyến x1 để chỉ giữ lại cái x2 và x3
+0:01:56 - 0:02:02, thôi. Và giảm nhiễu thì nhờ cái việc
+0:01:59 - 0:02:03, phân tích à phương sai rồi trong cái quá
+0:02:02 - 0:02:05, trình mà tực thi tính toán cái cái thành
+0:02:03 - 0:02:08, phần chính thì nó đã giúp cho chúng ta
+0:02:05 - 0:02:10, loại bỏ đi những cái thành phần à nhiễu
+0:02:08 - 0:02:12, và không có liên quan đến cái bài toán
+0:02:10 - 0:02:13, của mình. Tại vì cái sai số nó quá bé,
+0:02:12 - 0:02:16, tức là cái hàm lượng thông tin của mình
+0:02:13 - 0:02:20, nó không có nhiều. Đó. Rồi cái ưu điểm
+0:02:16 - 0:02:21, nữa đó là giúp giảm tham số của mô hình.
+0:02:20 - 0:02:24, Thay vì chúng ta xây dựng một cái mô
+0:02:21 - 0:02:27, hình có D tham số, bây giờ chúng ta đưa
+0:02:24 - 0:02:29, về một cái mô hình chỉ có P tham số thì
+0:02:27 - 0:02:32, cái chi phí tính toán nó thấp hơn. Nhưng
+0:02:29 - 0:02:35, đồng thời à nó sẽ làm cho cái tham số mô
+0:02:32 - 0:02:39, hình giảm xuống, nó sẽ vô hình chung làm
+0:02:35 - 0:02:39, giảm cái hiện tượng gọi là overfitting.
+0:02:40 - 0:02:44, Giảm cái hiện tượng overfitting. Đây là
+0:02:42 - 0:02:48, một trong những cái vấn đề
+0:02:44 - 0:02:50, rất là kinh điển của máy học. Và khi
+0:02:48 - 0:02:52, giảm cái khối lượng tính toán thì đồng
+0:02:50 - 0:02:55, thời cái tốc độ huấn luyện của chúng ta
+0:02:52 - 0:03:07, cũng sẽ nhanh hơn.
+0:02:55 - 0:03:07, [âm nhạc]

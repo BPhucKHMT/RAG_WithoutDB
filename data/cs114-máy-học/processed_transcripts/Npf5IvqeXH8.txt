@@ -1,0 +1,266 @@
+0:00:01 - 0:00:15, [âm nhạc]
+0:00:13 - 0:00:18, Trong phần thực hành đầu tiên, các bạn
+0:00:15 - 0:00:22, sẽ được giới thiệu, làm quen và sử dụng
+0:00:18 - 0:00:25, một công cụ gọi là Google Colab. Thì
+0:00:22 - 0:00:27, Google Colab là một công cụ có thể nói
+0:00:25 - 0:00:31, là cực kỳ phổ biến đối với những người
+0:00:27 - 0:00:35, vừa mới bắt đầu học Máy học (Machine Learning).
+0:00:31 - 0:00:37, Google Colab có địa
+0:00:35 - 0:00:40, chỉ ở trang web
+0:00:37 - 0:00:40, collab.research.google.com.
+0:00:41 - 0:00:46, À tuy nhiên những người
+0:00:44 - 0:00:49, làm research chuyên nghiệp hoặc là những
+0:00:46 - 0:00:51, người dùng chuyên nghiệp ừ có thể sử
+0:00:49 - 0:00:55, dụng Machine Learning để tạo ra sản phẩm
+00:00:51 - 0:00:57, á thì thường là họ không sử dụng Google
+00:00:55 - 0:00:59, Colab nhiều mà họ có sẽ có những công
+0000:57 - 0:01:04, cụ riêng biệt. Còn đối với người bắt đầu
+00:00:59 - 0:01:07, học thì Google Colab là một công cụ rất
+00:01:04 - 0:01:09, là hữu ích đối với các bạn ha. Thì
+0001:07 - 0:01:11, Colab là một cái nền tảng
+0001:09 - 0:01:14, cho phép các bạn có thể lập trình Python
+0001:11 - 0:01:17, trên đám mây. Trên đám mây có nghĩa là
+0001:14 - 0:01:20, code Python của các bạn lập trình ra sẽ
+0001:17 - 0:01:23, được chạy trên máy tính của người khác
+0001:20 - 0:01:25, mà cụ thể ở đây là của tập đoàn Google
+0001:23 - 0:01:28, cung cấp.
+0001:25 - 0:01:31, Google Colab thì họ phát triển dựa trên
+0001:28 - 0:01:33, Jupyter Notebook nhưng cũng đã có nhiều
+0001:31 - 0:01:37, tùy chỉnh cho nó phù hợp
+0001:33 - 0:01:41, với nền tảng của Google. Và họ sẽ cung
+0001:37 - 0:01:45, cấp cho các bạn một cái quan trọng nhất
+0001:41 - 0:01:48, mà họ cung cấp cho các bạn ở đây. Ngoài
+0001:45 - 0:01:51, việc có một cái giao diện để các bạn có
+0001:48 - 0:01:54, thể gõ code Python và chạy trực tiếp
+0001:51 - 0:01:56, trên nền web ha. Các bạn làm việc với
+0001:54 - 0:01:58, Jupyter Notebook thì sẽ thông qua giao
+0001:56 - 0:02:00, diện web. Có nghĩa là các bạn không cần
+0001:58 - 0:02:02, phải cài thêm những phần mềm đặc biệt
+0002:00 - 0:02:06, trên máy tính của mình mới có thể lập
+0002:02 - 0:02:08, trình. Các bạn thậm chí là có thể lập
+0002:06 - 0:02:12, trình Python trên các thiết bị di động,
+0002:08 - 0:02:14, chỉ cần vào được web là có thể bắt đầu
+0002:12 - 0:02:17, lập trình và học tập được ha. Đó là một
+0002:14 - 0:02:22, công cụ rất là mạnh mẽ.
+0002:17 - 0:02:24, Tại vì việc tự mình cài đặt những cái
+0002:22 - 0:02:27, phần mềm cần thiết cho
+0002:24 - 0:02:29, các thư viện Machine Learning
+0002:27 - 0:02:31, hiện đại ngày nay cũng không phải là đơn
+0002:29 - 0:02:35, giản ha. Nên việc có người khác làm sẵn
+0002:31 - 0:02:37, cho mình cái khâu cài đặt này để mình
+0002:35 - 0:02:40, chỉ có thể mở browser lên và mình lập
+0002:37 - 0:02:42, trình. Nó cũng rất là tiện cho các bạn
+0002:40 - 0:02:46, trong nhiều tình huống.
+0002:42 - 0:02:52, Và ưu điểm thứ hai là họ hỗ trợ các bạn
+0002:46 - 0:02:54, các thiết bị GPU, các cái bộ xử
+0002:52 - 0:02:59, lý đồ họa ha. Việt Nam mình hay gọi dân
+0002:54 - 0:03:01, giả là các cái card đồ họa miễn phí ha.
+0002:59 - 0:03:02, Cho sử dụng theo giờ ha. Thời gian có
+0003:01 - 0:03:06, giới hạn thôi nhưng mà hoàn toàn miễn
+0003:02 - 0:03:09, phí. Và họ có thể tích hợp do thuộc lên
+0003:06 - 0:03:13, nền tảng Google mà họ tích hợp với lưu
+0003:09 - 0:03:16, trữ Google Drive đó nên các bạn dù không
+0003:13 - 0:03:17, có phần cứng đủ mạnh các bạn vẫn có thể
+0003:16 - 0:03:19, học
+0003:17 - 0:03:21, lập trình Python các bạn vẫn có thể học
+0003:19 - 0:03:24, Machine Learning, học máy thông qua sự hỗ
+0003:21 - 0:03:27, trợ của nền tảng Google Colab
+0003:24 - 0:03:29, dĩ nhiên miễn phí thì sẽ bị giới hạn về
+0003:27 - 0:03:31, mặt thời gian
+0003:29 - 0:03:34, đó
+0003:31 - 0:03:38, và nếu mà các bạn chiếm dụng tài nguyên
+0003:34 - 0:03:42, quá nhiều thì sẽ bị thu hồi bất cứ lúc
+0003:38 - 0:03:44, nào và dữ liệu trong bộ nhớ tạm ha, khi
+0003:42 - 0:03:47, bị thu hồi thì nó có thể mất.
+0003:44 - 0:03:51, Đó
+0003:47 - 0:03:56, thì bây giờ chúng ta sẽ cùng ừ đến làm
+0003:51 - 0:03:58, quen với giao diện của Google Colab thì
+0003:56 - 0:04:01, đây
+0003:58 - 0:04:03, là
+0004:01 - 0:04:07, các bạn vào Google đầu tiên khi các bạn
+0004:03 - 0:04:07, vào địa chỉ collab.research.google.com
+0004:08 - 0:04:13, các bạn sẽ đến một cái giao diện như thế
+0004:10 - 0:04:17, này ha. Họ yêu cầu các bạn open các cái
+0004:13 - 0:04:22, Notebook. Notebook ở đây tức là những
+0004:17 - 0:04:27, cái file tích hợp vừa cả mã nguồn vừa cả
+0004:22 - 0:04:29, các ghi chú, các cái mô tả vào
+0004:27 - 0:04:32, trong một giao diện duy nhất ha. Nếu
+0004:29 - 0:04:34, như các bạn là người lập trình trước đây
+0004:32 - 0:04:35, các trong các môn lập trình cơ bản các
+0004:34 - 0:04:37, bạn đã học thì các bạn sẽ biết là cái
+0004:35 - 0:04:41, file mã nguồn thì thường nó sẽ nằm một
+0004:37 - 0:04:43, cái đuôi riêng đó và nó chỉ chứa toàn là
+0004:41 - 0:04:47, văn bản thôi. Nó không chứa hình ảnh
+0004:43 - 0:04:49, được. Thậm chí là các bạn còn không thể
+0004:47 - 0:04:51, highlight, các bạn không thể tô đậm chữ,
+0004:49 - 0:04:54, các bạn không thể in đậm in nghiêng,
+0004:51 - 0:04:58, không thể format các cái chữ bên trong
+0004:54 - 0:05:01, cái mã nguồn được. Thì Notebook cung cấp
+0004:58 - 0:05:06, cho các bạn một cái công cụ có sẵn vừa
+0005:01 - 0:05:09, là mã nguồn và vừa là
+0005:06 - 0:05:13, các cái ghi chú ha. Và ghi chú này là
+0005:09 - 0:05:16, ghi chú dạng rich text, dạng văn bản có định dạng
+0005:13 - 0:05:18, (format) và có thể chứa cả âm thanh hình
+0005:16 - 0:05:21, ảnh vào bên trong. đó trong cùng một cái
+0005:18 - 0:05:24, giao diện như thế này để các bạn dễ tiện
+0005:21 - 0:05:26, trong việc mình vừa viết code, mình vừa
+0005:24 - 0:05:30, ghi chú trong quá trình mình học.
+0005:26 - 0:05:33, Đó, đây là giao diện của Google Colab.
+0005:30 - 0:05:35, Thì ngoài cái giao diện Notebook này ha, đó
+0005:33 - 0:05:41, việc cài cái Notebook này vào trong máy
+0005:35 - 0:05:42, tính của các bạn cũng sẽ phải tốn một số
+0005:41 - 0:05:45, công sức nhất định ha. Tại vì các
+0005:42 - 0:05:47, Notebook này
+0005:45 - 0:05:51, các Notebook này
+0005:47 - 0:05:53, phải a được cài đặt thông qua một cái
+0005:51 - 0:05:57, công cụ đặc biệt là Jupyter Notebook và
+0005:53 - 0:06:00, nó giao tiếp thông qua nền web.
+0005:57 - 0:06:01, Nếu các bạn vừa cài một cái web server
+0006:00 - 0:06:06, lên máy tính của mình và các bạn lại
+0006:01 - 0:06:10, giao tiếp cái web server đó bằng cùng
+0006:06 - 0:06:11, một cái máy ha thì nó
+0006:10 - 0:06:13, hơi bất cập nên các bạn sẽ không tìm
+0006:11 - 0:06:17, thấy hướng dẫn cài đặt một cái giao diện
+0006:13 - 0:06:20, tương tự như Google Colab trên cái
+0006:17 - 0:06:21, trang chủ của Python. Mà khi chúng ta
+0006:20 - 0:06:24, code Python trên máy mình thì thường
+0006:21 - 0:06:27, giao diện nó sẽ khác. Còn Python mà trên
+0006:24 - 0:06:30, Google Colab thì nó sẽ có giao diện
+0006:27 - 0:06:34, Notebook thuận tiện cho việc học hơn.
+0006:30 - 0:06:38, Và cái quan trọng nhất mà Google Colab
+0006:34 - 0:06:42, cung cấp cho các bạn đó là máy
+0006:38 - 0:06:47, ha. Đây là một cái runtime theo khái
+0006:42 - 0:06:50, niệm của Google Colab gọi thì họ gọi
+0006:47 - 0:06:53, một cái runtime là một cái máy ảo ha.
+0006:50 - 0:06:56, Đây là một máy ảo tức là họ Google họ có
+0006:53 - 0:06:58, những cái cụm server rất là lớn. Họ chia
+0006:56 - 0:07:01, server đó ra thành nhiều cái máy ảo có
+0006:58 - 0:07:04, cấu hình nhỏ hơn và họ cho phép các bạn
+0007:01 - 0:07:07, có thể sử dụng các cái máy ảo này miễn
+0007:04 - 0:07:10, phí trong một khoảng thời gian giới hạn
+0007:07 - 0:07:13, ha. Hồi nãy các bạn có thấy thông báo là
+0007:10 - 0:07:14, Google vừa thu hồi lại máy của thầy và
+0007:13 - 0:07:17, thầy phải
+0007:14 - 0:07:19, xin cấp một cái máy khác. Thì khi các
+0007:17 - 0:07:23, bạn kết nối tới một cái runtime là các
+0007:19 - 0:07:26, bạn sẽ được cấp một cái máy. À
+0007:23 - 0:07:28, máy này
+0007:26 - 0:07:31, không tính phí nhưng mà bù lại chỉ được
+0007:28 - 0:07:33, sử dụng trong khoảng ba đến năm giờ thôi. Và nếu
+0007:31 - 0:07:36, sử dụng nhiều thì con số này sẽ còn giảm
+0007:33 - 0:07:38, xuống nữa. Đó. Ừ. Máy này họ cho thuê
+0007:36 - 0:07:40, tạm ha. Được sử dụng trong vài tiếng
+0007:38 - 0:07:44, đồng hồ hết thì họ lấy máy lại dữ liệu
+0007:40 - 0:07:46, bị mất đó. Nhưng mà cái giao diện những
+0007:44 - 0:07:48, gì trên giao diện thì vẫn sẽ còn mã
+0007:46 - 0:07:51, nguồn chúng ta gõ, các ghi chú chúng
+0007:48 - 0:07:54, ta ghi nó sẽ vẫn còn nhưng mà dữ liệu
+0007:51 - 0:07:57, lưu trữ thì mất chúng ta phải à tiến
+0007:54 - 0:08:00, hành backup trên Google Drive hoặc là
+0007:57 - 0:08:06, tải từ trên Internet về thì máy này có
+0008:00 - 0:08:10, cấu hình như sau. À RAM là 12,7 GB, đĩa
+0008:06 - 0:08:13, cứng là 112 GB, trong đó hệ điều hành đã
+0008:10 - 0:08:18, chiếm khoảng 39,1 rồi, à còn không có
+0008:13 - 0:08:23, nhiều. Và ở level miễn phí này thì chúng
+0008:18 - 0:08:27, ta có thể xin cấp một cái GPU T4 ha. À
+0008:23 - 0:08:31, đây là một cái GPU do Nvidia sản xuất.
+0008:27 - 0:08:34, GPU này là loại GPU chuyên dùng cho các
+0008:31 - 0:08:37, cái hệ thống server, hệ thống máy chủ.
+0008:34 - 0:08:40, Nó có 16 GB
+0008:37 - 0:08:42, VRAM hay là Video Random Access Memory.
+0008:40 - 0:08:44, Đó
+0008:42 - 0:08:47, thì trên cái server ảo này các bạn có
+0008:44 - 0:08:50, thể chạy những cái lệnh
+0008:47 - 0:08:52, ừ trong Google
+0008:50 - 0:08:54, Colab và các bạn có thể chạy những cái
+0008:52 - 0:08:57, lệnh trong Jupyter Notebook mà nó bắt đầu
+0008:54 - 0:08:59, bằng dấu chấm than như thế này là những
+0008:57 - 0:09:02, lệnh dùng để trực tiếp điều khiển server
+0008:59 - 0:09:06, ha. Đây không phải là
+0009:02 - 0:09:11, lệnh của Python đó. À apt là lệnh để cài
+0009:06 - 0:09:13, đặt phần mềm trong hệ điều hành Ubuntu.
+0009:11 - 0:09:15, Các cái máy ảo mà Google Colab cung cấp
+0009:13 - 0:09:18, cho các bạn đều sẽ có hệ điều hành
+0009:15 - 0:09:19, Ubuntu. Và các bạn có thể tương tác với
+0009:18 - 0:09:23, cái hệ điều hành này. Dù máy của các bạn
+0009:19 - 0:09:26, dùng hệ điều hành gì đi nữa ha. Đó chúng
+0009:23 - 0:09:27, ta có thể chạy lệnh trực tiếp.
+0009:26 - 0:09:30, Nếu lệnh bắt đầu bằng dấu chấm than như
+0009:27 - 0:09:32, thế này, đó sẽ là lệnh của Ubuntu và máy sẽ
+0009:30 - 0:09:35, được thực thi. Kết quả chạy của lệnh sẽ
+0009:32 - 0:09:40, được hiển thị ra ngay bên dưới cho các
+0009:35 - 0:09:43, bạn xem. Đó, đây là output, đây là lệnh.
+0009:40 - 0:09:45, Rồi ở đây đầu tiên là chúng ta chạy lệnh
+0009:43 - 0:09:48, update máy đó mà các bạn có thể xem
+0009:45 - 0:09:48, output ở đây.
+0009:52 - 0:09:57, Rồi sau đó chúng ta có thể yêu cầu thậm
+0009:54 - 0:09:59, chí là cài thêm phần mềm nếu như cái máy
+0009:57 - 0:10:02, chủ ảo của Google Colab họ chưa có cung
+0009:59 - 0:10:05, cấp sẵn. Mặc dù họ cũng cài cho các bạn
+0010:02 - 0:10:08, sẵn rất là nhiều phần mềm rồi ha. gần 40
+0010:05 - 0:10:11, GB tức là có khá nhiều phần mềm và thư
+0010:08 - 0:10:13, viện cần thiết đối với Machine Learning
+0010:11 - 0:10:16, đã được cài sẵn ở đây. Những thư viện
+0010:13 - 0:10:18, này nếu các bạn tự cài sẽ phải tốn
+0010:16 - 0:10:20, cũng khá là nhiều công sức nhưng ở đây
+0010:18 - 0:10:22, Google Colab họ đã cung cấp sẵn cũng
+0010:20 - 0:10:25, khá là nhiều đó. Như các bạn thấy khi đã
+0010:22 - 0:10:28, update máy và cài thì đĩa cứng được sử
+0010:25 - 0:10:30, dụng hồi nãy là 39,1 GB, bây giờ tăng
+0010:28 - 0:10:33, lên là 39,2.
+0010:30 - 0:10:37, Đó, ở đây thầy cài thử lệnh xem cấu hình
+0010:33 - 0:10:39, máy. Rồi chúng ta có thể thấy đây Google
+00010:37 - 0:10:43, cung cấp cho các bạn một máy ảo ha trong
+0010:39 - 0:10:46, hệ thống Google Compute. Đó, đây là tên
+0010:43 - 0:10:50, gọi máy chủ ảo do Google cung cấp. Máy
+0010:46 - 0:10:52, này chuyên dùng để tính toán thôi nhưng
+0010:50 - 0:10:55, đây là tính toán cho Machine Learning nên
+0010:52 - 0:10:59, chủ yếu chúng ta sẽ sử dụng cái GPU
+0010:55 - 0:11:03, Nvidia Tesla T4 này. CPU thì chúng ta
+0010:59 - 0:11:06, được cấp ở đây hai CPU core ha. Intel
+0011:03 - 0:11:09, Xeon là dòng CPU cho máy chủ ha. Hầu hết
+0011:06 - 0:11:11, các CPU này có khá là nhiều core nhưng
+0011:09 - 0:11:13, máy chúng ta dùng miễn phí thì chúng ta
+0011:11 - 0:11:16, được mượn hai core để sử dụng thôi. Cấu
+0011:13 - 0:11:19, hình này thì không phải là cao. Với chỉ
+0011:16 - 0:11:21, hai core CPU thì nó còn yếu hơn cái điện
+0011:19 - 0:11:24, thoại di động mà các bạn dùng. Nhưng cái
+0011:21 - 0:11:30, quan trọng nhất chúng ta được xài ké đó
+0011:24 - 0:11:34, là cái GPU Nvidia Tesla T4 này.
+0011:30 - 0:11:36, Đó các bạn có thể Google tìm hiểu thêm về dòng
+0011:34 - 0:11:42, này ha.
+0011:36 - 0:11:45, GPU Tesla T4 có
+0011:42 - 0:11:47, giá bán, chúng ta Google ngẫu nhiên một
+0011:45 - 0:11:51, trang thôi đây cũng không rõ là trang
+0011:47 - 0:11:55, nào đó thì à giá bán khoảng 20 cho đến
+0011:51 - 0:11:57, 25 triệu và đây là hàng xách tay nha các
+0011:55 - 0:12:01, bạn không có bảo hành gì đâu. Đó các bạn
+0011:57 - 0:12:03, thấy cái trang a nếu các bạn thấy cái
+0012:01 - 0:12:05, chỗ bán hàng này nó hơi lạ thì nó cũng
+0012:03 - 0:12:08, khá là bình thường thôi. Đây là hàng
+0012:05 - 0:12:11, xách tay tại vì Nvidia họ không bán cái
+0012:08 - 0:12:13, sản phẩm này trực tiếp cho người tiêu
+0012:11 - 0:12:16, dùng có thể mua được. Họ chỉ bán cho
+0012:13 - 0:12:18, doanh nghiệp hoặc là những cái
+0012:16 - 0:12:21, công ty, những tập đoàn lớn mà họ sẽ mua
+0012:18 - 0:12:24, hàng chục thậm chí là hàng trăm cái GPU
+0012:21 - 0:12:28, này cùng lúc đó. Và họ sẽ gắn vào máy
+0012:24 - 0:12:31, chủ của mình. Sau đó họ sẽ có thể tạo ra
+0012:28 - 0:12:34, các máy ảo ha. Cấp cho mỗi máy ảo một
+0012:31 - 0:12:36, cái GPU như thế này. Đó và cho phép các
+0012:34 - 0:12:40, bạn điều khiển.
+0012:36 - 0:12:43, Rồi đó giá khoảng 20 đến 25 triệu. Có
+0012:40 - 0:12:45, nghĩa là mặc dù máy ảo này cấu hình thì
+0012:43 - 0:12:47, không cao, yếu hơn cái điện thoại di
+0012:45 - 0:12:50, động nhưng riêng con
+0012:47 - 0:12:52, GPU này không thì giá xách tay và thật
+0012:50 - 0:12:57, có khi là hàng second hand nữa là đã cao
+0012:52 - 0:12:57, hơn laptop của một số bạn rồi.
+0012:57 - 0:13:05, Thì đây là lợi ích chính mà chúng ta sẽ
+0013:01 - 0:13:06, có thể được tận dụng của Google Colab
+0013:05 - 0:13:09, ha.
+0013:06 - 0:13:11, Đó là các thư viện họ hỗ trợ sẵn, chúng
+0013:09 - 0:13:14, ta không phải mất công cài và tài nguyên
+0013:11 - 0:13:19, tính toán mà chúng ta người bình thường
+0013:14 - 0:13:19, rất khó có thể tiếp cận được.
+0013:21 - 0:13:33, [âm nhạc]

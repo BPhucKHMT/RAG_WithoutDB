@@ -1,0 +1,283 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:18, Chào mừng các bạn đến với môn học CS114
+0:00:15 - 0:00:20, học máy. Và chúng ta sẽ cùng đến với một
+0:00:18 - 0:00:23, trong những bài học rất là thú vị đó
+0:00:20 - 0:00:25, chính là phân cụm hay clustering. Thì
+0:00:23 - 0:00:28, phân cụm là một trong những cái thuật
+0:00:25 - 0:00:31, toán mà nằm trong cái nhóm đó là học
+0:00:28 - 0:00:31, không giám sát.
+0:00:34 - 0:00:39, Và nếu mà xét về cái tính ứng dụng của
+0:00:37 - 0:00:41, học không giám sát thì nó sẽ có cái tính
+0:00:39 - 0:04:43, ứng dụng rất là cao. Lý do đó là vì hiện
+0:00:41 - 0:00:47, nay chúng ta thấy là với cái sự phát
+0:00:43 - 0:00:49, triển của mạng xã hội và internet thì
+0:00:47 - 0:00:52, cái dữ liệu trên internet có rất là
+0:00:49 - 0:00:55, nhiều. Tuy nhiên đại đa số trong đó là
+0:00:52 - 0:00:57, dữ liệu không có gán nhãn. Và chính vì
+0:00:55 - 0:00:59, cái dữ liệu không có gán nhãn thì nó sẽ
+0:00:57 - 0:01:02, thúc đẩy cho cái việc ứng dụng các cái
+0:00:59 - 0:01:05, thuật toán học không giám sát mà cụ thể
+0:01:02 - 0:01:08, đó là thuật toán phân cụm. Nó có rất
+0:01:05 - 0:01:09, nhiều đất để dụng vỏ.
+0:01:08 - 0:01:12, Trước khi đi vào chi tiết thì chúng ta
+0:01:09 - 0:01:14, sẽ cùng à ôn lại, nhắc lại một số cái
+0:01:12 - 0:01:17, khái niệm. Đầu tiên đó là khái niệm học
+0:01:14 - 0:01:19, có giám sát. học có giám sát hay còn gọi
+0:01:17 - 0:01:22, là supervised learning là chúng ta sẽ tìm
+0:01:19 - 0:01:24, cách để ước lượng cái hàm phân loại hoặc
+0:01:22 - 0:01:28, là cái hàm hồi quy. Đối với cái hàm phân
+0:01:24 - 0:01:30, loại thì chúng ta sẽ à có cái đầu ra đó
+0:01:28 - 0:01:34, là một cái giá trị thuộc về một cái phân
+0:01:30 - 0:01:35, lớp nào đó. Còn hồi quy thì đầu ra của
+0:01:34 - 0:01:39, cái hàm của mình nó sẽ là một cái giá
+0:01:35 - 0:01:41, trị dự đoán liên tục. Và cái việc ước
+0:01:39 - 0:01:44, lượng các hàm phân loại hoặc hồi quy này
+0:01:41 - 0:01:47, thì nó sẽ được dựa trên các cái cặp dữ
+0:01:44 - 0:01:49, liệu. các cái cặp dữ liệu có cái nhãn
+0:01:47 - 0:01:52, thì nhãn ở đây trong trường hợp này đó
+0:01:49 - 0:01:57, chính là giá trị Y. Thì Y ở đây nó được
+0:01:52 - 0:01:57, gọi là nhãn hay còn gọi là label.
+0:01:57 - 0:02:03, Và ở trên hình ví dụ ở đây chúng ta thấy
+0:02:00 - 0:02:05, là các cái tập à các cái điểm của mình
+0:02:03 - 0:02:08, sẽ được gán bởi hai cái nhãn đó là hình
+0:02:05 - 0:02:11, tròn và chữ X thì tương ứng là hai cái
+0:02:08 - 0:02:14, phân lớp. Và tập dữ liệu huấn luyện của
+0:02:11 - 0:02:16, mình thì bao gồm là x1, y1. Trong đó cái
+0:02:14 - 0:02:18, chỉ số ở phía trên là cho biết cái thứ
+0:02:16 - 0:02:22, tự của cái mẫu dữ liệu của mình. Đây là
+0:02:18 - 0:02:24, mẫu dữ liệu thứ à đây là mẫu
+0:02:22 - 0:02:26, thứ
+0:02:24 - 0:02:29, thứ nhất.
+0:02:26 - 0:02:32, Đó cái chỉ số ở trên là để thể hiện cái mẫu
+0:02:29 - 0:02:35, thứ mấy và tập dữ liệu này thì gồm có m
+0:02:32 - 0:02:38, mẫu. Thế thì với cái ví dụ này thì chúng
+0:02:35 - 0:02:40, ta có thể dễ dàng thấy là cái hàm à phân
+0:02:38 - 0:02:42, loại nếu mà sử dụng mô hình hồi quy tuyến
+0:02:40 - 0:02:44, tính nó sẽ tìm ra được một cái đường để
+0:02:42 - 0:02:47, phân tách hai cái tập điểm này ra làm
+0:02:44 - 0:02:49, hai một cách rất là dễ dàng là vì chúng
+0:02:47 - 0:02:52, ta đã có nhãn rồi. Bây giờ nhiệm vụ của
+0:02:49 - 0:02:55, chúng ta chỉ là đi tìm cái đường phân
+0:02:52 - 0:02:57, phân biệt giữa hai cái tập điểm này.
+0:02:55 - 0:03:01, Đối với học không giám sát thì chúng ta
+0:02:57 - 0:03:03, sẽ học từ cái dữ liệu mà không có
+0:03:01 - 0:03:05, không có gán nhãn. Hay nói cách khác là
+0:03:03 - 0:03:08, ở trong học có giám sát thì chúng ta sẽ
+0:03:05 - 0:03:10, cần một cái cặp là X và Y. Thì ở đây
+0:03:08 - 0:03:14, chúng ta không có cái dữ liệu Y mà chúng
+0:03:10 - 0:03:17, ta chỉ có dữ liệu X thôi. Và chúng ta sẽ
+0:03:14 - 0:03:20, phải à học như thế nào để xác định được
+0:03:17 - 0:03:23, cái cấu trúc và cái phân bố của dữ liệu.
+0:03:20 - 0:03:25, Thì trên hình chúng ta thấy cái dữ liệu
+0:03:23 - 0:03:26, của mình cũng là tương tự như học có
+0:03:25 - 0:03:29, giám sát nhưng ở đây chúng ta không hề
+0:03:26 - 0:03:32, có nhãn và tất cả đều được gán bằng cái
+0:03:29 - 0:03:35, màu màu đen. Thế thì nhiệm vụ của chúng
+0:03:32 - 0:03:37, ta đó là phải tìm cách xác định được cái
+0:03:35 - 0:03:40, phân bố của cái dữ liệu này nó có tính
+0:03:37 - 0:03:42, chất như thế nào. Đó X ở đây chúng ta sẽ
+0:03:40 - 0:03:46, không có cái Y. Ở đây không có Y mà chỉ
+0:03:42 - 0:03:46, có X thôi.
+0:03:48 - 0:03:54, Rồi thì cái việc xác định phân bố nó sẽ
+0:03:51 - 0:03:57, dẫn đến chúng ta đến các cái bài toán đó
+0:03:54 - 0:03:59, là ví dụ như các cái điểm này chúng ta
+0:03:57 - 0:04:01, thấy là nó sẽ co cụm lại với nhau thì
+0:03:59 - 0:04:03, chúng ta sẽ gom nó lại thành một cụm.
+0:04:01 - 0:04:04, Rồi các cái điểm này thì nó co cụm với
+0:04:03 - 0:04:07, nhau thì chúng ta sẽ gom lại thành một
+0:04:04 - 0:04:09, cụm. Thì đây là một cái ví dụ để minh
+0:04:07 - 0:04:13, họa cho cái việc đó là học không giám
+0:04:09 - 0:04:14, sát và xác định phân phân bố nó có liên
+0:04:13 - 0:04:17, quan như thế nào đến cái bài toán phân
+0:04:14 - 0:04:20, cụm của mình sẽ được nói chi tiết ở phía
+0:04:17 - 0:04:20, sau.
+0:04:22 - 0:04:27, Và dữ liệu ở đây thì chúng ta sẽ được
+0:04:24 - 0:04:29, gom thành hai cái cụm riêng biệt. Và à
+0:04:27 - 0:04:31, các cái thuật toán gom cụm thì có rất
+0:04:29 - 0:04:34, nhiều cái thuật toán khác nhau. Trong đó
+0:04:31 - 0:04:36, thì nổi tiếng nhất có thể kể đến đó là
+0:04:34 - 0:04:38, các thuật toán như là K-means hoặc là
+0:04:36 - 0:04:40, clustering. Và các cái thuật toán này
+0:04:38 - 0:04:43, thì đều có cái tính ứng dụng rất là cao
+0:04:40 - 0:04:46, trong thực tiễn. À nói về cái lĩnh vực
+0:04:43 - 0:04:49, về khoa học dữ liệu hoặc là khai thác dữ
+0:04:46 - 0:04:49, liệu.
+0:04:53 - 0:04:58, Thì cái việc áp dụng thuật toán gom cụm
+0:04:55 - 0:05:00, nó sẽ giúp cho chúng ta có thể xác định
+0:04:58 - 0:05:02, được cái phân khúc của thị trường. À ví
+0:05:00 - 0:05:04, dụ như chúng ta có thể xác định được cái
+0:05:02 - 0:05:07, phân khúc khách hàng của mình là thuộc
+0:05:04 - 0:05:10, nhóm nào. Ví dụ như nhóm là à trung cấp,
+0:05:07 - 0:05:12, nhóm cao cấp hoặc là nhóm bình dân. Ví
+0:05:10 - 0:05:16, dụ vậy. Hoặc là ví dụ như trong một lớp
+0:05:12 - 0:05:19, học khi chúng ta à có một cái điểm à của
+0:05:16 - 0:05:22, một cái bạn sinh viên thì chúng ta sẽ
+0:05:19 - 0:05:25, xếp loại xem sinh viên đó là điểm trung
+0:05:22 - 0:05:27, bình khá hay là giỏi xuất sắc. À cũng có
+0:05:25 - 0:05:30, một cái ví dụ thú vị để cho chúng ta
+0:05:27 - 0:05:33, biết thế nào gọi là học không giám sát
+0:05:30 - 0:05:37, trên cái phân bố của dữ liệu. Giả sử như
+0:05:33 - 0:05:41, chúng ta có điểm của một bạn học sinh
+0:05:37 - 0:05:41, điểm ví dụ điểm trung bình ha.
+0:05:42 - 0:05:47, Rồi điểm trung bình của bạn này đó là à
+0:05:45 - 0:05:50, 8 điểm
+0:05:47 - 0:05:52, 8,5 đi
+0:05:50 - 0:05:55, thì chúng ta được yêu cầu là xác định
+0:05:52 - 0:05:58, xem bạn này là thuộc cái phân khúc là
+0:05:55 - 0:06:01, trung bình khá hay yếu thì chúng ta có
+0:05:58 - 0:06:04, thể xác định được hay không?
+0:06:01 - 0:06:08, Thì câu trả lời đó là với chỉ có duy
+0:06:04 - 0:06:10, nhất điểm của một bạn học sinh là 8,5,
+0:06:08 - 0:06:14, chúng ta sẽ không thể biết được người
+0:06:10 - 0:06:15, sinh viên này là giỏi khá hay yếu. À
+0:06:14 - 0:06:18, chúng ta chỉ có thể biết được cái điểm
+0:06:15 - 0:06:21, trung bình này là giỏi khá à xuất sắc
+0:06:18 - 0:06:24, hay yếu khi chúng ta đặt nó trong cái
+0:06:21 - 0:06:28, phân bố của tất cả những cái bạn còn lại
+0:06:24 - 0:06:31, trong lớp. Ví dụ nếu như chúng ta có cái
+0:06:28 - 0:06:35, phân bố như thế này và cái điểm 8,5 của
+0:06:31 - 0:06:40, bạn á là nó nằm ở đây
+0:06:35 - 0:06:42, thì bạn là giỏi. Nhưng nếu ở một cái
+0:06:40 - 0:06:45, cách tính điểm khác hoặc là một cái
+0:06:42 - 0:06:48, trường à trường học khác cái phân bố của
+0:06:45 - 0:06:52, mình nó không phải như vậy. À giả sử
+0:06:48 - 0:06:55, điểm 8,5 nó lại nằm ở đây
+0:06:52 - 0:06:57, thì có một số trường ví dụ như họ tính
+0:06:55 - 0:06:59, cái thang điểm của mình là trên 100 đi
+0:06:57 - 0:07:02, chẳng hạn
+0:06:59 - 0:07:05, thì 8,5 nó sẽ là yếu.
+0:07:02 - 0:07:09, Rồi cũng có một số trường thì họ lại
+0:07:05 - 0:07:09, tính theo cái hệ là là 20.
+0:07:10 - 0:07:17, Ví dụ đây là từ 0 cho đến 20 và 8,5 của
+0:07:14 - 0:07:19, mình đó là nằm ở đây thì lúc này đó là
+0:07:17 - 0:07:21, trung bình. Như vậy thì muốn biết, muốn
+0:07:19 - 0:07:23, phân
+0:07:21 - 0:07:25, phân cụm được hoặc là xác định được cái
+0:07:23 - 0:07:29, phân khúc của cái bạn học sinh này thì
+0:07:25 - 0:07:31, chúng ta phải đặt bạn đó ở bên trong cái
+0:07:29 - 0:07:34, phân bố của điểm của tất cả những bạn
+0:07:31 - 0:07:35, còn lại trong lớp.
+0:07:34 - 0:07:37, Ờ ngoài ứng dụng trong cái việc là xác
+0:07:35 - 0:07:39, định phân khúc thị trường hoặc là xác
+0:07:37 - 0:07:41, định cái
+0:07:39 - 0:07:43, phân khúc của một bạn học sinh trong lớp
+0:07:41 - 0:07:45, học thì chúng ta còn có những cái ứng
+0:07:43 - 0:07:49, dụng khác. Ví dụ như là phân tích thiên
+0:07:45 - 0:07:53, văn hoặc là à trong cái phân tích về à
+0:07:49 - 0:07:55, sinh học thông tin, sinh tin học à
+0:07:53 - 0:07:57, ví dụ như là xác định cái chuỗi DNA để
+0:07:55 - 0:08:02, xác định xem là cái người này có những
+0:07:57 - 0:08:04, cái khả năng là à thuộc cái nhóm DNA có
+0:08:02 - 0:08:07, thể mắc những cái bệnh nào. Ví dụ vậy.
+0:08:04 - 0:08:09, rồi phân tích mạng xã hội để xem coi một
+0:08:07 - 0:08:11, cái à người
+0:08:09 - 0:08:14, trên một cái người dùng trong mạng xã
+0:08:11 - 0:08:17, hội sẽ nằm trong một cái phân khúc nào.
+0:08:14 - 0:08:19, Ví dụ như là đây là tập hợp à những cái
+0:08:17 - 0:08:21, bạn mà
+0:08:19 - 0:08:24, những cái người dùng trên mạng xã hội mà
+0:08:21 - 0:08:26, à có cái mối quan hệ bạn bè với nhau ví
+0:08:24 - 0:08:29, dụ vậy. Rồi sau đó thì chúng ta sẽ lại
+0:08:26 - 0:08:31, có một cái phân khúc
+0:08:29 - 0:08:33, là cũng cái người đó nhưng mà lại nằm
+0:08:31 - 0:08:35, trong một cái hội nhóm về kinh doanh. Ví
+0:08:33 - 0:08:38, dụ vậy. Thế thì
+0:08:35 - 0:08:42, cái việc mà clustering có thể là chúng
+0:08:38 - 0:08:46, ta sẽ cluster cứng hoặc là cluster mềm.
+0:08:42 - 0:08:48, Cứng tức là một điểm thì nó thuộc về một
+0:08:46 - 0:08:50, cụm thôi. Nhưng cũng có thể là cluster
+0:08:48 - 0:08:53, mềm tức là một điểm nó sẽ thuộc về cả
+0:08:50 - 0:08:55, hai cụm. Đó thì nó sẽ tùy thuộc vào cái
+0:08:53 - 0:08:58, ngữ cảnh ứng dụng.
+0:08:55 - 0:09:02, Và chúng ta sẽ phát biểu cái vấn đề đó
+0:08:58 - 0:09:04, là với một tập hợp các cái điểm dữ liệu
+0:09:02 - 0:09:07, à chúng ta hãy nhóm chúng thành các cái
+0:09:04 - 0:09:11, cụm sao cho các cái điểm mà trong cùng
+0:09:07 - 0:09:15, một cụm thì có cái phân bố gần nhau. Còn
+0:09:11 - 0:09:19, các cái điểm mà à các cái cụm mà khác
+0:09:15 - 0:09:21, nhau thì nó sẽ phân bố xa.
+0:09:19 - 0:09:25, Các cùng một cụm thì nó sẽ gần. Ví dụ
+0:09:21 - 0:09:26, như những cái điểm này thì là nằm ở gần
+0:09:25 - 0:09:32, nhau thì chúng ta sẽ gom lại thành một
+0:09:26 - 0:09:32, cụm. Nhưng với những cái điểm khác
+0:09:35 - 0:09:40, rồi thì chúng ta thấy là đây là hai cái
+0:09:37 - 0:09:42, cụm khác nhau và hai cái cụm khác nhau
+0:09:40 - 0:09:43, này thì à hai ở hai cái điểm mà ở hai
+0:09:42 - 0:09:46, cụm khác nhau này thì chúng ta sẽ thấy
+0:09:43 - 0:09:48, là cái khoảng cách nó xa nhau. Nó có cái
+0:09:46 - 0:09:50, phân bố xa nhau. Còn những cái điểm mà
+0:09:48 - 0:09:53, nằm trong cùng một cụm thì nó sẽ có cái
+0:09:50 - 0:09:56, phân bố có cái tính phân bố là nó co cụm
+0:09:53 - 0:09:59, và nó gần nhau. Và thông thường thì các
+0:09:56 - 0:10:02, cái điểm nằm trong không gian nhiều
+0:09:59 - 0:10:04, chiều thì cái độ đo mà được sử dụng để
+0:10:02 - 0:10:08, xác định xem cái tính gần nhau đó chính
+0:10:04 - 0:10:10, là các cái độ đo về khoảng cách.
+0:10:08 - 0:10:12, Và nổi tiếng nhất có thể nói là độ đo
+0:10:10 - 0:10:15, khoảng cách về Euclidean hoặc là khoảng cách
+0:10:12 - 0:10:17, về cosin. Lưu ý là cosin thì ban đầu
+0:10:15 - 0:10:19, được sử dụng để làm độ đo tương đồng.
+0:10:17 - 0:10:23, Tuy nhiên chúng ta sẽ có cái phiên bản
+0:10:19 - 0:10:26, là cosin để tính cái khoảng cách bằng
+0:10:23 - 0:10:29, cách là đảo cái trình tự của nó lại rồi
+0:10:26 - 0:10:32, độ đo ch vân vân.
+0:10:29 - 0:10:35, Và các cái khía cạnh cần phải quan tâm
+0:10:32 - 0:10:38, của một cái thuật toán gom của cái việc
+0:10:35 - 0:10:40, gom cụm đó là à thuật toán phân cụm
+0:10:38 - 0:10:43, thì chúng ta có thể là phân cụm theo
+0:10:40 - 0:10:48, kiểu là phân hoạch hay là partitional
+0:10:43 - 0:10:50, clustering. thì à một cái à phân cụm
+0:10:48 - 0:10:54, được gọi là phân hoạch. Thì khi chúng ta
+0:10:50 - 0:10:54, có các cái điểm dữ liệu
+0:10:55 - 0:11:01, và chúng ta sẽ chia nó thành các cái
+0:11:01 - 0:11:03, nhóm mà nó rời nhau hoàn toàn, tức là
+0:11:01 - 0:11:06, không có cái tình trạng điểm này sẽ nằm
+0:11:03 - 0:11:07, chung cụm với lại cái điểm kia. Đó thì
+0:11:06 - 0:11:10, cái đây là cái ví dụ mà chúng ta đã đề
+0:11:07 - 0:11:14, cập như hồi nãy. Thì chúng ta thấy là
+0:11:10 - 0:11:16, cái điểm A ở đây thì nó sẽ thuộc cái
+0:11:14 - 0:11:19, cluster số 1.
+0:11:16 - 0:11:22, Còn cái điểm A này nó sẽ không thuộc cái
+0:11:19 - 0:11:24, cluster số 2. Tương tự như vậy các cái
+0:11:22 - 0:11:27, điểm B bên đây thì nó chỉ thuộc cái
+0:11:24 - 0:11:30, cluster số 2 nhưng lại không được phép
+0:11:27 - 0:11:31, thuộc cái cluster số 1. Thì đây là phân
+0:11:30 - 0:11:35, hoạch theo kiểu là rõ ràng. Phân hoạch
+0:11:31 - 0:11:38, tức là à phân cụm theo kiểu cứng. Còn
+0:11:35 - 0:11:40, một cái kiểu nữa đó là phân cụm phân cấp
+0:11:38 - 0:11:43, hierarchical clustering. Thì ở đây chúng
+0:11:40 - 0:11:45, ta sẽ gom có thể là có nhiều cái chiến
+0:11:43 - 0:11:48, thuật gom gom từ trên xuống hoặc là gom
+0:11:45 - 0:11:50, từ dưới lên top down hoặc là bottom up.
+0:11:48 - 0:11:53, Nhưng mà cái ý tưởng chung của nó đó là
+0:11:50 - 0:11:57, một điểm của mình thì có thể được phân
+0:11:53 - 0:12:00, cụm vào à nhiều nhóm khác nhau. Và cái
+0:11:57 - 0:12:04, nhóm này thì nó có cái kiểu là phân tầng.
+0:12:00 - 0:12:07, Ví dụ ở đây chúng ta sẽ à có một điểm
+0:12:04 - 0:12:12, điểm này, điểm A này nè, điểm A này thì
+0:12:07 - 0:12:14, có thể thuộc cái cụm này nhưng đồng thời
+0:12:12 - 0:12:17, chúng ta cái điểm A đó nó cũng có thể là
+0:12:14 - 0:12:19, thuộc cái cụm lớn ở bên ngoài. Đó, như
+0:12:17 - 0:12:21, vậy là một cái điểm A thì có thể là
+0:12:19 - 0:12:23, thuộc cụm nhỏ nhưng cũng đồng thời có
+0:12:21 - 0:12:26, thể thuộc cụm cụm lớn và cụm lớn nó sẽ
+0:12:23 - 0:12:30, chứa cái cụm nhỏ là kiểu phân tầng.
+0:12:26 - 0:12:32, Và à cái khía cạnh khác của phân cụm đó
+0:12:30 - 0:12:34, là liên quan đến cái độ đo khoảng cách
+0:12:32 - 0:12:36, thì chúng ta đã nói rồi ở trong cái
+0:12:34 - 0:12:39, slide trước là khoảng cách chúng ta có
+0:12:36 - 0:12:41, thể sử dụng nhiều cái loại à à độ đo
+0:12:39 - 0:12:44, khoảng cách khác nhau hoặc là chúng ta
+0:12:41 - 0:12:47, sử dụng cái độ đo về mặt tương đồng.
+0:12:44 - 0:12:49, Rồi chất lượng của phân cụm
+0:12:47 - 0:12:52, thì khoảng cách giữa các cụm sẽ được tối
+0:12:49 - 0:12:55, đa hóa. Các cái cụm của mình sẽ thông
+0:12:52 - 0:12:59, thường là sẽ được à tối đa
+0:12:55 - 0:13:02, hóa. Còn khoảng cách mà à trong cùng cụm
+00:59 - 0:13:03, thì thường được là tối thiểu hóa. Tức là
+0:13:02 - 0:13:07, những cái điểm nào mà trong cùng một cái
+0:13:03 - 0:13:09, nhóm thì nó sẽ co cụm lại với nhau. Còn
+0:13:07 - 0:13:11, những cái điểm nào mà có tính chất khác
+0:13:09 - 0:13:14, biệt hoàn toàn thì nó sẽ tối đa hóa cái
+0:13:11 - 0:13:26, khoảng cách đó.
+0:13:14 - 0:13:26, [âm nhạc]

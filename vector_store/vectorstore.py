@@ -8,7 +8,7 @@ class VectorDB:
     def __init__(self,
                  documents=None,
                  vector_db =Chroma,
-                 embedding=HuggingFaceEmbeddings(model_name="BAAI/bge-m3",model_kwargs={"device": "cuda"}),
+                 embedding=HuggingFaceEmbeddings(model_name="BAAI/bge-m3",model_kwargs={"device": "cpu"}),
     )->None:
         self.vector_db=vector_db
         self.embedding=embedding

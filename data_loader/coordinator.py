@@ -39,7 +39,7 @@ import yaml
 #   LƯU Ý: file này nằm cùng thư mục với coordinator.py
 #   Và bạn CHẠY bằng: python -m loader.coordinator từ root repo
 # ================================================================
-from youtube_fetchers import (
+from .youtube_fetchers import (
     PlaylistMetadataFetch,
     TranscriptAPIFetcher,
     TranscriptWhisperFetcher,

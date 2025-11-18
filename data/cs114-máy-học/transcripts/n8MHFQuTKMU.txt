@@ -1,0 +1,223 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:17, Chúng ta sẽ đến với cái mô hình khuyến
+0:00:15 - 0:00:20, nghị đầu tiên đó là content Bay
+0:00:17 - 0:00:22, Recommendation system. Thì cái ý tưởng
+0:00:20 - 0:00:25, của cái
+0:00:22 - 0:00:27, gợi ý dựa trên nội dung đó là chúng ta
+0:00:25 - 0:00:30, sẽ gợi ý cái sản phẩm có cái nội dung
+0:00:27 - 0:00:33, tương tự với cái sản phẩm mà người dùng
+0:00:30 - 0:00:37, đã thích. Ví dụ à gợi ý quần áo có cùng
+0:00:33 - 0:00:40, phong cách hoặc là màu sắc.
+0:00:37 - 0:00:43, Thì đối với user khi chúng ta thực hiện
+0:00:40 - 0:00:48, cái hành vi mua một cái sản phẩm nào đó
+0:00:43 - 0:00:48, chúng ta sẽ dựa trên cái thuộc tính
+0:00:49 - 0:00:55, đã được mô tả thì cái thuộc tính này nó
+0:00:51 - 0:00:56, sẽ được cung cấp bởi cái nhà à cung cấp
+0:00:55 - 0:00:58, cái sản phẩm này hoặc là cái trang
+0:00:56 - 0:01:00, thương mại điện tử họ sẽ nhập cái dữ
+0:00:58 - 0:01:04, liệu về cái thuộc tính. Ví dụ như đây là
+0:01:00 - 0:01:08, một cái sản phẩm mà có cái à phong cách
+0:01:04 - 0:01:11, thời trang mới với cái bộ màu sắc là màu
+0:01:08 - 0:01:15, xanh. Rồi phong cách này là theo cái
+0:01:11 - 0:01:17, phong cách là cổ trang ví dụ vậy. Thì
+0:01:15 - 0:01:19, các cái thuộc tính này sẽ được ghi nhận
+0:01:17 - 0:01:21, à như là một cái nội dung. Và chúng ta
+0:01:19 - 0:01:24, sẽ dựa trên các cái thông tin thuộc tính
+0:01:21 - 0:01:26, này để đi tìm cái similar style, tức là
+0:01:24 - 0:01:28, những cái sản phẩm có cái phong cách
+0:01:26 - 0:01:31, tương tự với những cái thuộc tính của
+0:01:28 - 0:01:36, sản phẩm đã mua. Và từ đó chúng ta sẽ
+0:01:31 - 0:01:38, gợi ý cho à gợi ý cho người dùng cái sản
+0:01:36 - 0:01:40, phẩm có tính chất tương tự này. Thì cái
+0:01:38 - 0:01:44, quy trình thực hiện một cách tổng quát
+0:01:40 - 0:01:51, đó là à với cái một cái user X khi chúng
+0:01:44 - 0:01:52, ta thu thập những cái ờ đánh giá hoặc là
+0:01:51 - 0:01:56, cái đánh giá này nó có thể là cái số
+0:01:52 - 0:01:59, live của người dùng à trên mạng xã hội
+0:01:56 - 0:02:02, hoặc là cái đơn hàng mà người này đã mua
+0:01:59 - 0:02:05, đó thì chúng ta sẽ ra được cái item
+0:02:02 - 0:02:07, profile. Thì cái line này nó có thể là à
+0:02:05 - 0:02:11, rating. Nó có thể thay bằng rating, tức
+0:02:07 - 0:02:16, là cái đánh giá hoặc là view,
+0:02:11 - 0:02:19, cái số lượt xem hoặc là cái à lượt mua,
+0:02:16 - 0:02:22, mua hàng chính thức là xuống tiền. Đó
+0:02:19 - 0:02:24, thì chúng ta sẽ ra được cái item profile
+0:02:22 - 0:02:29, là chứa những cái
+0:02:24 - 0:02:32, sản phẩm mà cái người user này họ có cái
+0:02:29 - 0:02:37, mối quan tâm cao.
+0:02:32 - 0:02:37, User X có quan tâm.
+0:02:39 - 0:02:46, Rồi sau đó thì chúng ta sẽ tiến hành xây
+0:02:42 - 0:02:49, dựng à một cái user profile dựa trên các
+0:02:46 - 0:02:51, cái thuộc tính của cái item profile. Ví
+0:02:49 - 0:02:55, dụ như là người này có sở thích là màu
+0:02:51 - 0:02:58, xanh, màu hồng vân vân. đó thì à các cái
+0:02:55 - 0:03:02, phong cách thời trang thì từ đó màu sắc
+0:02:58 - 0:03:05, và phong cách thời trang nó sẽ đi so
+0:03:02 - 0:03:08, khớp với lại các cái sản phẩm mà khác ở
+0:03:05 - 0:03:10, trong cái kho hàng của mình để từ đó đi
+0:03:08 - 0:03:12, recommend đi khuyế nghị cho cái người
+0:03:10 - 0:03:15, dùng X này. Thì đây là cái quy trình
+0:03:12 - 0:03:17, tổng quát. Và cái việc xây dựng cái item
+0:03:15 - 0:03:20, profile thì với mỗi một cái sản phẩm hay
+0:03:17 - 0:03:24, item thì ta sẽ có các cái hồ sơ đặc
+0:03:20 - 0:03:27, trưng. Và hồ sơ này là một tập vecơ à
+0:03:24 - 0:03:29, một tập hợp hay còn gọi là một vecơ các
+0:03:27 - 0:03:32, cái đặc điểm nổi bật.
+0:03:29 - 0:03:37, À thì ví dụ đối với phim chúng ta sẽ có
+0:03:32 - 0:03:41, các cái đặc trưng ví dụ như là tác giả
+0:03:37 - 0:03:45, của cái bộ phim này đó tiêu đề của cái
+0:03:41 - 0:03:47, bộ phim này, diễn viên đạo diễn. Tức là
+0:03:45 - 0:03:50, đôi khi chúng ta có những cái danh sách
+0:03:47 - 0:03:54, các cái item profile này nó thể hiện
+0:03:50 - 0:03:57, rằng là cái cái user X này họ rất thích
+0:03:54 - 0:03:59, cái diễn viên ví dụ như thật Tom Cru
+0:03:57 - 0:04:01, chẳng hạn. Tại vì tất cả những cái bộ
+0:03:59 - 0:04:04, phim mà người này coi đều có Tom Ruy
+0:04:01 - 0:04:07, xuất hiện trong đó. Hoặc là à
+0:04:04 - 0:04:09, một cái bộ phim có cái tiêu đề chủ đề về
+0:04:07 - 0:04:11, hành động chẳng hạn. Đó thì người này
+0:04:09 - 0:04:12, thích xem cái chủ đề về hành động hoặc
+0:04:11 - 0:04:14, là người này thích xem cái chủ đề về
+0:04:12 - 0:04:19, tình cảm thì đây sẽ là những cái đặc
+0:04:14 - 0:04:22, trưng ờ hồ sơ đặc trưng đại diện cho cái
+0:04:19 - 0:04:24, user của mình. Rồi đối với văn bản thì
+0:04:22 - 0:04:26, nó sẽ có thể là tập hợp các cái từ quan
+0:04:24 - 0:04:28, trọng trong cái tài liệu của mình. Ví dụ
+0:04:26 - 0:04:31, như chúng ta có một cái đoạn văn bản về
+0:04:28 - 0:04:33, mô tả một cái bộ phim hoặc là tóm tắt về
+0:04:31 - 0:04:35, cái chức năng của một cái sản phẩm nào
+0:04:33 - 0:04:36, đó thì chúng ta sẽ có những từ không
+0:04:35 - 0:04:38, quan trọng và những từ quan trọng. Thì
+0:04:36 - 0:04:40, đối với những cái từ không quan trọng nó
+0:04:38 - 0:04:43, còn gọi là stopw thì chúng ta sẽ lại bỏ
+0:04:40 - 0:04:43, đi.
+0:04:45 - 0:04:49, Chúng ta tìm cách là lại bỏ đi và chỉ
+0:04:47 - 0:04:50, chừa lại những cái từ quan trọng. Thì để
+0:04:49 - 0:04:53, có thể làm được cái chuyện này thì chúng
+0:04:50 - 0:04:57, ta có thể sử dụng cái mô hình à đó là TF
+0:04:53 - 0:04:59, IDF là term frequency à nhân với lại
+0:04:57 - 0:05:02, inverse document frequency. Thì đây là
+0:04:59 - 0:05:05, một cái kỹ thuật để biến một cái văn bản
+0:05:02 - 0:05:07, của mình thành một cái vecơ và vecơ này
+0:05:05 - 0:05:11, thì nó sẽ có đánh trọng số những cái từ
+0:05:07 - 0:05:11, quan trọng.
+0:05:11 - 0:05:16, Và đối với cái hồ sơ người dùng user
+0:05:14 - 0:05:18, profile thì chúng ta có thể dựa trên cái
+0:05:16 - 0:05:21, trung bình trọng số của các cái sản phẩm
+0:05:18 - 0:05:23, mà chúng ta đã đánh giá. Rồi chúng ta có
+0:05:21 - 0:05:24, thể điều chỉnh theo cái độ lệch so với
+0:05:23 - 0:05:26, cái mức độ trung bình của người dùng. Ví
+0:05:24 - 0:05:29, dụ một cách trung bình thì người này
+0:05:26 - 0:05:31, đánh là ba sao. Thì khi đó những cái sản
+0:05:29 - 0:05:33, phẩm, những cái bộ phim mà được đánh giá
+0:05:31 - 0:05:35, là năm sao, tức là trên trung bình rất
+0:05:33 - 0:05:37, là nhiều thì cho thấy là nó thể hiện
+0:05:35 - 0:05:40, được cái sở thích đặc biệt của người
+0:05:37 - 0:05:44, này. Thì chúng ta có thể dựa trên cái
+0:05:40 - 0:05:47, thông tin về à vậ cái việc đánh giá sản
+0:05:44 - 0:05:50, phẩm này giúp cho chúng ta biết được là
+0:05:47 - 0:05:52, cái xu hướng, cái sở thích đặc biệt của
+0:05:50 - 0:05:55, người dùng. Rồi sau đó thì chúng ta sẽ
+0:05:52 - 0:05:58, dùng cái cosin similarity giữa user
+0:05:55 - 0:06:01, profile và các cái item profile. User
+0:05:58 - 0:06:04, profile được xây dựng từ một cái tập hợp
+0:06:01 - 0:06:04, các cái đặc trưng
+0:06:07 - 0:06:12, của các cái item
+0:06:13 - 0:06:20, mà họ đã mua
+0:06:16 - 0:06:20, hoặc là thích
+0:06:20 - 0:06:23, hoặc là quan tâm.
+0:06:25 - 0:06:32, Đó, dựa trên cái user profile này chúng
+0:06:27 - 0:06:34, ta sẽ đi nhân cosin similarity tích tính
+0:06:32 - 0:06:37, cái độ tương đồng cosin với các item
+0:06:34 - 0:06:40, profile khác và sau đó chúng ta sẽ sắp
+0:06:37 - 0:06:42, xếp theo thứ tự giảm dần để từ đó
+0:06:40 - 0:06:46, recommend cho người dùng. Thì cái ưu
+0:06:42 - 0:06:47, điểm của cái content base à filtering đó
+0:06:46 - 0:06:50, là chúng ta sẽ không cần cái dữ liệu của
+0:06:47 - 0:06:52, người khác. Tức là với mỗi người dùng,
+0:06:50 - 0:06:55, với mỗi một cái user, chúng ta chỉ quan
+0:06:52 - 0:06:56, tâm đến cái hành vi của user đó thôi,
+0:06:55 - 0:06:59, không quan tâm đến những hành vi của
+0:06:56 - 0:07:02, người dùng khác. Để tránh cái vấn đề là
+0:06:59 - 0:07:04, à thưa dữ liệu. Rồi nó sẽ phù hợp cho
+0:07:02 - 0:07:07, những cái người mà có cái gu riêng. Tức
+0:07:04 - 0:07:09, là chúng ta ví dụ như chúng ta có hàng
+0:07:07 - 0:07:11, trăm hàng ngàn khách hàng nhưng mà sẽ có
+0:07:09 - 0:07:14, những cái người mà có cái gu riêng hoặc
+0:07:11 - 0:07:15, là những người mà mới lần đầu hoặc là
+0:07:14 - 0:07:18, mới tiếp cận đến cái cửa hàng của mình
+0:07:15 - 0:07:21, thì mình sẽ sẽ khó mà có thể có đủ thông
+0:07:18 - 0:07:24, tin của người này thì nó sẽ không có đi
+0:07:21 - 0:07:27, theo cái số đông và chúng ta có thể gợi
+0:07:24 - 0:07:30, được các cái sản phẩm mới cũng như là ít
+0:07:27 - 0:07:32, phổ biến. Tại vì với những cái sản phẩm
+0:07:30 - 0:07:34, mới và cái sản phẩm ít phổ biến thì nó
+0:07:32 - 0:07:36, sẽ không đi theo cái số đông.
+0:07:34 - 0:07:40, Vì nó mới nên cái chưa có nhiều người
+0:07:36 - 0:07:43, tiếp cận. Chưa có nhiều người tiếp cận
+0:07:40 - 0:07:46, thì thì chúng ta sẽ không bị bias bởi
+0:07:43 - 0:07:48, những cái nhóm người dùng đông đảo và có
+0:07:46 - 0:07:50, thể giải thích được cái gợi ý này của
+0:07:48 - 0:07:52, mình. Tức là các cái hệ thống khuyến
+0:07:50 - 0:07:54, nghị của mình thì không phải là chỉ cho
+0:07:52 - 0:07:57, cái độ chính xác cao mà đôi khi chúng ta
+0:07:54 - 0:07:58, còn phải có thể giải thích được à cái
+0:07:57 - 0:08:01, gợi ý. Tức là khi chúng ta gợi ý cái sản
+0:07:58 - 0:08:04, phẩm đó thì nó có thể giải thích là tại
+0:08:01 - 0:08:08, sao nó chọn sản phẩm đó để gợi ý. Ví dụ
+0:08:04 - 0:08:10, nó gửi cái sản phẩm A và cái vì cái sản
+0:08:08 - 0:08:11, phẩm A này nó có những cái thuộc tính
+0:08:10 - 0:08:14, giống
+0:08:11 - 0:08:17, à nó có những cái thuộc tính
+0:08:14 - 0:08:20, giống với lại những cái sản phẩm
+0:08:17 - 0:08:22, mà cái user X này họ đã từng mua trước
+0:08:20 - 0:08:24, đây.
+0:08:22 - 0:08:27, Nhược điểm của cái hướng tiếp cận
+0:08:24 - 0:08:30, content B à filtering đó chính là khó
+0:08:27 - 0:08:32, xác định được cái đặc điểm là phù hợp.
+0:08:30 - 0:08:36, Lấy ví dụ như đối với những cái bộ phim
+0:08:32 - 0:08:38, thì ngoài cái caption thì nội dung phim
+0:08:36 - 0:08:40, như là video thì chúng ta cũng không có
+0:08:38 - 0:08:42, khai thác được cái cái nội dung bên
+0:08:40 - 0:08:44, trong đó. Nhưng mà đương nhiên với thời
+0:08:42 - 0:08:46, điểm hiện nay với cái thành tựu của Deep
+0:08:44 - 0:08:48, Learning thì từ bộ phim, bản nhạc hoặc
+0:08:46 - 0:08:50, hình ảnh chúng ta có thể rút trích ra
+0:08:48 - 0:08:54, được cái nội dung chính của mình à rút
+0:08:50 - 0:08:56, trích ra được cái đặc trưng một cách à
+0:08:54 - 0:08:58, dễ dàng hơn.
+0:08:56 - 0:09:01, Thay vì là trước đây chúng ta cần phải
+0:08:58 - 0:09:04, được cung cấp bởi một cái bảng tống tắt
+0:09:01 - 0:09:07, tiêu đề à do cái nhà cung cấp phim thì
+0:09:04 - 0:09:09, bây giờ toàn bộ bộ phim có thể được à
+0:09:07 - 0:09:13, rút sách đặc trưng nhờ các cái học sau
+0:09:09 - 0:09:13, những cái đặc trưng học sau.
+0:09:17 - 0:09:22, Rồi đối với người dùng mới thì chúng ta
+0:09:19 - 0:09:23, sẽ khó tạo hồ sơ khi chưa có dữ liệu.
+0:09:22 - 0:09:26, Thì cái này cũng quá rõ ràng khi chúng
+0:09:23 - 0:09:29, ta mới lần đầu à người đ mới tạo tài
+0:09:26 - 0:09:32, khoản chúng ta gần như là không có thông
+0:09:29 - 0:09:34, tin gì về người này thì đôi khi à đối
+0:09:32 - 0:09:37, với người dùng mới chúng ta có thể gửi
+0:09:34 - 0:09:39, cho họ đó là các cái sản phẩm mà thuộc à
+0:09:37 - 0:09:42, cộng đồng có tính chất cộng đồng tức là
+0:09:39 - 0:09:44, top 10 những cái sản phẩm mà được mua
+0:09:42 - 0:09:47, bán gần nhất trong cái thời gian gần đây
+0:09:44 - 0:09:49, tại vì chúng ta không có thông tin và
+0:09:47 - 0:09:51, cái cách làm content bay này thì vô hình
+0:09:49 - 0:09:53, chung nó đã khóa chặt cái go hiện tại.
+0:09:51 - 0:09:56, Tức là nó cứ gợi ý những cái sản phẩm mà
+0:09:53 - 0:09:59, người này đã từng mua, đã từng quan tâm.
+0:09:56 - 0:10:02, Nó sẽ không khai phóng, nó sẽ không
+0:09:59 - 0:10:05, thoát ra được cái gu của cái người đó.
+0:10:02 - 0:10:07, Đó chỉ gợi ý quanh quẩn nè những cái gì
+0:10:05 - 0:10:09, mà người ta đã thích, không mở rộng sang
+0:10:07 - 0:10:10, lĩnh vực mới, không tận dụng được cái
+0:10:09 - 0:10:13, đánh giá hoặc là cái chất lượng từ cộng
+0:10:10 - 0:10:15, đồng. Thì vì cái ưu điểm cũng là cái
+0:10:13 - 0:10:16, khuyết điểm ha. Đối với cái ưu điểm thì
+0:10:15 - 0:10:17, nó không cần dữ liệu của người khác
+0:10:16 - 0:10:20, nhưng cái khuyết điểm đó là nó không
+0:10:17 - 0:10:25, khai thác được à nó không tận dụng được
+0:10:20 - 0:10:25, cái đánh giá từ cộng đồng.
+0:10:26 - 0:10:38, [âm nhạc]

@@ -1,0 +1,156 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:19, Thì ở đây chúng ta sẽ có một cái ví dụ
+0:00:16 - 0:00:21, về giảm chiều dữ liệu tuyến tính
+0:00:19 - 0:00:23, là cho một cái tập dữ liệu gồm có năm
+0:00:21 - 0:00:26, điểm trong cái không gian 2D như hình
+0:00:23 - 0:00:30, vẽ. Và chúng ta hãy giảm chiều dữ liệu
+0:00:26 - 0:00:32, về à cái không gian một chiều 1D. sao
+0:00:30 - 0:00:35, cho các cái điểm nó vẫn có cái sự phân
+0:00:32 - 0:00:38, biệt tốt. Thì ở đây chúng ta sẽ thử một
+0:00:35 - 0:00:42, vài cái phương án. Phương án đầu tiên đó
+0:00:38 - 0:00:46, là chúng ta sẽ chọn à cái không gian một
+0:00:42 - 0:00:48, chiều là một cái trục số như thế này,
+0:00:46 - 0:00:50, là một cái đường thẳng như thế này. Và
+0:00:48 - 0:00:51, tất cả các cái điểm trong cái không gian
+0:00:50 - 0:00:53, hai chiều ban đầu chúng ta sẽ thực hiện
+0:00:51 - 0:00:55, cái phép chiếu xuống. Tại vì bản chất
+0:00:53 - 0:00:57, của giảm chiều tiếng tính nó chính là
+0:00:55 - 0:01:00, cái phép chiếu. Phép chiếu thì cái điểm
+0:00:57 - 0:01:03, này sẽ được chiếu về cái điểm này. Điểm
+0:01:00 - 0:01:05, này thì sẽ được chiếu về cái điểm này và
+0:01:03 - 0:01:10, điểm này thì sẽ chiếu về điểm này. Vân
+0:01:05 - 0:01:12, vân. Thì ở đây chúng ta sẽ để ý là cái à
+0:01:10 - 0:01:14, với cái việc mà chúng ta chiếu lên trên
+0:01:12 - 0:01:16, cái đường thẳng này thì chúng ta thấy là
+0:01:14 - 0:01:22, cái cái hình chiếu của nó nó sẽ dao động
+0:01:16 - 0:01:24, trong một cái khoảng à khá là hẹp.
+0:01:22 - 0:01:27, khá là hẹp. Hay nói một cách khác đó là
+0:01:24 - 0:01:30, cái phương sai của mình nó nhỏ. Mà cái
+0:01:27 - 0:01:33, phương sai nó nhỏ thì nó sẽ làm giảm cái
+0:01:30 - 0:01:35, khả năng phân biệt giữa các cái điểm với
+0:01:33 - 0:01:37, nhau. Chúng ta sẽ khó phân biệt được
+0:01:35 - 0:01:40, điểm này với điểm này tại vì nó cứ co
+0:01:37 - 0:01:42, cụm về à nó cứ co cụm về một cái khu vực
+0:01:40 - 0:01:44, rất là nhỏ giống như là nó rất là chật
+0:01:42 - 0:01:45, chội á.
+0:01:44 - 0:01:48, dùng một cái từ nó hơi mang tính chất
+0:01:45 - 0:01:50, không gian đó là nó chật chội. Thì cái
+0:01:48 - 0:01:51, việc chật chội này nó sẽ là làm cho các
+0:01:50 - 0:01:56, cái điểm dữ liệu sau khi chúng ta chiếu
+0:01:51 - 0:01:58, xong nó sẽ mất đi cái tính phân biệt.
+0:01:56 - 0:02:01, Trong khi đó chúng ta sẽ chọn một cái
+0:01:58 - 0:02:05, không gian 1D khác đó là cái đường thẳng
+0:02:01 - 0:02:08, này. Thì khi chúng ta chiếu xuống dưới à
+0:02:05 - 0:02:10, chiếu cái điểm này xuống
+0:02:08 - 0:02:12, thì chúng ta thấy là các cái điểm sau
+0:02:10 - 0:02:15, khi chúng ta chiếu lên trên cái không
+0:02:12 - 0:02:17, gian một chiều này nó rất là thưa. Đúng
+0:02:15 - 0:02:19, không? từ trái sang phải chúng ta thấy
+0:02:17 - 0:02:23, rằng rất là thưa.
+0:02:19 - 0:02:25, Tức là nó sẽ tạo ra cho chúng ta một cái
+0:02:23 - 0:02:27, dư địa để giúp cho chúng ta có thể dễ
+0:02:25 - 0:02:30, dàng phân biệt được cái điểm này với cái
+0:02:27 - 0:02:32, điểm kia. Trong khi đó với cái phương án
+0:02:30 - 0:02:34, số một chúng ta thấy là các cái điểm nó
+0:02:32 - 0:02:36, cứ chi chích đó có thể là trùng lắp. Ví
+0:02:34 - 0:02:39, dụ chúng ta thấy là hai cái điểm này nè
+0:02:36 - 0:02:41, là nó gần trùng lắp với nhau. Hai điểm
+0:02:39 - 0:02:44, này thì gần chạm với nhau. Trong khi đó
+0:02:41 - 0:02:46, khi chiếu lên cái không gian à mới này
+0:02:44 - 0:02:47, thì cái lựa chọn số hai này chúng ta
+0:02:46 - 0:02:49, thấy các cái điểm nó rất là phân biệt
+0:02:47 - 0:02:52, nhau.
+0:02:49 - 0:02:55, Và kết luận đó là chúng ta sẽ cần phải
+0:02:52 - 0:02:58, xác định cái hướng chiếu. Cần xác định
+0:02:55 - 0:03:00, hướng chiếu sao cho các cái điểm dữ liệu
+0:02:58 - 0:03:02, trên cái không gian mới nó có cái phương
+0:03:00 - 0:03:05, size lớn.
+0:03:02 - 0:03:07, Và à chúng ta sẽ có một cái thuục toán
+0:03:05 - 0:03:10, đầu tiên đó chính là thuậc toán PCA là
+0:03:07 - 0:03:12, viết tắt của chữ principal components
+0:03:10 - 0:03:15, analysis analysis tức là phân tích các
+0:03:12 - 0:03:18, cái thành phần chính. Thì đây là một cái
+0:03:15 - 0:03:20, kỹ thuật để à giảm chiều tuyến tính với
+0:03:18 - 0:03:22, cái mục tiêu đó là chuyển đổi các cái
+0:03:20 - 0:03:24, đặc trưng góc thành các cái đặc trưng
+0:03:22 - 0:03:26, mới. À thành các cái đặc trưng mới sao
+0:03:24 - 0:03:29, cho các cái đặc trưng mới này không
+0:03:26 - 0:03:32, trồng chéo lên nhau. Nó sẽ không trồng
+0:03:29 - 0:03:35, chéo lên nhau và giữ lại hầu hết nó sẽ
+0:03:32 - 0:03:37, giữ lại hầu hết các cái khác biệt cái sự
+0:03:35 - 0:03:40, khác biệt trong cái dữ liệu góc của
+0:03:37 - 0:03:43, mình. Đó thì đây là cái tính chất mà
+0:03:40 - 0:03:45, thuật toán PCA nó giúp cho chúng ta sau
+0:03:43 - 0:03:48, khi chúng ta đã giảm chiều dữ liệu. Và
+0:03:45 - 0:03:51, PCA thì nó sẽ sử dụng cái công cụ đó là
+0:03:48 - 0:03:53, đại số tiếng tính để biến đổi dữ liệu
+0:03:51 - 0:03:56, của mình thành các cái thành phần à trực
+0:03:53 - 0:03:59, giao thành các cái tập hợp các cái thành
+0:03:56 - 0:04:02, phần trực giao hay còn gọi là các cái
+0:03:59 - 0:04:04, thành phần chính. Và các cái đặc trưng
+0:04:02 - 0:04:06, nó sẽ tìm ra các cái đặc trưng này bằng
+0:04:04 - 0:04:09, cách đó là tính toán tính toán các cái
+0:04:06 - 0:04:12, vecơ riêng. à vecơ riêng để chỉ hướng và
+0:04:09 - 0:04:15, các cái giá trị riêng để thể hiện cái
+0:04:12 - 0:04:18, tầm quan trọng của các cái dữ liệu trên
+0:04:15 - 0:04:21, cái từng cái thành phần trực giao này từ
+0:04:18 - 0:04:25, cái ma trận hiệp phương sai và PCA thì
+0:04:21 - 0:04:27, là chọn các cái thành phần
+0:04:25 - 0:04:29, hàng đầu chọn các thành phần hàng đầu có
+0:04:27 - 0:04:32, cái giá trị trị riêng cao nhất tức là
+0:04:29 - 0:04:34, chúng ta sau khi chúng ta phân tích bằng
+0:04:32 - 0:04:37, cái ma trận hiệp phương sai để tìm ra
+0:04:34 - 0:04:37, các cái giá trị
+0:04:39 - 0:04:45, trị riêng ví dụ vậy thì chúng ta sẽ sắp
+0:04:43 - 0:04:49, xếp theo thứ tự là giảm dần và chúng ta
+0:04:45 - 0:04:51, sẽ lấy à k thành phần đầu tiên mà có cái
+0:04:49 - 0:04:53, trị riêng cao nhất thì đó là những cái
+0:04:51 - 0:04:57, thành phần tương ứng với lại các cái
+0:04:53 - 0:05:00, vecơ mà cho cái à cái sự phân biệt các
+0:04:57 - 0:05:02, cái điểm sau khi chúng ta chiếu là cao
+0:05:00 - 0:05:05, nhất. Đó, còn những cái phần mà ở phía
+0:05:02 - 0:05:06, dưới thì nó có cái trị riêng thấp, tức
+0:05:05 - 0:05:09, là nó sẽ không giúp cho chúng ta phân
+0:05:06 - 0:05:11, biệt các cái điểm dữ liệu một cách dễ
+0:05:09 - 0:05:13, dàng thì chúng ta sẽ loại bỏ đi. Thì đây
+0:05:11 - 0:05:15, là cái ý tưởng à đây chúng ta sẽ giữ lại
+0:05:13 - 0:05:19, nè,
+0:05:15 - 0:05:22, còn đây chúng ta sẽ bỏ đi nè.
+0:05:19 - 0:05:25, thì thành phần nào mà lớn thì nó sẽ giữ,
+0:05:22 - 0:05:28, còn thành phần nào mà nhỏ thì chúng ta
+0:05:25 - 0:05:31, sẽ loại bỏ đi.
+0:05:28 - 0:05:34, Và đây là một cái ví dụ ở trong cái
+0:05:31 - 0:05:37, không gian góc là area là radius, tức là
+0:05:34 - 0:05:41, à diện tích và bán kính. Đó thì chúng ta
+0:05:37 - 0:05:41, sẽ có các cái mẫu dữ liệu sau.
+0:05:43 - 0:05:49, Rồi sau khi chúng ta dùng cái thuật toán
+0:05:46 - 0:05:49, PC
+0:05:50 - 0:05:58, à vector, hai cái thành phần chính đó là
+0:05:53 - 0:05:59, PC1, principle component 1, PC2 là hai
+0:05:58 - 0:06:02, cái thành phần này nó trực giao với
+0:05:59 - 0:06:06, nhau. Và khi chúng ta lấy các cái điểm
+0:06:02 - 0:06:08, dữ liệu chiếu lên trên cái không gian
+0:06:06 - 0:06:12, các cái thành phần chính là PC1, PC2 thì
+0:06:08 - 0:06:14, chúng ta sẽ thấy rằng là à đối với cái
+0:06:12 - 0:06:17, thành phần chính số 2 khi chúng ta chiếu
+0:06:14 - 0:06:20, lên thì cái variance tức là cái độ dao
+0:06:17 - 0:06:22, động của nó rất là bé.
+0:06:20 - 0:06:25, Trong khi đó chiếu lên thành phần số 1
+0:06:22 - 0:06:28, thì đây là chúng ta thấy là rất là lớn.
+0:06:25 - 0:06:31, Do đó thì chúng ta có thể cân nhắc để
+0:06:28 - 0:06:33, loại bỏ đi cái thành phần PC2. chỉ cần
+0:06:31 - 0:06:35, chừa lại cái thành phần PC1 thì khi đó
+0:06:33 - 0:06:37, một cái điểm dữ liệu góc ban đầu của
+0:06:35 - 0:06:41, mình là nó có hai chiều, nó đã giảm
+0:06:37 - 0:06:44, xuống còn một chiều. Đó và chúng ta sẽ
+0:06:41 - 0:06:48, loại bỏ PC2 chỉ giữ lại PC1. Lý do đó là
+0:06:44 - 0:06:50, vì cái sự dao động cái variance của à
+0:06:48 - 0:06:52, cái điểm dữ liệu khi mà chúng ta chiếu
+0:06:50 - 0:06:55, lên cái thành phần PC1 nó lớn nó giúp
+0:06:52 - 0:06:59, cho cái tính phân biệt nó cao hơn.
+0:06:55 - 0:07:01, Thì PCA đã chuyển đổi cái tập dữ liệu 2D
+0:06:59 - 0:07:03, thành cái dữ liệu một cái biểu diễn 1D
+0:07:01 - 0:07:08, trong khi mà vẫn giữ nguyên được cái độ
+0:07:03 - 0:07:08, biến thiên nhiều nhất có thể.
+0:07:12 - 0:07:19, Ah
+0:07:13 - 0:07:19, [âm nhạc]

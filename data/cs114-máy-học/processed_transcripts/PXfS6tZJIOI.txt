@@ -1,0 +1,191 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:18, Sau đây thì chúng ta sẽ đến với một
+0:00:16 - 0:00:21, trong những cái thuật toán nổi tiếng đó
+0:00:18 - 0:00:24, là à để mà phân cụm đó chính là thuật
+0:00:21 - 0:00:26, toán Camin. Và Camin là một trong những
+0:00:24 - 0:00:29, cái thuật toán mà được bình chọn là top
+0:00:26 - 0:00:33, 10 thuật toán trong lĩnh vực về à khai
+0:00:29 - 0:00:35, thác dữ liệu, data mining và được sử
+0:00:33 - 0:00:39, dụng rất là phổ biến. Thì camin là một
+0:00:35 - 0:00:42, thực toán phân cụm theo kiểu là
+0:00:39 - 0:00:44, phân hoạch.
+0:00:42 - 0:00:47, Và chúng ta ký hiệu gọi cái tập dữ liệu
+0:00:44 - 0:00:51, điểm của mình là D. Và D này là bao gồm
+0:00:47 - 0:00:55, M m mẫu dữ liệu X1, X2 cho đến XM.
+0:00:51 - 0:00:58, Thì trong đó xy là một cái vecơ trong
+0:00:55 - 0:01:00, không gian cái giá trị thực và xy này
+0:00:58 - 0:01:04, thì thuộc R.
+0:01:00 - 0:01:06, Trong đó R là à R này chính là
+0:01:04 - 0:01:09, số thuộc tính hoặc là số chiều của cái
+0:01:06 - 0:01:13, dữ liệu của mình. Tức là XY này nè là
+0:01:09 - 0:01:16, một cái vecơ có R chiều. Thì thuật toán
+0:01:13 - 0:01:19, K min sẽ phân chia dữ liệu của mình đã
+0:01:16 - 0:01:22, cho thành K cụm. Và lưu ý K này là cho
+0:01:19 - 0:01:22, trước.
+0:01:23 - 0:01:31, K này là được cho trước
+0:01:26 - 0:01:34, bởi người dùng và mỗi một cụm sẽ có một
+0:01:31 - 0:01:37, cái tâm cụm hay còn gọi là centroid. Mỗi
+0:01:34 - 0:01:39, một cụm sẽ có một cái tâm cụm.
+0:01:37 - 0:01:43, Thì cái ý tưởng của cái thuật toán Kamin
+0:01:39 - 0:01:44, này đó là với K thì thực toán Kamin sẽ
+0:01:43 - 0:01:48, hoạt động đó là bước một á là chúng ta
+0:01:44 - 0:01:51, sẽ cọn chọn ngẫu nhiên K điểm dữ liệu
+0:01:48 - 0:01:51, hay còn gọi là SH là hạt nhân.
+0:01:54 - 0:02:00, Đó, đây còn gọi là hạt nhân
+0:01:57 - 0:02:00, của cụm.
+0:02:04 - 0:02:12, Rồi và nhiệm vụ của chúng ta đó là à lấy
+0:02:09 - 0:02:15, kểm dữ liệu này nó sẽ làm các cái
+0:02:12 - 0:02:19, centroid tức là các cái tâm cụm ban đầu
+0:02:15 - 0:02:19, hay còn gọi là bước khởi tạo.
+0:02:24 - 0:02:30, Rồi và sang bước số hai đó là sau khi
+0:02:27 - 0:02:32, chúng ta đã khởi tạo được K cụm này xong
+0:02:30 - 0:02:34, thì chúng ta sẽ đi tiến hành gán nhãn.
+0:02:32 - 0:02:37, Mỗi một cái điểm dữ liệu trong cái tập
+0:02:34 - 0:02:40, dữ liệu D của mình á sẽ được gán vào một
+0:02:37 - 0:02:42, cái centroid gần nhất. Và khi nó được
+0:02:40 - 0:02:45, gán vào cái centroid gần nhất thì nó sẽ
+0:02:42 - 0:02:47, lấy cái nhãn của cái centroid đó luôn.
+0:02:45 - 0:02:50, Tức là cái chỉ số của cái cụm.
+0:02:47 - 0:02:53, Sau đó thì chúng ta sau khi chúng ta đã
+0:02:50 - 0:02:55, gán các cái điểm dữ liệu vào các cái
+0:02:53 - 0:02:57, centroid gần nhất thì chúng ta sẽ đi
+0:02:55 - 0:03:01, tiến hành cập nhật lại cái centroid. Tại
+0:02:57 - 0:03:03, vì ban đầu sen ờ cái centroid của mình
+0:03:01 - 0:03:05, là được lấy từ các cái điểm dữ liệu à
+0:03:03 - 0:03:08, làm tâm cụm. Nhưng mà sau khi chúng ta
+0:03:05 - 0:03:10, đã phân bổ các cái điểm dữ liệu mới vào
+0:03:08 - 0:03:13, bên trong cái cụm của mình thì cái tâm
+0:03:10 - 0:03:15, cụm chắc chắn nó sẽ dịch chuyển. Và
+0:03:13 - 0:03:17, chúng ta sẽ tính lại cái các cái
+0:03:15 - 0:03:19, centroid dựa trên các cái thành viên cụm
+0:03:17 - 0:03:20, hiện tại mà mình đã gán ở cái bước số
+0:03:19 - 0:03:24, hai.
+0:03:20 - 0:03:26, Đã gán được ở bước số hai. Và nếu như
+0:03:24 - 0:03:28, cái việc mà
+0:03:26 - 0:03:30, tính toán cái centroid này nó chưa hội
+0:03:28 - 0:03:32, tụ thì ở đây cái khái niệm chưa hội tụ
+0:03:30 - 0:03:34, là gì thì sang cái slide sau chúng ta sẽ
+0:03:32 - 0:03:36, sẽ đề cập. Nhưng mà nếu cái việc này
+0:03:34 - 0:03:39, chưa hồi tụ thì chúng ta sẽ quay trở lại
+0:03:36 - 0:03:42, bước số 2i và cứ lặp đi lặp lại 2 3 4
+0:03:39 - 0:03:44, rồi lại quay lại 2 nếu như cái việc mà
+0:03:42 - 0:03:47, xác định các cái tâm cụm này là chưa hội
+0:03:44 - 0:03:50, tụ
+0:03:47 - 0:03:52, và biểu diễn hình thức hơn cho cái thuật
+0:03:50 - 0:03:57, toán cam min
+0:03:52 - 0:04:00, à đầu vào chúng ta sẽ có k loại thì đây
+0:03:57 - 0:04:07, là do người dùng cung cấp dàn bộ cái dữ
+0:04:00 - 0:04:12, liệu của mình là bao gồm là X à 1, X2
+0:04:07 - 0:04:14, vân vân cho đến XM.
+0:04:12 - 0:04:17, Rồi và chọn K điểm dữ liệu này làm
+0:04:14 - 0:04:20, centroid ban đầu. Thì đây chính là cái
+0:04:17 - 0:04:22, bước khởi tạo của mình. Sau đó nè, for
+0:04:20 - 0:04:25, chúng ta sẽ viết một cái vòng for for
+0:04:22 - 0:04:27, với mỗi một cái điểm dữ liệu XY thuộc D
+0:04:25 - 0:04:30, thì chúng ta sẽ tính khoảng cách từ XY
+0:04:27 - 0:04:33, này nè đến cái centroid. Thì ở đây chúng
+0:04:30 - 0:04:36, ta có K điểm tương ứng là Kroid
+0:04:33 - 0:04:39, đến từng cái centroid và gán cái XY này
+0:04:36 - 0:04:41, vào cái cụm có cái centroid gần nhất. Và
+0:04:39 - 0:04:44, chúng ta sẽ thực hiện đi thực hiện lại
+0:04:41 - 0:04:46, cái việc này cho duyệt qua hết tất cả
+0:04:44 - 0:04:48, các cái điểm. Chúng ta sẽ duyệt qua hết
+0:04:46 - 0:04:52, tất cả cái điểm trong cái bộ data của
+0:04:48 - 0:04:54, mình và cập nhật lại cái centroid dựa
+0:04:52 - 0:04:56, trên cái cụm hiện tại. Tức là khi chúng
+0:04:54 - 0:04:59, ta gán cái xi này vào cái centro gần
+0:04:56 - 0:05:01, nhất thì chúng ta sẽ đi tính lại cái tâm
+0:04:59 - 0:05:04, cộng mới bằng cách đó là chúng ta sẽ
+0:05:01 - 0:05:07, cộng trung bình các cái giá trị xy này
+0:05:04 - 0:05:09, lại của từng cụm. Và việc này sẽ lặp đi
+0:05:07 - 0:05:11, lặp lại cho đến khi nào cái điều kiện
+0:05:09 - 0:05:14, dừng được thỏa mãn. Thì cái tiêu chí
+0:05:11 - 0:05:15, dừng hay là tiêu chí tiêu chí hội tụ
+0:05:14 - 0:05:19, chúng ta có thể dựa trên một trong các
+0:05:15 - 0:05:22, cái tiêu chí sau. Thứ nhất đó là không
+0:05:19 - 0:05:24, hoặc là rất ít cái việc gán nhãn lại
+0:05:22 - 0:05:26, điểm dữ liệu. Tức là khi chúng ta gán
+0:05:24 - 0:05:29, một cái điểm dữ liệu cho một cái nhãn,
+0:05:26 - 0:05:32, ví dụ nhãn một
+0:05:29 - 0:05:34, rồi sang cái lần sau à cái điểm này nó
+0:05:32 - 0:05:36, vẫn tiếp tục là một. Sang lần sau điểm
+0:05:34 - 0:05:38, này tiếp tục là một. Tức là nó không cập
+0:05:36 - 0:05:41, nhật nhãn. Chúng ta sẽ lấy một ví dụ có
+0:05:38 - 0:05:44, nhiều hơn
+0:05:41 - 0:05:47, điểm ha. 1
+0:05:44 - 0:05:49, rồi 2 2 và sang cái vòng lập sau chúng
+0:05:47 - 0:05:53, ta thấy cái này vẫn là nhãn 1 nhãn 1
+0:05:49 - 0:05:55, nhãn 1 2 2 tức là không có cái không
+0:05:53 - 0:05:57, hoặc là rất ít ha. Tức là nếu mà có một
+0:05:55 - 0:05:59, cái điểm nào đó thay đổi nhãn thì cũng
+0:05:57 - 0:06:03, được gọi là rất ít. Thì không hoặc là
+0:05:59 - 0:06:06, rất ít nhãn à gán lại tại điểm dữ liệu
+0:06:03 - 0:06:09, thì nó được gọi là hội tụ.
+0:06:06 - 0:06:12, cái tiêu chí dừng hoặc là hội tụ thứ hai
+0:06:09 - 0:06:14, đó là không hoặc là rất ít sự thay đổi
+0:06:12 - 0:06:17, của centroid. Thì ở đây nghĩa là sao? Ví
+0:06:14 - 0:06:18, dụ như chúng ta có ba cái điểm này thì
+0:06:17 - 0:06:21, chúng ta sẽ tạo ra thành một cái
+0:06:18 - 0:06:24, centroid. Ba điểm này thì chúng ta sẽ
+0:06:21 - 0:06:24, tạo thành một cái centroid.
+0:06:26 - 0:06:30, Và sang cái vòng lập sau chúng ta thấy
+0:06:28 - 0:06:32, là là hai cái centroid này nó lại tiếp
+0:06:30 - 0:06:34, tục đứng yên. Tức là nó không có di
+0:06:32 - 0:06:37, chuyển hoặc là nó không hoặc là dịch
+0:06:34 - 0:06:41, chuyển rất là ít. Thì đây là một cái
+0:06:37 - 0:06:44, tiêu chí. Và ba đó là
+0:06:41 - 0:06:48, ờ giảm thiểu à trong tổng cái size số
+0:06:44 - 0:06:51, bình phương. Tức là à hàm SSE ở đây ha
+0:06:48 - 0:06:56, là sum square là tổng các cái khoảng
+0:06:51 - 0:06:59, cách của cái mẫu dữ liệu thứ y à đến cái
+0:06:56 - 0:07:05, MJ bình phương.
+0:06:59 - 0:07:05, Trong đó MJ chính là cái tâm
+0:07:06 - 0:07:10, à đây chính là cái tâm cụm
+0:07:13 - 0:07:16, thứ.
+0:07:17 - 0:07:23, Rồi
+0:07:19 - 0:07:26, thì cái size số này, cái size số này là
+0:07:23 - 0:07:26, nhỏ nhất.
+0:07:27 - 0:07:33, Và để mà à đạt được cái tiêu chí số 3
+0:07:30 - 0:07:36, này thì đây là một cái bài toán khó là
+0:07:33 - 0:07:38, vì nó phải tối ưu toàn cục. Nó phải là
+0:07:36 - 0:07:40, tối ưu toàn cục. Tức là chúng ta sẽ tìm
+0:07:38 - 0:07:44, cái cách để phân hoạch cái tập điểm này
+0:07:40 - 0:07:49, làm sao đó để khoảng cách giữa xy đến
+0:07:44 - 0:07:51, một cái tâm cụm thứ j là à tổng của nó
+0:07:49 - 0:07:55, tổng hết tất cả các điểm thôi nha là nhỏ
+0:07:51 - 0:07:59, nhất. Đó. Rồi t chí thứ tư đó là C là
+0:07:55 - 0:08:03, cụm thứ J và CJ là cụm thứ J và MJ là
+0:07:59 - 0:08:05, cái tâm của cái cụm đó. À lưu ý là C đây
+0:08:03 - 0:08:10, nó sẽ là một cái tập hợp
+0:08:05 - 0:08:10, đại diện cho một cụm.
+0:08:13 - 0:08:19, À đây là một cái tập hợp. Đây là một tập
+0:08:15 - 0:08:21, hợp đại diện. Còn MJ là cái giá trị
+0:08:19 - 0:08:23, trung bình nó cộng trung bình tất cả các
+0:08:21 - 0:08:25, điểm trong cái tập hợp này là cái điểm
+0:08:23 - 0:08:28, nằm ngay chính giữa đó là điểm ngay nằm
+0:08:25 - 0:08:30, trung tâm của cái cụm thứ CJ.
+0:08:28 - 0:08:32, Rồi
+0:08:30 - 0:08:35, và distance này chính là cái khoảng cách
+0:08:32 - 0:08:37, giữa hai cái điểm XY và MJ. Thì lưu ý là
+0:08:35 - 0:08:41, ở đây là chúng ta có ba cái tiêu chí.
+0:08:37 - 0:08:43, Trong đó cái ở dưới đây là cái mô tả cái
+0:08:41 - 0:08:47, định nghĩa cho cái ở phía trên thôi. Tức
+0:08:43 - 0:08:50, là cái CJ là gì, MJ là gì, distance của
+0:08:47 - 0:08:52, XY, MJ là gì. Nó đang mô tả cho cái công
+0:08:50 - 0:08:54, thức ở phía trên thôi. Như vậy thì với
+0:08:52 - 0:08:57, ba tiêu chí này thì đây là cái tiêu chí
+0:08:54 - 0:08:57, toàn cục.
+0:08:58 - 0:09:04, và khó khó có thể tìm ra được.
+0:09:04 - 0:09:09, Trong khi đó hai tiêu chí ở trên thì nó
+0:09:07 - 0:09:11, sẽ rất là dễ để cài đặt. Chúng ta chỉ
+0:09:09 - 0:09:12, cần lặp đi lặp lại thuật toán. Khi thấy
+0:09:11 - 0:09:14, cái điểm dữ liệu nó không gán nhãn nữa
+0:09:12 - 0:09:16, thì chúng ta dừng hoặc là tâm cụm của
+0:09:14 - 0:09:19, mình nó không có dịch chuyển nhiều thì
+0:09:16 - 0:09:21, nó sẽ là dừng. Còn tiêu chí thứ tư à
+0:09:19 - 0:09:24, tiêu chí thứ ba thì không chắc lúc nào
+0:09:21 - 0:09:26, chúng ta cũng có thể khi mà thuật toán
+0:09:24 - 0:09:28, không gán nhãn lại hoặc là tâm cụng
+0:09:26 - 0:09:32, không di chuyển thì nó đã là cái điểm
+0:09:28 - 0:09:44, tối ưu toàn cục cái đó không chắc chắn.
+0:09:32 - 0:09:44, [âm nhạc]

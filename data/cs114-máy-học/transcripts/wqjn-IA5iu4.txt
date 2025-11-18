@@ -1,0 +1,282 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:18, Chào mừng các bạn đến với môn học CS114
+0:00:16 - 0:00:21, học máy. Và bài hôm nay thì chúng ta sẽ
+0:00:18 - 0:00:22, đến với một nội dung rất là thú vị đó
+0:00:21 - 0:00:26, chính là hệ thống khuyến nghị hay là
+0:00:22 - 0:00:29, recommendation system. Thì nếu mà nói
+0:00:26 - 0:00:32, một trong những cái ứng dụng học máy
+0:00:29 - 0:00:36, được sử dụng lâu đời và có cái tầm ảnh
+0:00:32 - 0:00:38, hưởng à rộng nhất thì đó chính là hệ
+0:00:36 - 0:00:40, thống khí nghị. Tại vì ngay từ khi
+0:00:38 - 0:00:43, thương mại điện tử ra đời từ cách đây
+0:00:40 - 0:00:46, hơn 20 năm thì đều tất cả các cái hệ
+0:00:43 - 0:00:49, thống ờ thương mại điện tử này đều có sử
+0:00:46 - 0:00:53, dụng một cái hệ thống khí nghị. thì tùy
+0:00:49 - 0:00:56, vào cái mức độ quy mô và tính chất của
+0:00:53 - 0:00:58, các cái hệ thống này mà chúng ta có thể
+0:00:56 - 0:01:01, sử dụng các cái thuật toán khuyến nghị
+0:00:58 - 0:01:03, khác nhau. Nhưng mà tóm lại đó là à hệ
+0:01:01 - 0:01:05, thống khuyến nghị đó là một trong những
+0:01:03 - 0:01:08, cái ứng dụng của máy học được sử dụng từ
+0:01:05 - 0:01:10, rất là lâu và tầm ảnh hưởng rất là sâu
+0:01:08 - 0:01:13, rộng trong xã hội.
+0:01:10 - 0:01:15, Và nói về hệ thống khuyến nghị thì đây
+0:01:13 - 0:01:19, là một cái hệ thống để mà giúp cho chúng
+0:01:15 - 0:01:21, ta có thể dự đoán được cái sở thích hoặc
+0:01:19 - 0:01:25, là cái dự đoán được cái hành vi của
+0:01:21 - 0:01:27, người dùng dựa trên những cái dữ liệu à
+0:01:25 - 0:01:31, mà chúng ta đã có. Dữ liệu này thì nó có
+0:01:27 - 0:01:34, thể đến từ cái dữ liệu quá khứ của à cái
+0:01:31 - 0:01:36, hành vi của người dùng hoặc là của những
+0:01:34 - 0:01:39, cái cộng đồng có cái mối quan hệ gần gũi
+0:01:36 - 0:01:42, với cái người dùng này. Từ đó để đưa ra
+0:01:39 - 0:01:44, những cái gợi ý sản phẩm nội dung phù
+0:01:42 - 0:01:46, hợp thì đây chính là cái tính chất quan
+0:01:44 - 0:01:50, trọng đó là phải phù hợp với từng cái
+0:01:46 - 0:01:52, người dùng của mình. Thì nếu mà nói về
+0:01:50 - 0:01:54, ứng dụng trong thực tế thì nó có rất
+0:01:52 - 0:01:56, nhiều những cái ví dụ chúng ta có thể kể
+0:01:54 - 0:01:58, đến. Ví dụ như nói về thương mại điện tử
+0:01:56 - 0:02:03, thì chúng ta sẽ có trang web là Amazon
+0:01:58 - 0:02:05, hoặc là ở Việt Nam thì có Tiki đó. Thì à
+0:02:03 - 0:02:08, cái trang thương mại điện tử này thì nó
+0:02:05 - 0:02:11, sẽ gửi cho à người sử dụng à cái sản
+0:02:08 - 0:02:15, phẩm nào mà họ nghĩ rằng là họ sẽ quan
+0:02:11 - 0:02:17, tâm và họ có khả năng cao là sẽ chốt đơn
+0:02:15 - 0:02:21, để mà mua cái sản phẩm đó.
+0:02:17 - 0:02:25, Rồi trong cái à ví dụ khác đó chính là
+0:02:21 - 0:02:28, Netflix thì đây là một cái à dịch vụ cho
+0:02:25 - 0:02:32, phép là người ta có thể xem phim à tại
+0:02:28 - 0:02:34, nhà và nó sẽ gợi ý những cái phim mà
+0:02:32 - 0:02:37, người ta cái hệ thống này nó nghĩ rằng
+0:02:34 - 0:02:41, là người dùng họ sẽ thích cái sản phẩm,
+0:02:37 - 0:02:45, thích cái bộ phim của mình. Rồi Spotify
+0:02:41 - 0:02:50, đó là gợi ý nhạc. TikTok là gợi đi gợi ý
+0:02:45 - 0:02:53, video thì à cái cơ chế của nó đó là với
+0:02:50 - 0:02:56, người dùng thì khi mà họ tiến hành họ
+0:02:53 - 0:02:59, mua một cái sản phẩm họ mua một cái sản
+0:02:56 - 0:03:02, phẩm nào đó thì cái hệ thống nó sẽ tìm
+0:02:59 - 0:03:06, một cái sản phẩm tương tự hoặc một cái
+0:03:02 - 0:03:09, sản phẩm mà họ nghĩ rằng là cái người
+0:03:06 - 0:03:13, dùng này họ có thể quan tâm để từ đó đi
+0:03:09 - 0:03:15, gợi ý cho cho người dùng. Đó thì cái tử
+0:03:13 - 0:03:17, chữ similar này á thì nó có rất nhiều
+0:03:15 - 0:03:19, cái cách hiểu khác nhau. Đó thì cái
+0:03:17 - 0:03:22, similar này có thể là một cái sản phẩm
+0:03:19 - 0:03:24, đi kèm với cái sản phẩm này hoặc có thể
+0:03:22 - 0:03:26, là một cái sản phẩm mà kế tiếp của sản
+0:03:24 - 0:03:30, phẩm này. Ví dụ như khi chúng ta mua một
+0:03:26 - 0:03:33, cái à một chiếc áo thì cái similar này
+0:03:30 - 0:03:36, nó có thể là cái quần mà đi kèm nó cái
+0:03:33 - 0:03:40, quần đi kèm à để mà có thể phối được với
+0:03:36 - 0:03:42, cái bộ đồ đó cho nó thời trang hơn. đó
+0:03:40 - 0:03:45, hoặc là các cái phụ kiện đi kèm với cái
+0:03:42 - 0:03:47, chiếc áo đó
+0:03:45 - 0:03:51, thì chúng ta sẽ tiến hành à phân loại
+0:03:47 - 0:03:53, các cái hệ thống à khuyến nghị thì à
+0:03:51 - 0:03:56, chúng ta sẽ có những cái kiểu à phương
+0:03:53 - 0:03:59, thức để mà
+0:03:56 - 0:04:02, à đề xuất cho cái người dùng. Hình thức
+0:03:59 - 0:04:05, đầu tiên đó là gợi ý thủ công.
+0:04:02 - 0:04:08, hay nói cách khác đó là dùng cái run
+0:04:05 - 0:04:08, bay.
+0:04:09 - 0:04:17, Tức là nếu người dùng mà mua sản phẩm A
+0:04:14 - 0:04:19, thì
+0:04:17 - 0:04:22, chúng ta sẽ gợi ý cái sản phẩm B. Kiểu
+0:04:19 - 0:04:26, như vậy thì đây là cái kiểu gợi ý thủ
+0:04:22 - 0:04:28, công. Còn hai á là chúng ta sẽ tổng hợp
+0:04:26 - 0:04:30, một cách đơn giản. Tổng cộng một cách
+0:04:28 - 0:04:33, đơn giản. Ví dụ như top 10 những cái sản
+0:04:30 - 0:04:36, phẩm hoặc là danh sách những cái sản
+0:04:33 - 0:04:38, phẩm mà phổ biến nhất tức là những cái
+0:04:36 - 0:04:41, hot trend trên mạng xã hội hoặc là trên
+0:04:38 - 0:04:44, cái kênh thương mại của mình. À nếu
+0:04:41 - 0:04:46, chúng ta thấy là 10 cái sản phẩm mà
+0:04:44 - 0:04:48, người dùng người ta mua nhiều nhất trong
+0:04:46 - 0:04:51, khoảng thời gian là một tuần gần đây thì
+0:04:48 - 0:04:53, mình sẽ gợi ý đi những cái sản phẩm đó.
+0:04:51 - 0:04:56, Hy vọng rằng là nó sẽ có một cái xu
+0:04:53 - 0:04:57, hướng mà được người dùng người ta quan
+0:04:56 - 0:05:00, tâm, cộng đồng người dùng người ta quan
+0:04:57 - 0:05:02, tâm một cách rộng rãi. Thì nhiều người
+0:05:00 - 0:05:03, thích thì hy vọng rằng là cái người tiếp
+0:05:02 - 0:05:07, theo mà mua hàng cũng sẽ thích cái sản
+0:05:03 - 0:05:11, phẩm này. Và một cái dạng thứ ba đó
+0:05:07 - 0:05:13, chính là cá nhân hóa cho từng người. à
+0:05:11 - 0:05:16, cá nhân hóa cho từng người. Tức là à
+0:05:13 - 0:05:18, chúng ta sẽ không có gợi ý chung chung
+0:05:16 - 0:05:20, cho một cộng đồng, một nhóm cộng đồng
+0:05:18 - 0:05:23, hoặc là gợi ý theo kiểu là nếu thì như
+0:05:20 - 0:05:27, thế này thì nó rất là thủ công mà chúng
+0:05:23 - 0:05:29, ta sẽ đi theo từng cái người sử dụng cụ
+0:05:27 - 0:05:32, thể. Mình sẽ biết được những cái đặc
+0:05:29 - 0:05:34, trưng cho cái người à cho cái người đó
+0:05:32 - 0:05:37, là gì để từ đó mình sẽ trích xuất và
+0:05:34 - 0:05:39, mình lấy ra những cái sản phẩm phù hợp
+0:05:37 - 0:05:41, cho cái người đó. Thì đây có lẽ là một
+0:05:39 - 0:05:44, trong những cái vấn đề lớn nhất mà chúng
+0:05:41 - 0:05:46, ta cần phải giải trong các cái hệ thống
+0:05:44 - 0:05:50, khuyến nghị đó là cá nhân hóa khuyến
+0:05:46 - 0:05:50, nghị cho từng người dùng.
+0:05:50 - 0:05:56, Thì chúng ta sẽ tiến hành là mô hình hóa
+0:05:53 - 0:05:59, cái bài toán này. Đặt à tập khách hàng
+0:05:56 - 0:06:01, của chúng ta là X và cái sản phẩm của
+0:05:59 - 0:06:04, mình là S.
+0:06:01 - 0:06:08, Và cái hàm đánh giá U à hàm đánh giá của
+0:06:04 - 0:06:12, chúng ta là U thì U ở đây sẽ là từ cái
+0:06:08 - 0:06:15, tập X à đến cái tập S. Từ tập X nhân với
+0:06:12 - 0:06:18, lại X nhân với S tức là người dùng và
+0:06:15 - 0:06:18, sản phẩm.
+0:06:23 - 0:06:30, người dùng và sản phẩm thì nó sẽ tạo ra
+0:06:26 - 0:06:33, à một cái rating. R là rating.
+0:06:30 - 0:06:36, R là rating tức là cái mức độ mà ưa
+0:06:33 - 0:06:40, thích của người dùng đối với cái sản
+0:06:36 - 0:06:42, phẩm này. Thì R này nó có thể có rất
+0:06:40 - 0:06:45, nhiều cái cách thức khác nhau. Ví dụ như
+0:06:42 - 0:06:47, R là từ 0 cho đến 5 sao. Thì đây là một
+0:06:45 - 0:06:49, cái than đo phổ biến trên mạng xã hội
+0:06:47 - 0:06:52, khi mà đánh giá cái sở thích của một
+0:06:49 - 0:06:55, người đối với một cái sản phẩm. Nó cũng
+0:06:52 - 0:06:57, có thể là một cái con số thực cho đến 1.
+0:06:55 - 0:07:00, Không có nghĩa là không hề quan tâm à
+0:06:57 - 0:07:03, không thích thú. Và một đó là rất là
+0:07:00 - 0:07:05, thích thú đến cái sản phẩm đó. Thì cái
+0:07:03 - 0:07:07, vấn đề chúng ta cần phải giải quyết đó
+0:07:05 - 0:07:10, chính là làm sao chúng ta có thể đi thu
+0:07:07 - 0:07:13, thập được cái rating của từng user và
+0:07:10 - 0:07:18, item. Vì hai cái không gian tập khách
+0:07:13 - 0:07:18, hàng và cái sản phẩm này nó rất là lớn.
+0:07:18 - 0:07:23, X nhân với S này là rất là lớn.
+0:07:26 - 0:07:32, Rồi và chúng ta sẽ phải dự đoán những
+0:07:29 - 0:07:34, cái rating mà chưa biết. Tức là chúng ta
+0:07:32 - 0:07:37, nhìn vào cái bảng đây, chúng ta thấy là
+0:07:34 - 0:07:40, đại đa số những cái dữ liệu của chúng ta
+0:07:37 - 0:07:43, là chúng ta thu thập được thì nó rất là
+0:07:40 - 0:07:46, ít. Ví dụ như cái cô này cậu thích cái
+0:07:43 - 0:07:47, bộ phim này là chấm bốn điểm, cái anh
+0:07:46 - 0:07:49, này anh không thích cái bộ phim này thì
+0:07:47 - 0:07:51, chấm là một điểm. Nhưng mà đại đa số
+0:07:49 - 0:07:53, những cái chỗ khác sẽ là dấu chấm hỏi.
+0:07:51 - 0:07:57, Tức là chúng ta chưa biết. Thì hay nói
+0:07:53 - 0:07:57, cách khác, đây là một cái ma trận thưa.
+0:07:58 - 0:08:02, Đây là một cái ma trận thưa.
+0:08:00 - 0:08:04, Và nhiệm vụ của chúng ta đó là làm sao
+0:08:02 - 0:08:07, có thể dự đoán được những cái dấu chấm
+0:08:04 - 0:08:09, hỏi này. Tức là dự đoán từng cái user
+0:08:07 - 0:08:11, này có thích cái sản phẩm này không và
+0:08:09 - 0:08:13, nếu thích thì chấm là bao nhiêu điểm.
+0:08:11 - 0:08:16, Rồi sau đó chúng ta sẽ đi đánh giá coi
+0:08:13 - 0:08:18, cái việc mà chúng ta gán nhãn vào à đánh
+0:08:16 - 0:08:20, cái cái cái rating vào những cái dấu
+0:08:18 - 0:08:22, chấm hỏi này thì cái độ chính xác của nó
+0:08:20 - 0:08:25, là bao nhiêu? Thì đó chính là những cái
+0:08:22 - 0:08:28, vấn đề mà chúng ta cần phải giải quyết.
+0:08:25 - 0:08:33, Và đầu tiên đó là thu thập cái rating.
+0:08:28 - 0:08:37, Thì chúng ta sẽ có hai cái à cách thu
+0:08:33 - 0:08:40, thập một cách gọi là à tường minh là
+0:08:37 - 0:08:42, explicit và không tường minh tức là
+0:08:40 - 0:08:44, implicit. Thì đối với cái cách từ minh á
+0:08:42 - 0:08:47, là chúng ta có thể thông qua cái việc là
+0:08:44 - 0:08:50, hỏi đáp trực tiếp người dùng xem họ có
+0:08:47 - 0:08:53, thích cái sản phẩm này hay không hoặc là
+0:08:50 - 0:08:55, họ chấm điểm là bao nhiêu. Hoặc là thông
+0:08:53 - 0:08:58, qua cái hình thức gọi là crows trên cái
+0:08:55 - 0:09:00, số lượng lớn à người dùng trên mạng
+0:08:58 - 0:09:02, internet chúng ta sẽ nhờ một cái lượng
+0:09:00 - 0:09:04, lớn người dùng để đánh giá. Thì đối với
+0:09:02 - 0:09:07, cái lit feedback thì chúng ta sẽ có
+0:09:04 - 0:09:09, những cái công cụ ví dụ như th up th
+0:09:07 - 0:09:11, down tức là cái nút like trong mạng xã
+0:09:09 - 0:09:14, hội á hoặc là nút dislike trong mạng xã
+0:09:11 - 0:09:17, hội. Thì ở đây chúng ta có một cái ví dụ
+0:09:14 - 0:09:20, là có 71 cái lượt thích sản phẩm này.
+0:09:17 - 0:09:24, Hoặc là chúng ta yêu cầu người dùng đánh
+0:09:20 - 0:09:26, ờ đánh sao từ 1 cho đến 5 đó hoặc là
+0:09:24 - 0:09:27, viết cái review. Thì từ cái câu review
+0:09:26 - 0:09:31, này chúng ta sẽ thấy là nó sẽ là
+0:09:27 - 0:09:34, positive tức là tích cực
+0:09:31 - 0:09:39, hay là negative
+0:09:34 - 0:09:41, là tiêu cực. Đó. Rồi thì cái ờ cách mà
+0:09:39 - 0:09:44, đánh giá một cách tường minh này thì nó
+0:09:41 - 0:09:46, sẽ tương đối rõ ràng và cụ thể và nó sẽ
+0:09:44 - 0:09:49, có được cái à cho chúng ta một cách đầy
+0:09:46 - 0:09:51, đủ cái tập dữ liệu positive và negative.
+0:09:49 - 0:09:54, tức là người đó thích và người đó không
+0:09:51 - 0:09:56, thích sản phẩm này. Còn đối với cái phản
+0:09:54 - 0:09:59, hồi mà không tường minh implicit á thì
+0:09:56 - 0:10:02, chúng ta sẽ phải dựa trên cái hành vi
+0:09:59 - 0:10:04, của người dùng. Cái hành vi này nó có
+0:10:02 - 0:10:07, thể thông qua ví dụ như là chúng ta
+0:10:04 - 0:10:09, click vào và xem một cái bản nhạc thì
+0:10:07 - 0:10:11, tức là chúng ta đang quan tâm đến cái
+0:10:09 - 0:10:13, bản nhạc đó hoặc là một cái video đó
+0:10:11 - 0:10:15, hoặc là cái hành vi chúng ta mua một cái
+0:10:13 - 0:10:18, sản phẩm purchase một cái item tức là
+0:10:15 - 0:10:20, chúng ta rất là quan tâm và có nhu cầu
+0:10:18 - 0:10:23, bất thiết để mua cái sản phẩm đó hoặc là
+0:10:20 - 0:10:26, browsing history tức là chúng ta lịch sử
+0:10:23 - 0:10:28, chúng ta à click vào chúng ta xem các
+0:10:26 - 0:10:31, cái sản phẩm này xem sản phẩm này hoặc
+0:10:28 - 0:10:33, là bỏ vào giõ hàng Tức là chúng ta chưa
+0:10:31 - 0:10:36, chốt đơn mua cái vỏ hàng đó, mua cái sản
+0:10:33 - 0:10:38, phẩm đó nhưng chúng ta đưa nó vào bên
+0:10:36 - 0:10:40, trong cái cái vỏ hàng. Tức là chúng ta
+0:10:38 - 0:10:43, đã rất là quan tâm rồi nhưng mà chỉ là
+0:10:40 - 0:10:46, chờ thời điểm để mà mua thôi.
+0:10:43 - 0:10:50, Thì vấn đề tiếp theo đó là chúng ta làm
+0:10:46 - 0:10:52, sao có thể dự đoán được cái rating mà
+0:10:50 - 0:10:54, chưa biết. Thì khi mà dự đoán được các
+0:10:52 - 0:10:56, cái rating chưa biết từ những cái rating
+0:10:54 - 0:11:01, đã có thì vấn đề gặp phải đó là cái ma
+0:10:56 - 0:11:03, trận tiện ích này à nó rất là thưa. Cái
+0:11:01 - 0:11:05, ma trận mà rating này rất là rất là thưa
+0:11:03 - 0:11:07, thì còn gọi là spark. Và hầu hết người
+0:11:05 - 0:11:09, dùng là chưa đánh giá các cái mục của
+0:11:07 - 0:11:12, mình hầu hết.
+0:11:09 - 0:11:15, Và đồng thời là nó sẽ có cái tình trạng
+0:11:12 - 0:11:18, nó gọi là con stack. Constag thì ở đây
+0:11:15 - 0:11:24, có thể là con stack user
+0:11:18 - 0:11:24, hoặc là con stack item.
+0:11:24 - 0:11:29, Constat user tức là với cái người dùng
+0:11:26 - 0:11:32, mới tức là người này lần đầu tiên tham
+0:11:29 - 0:11:34, gia vào à cái hệ thống của mình và mình
+0:11:32 - 0:11:36, chưa có bất cứ cái dữ liệu lịch sử nào
+0:11:34 - 0:11:38, của họ thì làm sao chúng ta có thể dự
+0:11:36 - 0:11:40, đoán được.
+0:11:38 - 0:11:42, Làm sao chúng ta có thể dự đoán được?
+0:11:40 - 0:11:44, Còn đối với cái người nào đối với những
+0:11:42 - 0:11:46, cái loại const thứ hai đó là cái item
+0:11:44 - 0:11:49, tức là cái mục hoặc là cái sản phẩm này
+0:11:46 - 0:11:50, là mới và chúng ta chưa có ai đánh giá
+0:11:49 - 0:11:52, đúng không? Những cái sản phẩm mới ra
+0:11:50 - 0:11:55, trên thị trường chưa có ai đánh giá thì
+0:11:52 - 0:11:58, làm sao chúng ta có thể dự đoán được cái
+0:11:55 - 0:12:00, nhu cầu của khách hàng họ có quan tâm
+0:11:58 - 0:12:03, đến cái sản phẩm mới này hay không. Đó
+0:12:00 - 0:12:07, thì đó là con. Thì cái khó của cái con
+0:12:03 - 0:12:10, đó chính là chúng ta không có thông tin,
+0:12:07 - 0:12:10, không có nhiều thông tin.
+0:12:17 - 0:12:23, không có nhiều thông tin và ba cách ba
+0:12:21 - 0:12:26, cái loại mô hình để giúp cho chúng ta có
+0:12:23 - 0:12:29, thể à dự đoán được cái rating chưa biết
+0:12:26 - 0:12:31, đó là dựa trên nội dung hay còn gọi là
+0:12:29 - 0:12:35, content based filtering dựa trên lọc
+0:12:31 - 0:12:37, cộng tác là collaborative filtering và
+0:12:35 - 0:12:39, mô hình nhân tố tìm ẩn hay còn gọi là
+0:12:37 - 0:12:43, latent factor model thì đây là một cái
+0:12:39 - 0:12:47, mô hình để giúp cho chúng ta có thể tìm
+0:12:43 - 0:12:50, được một cái à vecơ tiềm ẩn. Tức là mỗi
+0:12:47 - 0:12:52, một cái user
+0:12:50 - 0:12:55, sẽ được biểu diễn bởi một cái vecơ rồi
+0:12:52 - 0:12:58, mỗi một cái item, một cái sản phẩm hoặc
+0:12:55 - 0:13:02, là một cái đối tượng cần gợi ý đó chúng
+0:12:58 - 0:13:05, ta sẽ biểu diễn bằng một cái
+0:13:02 - 0:13:07, vecơ. Và muốn biết cái user này với cái
+0:13:05 - 0:13:08, item này nó có cái mối tương đồng cao
+0:13:07 - 0:13:10, hay không thì chúng ta thực hiện cái
+0:13:08 - 0:13:12, phép tích vô hướng giữa hai cái vecơ
+0:13:10 - 0:13:16, biểu diễn này. Thì hai cái vecơ biểu
+0:13:12 - 0:13:18, diễn này thì nó sẽ được gọi là cái vecơ
+0:13:16 - 0:13:21, nằm trong cái không gian laton không
+0:13:18 - 0:13:21, gian tiềm ẩn.
+0:13:23 - 0:13:35, [âm nhạc]

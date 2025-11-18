@@ -1,0 +1,234 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:19, Chúng ta sẽ cùng đến với cái ví dụ trực
+0:00:15 - 0:00:22, quan để minh họa cho thuật toán gom cụm.
+0:00:19 - 0:00:24, Thì ở bước đầu tiên đó là chúng ta sẽ có
+0:00:22 - 0:00:27, một tập hợp các cái điểm và chúng ta sẽ
+0:00:24 - 0:00:30, cọn chọn ngẫu nhiên kâ cụm. Thì lưu ý đó
+0:00:27 - 0:00:33, là à ở trong cái ví dụ này thì nó đã bỏ
+0:00:30 - 0:00:35, sót cái hình ngôi sao đầu tiên ha. Tức
+0:00:33 - 0:00:38, là cái cụm đầu tiên sẽ là bốc ngẫu nhiên
+0:00:35 - 0:00:39, là hai cái điểm này, hai cái ngôi sao.
+0:00:38 - 0:00:42, Và hai điểm này cũng chính là cái mẫu dữ
+0:00:39 - 0:00:44, liệu của mình. Rồi sau đó thì chúng ta
+0:00:42 - 0:00:47, sẽ sang cái bước B đó là gán các cái
+0:00:44 - 0:00:49, điểm vào à các cái cụm. Thì chúng ta
+0:00:47 - 0:00:51, thấy là cái điểm này gần cái ngôi sao
+0:00:49 - 0:00:53, này, điểm này gần ngôi sao này nhất,
+0:00:51 - 0:00:55, điểm này gần ngôi sao này nhất, điểm này
+0:00:53 - 0:00:59, gần ngôi sao này nhất. Nên cả năm cái
+0:00:55 - 0:01:01, điểm này sẽ được gom vào một cụm số 1.
+0:00:59 - 0:01:04, Rồi các cái điểm này mặc dù chúng ta
+0:01:01 - 0:01:07, thấy là rất là xa nhưng mà nếu xét về
+0:01:04 - 0:01:10, khoảng cách từ điểm này đến cái ngôi sao
+0:01:07 - 0:01:11, này và từ điểm này đến ngôi sao này hay
+0:01:10 - 0:01:14, là cái tông cụm thứ hai thì chúng ta
+0:01:11 - 0:01:16, thấy là đến đây nó sẽ cần hơn. Do đó,
+0:01:14 - 0:01:19, điểm này sẽ được gán vào cái cụm của
+0:01:16 - 0:01:21, ngôi sao thứ hai. Điểm này sẽ gần ngôi
+0:01:19 - 0:01:24, sao thứ hai hơn so với ngôi sao thứ
+0:01:21 - 0:01:26, nhất. Các cái điểm ở khu vực này thì gần
+0:01:24 - 0:01:28, với lại cái ngôi sao này hơn. Do đó, tất
+0:01:26 - 0:01:33, cả các cụm này sẽ được gán nhãn bởi số
+0:01:28 - 0:01:36, 2. Còn đây là số 1. Và khi chúng ta gán
+0:01:33 - 0:01:40, nhãn xong thì chúng ta sẽ tiến hành cập
+0:01:36 - 0:01:41, nhật lại cái tâm cụm. Thì với cái cụm số
+0:01:40 - 0:01:43, 1, chúng ta thấy là các cái điểm của
+0:01:41 - 0:01:46, mình nó xu hướng lệch về bên phải hơn
+0:01:43 - 0:01:50, một chút so với cái ngôi sao này. Do đó
+0:01:46 - 0:01:52, thì ở đây chúng ta sẽ dời lên đây. Và
+0:01:50 - 0:01:55, cụm số hai là rõ ràng nhất. Chúng ta
+0:01:52 - 0:01:56, thấy rất nhiều điểm nó nằm lệch về phía
+0:01:55 - 0:01:59, tay phải, chỉ có hai điểm nằm bên tay
+0:01:56 - 0:02:05, trái. Do đó cái tâm cộng mới thì nó sẽ
+0:01:59 - 0:02:05, tiến về đây. Đó, nó sẽ tiến vào đây.
+0:02:07 - 0:02:12, Đó. Thì ở đây là một cái hình minh họa
+0:02:09 - 0:02:14, là tâm cụm cũ và tâm cụm mới. Đây là tâm
+0:02:12 - 0:02:18, cụm mới.
+0:02:14 - 0:02:18, Đây là tâm cụm mới.
+0:02:18 - 0:02:23, Và sau khi chúng ta
+0:02:21 - 0:02:25, cập nhật cái tâm cụm mới thì chúng ta sẽ
+0:02:23 - 0:02:29, đi gán nhãn lại cho các điểm. Thì hồi
+0:02:25 - 0:02:30, nãy á là hai cái điểm này
+0:02:29 - 0:02:35, à trong cái slide trước thì hai cái điểm
+0:02:30 - 0:02:35, này là nằm trong cái cụm số 2.
+0:02:35 - 0:02:41, Thì sang cái ờ lần cập nhật tiếp theo
+0:02:39 - 0:02:43, chúng ta thấy là hai cái điểm này rõ
+0:02:41 - 0:02:46, ràng là nó gần cái cụm này hơn. Điểm này
+0:02:43 - 0:02:49, sẽ gần cái cụm này hơn so với lại điểm
+0:02:46 - 0:02:52, này, so với lại cụm này. Điểm này sẽ gần
+0:02:49 - 0:02:54, cái cụm thứ nhất hơn so với lại cụm thứ
+0:02:52 - 0:02:58, hai. Do đó điểm hai cái điểm này sẽ được
+0:02:54 - 0:02:59, gán nhãn lại và nó sẽ đưa về cái cụm số
+0:02:58 - 0:03:02, một.
+0:02:59 - 0:03:05, Còn cái điểm cụm số hai nó sẽ bị mất đi
+0:03:02 - 0:03:07, hai cái điểm này. Sau đó chúng ta sẽ đi
+0:03:05 - 0:03:09, cập nhật lại tâm. thì chúng ta thấy là
+0:03:07 - 0:03:12, nó sẽ dịch chuyển về bên tay phải một
+0:03:09 - 0:03:14, chút xíu. Nó sẽ dịch chuyển về đây. Và
+0:03:12 - 0:03:17, vì cái cụm số hai nó mất hai điểm này
+0:03:14 - 0:03:19, nên cái tâm nó sẽ đổ về đây. Nó sẽ đổ
+0:03:17 - 0:03:22, vào bên trong.
+0:03:19 - 0:03:24, Và sang cái bước tiếp theo là chúng ta
+0:03:22 - 0:03:26, sẽ gán à à chúng ta tính lại tâm rồi thì
+0:03:24 - 0:03:29, chúng ta gán nhãn lại. Thì chúng ta thấy
+0:03:26 - 0:03:32, là hai cái điểm này cũng không hề thay
+0:03:29 - 0:03:35, đổi cái cụm. nó vẫn tiếp tục gán vô cái
+0:03:32 - 0:03:37, cụm số 1. Còn các điểm ở đây thì đương
+0:03:35 - 0:03:39, nhiên là nó vẫn giữ nguyên rồi. Các cái
+0:03:37 - 0:03:41, điểm ở đây cũng không có cập nhật gì.
+0:03:39 - 0:03:43, Còn hai điểm này nè là hai cái điểm dao
+0:03:41 - 0:03:46, động nó vẫn tiếp tục giữ gần với lại cái
+0:03:43 - 0:03:49, cụm thứ nhất. Như vậy thì ở vòng lập số
+0:03:46 - 0:03:51, ba là các cái nhãn của mình nó không hề
+0:03:49 - 0:03:54, thay đổi. Chúng ta nhìn cái hình hai
+0:03:51 - 0:03:56, hình bên đây
+0:03:54 - 0:03:58, là hai cái cấu trúc cộng này không thay
+0:03:56 - 0:04:01, đổi. Tức là nó đã đạt được cái điểm
+0:03:58 - 0:04:01, dừng.
+0:04:02 - 0:04:07, à nó đã đạt được cái điểm dừng thứ nhất.
+0:04:05 - 0:04:09, Còn đối với cái tiêu chí điểm dừng thứ
+0:04:07 - 0:04:12, hai á là chúng ta sẽ đi tính lại cái tâm
+0:04:09 - 0:04:14, cụm.
+0:04:12 - 0:04:17, Sau đó chúng ta đi so với lại cái tâm
+0:04:14 - 0:04:18, cụm trước đó.
+0:04:17 - 0:04:20, Thì chúng ta thấy là cái tâm cụm này với
+0:04:18 - 0:04:22, tâm cụm này không thay đổi. Tâm cụm này
+0:04:20 - 0:04:25, với tâm cụm này không thay đổi vị trí.
+0:04:22 - 0:04:29, Tức là nó đạt được cái điểm dừng.
+0:04:25 - 0:04:31, Cái điều kiện điểm dừng.
+0:04:29 - 0:04:34, số 2.
+0:04:31 - 0:04:37, Còn đây là điểm dừng à điều kiện dừng à
+0:04:34 - 0:04:40, số 1. Còn như đã đề cập thì cái điều
+0:04:37 - 0:04:42, kiện dừng số 3 à tức là tối ưu toàn cục
+0:04:40 - 0:04:44, cái min đó thì chúng ta sẽ phải chứng
+0:04:42 - 0:04:46, minh bằng công thức toán mà ở đây thì
+0:04:44 - 0:04:48, chúng ta chạy lặp đi lặp lại bằng thực
+0:04:46 - 0:04:52, nghiệm không chắc là cái kết quả này sẽ
+0:04:48 - 0:04:55, là một cái kết quả tối ưu nhất.
+0:04:52 - 0:04:59, Và ở đây thì chúng ta sẽ có cái khái
+0:04:55 - 0:05:02, niệm đó là cái độ đo khoảng cách.
+0:04:59 - 0:05:04, thì mặc dù đây là một cái độ đo rất là
+0:05:02 - 0:05:06, kinh điển nhưng mà chúng ta cũng nên
+0:05:04 - 0:05:08, nhắc lại một chút xíu thì trong cái
+0:05:06 - 0:05:13, thuật toán camin thì trong cái không
+0:05:08 - 0:05:15, gian list trong cái không gian earliit
+0:05:13 - 0:05:17, thì giá trị trung bình của một cụm sẽ
+0:05:15 - 0:05:21, được tính bằng công thức à tức là chúng
+0:05:17 - 0:05:21, ta đang xác định cái tâm cụm nè
+0:05:22 - 0:05:29, đây là cái tâm cụm của c
+0:05:27 - 0:05:33, sẽ được tính bằng trung bình cộng nè, số
+0:05:29 - 0:05:36, phần tử trong CJ nè nhân cho tổng của
+0:05:33 - 0:05:39, các cái XY với XY là thuộc CJ. Tức là
+0:05:36 - 0:05:42, chúng ta sẽ lấy tổng tất cả các cái điểm
+0:05:39 - 0:05:43, ờ XY nằm trong cụm này thôi, nằm trong
+0:05:42 - 0:05:46, cụm này thôi chứ không lấy những cái cụm
+0:05:43 - 0:05:50, khác. Sau đó chúng ta chia trung bình.
+0:05:46 - 0:05:53, Thì đây chính là cái điểm đại diện cho ờ
+0:05:50 - 0:05:55, cái tập hợp là CJ.
+0:05:53 - 0:05:58, Trong đó CJ trị tuyệt đối là số lượng
+0:05:55 - 0:06:01, điểm trong dữ liệu của cụm nè. Rồi cái
+0:05:58 - 0:06:04, công thức
+0:06:01 - 0:06:06, để tính khoảng cách giữa một điểm với
+0:06:04 - 0:06:08, một cái cụm để từ đó chúng ta so sánh
+0:06:06 - 0:06:10, xem là điểm đó gần với cụm nào nhất đó
+0:06:08 - 0:06:14, mà thì chúng ta sẽ dùng công thức này
+0:06:10 - 0:06:17, lấy một điểm với một cái cụm tâm cụm và
+0:06:14 - 0:06:19, nó sẽ được tính bằng căn của xy thành
+0:06:17 - 0:06:22, phần thứ nhất trừ cho mj thành phần thứ
+0:06:19 - 0:06:25, nhất tất cả bình. Rồi thành phần thứ hai
+0:06:22 - 0:06:31, hiệu bình phương, thành phần thứ ru bình
+0:06:25 - 0:06:34, phương và xy sẽ được gán vào cái cụm nào
+0:06:31 - 0:06:37, mà cái tâm cụm có cái khoảng cách tâm
+0:06:34 - 0:06:40, cụm của nó là gần nhất.
+0:06:37 - 0:06:43, Và ưu điểm của thuậc toán camin đó là nó
+0:06:40 - 0:06:45, rất là đơn giản, dễ hiểu và dễ triển
+0:06:43 - 0:06:47, khai và cũng tương đối là hiệu quả khi
+0:06:45 - 0:06:51, cái độ phức tạp về mặt thời gian của nó
+0:06:47 - 0:06:55, đó là bằng t nh k nh n. Trong đó n là
+0:06:51 - 0:06:57, cái à số điểm dữ liệu của mình. Thật ra
+0:06:55 - 0:06:59, trong cái hệ thống này thì chúng ta dùng
+0:06:57 - 0:07:02, đó là
+0:06:59 - 0:07:04, à
+0:07:02 - 0:07:06, ban đầu thì chúng ta sẽ dùng là m đúng
+0:07:04 - 0:07:08, không? Rồi
+0:07:06 - 0:07:11, rồi thì ở đây là n số điện dữ liệu. Còn
+0:07:08 - 0:07:14, ở trong các ký hiệu trước thì nó là m
+0:07:11 - 0:07:15, rồi nhưng mà thôi ở đây là mình tại cái
+0:07:14 - 0:07:19, thời điểm nào mình ký hiệu đến đâu thì
+0:07:15 - 0:07:21, mình sẽ dùng cái cái cái ký hiệu đó. K
+0:07:19 - 0:07:25, là cái số cụm được người dùng cung cấp
+0:07:21 - 0:07:28, ban đầu và T tức là cái số lần mình lập
+0:07:25 - 0:07:31, cập nhật lại cái cái
+0:07:28 - 0:07:34, tâm cụm. Đó thì đây là cái số lần lập để
+0:07:31 - 0:07:34, mà cập nhật
+0:07:35 - 0:07:38, cái cụm mới.
+0:07:44 - 0:07:49, Thì t này mà lập càng nhiều tức là độ
+0:07:46 - 0:07:51, phức tạp càng cao. K cụm càng nhiều thì
+0:07:49 - 0:07:53, độ phức tạp càng cao và số điểm dữ liệu
+0:07:51 - 0:07:59, của mình càng nhiều thì độ phức tạp càng
+0:07:53 - 0:08:01, cao. Tuy nhiên thì vì k và t là đều nhỏ.
+0:07:59 - 0:08:05, Tức là nếu không ở đây là nếu chúng ta
+0:08:01 - 0:08:05, chọn nha, nếu chúng ta chọn
+0:08:05 - 0:08:11, à nếu chúng ta chọn k và t đủ nhỏ thì
+0:08:08 - 0:08:13, thuậc toán kin có thể được coi như là
+0:08:11 - 0:08:16, một thuật toán tuyến tính. Tuy nhiên
+0:08:13 - 0:08:18, thực tế khi chúng ta áp dụng K min trong
+0:08:16 - 0:08:20, những cái tình huống dữ liệu bây giờ thì
+0:08:18 - 0:08:23, chúng ta thấy là dữ liệu của mình cực kỳ
+0:08:20 - 0:08:27, lớn. Số cụm của mình có thể là lên đến
+0:08:23 - 0:08:29, hàng ngàn. Rồi số mẫu dữ liệu có thể lên
+0:08:27 - 0:08:31, đến hàng trăm triệu mẫu dữ liệu.
+0:08:29 - 0:08:33, đó thì cái độ phức tạp của nó cũng rất
+0:08:31 - 0:08:35, là cao. Thì sau đó nó cũng đã có những
+0:08:33 - 0:08:39, cái thuật toán cải tiến của camin. Ví dụ
+0:08:35 - 0:08:44, như là AKM
+0:08:39 - 0:08:47, là à approximate camin.
+0:08:44 - 0:08:49, Approximate camin thì cái thuật toán này
+0:08:47 - 0:08:52, nó sẽ nhanh hơn cái thuậc toán
+0:08:49 - 0:08:54, camin rất là nhiều. Và camin như đã đề
+0:08:52 - 0:08:55, cập trước đây nó là một thuật toán phân
+0:08:54 - 0:09:00, cụm rất là phổ biến vì cái tính đơn giản
+0:08:55 - 0:09:02, và dễ dùng của nó. À tuy nhiên thì à cái
+0:09:00 - 0:09:04, cái cách mà phân cụm của nó thì nó là
+0:09:02 - 0:09:07, tối ưu cục bộ. Nó không chắc là chúng ta
+0:09:04 - 0:09:10, có thể tìm được cái điểm tối ưu tàn cục
+0:09:07 - 0:09:13, do cái tính phức tạp của cái dữ liệu,
+0:09:10 - 0:09:15, phân bố của dữ liệu.
+0:09:13 - 0:09:17, Thì nhược điểm của Kamin đó là cái nhược
+0:09:15 - 0:09:19, điểm lớn nhất chúng ta có thể thấy ngay
+0:09:17 - 0:09:21, đó là chúng ta phải chỉ định K. Làm sao
+0:09:19 - 0:09:24, chúng ta có thể biết được là trong cái
+0:09:21 - 0:09:26, dữ liệu này nó có bao nhiêu cụm? Thì cái
+0:09:24 - 0:09:28, này nó sẽ phải được dựa trên cái kinh
+0:09:26 - 0:09:28, nghiệm.
+0:09:28 - 0:09:35, của à cái người lập trình hoặc là cái
+0:09:31 - 0:09:38, nhà khoa học à dữ liệu.
+0:09:35 - 0:09:40, Rồi thuật toán này thì chỉ được áp dụng
+0:09:38 - 0:09:43, nếu cái giá trị trung bình được xác
+0:09:40 - 0:09:46, định. Tức là đối với cái việc mà đối với
+0:09:43 - 0:09:49, dữ liệu dạng phân loại thì cái cách thức
+0:09:46 - 0:09:52, k biểu diễn bằng giá trị xuất hiện
+0:09:49 - 0:09:55, thường xuyên nhất. Tức là cụm của mình
+0:09:52 - 0:09:56, nó sẽ được tâm cụm của mình nó sẽ đại
+0:09:55 - 0:09:58, diện cho những cái điểm mà xuất hiện
+0:09:56 - 0:10:00, thường xuyên.
+0:09:58 - 0:10:02, Và thuật toán này thì nó khá là nhạy cảm
+0:10:00 - 0:10:05, với lại cái giá trị ngoại lai giá trị
+0:10:02 - 0:10:07, outlayer. Tại vì tưởng tượng là chúng ta
+0:10:05 - 0:10:10, có các cái điểm dữ liệu ở đây nhưng mà
+0:10:07 - 0:10:13, chỉ vì có một cái điểm out layer nằm
+0:10:10 - 0:10:17, ngoài đây thì nó sẽ kéo thay vì tâm cụm
+0:10:13 - 0:10:19, nó nằm ở đây thì nó sẽ kéo cái tâm cụm
+0:10:17 - 0:10:22, về đây hướng về cái hướng này dẫn đến là
+0:10:19 - 0:10:26, nó lệch khỏi những cái điểm mà có xuất
+0:10:22 - 0:10:28, hiện những cái điểm mà có cái mậc độ dày
+0:10:26 - 0:10:30, đặc.
+0:10:28 - 0:10:33, Và thuật toán này thì nhạy cảm với lại
+0:10:30 - 0:10:37, cái điểm khởi tạo ban đầu. Tức là ban
+0:10:33 - 0:10:39, đầu nếu chúng ta khởi tạo à tốt thì khởi
+0:10:37 - 0:10:41, tạo kiệm tốt thì cái cụm của chúng ta nó
+0:10:39 - 0:10:44, sẽ rãi đều ra. Nhưng mà nếu chúng ta
+0:10:41 - 0:10:47, khởi tạo không tốt thì nó có thể bị hiện
+0:10:44 - 0:10:51, tượng đó là nó bị stop bị tắt nó không
+0:10:47 - 0:11:03, thoát ra được cái cụm cục bộ đó.
+0:10:51 - 0:11:03, [âm nhạc]

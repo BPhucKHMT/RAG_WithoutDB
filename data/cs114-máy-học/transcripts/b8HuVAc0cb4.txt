@@ -1,0 +1,232 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:17, Chúng ta sẽ cùng đến với mô hình phân
+0:00:15 - 0:00:19, tích thành phần chính. Thì thuậc toán ở
+0:00:17 - 0:00:22, đây được sử dụng đó chính là thuật toán
+0:00:19 - 0:00:25, PCI. Và chúng ta giả định rằng các cái
+0:00:22 - 0:00:28, điểm dữ liệu X của mình là nằm trong một
+0:00:25 - 0:00:32, cái không gian là D chiều. Và đây là một
+0:00:28 - 0:00:35, cái không gian có số chiều lớn và nằm
+0:00:32 - 0:00:39, gần một cái không gian con có cái chiều
+0:00:35 - 0:00:42, thấp hơn đó là P chiều. Thì cái không
+0:00:39 - 0:00:45, gian này được ký hiệu là là J và P thì
+0:00:42 - 0:00:49, sẽ là bé hơn so với D. Và không gian con
+0:00:45 - 0:00:54, J này á thì được sinh ra bởi một tập hợp
+0:00:49 - 0:00:57, các cái vecơ trực chuẩn W1, W2, WP.
+0:00:54 - 0:01:02, Thì khi đó dữ liệu xắp xỉ bởi một cái tổ
+0:00:57 - 0:01:05, hợp tuyến tính là x mũ của à các cái
+0:01:02 - 0:01:07, vectơ trực chuẩn WK.
+0:01:05 - 0:01:12, Thế thì ở đây chúng ta sẽ có công thức
+0:01:07 - 0:01:14, là X sẽ xấp xỉ bằng với lại x mũ à x
+0:01:12 - 0:01:18, ngã. Trong đó x ngã thì sẽ là bằng một
+0:01:14 - 0:01:22, cái tổ hợp tuyến tính của
+0:01:18 - 0:01:24, WK với lại JK và ký hiệu gọn lại thì nó
+0:01:22 - 0:01:26, sẽ là bằng W nh J. Thế thì công thức này
+0:01:24 - 0:01:30, có thể sẽ hơi khó hiểu nếu mà chúng ta
+0:01:26 - 0:01:32, đưa về một cái không gian à có số chiều
+0:01:30 - 0:01:34, đủ nhỏ thì chúng ta có thể dễ hiểu hơn.
+0:01:32 - 0:01:37, Thì giả sử như ở đây là chúng ta có cái
+0:01:34 - 0:01:39, không gian X à chúng ta giả sử các cái
+0:01:37 - 0:01:43, điểm dữ liệu X của mình nó nằm ở trong
+0:01:39 - 0:01:46, không gian là U1 và U2. Thì đây là cái
+0:01:43 - 0:01:49, không gian góc ban đầu.
+0:01:46 - 0:01:52, Rồi ở đây chúng ta sẽ có một cái không
+0:01:49 - 0:01:55, gian con. Chúng ta sẽ có một cái không
+0:01:52 - 0:01:58, gian con. Thế thì cái điểm X của mình
+0:01:55 - 0:02:01, ban đầu nó sẽ có cái tọa độ là tính theo
+0:01:58 - 0:02:03, cái hệ trục tọa độ là U1 U2. Nhưng mà
+0:02:01 - 0:02:05, sau đó thì chúng ta sẽ chiếu nó trên cái
+0:02:03 - 0:02:09, không gian con à chiếu nó trên một cái
+0:02:05 - 0:02:14, không gian con khác đó là W
+0:02:09 - 0:02:18, ờ W1 và W2.
+0:02:14 - 0:02:20, Rồi thì khi ở trên cái tệ hệ
+0:02:18 - 0:02:22, trên cái không gian cũ á thì chúng ta sẽ
+0:02:20 - 0:02:26, chiếu xuống dưới trục U1 và U2. Nhưng mà
+0:02:22 - 0:02:28, khi chúng ta chiếu lên trên cái ờ không
+0:02:26 - 0:02:35, gian con mới thì chúng ta sẽ phải chiếu
+0:02:28 - 0:02:37, lên hai cái vecơ U1 và à W1 và W2 này.
+0:02:35 - 0:02:39, Đó thì X của mình nó sẽ phải chiếu lên
+0:02:37 - 0:02:42, hai trục này. Và đây chính là cái phép
+0:02:39 - 0:02:44, chiếu. Đây chính là cái cái phép chiếu
+0:02:42 - 0:02:48, của mình.
+0:02:44 - 0:02:52, Trong đó JK nó chính là cái tọa độ. À
+0:02:48 - 0:02:59, trong đó J là một cái tọa độ ở trong cái
+0:02:52 - 0:03:04, ờ không gian W1 và W2. Còn W thì sẽ là
+0:02:59 - 0:03:06, ờ cái tọa độ của cái vecơ trực chuẩn
+0:03:04 - 0:03:09, trong cái không gian con. Đó thì khi đó
+0:03:06 - 0:03:12, là J của mình JK này của mình nó sẽ
+0:03:09 - 0:03:15, thuộc một cái RD.
+0:03:12 - 0:03:19, WK này cũng là thuộc RD.
+0:03:15 - 0:03:21, Tại vì cho dù nó là cái hệ tọa độ hệ một
+0:03:19 - 0:03:24, cái không gian con đi chăng nữa thì cái
+0:03:21 - 0:03:26, cái tọa độ của nó cũng sẽ phải có cái số
+0:03:24 - 0:03:29, chiều giống như là cái số chiều ban đầu.
+0:03:26 - 0:03:31, Rồi thì khi đó là thằng này là vectơ D
+0:03:29 - 0:03:33, chiều, đây là vectơ D chiều nhân lại thì
+0:03:31 - 0:03:35, nó sẽ ra một cái giá trị scalar. Thì
+0:03:33 - 0:03:38, tích của hai cái này nó chính là cái
+0:03:35 - 0:03:39, hình chiếu. À nó tích tích của hai này
+0:03:38 - 0:03:43, chính là hình chiếu trên cái thành phần
+0:03:39 - 0:03:47, thứ k. Ví dụ chúng ta lấy cái J1 nhân
+0:03:43 - 0:03:49, với W1 chính là cái giá trị
+0:03:47 - 0:03:54, nó chính là cái giá trị
+0:03:49 - 0:04:00, tọa độ trên cái trục W1. Rồi W2 nhân với
+0:03:54 - 0:04:02, J2 chính là cái tọa độ trên à cái à vecơ
+0:04:00 - 0:04:03, trực chuẩn W2
+0:04:02 - 0:04:07, ha. Đó thì bản chất đây chính là phép
+0:04:03 - 0:04:09, chiếu. Và thay vì chúng ta lưu x, chúng
+0:04:07 - 0:04:11, ta lưu cái tọa độ trong cái không gian
+0:04:09 - 0:04:13, U1 U2 thì bây giờ chúng ta sẽ lưu cái
+0:04:11 - 0:04:15, hình chiếu của nó. À chúng ta sẽ lưu cái
+0:04:13 - 0:04:20, hình chiếu của nó. Thì trong trường hợp
+0:04:15 - 0:04:24, nếu như cái P này nè mà nhỏ hơn so với
+0:04:20 - 0:04:28, lại D, P mà nhỏ hơn so với D tức là
+0:04:24 - 0:04:28, chúng ta bỏ đi một cái thành phần.
+0:04:31 - 0:04:35, Ví dụ chúng ta bỏ đi thành phần này
+0:04:36 - 0:04:43, thì khi đó là chúng ta chỉ tốn có một
+0:04:40 - 0:04:46, cái giá trị chúng ta chỉ cần tốn một giá
+0:04:43 - 0:04:49, trị để lưu cái tọa độ của x nhưng mà
+0:04:46 - 0:04:51, đương nhiên đây sẽ là tọa độ xắp xỉ chứ
+0:04:49 - 0:04:52, không thể nào mà chính xác tuyệt đối.
+0:04:51 - 0:04:57, Còn muốn chính xác tuyệt đối thì chúng
+0:04:52 - 0:04:59, ta phải có cái số chiều P bằng với lại
+0:04:57 - 0:05:01, D. Còn ở đây vì chúng ta đang muốn giảm
+0:04:59 - 0:05:03, số chiều tức là P nhỏ hơn D thì chúng ta
+0:05:01 - 0:05:06, sẽ phải chấp nhận đó là bỏ đi một cái
+0:05:03 - 0:05:09, thành phần nào đó. Tuy nhiên cái việc mà
+0:05:06 - 0:05:11, chọn lựa cái thành phần W nào thì chúng
+0:05:09 - 0:05:13, ta sẽ dựa trên cái phương size. Nếu mà
+0:05:11 - 0:05:15, phương size nhỏ thì chúng ta sẽ bỏ đi.
+0:05:13 - 0:05:16, Tại vì cái thông tin để giúp phân biệt
+0:05:15 - 0:05:18, các cái dữ liệu của mình nó không có
+0:05:16 - 0:05:20, nhiều.
+0:05:18 - 0:05:22, Và nếu mà nhìn nó ở một cái góc độ là
+0:05:20 - 0:05:24, một cái mạng neuro network thì đầu vào
+0:05:22 - 0:05:27, của mình sẽ là một cái vecơ D chiều và
+0:05:24 - 0:05:30, đầu ra sẽ là một cái vectơ J là có P
+0:05:27 - 0:05:33, chiều. Trong đó mỗi cái giá trị J1, J2,
+0:05:30 - 0:05:36, JP nó chính là cái kết quả của cái phép
+0:05:33 - 0:05:36, chiếu.
+0:05:36 - 0:05:42, Đó, nó chính là cái kết quả của cái phép
+0:05:38 - 0:05:45, chiếu. Các cái tọa độ của mình, cái điểm
+0:05:42 - 0:05:47, tọa độ của mình lên trên cái vecơ trược
+0:05:45 - 0:05:52, chuẩn chiếu
+0:05:47 - 0:05:52, lên cái vecơ
+0:05:54 - 0:05:58, trực chuẩn.
+0:06:02 - 0:06:06, W1.
+0:06:04 - 0:06:10, Tương tự như vậy, ở dưới sẽ là chiếu lên
+0:06:06 - 0:06:14, cái vecơ trực chuẩn W2.
+0:06:10 - 0:06:14, Đây là sẽ là à WP.
+0:06:14 - 0:06:21, Thì khi đó ờ thay vì lưu là X1, X2 cho
+0:06:18 - 0:06:25, đến XD thì chúng ta chỉ cần lưu Z1, Z2,
+0:06:21 - 0:06:27, Z, ZP à nó sẽ đỡ tốn bộ nhớ hơn. Và các
+0:06:25 - 0:06:30, cái bước để thực hiện với PCA thì bước
+0:06:27 - 0:06:32, một đó là chúng ta sẽ đưa cái dữ liệu
+0:06:30 - 0:06:34, xoay quanh cái góc tọa độ của mình. Tức
+0:06:32 - 0:06:36, là nếu như cái dữ liệu góc của mình nó
+0:06:34 - 0:06:41, như thế này thì chúng ta sẽ kìm tìm cách
+0:06:36 - 0:06:44, là tỉnh tiến cái hệ trục tọa độ về à về
+0:06:41 - 0:06:47, tâm của cái cụm này. Và tâm cụm này thì
+0:06:44 - 0:06:49, được biểu diễn bởi là x x gạch tức là
+0:06:47 - 0:06:51, giá trị trung bình. Đó. Thì khi chúng ta
+0:06:49 - 0:06:53, lấy
+0:06:51 - 0:06:55, x tức là cái dữ liệu góc trừ cho cái x
+0:06:53 - 0:06:57, trung bình này nè thì bản chất là chúng
+0:06:55 - 0:07:00, ta đang thực hiện một cái phép tịnh
+0:06:57 - 0:07:03, tiến. Chúng ta đang tịnh tiến cái à hệ
+0:07:00 - 0:07:06, trục tọa độ góc à về cái hệ trục tọa độ
+0:07:03 - 0:07:09, mới là E1 E2. Trong đó cái góc tọa độ nó
+0:07:06 - 0:07:11, sẽ nằm ngay trung tâm.
+0:07:09 - 0:07:13, Sau đó chúng ta sang bước số hai đó là
+0:07:11 - 0:07:15, chúng ta sẽ tính cái ma trận hiệp phương
+0:07:13 - 0:07:18, sai S. hàm ma trận hiệp phương sai S để
+0:07:15 - 0:07:20, tìm ra các cái đặc trưng liên quan đến
+0:07:18 - 0:07:22, nhau như thế nào thì bản chất của cái
+0:07:20 - 0:07:25, phép mà nhân hiệp phương sai này chúng
+0:07:22 - 0:07:27, ta đang tìm à nhân cái chúng ta đang tìm
+0:07:25 - 0:07:29, cái sự tương quan giữa các cái dữ liệu
+0:07:27 - 0:07:31, của mình thì nếu như dữ liệu nào mà có
+0:07:29 - 0:07:35, cái sự tương quan càng cao thì nó chứng
+0:07:31 - 0:07:38, tỏ là có cái sự tương đồng cao. đó thì
+0:07:35 - 0:07:43, khi chúng ta tính s là bằng trung bình
+0:07:38 - 0:07:46, cộng của x sau khi đã được ờ à đưa về
+0:07:43 - 0:07:48, cái trung tâm á đó thì là x mũ nhân với
+0:07:46 - 0:07:51, x mũ chuyển vị thì x là cái ma trận đã
+0:07:48 - 0:07:54, chuẩn hóa ở trong cái bước số 1 thì n là
+0:07:51 - 0:07:55, số mẫu dữ liệu của mình. Và sang bước số
+0:07:54 - 0:07:58, hai thì chúng ta sẽ tìm các cái thành
+0:07:55 - 0:08:01, phần chính à nơi mà dữ liệu có cái độ
+0:07:58 - 0:08:03, biến thiên lớn. Thì khi mà cái độ dữ
+0:08:01 - 0:08:05, liệu của mình nó có biến thiên lớn thì
+0:08:03 - 0:08:08, tức là cái hàm lượng thông tin của mình
+0:08:05 - 0:08:11, nó sẽ có nhiều hơn. Nó sẽ phân biệt giữa
+0:08:08 - 0:08:15, dữ liệu này với dữ liệu kia nhiều hơn.
+0:08:11 - 0:08:17, Và thành phần chính thứ nhất là PC một
+0:08:15 - 0:08:21, là principal component 1 thì chúng ta sẽ
+0:08:17 - 0:08:23, có là hướng có cái phương sai lớn nhất
+0:08:21 - 0:08:26, hay là dữ liệu phân tán nhiều nhất.
+0:08:23 - 0:08:28, Thành phần chính thứ hai đó là PC2 thì
+0:08:26 - 0:08:29, là vuông góc với lại cái PC1. Tức là
+0:08:28 - 0:08:33, thành phần 2 phải vuông góc với thành
+0:08:29 - 0:08:35, phần P1 PC1 và phương size thì lớn thứ
+0:08:33 - 0:08:37, nhì. Ở trên là phương size lớn thứ nhất
+0:08:35 - 0:08:39, còn ở đây sẽ là lớn thứ nhì. Và ở đây
+0:08:37 - 0:08:43, chúng ta sẽ có dấu ba chấm, tức là chúng
+0:08:39 - 0:08:45, ta sẽ tìm các cái thành phần chính tiếp
+0:08:43 - 0:08:48, theo à cho đến khi nào mà cái phương sai
+0:08:45 - 0:08:50, này nó không còn lớn nữa. Và các cái
+0:08:48 - 0:08:54, hướng này thì sẽ được xác định từ các
+0:08:50 - 0:08:56, cái vecơ riêng là agent vector của ma
+0:08:54 - 0:08:58, trận hiệp phương sai. Và mức độ quan
+0:08:56 - 0:09:02, trọng của chúng được đo bằng cái giá trị
+0:08:58 - 0:09:04, riêng tức là agent value. Và bước số 4
+0:09:02 - 0:09:07, đó là chọn các cái hướng quan trọng
+0:09:04 - 0:09:09, nhất. Thì giả sử như chúng ta có N cái
+0:09:07 - 0:09:13, principle component thì chúng ta chỉ cần
+0:09:09 - 0:09:14, chọn P bé hơn E. Giả sử ban đầu là có D
+0:09:13 - 0:09:17, đúng không? Thì chúng ta chỉ cần chọn P
+0:09:14 - 0:09:19, bé hơn D cái component mà có cái độ quan
+0:09:17 - 0:09:23, trọng à cao nhất. Sau đó chúng ta sẽ
+0:09:19 - 0:09:27, biến đổi dữ liệu. thì à chúng ta sẽ chọn
+0:09:23 - 0:09:29, P thành phần hàng đầu để mà giải thích
+0:09:27 - 0:09:32, được cái phần lớn cái phương size ví dụ
+0:09:29 - 0:09:34, như là 95% và biến đổi cái tập dữ liệu
+0:09:32 - 0:09:37, góc bằng cách chiếu nó lên các cái thành
+0:09:34 - 0:09:39, phần hàng đầu này.
+0:09:37 - 0:09:42, Thì ở đây chúng ta sẽ có một cái ví dụ
+0:09:39 - 0:09:44, minh họa, một cái hình ảnh minh họa. Thì
+0:09:42 - 0:09:47, ở bước số một là chúng ta đã chuyển cái
+0:09:44 - 0:09:50, hệ trục tọa độ là về tâm của cái dữ liệu
+0:09:47 - 0:09:54, của mình E1 và E2. thì tâm cái góc tọa
+0:09:50 - 0:09:56, độ của nó nó sẽ nằm ở trọng tâm của cái
+0:09:54 - 0:09:58, các cái dữ liệu. Sau khi chúng ta à phân
+0:09:56 - 0:10:01, tích cái thành phần chính thì chúng ta
+0:09:58 - 0:10:04, sẽ xác định được là cái thành phần U1 là
+0:10:01 - 0:10:08, cái thành phần mà có cái phương size là
+0:10:04 - 0:10:09, lớn nhất. Còn cái thành phần U2 dụ ở đây
+0:10:08 - 0:10:12, thì chúng ta thấy là cái phương sai của
+0:10:09 - 0:10:14, mình nó rất là bé và bé hơn so với lại
+0:10:12 - 0:10:16, U1 rất là nhiều. Do đó chúng ta sẽ không
+0:10:14 - 0:10:19, có quan trọng quan tâm đến cái thành
+0:10:16 - 0:10:21, phần U2 này. Và bước tiếp theo đó là
+0:10:19 - 0:10:23, chúng ta sẽ chiếu các cái điểm dữ liệu
+0:10:21 - 0:10:27, này. À ví dụ chúng ta chiếu dữ liệu
+0:10:23 - 0:10:30, xuống. chiếu dữ liệu xuống. Đó thì cái
+0:10:27 - 0:10:34, màu đỏ, điểm màu đỏ này chính là cái tọa
+0:10:30 - 0:10:37, độ chính là cái giá trị của à trên cái
+0:10:34 - 0:10:40, trục U1 chính là cái giá trị của các cái
+0:10:37 - 0:10:43, điểm của mình trên cái trục U1 này. Và
+0:10:40 - 0:10:45, chúng ta sẽ lưu à chúng ta sẽ lưu các
+0:10:43 - 0:10:48, cái điểm màu đỏ này lại, các cái giá trị
+0:10:45 - 0:10:50, màu đỏ này lại. Lưu ý là giá trị là giá
+0:10:48 - 0:10:51, trị đại số ha. Chúng ta sẽ thay nói cách
+0:10:50 - 0:10:54, khác đó là chúng ta lưu cái giá trị
+0:10:51 - 0:10:58, scalar của cái phép chiếu các cái điểm
+0:10:54 - 0:11:01, màu xanh xuống dưới cái vecơ trực chuẩn
+0:10:58 - 0:11:01, U1.
+0:11:01 - 0:11:07, Và như vậy thì thay vì chúng ta với mỗi
+0:11:03 - 0:11:09, điểm này chúng ta cần lưu hai giá trị
+0:11:07 - 0:11:12, tương ứng là hình chiếu trên E1 và E2
+0:11:09 - 0:11:14, thì bây giờ chúng ta chỉ cần lưu trên
+0:11:12 - 0:11:16, một giá trị thôi trên cái giá trị hình
+0:11:14 - 0:11:28, chiếu của U1.
+0:11:16 - 0:11:28, [âm nhạc]

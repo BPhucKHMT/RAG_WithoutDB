@@ -1,0 +1,135 @@
+0:00:00 - 0:00:22, Chào mừng các bạn đến với khóa học CS114, học máy. Chúng ta sẽ cùng đến với nội dung về giảm chiều dữ liệu.
+0:00:22 - 0:00:25, Tên tiếng Anh đó là Dimensionality Reduction
+0:00:26 - 0:00:29, Thì nói về khái niệm của giảm chiều dữ liệu
+0:00:29 - 0:00:34, Thì đây là một cái phương pháp để mà biểu diễn một tập các dữ liệu nhất định
+0:00:35 - 0:00:37, Lu ý là ở đây chúng ta sẽ có cái từ là nhất định
+0:00:37 - 0:00:43, Tức là nó sẽ giảm chiều cho những cái loại dữ liệu cho trước
+0:00:43 - 0:00:46, Chứ không phải là dữ liệu nào cũng có thể giảm chiều được
+0:00:47 - 0:00:51, Và đây là một cái phương pháp mà sử dụng ít đặc trưng hơn
+0:00:52 - 0:00:56, tức là số chiều ít hơn so với lại đặc trưng ban đầu
+0:00:56 - 0:01:02, trong khi mà nó vẫn nắm bắt được các thuộc tính có ý nghĩa của dữ liệu góc
+0:01:02 - 0:01:07, thì ở đây chúng ta sẽ có một ví dụ minh họa cho việc giảm chiều dữ liệu
+0:01:07 - 0:01:10, rất là kinh điển và phổ thông
+0:01:10 - 0:01:13, đó là chúng ta dùng phép chiếu kỹ thuật
+0:01:13 - 0:01:18, thì ở đây sẽ là dữ liệu ở trong không gian góc
+0:01:22 - 0:01:40, Vì vậy, chúng ta muốn biểu diễn dữ liệu của chiếc ly này ở trong không gian ít chiều hơn thì chúng ta sẽ thực hiện phép chiếu
+0:01:40 - 0:01:47, và khi chúng ta chiếu xuống dưới một cái mặt phẳng thì nó đã từ không gian 3 chiều
+0:01:47 - 0:01:50, nó giảm xuống còn một cái không gian đó là 2 chiều
+0:01:50 - 0:01:55, như vậy thì nó đã giúp cho chúng ta tiết kiệm được cái chi phí về mặt nưu trữ
+0:01:55 - 0:02:05, và về mặt kỹ thuật thì khi chúng ta chiếu ở 3 cái góc, 3 cái mặt phẳng khác nhau trực giao
+0:02:05 - 0:02:09, ở đây là chiếu ngang, chiếu xuống dưới và chiếu qua tay phải
+0:02:09 - 0:02:12, thì chúng ta có thể khôi phục ngược trở lại
+0:02:12 - 0:02:15, cái chữ liệu trong không gian gốc 3 chiều
+0:02:15 - 0:02:17, thế thì cái phép chiếu này
+0:02:17 - 0:02:21, nó đã giúp chúng ta có cung cấp một cái góc nhìn khác
+0:02:21 - 0:02:25, của cái đối tượng ở một cái mặt phẳng
+0:02:25 - 0:02:27, và mặt phẳng này là mặt phẳng 2 chiều
+0:02:27 - 0:02:32, và từ 3 cái mặt phẳng 2 chiều này
+0:02:32 - 0:02:36, chúng ta có thể hình dung được cái hình dạng của đối tượng
+0:02:36 - 0:02:38, khi ở trong không gian 3 chiều
+0:02:38 - 0:02:42, thế thì cái việc chiếu xuống này nó vẫn giúp cho chúng ta
+0:02:42 - 0:02:45, giữ được những cái ý nghĩa của cái dữ liệu góc
+0:02:45 - 0:02:47, mà chúng ta không có bị mất đi
+0:02:49 - 0:02:52, thế thì tại sao chúng ta cần phải giảm chiều dữ liệu
+0:02:52 - 0:02:54, thì có rất nhiều lý do
+0:02:54 - 0:02:57, lý do đầu tiên đó là việc giảm chiều dữ liệu thì
+0:02:57 - 0:03:01, khi chúng ta sử dụng cái dữ liệu ở trong cái không gian ít chiều hơn
+0:03:01 - 0:03:04, thì thời gian huấn luyện mô hình sẽ giảm xuống
+0:03:04 - 0:03:06, Cái này là đương nhiên đúng không ạ?
+0:03:06 - 0:03:12, Và nó sẽ yêu cầu tài nguyên tính toán về mặt phần cứng
+0:03:12 - 0:03:14, là CPU, GPU cũng sẽ thấp hơn
+0:03:14 - 0:03:18, vì số chiều dữ liệu ít hơn thì chi phí tính toán cũng sẽ thấp hơn
+0:03:18 - 0:03:22, Và đôi khi trong một số thực toán thì nó sẽ chỉ hiệu quả
+0:03:22 - 0:03:26, khi chúng ta làm việc trên chiều dữ liệu thấp
+0:03:26 - 0:03:33, Còn nếu chúng ta làm trên những dữ liệu trong không gian dày đặt nhiều chiều thì nó sẽ không hiệu quả
+0:03:33 - 0:03:36, Trong khi đó không gian mà thư thớt thì nó lại hiệu quả hơn
+0:03:36 - 0:03:42, Và nó lại giúp chúng ta ngăn ngừa hiện tượng overfitting
+0:03:42 - 0:03:47, Thì hiện tượng overfitting là một hiện tượng trong học máy trong đó mô hình của mình quá phức tạp
+0:03:47 - 0:03:52, Khi chúng ta giảm nhiều dữ liệu xuống thì chúng ta đã giảm độ phức tạp của mô hình
+0:03:52 - 0:04:02, Các dạm độ phức tạp này đã giúp chúng ta ngầm tránh được hiện tượng Overfitting
+0:04:02 - 0:04:07, Do nó loại bỏ được các kế thuật tấm thừa và phụ thuộc lại nhau
+0:04:07 - 0:04:15, Rồi nó cho phép chúng ta có thể biểu diễn dữ liệu ở trong một khuôn dạng phức tạp
+0:04:15 - 0:04:24, là không gian 2 chiều hoặc là 3 chiều để giúp chúng ta có thể khám phá và trực quan phân tích và khám phá được
+0:04:24 - 0:04:28, thì cái này nó phục vụ cho cái việc đầu tiên đó là chúng ta sẽ trực quan hóa dữ liệu
+0:04:30 - 0:04:35, tại vì trong không gian mà nhiều hơn 3 chiều chúng ta sẽ rất khó mà có thể tưởng tượng được
+0:04:35 - 0:04:43, nhưng mà khi chúng ta chiếu xuống cái không gian 2 chiều và 3 chiều đó là 2 cái không gian mà chúng ta có thể dễ dàng vẽ ở bên trong máy tính
+0:04:43 - 0:04:47, thì việc trực quan hóa dữ liệu sẽ giúp chúng ta hiểu dữ liệu hơn
+0:04:47 - 0:04:53, và từ việc hiểu dữ liệu hơn thì chúng ta sẽ dễ dàng khám phá dữ liệu của mình hơn
+0:04:53 - 0:05:01, Và một ví dụ về giảm chiều dữ liệu, đó là chúng ta sẽ xét một tập dữ liệu x
+0:05:01 - 0:05:03, bao gồm các phần tử xy
+0:05:03 - 0:05:08, trong đó thì y sẽ chạy từ 1 đến n, tức là chúng ta có n phần tử
+0:05:08 - 0:05:10, về các xe máy
+0:05:10 - 0:05:13, và được đặc trưng bởi một tập hợp các kế thuật tính
+0:05:13 - 0:05:19, và n các kế thuật tính thì bao gồm là kích thước, màu sắc, tốc độ tối đa v.v.
+0:05:19 - 0:05:23, thì một chiếc xe máy sẽ được biểu diễn bởi n kế thuật tính này
+0:05:23 - 0:05:27, và giả sử có hai kế thuật tính có kế thuật tính tương quan chặt chẽ với nhau
+0:05:27 - 0:05:34, ví dụ như là xej là tốc độ theo dặm giờ
+0:05:34 - 0:05:37, và xeq là tốc độ theo kmh
+0:05:37 - 0:05:41, thì ta có thể loại bỏ 1 trong 2 thuộc tính này
+0:05:41 - 0:05:45, tại vì thuộc tính Xiz và Xik
+0:05:45 - 0:05:47, tức là mẫu dữ liệu thứ y
+0:05:47 - 0:05:53, nhưng trường thông tin thứ chi và ka có tính tương tự nhau
+0:05:53 - 0:05:57, 1 cái thì tính theo dặm, 1 cái thì tính theo km
+0:05:57 - 0:06:01, thì 2 thuộc tính này hoàn toàn tương tự nhau
+0:06:01 - 0:06:05, và chúng ta hoàn toàn có thể loại bỏ ra khỏi bảng dữ liệu
+0:06:05 - 0:06:08, giúp chúng ta tiết kiệm chi phí tính toán
+0:06:08 - 0:06:13, khi chúng ta lại bỏ 1 trong 2 thuộc tính này
+0:06:13 - 0:06:16, thì nó đã giúp chúng ta giảm số chiều dữ liệu xuống
+0:06:16 - 0:06:18, chỉ còn là n-1 thôi
+0:06:18 - 0:06:23, lưu ý cái này là chống chấm thang chứ không phải là
+0:06:23 - 0:06:26, cái phép gọi là dài thừa
+0:06:26 - 0:06:30, một cái ứng dụng khác đó là giảm chiều dữ liệu
+0:06:30 - 0:06:35, giúp chúng ta khám phá được cấu trúc tập dữ liệu MNIST
+0:06:35 - 0:06:41, MNIST là một bộ data set gồm các chữ số, chữ cái từ 0 cho đến 9
+0:06:41 - 0:06:47, và khi chúng ta chiếu ma trận địa mảnh
+0:06:47 - 0:06:49, ví dụ ở đây chúng ta có số 3 chẳng hạn
+0:06:49 - 0:06:52, chúng ta chiếu ma trận địa mảnh này xuống không gian
+0:06:52 - 0:06:55, thì chúng ta thấy nó sẽ nằm ở trong khu vực như thế này
+0:06:55 - 0:07:03, và chúng ta sẽ thấy những điểm nào mà cục cùng một con số thì nó sẽ nằm trong cùng một khu vực giống nhau
+0:07:03 - 0:07:13, Và một ví dụ khác đó là giúp cho chúng ta có sự liên kết giữa các thực thể trong dữ liệu của mình
+0:07:13 - 0:07:23, Ví dụ như đây khi chúng ta trực quan hóa dữ liệu DNA của các quốc gia ở châu Âu thì người ta thấy rằng có sự tương quan về mặt vị trí địa lý trong thực tế
+0:07:23 - 0:07:33, thì những quốc gia nào nằm gần nhau thì sẽ có cái cấu trúc, có cái cấu tạo của DNA nó sẽ giống nhau và nó sẽ nằm gần nhau
+0:07:33 - 0:07:42, rồi một cái ứng dụng khác của giảm chiều dữ liệu đó là giúp chúng ta có thể nén hình ảnh
+0:07:42 - 0:07:49, ví dụ như đây là một cái ảnh gốc, ảnh Z-Pax thì nó có cái kích thước là hơn 800 kilobyte
+0:07:49 - 0:08:00, và khi chúng ta nén mà có mất mát và chấp nhận đó là mất mát khoảng 50% thì nó giảm từ 800 chỉ còn khoảng 76kb
+0:08:00 - 0:08:02, tức là đã giảm hơn 10 lần
+0:08:02 - 0:08:08, mặc dù là cái mức độ mất mát về mặt thông tin chỉ là 50%
+0:08:08 - 0:08:14, nhưng về mặt thị giác nếu chúng ta để ý kỹ thì 2 cái tấm hình này gần như là giống nhau
+0:08:14 - 0:08:23, Nếu như chúng ta không để ý kỹ, nếu như chúng ta xem vô cấu tạo từng pixel thì chúng ta thấy nó có sự khác biệt, nó sẽ có sự không mực mà ở đây
+0:08:23 - 0:08:29, Nhưng nếu chúng ta nhìn lướt qua thì chúng ta sẽ thấy là không có sự thay đổi đáng kể về mặt thị giác
+0:08:29 - 0:08:40, Như vậy thì chúng ta hoàn toàn có thể chấp nhận, đánh đổi cái việc là có thể nó sẽ không giống với dữ liệu ban đầu nhưng mà khối lượng dữ liệu của mình sẽ được giảm đi một cách đáng kể
+0:08:40 - 0:08:47, Và để mô hình hóa cho cái bài toán này thì chúng ta sẽ sử dụng cái mô hình như sau
+0:08:47 - 0:08:53, đó là giảm chiều dữ liệu, đó là một cái thuật toán học không giám sát
+0:08:53 - 0:09:02, để học từ phân bố của một cái dữ liệu nhất định để giúp cho chúng ta chuyển dữ liệu đó từ không gian nhiều chiều
+0:09:02 - 0:09:09, từ không gian nhiều chiều ban đầu sang cái không gian ít chiều hơn thì bản chất nó chính là một cái hàm mapping
+0:09:09 - 0:09:14, Và map từ không gian của x về z
+0:09:14 - 0:09:20, thì z là một tập hợp biểu diễn các số chiều thấp hơn của dữ liệu
+0:09:20 - 0:09:25, Còn x là biểu diễn của dữ liệu góc ban đầu và có số chiều nhiều hơn
+0:09:25 - 0:09:26, so với lại z
+0:09:26 - 0:09:31, Với mỗi đầu vào xy, đây là mẫu dữ liệu
+0:09:31 - 0:09:37, và hàm fθ sẽ tính toán và tạo ra một biểu diễn thấp nhiều hơn
+0:09:37 - 0:09:41, tức là fθ của x,y
+0:09:42 - 0:09:46, thì nó sẽ ra là bằng z,y
+0:09:46 - 0:09:53, thì đây chính là cái biểu diễn ít chiều hơn của
+0:09:57 - 0:10:00, của x của dư tiêu góc ban đầu
+0:10:00 - 0:10:11, Và để mà giảm chiều, ở trong slide trước thì chúng ta nói về mô hình hóa bài toán một cách toàn quát
+0:10:11 - 0:10:16, Tức là từ một cái không gian x về không gian z, không gian z, ít chiều hơn
+0:10:16 - 0:10:19, Còn ở đây thì chúng ta sẽ giảm chiều một cách tuyến tính
+0:10:19 - 0:10:27, Tức là để chuyển đổi từ không gian nhiều chiều về không gian ít chiều thì chúng ta sẽ sử dụng một phép biến đổi tuyến tính
+0:10:27 - 0:10:38, Và đối với giảm chiều tiến tín thì nó vẫn thỏa mãn các tín chấp đó là x là 1 cái vector rd và z là 1 cái không gian là rp
+0:10:38 - 0:10:45, Thì p nó sẽ bấy hơn d, tức là không gian sau khi biến đổi nó sẽ nhỏ hơn sau với lại cái không gian ban đầu
+0:10:45 - 0:10:55, Và ở đây thì chúng ta sẽ có cái phép biến đổi tiến tín đó là z, tức là cái điểm dữ liệu sau khi chúng ta đã giảm chiều dữ liệu
+0:10:55 - 0:10:58, thì là bằng S theta x là bằng cái hàm theta
+0:10:58 - 0:11:03, sẽ là bằng hàm w nhân với x
+0:11:03 - 0:11:06, trong đó thì cái tham số theta của mình nó chính là w
+0:11:06 - 0:11:10, hai thì thằng này thật ra là 1 trong trường hợp này là 1
+0:11:10 - 0:11:11, nhưng mà về mặt ký hiệu tổng quát
+0:11:11 - 0:11:15, thì theta thường được sử dụng để ký hiệu cho tham số
+0:11:15 - 0:11:17, do đó chúng ta sẽ ký hiệu là theta
+0:11:17 - 0:11:19, nhưng mà trong trường hợp này theta nó chính là bằng w
+0:11:19 - 0:11:23, là một cái ma trận có kích thước là d nhân với lại p
+0:11:23 - 0:11:43, khi ma trận w là d nhân với p, khi chúng ta chuyển vị nhân với x thì nó sẽ giúp chúng ta ánh sạ từ 1 vétter r, d chiều về vétter có r, rp chiều
+0:11:43 - 0:11:51, Vector chiều thấp hơn z sẽ được tạo ra từ vector x ban đầu và ma trận w
+0:11:51 - 0:11:59, Z được tạo ra bởi vector x ban đầu và ma trận w
+0:11:59 - 0:12:02, tức là chúng ta sẽ lấy khí phép nhân tuyên tính
+0:12:13 - 0:12:15, Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp dẫn

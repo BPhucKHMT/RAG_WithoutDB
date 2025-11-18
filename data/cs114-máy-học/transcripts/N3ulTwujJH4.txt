@@ -1,0 +1,68 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:21, Tiếp theo sẽ là những cái nhược điểm của
+0:00:15 - 0:00:23, PCA. Thì à nó sẽ kém về cái à tính toán
+0:00:21 - 0:00:25, khi số chiều dữ liệu lớn. Thì do cái
+0:00:23 - 0:00:29, thời gian chạy của PCA là tăng rất là
+0:00:25 - 0:00:32, nhanh, tức là một cái hàm bậc ba. à thì
+0:00:29 - 0:00:33, theo cái số chiều của dữ liệu. Do đó nếu
+0:00:32 - 0:00:36, như cái chiều của dữ liệu mà của mình mà
+0:00:33 - 0:00:38, lớn tức là D mà lớn
+0:00:36 - 0:00:41, thì lúc đó cái chi phí tính toán rất là
+0:00:38 - 0:00:44, lớn. Rồi các cái thành phần chính mới
+0:00:41 - 0:00:47, thì khó diễn giải thì ở cái trong cái
+0:00:44 - 0:00:50, không gian ờ của cái dữ liệu ban đầu của
+0:00:47 - 0:00:52, mình nó được thu thập từ dữ liệu thô. Và
+0:00:50 - 0:00:55, việc từ thu thập từ dữ liệu thô thì nó
+0:00:52 - 0:00:57, sẽ gần với lại cái cách giải thích của
+0:00:55 - 0:00:59, con người. Nhưng mà khi chúng ta đưa nó
+0:00:57 - 0:01:01, về một cái không gian mới thì các cái
+0:00:59 - 0:01:04, chiều dữ liệu mới nó đã mất đi cái ý
+0:01:01 - 0:01:07, nghĩa về mặt vật lý à khiến cho chúng ta
+0:01:04 - 0:01:09, khó giải thích cái kết quả của mình.
+0:01:07 - 0:01:11, Rồi nó chỉ hoạt động tốt với các cái dữ
+0:01:09 - 0:01:14, liệu tiếng tính. PC là một cái kỹ thuật
+0:01:11 - 0:01:16, tuến tính do đó nó sẽ rất là kém hiệu
+0:01:14 - 0:01:18, quả khi làm việc trên những cái dữ liệu
+0:01:16 - 0:01:23, mà có cái mối quan hệ phi tiến tính hay
+0:01:18 - 0:01:25, là nonlinear. Và nó sẽ có một cái khuyết
+0:01:23 - 0:01:27, điểm nữa đó là nó sẽ nhạy cảm với lại
+0:01:25 - 0:01:31, các cái giá trị ngoại lai outlier. Khi
+0:01:27 - 0:01:33, chúng ta tối ưu hóa cái phương sai thì
+0:01:31 - 0:01:36, các cái giá trị ngoại lai có thể bị sai
+0:01:33 - 0:01:38, lệch, bị sai hướng của các cái thành
+0:01:36 - 0:01:40, phần chính vì những cái giá trị ngoại
+0:01:38 - 0:01:42, lai này.
+0:01:40 - 0:01:44, Đó ví dụ như khi chúng ta à có các điểm
+0:01:42 - 0:01:46, này thì bỗng nhiên có một cái giá trị
+0:01:44 - 0:01:49, outlayer ở đây. nó có thể là kéo cái
+0:01:46 - 0:01:53, thành phần chính của mình bị lệch xuống
+0:01:49 - 0:01:58, thay vì là nó phải là như thế này
+0:01:53 - 0:01:58, đó thì nó lại bị kéo lệch về phía này
+0:01:58 - 0:02:04, và do cái thời gian có hạn thì chúng ta
+0:02:00 - 0:02:06, sẽ chỉ nói về thuật toán PCA ngoài ra
+0:02:04 - 0:02:08, thì chúng ta cũng còn rất nhiều những
+0:02:06 - 0:02:11, cái phương pháp những cái kỹ thuật để
+0:02:08 - 0:02:13, giảm chiều dữ liệu khác ví dụ như đối
+0:02:11 - 0:02:15, với cái thuật toán mà về tuyến tính thì
+0:02:13 - 0:02:18, chúng ta sẽ có principle
+0:02:15 - 0:02:20, component analysis tức là PCA rồi
+0:02:18 - 0:02:23, independent component analysis tức là
+0:02:20 - 0:02:23, ICA
+0:02:24 - 0:02:29, rồi factor analysis còn đối với cái thực
+0:02:26 - 0:02:30, nhóm thực toán phi tiến tính thì nó sẽ
+0:02:29 - 0:02:33, nằm trong cái projection base. Và đặc
+0:02:30 - 0:02:37, biệt là TSNI thì đây là một trong những
+0:02:33 - 0:02:39, cái phương pháp giảm chiều phi tuyến
+0:02:37 - 0:02:42, tính được sử dụng rất là nhiều cho cái
+0:02:39 - 0:02:45, việc là trực quan hóa dữ liệu
+0:02:42 - 0:02:47, rất là phổ biến.
+0:02:45 - 0:02:48, Đó thì khi nếu muốn trực quan hóa dữ
+0:02:47 - 0:02:51, liệu đa chiều thì chúng ta có thể sử
+0:02:48 - 0:02:53, dụng cái TSNI. Ngoài ra thì chúng ta có
+0:02:51 - 0:02:55, thể sử dụng các cái kỹ thuật về feature
+0:02:53 - 0:02:58, selection ví dụ như là missing radio,
+0:02:55 - 0:03:00, low variant filter, random forest. Thì
+0:02:58 - 0:03:02, đây là một số cái mô hình để giúp cho
+0:03:00 - 0:03:05, chúng ta xác định xem cái đặc trưng nào
+0:03:02 - 0:03:17, là cái đặc trưng quan trọng.
+0:03:05 - 0:03:17, [âm nhạc]

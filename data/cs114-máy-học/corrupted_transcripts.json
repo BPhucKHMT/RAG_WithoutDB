@@ -1,0 +1,11 @@
+{
+  "corrupted_files": [
+    {
+      "video_id": "BnkbGbLfP3I",
+      "video_index": 44,
+      "title": "[CS114 - Chương 2] Các bước phát triển ứng dụng học máy",
+      "reason": "timestamp_discontinuous",
+      "source_path": "cs114-máy-học\\transcripts\\BnkbGbLfP3I.txt"
+    }
+  ]
+}

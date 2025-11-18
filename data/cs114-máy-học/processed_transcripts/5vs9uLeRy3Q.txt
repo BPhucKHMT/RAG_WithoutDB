@@ -1,0 +1,231 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:18, Chúng ta sẽ cùng đến với cái nhóm thuật
+0:00:15 - 0:00:22, toán phân cụm à tiếp theo đó là
+0:00:18 - 0:00:25, hierarchical clustering hay là phân cụm
+0:00:22 - 0:00:29, à phân tần. Thì à nếu như ở trong cái
+0:00:25 - 0:00:32, phần thuật toán phân cụm theo kiểu
+0:00:29 - 0:00:35, phân hoạch thì một cái điểm dữ liệu của
+0:00:32 - 0:00:39, mình nó chỉ thuộc duy nhất bởi một cái
+0:00:35 - 0:00:42, cụm. Thì đối với thuật toán à à đối với
+0:00:39 - 0:00:45, cái nhóm mà hierarchical clustering tức
+0:00:42 - 0:00:47, là phân cụm phân tần thì một cái điểm dữ
+0:00:45 - 0:00:51, liệu của mình nó có thể vừa thuộc cái
+0:00:47 - 0:00:53, cụm số 6 mà vừa thuộc cái cụm số 8 và
+0:00:51 - 0:00:55, thuộc cái cụm số 9.
+0:00:53 - 0:00:58, Ví dụ bên đây cái điểm dữ liệu thứ tư
+0:00:55 - 0:01:00, thì vừa thuộc cái cụm số 6 mà vừa thuộc
+0:00:58 - 0:01:04, cái cụm số 9. Tức là nó thuộc hai cái
+0:01:00 - 0:01:06, cụm và nó sẽ có tình trạng đó là cụm lớn
+0:01:04 - 0:01:09, thì nó sẽ chứa luôn những cái cụm nhỏ
+0:01:06 - 0:01:12, hơn. Đó thì đây là
+0:01:09 - 0:01:16, một chuỗi các cái cụm nó nó lồng nhau. 9
+0:01:12 - 0:01:18, thì chứa 8 và 6. 8 thì chứa 6 và 3, 6
+0:01:16 - 0:01:21, thì chứa 1 và 2.
+0:01:18 - 0:01:24, Rồi thì ở đây chúng ta sẽ có hai cái à
+0:01:21 - 0:01:27, loại thuật toán phân cụm phân tần. Đầu
+0:01:24 - 0:01:28, tiên đó là cái phương pháp à hai cái
+0:01:27 - 0:01:31, phương pháp ha. Phương pháp đầu tiên đó
+0:01:28 - 0:01:33, là bottom up hoặc hay còn gọi là
+0:01:31 - 0:01:37, agglomerative
+0:01:33 - 0:01:38, là xây dựng cái sơ đồ phân loại à xây
+0:01:37 - 0:01:40, dựng cái sơ đồ phân loại hay còn gọi là
+0:01:38 - 0:01:43, dendrogram.
+0:01:40 - 0:01:45, À từ cái cấp dưới cùng chúng ta sẽ đi từ
+0:01:43 - 0:01:49, cái cấp dưới cùng tức là từ cái điểm dữ
+0:01:45 - 0:01:49, liệu của mình
+0:01:53 - 0:01:57, đó. Chúng ta sẽ đi từ cái cụm này. Từ
+0:01:56 - 0:02:01, cái điểm dữ liệu này sẽ là một cái cụm
+0:02:01 - 0:02:08, đầu tiên. Sau đó nó sẽ hợp nhất với cái
+0:02:04 - 0:02:10, cặp cụm mà giống nhau nhất hoặc là gần
+0:02:08 - 0:02:12, nhau nhất. Giống nhất hoặc là gần nhất.
+0:02:10 - 0:02:15, Thì ví dụ chúng ta thấy là ở đây chúng
+0:02:12 - 0:02:18, ta rã ra thành một cụm. Mỗi điểm này là
+0:02:15 - 0:02:20, một cụm. Rồi sau đó là hai cái điểm này,
+0:02:18 - 0:02:23, hai cái cụm này là gần nhau nhất thì
+0:02:20 - 0:02:27, chúng ta sẽ bắt đầu gom nó lên thành một
+0:02:23 - 0:02:27, cụm. Đó. Rồi sau đó chúng ta lại tiếp
+0:02:31 - 0:02:35, tục à gom.
+0:02:33 - 0:02:39, Rồi sau đó chúng ta lại thấy là hai cái
+0:02:35 - 0:02:40, điểm này thì cái cụm này và cái điểm này
+0:02:39 - 0:02:43, rồi cái cụm này và điểm à cái cụm này và
+0:02:40 - 0:02:47, điểm này là gần nhau nhất. Chúng ta sẽ
+0:02:43 - 0:02:47, lại gom
+0:02:49 - 0:02:55, Cứ như vậy chúng ta sẽ gom.
+0:02:52 - 0:02:59, Thì đây là cái kiểu phân cụm gom tầng.
+0:02:55 - 0:03:00, Và phương pháp thứ hai à
+0:02:59 - 0:03:03, phương pháp đầu đó là phương pháp về
+0:03:00 - 0:03:06, bottom up tức là đi từ dưới lên. Còn cái
+0:03:03 - 0:03:10, phương pháp thứ hai á đó là phương pháp
+0:03:06 - 0:03:12, top down là divisive thì nó sẽ ngược
+0:03:10 - 0:03:15, lại. Đó là từ các cái điểm này chúng ta
+0:03:12 - 0:03:18, đã xem nó tất cả
+0:03:15 - 0:03:21, chúng ta đã xem nó như là một cụm lớn
+0:03:18 - 0:03:25, rồi. Rồi sau đó chúng ta lại chẻ nhỏ
+0:03:21 - 0:03:25, xuống đó.
+0:03:27 - 0:03:32, [âm nhạc]
+0:03:28 - 0:03:34, À ban đầu là à không có cái này ha. Rồi
+0:03:32 - 0:03:38, chúng ta lại gom. Rồi sau đó ở đây chúng
+0:03:34 - 0:03:41, ta tiếp tục lại gom.
+0:03:38 - 0:03:43, Đó thì là đi từ trên xuống.
+0:03:41 - 0:03:46, Thì giữa hai cái phương pháp là top down
+0:03:43 - 0:03:48, và bottom up thì top down nó sẽ không
+0:03:46 - 0:03:52, phổ biến bằng bottom up. Hay nói cách
+0:03:48 - 0:03:55, khác đó là cái phương pháp
+0:03:52 - 0:03:58, agglomerative clustering thì nó sẽ là phổ
+0:03:55 - 0:04:01, biến hơn cái phương pháp phân chia dạng
+0:03:58 - 0:04:02, divisive method. Và ban đầu với mỗi dữ
+0:04:01 - 0:04:04, liệu thì chúng ta sẽ tạo thành một cái
+0:04:02 - 0:04:06, cụm. Tức là một điểm dữ liệu là tương
+0:04:04 - 0:04:09, ứng đã là một cụm rồi, hay còn gọi là
+0:04:06 - 0:04:12, một nút. Và chúng ta sẽ lần lượt gom
+0:04:09 - 0:04:14, nhóm hợp nhất từ từ các cái cụm có cái
+0:04:12 - 0:04:15, khoảng cách ngắn nhất lại với nhau. Thì
+0:04:14 - 0:04:19, cái tiêu chí thế nào gọi là ngắn nhất
+0:04:15 - 0:04:19, giữa các cụm?
+0:04:22 - 0:04:27, thì sẽ được à đề cập ở trong những cái
+0:04:25 - 0:04:29, slide tiếp theo. Rồi sau đó chúng ta cứ
+0:04:27 - 0:04:32, lặp đi lặp lại cái việc này. Tiếp tục
+0:04:29 - 0:04:34, hợp nhất hợp nhất gom cụm gom cụm. Cuối
+0:04:32 - 0:04:37, cùng tất cả các cái nút thì đều được gom
+0:04:34 - 0:04:39, về một cái cụm lớn một cái cụm lớn và
+0:04:37 - 0:04:42, cụm này sẽ là bao phủ hết tất cả các cái
+0:04:39 - 0:04:45, điểm dữ liệu của mình.
+0:04:42 - 0:04:47, Thì cái thuật toán đó là Agglomerative là
+0:04:45 - 0:04:50, đầu vào của chúng ta sẽ có một cái tập
+0:04:47 - 0:04:54, dữ liệu là D. Và lúc này thì chúng ta sẽ
+0:04:50 - 0:04:56, không có cho trước cái số cụm chúng ta
+0:04:54 - 0:04:59, cần chia là K.
+0:04:56 - 0:05:01, Rồi với mỗi điểm dữ liệu trong cái tập D
+0:04:59 - 0:05:04, này thì chúng ta sẽ xem nó như là một
+0:05:01 - 0:05:06, cái cụm. Sau đó chúng ta sẽ đi tính cái
+0:05:04 - 0:05:10, khoảng cách giữa tất cả các cái cặp
+0:05:06 - 0:05:16, điểm. Tất cả cặp điểm X1 với X2, X1 với
+0:05:10 - 0:05:19, X3, X1 với XM, X2 với X3 X vân vân.
+0:05:16 - 0:05:23, tất cả các cặp điểm để tìm ra cái cặp
+0:05:19 - 0:05:26, nào là nhỏ nhất. Tìm hai cái cụm mà gần
+0:05:23 - 0:05:28, nhau nhất. Tìm hai cụm gần nhau nhất.
+0:05:26 - 0:05:30, Sau đó gộp thành thì giả sử như cụm 2 và
+0:05:28 - 0:05:32, cụm 3 cho cái khoảng cách gần nhất thì
+0:05:30 - 0:05:35, chúng ta sẽ gom hai cái thằng này lại
+0:05:32 - 0:05:38, với nhau để tạo thành một cụm. Rồi sau
+0:05:35 - 0:05:43, đó lại tiếp tục so x1 với cái cụm 23, x1
+0:05:38 - 0:05:45, với cái cụm 4, x1 với cụm 5. Cứ như vậy
+0:05:43 - 0:05:49, và gộp hai cụm này thành một cái cụm mới
+0:05:45 - 0:05:51, để đặt tên là C. Ví dụ đây là C thì tính
+0:05:49 - 0:05:53, khoảng cách từ C đến tất cả các cái cụm
+0:05:51 - 0:05:55, còn lại. Thì vì chúng ta mới hình thành
+0:05:53 - 0:05:57, cái cụm mới nên chúng ta phải tính cái
+0:05:55 - 0:06:00, giá trị cho nó. Còn các cái cụm kia thì
+0:05:57 - 0:06:03, chúng ta tái sử dụng lại và tiếp tục tìm
+0:06:00 - 0:06:06, hai cụm gần nhất. Rồi lại gộp lại
+0:06:03 - 0:06:09, rồi lại à tính khoảng cách cho cái cụm
+0:06:06 - 0:06:11, mới được sáp nhập mới được gom lại đó
+0:06:09 - 0:06:14, hợp nhất lại lại tiếp tục đi tính khoảng
+0:06:11 - 0:06:17, cách và chúng ta sẽ lập cho đến khi nào
+0:06:14 - 0:06:19, chỉ còn duy nhất một cụm
+0:06:17 - 0:06:22, thì trong cái sơ đồ này chúng ta sẽ thấy
+0:06:19 - 0:06:29, đây là một cái kiểu à phân cụm theo kiểu
+0:06:22 - 0:06:31, là nested tức là à nó sẽ bao hàm gọi là
+0:06:29 - 0:06:35, gộp lại với nhau, gộp lại lẫn nhau.
+0:06:31 - 0:06:38, Thì ở cái vòng lập đầu tiên là hai cái
+0:06:35 - 0:06:41, điểm P1 và P2 là gần nhất nên nó sẽ gom
+0:06:38 - 0:06:41, lại thành một cụm.
+0:06:43 - 0:06:52, Rồi sau đó thì hai điểm P5 và P4 là gần
+0:06:48 - 0:06:54, nhất. Nó sẽ gom lại thành một cụm.
+0:06:52 - 0:06:57, Và tương ứng ở đây chúng ta thấy là P1
+0:06:54 - 0:06:59, P2 gom lại thành một cụm. Thì bản chất
+0:06:57 - 0:07:03, giữa A và B đây chỉ là hai cái cách biểu
+0:06:59 - 0:07:07, diễn khác nhau. Một cái là Nested
+0:07:03 - 0:07:07, và một cái là dendrogram.
+0:07:07 - 0:07:15, rồi sau đó thì chúng ta sẽ thấy là cụm
+0:07:10 - 0:07:17, số 1 và P3 à cụm 1 và P3 là gần nhất.
+0:07:15 - 0:07:19, Tại vì hai cái thằng này à cụm 1 và P3
+0:07:17 - 0:07:22, nó sẽ có cái khoảng cách gần hơn. Còn
+0:07:19 - 0:07:24, cái cụm số hai này nó bị tách biệt ra
+0:07:22 - 0:07:27, xa. Nó có một cái đoạn khoảng cách xa
+0:07:24 - 0:07:31, như thế này thì P3 sẽ được gom với lại
+0:07:27 - 0:07:31, P1 P2 để tạo thành một cụm mới.
+0:07:33 - 0:07:38, Đó cụm này có tên là 3. Sau đó thì chúng
+0:07:36 - 0:07:41, ta thấy là hai cái cụm này, hai cụm 3 và
+0:07:38 - 0:07:43, cụm 2 chỉ là hai cụm duy nhất thôi thì
+0:07:41 - 0:07:46, chắc chắn chúng ta sẽ gom nó lại thành
+0:07:43 - 0:07:49, một cái cụm số 4. Thì đây là cái cách
+0:07:46 - 0:07:55, hoạt động của thuật toán. à gom cụm
+0:07:49 - 0:07:57, theo kiểu là à bottom up.
+0:07:55 - 0:07:59, Thì ở đây chúng ta sẽ có cái khoảng cái
+0:07:57 - 0:08:02, khái niệm nó gọi là khoảng cách giữa hai
+0:07:59 - 0:08:02, cụm.
+0:08:02 - 0:08:07, Bây giờ hai cái cụm này có rất nhiều
+0:08:04 - 0:08:07, điểm.
+0:08:11 - 0:08:17, Thì bây giờ chúng ta sẽ ờ định nghĩa thế
+0m:15:00 - 0:08:18, nào là một cái khoảng cách giữa hai cụm.
+0:08:17 - 0:08:20, thì có rất nhiều cái cách định nghĩa
+0:08:18 - 0:08:25, khác nhau. Cái cách đầu tiên đó là dựa
+0:08:20 - 0:08:28, trên à liên kết đơn. Tức là nó sẽ lấy ra
+0:08:25 - 0:08:31, một điểm à nó sẽ tính cái khoảng cách
+0:08:28 - 0:08:32, nhỏ nhất giữa hai điểm thuộc hai cụm
+0:08:31 - 0:08:36, này. Ví dụ như chúng ta thấy là trong
+0:08:32 - 0:08:38, cái cụm số 1 và cái cụm số hai thì
+0:08:36 - 0:08:41, khoảng cách nhỏ nhất
+0:08:38 - 0:08:44, giữa hai cái điểm trong hai cái cụm này
+0:08:41 - 0:08:46, chính là hai cái điểm này. Đó. Tại sao?
+0:08:44 - 0:08:48, Ví dụ như hai điểm này, chúng ta thấy là
+0:08:46 - 0:08:51, khoảng cách nó dài hơn so với hai điểm
+0:08:48 - 0:08:54, này hoặc là hai điểm này à thì nó có
+0:08:51 - 0:08:58, khoảng cách dài hơn. Do đó chúng ta sẽ
+0:08:54 - 0:09:00, lấy ra hai điểm ở mỗi cụm. Và ờ khoảng
+0:08:58 - 0:09:03, cách nào là ngắn nhất? Thì đó chính là
+0:09:00 - 0:09:05, cái khoảng cách theo kiểu là single link
+0:09:03 - 0:09:07, liên kết đơn.
+0:09:05 - 0:09:09, Thì với cái cách này nó sẽ dễ bị ảnh
+0:09:07 - 0:09:13, hưởng bởi những cái điểm mà liên tiếp
+0:09:09 - 0:09:15, nhau. À nó sẽ cứ nối vô nối vô nối vô
+0:09:13 - 0:09:18, nối vô thành một cái cụm. Thì cái điều
+0:09:15 - 0:09:21, này nó sẽ làm cho cái cụm của mình nó sẽ
+0:09:18 - 0:09:24, liên tục phình ra và phình theo cái hướng
+0:09:21 - 0:09:26, là chiều dài dẹt như thế này. Còn cái
+0:09:24 - 0:09:31, kiểu thứ hai đó là liên kết hoàn chỉnh
+0:09:26 - 0:09:35, hay còn gọi là complete à complete link.
+0:09:31 - 0:09:38, Tức là nó sẽ lấy ra hai cái điểm
+0:09:35 - 0:09:42, xa nhất
+0:09:38 - 0:09:44, giữa hai cụm. Đây là điểm xa nhất. Rồi
+0:09:42 - 0:09:46, thì khoảng cách giữa hai cái cụm này
+0:09:44 - 0:09:49, chính là hai cái điểm mà ở xa nhất ngoài
+0:09:46 - 0:09:52, rìa của hai cái cụm số 1 và cái cụm số
+0:09:49 - 0:09:56, hai này. Còn liên kết trung bình tức là
+0:09:52 - 0:09:57, chúng ta sẽ cộng tất cả những cái độ dài
+0:09:56 - 0:10:00, của các cái khoảng cách này lại với
+0:10:00 - 0:10:05, nhau. Rồi sau đó chúng ta cộng lại trung
+0:10:01 - 0:10:07, bình.
+0:10:05 - 0:10:09, Và cái cách thứ tư đó là trọng tâm.
+0:10:07 - 0:10:11, Tức là chúng ta sẽ lấy ra một điểm nằm ở
+0:10:09 - 0:10:14, trọng tâm của cái cụm thứ nhất. Rồi một
+0:10:11 - 0:10:17, cái điểm nằm ở trọng tâm của cái cụm thứ
+0:10:14 - 0:10:20, hai. Rồi sau đó chúng ta nối lại. Thì
+0:10:17 - 0:10:25, đây chính là cái cách định nghĩa cái
+0:10:20 - 0:10:27, khoảng cách giữa hai cái cụm. Như vậy
+0:10:25 - 0:10:29, thì chúng ta đã cùng tìm hiểu về
+0:10:27 - 0:10:30, thuật toán
+0:10:29 - 0:10:34, một trong những cái thuật toán mà gom
+0:10:30 - 0:10:37, cụm phân tần.
+0:10:34 - 0:10:40, rất là phổ biến và
+0:10:37 - 0:10:43, sử dụng rất là phổ biến đó chính là
+0:10:40 - 0:10:46, thuật toán Agglomerative. Nó sẽ phổ biến
+0:10:43 - 0:10:49, hơn so với lại thuật toán là divisive
+0:01:46 - 0:10:52, tức là từ top down từ bottom up thì nó sẽ là phổ biến hơn.
+0:10:49 - 0:10:55, Và để làm được cái thuật toán này thì
+0:10:52 - 0:10:57, chúng ta sẽ cần phải có cái khái niệm đó
+0:10:55 - 0:10:59, là khoảng cách giữa hai cụm là gì thì
+0:10:57 - 0:11:01, chúng ta sẽ có rất nhiều những cái khái
+0:10:59 - 0:11:03, niệm khác nhau. Và với mỗi cái khái niệm
+0:11:01 - 0:11:05, thì nó cũng đều có những cái điểm yếu và
+0:11:03 - 0:11:08, điểm mạnh. Thì chúng ta sẽ tùy theo cái
+0:11:05 - 0:11:11, dữ liệu của mình nó như thế nào để mà
+0:11:08 - 0:11:13, mình à chọn lựa cái
+0:11:11 - 0:11:14, thuật toán hoặc là chọn lựa cái khái
+0:11:13 - 0:11:17, niệm định nghĩa cho cái khoảng cách giữa
+0:11:14 - 0:11:20, hai cụm cho nó phù hợp với cái bài toán
+0:11:17 - 0:11:24, đó. Không chắc là có một cái phương pháp
+0:11:20 - 0:11:24, nào là tốt nhất.
+0:11:28 - 0:11:35, [âm nhạc]
+0:11:29 - 0:11:35, [âm nhạc]
