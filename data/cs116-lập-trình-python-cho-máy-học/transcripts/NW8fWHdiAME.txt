@@ -1,0 +1,162 @@
+0:00:00 - 0:00:10, Một trong nụ cộng phần rất quan trọng của các mô hình máy học là tinh chỉnh siêu tam số.
+0:00:10 - 0:00:14, Trong một mô hình máy học, nó sẽ bao gồm hai loại tam số.
+0:00:14 - 0:00:26, Tam số đầu tiên là các tam số chính của mô hình dựa trên dữ liệu của hữu luyện để tìm ra các mộng tam số tối ương nhất với các hành đo lộn trước.
+0:00:26 - 0:00:35, khi chúng ta xây dựng một mô hình mới học thì chúng ta sẽ có những tham số liên quan đến kiến trúc của mô hình của mình
+0:00:35 - 0:00:44, những tham số này gọi là siêu tham số và những tham số này cũng đóng góp rất quan trọng đến dựng năng của hệ thống của mình
+0:00:44 - 0:00:58, Để tinh chỉnh siêu tâm số, chúng ta có 3 phương pháp đầu tiên là Random Search, Research, Random Search và Bayesian Optimization
+0:00:58 - 0:01:10, để cài đặt phương pháp Bayesian Optimization thì phải cài đặt thêm 1 module, toolkit, sidekit optimize
+0:01:10 - 0:01:19, module này sẽ giúp chúng ta khởi tạo SK Optimize, sidekit optimize
+0:01:19 - 0:01:27, sidekit optimize chính là thư viện để phục vụn Bayesian Optimization
+0:01:27 - 0:01:33, Đối với phần research và random search, chúng ta sẽ khai báo
+0:01:33 - 0:01:36, đó là scikitlearn.module.selection
+0:01:36 - 0:01:37, là phương pháp chọn lượng mô hình
+0:01:37 - 0:01:43, với research gross validation và random search gross validation
+0:01:43 - 0:01:48, ở đây có make classification thì chúng ta sẽ không sử dụng data set này
+0:01:48 - 0:01:54, data set chúng ta sẽ sử dụng là decision tree classifier
+0:01:54 - 0:02:06, Để tạo data set, chúng ta sẽ sử dụng data set của Scikit-learn với data set Titanic
+0:02:06 - 0:02:17, data set này, chúng ta sẽ quan sát data.data
+0:02:17 - 0:02:21, đây chính là dữ liệu góc của mình đặt trưng đồ vào
+0:02:21 - 0:02:27, bao gồm là pclass,name,age, giới tính,age, v.v.
+0:02:27 - 0:02:32, nó sẽ có một số trường bị năn, tức là bị rõng
+0:02:32 - 0:02:43, và một số trường, ví dụ như trường Name, chúng ta thấy là tên người nó sẽ không có vai trò trong việc phân loại
+0:02:43 - 0:02:55, hộp, home, địa chỉ nhà, hoặc địa chỉ nơi đến, cũng không có vai trò trong việc đưa ra dự đoán giá trị ảo vụt cuối cùng của mình
+0:02:55 - 0:03:01, do đó các hộp như Name hoặc Home Destination thì chúng ta cũng sẽ bỏ đi
+0:03:01 - 0:03:10, Chúng ta chỉ chừa một số thụ tính, một số đặc trưng, ví dụ như là Pclass, Giới tính, Age, R, Popup
+0:03:10 - 0:03:17, Thì các thông số nào, các đặc trưng nào chúng ta sử dụng thì sẽ được đề cập trong Codelog tiếp theo
+0:03:17 - 0:03:20, Hai cái vòng này chúng ta sẽ trích xuất ra
+0:03:20 - 0:03:22, X là đặc trưng đầu vào
+0:03:22 - 0:03:26, Data.target chính là đặc trưng cầu kỳ dự đoán
+0:03:26 - 0:03:31, Chúng ta sẽ chia tập dí liệu này ra làm hai phần
+0:03:31 - 0:03:36, Test và Test Test thì chiếm 20% và Test trên thì 80%
+0:03:36 - 0:03:42, Và chúng ta sẽ làm một thao tác gọi là tiền xử lý
+0:03:42 - 0:03:46, Các giá trị về giới tính chúng ta sẽ map về các con số 0,1
+0:03:46 - 0:03:49, Như chúng ta đã biết là chúng ta sẽ sử dụng Decision Tree Classifier
+0:03:49 - 0:03:57, thì chúng ta sẽ phải convert mọi cái đặc trưng của mình về cái dạng số
+0:03:57 - 0:04:01, thì giới tính ban đầu sẽ lợi dạng calorie như dạng chuỗi
+0:04:01 - 0:04:04, thì chúng ta sẽ math nó về các con số là 0 và 1
+0:04:04 - 0:04:09, ngoài ra thì chúng ta sẽ phải xử lý một số cái tình huống là dữ liệu bị rõng
+0:04:09 - 0:04:13, thì chúng ta sẽ fill in nó bằng cách đó là lấy cái giá trị trung bình
+0:04:13 - 0:04:16, lấy cái giá trị trung bình của cái cột đó ví dụ cột phe
+0:04:16 - 0:04:21, Chúng ta sẽ lấy giá trị trung bình của cột fair, cột edge, và cột edge
+0:04:21 - 0:04:29, Chúng ta sẽ chọn ra 6 tặc trưng này để phục vụ cho bài toán phương loại
+0:04:29 - 0:04:42, Tương tự như vậy thì cho xTest chúng ta sẽ lấy ra các tặc trưng như vậy
+0:04:42 - 0:04:46, Rồi, chúng ta sẽ khởi tạo mô hình
+0:04:46 - 0:04:51, Ritual này chạy khá là lâu, tốn hơn 2 phút
+0:04:51 - 0:05:02, Làm sao chúng ta biết là có những tham số nào để chúng ta xét khoảng để mình có thể vét cạn
+0:05:02 - 0:05:12, thì chúng ta có thể sử dụng cái hàm, cái phương thức đó là model của decision tree.getparam
+0:05:12 - 0:05:20, thì trong đây chúng ta sẽ thấy là có rất nhiều những cái tham số
+0:05:20 - 0:05:29, tuy nhiên chúng ta chỉ xem xét trên một số, cái tham số chính có ảnh hưởng quan trọng đến cái performance, cái hiệu quả của mô hình
+0:05:29 - 0:05:34, Ví dụ như là độ sâu, như chúng ta biết trong decision tree
+0:05:34 - 0:05:38, nếu mà cái cây của mình nó càng sâu thì có khả năng nó sẽ bị overfit
+0:05:38 - 0:05:43, do đó thì chúng ta cũng không biết cái depth của mình là bao nhiêu là đủ
+0:05:43 - 0:05:45, do đó thì mình cứ cho nó giải từ 1 cho đến 15
+0:05:45 - 0:05:50, Tương tự như vậy là mean sample list, max feature
+0:05:50 - 0:05:55, đặc biệt là cái tiêu chí để giúp chúng ta xác định xem
+0:05:55 - 0:06:06, Tiêu trí nào là độ hỗn tạp, tiêu trí nào là chia đốt, chọn lựa đặc trưng cho phù hợp
+0:06:06 - 0:06:12, Có nhiều thông tin, chúng ta sẽ sử dụng độ đo Gini hoặc là độ entropy
+0:06:12 - 0:06:16, Rồi Splitter thì chúng ta có thể chọn random or best
+0:06:16 - 0:06:21, Đây là những thông số phổ biến trong thuộc tác decision tree
+0:06:21 - 0:06:27, và chúng ta sẽ gọi là research cross validation với tham số cross validation sẽ là 5
+0:06:27 - 0:06:29, và chúng ta sẽ truyền tham số read này vào
+0:06:29 - 0:06:33, và tật ra thì params read này nó cũng sẽ được sử dụng chung
+0:06:33 - 0:06:36, cho tất cả các params space
+0:06:36 - 0:06:41, hoặc là params distribution của random search
+0:06:41 - 0:06:43, thì dùng chung để cho có tính công bằng
+0:06:43 - 0:06:45, rồi thì
+0:06:45 - 0:06:51, Phương thức research chạy khá lâu, ở đây chúng ta đã chạy sẵn
+0:06:51 - 0:07:01, Khi chúng ta chạy xong, nó sẽ trả về best parameters, criterion tiêu chí để chọn lựa
+0:07:01 - 0:07:04, Mình chọn đặc trưng đó chính là entropy
+0:07:04 - 0:07:07, Max depth tốt nhất là 5
+0:07:07 - 0:07:10, Max feature là 4
+0:07:10 - 0:07:12, mean sample lift là bằng 7
+0:07:12 - 0:07:14, random stay là bằng 1
+0:07:14 - 0:07:16, random stay này thì cũng hơi thừa
+0:07:16 - 0:07:18, tại vì chúng ta chỉ có duy nhất 1 cái option thôi
+0:07:18 - 0:07:20, vậy đó cái này cũng thừa
+0:07:20 - 0:07:22, và cuối cùng là splitter thì
+0:07:22 - 0:07:24, best
+0:07:24 - 0:07:26, và chúng ta sẽ thử chạy
+0:07:26 - 0:07:28, với số vòng lập
+0:07:28 - 0:07:30, random search với số vòng lập là
+0:07:30 - 0:07:32, 32 thì xem coi
+0:07:32 - 0:07:34, là cái kết quả
+0:07:34 - 0:07:36, của mình như thế nào
+0:07:36 - 0:07:38, thì chúng ta thấy random search chạy rất là nhanh
+0:07:38 - 0:07:39, Routesert chạy rất nhanh
+0:07:40 - 0:07:43, Và cho performance đáng 79%
+0:07:43 - 0:07:44, so với
+0:07:44 - 0:07:47, Routesert là 80%
+0:07:47 - 0:07:50, Như vậy là tốc độ chính xác cũng tình như same same
+0:07:50 - 0:07:53, nhưng tốc độ rất nhanh, ở đây chỉ tốn 2 giây
+0:07:53 - 0:07:55, Trong khi Routesert
+0:07:55 - 0:07:58, ở đây tốn đến hơn 2 phút
+0:07:58 - 0:08:01, Cụ thể là 158 giây
+0:08:01 - 0:08:03, tức là phải 2 phút rưỡi
+0:08:04 - 0:08:07, Và tương tự như vậy thì Bayesian Optimization
+0:08:07 - 0:08:14, Mách Step dự xin Rank từ hệ
+0:08:14 - 0:08:20, Chúng ta sẽ cho lỗi Mách Step ở chỗ Mách Step
+0:08:20 - 0:08:40, Y membate ear Roger
+0:08:40 - 0:08:42, Nó phải là số nguyên
+0:08:42 - 0:08:43, Rồi, ok
+0:08:43 - 0:08:44, Như vậy thì
+0:08:45 - 0:08:47, Chúng ta sẽ phải dùng
+0:08:48 - 0:08:50, Cái integer, đúng không?
+0:08:50 - 0:08:52, Chúng ta phải dùng integer
+0:08:54 - 0:08:55, Thay vì là view
+0:08:56 - 0:08:58, Chắc là minSampleLift cũng vậy
+0:09:02 - 0:09:04, MaxFeature
+0:09:04 - 0:09:06, MaxFeature của mình cũng phải là integer
+0:09:10 - 0:09:18, Mim SampleList cũng vậy, chúng ta sẽ dùng integer thay vì số thật
+0:09:18 - 0:09:38, Chúng ta sẽ chạy nhanh hơn rất nhiều do, chúng ta sẽ không cần phải tính toán một số các thao tác để chọn lựa ra các thương tế.
+0:09:38 - 0:09:50, Chúng ta sẽ không cần phải tính toán một số các thư thao tác để chọn lựa ra cấu hình tiếp theo để thử nghiệm.
+0:09:50 - 0:09:59, Còn phương pháp Bayesian Optimization thì chúng ta sẽ phải tính toán để chọn ra từ phép thử hiện tại.
+0:09:59 - 0:10:03, Chúng ta sẽ tìm ra các phép thử tiếp theo thì nó sẽ tốn chi phí tính toán.
+0:10:03 - 0:10:25, và với phương pháp này thì chúng ta thấy tốn thời gian ít hơn so với lại phương pháp Research là 2 phút
+0:10:25 - 0:10:33, Nhưng kết quả của mình cho độ chính xác gần như tương đương, gần 80%
+0:10:35 - 0:10:41, Rõ ràng là phương pháp Bayesian Optimization cho thấy sự hiệu quả của mình
+0:10:41 - 0:10:47, Và các tham số của mình trả về mỗi Bayesian Optimization cũng tương tự
+0:10:48 - 0:10:50, Tiêu trí criterion cũng là entropy
+0:10:50 - 0:11:19, MaxDev là 5, MaxFeature là 6, MaxSampleLeaf là 7, MaxMeanSampleLeaf là 6
+0:11:19 - 0:11:24, Tức là các con số thử nghiệm cũng khá là tương đồng
+0:11:24 - 0:11:30, Và kết quả best score của mình cũng tương đương với của research
+0:11:31 - 0:11:42, Vậy trong bài lab này, chúng ta đã cùng tìm hiểu về các cách thức để tôn tham số
+0:11:42 - 0:11:52, Lưu ý là trong quá trình tôn, chúng ta phải tắt dữ liệu này ra làm hai phần, là Trend và Test
+0:11:52 - 0:11:57, Rồi sau đó chúng ta sẽ làm thực hiện một số thao tác tên là tiền xử lý dữ liệu
+0:12:01 - 0:12:07, Và chúng ta sẽ phải xác định được mô hình của mình là gì và tham số của mô hình là gì
+0:12:07 - 0:12:11, Sau đó chúng ta sẽ xét khoảng giá trị mà mình sẽ tìm kiếm
+0:12:11 - 0:12:14, và thực hiện việc tìm kiếm
+0:12:14 - 0:12:16, với phương pháp cho phù hợp
+0:12:18 - 0:12:21, sau đó chúng ta sẽ thử
+0:12:21 - 0:12:24, Bayesian Optimizer
+0:12:25 - 0:12:29, nó sẽ có performance trên tập test như thế nào
+0:12:30 - 0:12:33, chúng ta sẽ gọi best estimator
+0:12:33 - 0:12:36, tức là estimator có độ chính xác cao nhất
+0:12:36 - 0:12:38, chúng ta sẽ tiến hành là predict
+0:12:38 - 0:12:48, predict trên tập dữ liệu là sTrend aStat
+0:12:48 - 0:12:56, và đây là các giá trị mà mình hạ dịa đoán ra
+0:12:56 - 0:13:11, Rồi, y của mình sẽ là các con số, do đó mình sẽ phải x kiểu
+0:13:11 - 0:13:39, R explic là tattoo array
+0:13:39 - 0:13:43, Chúng ta sẽ đi so sánh cái này với giá trị predict ở đây
+0:14:05 - 0:14:07, Chúng ta sẽ phải chạy lại cái này
+0:14:09 - 0:14:20, sau đó chúng ta sẽ kính sum và chia cho land của predict
+0:14:20 - 0:14:36, Chúng ta sẽ ra được Accuracy của Base Model
+0:14:50 - 0:14:58, Chúng ta sẽ làm tập test là 79%
+0:14:58 - 0:15:10, Chúng ta sẽ cố gắng cố gắng đoạn cốt này cho estimator ở phía trên
+0:15:10 - 0:15:17, Chế độ tài liệu 79, phương phát Random Search
+0:15:17 - 0:15:24, Chế độ tài liệu Random Search, Best Estimator và Random
+0:15:24 - 0:15:36, Chế độ tài liệu 79, Base cao hơn 1 chút
+0:15:37 - 0:15:40, Và cuối cùng là Reason
+0:15:49 - 0:15:54, Ch bart này là Reason
+0:15:57 - 0:16:00, Rồi... D welded Key lot dâyeded là Điều vàng
+0:16:01 - 0:16:05, Đ 많 đ Scoverig Pminders cho Tar given
+0:16:05 - 0:16:13, và tầm chí là cao hơn so với lại cả tập Trend
+0:16:13 - 0:16:18, Ressort luôn luôn là phương pháp tối ưu nhất
+0:16:18 - 0:16:21, tại vì nó đã vết cản hết tất cả các kẻ năng có thể xảy ra
+0:16:21 - 0:16:27, do đó thì việc đổi chính xác của Ressort trên tế xác
+0:16:27 - 0:16:31, là chuyện hoàn toàn có thể dạ hiểu
+0:16:31 - 0:16:39, Tuy nhiên, random search sẽ rất nhanh và cho performance của mình tương đương
+0:16:39 - 0:16:45, cho kết quả random search là tương đương, 79
+0:16:45 - 0:16:55, Bias and optimization cho kết quả cao hơn so với random search
+0:16:55 - 0:17:03, Nhưng nó vẫn thua, cái research là 83% thì cái chuyện này cũng hoàn thành là dễ hiểu
+0:17:03 - 0:17:06, Tại vì cái phương pháp mà tối ứng nhất vẫn là research
+0:17:06 - 0:17:15, Rồi thì trên đây sẽ là cái bài để minh họa cách thức chúng ta sử dụng 3 cái phương pháp để tune tham số cho một cái mô hình

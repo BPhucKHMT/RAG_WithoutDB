@@ -1,0 +1,190 @@
+0:00:01 - 0:00:05, Chúng ta sẽ cùng đến với phương pháp tinh
+0:00:04 - 0:00:08, chỉnh tham số đầu tiên đó chính là
+0:00:05 - 0:00:11, Grid Search hay còn có một cái tên gọi khác
+0:00:08 - 0:00:13, đó chính là tìm kiếm theo lưới hoặc một
+0:00:11 - 0:00:14, cái tên nó dân gian hơn đó chính là tìm
+0:00:13 - 0:00:17, kiếm vét
+0:00:14 - 0:00:20, cạn thì ý tưởng của cái phương pháp
+0:00:17 - 0:00:23, Grid Search đó là chúng ta sẽ vét cạn trên
+0:00:20 - 0:00:25, tất cả các cái tổ hợp tham số có khả
+0:00:23 - 0:00:28, năng xảy ra và sau đó thì chúng ta sẽ
+0:00:25 - 0:00:30, tiến hành thử nghiệm thử nghiệm trên
+0:00:28 - 0:00:33, từng cái tổ hợp tham số đó và sau khi
+0:00:30 - 0:00:35, chúng ta đã thử hết trên toàn bộ những
+0:00:33 - 0:00:38, cái tổ hợp tham số rồi thì chúng ta sẽ
+0:00:35 - 0:00:40, chọn ra cái tổ hợp cho cái kết quả tốt
+0:00:38 - 0:00:43, nhất lấy ví dụ như hình ở đây chúng ta
+0:00:40 - 0:00:46, sẽ có hai cái siêu tham số cho một cái
+0:00:43 - 0:00:49, mô hình và ứng với cái siêu tham số số 1
+0:00:46 - 0:00:52, thì chúng ta sẽ thử trên cái giá trị nhỏ
+0:00:49 - 0:00:55, nhất cho đến cái giá trị là lớn nhất và
+0:00:52 - 0:00:58, chúng ta sẽ lấy mẫu đều tương tự như vậy
+0:00:55 - 0:01:00, cho cái siêu tham số số 2 chúng ta sẽ
+0:00:58 - 0:01:03, thử từ cái giá trị nhỏ nhất cho đến
+0:01:00 - 0:01:05, cái giá trị lớn nhất cho cái siêu tham
+0:01:03 - 0:01:08, số số hai này và chúng ta cũng sẽ lấy mẫu
+0:01:05 - 0:01:10, đều. Trường hợp nếu như cái không gian
+0:01:08 - 0:01:13, siêu tham số này là những cái giá trị
+0:01:10 - 0:01:15, rời rạc thì chúng ta có thể vét cạn được
+0:01:13 - 0:01:17, nhưng trong trường hợp nếu không gian
+0:01:15 - 0:01:20, siêu tham số này là những cái giá trị
+0:01:17 - 0:01:23, liên tục và cái giải giá trị của mình có
+0:01:20 - 0:01:26, thể là từ trừ vô cùng cho đến dương vô
+0:01:23 - 0:01:30, cùng thì chúng ta chỉ có thể thử trên
+0:01:26 - 0:01:32, những cái khoảng giá trị nhất định và
+0:01:30 - 0:01:34, chúng ta cũng chỉ có thể lấy mẫu đều chứ
+0:01:32 - 0:01:36, chúng ta không có khả năng thử được hết
+0:01:34 - 0:01:39, tất cả các cái giá trị có khả năng xảy
+0:01:36 - 0:01:42, ra cho cái siêu tham số mà nhận giá trị
+0:01:39 - 0:01:44, liên tục và khi chúng ta đã chia khoảng
+0:01:42 - 0:01:46, giá trị mà mình có thể nhận được rồi thì
+0:01:44 - 0:01:49, chúng ta sẽ lần lượt duyệt từ trái sang
+0:01:46 - 0:01:51, phải từ trên xuống dưới để thử hết tất
+0:01:49 - 0:01:55, cả những cái tham số có khả năng xảy ra
+0:01:51 - 0:01:57, của cái mô hình và ứng với tại một cái
+0:01:55 - 0:02:00, cấu hình này thì chúng ta sẽ tiến hành
+0:01:57 - 0:02:03, là xây dựng cái mô hình.
+0:02:00 - 0:02:05, Chúng ta sẽ tiến hành xây dựng mô hình
+0:02:03 - 0:02:07, với cái siêu tham số
+0:02:05 - 0:02:11, này rồi sau đó chúng ta sẽ tiến hành
+0:02:07 - 0:02:14, huấn luyện và sau khi huấn luyện xong
+0:02:11 - 0:02:16, thì chúng ta sẽ tiến hành đánh giá rồi
+0:02:14 - 0:02:18, chúng ta sẽ đánh giá và đương nhiên để
+0:02:16 - 0:02:20, đánh giá cho hiệu quả thì chúng ta phải
+0:02:18 - 0:02:23, đánh giá trên một cái tập dữ liệu khách
+0:02:20 - 0:02:28, quan đó chính là tập
+0:02:23 - 0:02:29, validation đó, tập validation. Và sau khi
+0:02:28 - 0:02:32, chúng ta đánh giá trên tập validation
+0:02:29 - 0:02:37, rồi ra được cái độ chính xác hoặc là một
+0:02:32 - 0:02:39, cái độ đo định lượng thì chúng ta sẽ so
+0:02:37 - 0:02:43, sánh với tất cả những cái cấu hình này.
+0:02:39 - 0:02:46, Cái cấu hình nào cho cái độ chính xác
+0:02:43 - 0:02:49, trên cái tập validation này là tốt nhất
+0:02:46 - 0:02:52, thì chúng ta sẽ lấy ở đó. Ví dụ như tại
+0:02:49 - 0:02:54, cái vị trí này là cái mô hình của mình
+0:02:52 - 0:02:56, nó cho cái độ chính xác cao nhất thì lúc
+0:02:54 - 0:02:59, đó chúng ta sẽ lấy cái bộ siêu tham số
+0:02:56 - 0:03:01, này để mà đi huấn luyện lại và chúng ta
+0:02:59 - 0:03:05, sẽ đi huấn luyện trên full toàn bộ cái
+0:03:01 - 0:03:07, tập dữ liệu training của mình để khi đó
+0:03:05 - 0:03:09, nó sẽ tận dụng được cái dữ liệu của mình
+0:03:07 - 0:03:12, nhiều
+0:03:09 - 0:03:14, hơn. Thì khi bình luận về cái phương pháp
+0:03:12 - 0:03:17, Grid Search này chúng ta thấy nó sẽ có
+0:03:14 - 0:03:19, những cái ưu và khuyết điểm. Đầu tiên nếu
+0:03:17 - 0:03:22, xét về ưu điểm thì chúng ta thấy là đây
+0:03:19 - 0:03:24, là một cái thuật toán cực kỳ đơn giản và
+0:03:22 - 0:03:27, rất là dễ cài đặt đúng không? Chúng ta
+0:03:24 - 0:03:28, chỉ cần thực hiện hai cái vòng for trên
+0:03:27 - 0:03:31, chúng ta chỉ cần thực hiện các cái vòng
+0:03:28 - 0:03:33, for trên từng cái siêu tham số là xong
+0:03:31 - 0:03:35, rồi. Và còn lại là cái việc xây dựng mô
+0:03:33 - 0:03:37, hình cũng như huấn luyện mô hình thì nó
+0:03:35 - 0:03:38, cũng tương tự như là trong cái Machine
+0:03:37 - 0:03:41, Learning
+0:03:38 - 0:03:43, Pipeline. Và cái không gian tham số của
+0:03:41 - 0:03:45, mình chia ra như vậy á thì nó sẽ cho
+0:03:43 - 0:03:48, phép mình tìm kiếm nó toàn diện. Đương
+0:03:45 - 0:03:50, nhiên là như đã đề cập thì nếu như cái
+0:03:48 - 0:03:52, siêu tham số của mình mà nó là những cái
+0:03:50 - 0:03:54, con số thực thì cái việc mà vét hết tất
+0:03:52 - 0:03:56, cả các khả năng xảy ra là không khả thi.
+0:03:54 - 0:03:58, Nhưng nếu đó là những cái giá trị rời
+0:03:56 - 0:04:01, rạc thì chúng ta hoàn toàn có khả năng
+0:03:58 - 0:04:03, là duyệt trên hết được cái không gian
+0:04:01 - 0:04:07, tham số của các cái tham số mà có giá
+0:04:03 - 0:04:09, trị rời rạc. Còn nếu như à đối với những
+0:04:07 - 0:04:10, cái giá trị mà dạng liên tục mặc dù
+0:04:09 - 0:04:12, chúng ta không thể vét hết được nhưng
+0:04:10 - 0:04:14, mà với cái phương pháp mà lấy mẫu đều
+0:04:12 - 0:04:16, trên các cái giá trị từ nhỏ nhất đến lớn
+0:04:14 - 0:04:18, nhất thì đâu đó nó cũng giúp cho chúng
+0:04:16 - 0:04:20, ta thực hiện được cái việc tìm kiếm nó
+0:04:18 - 0:04:24, tương đối là toàn diện trong cái không
+0:04:20 - 0:04:26, gian tham số của mình. Và cái điểm yếu
+0:04:24 - 0:04:28, của cái phương pháp này đó chính là nó
+0:04:26 - 0:04:30, đánh đồng cái vai trò của cái siêu tham
+0:04:28 - 0:04:33, số. Ví dụ như ở đây chúng ta thấy là
+0:04:30 - 0:04:35, siêu tham số số 1 và siêu tham số số 2
+0:04:33 - 0:04:37, thì rõ ràng là nó sẽ có những cái siêu
+0:04:35 - 0:04:40, tham số có cái vai trò rất là quan trọng
+0:04:37 - 0:04:43, đến cái độ chính xác của mô hình nhưng
+0:04:40 - 0:04:45, chúng ta cũng lấy mẫu tương đương với
+0:04:43 - 0:04:49, lại những cái siêu tham số mà không có
+0:04:45 - 0:04:51, cái vai trò quan trọng. Ví dụ à khi cái
+0:04:49 - 0:04:53, cái siêu tham số số 1 này của chúng ta
+0:04:51 - 0:04:55, thay đổi các giá trị từ nhỏ nhất cho đến
+0:04:53 - 0:04:57, lớn nhất cũng không thay đổi đáng kể
+0:04:55 - 0:05:00, cái độ chính xác của mô hình. Ví dụ như
+0:04:57 - 0:05:04, nó chỉ giúp cho mình là tăng được từ 1
+0:05:00 - 0:05:06, cho đến 2% thôi mà chúng ta vẫn phải
+0:05:04 - 0:05:08, tốn chi phí để mà vét cạn hết trong cái
+0:05:06 - 0:05:09, không gian siêu tham số số 1 không
+0:05:08 - 0:05:12, quan trọng
+0:05:09 - 0:05:15, này. Trong khi đó cái siêu tham số quan
+0:05:12 - 0:05:17, trọng hơn, ảnh hưởng lớn đến cái hiệu
+0:05:15 - 0:05:19, năng của mô hình là siêu tham số số 2. Ví
+0:05:17 - 0:05:22, dụ như chúng ta chỉ cần thay đổi một cái
+0:05:19 - 0:05:24, bước nhảy ở siêu tham số số 2 này thôi
+0:05:22 - 0:05:28, nó có thể giúp cho chúng ta tăng được từ
+0:05:24 - 0:05:31, 5 cho đến 10% thì chúng ta lại thử với
+0:05:28 - 0:05:34, số mẫu đồng đều với lại cái số mẫu trên
+0:05:31 - 0:05:36, siêu tham số 1. Tức là lẽ ra nếu
+0:05:34 - 0:05:38, phương pháp này tốt hơn thì nó phải xác
+0:05:36 - 0:05:40, định được siêu tham số nào cho cái sự
+0:05:38 - 0:05:43, thay đổi độ chính xác mô hình nhiều hơn
+0:05:40 - 0:05:45, thì chúng ta sẽ tập trung vét trên cái
+0:05:43 - 0:05:47, khu vực đó, lấy mẫu trên cái khu vực đó
+0:05:45 - 0:05:49, nhiều hơn. Còn những cái siêu tham số nào
+0:05:47 - 0:05:51, mà không có cái vai trò nhiều thì chúng ta sẽ
+0:05:51 - 0:05:57, giảm bớt cái tần suất của mẫu của mình
+0:05:54 - 0:05:59, đi. Và khuyết điểm tiếp theo của cái mô
+0:05:57 - 0:06:02, hình này đó chính là không gian tham số
+0:05:59 - 0:06:05, nó lớn. Ờ thì rõ ràng rồi, chúng ta nhìn
+0:06:02 - 0:06:07, trên cái sơ đồ này chúng ta thấy là số
+0:06:05 - 0:06:11, cái điểm mà chúng ta phải thử nghiệm là
+0:06:07 - 0:06:15, rất là dày. Do đó thì nếu mà chúng ta huấn
+0:06:11 - 0:06:18, luyện trên một cái mô hình mà có cái
+0:06:15 - 0:06:20, ờ số lượng tham số mô hình lớn cũng như
+0:06:18 - 0:06:24, là cái thời gian huấn luyện mà lâu có
+0:06:20 - 0:06:26, thể lên đến vài tiếng cho đến hàng tuần
+0:06:24 - 0:06:29, thì rõ ràng là cái việc thử nghiệm này
+0:06:26 - 0:06:34, không khả thi do cái không gian tìm kiếm
+0:06:29 - 0:06:36, quá lớn, không gian tham số quá lớn. Và
+0:06:34 - 0:06:38, chính vì cái điều đó nó cũng sẽ dẫn đến
+0:06:36 - 0:06:41, là cái tính không hiệu quả. Cái tính
+0:06:38 - 0:06:43, không hiệu quả của cái mô hình Grid Search
+0:06:41 - 0:06:45, này. Cái tính không hiệu quả này nó thể
+0:06:43 - 0:06:48, hiện ở chỗ đó là trong những cái lần thử
+0:06:45 - 0:06:50, nghiệm chúng ta không kế thừa được những
+0:06:48 - 0:06:52, cái kết quả tìm kiếm trước đó. Nghĩa là
+0:06:50 - 0:06:55, gì? Ví dụ như tại cái thời điểm thứ ba
+0:06:52 - 0:06:57, này nè, chúng ta chỉ thử nghiệm độc lập
+0:06:55 - 0:07:00, so với lại các cái thử nghiệm trước và
+0:06:57 - 0:07:03, sau nó. Nó không hề có cái sự khai thác
+0:07:00 - 0:07:06, được những cái thông tin của à những cái
+0:07:03 - 0:07:08, lần thử nghiệm trước. Lấy ví dụ nếu như
+0:07:06 - 0:07:11, chúng ta thử đến cái lần gần nhất và cho
+0:07:08 - 0:07:15, thấy là cái độ chính xác của nó nó không
+0:07:11 - 0:07:17, khác biệt nhiều so với lại cái à lần thứ
+0:07:15 - 0:07:19, một đúng không? Cái cái lần thử thứ hai
+0:07:17 - 0:07:22, nó không có cái sự thay đổi gì nhiều so
+0:07:19 - 0:07:24, với lần thứ một thì cái bước số ba này
+0:07:22 - 0:07:26, chúng ta có thể skip tức là chúng ta có
+0:07:24 - 0:07:29, thể bỏ qua để có thể nhảy xa hơn, tăng
+0:07:26 - 0:07:33, cái mức nhảy lên đó. Rồi ví dụ khi chúng
+0:07:29 - 0:07:36, ta thấy là từ đây sang đây đúng không? Từ
+0:07:33 - 0:07:39, đây sang đây mà cho cái độ
+0:07:36 - 0:07:41, à thay đổi của độ chính xác của mô hình
+0:07:39 - 0:07:43, tăng lên thì như vậy có vẻ cái xu hướng
+0:07:41 - 0:07:47, này, có vẻ cái xu hướng này nó đã giúp
+0:07:43 - 0:07:49, cho mình thay đổi đáng kể cái hiệu quả
+0:07:47 - 0:07:51, của mô hình thì chúng ta sẽ tiếp tục đi
+0:07:49 - 0:07:53, theo cái chiều như thế này thay vì chúng
+0:07:51 - 0:07:56, ta phải vét đi qua phải rồi xuống dưới
+0:07:53 - 0:07:59, lại đi qua trái rồi lại qua phải đó thì
+0:07:56 - 0:08:02, nó sẽ tốn rất nhiều thời gian để mà thử
+0:07:59 - 0:08:05, cho những cái cấu hình, cho những cái
+0:08:02 - 0:08:05, tham số mà không cần
+0:08:05 - 0:08:13, thiết. Và đó là những cái ưu điểm, khuyết
+0:08:08 - 0:08:13, điểm của cái mô hình Grid Search.

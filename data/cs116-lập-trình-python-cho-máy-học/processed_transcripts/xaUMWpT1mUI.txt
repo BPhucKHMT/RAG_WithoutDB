@@ -1,0 +1,159 @@
+0:00:01 - 0:00:16, [âm nhạc]
+0:00:13 - 0:00:18, một cái thành phần khác cũng rất là quan
+0:00:16 - 0:00:20, trọng trong cái ngôn ngữ lập trình Python
+0:00:18 - 0:00:22, và các cái ngôn ngữ lập trình
+0:00:20 - 0:00:25, khác đó chính là cấu trúc rẽ nhánh khi
+0:00:22 - 0:00:28, chúng ta thực hiện một cái câu lệnh tuần
+0:00:25 - 0:00:30, tự nào đó đúng không Thì đến một cái
+0:00:28 - 0:00:31, thời điểm nào đó chúng ta sẽ không đi
+0:00:30 - 0:00:34, theo một con đường nhất định và nó sẽ
+0:00:31 - 0:00:36, phụ thuộc vô cái điều kiện tại cái thời
+0:00:34 - 0:00:39, điểm kết thúc gần nhất và chúng ta có
+0:00:36 - 0:00:41, thể rẽ ra nhiều cái nhánh nhánh đi thì
+0:00:39 - 0:00:44, đây là cái cấu trúc rẽ nhánh và trong
+0:00:41 - 0:00:45, Python thì chúng ta sẽ có các từ khóa để
+0:00:44 - 0:00:47, giúp cho chúng ta thực hiện được các
+0:00:45 - 0:00:52, công việc này đó chính là dùng cái từ
+0:00:47 - 0:00:54, khóa là If, Elif và Else nếu như chúng ta thỏa
+0:00:52 - 0:00:56, mãn một cái điều kiện nào đó Đây là cái
+0:00:54 - 0:00:56, điều kiện
+0:01:01 - 0:01:06, thì chúng ta sẽ thực hiện một cái thao
+0:01:03 - 0:01:07, tác biến đổi ngược lại ngược lại tức là
+0:01:06 - 0:01:09, không thỏa mãn cái điều kiện này thì
+0:01:07 - 0:01:11, chúng ta sẽ xét tiếp các điều kiện tiếp
+0:01:09 - 0:01:11, theo
+0:01:18 - 0:01:22, cứ như vậy không thỏa mãn thì chúng ta
+0:01:20 - 0:01:26, lại tiếp tục xem các điều kiện tiếp theo
+0:01:22 - 0:01:28, và cuối cùng đây chính là còn lại
+0:01:26 - 0:01:30, còn lại thì chúng ta sẽ thực hiện cái
+0:01:28 - 0:01:33, câu lệnh này thì đó là cái ý nghĩa của
+0:01:30 - 0:01:36, If, Elif, Else và trong Python thì nó sẽ không
+0:01:33 - 0:01:38, có cái cấu trúc switch case nó sẽ không
+0:01:36 - 0:01:42, có switch case giống như là C++ và
+0:01:38 - 0:01:44, nó chỉ dùng 3 từ khóa là If, Elif và Else
+0:01:42 - 0:01:47, thì ở đây chúng ta sẽ xét một cái ví dụ
+0:01:44 - 0:01:50, đó là nếu như sinh viên làm bài tập
+0:01:47 - 0:01:52, đạt điểm là hơn 8 thì ở đây chúng
+0:01:50 - 0:01:55, ta hiểu là lớn hơn bằng 8 nha Thì học
+0:01:52 - 0:01:57, viên sẽ qua môn với cái kết luận đó là
+0:01:55 - 0:01:59, Excellent pass Tức là bài tập xuất sắc
+0:01:57 - 0:02:01, Còn nếu như sinh viên làm bài kiểm
+0:01:59 - 0:02:04, tra với cái điểm số là từ 6 cho đến 8
+0:02:01 - 0:02:06, thì học viên này là qua môn và ngược lại
+0:02:04 - 0:02:08, tất cả những trường hợp còn lại thì sẽ
+0:02:06 - 0:02:10, được gọi là fail thì lưu ý ở đây chúng
+0:02:08 - 0:02:12, ta sẽ không dùng cái tư duy mặc định sẵn
+0:02:10 - 0:02:14, giống như là các quy ước về thang điểm của trường
+0:02:12 - 0:02:15, của mình đó thì ở đây Nếu như cái đầu
+0:02:14 - 0:02:18, bài nó yêu cầu như thế nào thì chúng ta
+0:02:15 - 0:02:21, sẽ tiến hành cài đặt đúng như theo yêu
+0:02:18 - 0:02:21, cầu ở trên
+0:02:23 - 0:02:28, và ở đây thì chúng ta sẽ tiến hành
+0:02:30 - 0:02:36, lập trình thử cái yêu cầu trên ha chúng
+0:02:33 - 0:02:36, ta sẽ có một cái nó gọi là
+0:02:41 - 0:02:46, 7.5 và chúng ta sẽ
+0:02:47 - 0:02:53, lớn hơn hoặc bằng 8 thì chúng ta sẽ in
+0:02:51 - 0:02:57, ra Khi kết luận
+0:02:53 - 0:02:57, đó là Excellent pass
+0:03:05 - 0:03:11, [âm nhạc]
+0:03:08 - 0:03:14, ngược lại
+0:03:11 - 0:03:17, tức là nếu như không lớn hơn hoặc bằng 8
+0:03:14 - 0:03:19, thì lúc này chúng ta sẽ
+0:03:17 - 0:03:20, kiểm tra là nó có lớn hơn bằng 6 hay
+0:03:19 - 0:03:23, không
+0:03:20 - 0:03:24, vì nó không lớn hơn hoặc bằng 8 do đó
+0:03:23 - 0:03:26, chúng ta sẽ không cần thiết phải đưa vô
+0:03:24 - 0:03:29, cái điều kiện là lớn
+0:03:26 - 0:03:32, hơn 6 và bé hơn 8 nữa. Chúng ta chỉ cần là nó
+0:03:29 - 0:03:35, có lớn hơn bằng 6 hay không rồi chúng ta
+0:03:32 - 0:03:39, sẽ in ra đó là Well Pass
+0:03:35 - 0:03:39, [âm nhạc]
+0:03:39 - 0:03:43, trường hợp còn lại tức là chúng ta không
+0:03:41 - 0:03:46, lớn hơn 6 tức là bé hơn 6 thì chúng ta
+0:03:43 - 0:03:46, sẽ in ra là Fail
+0:03:54 - 0:03:59, thì chúng ta sẽ chạy thử ở đây thì nó sẽ
+0:03:57 - 0:04:03, đưa ra một cái thông báo à ở đây chúng
+0:03:59 - 0:04:04, ta sẽ viết sai đúng không là name 'result'
+0:04:03 - 0:04:07, Tức là cái biến 'result' chưa được định nghĩa
+0:04:04 - 0:04:09, ở đây là do ở đây chúng ta biết thiếu
+0:04:07 - 0:04:13, chữ t
+0:04:09 - 0:04:19, 7.5 thì nó sẽ là Well Pass Nếu như ở đây
+0:04:13 - 0:04:23, là 5.5 thì là fail và ở đây là 9.5
+0:04:19 - 0:04:23, thì ở đây nó Kết quả nó sẽ là
+0:04:25 - 0:04:28, Excellent pass
+0:04:30 - 0:04:34, [âm nhạc]
+0:04:32 - 0:04:36, cấu trúc tiếp theo đó chính là cấu trúc
+0:04:34 - 0:04:39, lặp thì ở đây Chúng ta có một cái hình
+0:04:36 - 0:04:41, ảnh minh họa vui là thế nào là một cái
+0:04:39 - 0:04:42, cấu trúc lặp thì cái hình trên cái điện
+0:04:41 - 0:04:46, thoại ở đây chúng ta sẽ lặp đi lặp lại
+0:04:42 - 0:04:48, nhiều lần và cấu trúc lặp thì nó sẽ có
+0:04:46 - 0:04:50, hai dạng dạng đầu tiên đó là vòng For
+0:04:48 - 0:04:52, For
+0:04:50 - 0:04:55, tức là một tập hợp và một cái danh sách
+0:04:52 - 0:04:57, mà có cái tính lặp đi lặp lại 2 đó là
+0:04:55 - 0:05:00, For một cái Index nằm trong một cái
+0:04:57 - 0:05:02, giải giá trị nào đó thì ở đây là cái
+0:05:00 - 0:05:04, cách thức chúng ta sẽ sử dụng vòng For
+0:05:02 - 0:05:07, Ngoài ra thì trong Python nó cũng sẽ có
+0:05:04 - 0:05:10, cái cấu trúc gọi là While kiểm tra nếu
+0:05:07 - 0:05:13, thỏa mãn một cái điều kiện nào đó Tức là
+0:05:10 - 0:05:16, trong khi mà cái điều kiện
+0:05:13 - 0:05:18, này nó vẫn được thỏa mãn thì lúc đó
+0:05:16 - 0:05:22, chúng ta sẽ thực hiện cái câu lệnh này
+0:05:18 - 0:05:26, thì ở đây chúng ta sẽ xét một cái ví dụ
+0:05:22 - 0:05:29, là chúng ta sẽ khởi tạo một cái số Pi
+0:05:26 - 0:05:33, là 3,14 và tính diện tích hình tròn với
+0:05:29 - 0:05:33, danh sách các cái bán kính như nêu trên
+0:05:35 - 0:05:40, rồi thì ở đây chúng ta sẽ khởi tạo số pi
+0:05:40 - 0:05:47, rồi sau đó chúng ta sẽ có một cái list
+0:05:44 - 0:05:47, radius
+0:05:47 - 0:05:52, là bao gồm các giá trị là 2, 4
+0:05:57 - 0:06:00, 5 8 10
+0:06:01 - 0:06:07, rồi và cái cách đơn giản nhất để chúng
+0:06:04 - 0:06:08, ta có thể tạo ra danh sách các cái diện
+0:06:07 - 0:06:14, tích tương ứng với các cái bán kính này
+0:06:08 - 0:06:14, đó chính là For r in radius
+0:06:15 - 0:06:20, nó cũng cho phép chúng ta hiểu Nó rất là
+0:06:19 - 0:06:23, gần với cái ngôn ngữ tự nhiên tức là với
+0:06:20 - 0:06:24, mỗi với mỗi chữ R nằm trong cái danh
+0:06:23 - 0:06:27, sách radius này thì mình sẽ thực hiện
+0:06:24 - 0:06:30, các lệnh gì đó chúng ta sẽ in ra là cái
+0:06:27 - 0:06:30, thông tin diện tích
+0:06:34 - 0:06:37, [âm nhạc]
+0:06:39 - 0:06:45, thì đây chính là cái danh sách các cái
+0:06:44 - 0:06:48, diện tích tương ứng với các cái bán kính
+0:06:45 - 0:06:50, trong cái biến trong cái list radius và
+0:06:48 - 0:06:50, trong
+0:06:50 - 0:06:57, Python thì nó sẽ có một cái gọi là
+0:06:54 - 0:06:57, Comprehension
+0:07:00 - 0:07:07, Comprehension lúc
+0:07:04 - 0:07:09, nó cho phép là đóng gói cái vòng For
+0:07:07 - 0:07:13, này và đưa vào bên trong các cái cấu
+0:07:09 - 0:07:15, trúc dữ liệu như là list và dictionary để
+0:07:13 - 0:07:17, chi để cho cái câu lệnh của mình nó gọn
+0:07:15 - 0:07:19, gàng hơn thì ở trong cái ví dụ ở đây
+0:07:17 - 0:07:23, chúng ta sẽ cùng
+0:07:19 - 0:07:24, làm một cái ví dụ về Comprehension chúng ta in
+0:07:23 - 0:07:27, ra tất cả các giá trị diện tích đây thì
+0:07:24 - 0:07:29, chúng ta sẽ đóng gói tất cả các cái diện
+0:07:27 - 0:07:31, tích này vào bên trong một cái list
+0:07:29 - 0:07:34, những cái cú pháp lúc đó cũng cực kỳ đơn
+0:07:31 - 0:07:36, giản Đó là area ví dụ đây là tên biến ha
+0:07:34 - 0:07:42, sẽ là bằng một cái list và trong cái
+0:07:36 - 0:07:42, list này thì chúng ta sẽ for r in radius
+0:07:43 - 0:07:47, và chúng ta sẽ thực hiện cái gì với cái
+0:07:45 - 0:07:49, r này thì chúng ta sẽ thực hiện là bán
+0:07:47 - 0:07:52, kính nhân bán kính ở đây chúng ta có thể
+0:07:49 - 0:07:55, thử dùng là r bình phương đi ha rồi sau
+0:07:52 - 0:07:59, đó thì chúng ta sẽ lấy số pi nhân với
+0:07:55 - 0:08:00, lại r bình phương lưu ý đó là cái câu
+0:07:59 - 0:08:02, lệnh mà chúng ta sẽ thực hiện với cái
+0:08:00 - 0:08:04, biến lặp này là chúng ta sẽ để đằng
+0:08:02 - 0:08:08, trước cái For
+0:08:04 - 0:08:08, thì lúc này
+0:08:08 - 0:08:11, [âm nhạc]
+0:08:14 - 0:08:18, thì toàn bộ các diện tích ở đây nó đã
+0:08:16 - 0:08:21, được đóng gói lại vào bên trong một cái
+0:08:18 - 0:08:24, kiểu là là list thì đây chính nó gọi là
+0:08:21 - 0:08:24, comprehension

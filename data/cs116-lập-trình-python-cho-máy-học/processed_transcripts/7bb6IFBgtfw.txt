@@ -1,0 +1,313 @@
+0:00:00 - 0:00:05, Chúng ta sẽ cùng đến với cái bước thực
+0:00:02 - 0:00:07, hiện đầu tiên và là cũng là một trong
+0:00:05 - 0:00:08, những cái bước quan trọng trong cái
+0:00:07 - 0:00:11, machine learning pipeline đó chính là
+0:00:08 - 0:00:15, phân tích dữ liệu phân tích dữ liệu đó
+0:00:11 - 0:00:19, là chúng ta sẽ thực hiện các cái công
+0:00:15 - 0:00:19, việc liên quan đến hiểu dữ
+0:00:21 - 0:00:29, liệu và chúng ta à đánh giá được cái vai
+0:00:26 - 0:00:31, trò của từng cái trường trong cái dữ
+0:00:29 - 0:00:35, liệu của mình vai trò
+0:00:31 - 0:00:40, của cái dữ
+0:00:35 - 0:00:41, liệu rồi chúng ta sẽ hiểu về cái phân bố
+0:00:40 - 0:00:45, của dữ
+0:00:41 - 0:00:45, liệu hoặc là tính
+0:00:45 - 0:00:53, chất của dữ liệu rồi đồng thời là chúng
+0:00:49 - 0:00:56, ta có thể phát hiện những cái vấn đề
+0:00:53 - 0:00:56, phát hiện những cái vấn đề
+0:01:00 - 0:01:06, trong cái dữ liệu của
+0:01:03 - 0:01:07, mình thì những cái vấn đề này có thể bao
+0:01:06 - 0:01:10, gồm đó là cái dữ liệu của mình nó bị
+0:01:07 - 0:01:13, thiếu hoặc là cái dữ liệu của mình nó bị
+0:01:10 - 0:01:15, nhiễu thì chúng ta sẽ phải xử lý như thế
+0:01:13 - 0:01:17, nào đó Thì đó chính là những cái công
+0:01:15 - 0:01:19, việc mà chúng ta cần phải thực hiện với
+0:01:17 - 0:01:22, lại
+0:01:19 - 0:01:26, cái bước đầu tiên đó là
+0:01:22 - 0:01:27, edi thì tại sao chúng ta cần phải phân
+0:01:26 - 0:01:29, tích dữ
+0:01:27 - 0:01:31, liệu thì cái việc phân tích dữ liệu nó
+0:01:29 - 0:01:33, sẽ giúp cho chúng ta hiểu rõ về cái dữ
+0:01:31 - 0:01:37, liệu của mình hơn rõ ràng là khi chúng
+0:01:33 - 0:01:40, ta làm với machine learning Mặc dù là
+0:01:37 - 0:01:42, cái mô hình máy học nó sẽ tiến hành huấn
+0:01:40 - 0:01:44, luyện trên cái đặc Trư huấn luyện trên
+0:01:42 - 0:01:46, cái cái dữ liệu đầu vào của mình và nó
+0:01:44 - 0:01:48, được thực hiện một cách tự động nhưng
+0:01:46 - 0:01:51, nếu chúng ta không hiểu về những cái
+0:01:48 - 0:01:53, tính chất của dữ liệu thì dẫn đến là
+0:01:51 - 0:01:56, chúng ta sẽ thiết kế cái mô hình máy học
+0:01:53 - 0:01:58, nó không phù hợp do đó thì cái lý do tại
+0:01:56 - 0:02:01, sao đầu tiên chúng ta cần phải phân tích
+0:01:58 - 0:02:04, dữ liệu đó là chúng ta hiểu rõ dữ liệu
+0:02:01 - 0:02:06, và thế nào gọi là hiểu rõ dữ liệu chúng
+0:02:04 - 0:02:08, ta sẽ biết được là à trong cái dữ liệu
+0:02:06 - 0:02:11, của mình nó sẽ có bao nhiêu cái đặc
+0:02:08 - 0:02:13, trưng đầu vào số mẫu dữ liệu của mình là
+0:02:11 - 0:02:15, nhiều hay ít tùy vào cái số mẫu dữ liệu
+0:02:13 - 0:02:17, của mình là nhiều hay ít thì khi đó
+0:02:15 - 0:02:19, chúng ta sẽ biết là chúng ta sẽ phải
+0:02:17 - 0:02:22, chọn lựa những mô hình nào cho phù hợp
+0:02:19 - 0:02:24, rồi Cái loại đặc trưng của mình đó là
+0:02:22 - 0:02:28, đặc trưng kiểu gì đó là đặc trưng dạng
+0:02:24 - 0:02:31, số hay đó là đặc trưng dạng phân loại
+0:02:28 - 0:02:31, hoặc là danh mục
+0:02:35 - 0:02:41, rồi cái phân bố dữ liệu của mình đó là
+0:02:38 - 0:02:43, giải giá trị của mình là kéo dài từ giá
+0:02:41 - 0:02:47, trị nào đến giá trị
+0:02:43 - 0:02:49, nào đồng thời là mình sẽ xem coi các cái
+0:02:47 - 0:02:51, giá trị ở vùng biên này nè Nó có phải là
+0:02:49 - 0:02:53, những cái giá trị ngoại lệ hay không
+0:02:51 - 0:02:58, Hoặc là có phải là giá trị nhiễu hay
+0:02:53 - 0:03:01, không đó rồi mối quan hệ và cái xu hướng
+0:02:58 - 0:03:04, của dữ liệu của mình là gì trong các cái
+0:03:01 - 0:03:06, đặc trưng thì các cái Đặc trưng nào là
+0:03:04 - 0:03:10, có mối quan hệ mật thiết với nhau hoặc
+0:03:06 - 0:03:12, là đối với cái giá trị mà mình cần phải
+0:03:10 - 0:03:14, dự đoán thì nó có mối quan hệ mang tính
+0:03:12 - 0:03:17, chất xu hướng với cái dữ liệu đặc trưng
+0:03:14 - 0:03:20, đầu vào hay không thì đó chính là chúng
+0:03:17 - 0:03:22, ta hiểu rõ về cái dữ liệu của mình những
+0:03:20 - 0:03:25, cái câu hỏi mà chúng ta cần phải trả lời
+0:03:22 - 0:03:28, Bước tiếp theo đó là cái tiền đề để
+0:03:25 - 0:03:31, chúng ta có thể làm sạch dữ liệu về sau
+0:03:28 - 0:03:33, tại vì khi chúng ta phân tích dữ liệu
+0:03:31 - 0:03:36, thì nó sẽ xác định được những cái vấn đề
+0:03:33 - 0:03:38, mà dữ liệu của mình đang còn tồn tại ví
+0:03:36 - 0:03:41, dụ thiếu dữ liệu có những cái trường
+0:03:38 - 0:03:43, thuộc tính trong dữ liệu nó bị chứa giá
+0:03:41 - 0:03:46, trị rỗng hoặc là chứa một cái giá trị là
+0:03:43 - 0:03:48, không xác định hoặc là trong cái dữ liệu
+0:03:46 - 0:03:51, của mình nó bị trùng lập có những cái
+0:03:48 - 0:03:54, phần tử gọi là hai hàng giống y chang
+0:03:51 - 0:03:57, nhau thì khi hai hàng giống y chang nhau
+0:03:54 - 0:03:59, này thì sẽ gây ra cho mình đó là dữ liệu
+0:03:57 - 0:04:02, của mình thừa và nếu như cái tình trạng
+0:03:59 - 0:04:04, mà trùng lắp dữ liệu này á mà quá nhiều
+0:04:02 - 0:04:07, ví dụ như có những cái trường hợp mà nó
+0:04:04 - 0:04:10, lặp lại đến chếm đến 10 ph cái dữ liệu
+0:04:07 - 0:04:11, của mình thì nó sẽ gây ra cho cái mô
+0:04:10 - 0:04:14, hình máy học nó một cái hiện tượng nó
+0:04:11 - 0:04:16, gọi là bias tức là mô hình máy học của
+0:04:14 - 0:04:19, mình sẽ tìm cách để học thuộc cái tình
+0:04:16 - 0:04:21, huống mà trùng lắp dữ liệu này gây ra
+0:04:19 - 0:04:23, cái việc là cái mô hình của mình nó
+0:04:21 - 0:04:27, không có cái tính chất nó sẽ không có
+0:04:23 - 0:04:27, tính nó gọi là không có tổng
+0:04:28 - 0:04:33, quát cái ba hiện tượng bas nó lớn thì nó
+0:04:31 - 0:04:36, sẽ làm cho mô hình của mình nó không
+0:04:33 - 0:04:39, tổng quát sau này khi chúng ta làm việc
+0:04:36 - 0:04:42, trên những cái mẫu dữ liệu mà mới chưa
+0:04:39 - 0:04:44, từng thấy thì nó sẽ cho cái độ chính xác
+0:04:42 - 0:04:46, Nó không cao vì cái mô hình nó cứ tìm
+0:04:44 - 0:04:48, cách nó học thuộc trên những cái mẫu dữ
+0:04:46 - 0:04:50, liệu mà có sẵn và đặc biệt là những cái
+0:04:48 - 0:04:52, mẫu dữ liệu mà xuất hiện
+0:04:50 - 0:04:56, nhiều
+0:04:52 - 0:04:59, rồi và xác định xem là cái dữ liệu của
+0:04:56 - 0:05:00, mình Nó có nhiễu hay không Tức là các
+0:04:59 - 0:05:03, cái giá trị
+0:05:00 - 0:05:05, ở đây là có nằm ngoài cái phạm vi mà
+0:05:03 - 0:05:08, trong thực tế thường xuyên xuất hiện hay
+0:05:05 - 0:05:11, không Ví dụ độ tuổi mà chúng ta thấy là
+0:05:08 - 0:05:12, có độ tuổi là -1 thì liệu là Đây có phải
+0:05:11 - 0:05:14, là một giá trị nhiễu hay không hay nó
+0:05:12 - 0:05:17, mang một cái ý nghĩa khác thì lúc đó
+0:05:14 - 0:05:19, chúng ta sẽ phải xử lý riêng cho các cái
+0:05:17 - 0:05:21, tình huống ghê nhiễu này dữ liệu của
+0:05:19 - 0:05:23, mình nó có lỗi hoặc là có cái tính không
+0:05:21 - 0:05:25, nhất quán hay không Cái tính không nhất
+0:05:23 - 0:05:28, quán ví dụ như là cũng là cái đối tượng
+0:05:25 - 0:05:30, đó nhưng mà ở phía trên thì nó lại là
+0:05:28 - 0:05:32, nhận cái giá trị
+0:05:30 - 0:05:34, nhưng mà phía dưới nó lại nhận là giá
+0:05:32 - 0:05:37, trị khác ví dụ như ở phía trên thì cái
+0:05:34 - 0:05:39, người đó cái tên của công ty đó là viết
+0:05:37 - 0:05:42, dạng đầy đủ nhưng mà phía dưới thì nó
+0:05:39 - 0:05:44, lại viết dưới dạng là một cái tên khác
+0:05:42 - 0:05:47, thì các cùng một cái đối tượng nhưng mà
+0:05:44 - 0:05:49, viết những cái giá trị khác nhau thì đó
+0:05:47 - 0:05:52, là cái tính không nhất quán của dữ liệu
+0:05:49 - 0:05:55, và khi chúng
+0:05:52 - 0:05:57, ta phân tích và xác định được những vấn
+0:05:55 - 0:06:00, đề rồi thì nó sẽ làm tiền đề tiền đề để
+0:05:57 - 0:06:04, sau này chúng ta sẽ xóa Nhữ liệu điền
+0:06:00 - 0:06:04, khuyết hoặc là chúng ta giữ nguyên dữ
+0:06:05 - 0:06:11, liệu và đây cũng là cái phân tích dữ
+0:06:09 - 0:06:13, liệu nó cũng là cái tiền đề để sau này
+0:06:11 - 0:06:15, chúng ta chọn lựa đặc trưng khi chúng ta
+0:06:13 - 0:06:18, đã hiểu rõ về cái tính chất của dữ liệu
+0:06:15 - 0:06:21, rồi thì sau này chúng ta sẽ biết rằng là
+0:06:18 - 0:06:24, đặc trưng nào là những cái đặc trưng tốt
+0:06:21 - 0:06:27, để chúng ta lựa chọn đưa cho cái mô hình
+0:06:24 - 0:06:28, nó huấn luyện Và thậm chí là chúng ta
+0:06:27 - 0:06:31, biết được cái tính chất của cái đặc
+0:06:28 - 0:06:33, trưng rồi thì chúng ta sau này chúng ta
+0:06:31 - 0:06:35, sẽ chọn lượ cái mô hình phù hợp với cái
+0:06:33 - 0:06:38, đặc trưng đó rồi Thậm chí là chúng ta có
+0:06:35 - 0:06:40, thể tạo ra những cái đặc trưng tốt hơn
+0:06:38 - 0:06:43, tạo ra những cái đặc trưng nó giúp cho
+0:06:40 - 0:06:45, mô hình có thể Dự đoán chính xác hơn rồi
+0:06:43 - 0:06:49, chúng ta có thể chuẩn hóa cái đặc trưng
+0:06:45 - 0:06:51, về những cái dạng mà mô hình máy học nó
+0:06:49 - 0:06:54, có thể thực hiện tốt Ví dụ như một số mô
+0:06:51 - 0:06:56, hình máy học nó đòi hỏi
+0:06:54 - 0:06:59, là cái dữ liệu đầu vào cái đặc trưng đầu
+0:06:56 - 0:07:01, vào của mình nó phải lợi dạng số thì các
+0:06:59 - 0:07:04, cái đặc Trưng các cái đặc trưng của mình
+0:07:01 - 0:07:06, Nó sẽ phải chuyển về cái dạng số hoặc là
+0:07:04 - 0:07:09, cái dữ liệu cái mô hình máy học của mình
+0:07:06 - 0:07:12, đầu vào nó yêu cầu là dữ liệu phải ở
+0:07:09 - 0:07:14, dạng được chuẩn hóa theoo phân bố chuẩn
+0:07:12 - 0:07:16, thì chúng ta sẽ phải đưa các cái dữ liệu
+0:07:14 - 0:07:20, của mình về cái phân bố chuẩn cho phù
+0:07:16 - 0:07:23, hợp với lại cái vô hình máy học đó yêu
+0:07:20 - 0:07:25, cầu và chúng ta có thể lường trước một
+0:07:23 - 0:07:27, số cái tình huống của cái dữ liệu Ví dụ
+0:07:25 - 0:07:31, như dữ liệu bị mất cân bằng hoặc là dữ
+0:07:27 - 0:07:34, liệu bị Thiên lệch
+0:07:31 - 0:07:37, rồi vấn đề về rò rỉ thông tin và vi phạm
+0:07:34 - 0:07:39, các cái vấn đề về dữ liệu ví dụ như là
+0:07:37 - 0:07:42, chúng ta để cái tên người thật ở bên
+0:07:39 - 0:07:44, trong cái dữ liệu của mình có thể gây ra
+0:07:42 - 0:07:48, cái hiện tượng là rò rỉ thông tin về sau
+0:07:44 - 0:07:52, hoặc là vi phạm các cái điều lọc về cái
+0:07:48 - 0:07:54, dữ liệu của mình thì đâu đó chúng ta sẽ
+0:07:52 - 0:07:56, phải nếu như chúng ta ở trong cái dữ
+0:07:54 - 0:07:58, liệu thô ban đầu của mình mà có chứa
+0:07:56 - 0:08:00, những cái dữ liệu bị vi phạm như vậy thì
+0:07:58 - 0:08:02, chúng ta sẽ phải làm một cái công đoạn
+0:08:00 - 0:08:04, thêm một cái công đoạn nữa đó là chúng
+0:08:02 - 0:08:08, ta sẽ anonymize chúng ta sẽ ẩn danh hóa
+0:08:04 - 0:08:10, cái thông tin này của mình đi Ví dụ
+0:08:08 - 0:08:13, thông tin về số tài khoản thì rõ ràng là
+0:08:10 - 0:08:15, nếu như cái số tài khoản này mà rò rỉ ra
+0:08:13 - 0:08:17, bên ngoài thì nó sẽ gây ra hệ luy rất là
+0:08:15 - 0:08:19, lớn do đó thì các cái thông tin tài
+0:08:17 - 0:08:22, khoản của mình Chúng ta sẽ phải mã hóa
+0:08:19 - 0:08:26, nó bằng một cái dạng thức khác cho phù
+0:08:22 - 0:08:30, hợp và đây là một cái công cụ truyền
+0:08:26 - 0:08:33, thông tại vì khi chúng ta phân tích dữ
+0:08:30 - 0:08:35, liệu thì nó sẽ giúp cho chúng ta trực
+0:08:33 - 0:08:37, quan hóa được dữ liệu và khi chúng ta
+0:08:35 - 0:08:41, trực quan hóa dữ liệu dưới dạng là các
+0:08:37 - 0:08:44, cái biểu đồ trực quan dễ hiểu dễ cảm
+0:08:41 - 0:08:46, nhận thì khi đó chúng ta sẽ dễ dàng giải
+0:08:44 - 0:08:48, thích cái vấn đề của mình với cái người
+0:08:46 - 0:08:51, không có chuyên môn ví dụ như là những
+0:08:48 - 0:08:53, người đến từ K lĩnh vực không phải là về
+0:08:51 - 0:08:55, máy học Hoặc là những cái người đó là
+0:08:53 - 0:08:57, khách hàng của mình thì nó sẽ giúp cho
+0:08:55 - 0:08:59, chúng ta giải thích với họ là à dữ liệu
+0:08:57 - 0:09:01, của mình nó đang có những vấn đề gì
+0:08:59 - 0:09:04, chúng ta phải xử lý ra sao Và khi chúng
+0:09:01 - 0:09:06, ta Ờ xử lý xong rồi thì mình sẽ giải
+0:09:04 - 0:09:10, thích với họ là cái hiệu quả của nó như
+0:09:06 - 0:09:13, thế nào thì đó là tại sao chúng ta cần
+0:09:10 - 0:09:16, phải phân tích dữ
+0:09:13 - 0:09:19, liệu và các cái công cụ để chúng ta có
+0:09:16 - 0:09:20, thể thực hiện được cái phân tích dữ liệu
+0:09:19 - 0:09:22, đó là chúng ta có thể sử dụng các cái
+0:09:20 - 0:09:25, công cụ trực Quang ví dụ như là chúng ta
+0:09:22 - 0:09:28, sử dụng các cái biểu đồ histogram hoặc
+0:09:25 - 0:09:30, là vẽ dưới dạng là các cái biểu đồ dưới
+0:09:28 - 0:09:33, dạng hộp box
+0:09:30 - 0:09:36, rồi ma trận tương
+0:09:33 - 0:09:38, quan và chúng ta cũng có thể sử dụng các
+0:09:36 - 0:09:40, cái công cụ về thống kê ví dụ như là sử
+0:09:38 - 0:09:42, dụng các cái chỉ số thống kê như là giá
+0:09:40 - 0:09:45, trị trung bình trung vị phương sai độ
+0:09:42 - 0:09:47, lịch chuẩn rồi các cái hệ số tương quan
+0:09:45 - 0:09:50, như là phân tích tương quan đơn biến
+0:09:47 - 0:09:53, Phân tích đa biến rồi một số
+0:09:50 - 0:09:56, cái mô hình một số cái công cụ hồi quy
+0:09:53 - 0:09:57, Tiến Tính hệ số Pon để phân tích cái dữ
+0:09:56 - 0:09:59, liệu của
+0:09:57 - 0:10:03, mình và
+0:09:59 - 0:10:05, có các cái kiểu phân tích dữ liệu đó là
+0:10:03 - 0:10:08, chúng ta sẽ phân tích dữ liệu đơn
+0:10:05 - 0:10:08, biến ví
+0:10:12 - 0:10:21, dụ đây là một cái bản dữ liệu của mình
+0:10:15 - 0:10:24, và ở đây chúng ta sẽ có x1 x2 x3 x4 là
+0:10:21 - 0:10:25, các cái đặc trưng đầu vào và y Tức là
+0:10:24 - 0:10:27, cái đặc trưng mà chúng ta cần phải dự
+0:10:25 - 0:10:30, đoán thì phân tích đơn biến đó là chúng
+0:10:27 - 0:10:33, ta sẽ phải xem xét trên từng cái biến
+0:10:30 - 0:10:35, độc lập này và chúng ta sẽ không có cái
+0:10:33 - 0:10:38, sự tương tác giữa cái biến X1 với X2
+0:10:35 - 0:10:41, hoặc là X1 với xy thì các biến được phân
+0:10:38 - 0:10:43, tích một cách độc lập với nhau phân tích
+0:10:41 - 0:10:45, hai biến đó là chúng ta sẽ đi theo phân
+0:10:43 - 0:10:52, tích theo cái sự tương quan của từng cặp
+0:10:45 - 0:10:54, dữ liệu X1 với X2 hoặc là X1 với lại xy
+0:10:52 - 0:10:57, nó sẽ được lấy ra từng cặp để chúng ta
+0:10:54 - 0:10:59, phân tích hoặc là Phân tích đa biến tức
+0:10:57 - 0:11:03, là chúng ta sẽ
+0:10:59 - 0:11:05, lấy ra một cái bộ các cái biến có thể là
+0:11:03 - 0:11:09, ba biến bốn biến để mà Cùng phân tích
+0:11:05 - 0:11:09, một lúc thì đó là Phân tích đa
+0:11:09 - 0:11:15, biến và đối với phân tích đơn biến thì
+0:11:13 - 0:11:18, chúng ta chỉ cần quan tâm đến một đặc
+0:11:15 - 0:11:20, trưng và hoặc là một cột trong cái dữ
+0:11:18 - 0:11:23, liệu của mình Chúng ta có thể sử dụng
+0:11:20 - 0:11:25, các cái phương thức Ờ Bằng thống kê ví
+0:11:23 - 0:11:27, dụ như là chúng ta phân tích cái xu Hống
+0:11:25 - 0:11:31, tập trung dữ liệu hay còn gọi là Central
+0:11:27 - 0:11:33, dep à tendency Central tendency các cái
+0:11:31 - 0:11:36, tham số ước lượng như là giá trị trung
+0:11:33 - 0:11:40, bình giá trị trung vị hoặc là giá trị
+0:11:36 - 0:11:42, Mode chúng ta có thể phân tích trên cái
+0:11:40 - 0:11:45, khoảng giá trị Ví dụ như là khoảng cách
+0:11:42 - 0:11:47, giữa các cái Giá trị tối đa và giá trị
+0:11:45 - 0:11:49, tối thiểu của mình v cái khoảng giá trị
+0:11:47 - 0:11:51, của đó sẽ là bao nhiêu chúng ta có thể
+0:11:49 - 0:11:54, phân tích cái Phương sii hoặc là độ lịch
+0:11:51 - 0:11:56, chuẩn thì toàn bộ tất cả những cái cái
+0:11:54 - 0:11:59, phân tích này đó là phân tích về mặt
+0:11:56 - 0:12:01, thống kê và tương tự như vậy thì khi mà
+0:11:59 - 0:12:06, chúng ta phân tích đơn biến và bằng
+0:12:01 - 0:12:06, thống kê thì trong cái thư viện của
+0:12:06 - 0:12:12, pandas chúng ta có cái hàm Đó là hàm
+0:12:09 - 0:12:13, describe hàm mô tả thì nó đã giúp cho
+0:12:12 - 0:12:16, chúng ta thực hiện cái thao tác thống kê
+0:12:13 - 0:12:18, Này Rồi ví dụ đối với những cái dữ liệu
+0:12:16 - 0:12:22, mà dạng số thì chúng ta thấy là nó sẽ
+0:12:18 - 0:12:25, đếm coi là có bao nhiêu cái dữ liệu nè
+0:12:22 - 0:12:27, rồi nó sẽ đếm xem là à giá trị trung
+0:12:25 - 0:12:29, bình của cái độ tuổi của mình là bao
+0:12:27 - 0:12:33, nhiêu nè Đây là chúng ta đang xem xét
+0:12:29 - 0:12:35, đến Tộ đổi n rồi độ lệch chuẩn rồi giá
+0:12:33 - 0:12:40, trị nhỏ nhất giá trị lớn nhất là bao
+0:12:35 - 0:12:45, nhiêu nè Rồi cái khoảng giá trị 25 ph 50
+0:12:40 - 0:12:46, ph và 75 ph đó là bao nhiêu thì đây
+0:12:45 - 0:12:50, chính là cái
+0:12:46 - 0:12:54, à phân tích mà đơn biến sử dụng cái hàm
+0:12:50 - 0:12:54, describe của
+0:12:54 - 0:13:00, pandas rồi một cái kiểu nữa đó là chúng
+0:12:57 - 0:13:02, ta sẽ phân tích đơn biến mà bằng biểu đồ
+0:13:00 - 0:13:05, thì chúng ta có thể sử dụng cái biểu đồ
+0:13:02 - 0:13:08, histogram đây là cái biểu đồ trong đó là
+0:13:05 - 0:13:10, tần số của dữ liệu Được biểu thị bằng
+0:13:08 - 0:13:13, các cái Thanh hình chữ nhật và chúng ta
+0:13:10 - 0:13:16, có thể sử dụng một cái kiểu biểu diễn
+0:13:13 - 0:13:19, cho cái phân bố theo dưới dạng là ờ mật
+0:13:16 - 0:13:21, độ biểu đồ mật độ thì đây là một cái
+0:13:19 - 0:13:23, phiên bản liên tục của biểu đồ histogram
+0:13:21 - 0:13:27, nếu như biểu đồ histogram chúng ta tạo
+0:13:23 - 0:13:27, ra các cái Thanh như thế này
+0:13:30 - 0:13:36, thì biểu độ mật độ là chúng ta sẽ tạo ra
+0:13:33 - 0:13:36, các cái giá trị liên
+0:13:36 - 0:13:44, tục thì đó chính là biểu đồ dữ dạng và
+0:13:42 - 0:13:47, mật độ và một cái kiểu nữa đơn giản hơn
+0:13:44 - 0:13:50, đó chính là box Plus box
+0:13:47 - 0:13:52, Plus thì chúng ta sẽ có các cái giá trị
+0:13:50 - 0:13:52, như là
+0:13:54 - 0:14:00, median rồi giá trị
+0:13:56 - 0:14:03, Q1 q3
+0:14:00 - 0:14:05, và có thể là cái giá trị là min max thì
+0:14:03 - 0:14:07, ngoài ra thì khi những cái giá trị nào
+0:14:05 - 0:14:09, mà vượt qua cái giá trị min max này thì
+0:14:07 - 0:14:11, đâu đó nó có khả năng là những cái giá
+0:14:09 - 0:14:14, trị out layer hay là những cái giá trị
+0:14:11 - 0:14:20, nhiễu thì đây là cái
+0:14:14 - 0:14:20, cách phân tích về box box CL

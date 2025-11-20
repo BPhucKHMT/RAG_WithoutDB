@@ -1,0 +1,345 @@
+0:00:00 - 0:00:05, tiếp theo thì chúng ta sẽ cùng tìm hiểu
+0:00:02 - 0:00:08, về một số cái biến đổi đặc trưng hay còn
+0:00:05 - 0:00:08, gọi là feature
+0:00:08 - 0:00:14, transformation thì đầu tiên đó là chúng
+0:00:11 - 0:00:17, ta sẽ phải trả lời câu hỏi là tại sao
+0:00:14 - 0:00:20, chúng ta cần phải biến đổi đặc trưng thì
+0:00:17 - 0:00:23, có rất nhiều những cái mô hình máy học
+0:00:20 - 0:00:26, nó yêu cầu cái đầu vào cho cái mô hình
+0:00:23 - 0:00:31, đó là phải tuân theo một cái loại dữ
+0:00:26 - 0:00:33, liệu nhất định lấy ví dụ thông toán đ
+0:00:31 - 0:00:37, nếu mà làm hiệu quả nhất cho nó thì đó
+0:00:33 - 0:00:39, phải là những giá trị dạng rời rà đó
+0:00:37 - 0:00:42, hoặc là một số Vô Hình như là linear
+0:00:39 - 0:00:46, regression hoặc là Logistic regression
+0:00:42 - 0:00:49, thì cái dữ liệu mà hiệu quả nhất cho nó
+0:00:46 - 0:00:51, đó là phải ở dạng số học như vậy thì ở
+0:00:49 - 0:00:53, đây chúng ta giải thích đó là nhiều mô
+0:00:51 - 0:00:56, hình nó bắt buộc nó phải ở một số cái
+0:00:53 - 0:00:59, dạng nhất định thì khi đó chúng ta sẽ
+0:00:56 - 0:01:03, phải chuyển đổi từ cái dạng không phải
+0:00:59 - 0:01:07, là cái yêu cầu của mô hình về cái dạng
+0:01:03 - 0:01:11, mà mô hình nó yêu cầu ví dụ chuyển từ
+0:01:07 - 0:01:13, dạng phân loại về dạng số hoặc là chuyển
+0:01:11 - 0:01:17, từ dạng số về cái dạng phân loại để mà
+0:01:13 - 0:01:19, mô hình có thể chạy được thì đó là cái
+0:01:17 - 0:01:20, đáp ứng được cái yêu cầu về loại dữ liệu
+0:01:19 - 0:01:25, của mô
+0:01:20 - 0:01:27, hình tiếp theo đó là về giả định về cái
+0:01:25 - 0:01:29, dữ liệu đầu bào của mô hình nó sẽ tuân
+0:01:27 - 0:01:31, theo những cái phân bố nào đó thì nhiều
+0:01:29 - 0:01:33, cái mô mô hình máy học nó đặt cái giả
+0:01:31 - 0:01:36, định về phân bố hoặc là cái tỉ lệ của dữ
+0:01:33 - 0:01:38, liệu đầu bào một số mô hình thì nó yêu
+0:01:36 - 0:01:41, cầu cái dữ liệu đầu bào của mình phải là
+0:01:38 - 0:01:45, phân bố chuẩn một số mô hình thì nó yêu
+0:01:41 - 0:01:47, cầu cái tỷ lệ của cái dữ liệu của mình
+0:01:45 - 0:01:51, nó phải nằm trong cái đoạn là từ 0 cho
+0:01:47 - 0:01:53, đến 1 như vậy thì chúng ta sẽ phải biến
+0:01:51 - 0:01:55, đổi những cái đặc trưng đầu vào từ một
+0:01:53 - 0:01:59, cái dạng phân bố bất kỳ hoặc là từ một
+0:01:55 - 0:02:01, cái tỷ lệ bất kỳ về cái dạng phân bố và
+0:01:59 - 0:02:03, tỷ lệ mà và cái mô hình máy học của mình
+0:02:01 - 0:02:07, nó yêu cầu để đáp ứng được cái giả định
+0:02:03 - 0:02:10, cho cái dự liệu đầu vào của mô hình tiếp
+0:02:07 - 0:02:12, theo đó là về vấn đề dữ liệu bị nhiễu
+0:02:10 - 0:02:16, thì có rất nhiều những cái mô hình gọi
+0:02:12 - 0:02:19, có rất nhiều những cái tập dữ liệu mà có
+0:02:16 - 0:02:21, rất nhiều nhiễu trong đó và cái giá trị
+0:02:19 - 0:02:23, nhiễu nó có khả năng ảnh hưởng lớn đến
+0:02:21 - 0:02:26, cái hiệu suất của mô hình Do đó để làm
+0:02:23 - 0:02:28, giảm bớt cái vai trò của giá trị nhiễu
+0:02:26 - 0:02:30, này thì chúng ta sẽ có thể thực hiện một
+0:02:28 - 0:02:33, số cái thao tác biến đổi ví dụ như lock
+0:02:30 - 0:02:36, transform hoặc là robot scaler thì đây
+0:02:33 - 0:02:38, là hai cái phép biến đổi cho phép là làm
+0:02:36 - 0:02:40, giảm cái ảnh hưởng của cái dữ liệu nhiễu
+0:02:38 - 0:02:43, Nếu
+0:02:40 - 0:02:46, có về cái tính giải thích cái vấn đề về
+0:02:43 - 0:02:48, giải thích kết quả thì đặc trưng nó có
+0:02:46 - 0:02:50, giá trị liên tục thì thông thường nó sẽ
+0:02:48 - 0:02:52, làm cho mô hình khó hiểu và khó giải
+0:02:50 - 0:02:56, thích trong khi đó Những cái đặc trưng
+0:02:52 - 0:02:58, dạng Ờ phân loại thì nó sẽ có cái tính
+0:02:56 - 0:03:00, dễ giải thích hơn lấy ví dụ như đối với
+0:02:58 - 0:03:02, cái mô hình decision Tre thì các cái đặc
+0:03:00 - 0:03:04, trưng của mình Nó chia ra làm các cái
+0:03:02 - 0:03:09, tình huống như là thời
+0:03:04 - 0:03:13, tiết thì thời tiết Nếu mà thời tiết ở ba
+0:03:09 - 0:03:17, loại đó là có mây hoặc là có
+0:03:13 - 0:03:20, nắng hoặc là trời mưa thời tiết là trời
+0:03:17 - 0:03:23, mưa thì cái việc mà đưa ra các cái phân
+0:03:20 - 0:03:25, loại như là mây trời nắng hoặc là trời
+0:03:23 - 0:03:27, mưa và chúng ta đưa ra một cái quyết
+0:03:25 - 0:03:30, định nào đó ví dụ như là có đi chơi hay
+0:03:27 - 0:03:32, không đi chơi thì cái việc mà sử dụng
+0:03:30 - 0:03:35, cái đặc trưng mà ở dạng phân loại nó sẽ
+0:03:32 - 0:03:38, dễ giải thích hơn so với việc là à nếu
+0:03:35 - 0:03:41, như chúng ta có một cái thông tin là
+0:03:38 - 0:03:44, tuổi mà tuổi của mình là giá trị liên
+0:03:41 - 0:03:48, tục đúng không Nếu tuổi mà dưới 8 tuổi
+0:03:44 - 0:03:53, rồi nếu tuổi mà từ 8 tuổi cho đến 15
+0:03:48 - 0:03:55, tuổi và tuổi từ 16 tuổi cho đến 90 tuổi
+0:03:53 - 0:03:58, ví dụ vậy thì khi chúng ta nhìn mu cái
+0:03:55 - 0:04:01, khoảng giá trị này chúng ta rất khó để
+0:03:58 - 0:04:04, mà có thể giải thích được là tại sao nó
+0:04:01 - 0:04:08, lại có cái con số là 8 cho đến 15 hoặc
+0:04:04 - 0:04:10, là từ 16 cho đến 90 thì như vậy thì
+0:04:08 - 0:04:12, chúng ta sẽ tìm cách đó là binning
+0:04:10 - 0:04:15, transformation để chia ra thành những
+0:04:12 - 0:04:19, cái khoảng giá trị và nếu như chúng ta
+0:04:15 - 0:04:23, từ các cái giá trị mà liên tục từ 0 cho
+0:04:19 - 0:04:25, đến à Ví dụ như 100 tuổi thì đây là cái
+0:04:23 - 0:04:27, các cái giá trị liên tục nó rất khó để
+0:04:25 - 0:04:29, cho chúng ta có thể giải thích được do
+0:04:27 - 0:04:31, đó thì bằng cái phương pháp là binning
+0:04:29 - 0:04:33, transformation chúng ta chia thành cái
+0:04:31 - 0:04:36, khoản giá trị thì khi chúng ta giải
+0:04:33 - 0:04:38, thích cho cái đối tác hoặc là giải thích
+0:04:36 - 0:04:41, cho những cái người mà không có nhiều
+0:04:38 - 0:04:42, kiến thức về mô hình của mình thì họ sẽ
+0:04:41 - 0:04:46, dễ hình dung các cái khoảng giá trị này
+0:04:42 - 0:04:49, hơn là khi chúng ta đưa những cái giá
+0:04:46 - 0:04:52, trị là ở cái độ tuổi vào và mỗi một cái
+0:04:49 - 0:04:53, khoản Độ tuổi này thì nó sẽ có một cái ý
+0:04:52 - 0:04:55, nghĩa nhất định như vậy thì cái tính
+0:04:53 - 0:04:59, giải thích của mình nó sẽ được đảm bảo
+0:04:55 - 0:05:01, và cuối cùng đó là cái vấn đề về cái mối
+0:04:59 - 0:05:03, quan hệ Phi tuyế giữa các cái đặc trưng
+0:05:01 - 0:05:05, thì các cái quan hệ Phi tuyến nó sẽ làm
+0:05:03 - 0:05:08, cho cái mô hình của mình
+0:05:05 - 0:05:11, Ờ làm cho cái mô hình hóa cũng như là
+0:05:08 - 0:05:13, cái việc giải thích trở nên khó khăn hơn
+0:05:11 - 0:05:16, đó thì cái việc mà Biến
+0:05:13 - 0:05:19, đổi cái dữ liệu của mình về cái dạng
+0:05:16 - 0:05:23, tuyến tính hoặc là về cái dạng đơn giản
+0:05:19 - 0:05:26, hơn đó thì sẽ giúp cho cái mô hình của
+0:05:23 - 0:05:29, mình nó dễ học hơn hoặc là sau này chúng
+0:05:26 - 0:05:30, ta giải thích cho khách hàng hoặc là đối
+0:05:29 - 0:05:33, tác Những người mà không có chuyên môn
+0:05:30 - 0:05:36, họ sẽ dễ hơn đó thì ở đây chúng ta sẽ có
+0:05:33 - 0:05:39, cái công thức là ở dạng hàm mũ có thể à
+0:05:36 - 0:05:41, đưa về cái dạng là công thức của tuyến
+0:05:39 - 0:05:44, tính đó là ax cộng cho log b thì trong
+0:05:41 - 0:05:46, đó log b là một cái hàng số chúng ta đưa
+0:05:44 - 0:05:49, về một cái dạng hàm mũ về một cái dạng
+0:05:46 - 0:05:52, là hàm tuyến tính thì mô hình của mình
+0:05:49 - 0:05:55, huấn luyện nó cũng sẽ dễ hơn và sau này
+0:05:52 - 0:05:58, chúng ta giải thích nó cũng sẽ dễ hơn
+0:05:55 - 0:06:00, thì đó là lý do những lý do tại sao
+0:05:58 - 0:06:04, chúng ta cần phải biến đổi đặc
+0:06:00 - 0:06:06, trưng và đối với cái biến đổi đặc trưng
+0:06:04 - 0:06:09, thì chúng ta sẽ có hai dạng có hai loại
+0:06:06 - 0:06:14, dữ liệu đó là dữ liệu dạng
+0:06:09 - 0:06:19, số và dữ liệu dạng danh mục hoặc
+0:06:14 - 0:06:19, là phân
+0:06:21 - 0:06:28, loại thì đối với cái dữ liệu dạng số
+0:06:25 - 0:06:30, chúng ta sẽ có một số cái cách biến đổi
+0:06:28 - 0:06:33, như sau đầu tiên đó là min max scaling
+0:06:30 - 0:06:36, đó thì chúng ta sẽ có cái công thức là
+0:06:33 - 0:06:38, x' sẽ là bằng x trừ cho min chia cho max
+0:06:36 - 0:06:41, trừ Min Thì mục tiêu của cái phép min
+0:06:38 - 0:06:42, max scaling này đó là biến các cái đặc
+0:06:41 - 0:06:47, trưng của mình từ một cái giải giá trị
+0:06:42 - 0:06:49, bất kỳ về cái khoảng là từ 0 cho đến 1
+0:06:47 - 0:06:51, thì như vậy thì cái đặc trưng khi mà đưa
+0:06:49 - 0:06:54, về cái dạng là từ 0 cho đến 1 thì có khả
+0:06:51 - 0:06:56, năng là sẽ giúp cho những cái mô hình mà
+0:06:54 - 0:06:59, đòi hỏi là cái dạng thức đầu vào của
+0:06:56 - 0:07:02, mình tuân theo cái phân bối chuẩn nó có
+0:06:59 - 0:07:04, thể hoặc là tuân theo cái phân bố mà dữ
+0:07:02 - 0:07:06, liệu phải nằm trong đoạn từ 0 đến 1 nó
+0:07:04 - 0:07:08, sẽ thực hiện độ chính xác cao hơn nó
+0:07:06 - 0:07:09, thực hiện hiệu quả hơn đồng thời có thể
+0:07:08 - 0:07:12, là giúp cho cái quá trình huấn luyện của
+0:07:09 - 0:07:15, mình Nó diễn ra là tốc với tốc độ là
+0:07:12 - 0:07:17, nhanh hơn thì ở đây chúng ta thấy là với
+0:07:15 - 0:07:20, cái bảng dữ liệu đầu bào thì với từng
+0:07:17 - 0:07:22, cái cột dữ liệu này giải giá trị của
+0:07:20 - 0:07:24, mình có thể là từ con số 0 cho đến con
+0:07:22 - 0:07:26, số rất là lớn như là 300 thì sau khi
+0:07:24 - 0:07:28, chúng ta thực hiện min max scaling thì
+0:07:26 - 0:07:31, cái giải giá trị của mình nó đã được đưa
+0:07:28 - 0:07:33, về cái khoảng là từ 0 cho đến 1 tương tự
+0:07:31 - 0:07:35, như vậy cho tất cả những cái cột D liện
+0:07:33 - 0:07:37, còn lại thì nó cũng đều biến đổi về cái
+0:07:35 - 0:07:41, khoảng giá trị là từ 0 cho đến
+0:07:37 - 0:07:44, 1 cái phép biến đổi đặc trưng thứ hai đó
+0:07:41 - 0:07:46, là standardization tức là chuẩn hóa đưa
+0:07:44 - 0:07:50, hoặc là có một cái tên gọi khác đó là
+0:07:46 - 0:07:53, gore scaling thì với cái datap với Cái
+0:07:50 - 0:07:56, dữ liệu đầu vào góc ban đầu là x chúng
+0:07:53 - 0:08:00, ta sẽ trừ cho cái giá trị trung bình
+0:07:56 - 0:08:04, theo từng cột và chia cho độ là chuẩn
+0:08:00 - 0:08:07, theo từng cột thì với cái Phương pháp là
+0:08:04 - 0:08:11, chuẩn hóa này thì chúng ta sẽ đưa nó về
+0:08:07 - 0:08:13, cái phân bố là normal 0 1 tức là giá trị
+0:08:11 - 0:08:15, trung bình sẽ là 0 và độ lệch chuẩn của
+0:08:13 - 0:08:18, mình sẽ là 1 như vậy thì với cái giá trị
+0:08:15 - 0:08:20, đầu vào là những cái con số rất là lớn
+0:08:18 - 0:08:22, và lưu ý là trong cái cột room service
+0:08:20 - 0:08:26, này thì nó có thể nhận những giá trị là
+0:08:22 - 0:08:29, lớn hơn một rất là nhiều và à sự lệnh Nó
+0:08:26 - 0:08:31, lớn hơn 0 và nhỏ hơn sự lệnh nó là những
+0:08:29 - 0:08:34, cái giá trị dương thì sau khi chúng ta
+0:08:31 - 0:08:35, thực hiện cái phép là chuẩn hóa thì nó
+0:08:34 - 0:08:38, sẽ đưa về có thể đưa về những cái giá
+0:08:35 - 0:08:41, trị là âm có những âm nhưng mà nhìn
+0:08:38 - 0:08:45, chung Nó là phân bố theo phân bố chuẩn
+0:08:41 - 0:08:47, 01 cái thao tác biến đổi tiếp theo đó là
+0:08:45 - 0:08:49, robot scaler mục tiêu của cái robot
+0:08:47 - 0:08:52, scaler là để giải quyết những cái tình
+0:08:49 - 0:08:54, huống dữ liệu của mình bị bị nhiễu Tức
+0:08:52 - 0:08:58, là nó vượt qua những cái khoảng giá trị
+0:08:54 - 0:09:02, mà quá khác biệt đó thì ở đây chúng ta
+0:08:58 - 0:09:04, sẽ có cái khoảng q3 trừ cho Q1 thì đây
+0:09:02 - 0:09:07, chính là
+0:09:04 - 0:09:10, iqr và median thì cái công thức biến đổi
+0:09:07 - 0:09:13, của mình đó là giá trị góc trừ cho giá
+0:09:10 - 0:09:16, trị median theo từng cột và chia cho cái
+0:09:13 - 0:09:20, khoản aqa thì cái này nó cũng na ná với
+0:09:16 - 0:09:22, lại cái công thức của x trừ mi chia cho
+0:09:20 - 0:09:26, Sigma thì thay vì là dùng mi và Sigma
+0:09:22 - 0:09:30, thì chúng ta dùng là median và khoảng
+0:09:26 - 0:09:33, iqa rồi đối với cái log transform
+0:09:30 - 0:09:35, thì ở bên trái là chúng ta sẽ thấy cái
+0:09:33 - 0:09:38, phân bố của cái dữ liệu
+0:09:35 - 0:09:40, ờ phân bố của cái dữ liệu gốc thì chúng
+0:09:38 - 0:09:43, ta thấy là có những cái giá trị rất là
+0:09:40 - 0:09:48, nhỏ là từ 0 cho đến 10 Nhưng mà cũng có
+0:09:43 - 0:09:51, giá trị rất là lớn là từ vài ngàn từ vài
+0:09:48 - 0:09:55, ngàn trở lên thì chúng ta thấy là cái
+0:09:51 - 0:09:58, phân bố của mình nó sẽ bị lạch nó sẽ bị
+0:09:55 - 0:10:00, lạch như thế này phần đầu thì rất là
+0:09:58 - 0:10:02, nhiều số lượng rất là nhiều nhưng cái
+0:10:00 - 0:10:04, phần sau thì cái số lượng rất là ít thì
+0:10:02 - 0:10:07, nó sẽ bị Thiên
+0:10:04 - 0:10:09, lệch và nhờ cái phép biến đổi LCK
+0:10:07 - 0:10:14, transform chúng ta tính LCK theo cái
+0:10:09 - 0:10:16, trục trục hoành thì khi đó cái phân bố
+0:10:14 - 0:10:19, dữ liệu của mình nó sẽ trải ra thành các
+0:10:16 - 0:10:21, cái giá trị nó đều hơn và đâu đó nó sẽ
+0:10:19 - 0:10:23, đối xứng hơn thay vì là bị Thiên Lạc như
+0:10:21 - 0:10:26, thế này thì nó sẽ trải đều và nó sẽ đối
+0:10:23 - 0:10:28, Nhìn có vẻ nó đối xứng hơn thì đó là
+0:10:26 - 0:10:30, giảm bớt được những cái ảnh hưởng của
+0:10:28 - 0:10:31, những cái giá trị nằm trong cái khoảng
+0:10:30 - 0:10:34, là lớn
+0:10:31 - 0:10:37, này và cuối cùng đó chính là thao tác rề
+0:10:34 - 0:10:40, hoặc rạt hóa hoặc còn gọi là pinning thì
+0:10:37 - 0:10:44, ở đây chúng ta sẽ có cái dữ liệu là tuổi
+0:10:40 - 0:10:46, là một cái giá trị liên tục tuổi là 3924
+0:10:44 - 0:10:50, thì sau khi chúng ta thực hiện binning
+0:10:46 - 0:10:54, Chúng ta chia khoảng thì 39 nó sẽ đưa về
+0:10:50 - 0:10:58, là khoảng giá trị từ 31 cho đến 50 58 sẽ
+0:10:54 - 0:11:02, đưa về khoảng giá trị là 51+ thì đây sẽ
+0:10:58 - 0:11:04, là biến một cái giá trị từ dạng số về
+0:11:02 - 0:11:06, cái dạng phân loại thì có một số Thục
+0:11:04 - 0:11:09, toán nó đòi
+0:11:06 - 0:11:12, hỏi hoặc là nó làm việc hiệu quả trên
+0:11:09 - 0:11:14, cái dữ liệu dạng rời rạt như thế này thì
+0:11:12 - 0:11:16, chúng ta buộc phải biến đổi những cái
+0:11:14 - 0:11:19, giá trị dạng liên tục về cái dạng rời
+0:11:16 - 0:11:21, rạt sang cái loại dữ liệu thứ hai đó là
+0:11:19 - 0:11:23, dữ liệu dạng danh mục hay là phân loại
+0:11:21 - 0:11:25, thì chúng ta sẽ có một số cái phép biến
+0:11:23 - 0:11:28, đổi đầu tiên đó là phép biến đổi One Hot
+0:11:25 - 0:11:30, and coding nếu như cái dữ liệu đầu vào
+0:11:28 - 0:11:33, của mình đó là là những cái dạng phân
+0:11:30 - 0:11:39, loại ví dụ home planet của mình là
+0:11:33 - 0:11:41, Europa Earth đó thì chúng ta sẽ đưa về
+0:11:39 - 0:11:45, cái dạng là One hot encoding bằng cách
+0:11:41 - 0:11:48, chúng ta sẽ tạo ra thêm ba cái cột dữ
+0:11:45 - 0:11:50, liệu mới tạo ra thêm ba thì trong trường
+0:11:48 - 0:11:54, hợp này là nếu như ở phía sau ha các cái
+0:11:50 - 0:11:57, mẫu dữ liệu 567 nó có thêm cái thông tin
+0:11:54 - 0:12:00, à planet của mình đó là sau vẻ là mar
+0:11:57 - 0:12:03, thì chúng ta sẽ có thêm cái cột nè thì
+0:12:00 - 0:12:06, tương ứng ở đây là Europa thì cái cột
+0:12:03 - 0:12:09, Europa của mình nó sẽ bật lên là một ở
+0:12:06 - 0:12:12, đây là s thì cái cột s nó sẽ bật lên là
+0:12:09 - 0:12:15, 1 còn các cái trường còn lại sẽ mật sẽ
+0:12:12 - 0:12:18, để giữ nguyên là 0 thì đây là cái dạng
+0:12:15 - 0:12:20, chuyển đổi từ phân loại cái cái cái đặc
+0:12:18 - 0:12:22, trưng dạng phân loại về cái dạng đặc
+0:12:20 - 0:12:24, trưng dạng số học có thể tính toán được
+0:12:22 - 0:12:27, các cái con số 01 này sẽ giúp cho m của
+0:12:24 - 0:12:30, mình có thể tính toán được tiếp theo đó
+0:12:27 - 0:12:34, là ordinal encoding thì đối với một số
+0:12:30 - 0:12:37, cái loại dữ liệu Mặc dù là ở dạng phân
+0:12:34 - 0:12:41, loại Nhưng nó vẫn có cái tính thứ tự
+0:12:37 - 0:12:44, trước sau lớn nhỏ Ví dụ như cái độ tuổi
+0:12:41 - 0:12:48, là từ 31 cho đến 50 thì chúng ta sẽ thấy
+0:12:44 - 0:12:51, là nó sẽ lớn hơn cái độ tuổi là age từ
+0:12:48 - 0:12:55, 18 cho đến 25 đúng không như vậy nếu như
+0:12:51 - 0:12:58, chúng ta biểu diễn các cái cái giá trị
+0:12:55 - 0:13:00, phân loại này dưới dạng số thì các cái
+0:12:58 - 0:13:04, con số này nó phải là những con số có
+0:13:00 - 0:13:07, tính chất thứ tự lớn nhỏ thì cái độ tuổi
+0:13:04 - 0:13:09, là từ 31 cho đến 50 Nếu như ở đây chúng
+0:13:07 - 0:13:12, ta dùng một số là số 5 thì cái độ tuổi
+0:13:09 - 0:13:14, là từ 18 cho đến 25 nó phải được biểu
+0:13:12 - 0:13:17, diễn dưới dạng là con số nhưng mà con số
+0:13:14 - 0:13:20, này nó phải nhỏ hơn con số số 5.0 này
+0:13:17 - 0:13:22, tức là con số 3 tại vì cái độ tuổi của
+0:13:20 - 0:13:25, 31 đến 50 Nó lớn hơn độ tuổi của 18 cho
+0:13:22 - 0:13:27, đến 25 rồi tương tự như vậy cái độ tuổi
+0:13:25 - 0:13:31, là từ 51 trở lên thì nó sẽ biểu diễn là
+0:13:27 - 0:13:34, số 6 đội tuổi từ 31 cho đến 50 tức là
+0:13:31 - 0:13:38, ngay trước cái độ tuổi ba à Xin gọi là
+0:13:34 - 0:13:41, độ tuổi 13 cho đến 17 là nó ngay trước
+0:13:38 - 0:13:44, cái độ tuổi 18 cho đến 25 do đó nó sẽ
+0:13:41 - 0:13:46, biểu diễn bằng con số 2 hai là cái con
+0:13:44 - 0:13:50, số ngay trước con số 3 đây
+0:13:46 - 0:13:56, đó và tiếp theo đó là label
+0:13:50 - 0:13:58, encoding tức là ờ các cái Ờ giá trị phân
+0:13:56 - 0:14:00, loại ở đây nó sẽ được biểu diễn dướ dạng
+0:13:58 - 0:14:02, là các cái con số và con số này thì
+0:14:00 - 0:14:05, không nhất thiết phải có tính thứ tự ví
+0:14:02 - 0:14:08, dụ Europa và e thì nó không có thể hiện
+0:14:05 - 0:14:10, là Europa Nó lớn hơn S hay là Europa nó
+0:14:08 - 0:14:12, nhỏ hơn nó không có cái tính thứ tự ở
+0:14:10 - 0:14:15, đây do đó thì chúng ta có thể biểu diễn
+0:14:12 - 0:14:17, nó bằng các cái con số bất kỳ không nhất
+0:14:15 - 0:14:18, thiết là những cái con số liên tục như
+0:14:17 - 0:14:21, thế
+0:14:18 - 0:14:23, này rồi cuối cùng đó chính là target and
+0:14:21 - 0:14:28, coding thì đây là một trong những cái kỹ
+0:14:23 - 0:14:29, thuật là khai thác cái đặc trưng của cái
+0:14:28 - 0:14:33, dự đoán
+0:14:29 - 0:14:37, thì ở trong cái ví dụ này là chúng ta sẽ
+0:14:33 - 0:14:39, có cái x là cái home planet và cái y Tức
+0:14:37 - 0:14:42, là cái giá trị dự đoán của mình là
+0:14:39 - 0:14:47, transported thì cái X này á nó sẽ dựa
+0:14:42 - 0:14:51, trên cái transported này để mà nó encode
+0:14:47 - 0:14:52, nó tạo ra thêm Ờ một cái dạng encode nữa
+0:14:51 - 0:14:57, đó chính là
+0:14:52 - 0:15:00, Europa thì sẽ biểu diễn bằng à cái giá
+0:14:57 - 0:15:02, trị trung bình khi chúng ta cộng
+0:15:00 - 0:15:05, thực hiện tính toán trên cái cột dự đoán
+0:15:02 - 0:15:10, này lấy ví dụ Europa ở đây chúng ta thấy
+0:15:05 - 0:15:14, là có ba giá trị có ba giá trị
+0:15:10 - 0:15:16, và ba cái lưu ý là ở đây dữ liệu của
+0:15:14 - 0:15:19, mình Nó có thể là lên 678 nha nó còn
+0:15:16 - 0:15:20, nhiều nữa thì chúng ta sẽ gom nhóm tất
+0:15:19 - 0:15:25, cả những
+0:15:20 - 0:15:27, cái cột y tương ứng với lại cái Europa
+0:15:25 - 0:15:30, này lấy ví dụ như chúng ta có giá trị là
+0:15:27 - 0:15:33, 0 n ở đây là 0 ở đây là 0 và phía dưới
+0:15:30 - 0:15:36, nó sẽ còn các giá trị nữa là 1 nè 1 nè
+0:15:33 - 0:15:39, rồi 1 nè 1 N 0 thì chúng ta sẽ lấy các
+0:15:36 - 0:15:42, giá trị này cộng lại rồi chia trung bình
+0:15:39 - 0:15:45, thì chúng ta sẽ được cái con số là 0.65
+0:15:42 - 0:15:50, Và từ nay tất cả các
+0:15:45 - 0:15:54, cái trường thực tính tất cả các cái đặc
+0:15:50 - 0:15:57, trưng mà của cái hom planet này mà có
+0:15:54 - 0:16:00, cái giá trị là Europa thì sẽ được thêm
+0:15:57 - 0:16:02, vô cái dạng là encoding target encoding
+0:16:00 - 0:16:06, của mình đó là 0.65
+0:16:02 - 0:16:09, 0.65 0.65 và giá trị 0.65 này được tổng
+0:16:06 - 0:16:12, hợp từ cái cột dữ liệu của cái đặc trưng
+0:16:09 - 0:16:14, cần phải Dự đoàn thì nó sẽ có rất nhiều
+0:16:12 - 0:16:16, những cái chiến thuật khác nhau cho cái
+0:16:14 - 0:16:18, target and cing này chúng ta có thể thực
+0:16:16 - 0:16:24, hiện là hàm Max hàm trung bình cộng hàm
+0:16:18 - 0:16:24, Min hoặc là bất cứ cái chiến thuật nào

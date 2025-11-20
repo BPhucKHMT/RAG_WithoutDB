@@ -1,0 +1,235 @@
+0:00:01 - 0:00:08, trong phần tiếp theo thì chúng ta sẽ
+0:00:03 - 0:00:10, cùng đến với một số cái biến thể của mô
+0:00:08 - 0:00:15, hình hồi quy tuyến tính đó là Lasso, Ridge và
+0:00:10 - 0:00:18, Elastic Net. Đầu tiên đó là mô hình Lasso
+0:00:15 - 0:00:20, regression thì bản chất của cái mô hình này
+0:00:18 - 0:00:23, chính là cái sự kết hợp của mô hình hồi
+0:00:20 - 0:00:28, quy tuyến tính phiên bản gốc với lại một
+0:00:23 - 0:00:30, cái chuẩn hóa L1 thì cái công
+0:00:28 - 0:00:34, thức của mình nó sẽ có công thức
+0:00:30 - 0:00:37, là như sau: y trừ cho beta X thì
+0:00:34 - 0:00:40, đây chính là cái sai số, đây chính là cái
+0:00:37 - 0:00:43, sai số hay là Mean Squared của cái dự
+0:00:40 - 0:00:46, liệu dự đoán so với lại cái dữ liệu mong
+0:00:43 - 0:00:49, muốn. Thì đây là cái công thức mà hồi quy
+0:00:46 - 0:00:51, tuyến tính bình thường. Nhưng mà để tránh
+0:00:49 - 0:00:54, để tránh cái hiện tượng gọi là
+0:00:51 - 0:00:58, overfitting thì chúng ta sẽ thêm vào một
+0:00:54 - 0:01:01, cái thành phần chuẩn hóa đó là lambda nhân với Beta.
+0:00:58 - 0:01:04, Và lưu ý ở đây là chúng ta sẽ lấy norm
+0:01:01 - 0:01:08, bậc 1. Công thức của cái norm bậc 1 đó là
+0:01:04 - 0:01:13, gì? Ví dụ như chúng ta có Beta là
+0:01:08 - 0:01:16, bằng beta 0 và beta 1 đi ha. Một cách tổng
+0:01:13 - 0:01:19, quát thì nó có thể là beta 1, beta 2 đó.
+0:01:16 - 0:01:26, Thì khi đó norm của Beta
+0:01:19 - 0:01:31, là bậc 1. Thì nó chính là bằng beta
+0:01:26 - 0:01:31, 0 cộng cho beta 1.
+0:01:32 - 0:01:37, Thì đây chính là cái công thức
+0:01:34 - 0:01:41, của norm bậc
+0:01:37 - 0:01:42, 1. Và thêm cái đại lượng này thì cái cái
+0:01:41 - 0:01:46, cái việc mà chúng ta thêm cái đại lượng
+0:01:42 - 0:01:50, chuẩn hóa này nó sẽ làm cho cái mô hình
+0:01:46 - 0:01:53, cố gắng đưa các cái hệ số, đưa các cái hệ
+0:01:50 - 0:01:55, số beta của mình về cái con số 0, đưa cái
+0:01:53 - 0:01:57, hệ số của mình nó về không với những cái
+0:01:55 - 0:01:59, đặc trưng không quan trọng. Thì rõ ràng
+0:01:57 - 0:02:01, là với những cái đặc trưng nó không thật
+0:02:01 - 0:02:07, sự liên quan đến cái mô hình của mình
+0:02:04 - 0:02:09, đúng không? Thì khi đó nó sẽ không đóng
+0:02:07 - 0:02:11, góp nhiều, nó sẽ không đóng góp nhiều vào
+0:02:09 - 0:02:14, cái công thức hồi quy của mình đó. Thì khi
+0:02:11 - 0:02:18, chúng ta thêm cái đại lượng này vào thì
+0:02:14 - 0:02:22, nó sẽ ép (dùng từ ép thì nó hơi quá) nhưng
+0:02:18 - 0:02:24, mà nó sẽ cố gắng đưa các cái beta đó, đưa
+0:02:22 - 0:02:25, các cái hệ số tương ứng cho cái mô hình
+0:02:24 - 0:02:30, cho những cái đặc trưng mà nó không có
+0:02:25 - 0:02:31, quan trọng thì nó sẽ kéo cái giá trị đó
+0:02:30 - 0:02:39, xuống. Ví dụ y của mình, ờ giả sử như
+0:02:31 - 0:02:41, chúng ta xét cái trường hợp là có nhiều
+0:02:39 - 0:02:45, biến ha, là bằng beta 0 cộng cho beta 1 X1
+0:02:41 - 0:02:48, cộng cho
+0:02:45 - 0:02:53, beta 2 X2 cộng cho chấm chấm cộng cho
+0:02:48 - 0:02:57, beta n Xn.
+0:02:53 - 0:02:58, Thì giả sử như cái đại lượng X1 nó
+0:02:57 - 0:03:01, không quan trọng, tức là X1 là một cái
+0:02:58 - 0:03:03, đặc trưng mà nó không có liên quan gì
+0:03:01 - 0:03:05, với cái y này hết thì chúng ta mong muốn
+0:03:03 - 0:03:09, là loại cái thằng này ra khỏi cái mô
+0:03:05 - 0:03:11, hình của mình đúng không? Nhưng chúng ta
+0:03:09 - 0:03:13, sẽ không thể nào biết là cái đặc trưng X1 này nó có
+0:03:11 - 0:03:16, gọi là có cái mối quan hệ với thằng y
+0:03:13 - 0:03:19, hay không, do đó chúng ta sẽ để cho mô
+0:03:16 - 0:03:22, hình nó tự tìm ra thông qua cái việc đó
+0:03:19 - 0:03:25, là trong cái quá trình huấn luyện thì
+0:03:22 - 0:03:28, những cái đại lượng X nào mà khi có cái
+0:03:25 - 0:03:31, sự thay đổi mà nó không làm
+0:03:28 - 0:03:32, ảnh hưởng đến cái giá trị y. Tức là
+0:03:31 - 0:03:35, những cái thành phần không quan trọng
+0:03:32 - 0:03:39, thì cái đại lượng beta của mình nó sẽ
+0:03:35 - 0:03:42, được đưa gọi là bị đẩy xuống cái giá trị
+0:03:39 - 0:03:44, xấp xỉ với lại cái con số 0. Còn
+0:03:42 - 0:03:46, những cái đại lượng nào mà quan trọng
+0:03:44 - 0:03:48, đối với y thì cái giá trị của nó ví dụ
+0:03:46 - 0:03:51, như X_i đây thì cái đại lượng beta 2 của
+0:03:48 - 0:03:54, nó nó sẽ được đẩy lên. Đó thì đó là cái ý
+0:03:51 - 0:03:57, nghĩa của Lasso regression.
+0:03:54 - 0:04:00, Như vậy thì Lasso regression nó sẽ
+0:03:57 - 0:04:03, hướng đến chọn lựa đặc trưng quan trọng.
+0:04:00 - 0:04:06, Và Lasso regression nhờ cái tính năng mà chọn
+0:04:03 - 0:04:07, lựa đặc trưng này á thì nó được sử dụng
+0:04:06 - 0:04:12, cho các
+0:04:07 - 0:04:12, cái công việc liên quan đến Feature
+0:04:13 - 0:04:19, Selection, tức là chọn lựa đặc trưng. Ở
+0:04:17 - 0:04:21, trong cái bước gọi là data preprocessing hoặc
+0:04:19 - 0:04:23, là Feature Engineering thì chúng ta sẽ
+0:04:21 - 0:04:25, phải có một cái bước là chọn xem trong
+0:04:23 - 0:04:27, số các cái đặc trưng đầu vào những cái
+0:04:25 - 0:04:30, đặc trưng nào thực sự quan trọng và có ý
+0:04:27 - 0:04:30, nghĩa.
+0:04:30 - 0:04:36, Và cái biến thể tiếp theo của hồi quy
+0:04:33 - 0:04:39, tuyến tính đó chính là Ridge regression. Thì
+0:04:36 - 0:04:41, đây chính là cái biến thể mà có cái sự
+0:04:39 - 0:04:43, kết hợp của mô hình hồi quy tuyến tính
+0:04:41 - 0:04:45, với cái chuẩn hóa bậc hai thì chúng
+0:04:43 - 0:04:48, ta sẽ có cái công thức của mình là như
+0:04:45 - 0:04:51, sau. Thì giả sử như cái beta mũ của mình
+0:04:48 - 0:04:52, đó là bằng hai cái giá trị là beta 0 và
+0:04:51 - 0:04:57, beta
+0:04:52 - 0:05:02, 1. Thì cái beta
+0:04:57 - 0:05:05, mũ norm bậc hai bình phương thì nó sẽ là công
+0:05:02 - 0:05:10, thức như sau, nó sẽ là bằng
+0:05:05 - 0:05:13, beta 0 bình phương cộng cho beta 1 bình
+0:05:10 - 0:05:15, phương. Thì đây chính là cái công thức
+0:05:13 - 0:05:18, norm bậc
+0:05:15 - 0:05:22, hai. Và cái công thức này nó sẽ khác gì so
+0:05:18 - 0:05:24, với cái công thức norm bậc 1 trước đây? Đối
+0:05:22 - 0:05:26, với công thức norm bậc 1 trước đây thì nó
+0:05:24 - 0:05:30, sẽ là beta
+0:05:26 - 0:05:33, 1 cộng cho beta 2.
+0:05:30 - 0:05:36, Thì chúng ta thấy rõ ràng là nếu xét về
+0:05:33 - 0:05:38, mặt giá trị thì cái hàm bình phương nó
+0:05:36 - 0:05:41, sẽ cho cái giá trị của mình nó lớn hơn
+0:05:38 - 0:05:45, đúng không?
+0:05:41 - 0:05:48, Và khi đó thì cái vai trò của mình trong
+0:05:45 - 0:05:54, cái tình huống này đó là cái chuẩn hóa bậc hai
+0:05:48 - 0:05:58, này á nó sẽ cố gắng (ở đây nó sẽ cố
+0:05:54 - 0:06:02, gắng) để tất cả các cái thành phần beta 0
+0:05:58 - 0:06:05, và beta 1 đều tham gia vào. Tại sao nó
+0:06:02 - 0:06:09, lại như vậy thì chút nữa chúng ta sẽ có
+0:06:05 - 0:06:12, cái ví dụ ha. Đó, cái beta bình phương này
+0:06:09 - 0:06:13, nè, nó sẽ hướng đến khai thác hết các cái
+0:06:12 - 0:06:18, đặc
+0:06:13 - 0:06:21, trưng, trái với lại cái norm bậc 1. Norm bậc
+0:06:18 - 0:06:24, 1 đó là nó chỉ cố gắng chọn ra những cái
+0:06:21 - 0:06:26, đặc trưng nào quan trọng thì nó sẽ giữ
+0:06:24 - 0:06:30, lại. Còn đặc trưng nào không quan trọng
+0:06:26 - 0:06:34, thì nó sẽ loại bỏ đi. Còn
+0:06:30 - 0:06:38, norm bậc 2 thì nó sẽ tìm cách là đưa tất cả
+0:06:34 - 0:06:39, các cái beta 0, beta 1, beta 2 ví dụ vậy.
+0:06:38 - 0:06:41, Giả sử trong trường hợp mà chúng ta có
+0:06:39 - 0:06:45, nhiều hơn một biến ha. Thì nó sẽ có beta 2,
+0:06:41 - 0:06:48, beta 3. Nó sẽ tìm cách để đưa cả cái beta 1,
+0:06:45 - 0:06:51, beta 2, beta 3 này vào tham gia. Thì ở đây
+0:06:48 - 0:06:55, chúng ta sẽ xét vào một cái ví dụ đó
+0:06:51 - 0:06:59, là giả sử như chúng ta có cái vectơ beta
+0:06:55 - 0:07:03, là bằng
+0:06:59 - 0:07:07, 1 0 0
+0:07:03 - 0:07:10, 0 rồi. Thì khi đó chúng ta thực hiện cái
+0:07:07 - 0:07:12, thao tác là bình phương đúng không? Thì
+0:07:10 - 0:07:14, cái sai số, à cái cái đại lượng chuẩn hóa
+0:07:12 - 0:07:16, này ha, cái chuẩn hóa L2 này nè. Thì khi đó nó
+0:07:14 - 0:07:20, sẽ có cái công thức đó là 1 bình phương
+0:07:16 - 0:07:23, cộng cho 0 bình phương cộng cho 0
+0:07:20 - 0:07:26, bình phương vân vân thì nó sẽ ra là 1.
+0:07:23 - 0:07:30, Trong khi đó nếu như chúng ta có một cái
+0:07:26 - 0:07:35, beta khác đó là 0.25,
+0:07:30 - 0:07:35, 0.25 và
+0:07:37 - 0:07:42, 0.25 (bốn cái giá trị 0.25) thì các cái
+0:07:41 - 0:07:46, giá trị này bình phương thì chúng ta
+0:07:42 - 0:07:50, thấy nó có tính chất gì như thế nào? Vector beta
+0:07:46 - 0:07:52, à khi này thì chúng ta sẽ có
+0:07:50 - 0:07:55, là các cái giá trị thành phần này bình
+0:07:52 - 0:07:55, phương lên
+0:07:55 - 0:08:03, ha. Thì khi đó là norm của mình nó sẽ là chuẩn hóa L2
+0:07:59 - 0:08:07, của mình nó sẽ là
+0:08:03 - 0:08:10, 0.25 bình phương tất cả nhân 4. Và cái
+0:08:07 - 0:08:12, con số 0.25 bình phương này thì nó sẽ là
+0:08:10 - 0:08:14, một con số rất là bé, tại vì con số mà
+0:08:12 - 0:08:16, nhỏ hơn 1 mà thì khi bình phương lên nó
+0:08:14 - 0:08:18, sẽ ra con số còn nhỏ hơn nữa. Như vậy thì
+0:08:16 - 0:08:21, cái 4 nhân cho cái này chắc chắn nó sẽ
+0:08:18 - 0:08:24, ra một con số bé hơn 1. Như vậy thì giữa
+0:08:21 - 0:08:29, hai cái cách chọn đó là
+0:08:24 - 0:08:31, 1 và 0.25, 0.25, 0.25. Tức là cả hai thằng
+0:08:29 - 0:08:34, này, cả hai cái cách chọn này nó đều có
+0:08:31 - 0:08:38, cái tổng là bằng 1. Nhưng
+0:08:34 - 0:08:43, cái cái vectơ bên dưới tức là beta bằng
+0:08:38 - 0:08:46, 0.25, 0.25, 0.25 và 0.25 này nó đang trải
+0:08:43 - 0:08:48, đều ra. Tức là nó đang khai thác hết, nó
+0:08:46 - 0:08:52, tìm cách khai thác hết các cái đặc trưng
+0:08:48 - 0:08:54, của mình. Tại sao nó gọi là khai thác hết?
+0:08:52 - 0:08:57, Tại vì khi chúng ta chia nhỏ cái con số
+0:08:54 - 0:08:59, 1 này ra rải đều ra cho các cái thành
+0:08:57 - 0:09:02, phần beta thì khi khi chúng ta bình
+0:08:59 - 0:09:03, phương lên á thì nó sẽ ra cái con số nhỏ
+0:09:02 - 0:09:08, hơn
+0:09:03 - 0:09:12, nữa. Như vậy thì cái norm bậc hai của cái
+0:09:08 - 0:09:14, beta này nó sẽ nhỏ hơn so với lại norm bậc
+0:09:12 - 0:09:16, hai của beta này. Rõ ràng, chúng ta đang đi tìm cái hàm nhỏ nhất mà,
+0:09:14 - 0:09:18, chúng ta đang đi tìm cái hàm nhỏ nhất mà
+0:09:16 - 0:09:21, đi tìm cái giá trị nhỏ nhất mà thì rõ
+0:09:18 - 0:09:24, ràng mô hình nó sẽ hướng đến chọn cái
+0:09:21 - 0:09:26, beta sao cho có cái đại lượng chuẩn hóa này nhỏ
+0:09:24 - 0:09:30, mà. Như vậy thì cái việc rải đều với cái
+0:09:26 - 0:09:32, việc tụ lại cho một cái giá trị thì mô
+0:09:30 - 0:09:35, hình của mình, Ridge regression của mình nó sẽ
+0:09:32 - 0:09:37, hướng đến là chọn cái giá trị beta này.
+0:09:35 - 0:09:39, Đó là lý do tại sao Ridge regression nó có xu
+0:09:37 - 0:09:41, hướng là khai thác hết tất cả các cái
+0:09:39 - 0:09:44, đặc
+0:09:41 - 0:09:46, trưng. Và cuối cùng đó chính là Elastic
+0:09:44 - 0:09:51, Net. Thì đây là một cái biến
+0:09:46 - 0:09:53, thể có cái sự kết hợp của cả chuẩn hóa L1 và
+0:09:51 - 0:09:55, chuẩn hóa L2. Thì giống như là cái kiểu "nước
+0:09:53 - 0:09:58, đôi" á thì ở đây chúng ta sẽ có cái công
+0:09:55 - 0:10:00, thức là đây là cái độ đo MSE như bình
+0:09:58 - 0:10:04, thường ha, chúng ta sẽ có thêm một cái
+0:10:00 - 0:10:06, đại lượng lambda ở đây, và ở đây sẽ là 1 -
+0:10:04 - 0:10:10, Alpha nhân cho
+0:10:06 - 0:10:14, ờ chuẩn hóa L2 và đây sẽ là chuẩn hóa L1. Thì đây là
+0:10:10 - 0:10:17, cái sự kết hợp của chuẩn hóa L2 và
+0:10:14 - 0:10:20, L1 thì cái phương pháp này nó hy vọng
+0:10:17 - 0:10:24, rằng là nó có thể ờ khắc phục được những
+0:10:20 - 0:10:27, cái điểm yếu của Lasso và Ridge, và khai
+0:10:24 - 0:10:28, thác được những cái điểm mạnh của Lasso
+0:10:27 - 0:10:32, và Ridge regression. Thì đây nó nằm trong cái
+0:10:28 - 0:10:36, nhóm nó gọi là ensemble hay là kết hợp
+0:10:32 - 0:10:40, các cái mô hình. Ở đây thì cả ba cái mô
+0:10:36 - 0:10:43, hình là Elastic Net, rồi Ridge regression và
+0:10:40 - 0:10:46, Lasso regression thì chúng ta đều thấy có
+0:10:43 - 0:10:49, sự xuất hiện của một cái siêu tham số đó
+0:10:46 - 0:10:52, là lambda. Vậy thì lambda ở đây nó có vai
+0:10:49 - 0:10:57, trò là gì? Thì nếu nói theo cái kiểu vui
+0:10:52 - 0:10:59, á, MSE nó là đại diện cho cái sai số của
+0:10:57 - 0:11:01, giá trị dự đoán và giá trị mong muốn.
+0:11:01 - 0:11:06, trong khi đó, beta nó lại có một cái ý
+0:11:04 - 0:11:09, nghĩa khác hoàn toàn đó là cái chuẩn hóa, đó là cái norm
+0:11:06 - 0:11:12, ờ của các cái tham số của mình. Như vậy
+0:11:09 - 0:11:15, nếu xét về ý nghĩa thì hai cái đại lượng
+0:11:12 - 0:11:18, này là nó không liên quan với nhau. Một
+0:11:15 - 0:11:21, bên là đo lường cái sai số, một bên là
+0:11:18 - 0:11:23, người ta mong muốn là đưa vào cái cái
+0:11:21 - 0:11:26, tham số của mình vào. Như vậy nó nó khác
+0:11:23 - 0:11:28, với thứ nguyên. Thì đưa cái lambda này vào
+0:11:26 - 0:11:29, thì nó sẽ giúp cho mình cân bằng giữa
+0:11:28 - 0:11:32, hai cái thứ nguyên này.
+0:11:29 - 0:11:37, Nếu như lambda này mà càng lớn, tức là
+0:11:32 - 0:11:37, mình đang muốn tập trung cái mô hình vào
+0:11:38 - 0:11:45, để cố gắng đưa các cái giá trị norm của beta
+0:11:42 - 0:11:47, của các cái beta này (beta mũ này) sẽ càng
+0:11:45 - 0:11:51, lúc càng nhỏ. Tức là chúng ta sẽ dồn lực
+0:11:47 - 0:11:54, để huấn luyện ở đây. Còn nếu như lambda mà
+0:11:51 - 0:11:58, nhỏ, tức là chúng ta đang dồn lực ưu tiên
+0:11:54 - 0:12:00, cho cái việc đó là tối ưu cái sai số của
+0:11:58 - 0:12:04, cái độ lỗi của mình đó. Thì đó chính là
+0:12:00 - 0:12:04, cái ý nghĩa của lambda.

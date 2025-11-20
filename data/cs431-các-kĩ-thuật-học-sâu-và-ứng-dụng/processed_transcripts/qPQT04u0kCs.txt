@@ -35,50 +35,50 @@
 0:03:35 - 0:03:37, rồi cái hàng thứ hai
 0:03:37 - 0:03:45, nhân với lại cái vector x, y, z thì nó sẽ ra cái lượng là vitamin C
 0:03:45 - 0:03:50, và cái hàng thứ ba nhân với lại cái x, y, z thì mình sẽ ra cái lượng là chất xơ
-00:03:50 - 0:04:01, Giá trị của mình sẽ là hàm lượng vitamin A, C và chất xơ khi mình đi chợ trong ngày hôm đó
+0:03:50 - 0:04:01, Giá trị của mình sẽ là hàm lượng vitamin A, C và chất xơ khi mình đi chợ trong ngày hôm đó
 0:04:01 - 0:04:10, Một ví dụ khác là chúng ta nhớ lại giải hệ phương trình tuyến tính hồi cấp 3
-00:04:10 - 0:04:15, thì ở đây chúng ta sẽ có hệ phương trình ví dụ như là a_1x, b_1y, c_1z bằng d_1
-00:04:16 - 0:04:18, thì chúng ta có 3 cái hệ phương trình như thế này
-00:04:18 - 0:04:22, thì hệ phương trình này có thể viết gọn lại
+0:04:10 - 0:04:15, thì ở đây chúng ta sẽ có hệ phương trình ví dụ như là a_1x, b_1y, c_1z bằng d_1
+0:04:16 - 0:04:18, thì chúng ta có 3 cái hệ phương trình như thế này
+0:04:18 - 0:04:22, thì hệ phương trình này có thể viết gọn lại
 0:04:22 - 0:04:30, thành, thực ra cũng không phải là gọn nhưng mà có thể biểu diễn nó dưới dạng là tích của ma trận các hệ số
-00:04:36 - 0:04:39, với một cái vector này, là vector này chính là biến số
-00:04:40 - 0:04:41, mà cần giải
-00:04:41 - 0:04:44, Và đây chính là cái vector kết quả
-00:04:47 - 0:04:52, Như vậy thì cái hệ phương trình có thể biểu diễn dưới dạng một cái phép nhân ma trận với vector
-00:04:54 - 0:04:59, Tiếp theo thì chúng ta sẽ tìm hiểu về phép nhân ma trận với ma trận
-00:04:59 - 0:05:03, Mở rộng của ma trận với vector thì chúng ta sẽ có phép nhân ma trận với ma trận
+0:04:36 - 0:04:39, với một cái vector này, là vector này chính là biến số
+0:04:40 - 0:04:41, mà cần giải
+0:04:41 - 0:04:44, Và đây chính là cái vector kết quả
+0:04:47 - 0:04:52, Như vậy thì cái hệ phương trình có thể biểu diễn dưới dạng một cái phép nhân ma trận với vector
+0:04:54 - 0:04:59, Tiếp theo thì chúng ta sẽ tìm hiểu về phép nhân ma trận với ma trận
+0:04:59 - 0:05:03, Mở rộng của ma trận với vector thì chúng ta sẽ có phép nhân ma trận với ma trận
 0:05:03 - 0:05:07, Và ở đây thì chúng ta cũng sẽ thực hiện cái nguyên tắc tương tự như vậy
 0:05:07 - 0:05:13, đó là chúng ta sẽ nhân theo hàng và theo cột, hàng và cột
 0:05:13 - 0:05:17, thì khi đó chúng ta sẽ có cái kết quả là
 0:05:17 - 0:05:25, a_2 b_1 thì nó sẽ được tạo bởi cái hàng thứ 2 và cột thứ 1
-00:05:25 - 0:05:28, của cái ma trận
-00:05:28 - 0:05:32, thì chúng ta lưu ý ở đây nó sẽ có cái khái niệm gọi là chuyển vị
+0:05:25 - 0:05:28, của cái ma trận
+0:05:28 - 0:05:32, thì chúng ta lưu ý ở đây nó sẽ có cái khái niệm gọi là chuyển vị
 0:05:32 - 0:05:34, chuyển vị thì mục tiêu đó là gì?
-00:05:34 - 0:05:37, là để biểu diễn dưới dạng hàng
-00:05:37 - 0:05:49, Và đây là một số cái thao tác, một số cái tính chất của phép nhân, ví dụ như có tính chất giao hoán, tính chất kết hợp
-00:05:49 - 0:05:59, Rồi, thì ứng dụng của phép nhân ma trận này đó chính là dùng trong các biến đổi hình học
-00:05:59 - 0:06:10, Lấy ví dụ như để thực hiện cái phép Translate, tức là cái phép tịnh tiến, thì chúng ta sẽ lấy một cái điểm gốc,
-00:06:10 - 0:06:18, chúng ta nhân với lại cái ma trận Translate này, thì cái ma trận Translate nó sẽ là một cái ma trận kích thước là 3x3
-00:06:18 - 0:06:25, và nếu như tập hợp các cái điểm đầu vào thì chúng ta sẽ tạo thành một cái hình ảnh, ví dụ ở đây có cái hình là chữ F,
-00:06:25 - 0:06:32, Chữ F này, khi nhân với cái ma trận tịnh tiến, thì nó sẽ tạo thành một hình ảnh kết quả.
-00:06:32 - 0:06:39, Thì các hệ số cho cái ma trận tịnh tiến này sẽ là 1 0 x, 0 1 y, 0 0 1.
-00:06:39 - 0:06:42, x, y này chính là cái vector tịnh tiến của mình.
-00:06:42 - 0:06:52, Tương tự như vậy, cho cái thao tác là Scale, tức là tỷ lệ xung quanh gốc tọa độ Origin và phép xoay.
-00:06:52 - 0:07:00, Nếu như thực hiện phép Scale, thì chúng ta muốn biến đổi cái ảnh của mình
-00:07:00 - 0:07:05, Thay đổi cái kích thước theo cái trục bề ngang và bề cao
-00:07:05 - 0:07:08, Giả sử như cái hệ số tỷ lệ của mình là W và H
-00:07:08 - 0:07:12, Thì khi đó đây chính là cái ma trận mà được sử dụng để biến đổi
-00:07:12 - 0:07:18, Và cái ảnh gốc của mình, ảnh gốc của mình nhân với cái ma trận này thì sẽ ra cái ảnh đã được Scale
-00:07:18 - 0:07:27, Tương tự như vậy thì chúng ta sẽ có ảnh gốc nhân với ma trận Rotate, tức là ma trận xoay
-00:07:27 - 0:07:30, với một góc là theta độ
-00:07:30 - 0:07:41, thì hệ số của ma trận này sẽ là cos theta trừ sin theta 0, sin theta cos theta 0, 0 0 1
-00:07:41 - 0:07:46, thì nhân cái ma trận này với cái ảnh gốc thì nó sẽ tạo ra một cái hình ảnh
-00:07:46 - 0:07:49, được xoay một cái góc là theta độ
+0:05:34 - 0:05:37, là để biểu diễn dưới dạng hàng
+0:05:37 - 0:05:49, Và đây là một số cái thao tác, một số cái tính chất của phép nhân, ví dụ như có tính chất giao hoán, tính chất kết hợp
+0:05:49 - 0:05:59, Rồi, thì ứng dụng của phép nhân ma trận này đó chính là dùng trong các biến đổi hình học
+0:05:59 - 0:06:10, Lấy ví dụ như để thực hiện cái phép Translate, tức là cái phép tịnh tiến, thì chúng ta sẽ lấy một cái điểm gốc,
+0:06:10 - 0:06:18, chúng ta nhân với lại cái ma trận Translate này, thì cái ma trận Translate nó sẽ là một cái ma trận kích thước là 3x3
+0:06:18 - 0:06:25, và nếu như tập hợp các cái điểm đầu vào thì chúng ta sẽ tạo thành một cái hình ảnh, ví dụ ở đây có cái hình là chữ F,
+0:06:25 - 0:06:32, Chữ F này, khi nhân với cái ma trận tịnh tiến, thì nó sẽ tạo thành một hình ảnh kết quả.
+0:06:32 - 0:06:39, Thì các hệ số cho cái ma trận tịnh tiến này sẽ là 1 0 x, 0 1 y, 0 0 1.
+0:06:39 - 0:06:42, x, y này chính là cái vector tịnh tiến của mình.
+0:06:42 - 0:06:52, Tương tự như vậy, cho cái thao tác là Scale, tức là tỷ lệ xung quanh gốc tọa độ Origin và phép xoay.
+0:06:52 - 0:07:00, Nếu như thực hiện phép Scale, thì chúng ta muốn biến đổi cái ảnh của mình
+0:07:00 - 0:07:05, Thay đổi cái kích thước theo cái trục bề ngang và bề cao
+0:07:05 - 0:07:08, Giả sử như cái hệ số tỷ lệ của mình là W và H
+0:07:08 - 0:07:12, Thì khi đó đây chính là cái ma trận mà được sử dụng để biến đổi
+0:07:12 - 0:07:18, Và cái ảnh gốc của mình, ảnh gốc của mình nhân với cái ma trận này thì sẽ ra cái ảnh đã được Scale
+0:07:18 - 0:07:27, Tương tự như vậy thì chúng ta sẽ có ảnh gốc nhân với ma trận Rotate, tức là ma trận xoay
+0:07:27 - 0:07:30, với một góc là theta độ
+0:07:30 - 0:07:41, thì hệ số của ma trận này sẽ là cos theta trừ sin theta 0, sin theta cos theta 0, 0 0 1
+0:07:41 - 0:07:46, thì nhân cái ma trận này với cái ảnh gốc thì nó sẽ tạo ra một cái hình ảnh
+0:07:46 - 0:07:49, được xoay một cái góc là theta độ
 0:07:52 - 0:07:58, Sau đây sẽ là một số cái ma trận đặc biệt trong đại số tuyến tính
-00:07:58 - 0:08:00, Đầu tiên đó là ma trận đơn vị
-00:08:00 - 0:08:03, thì ma trận đơn vị nó sẽ là một cái ma trận vuông
-00:08:03 - 0:08:05, ma trận vuông là gì?
-00:08:05 - 0:08:08, là ma trận có số hàng và số cột bằng nhau
+0:07:58 - 0:08:00, Đầu tiên đó là ma trận đơn vị
+0:08:00 - 0:08:03, thì ma trận đơn vị nó sẽ là một cái ma trận vuông
+0:08:03 - 0:08:05, ma trận vuông là gì?
+0:08:05 - 0:08:08, là ma trận có số hàng và số cột bằng nhau
 00:08:08 - 0:08:13, và tất cả các phần tử trên đường chéo chính này nè
 00:08:13 - 0:08:15, nó đều là bằng một
 00:08:15 - 0:08:19, và tất cả những phần tử nằm ngoài đường chéo chính này bằng 0

@@ -1,0 +1,171 @@
+0:00:01 - 0:00:08, và sau đây thì chúng ta sẽ nói về một
+0:00:04 - 0:00:10, cái khái niệm cũng rất là quan trọng khi
+0:00:08 - 0:00:12, chúng ta triển khai một cái mô hình máy
+0:00:10 - 0:00:15, học vào thực tế đó chính là technical
+0:00:12 - 0:00:19, dep technical dep khi mà triển khai một
+0:00:15 - 0:00:22, cái ứng dụng thì ý nghĩa của nó là gì Ý
+0:00:19 - 0:00:24, nghĩa của một cái technical de Tức là nó
+0:00:22 - 0:00:27, là một cái khái niệm trong cái lĩnh vực
+0:00:24 - 0:00:30, công nghệ phần mềm và công nghệ thông
+0:00:27 - 0:00:33, tin nó mô tả là những cái công việc nào
+0:00:30 - 0:00:35, thì cần phải làm trong tương lai Ờ do
+0:00:33 - 0:00:38, các cái yếu tố quyết định thì được đưa
+0:00:35 - 0:00:40, ra để đẩy nhanh cái tốc độ hiện tại á
+0:00:38 - 0:00:45, thì chúng ta đôi khi chúng ta sẽ bỏ sót
+0:00:40 - 0:00:47, bỏ qua tức là vì cái yếu tố về tính cấp
+0:00:45 - 0:00:50, thiết cho cái việc triển khai một cái
+0:00:47 - 0:00:52, tính năng Máy học để có thể đưa ra được
+0:00:50 - 0:00:55, sớm đến với người dùng thì đôi khi là
+0:00:52 - 0:00:59, cái người phát triển cái đội ngũ phát
+0:00:55 - 0:01:00, triển họ đã phải h sinh để giảm bớt một
+0:00:59 - 0:01:03, số cái công đoạn
+0:01:00 - 0:01:06, những cái công cái việc hi sinh đó nó sẽ
+0:01:03 - 0:01:09, khiến cho chúng ta tìm ẩn nó sẽ tìm ẩn
+0:01:06 - 0:01:11, những cái rủi ro khi chúng ta triển khai
+0:01:09 - 0:01:13, cái mô hình về sau nó có thể phát sinh
+0:01:11 - 0:01:17, ra những cái bốc Nó sẽ có phát sinh ra
+0:01:13 - 0:01:18, những cái vấn đề khác thế thì trong
+0:01:17 - 0:01:21, nguyên một cái
+0:01:18 - 0:01:23, pipeline của cái việc mà chúng ta triển
+0:01:21 - 0:01:26, khai một cái mô hình mới học thì chúng
+0:01:23 - 0:01:29, ta thấy nè là cái machine learning code
+0:01:26 - 0:01:31, Á là cái phần màu đen ở đây nó chiếm một
+0:01:29 - 0:01:33, cái tỷ trọng rất là bé nó chiếm một cái
+0:01:31 - 0:01:37, tỷ trọng rất là bé trong toàn bộ một cái
+0:01:33 - 0:01:41, hệ thống máy học nếu so cái lượng codde
+0:01:37 - 0:01:44, của mô hình m học với những cái phần như
+0:01:41 - 0:01:47, là cấu hình cái hệ thống nè như là thu
+0:01:44 - 0:01:50, thập dữ liệu nè như
+0:01:47 - 0:01:53, là gọi là kiểm tra cái tính xác thực của
+0:01:50 - 0:01:56, dữ liệu nè rồi rút trích đặc trưng nè
+0:01:53 - 0:02:01, Rồi các cái công cụ như là quản lý tài
+0:01:56 - 0:02:03, nguyên nè rồi quản lý hạ Tần nè vân vân
+0:02:01 - 0:02:06, rồi giám sát mô hình Thì cái phần này
+0:02:03 - 0:02:09, cái tỷ trọng của cái phần code machine
+0:02:06 - 0:02:12, learning của chúng ta rất là bé và chúng
+0:02:09 - 0:02:15, ta thấy rằng là Thậm chí các cái
+0:02:12 - 0:02:18, Framework của chúng ta đã hỗ trợ cho
+0:02:15 - 0:02:21, chúng ta rất là nhiều nên cái việc code
+0:02:18 - 0:02:23, các cái mô hình máy học gần đây nó đã
+0:02:21 - 0:02:25, tiết giảm rất là nhiều cái số dòng code
+0:02:23 - 0:02:26, đúng Chúng ta chỉ cần gọi một số cái hàm
+0:02:25 - 0:02:28, một số cái phương thức thôi như vậy thì
+0:02:26 - 0:02:30, nói như vậy để thấy sẽ rằng điều gì là
+0:02:28 - 0:02:33, cái khối lượng của của cái mô hình máy
+0:02:30 - 0:02:35, học của mình á Nó rất là ít và những để
+0:02:33 - 0:02:37, mà mô hình của mình nó có thể triển khai
+0:02:35 - 0:02:40, được thành ứng dụng nó sẽ phải phụ thuộc
+0:02:37 - 0:02:41, vào rất nhiều những cái yếu tố khác và
+0:02:40 - 0:02:43, Chính vì phụ thuộc rất nhiều vào những
+0:02:41 - 0:02:47, yếu tố khác nó sẽ gây ra cái vấn đề về
+0:02:43 - 0:02:49, technical dep đó ví dụ như cái vấn đề
+0:02:47 - 0:02:52, xác thực của dữ liệu liệu dữ liệu của
+0:02:49 - 0:02:53, mình nó đã sạch chưa Nó đã phản ánh đúng
+0:02:52 - 0:02:56, được cái môi trường trong thực tế hay
+0:02:53 - 0:02:59, chưa đôi khi chúng ta thu thập dữ liệu
+0:02:56 - 0:03:02, nhưng mà chúng ta thu thập gọi là vừa đủ
+0:02:59 - 0:03:04, hoặc là chúng ta thu thập để đủ mô hình
+0:03:02 - 0:03:07, có thể chạy được ngay thì chúng ta đã bỏ
+0:03:04 - 0:03:09, qua cái yếu tố là cái phân bố của dữ
+0:03:07 - 0:03:10, liệu của mình nó phải sát với thực tế
+0:03:09 - 0:03:13, thì chúng ta bỏ qua mất cái chệ đó thì
+0:03:10 - 0:03:16, đó là một cái tch nược nic dep rồi chúng
+0:03:13 - 0:03:19, ta huấn luyện cái mô hình code cho nó để
+0:03:16 - 0:03:22, có thể chạy được với cái hiệu năng cao
+0:03:19 - 0:03:24, đúng không với cái độ chính xác rất là
+0:03:22 - 0:03:26, cao nhưng mà chúng ta lại bỏ qua cái yếu
+0:03:24 - 0:03:29, tố về mặt resour tức là yếu tố về mặt
+0:03:26 - 0:03:31, tài nguyên thì dẫn đến là cái mô hình
+0:03:29 - 0:03:35, của của mình sau này khi triển khai với
+0:03:31 - 0:03:38, những cái trang thiết bị phần cứng yếu
+0:03:35 - 0:03:41, hoặc là không đủ thì dẫn đến là m không
+0:03:38 - 0:03:43, có thể thực thi được không thể đáp ứng
+0:03:41 - 0:03:46, được khi đưa cái ứng dụng của mình vào
+0:03:43 - 0:03:51, bên trong thực tế thì đó là một số cái
+0:03:46 - 0:03:54, technical dep rất là phổ biến và Không
+0:03:51 - 0:03:56, những vậy thì khi chúng ta triển khai
+0:03:54 - 0:03:58, cái mô hình máy học vào bên trong thực
+0:03:56 - 0:04:02, tế đó thì nó sẽ còn rất rất nhiều những
+0:03:58 - 0:04:04, cái C nghệ khác có liên quan chứ không
+0:04:02 - 0:04:06, phải là chỉ có các cái thư viện máy học
+0:04:04 - 0:04:08, mà chúng ta đã học trong phạm vi của mô
+0:04:06 - 0:04:10, học này ví dụ như trong phạm vi môn học
+0:04:08 - 0:04:11, này thì chúng ta sử dụng nhiều nhất đó
+0:04:10 - 0:04:15, chính là
+0:04:11 - 0:04:19, ờ các cái công cụ như là cy l nè rồi
+0:04:15 - 0:04:22, Python N và tensorflow Python ví dụ vậy
+0:04:19 - 0:04:25, nhưng mà chúng ta sẽ còn rất nhiều những
+0:04:22 - 0:04:28, cái công nghệ khác mà giúp cho cái việc
+0:04:25 - 0:04:30, là triển khai mô hình trong thực tế nó
+0:04:28 - 0:04:32, được thực hiện một cách Trân tru hơn lấy
+0:04:30 - 0:04:34, ví dụ như đối với cái nền tảng dữ liệu
+0:04:32 - 0:04:36, lớn thì có rất nhiều những cái công nghệ
+0:04:34 - 0:04:40, ở đây nhưng mà có thể nói hai cái công
+0:04:36 - 0:04:44, nghệ mà nổi tiếng nhất mà mình được từng
+0:04:40 - 0:04:47, được trải nghiệm qua đó chính là Hup và
+0:04:44 - 0:04:51, spar thì Hup và Spark Đó là các cái công
+0:04:47 - 0:04:53, nghệ mà liên quan đến dữ liệu lớn nó sẽ
+0:04:51 - 0:04:56, giúp cho chúng ta quản lý dữ liệu tốt
+0:04:53 - 0:05:00, hơn rồi phân tán dữ liệu rồi xử lý song
+0:04:56 - 0:05:03, song và Làm sao để quản lý các cái tác
+0:05:00 - 0:05:06, vụ khi mà chúng ta có một cái lượng lớn
+0:05:03 - 0:05:08, dữ liệu Ví dụ như nếu như cái chương
+0:05:06 - 0:05:11, trình của chúng ta chỉ thực thi cho một
+0:05:08 - 0:05:13, người dùng thì rất là dễ nhưng mà sau
+0:05:11 - 0:05:16, này khi cái ứng dụng của chúng ta triển
+0:05:13 - 0:05:18, khai lên trên các cái mạng xã hội số
+0:05:16 - 0:05:21, lượng người dùng có thể lên đến hàng
+0:05:18 - 0:05:22, trăm ngàn người thậm chí là hàng triệu
+0:05:21 - 0:05:25, người thậm chí là đối với các cái mạng
+0:05:22 - 0:05:28, xã hội như là Facebook thì có thể lên
+0:05:25 - 0:05:30, đến hàng tỷ người thì lúc đó là đòi hỏi
+0:05:28 - 0:05:33, cần phải có những cái công ngệ để có thể
+0:05:30 - 0:05:35, mà quản lý được cái nền tảng dữ liệu lớn
+0:05:33 - 0:05:37, đó và các cái nền tảng dữ liệu lớn này
+0:05:35 - 0:05:39, nó sẽ tương tác với các cái mô hình của
+0:05:37 - 0:05:42, mình như thế nào để sao cho nó hiệu quả
+0:05:39 - 0:05:44, nhất tránh cái việc đó là cái hệ thống
+0:05:42 - 0:05:48, của mình bị tắt nghẽn bị chết
+0:05:44 - 0:05:50, đó và nó ngoài cái nền tảng dữ liệu lớn
+0:05:48 - 0:05:53, thì chúng ta còn có cái hạ tầng để đóng
+0:05:50 - 0:05:55, gói đó ví dụ như ở đây là có kubernet Và
+0:05:53 - 0:05:58, docker là hai cái hạ tầng rất là nổi
+0:05:55 - 0:06:01, tiếng docker thì giúp cho chúng ta đóng
+0:05:58 - 0:06:04, gói Toàn bộ cái mô hình của mình các cái
+0:06:01 - 0:06:06, thư viện của mình các cái phần cái cấu
+0:06:04 - 0:06:09, hình thư viện để mà liên kết với các
+0:06:06 - 0:06:11, phần cứng vân vân vào bên trong cái
+0:06:09 - 0:06:13, docker để sau này chúng ta dùng các cái
+0:06:11 - 0:06:16, docker này kết hợp với cái công cụ
+0:06:13 - 0:06:20, kubernet kubernet để mà triển khai hàng
+0:06:16 - 0:06:22, loạt trên các cái hệ thống máy chủ khác
+0:06:20 - 0:06:25, nhau Ví dụ như sau này khi cái lượng
+0:06:22 - 0:06:27, người dùng của mình lớn lên thì nó sẽ tự
+0:06:25 - 0:06:30, động nhân rộng nó sẽ tạo ra các cái
+0:06:27 - 0:06:32, cluster mới và chúng ta sẽ triển khai
+0:06:30 - 0:06:34, các cái mô hình của mình đến các cái
+0:06:32 - 0:06:36, cluster đó một cách nhanh chóng và khi
+0:06:34 - 0:06:38, đến cái thời điểm thấp điểm khi mà cái
+0:06:36 - 0:06:42, số lượng người dùng của mình nó ít đi
+0:06:38 - 0:06:45, thì chúng ta có thể thu hẹp các cái
+0:06:42 - 0:06:47, cluster đó lại thì đó là cái tác dụng
+0:06:45 - 0:06:49, của các cái hạ tầng đóng gói này nó giúp
+0:06:47 - 0:06:50, cho chúng ta triển khai mô hình nhân
+0:06:49 - 0:06:53, rộng cái mô hình nhanh hơn hoặc là thu
+0:06:50 - 0:06:56, hẹp cái mô hình của mình nhanh hơn rồi
+0:06:53 - 0:06:58, nó có các cái nền tảng kết hợp thì ở đây
+0:06:56 - 0:07:00, có một cái nền tảng cũng rất là nổi
+0:06:58 - 0:07:03, tiếng đó là airflow tức là nền tảng này
+0:07:00 - 0:07:07, là tích hợp đóng gói tích hợp tất cả
+0:07:03 - 0:07:10, những cái bước trong cái quy trình từ
+0:07:07 - 0:07:12, cái khâu mà xây dựng dữ liệu n quản lý
+0:07:10 - 0:07:15, dữ liệu n cho đến vận hành mô hình máy
+0:07:12 - 0:07:17, học cho đến giám sát mô hình vân vân thì
+0:07:15 - 0:07:21, nó sẽ tích hợp lại thành một cái flow
+0:07:17 - 0:07:24, quy trình đó thì trên đây là một vài cái
+0:07:21 - 0:07:26, công nghệ thôi có liên quan đến cái việc
+0:07:24 - 0:07:28, triển khai mô hình và bên cạnh cái phần
+0:07:26 - 0:07:34, chính mà chúng ta đã học trong các cái
+0:07:28 - 0:07:36, tuần trước là C lear Python là tens flow
+0:07:34 - 0:07:41, thì chúng ta sẽ còn có các cái công nghệ
+0:07:36 - 0:07:41, này cần phải tìm hiểu

@@ -1,0 +1,258 @@
+0:00:01 - 0:00:05, trong phần tiếp theo thì chúng ta sẽ
+0:00:02 - 0:00:08, cùng cài đặt hai mô hình rất là quan
+0:00:05 - 0:00:10, trọng đó là mô hình Logistic ession và
+0:00:08 - 0:00:13, mô hình neural Network trong đó Mô hình
+0:00:10 - 0:00:15, Logistic ction thì mô hình này thường
+0:00:13 - 0:00:17, được sử dụng cho dữ liệu của mình ở dạng
+0:00:15 - 0:00:20, có thể phân chia được bởi một đường
+0:00:17 - 0:00:22, thẳng tuyến tính thì ở bên đây dưới đây
+0:00:20 - 0:00:24, chúng ta sẽ có một cái hình ảnh minh họa
+0:00:22 - 0:00:26, cho cái dữ liệu mà chúng ta sẽ làm việc
+0:00:24 - 0:00:29, tiếp theo ở đây chúng ta sẽ thấy là có
+0:00:26 - 0:00:31, hai tập điểm màu xanh và màu đỏ thì hai
+0:00:29 - 0:00:34, tập điểm này chúng ta có thể chia tách
+0:00:31 - 0:00:37, nó ra được làm hai phần à bằng một cái
+0:00:34 - 0:00:39, đường thẳng chia ra làm hai thì đây là
+0:00:37 - 0:00:42, dữ liệu và có thể phân chia được một
+0:00:39 - 0:00:44, cách tiến tính và mô hình Logistic
+0:00:42 - 0:00:47, ression thì rất là phù hợp đối với lại
+0:00:44 - 0:00:49, những cái trường hợp dữ liệu như vậy còn
+0:00:47 - 0:00:51, đối với dữ liệu mà Phi tuyến tính tức là
+0:00:49 - 0:00:53, có những cái tình huống mà dữ liệu của
+0:00:51 - 0:00:56, mình không có thể phân tách được bởi một
+0:00:53 - 0:00:58, cái đường thẳng Ví dụ như đườngng chúng
+0:00:56 - 0:00:59, ta có hai tập điểm màu xanh và màu đỏ
+0:00:58 - 0:01:01, như thế này chúng ta thấy là không có
+0:00:59 - 0:01:03, cách nào để chia ra làm hai phần bằng
+0:01:01 - 0:01:05, một đườngng thẳng đúng không Thì đây
+0:01:03 - 0:01:08, chính là trường hợp dữ liệu có mối quan
+0:01:05 - 0:01:12, hệ Phi tuyến tính thì đầu tiên đối với
+0:01:08 - 0:01:14, dữ liệu tuyến tính thì chúng ta sẽ tiến
+0:01:12 - 0:01:17, hành generate ra các cái tập điểm màu
+0:01:14 - 0:01:20, xanh và màu đỏ trong đó những điểm màu
+0:01:17 - 0:01:24, đỏ thì sẽ xoay xung quanh một cái xung
+0:01:20 - 0:01:25, quanh một cái trọng tâm đó là điểm 1 5
+0:01:24 - 0:01:28, còn các điểm màu xanh thì xoay xung
+0:01:25 - 0:01:30, quanh một cái điểm có trọng tâm là 51
+0:01:28 - 0:01:32, rồi thì chúng ta cũng tương tự như trong
+0:01:30 - 0:01:34, bài linear ration Chúng ta sẽ dùng hàm
+0:01:32 - 0:01:38, n.
+0:01:34 - 0:01:42, random rồi Ờ chúng ta sẽ lấy cái phân bố
+0:01:38 - 0:01:45, của mình đó là phân bố chuẩn và chọn và
+0:01:42 - 0:01:48, min của mình là bằng 0 và Sigma của mình
+0:01:45 - 0:01:53, sẽ là bằng 2 và kích thước thì sẽ là
+0:01:48 - 0:01:55, bằng số phân tử à số phân tử và 2 tức là
+0:01:53 - 0:02:00, 2 của mình tương ứng là hai chiều trục
+0:01:55 - 0:02:01, ngang là x1 và trục tung trục dọc là X2
+0:02:00 - 0:02:04, như vậy thì chúng trong cái bài này
+0:02:01 - 0:02:06, chúng ta có một cái sự phân biệt ha là
+0:02:04 - 0:02:12, đặc trưng của mình là nó có hai thành
+0:02:06 - 0:02:14, phần x1 và x2 còn y của mình là tương
+0:02:12 - 0:02:17, ứng cái phân loại cho hai cái loại nhãn
+0:02:14 - 0:02:20, là màu xanh và màu đỏ thì y của mình sẽ
+0:02:17 - 0:02:24, là một cái trục khác y của mình sẽ là
+0:02:20 - 0:02:27, một cái nhãn khác rồi thì ở đây sẽ là
+0:02:24 - 0:02:31, x và Đây mới chỉ là các cái điểm hổ
+0:02:27 - 0:02:33, nhiên thôi và chúng ta sẽ phải xoay Xung
+0:02:31 - 0:02:33, xoay xung quanh một
+0:02:34 - 0:02:39, cái điểm đó
+0:02:37 - 0:02:42, là 1 và
+0:02:39 - 0:02:46, 5 1 và 5 thì tương ứng Đây là những cái
+0:02:42 - 0:02:49, điểm màu đỏ thì mình sẽ đặt là x Red rồi
+0:02:46 - 0:02:54, chúng ta làm tương tự như vậy cho x
+0:02:49 - 0:02:59, Blue và xoay xung quanh cái điểm là 5
+0:02:54 - 0:03:02, 1 5 1 rồi bây giờ chúng ta sẽ thử chúng
+0:02:59 - 0:03:06, ta sẽ thử thử vẽ ha chúng ta sẽ thử vẽ
+0:03:02 - 0:03:11, plt blot x
+0:03:06 - 0:03:11, Red và tọa độ sẽ là
+0:03:12 - 0:03:19, 2.0 rồi thì kia sẽ là 2.1 và cái màu của
+0:03:17 - 0:03:23, mình tương ứng cái nhãn y á nó sẽ là màu
+0:03:19 - 0:03:26, đỏ là R R là
+0:03:23 - 0:03:31, Red rồi bây giờ chúng ta sẽ làm tương tự
+0:03:26 - 0:03:31, như vậy cho màu xanh đó là Blue
+0:03:36 - 0:03:39, rồi Ở đây sẽ là
+0:03:45 - 0:03:51, b0 rồi thì ở đây chúng ta sẽ có hai cái
+0:03:48 - 0:03:54, tập điểm đã tách biệt ra như thế
+0:03:51 - 0:03:56, này chúng ta sẽ chạy thử nhiều lần nếu
+0:03:54 - 0:03:59, muốn an toàn chúng ta có thể cho cái sai
+0:03:56 - 0:04:02, số này giảm xuống thì nó sẽ khả năng mà
+0:03:59 - 0:04:04, nó giao thoa nhau sẽ thấp hơn đó còn nếu
+0:04:02 - 0:04:08, chúng ta muốn cho nó gần nhau hơn thì
+0:04:04 - 0:04:10, chúng ta sẽ cho size số của mình Sigma
+0:04:08 - 0:04:12, của mình là bằng 2 thì ở đây chúng ta sẽ
+0:04:10 - 0:04:13, thấy có một số trường hợp sai số lớn nó
+0:04:12 - 0:04:15, sẽ kéo cái điểm màu đỏ lại đây luôn
+0:04:13 - 0:04:16, nhưng mà đây là cái tình huống mà chúng
+0:04:15 - 0:04:21, ta không
+0:04:16 - 0:04:26, muốn rồi Ok nế Vậy để chúng ta sẽ giảm
+0:04:21 - 0:04:26, cái size số này xuống còn là 1.5
+0:04:32 - 0:04:37, rồi Như vậy thì chúng ta thấy là hai tập
+0:04:34 - 0:04:41, điểm này đã được tách biệt nhau ra
+0:04:37 - 0:04:43, và chúng ta sẽ thiếu Ờ hai cái x là dữ
+0:04:41 - 0:04:45, liệu train thì cái dữ liệu Trend của
+0:04:43 - 0:04:51, mình sẽ bao gồm cả hai cái tập xanh và
+0:04:45 - 0:04:51, đỏ này do đó thì chúng ta sẽ dùng là NP
+0:04:52 - 0:05:01, chcc và sẽ truyền vào hai biến x z và y
+0:04:57 - 0:05:04, à Xin lỗi x
+0:05:01 - 0:05:06, rồi và y của mình trong trường hợp này
+0:05:04 - 0:05:10, sẽ là
+0:05:06 - 0:05:13, bằng các cái giá trị là
+0:05:10 - 0:05:16, 0 giả sử như màu đỏ màu đỏ của mình là 0
+0:05:13 - 0:05:22, ha và màu xanh của mình là 1 rồi thì ở
+0:05:16 - 0:05:22, đây sẽ nhân cho số sample cộng
+0:05:23 - 0:05:29, cho 1 nhân cho số sample rồi
+0:05:31 - 0:05:35, rồi bây giờ chúng ta sẽ cùng in ra thử
+0:05:33 - 0:05:39, ha
+0:05:35 - 0:05:41, x đó x của mình là các cái là một cái
+0:05:39 - 0:05:44, mãng hai chiều trong đó thì có hai cột
+0:05:41 - 0:05:46, cột đầu tiên tương ứng là đặt trưng x1
+0:05:44 - 0:05:48, và cột thứ hai tương ứng là đặt trưng X2
+0:05:46 - 0:05:50, tương ứng là cái tọa độ theo trục tung
+0:05:48 - 0:05:53, trục hoành và trục tung chúng ta sẽ xem
+0:05:50 - 0:05:58, cái set của x là bao
+0:05:53 - 0:06:02, nhiêu ở đây sẽ là 20 2 trong đó 20 là vì
+0:05:58 - 0:06:04, số sample cho một cái tập điểm màu đỏ là
+0:06:02 - 0:06:09, 10 và tập điểm màu xanh là 10 tổng lại
+0:06:04 - 0:06:09, là 20 r chúng ta sẽ xem
+0:06:09 - 0:06:15, y
+0:06:11 - 0:06:19, à I của mình nó sẽ không có set Tại vì y
+0:06:15 - 0:06:22, của mình là list rồi Như vậy thì sẽ là 0
+0:06:19 - 0:06:25, 1 111 đó thì những cái phần tử đầu tiên
+0:06:22 - 0:06:29, tương ứng là màu đỏ sẽ là nhẹn 0 và
+0:06:25 - 0:06:33, những phần tử thứ hai sẽ là các cái tập
+0:06:29 - 0:06:35, điểm xanh dương chính là một có nhãn là
+0:06:33 - 0:06:37, 1 rồi Tiếp theo thì chúng ta sẽ cùng
+0:06:35 - 0:06:40, Build cái model thì
+0:06:37 - 0:06:44, Logistic nó sẽ nằm trong cái module là
+0:06:40 - 0:06:48, ccit ch linear Model và để gọi thì nó
+0:06:44 - 0:06:51, cũng hoàn toàn tương tự như
+0:06:48 - 0:06:55, cái bài Line reg ha chúng ta sẽ là
+0:06:51 - 0:07:00, Logistic reg và tên của cái biến thì ở
+0:06:55 - 0:07:04, đây chúng ta sẽ đặt tên là Logistic
+0:07:00 - 0:07:04, Logistic Logistic
+0:07:05 - 0:07:11, fit rồi Logistic ch fit chưa được define
+0:07:09 - 0:07:13, Logistic Direction chưa được define cho
+0:07:11 - 0:07:16, chúng ta chưa chạy cái code Block ở phía
+0:07:13 - 0:07:20, trên và sau khi chạy Xong thì chúng ta
+0:07:16 - 0:07:24, sẽ xem cái các cái trọng số của mình
+0:07:20 - 0:07:28, Chúng ta sẽ xem các cái trọng số của
+0:07:24 - 0:07:28, mình đầu tiên đó là Logistic
+0:07:28 - 0:07:33, ch
+0:07:30 - 0:07:33, coefficient
+0:07:34 - 0:07:41, đây thì chúng ta sẽ xem coi nó là cái gì
+0:07:38 - 0:07:44, đó nó sẽ có bao gồm hai cái tr hệ số hai
+0:07:41 - 0:07:47, cái hệ số này tương ứng là hai cái hệ số
+0:07:44 - 0:07:49, cho các cái đặc trưng chiều ngang là x1
+0:07:47 - 0:07:52, và chiều dọc là X2 hay là Thục Hoành
+0:07:49 - 0:07:55, Thục tung rồi
+0:07:52 - 0:07:59, và cái thành phần tiếp theo đó chính là
+0:07:55 - 0:07:59, bias là interception
+0:08:01 - 0:08:06, rồi thì nó sẽ là 1,0 thế thì nếu như
+0:08:04 - 0:08:09, chúng ta nhìn vô các cái hệ số này chúng
+0:08:06 - 0:08:11, ta sẽ rất khó biết là nó có đúng hay
+0:08:09 - 0:08:14, không Thế thì chúng ta sẽ phải trực quan
+0:08:11 - 0:08:19, hóa cái mô hình này bằng cách mình sẽ vẽ
+0:08:14 - 0:08:21, à Cái đường thẳng tạo bởi các cái hệ số
+0:08:19 - 0:08:22, này lên trên thế thì để vẽ cái để Trực
+0:08:21 - 0:08:25, Quan Hóa cái mô hình này lên thì đầu
+0:08:22 - 0:08:31, tiên chúng ta sẽ phải vẽ lại các cái
+0:08:25 - 0:08:34, điểm vẽ lại các cái điểm à luyện
+0:08:31 - 0:08:38, ha rồi chúng ta sẽ copy cái code ở trên
+0:08:34 - 0:08:42, để cho chúng ta à Có thể đỡ mất thời
+0:08:38 - 0:08:45, gian và tiếp theo thì chúng ta sẽ vẽ cái
+0:08:42 - 0:08:48, mô hình vẽ cái hàm mô
+0:08:45 - 0:08:50, hình thì để vẽ cái hàm mô hình thì chúng
+0:08:48 - 0:08:51, ta sẽ có một cái lưu ý như thế này đó là
+0:08:50 - 0:08:57, cái phương trình đường thẳng của mình á
+0:08:51 - 0:09:00, nó sẽ có cái dạng là à w1 X1 cộng cho w2
+0:08:57 - 0:09:04, X2 cộng cho
+0:09:00 - 0:09:04, bas cộng cho
+0:09:05 - 0:09:10, bas bằng 0 đúng không thì đây là cái
+0:09:08 - 0:09:12, phương trình đường thẳng mà chúng ta đã
+0:09:10 - 0:09:14, được biết trong cái chương trình cấp 3
+0:09:12 - 0:09:17, Tuy nhiên ở đây thì mình đang muốn vẽ
+0:09:14 - 0:09:23, đường vẽ cái đường thẳng trong đó cái
+0:09:17 - 0:09:25, thành phần x2 x2 sẽ phụ thuộc vào x1 x2
+0:09:23 - 0:09:28, sẽ được phụ thuộc vào X1 thì khi đó
+0:09:25 - 0:09:30, chúng ta lấy một cái điểm lấy một cái
+0:09:28 - 0:09:32, điểm Ví dụ như cái điểm
+0:09:30 - 0:09:35, -1 ở đây đi lấy điểm -1 thì tương ứng
+0:09:32 - 0:09:37, cái điểm X2 sẽ là bao nhiêu rồi lấy cái
+0:09:35 - 0:09:39, điểm 8 ở đây X1 là bằng 8 ở đây thì X2
+0:09:37 - 0:09:42, tương ứng sẽ làng bao
+0:09:39 - 0:09:45, nhiêu thì ở đây chúng ta
+0:09:42 - 0:09:48, sẽ chuyển đổi cái công thức này chuyển
+0:09:45 - 0:09:50, đổi cái công thức này về dạng là X2 sẽ
+0:09:48 - 0:09:53, là bằng một cái hàm phụ thuộc theo X1 nó
+0:09:50 - 0:09:56, giống như là y bằ ax + b thì X2 sẽ được
+0:09:53 - 0:09:58, tính theo X1 bằng cách chúng ta sẽ đem
+0:09:56 - 0:10:05, cái thành phần này qua đúng không là sẽ
+0:09:58 - 0:10:09, trừ w1 X1 trừ cho bas tất cả tất cả sẽ
+0:10:05 - 0:10:15, cùng chia cho w2 tất cả cùng chia cho
+0:10:09 - 0:10:18, w2 thế thì ở đây w1 là gì w2 là gì w1 nó
+0:10:15 - 0:10:21, chính là cái hệ số này cho cái thành
+0:10:18 - 0:10:22, phần đầu tiên nó chính là cái hệ số này
+0:10:21 - 0:10:25, cho cái thành phần đầu tiên
+0:10:22 - 0:10:25, ha
+0:10:26 - 0:10:33, rồi và w2
+0:10:29 - 0:10:39, thì nó sẽ là cái thành phần thứ hai và
+0:10:33 - 0:10:39, bias đó chính là bằng Logistic intercept
+0:10:42 - 0:10:46, 0
+0:10:43 - 0:10:49, rồi Như vậy thì chúng ta sẽ hiện thực
+0:10:46 - 0:10:49, hóa cái công thức này
+0:10:49 - 0:10:58, DEF C x 2 đúng không Chúng ta sẽ truyền
+0:10:54 - 0:11:02, vào X1 rồi Return dựa trên cái công thức
+0:10:58 - 0:11:04, này nó sẽ là bằng trừ của w1 nhân cho X1
+0:11:02 - 0:11:08, trừ cho
+0:11:04 - 0:11:08, bas tất cả chia cho
+0:11:09 - 0:11:15, w2 rồi thì ở đây chúng ta đã có được cái
+0:11:12 - 0:11:21, hàm tính X2 theo x1 và bây giờ chúng ta
+0:11:15 - 0:11:22, sẽ tiến hành vẽ là plt plot và hai điểm
+0:11:21 - 0:11:26, ở đây chúng ta
+0:11:22 - 0:11:31, muốn đó là điểm ở -1 và điểm 8 đúng
+0:11:26 - 0:11:31, không X1 của mình sẽ là -1 và 8
+0:11:33 - 0:11:38, rồi X1 sẽ là -1 và 8 thì tương
+0:11:39 - 0:11:43, ứng tương ứng mình sẽ gọi cái hàm
+0:11:41 - 0:11:47, calculate
+0:11:43 - 0:11:47, X2 theo cái điểm
+0:11:51 - 0:11:57, X1 rồi chúng ta sẽ cùng vẽ lên đó như
+0:11:55 - 0:11:59, vậy thì chúng ta thấy là cái đường mô
+0:11:57 - 0:12:01, hình của mình nó đã chia hai cái tập
+0:11:59 - 0:12:03, điểm này ra làm hai phần như vậy thì
+0:12:01 - 0:12:07, trong cái phần trực vă hóa chúng ta thấy
+0:12:03 - 0:12:09, rằng là các cái hệ số cái tham số của mô
+0:12:07 - 0:12:12, hình Logistic của mình đã thực hiện đúng
+0:12:09 - 0:12:14, như cái ý đồ mình mong muốn đó là chia
+0:12:12 - 0:12:16, nó ra làm hai phần với một cái đường
+0:12:14 - 0:12:18, thẳng trong phần tiếp theo thì chúng ta
+0:12:16 - 0:12:21, sẽ tiến hành đánh giá xem là một cách
+0:12:18 - 0:12:23, định lượng cái mô hình này cho cái kết
+0:12:21 - 0:12:26, quả là độ chính xác bao nhiêu ph thì
+0:12:23 - 0:12:28, nhìn thôi thì chúng ta cũng thấy là cái
+0:12:26 - 0:12:31, score của nó độ chính xác là bằng
+0:12:28 - 0:12:33, 100 đó thì ở đây chúng ta có hai cách
+0:12:31 - 0:12:36, một là chúng ta sẽ
+0:12:33 - 0:12:39, dùng Logistic
+0:12:36 - 0:12:41, chấm predict cái giá trị Sau đó chúng ta
+0:12:39 - 0:12:45, sẽ đi so sánh cái predict này với lại
+0:12:41 - 0:12:48, cái r trot để xem xem độ chính xác là
+0:12:45 - 0:12:50, bao nhiêu thì ở đây chúng ta sẽ có cái i
+0:12:48 - 0:12:52, predict là bằng Logistic redi và chúng
+0:12:50 - 0:12:54, ta sẽ gọi sa lên matric để lấy cái
+0:12:52 - 0:12:57, accuracy score là một cái hàm Giúp cho
+0:12:54 - 0:13:00, chúng ta tính ha
+0:12:57 - 0:13:03, à ở đây chúng ta phải chạy cái i predi
+0:13:00 - 0:13:05, trước rồi sau đó chúng ta mới bắt đầu So
+0:13:03 - 0:13:08, sánh I predict với cái r i thì chúng ta
+0:13:05 - 0:13:11, thấy độ chính xác là 100 ph 1 tức là 100
+0:13:08 - 0:13:14, ph ngoài cái cách tính dùng hàm này thì
+0:13:11 - 0:13:16, chúng ta cũng có thể cài đặt à Nhanh cái
+0:13:14 - 0:13:20, này thì chủ yếu để luyện tập Python thôi
+0:13:16 - 0:13:23, ha là y predict có bằng bằng với lại cái
+0:13:20 - 0:13:26, y ra tr hay không Nếu bằng đúng không
+0:13:23 - 0:13:28, thì chúng ta sẽ tính tổng và tổng số
+0:13:26 - 0:13:31, những cái phần tử bằng này á chúng ta sẽ
+0:13:28 - 0:13:35, chia cho cho lan của y đúng không Thì nó
+0:13:31 - 0:13:37, chính là ra cái accuracy như vậy thì hai
+0:13:35 - 0:13:40, cái con số này nó đều khớp với nhau là
+0:13:37 - 0:13:40, ra 100

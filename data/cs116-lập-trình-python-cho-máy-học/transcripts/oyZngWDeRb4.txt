@@ -1,0 +1,233 @@
+0:00:01 - 0:00:15, [âm nhạc]
+0:00:13 - 0:00:18, trong bài hôm nay thì chúng ta sẽ cùng
+0:00:15 - 0:00:21, tìm hiểu về một số cái phương pháp tin
+0:00:18 - 0:00:24, chỉnh tham số hay còn gọi là parameter
+0:00:21 - 0:00:26, tuning vị trí của bài hôm nay thì đây là
+0:00:24 - 0:00:30, cái machine learning pipeline mà chúng
+0:00:26 - 0:00:33, ta đã biết ở trong những bài đầu tiên và
+0:00:30 - 0:00:36, tin chỉnh tham số thì nó sẽ bao gồm hai
+0:00:33 - 0:00:39, cái module đó là modle Training và modu
+0:00:36 - 0:00:42, Evaluation nghĩa là chúng ta sẽ phải
+0:00:39 - 0:00:45, điều chỉnh các cái tham số của mô hình
+0:00:42 - 0:00:48, để làm sao đó cho cái mô hình của mình
+0:00:45 - 0:00:49, đạt được những cái độ chính xác cao nhất
+0:00:48 - 0:00:52, có
+0:00:49 - 0:00:54, thể thì nội dung của bài hôm nay sẽ gồm
+0:00:52 - 0:00:57, các cái phần đó là tại sao chúng ta cần
+0:00:54 - 0:01:00, phải tinh chỉnh tham số một số phương
+0:00:57 - 0:01:02, pháp tin chỉnh tham số phổ biến Ví dụ
+0:01:00 - 0:01:05, như phương pháp research Tìm kiếm theo
+0:01:02 - 0:01:07, kiểu cái cạn phương pháp random search
+0:01:05 - 0:01:10, tức là chúng ta sẽ tìm kiếm theo kiểu
+0:01:07 - 0:01:12, ngẫu nhiên và phương pháp bation
+0:01:10 - 0:01:18, optimization cố yêu hóa
+0:01:12 - 0:01:21, PS đối với cái phần Tại sao chúng ta cần
+0:01:18 - 0:01:23, phải tiến hành gọi là tin chỉnh tham số
+0:01:21 - 0:01:26, thì đầu tiên chúng ta sẽ phải hiểu cái
+0:01:23 - 0:01:30, khái niệm tham số trong cái mô hình máy
+0:01:26 - 0:01:33, học đó là gì tham số trong mô hình
+0:01:30 - 0:01:37, đó là tên tiếng Anh là parameter thì đây
+0:01:33 - 0:01:41, là các cái biến số mà mô hình học được
+0:01:37 - 0:01:44, mà mô hình học từ dữ liệu một nó sẽ học
+0:01:41 - 0:01:47, được từ dữ liệu huấn luyện thế thì chúng
+0:01:44 - 0:01:49, ta xét một cái ví dụ là cái mạng neuro
+0:01:47 - 0:01:51, Network như sau ha chúng ta sẽ xét một
+0:01:49 - 0:01:53, cái mạng neuro Network thì trong cái
+0:01:51 - 0:01:56, mạng neuro Network thì tham số mô hình
+0:01:53 - 0:02:00, tham số mô hình của mạng neuro Network
+0:01:56 - 0:02:03, nó sẽ là các cái trọng số
+0:02:00 - 0:02:05, của các cái cạnh nối từ cái lớp trước đó
+0:02:03 - 0:02:08, cho đến cái lớp hiện
+0:02:05 - 0:02:13, tại ví dụ trọng số của các cái cảnh nối
+0:02:08 - 0:02:15, này sẽ là cái tham số của mô hình và các
+0:02:13 - 0:02:17, cái tham số này thì nó sẽ được cập nhật
+0:02:15 - 0:02:19, thường xuyên trong cái quá trình huấn
+0:02:17 - 0:02:22, luyện và chúng ta sẽ fit cái dữ liệu đầu
+0:02:19 - 0:02:26, vào X và chúng ta sẽ So sánh cái này với
+0:02:22 - 0:02:29, lại cái dữ liệu thực tế y thì chúng ta
+0:02:26 - 0:02:32, sẽ tìm ra được là các cái tham số của mô
+0:02:29 - 0:02:35, h như thế nào để cho nó tối ưu nhất để
+0:02:32 - 0:02:36, cho cái giá trị đầu ra của mình nó sắp
+0:02:35 - 0:02:39, xỉ với lại cái giá trị Dự
+0:02:36 - 0:02:41, đoán cái giá trị Dự Đán nó xắp xỉ với
+0:02:39 - 0:02:45, lại cái giá trị thực tế
+0:02:41 - 0:02:48, nhất còn một cái loại tham số nữa đó
+0:02:45 - 0:02:51, chính là siêu tham số hay còn gọi là
+0:02:48 - 0:02:54, hyper parameter thì đây là cái tham số
+0:02:51 - 0:02:57, nó quy định cái cấu hình của mô hình
+0:02:54 - 0:02:59, trước khi huấn luyện nghĩa là sao ví dụ
+0:02:57 - 0:03:02, trong cái mạng nuro Network thì chúng
+0:02:59 - 0:03:04, chúng ta sẽ thấy là có các cái hidden
+0:03:02 - 0:03:08, layer tức là các cái lớp
+0:03:04 - 0:03:11, ẩn thế thì ở đây chúng ta sẽ cấu hình
+0:03:08 - 0:03:13, cái mạng này trong cái hình ví dụ này
+0:03:11 - 0:03:16, thì chúng ta sẽ cấu hình đó là có các
+0:03:13 - 0:03:18, cái layer có bao nhiêu lớp ẩn Ví dụ như
+0:03:16 - 0:03:21, trong hình này chúng ta có một lớp ẩn
+0:03:18 - 0:03:25, hai lớp ẩn và ba lớp ẩn như vậy là số
+0:03:21 - 0:03:28, lượng layer chính là một cái siêu tham
+0:03:25 - 0:03:30, số nếu chúng ta thay đổi cái cấu hình
+0:03:28 - 0:03:32, của cái hyper parameter này thì có thể
+0:03:30 - 0:03:35, tăng lên là BN tham số BN layer và có
+0:03:32 - 0:03:38, thể giảm xuống là chỉ có một cái hiden
+0:03:35 - 0:03:41, layer thôi một cái tham số thứ hai đó
+0:03:38 - 0:03:43, chính là số neuron cho một layer ví dụ
+0:03:41 - 0:03:47, trong hình này chúng ta sẽ thấy là có 1
+0:03:43 - 0:03:50, neuron nè 2 neuron 3 neuron 4 neuron như
+0:03:47 - 0:03:54, vậy thì cái số layer x lỗi số
+0:03:50 - 0:04:00, neuron cho cái layer số 1 đó chính là
+0:03:54 - 0:04:00, bằng bằng 4 tương tự như vậy cái số neon
+0:04:00 - 0:04:06, cho cái layer số 2 thì nó sẽ là bằng 4
+0:04:04 - 0:04:08, luôn đó thì các cái số lượng các cái
+0:04:06 - 0:04:10, tham số mà thể hiện cái số lượng neuron
+0:04:08 - 0:04:11, cho các cái layer của mình nó cũng là
+0:04:10 - 0:04:14, siêu tham
+0:04:11 - 0:04:16, số như vậy thì các cái tham số này thì
+0:04:14 - 0:04:19, thông thường là được thiết lập một cách
+0:04:16 - 0:04:21, thủ công nó sẽ thiết lập thủ công hoặc
+0:04:19 - 0:04:25, là thông qua cái quá trình tinh chỉnh
+0:04:21 - 0:04:27, siêu tham số và tin chỉnh siêu tham số
+0:04:25 - 0:04:31, đó chính là cái nội dung của cái bài học
+0:04:27 - 0:04:31, ngày hôm nay
+0:04:32 - 0:04:38, và trong cái ví dụ ở đây thì chúng ta
+0:04:35 - 0:04:40, thấy đó là số lớp nè Số neuron của một
+0:04:38 - 0:04:43, cái mạng neuro Network đó chính là siêu
+0:04:40 - 0:04:46, tham số và trong một số cái thực toán
+0:04:43 - 0:04:49, khác ví dụ như
+0:04:46 - 0:04:49, canis
+0:04:49 - 0:04:55, classifier thì canis classifier thì cái
+0:04:52 - 0:04:57, tham số cái k Tức là số láng diền gần
+0:04:55 - 0:05:01, nhất của mình đó cũng chính là một cái
+0:04:57 - 0:05:01, siêu tham số
+0:05:03 - 0:05:08, rồi trong một số cái thực toán ví dụ như
+0:05:05 - 0:05:08, là Logistic
+0:05:09 - 0:05:16, regression đó thì cái tham số mà
+0:05:13 - 0:05:19, learning rate cái hệ số học của mình
+0:05:16 - 0:05:19, cũng chính là một cái siêu tham
+0:05:20 - 0:05:26, số như vậy thì thông thường các cái mô
+0:05:23 - 0:05:28, hình nào mà tương đối phức tạp thì sẽ
+0:05:26 - 0:05:31, đều có các cái siêu tham số chúng ta
+0:05:28 - 0:05:35, ngoại trừ một số cái mô hình mà nó không
+0:05:31 - 0:05:39, có siêu tham số Và thậm chí là không có
+0:05:35 - 0:05:43, cái cái cái cái cái tham số của mô hình
+0:05:39 - 0:05:46, luôn Ví dụ như cái mô hình knn knis
+0:05:43 - 0:05:49, neighbor classifier thì nó chỉ có siêu
+0:05:46 - 0:05:52, tham số nhưng nó lại không có tham số nó
+0:05:49 - 0:05:54, không có tham số của mô hình Rồi ví dụ
+0:05:52 - 0:05:58, như tập toán
+0:05:54 - 0:05:58, về B
+0:06:03 - 0:06:09, BS
+0:06:06 - 0:06:12, classifier thì đây là một cái mô hình mà
+0:06:09 - 0:06:14, nó không có tham số đây là một cái mô
+0:06:12 - 0:06:19, hình mà nó không có tham số và cũng
+0:06:14 - 0:06:20, không có cái siêu tham số do đó thì có
+0:06:19 - 0:06:23, rất nhiều những cái loại mô hình khác
+0:06:20 - 0:06:24, nhau và số lượng tham số của mô hình
+0:06:23 - 0:06:27, cũng như là số lượng siêu tham số của
+0:06:24 - 0:06:31, mình nó cũng rất là đa
+0:06:27 - 0:06:33, dạng và tại sao chúng ta cần phải tin
+0:06:31 - 0:06:35, chỉnh cái tham số cho mô hình thì đầu
+0:06:33 - 0:06:38, tiên đó là chúng ta sẽ bàn về cái hiệu
+0:06:35 - 0:06:41, suất của mô hình Chắc chắn rồi khi chúng
+0:06:38 - 0:06:43, ta can thiệp vào cái tham số của mô hình
+0:06:41 - 0:06:46, hoặc là siêu tham số của mô hình thì cái
+0:06:43 - 0:06:48, việc tin chỉnh siêu tham số nó sẽ giúp
+0:06:46 - 0:06:50, cho mô hình của mình đạt được cái độ
+0:06:48 - 0:06:55, chính xác cao hơn đạt được cái độ chính
+0:06:50 - 0:06:57, xác cao hơn và nó hiệu quả hơn ví dụ độ
+0:06:55 - 0:07:00, chính xác cao hơn tức là chúng ta muốn
+0:06:57 - 0:07:04, cái mô hình của mình đạt được những cái
+0:07:00 - 0:07:07, độ đo về độ chính xác rất là cao ví dụ
+0:07:04 - 0:07:11, như là độ đo về accuracy hoặc là độ đo
+0:07:07 - 0:07:12, về F1 score thì làm sao cho cái mình sẽ
+0:07:11 - 0:07:15, tinh chỉnh cái siêu tham số để cho các
+0:07:12 - 0:07:18, cái độ đo này nó đạt được cực đại còn
+0:07:15 - 0:07:20, cái tính hiệu quả Ví dụ như mạng neuro
+0:07:18 - 0:07:24, Network Nếu như mình không quá quan tâm
+0:07:20 - 0:07:26, về Tức là chúng ta sẽ không Dồn hết cho
+0:07:24 - 0:07:30, cái yếu tố về độ chính xác cao mà chúng
+0:07:26 - 0:07:33, ta có cái yếu tố về tốc độ Tính toán
+0:07:30 - 0:07:35, hoặc là tốc độ huấn luyện của mô hình
+0:07:33 - 0:07:38, khi chúng ta bị giới hạn cái phần cứng
+0:07:35 - 0:07:40, thì cái số lượng layer một số lượng
+0:07:38 - 0:07:42, layer của mô hình nó cũng là một cái
+0:07:40 - 0:07:44, siêu tham số ảnh hưởng đến cái hiệu quả
+0:07:42 - 0:07:47, của cái mô hình của mình Nếu như mình
+0:07:44 - 0:07:49, cần tốc độ thì chúng ta có thể giảm bớt
+0:07:47 - 0:07:52, cái sổ lượng layer cái S tham số số
+0:07:49 - 0:07:54, lượng layer như vậy thì à đại ý của cái
+0:07:52 - 0:07:56, ý này đó chính là hiện suất mô hình tức
+0:07:54 - 0:07:58, là tin chỉnh tham số sẽ giúp cho chúng
+0:07:56 - 0:08:00, ta đạt được những cái mục tiêu về độ
+0:07:58 - 0:08:01, chính xác cũng như là tính hiệu quả của
+0:08:00 - 0:08:05, mô
+0:08:01 - 0:08:07, hình về vấn đề về overfitting và
+0:08:05 - 0:08:11, underfitting thì việc chọn lựa các cái
+0:08:07 - 0:08:13, siêu tham số nó không phù hợp thì nó sẽ
+0:08:11 - 0:08:17, có thể dẫn đến hai cái hiện tượng này ví
+0:08:13 - 0:08:20, dụ đối với những cái mô hình mà dữ liệu
+0:08:17 - 0:08:23, của mình nó rất là đơn giản nó đi theo
+0:08:20 - 0:08:26, những cái hàm dạng tuyến tính hoặc là
+0:08:23 - 0:08:29, hàm bật rất là thấp Nhưng mà chúng ta
+0:08:26 - 0:08:32, chọn cái thêu siêu tham số ví dụ như là
+0:08:29 - 0:08:34, là cái mạng đó có cái số lượng neuron
+0:08:32 - 0:08:36, rất là nhiều hoặc là có số lượng layer
+0:08:34 - 0:08:39, rất là lớn tức là một cái model quá phức
+0:08:36 - 0:08:41, tạp chỉ để giải quyết một cái bài toán
+0:08:39 - 0:08:45, đơn giản thì nó sẽ rất dễ dẫn đến cái
+0:08:41 - 0:08:47, hiện tượng là overfitting ở chiều hướng
+0:08:45 - 0:08:50, ngược lại nếu như cái dữ liệu của mình
+0:08:47 - 0:08:53, nó rất là phức tạp cái tính phi tuyến Nó
+0:08:50 - 0:08:57, rất là cao thì trong khi đó
+0:08:53 - 0:08:59, cái mô hình của mình chọn lựa cái siêu
+0:08:57 - 0:09:02, tham số của mình nó quá đơn giản dẫn đến
+0:08:59 - 0:09:05, là mô hình của mình không thể nào mà
+0:09:02 - 0:09:06, khớp với lại cái dữ liệu huấn luyện được
+0:09:05 - 0:09:09, do đó thì nó sẽ bị cái hiện tượng gọi là
+0:09:06 - 0:09:11, underfitting do đó thì cái việc chọn lựa
+0:09:09 - 0:09:12, À cái việc tin chỉnh siêu tham số nó
+0:09:11 - 0:09:13, cũng ảnh hưởng đến hai cái hiện tượng
+0:09:12 - 0:09:16, này rất là
+0:09:13 - 0:09:18, nhiều và vấn đề về tài nguyên tính toán
+0:09:16 - 0:09:21, thì siêu tham số nó cũng sẽ ảnh hưởng
+0:09:18 - 0:09:25, đến cái thời gian và tài nguyên tính
+0:09:21 - 0:09:26, toán cần thiết Ví dụ như như chúng ta đã
+0:09:25 - 0:09:30, đề cập trước đây tức là nếu những cái
+0:09:26 - 0:09:30, mạng về de learning
+0:09:30 - 0:09:35, đối với những cái mạng về Deep ling mà
+0:09:33 - 0:09:36, số layer của mình có thể lên đến hàng
+0:09:35 - 0:09:39, trăm
+0:09:36 - 0:09:41, layer đó thì có thể giúp cho chúng ta
+0:09:39 - 0:09:44, đạt được độ chính xác cao nhưng mà lúc
+0:09:41 - 0:09:46, đó nó đòi hỏi cái tài nguyên tính toán
+0:09:44 - 0:09:50, vô cùng lớn Ví dụ như nó sẽ phải đòi hỏi
+0:09:46 - 0:09:54, chúng ta những cái con GPU với các cái
+0:09:50 - 0:09:58, thông số về Ram vram có thể lên đến vài
+0:09:54 - 0:10:01, chục thậm chí là cả hàng trăm GB RAM đó
+0:09:58 - 0:10:03, thì cái à mô hình của mình cũng bị ảnh
+0:10:01 - 0:10:05, hưởng cái tài nguyên tính toán của mô
+0:10:03 - 0:10:07, hình của mình nó cũng bị ảnh hưởng bởi
+0:10:05 - 0:10:11, cái việc lựa chọn siêu tham
+0:10:07 - 0:10:13, số và cuối cùng đó chính là chúng ta cần
+0:10:11 - 0:10:15, phải tin chỉnh tham số để thích ứng với
+0:10:13 - 0:10:16, lại cái dữ liệu Tức là cái việc tin
+0:10:15 - 0:10:20, chỉnh tham số sẽ giúp cho mô hình của
+0:10:16 - 0:10:22, mình điều chỉnh điều chỉnh để phù hợp
+0:10:20 - 0:10:23, nhất với những cái đặc trưng riêng của
+0:10:22 - 0:10:26, từng cái loại dữ liệu như chúng ta đã
+0:10:23 - 0:10:30, biết thì cái dữ liệu của mình nó sẽ rất
+0:10:26 - 0:10:32, là đa dạng và tùy vào cái trường hợp dữ
+0:10:30 - 0:10:35, liệu huấn luyện của mình như thế nào thì
+0:10:32 - 0:10:37, mình sẽ phải chọn lựa cái mô hình tương
+0:10:35 - 0:10:39, ứng cho nó phù hợp giống như chúng ta đã
+0:10:37 - 0:10:41, từng đề cập trước đây Nếu như cái dữ
+0:10:39 - 0:10:43, liệu của mình nó quá phức tạp thì chúng
+0:10:41 - 0:10:45, ta phải tin chỉnh cái tham số cái siêu
+0:10:43 - 0:10:47, tham số để làm sao cho nó có cái tính
+0:10:45 - 0:10:49, phức tạp tương ứng để mà có thể học được
+0:10:47 - 0:10:52, với những loại dữ liệu này còn trường
+0:10:49 - 0:10:54, hợp dữ liệu của mình quá đơn giản thì
+0:10:52 - 0:10:56, chúng ta phải điều chỉnh lại cái tham số
+0:10:54 - 0:10:58, giảm xuống cái độ phức tạp của mô hình
+0:10:56 - 0:11:03, để mà nó có thể thích ứng được với lại
+0:10:58 - 0:11:03, cái dữ liệu ở mức độ là đơn giản

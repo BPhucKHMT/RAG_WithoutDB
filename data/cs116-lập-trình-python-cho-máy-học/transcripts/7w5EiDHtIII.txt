@@ -1,0 +1,247 @@
+0:00:00 - 0:00:05, trong bài trước thì chúng ta đã thử
+0:00:02 - 0:00:07, nghiệm mô hình Logistic với cái dữ liệu
+0:00:05 - 0:00:09, tuyến tính thì bây giờ tiếp theo chúng
+0:00:07 - 0:00:13, ta sẽ thử nghiệm với cái dữ liệu có quan
+0:00:09 - 0:00:15, hệ Phi tuyến tính ở đây chúng ta sẽ thử
+0:00:13 - 0:00:17, nghiệm với hai cái điểm màu xanh và màu
+0:00:15 - 0:00:20, đỏ trong đó màu đỏ sẽ nằm bên trong một
+0:00:17 - 0:00:21, cái vòng tròn và màu xanh sẽ nằm trong
+0:00:20 - 0:00:24, bên ngoài một cái vòng tròn thì chúng ta
+0:00:21 - 0:00:27, thấy là cái trường hợp này chúng ta
+0:00:24 - 0:00:30, không thể chia tách ra hai cái tập màu
+0:00:27 - 0:00:33, xanh và màu đỏ này bởi một đường thẳng
+0:00:30 - 0:00:37, nhất đúng không Thì ở đây chúng ta sẽ
+0:00:33 - 0:00:39, gọi lại cái hàm Logistic ession
+0:00:37 - 0:00:41, rồi chúng ta sẽ khai báo lại Logistic
+0:00:39 - 0:00:44, regression và chúng ta sẽ truyền vào cái
+0:00:41 - 0:00:46, x và y tương ứng là các cái điểm xy ở
+0:00:44 - 0:00:49, bên đây đã khởi tạo bởi cái hàm Max
+0:00:46 - 0:00:52, Circle của cái module là
+0:00:49 - 0:00:55, dataset và chúng ta cũng sẽ trực quan
+0:00:52 - 0:00:59, hóa cái dữ liệu này với cái hàm
+0:00:55 - 0:01:01, Ờ vẽ mô hình đã cài đặt ở trong phần
+0:00:59 - 0:01:04, trước rồi chúng ta copy cái nội dung của
+0:01:01 - 0:01:08, cái hàm này xuống và ở đây có một cái
+0:01:04 - 0:01:10, lưu ý đó là x của mình á là nó sẽ bắt
+0:01:08 - 0:01:14, đầu cái điểm bên trái của mình nó sẽ là
+0:01:10 - 0:01:17, X1 của mình sẽ là bằng -1 và x2 à Xin
+0:01:14 - 0:01:23, lỗi X1 bên tay phải á cái điểm bên phải
+0:01:17 - 0:01:25, này nè Nó sẽ là 1 X1 = -1 và X1 = 1 thì
+0:01:23 - 0:01:27, từ đó mình sẽ dự đoán với cái hàm mô
+0:01:25 - 0:01:30, hình của mình mình dự đoán xem cái điểm
+0:01:27 - 0:01:33, y x1 x2
+0:01:30 - 0:01:35, tương ứng là bao nhiêu thì mình sẽ có
+0:01:33 - 0:01:39, cái hàm là calculate
+0:01:35 - 0:01:41, X2 và khi chạy cái hàm này cái đoạn code
+0:01:39 - 0:01:45, này thì nó vẽ ra một cái đường thẳng
+0:01:41 - 0:01:48, chia cái tập điểm này ra làm hai phần
+0:01:45 - 0:01:50, như vậy thì chúng ta có thể thấy là cái
+0:01:48 - 0:01:53, đường thẳng này nó không có tách hai cái
+0:01:50 - 0:01:55, điểm màu xanh và màu đỏ ra làm hai và
+0:01:53 - 0:01:58, cũng dễ hiểu nếu như cái độ chính xác
+0:01:55 - 0:02:00, accuracy của mình là thấp trong trường
+0:01:58 - 0:02:01, hợp này chúng ta thấy là kacy của mình
+0:02:00 - 0:02:04, là bằng
+0:02:01 - 0:02:06, 0.505 tức là khoảng 50
+0:02:04 - 0:02:09, ph Tức là nó chỉ đúng cho một nửa thôi
+0:02:06 - 0:02:11, còn một nửa là bị sai Ví dụ ở đây nó sẽ
+0:02:09 - 0:02:14, đúng cho một nửa các cái điểm màu xanh
+0:02:11 - 0:02:17, và nó bị sai cho một nửa xin lỗi nó đúng
+0:02:14 - 0:02:20, cho một nửa cái điểm màu xanh ở bên đây
+0:02:17 - 0:02:22, và một nửa các điểm màu đỏ bên đây và nó
+0:02:20 - 0:02:23, bị sai bởi các cái điểm này và sai bởi
+0:02:22 - 0:02:26, các cái điểm
+0:02:23 - 0:02:27, này rồi và bây giờ chúng ta cũng tương
+0:02:26 - 0:02:30, tự như
+0:02:27 - 0:02:32, m chúng ta sẽ tiến hành
+0:02:30 - 0:02:35, feature Engineering chúng ta sẽ tạo thêm
+0:02:32 - 0:02:38, các cái đặc Trương mới thì ở đây chúng
+0:02:35 - 0:02:40, ta có x1 và x2 chúng ta sẽ feature
+0:02:38 - 0:02:43, Engineer thêm
+0:02:40 - 0:02:48, là nếu như X1 đúng không thì chúng ta sẽ
+0:02:43 - 0:02:53, tạo ra thêm là x1 mũ 2 rồi tương tự như
+0:02:48 - 0:02:55, vậy X2 chúng ta sẽ có là X2 m 2 và chúng
+0:02:53 - 0:02:58, ta cũng không nên quên chúng ta sẽ tạo
+0:02:55 - 0:03:01, ra thêm một cái đặc trưng nữa đó là X1
+0:02:58 - 0:03:03, nhân với lại X2
+0:03:01 - 0:03:06, thì để đảm bảo là có cái sự kết hợp giữa
+0:03:03 - 0:03:08, đặc trưng của X1 với X2 Như vậy thì cái
+0:03:06 - 0:03:11, hàm của mình nó mới phụ thuộc một cách
+0:03:08 - 0:03:14, bậc hai và x new của mình chính là cái
+0:03:11 - 0:03:18, đặc trưng mới bao gồm x cũ đúng không
+0:03:14 - 0:03:21, kèm theo nè Đây chính là X1 nè x2.0 thì
+0:03:18 - 0:03:23, đây chính là x1 bình
+0:03:21 - 0:03:27, phương
+0:03:23 - 0:03:30, x2.1 bình phương đây chính là X2 đây
+0:03:27 - 0:03:33, chính là cái X2 của mình và x2.0 nhân
+0:03:30 - 0:03:36, với lại x2.1 đó chính là cái thành phần
+0:03:33 - 0:03:41, X1 nhân với X2 thì chúng ta sẽ dùng
+0:03:36 - 0:03:44, Horizon horizontal st ha và chúng ta sẽ
+0:03:41 - 0:03:48, có cái kích thước của cái x new này
+0:03:44 - 0:03:54, chính là bằng 400 5 trong đó 5 ở đây bao
+0:03:48 - 0:03:58, gồm ở đây là 5 feature là bao gồm là X1
+0:03:54 - 0:04:00, nè X2 nè rồi x1 bình phương nè X2 Bình
+0:03:58 - 0:04:05, Phương nè
+0:04:00 - 0:04:07, và X1 nhân với lại X2 đó thì đây là năm
+0:04:05 - 0:04:09, cái feature mới của mình và tương tự như
+0:04:07 - 0:04:13, vậy thì chúng ta sẽ cùng Build cái model
+0:04:09 - 0:04:15, này lên để thử xem cái accuracy của mình
+0:04:13 - 0:04:20, trong trường hợp này là bao
+0:04:15 - 0:04:24, nhiêu rồi Ở đây thì mình sẽ fit predit
+0:04:20 - 0:04:27, cái x new này x new ở đây sẽ phải là x
+0:04:24 - 0:04:29, new đó như vậy thì sau khi chúng ta đã
+0:04:27 - 0:04:32, thực hiện cái feature Engineer engineer
+0:04:29 - 0:04:36, Engineer xong thì nó sẽ ra là độ chính
+0:04:32 - 0:04:39, xác là bằng 100 ph thì rõ ràng với cái
+0:04:36 - 0:04:41, Phương pháp feature Engineering nó đã
+0:04:39 - 0:04:45, tạo ra được cái sự hiệu quả khi chúng ta
+0:04:41 - 0:04:50, dựng đoán được à cái đặc trưng một cách
+0:04:45 - 0:04:52, đúng đắn tức là đây là một cái cái đường
+0:04:50 - 0:04:54, phân chia hai cái tập màu xanh và màu đỏ
+0:04:52 - 0:04:56, này á Nó là một cái dạng bậc hai đó là
+0:04:54 - 0:05:00, một cái dạng bậc hai của hai cái đặc
+0:04:56 - 0:05:02, trưng đầu vào là x1 x2 tuy nhiên trong
+0:05:00 - 0:05:04, trường hợp mà chúng ta không biết được
+0:05:02 - 0:05:06, cái dữ liệu của mình nó quá nhiều chiều
+0:05:04 - 0:05:09, X này của chúng ta Nó không chỉ có hai
+0:05:06 - 0:05:11, chiều X1 Xi mà có thể lên đến hàng trăm
+0:05:09 - 0:05:14, chiều và chúng ta cũng không đủ cái tri
+0:05:11 - 0:05:16, thức để chúng ta biết được rằng là có
+0:05:14 - 0:05:18, những cái dạng mô hình nào để chúng ta
+0:05:16 - 0:05:21, feature Engineering thì khi đó chúng ta
+0:05:18 - 0:05:25, sẽ sử dụng một cái công cụ đó chính là
+0:05:21 - 0:05:28, neural Network mạng neuron nhân
+0:05:25 - 0:05:31, tạo cho cái trường hợp dữ liệu Phi tuyến
+0:05:28 - 0:05:32, thì ở đây chúng ta đã có một cái cách để
+0:05:31 - 0:05:34, mà cài đặt chúng ta đã có đoạn code để
+0:05:32 - 0:05:37, cài đặt sẵn
+0:05:34 - 0:05:40, Ờ neuro Network Nó là một cái tên gọi
+0:05:37 - 0:05:44, khác trong s kit lên đó là multi layer
+0:05:40 - 0:05:46, percep multi layer percep Và Nó là một
+0:05:44 - 0:05:48, cái dạng
+0:05:46 - 0:05:51, classifier nó nằm trong cái lớp là
+0:05:48 - 0:05:55, escalon neuron Network và ở đây thì mình
+0:05:51 - 0:05:58, sẽ có cái tham số cho cái m này của mình
+0:05:55 - 0:06:01, thì hidden layer ở đây đó là cho biết là
+0:05:58 - 0:06:03, cái mạng nuro này sẽ sẽ bao gồm
+0:06:01 - 0:06:07, layer thì ở đây chúng ta sẽ tra cứu ha
+0:06:03 - 0:06:07, là neuro
+0:06:07 - 0:06:12, Network thì cái nural Network của mình
+0:06:10 - 0:06:14, nó sẽ có nhiều layer nhưng mà trong
+0:06:12 - 0:06:17, trường hợp này chúng ta sẽ làm một cái
+0:06:14 - 0:06:20, mạng đơn giản là chỉ bao gồm duy nhất
+0:06:17 - 0:06:22, một layer là một cái lớp ẩn thôi Một h
+0:06:20 - 0:06:23, layer thôi giống như trong cái hình ở
+0:06:22 - 0:06:28, đây là một lớp
+0:06:23 - 0:06:30, ẩn và lớp đ ẩn này thì trong cái hình ví
+0:06:28 - 0:06:33, dụ này thì nó sẽ có là 4 neon nhưng mà
+0:06:30 - 0:06:36, chúng ta ở đây chúng ta sẽ cho đến 10 n
+0:06:33 - 0:06:37, và hàm kích hoạt ở đây mặc nh mặc định
+0:06:36 - 0:06:41, chúng ta sẽ sử dụng là hàm Logistic
+0:06:37 - 0:06:43, regression và các cái server Tức là cái
+0:06:41 - 0:06:44, thuật toán để tối ưu cái mạng nuro
+0:06:43 - 0:06:47, Network này thì mặc định chúng ta cũng
+0:06:44 - 0:06:49, nên sử dụng l đam và một loạt các cái
+0:06:47 - 0:06:52, tham số khác và sau khi chúng ta khai
+0:06:49 - 0:06:54, báo xong thì chúng ta sẽ tiến hành fit
+0:06:52 - 0:06:57, trên cái data cũ tức là lưu ý ở đây
+0:06:54 - 0:07:00, chúng ta sẽ không sử dụng cái data x new
+0:06:57 - 0:07:03, Tại vì x new nó đã có chứa cái đặc trưng
+0:07:00 - 0:07:07, đã được Engineer là các cái đặc trưng
+0:07:03 - 0:07:08, mà chúng ta đã đã đã thêm vô đó thì ở
+0:07:07 - 0:07:11, đây chúng ta đang Giả định rằng là chúng
+0:07:08 - 0:07:12, ta giữ sử dụng cái dữ liệu thô Raw data
+0:07:11 - 0:07:14, sử dụng dữ liệu thô Chúng ta không có
+0:07:12 - 0:07:16, cái tri thức gì về cái mô hình của mình
+0:07:14 - 0:07:20, thì chúng ta sẽ gọi cái hàm
+0:07:16 - 0:07:22, netfit và sau đó thì chúng ta sẽ dùng
+0:07:20 - 0:07:24, cái hàm đánh giá thì với cái hàm đánh
+0:07:22 - 0:07:26, giá này chúng ta thấy độ chính xác là
+0:07:24 - 0:07:28, 100 pH như vậy với neuro network chúng
+0:07:26 - 0:07:30, ta không cần phải làm cái bước feature
+0:07:28 - 0:07:33, engineering
+0:07:30 - 0:07:35, Và đây là các cái tham số của bias cũng
+0:07:33 - 0:07:37, như
+0:07:35 - 0:07:40, là à Xin lỗi đây là các cái tham số của
+0:07:37 - 0:07:44, bias và chúng ta sẽ còn một cái nữa là
+0:07:40 - 0:07:44, chấm score và
+0:07:51 - 0:07:56, coefficient
+0:07:53 - 0:08:00, rồi thì ở đây nó sẽ phức tạp hơn so với
+0:07:56 - 0:08:03, lại cái Logistic regression một chút xíu
+0:08:00 - 0:08:07, ở đây là chúng ta sẽ có 10 ở đây chúng
+0:08:03 - 0:08:09, ta sẽ có 10 nốt 10 cái neuron thì tương
+0:08:07 - 0:08:12, ứng bias của mình nó cũng sẽ có 10 cái
+0:08:09 - 0:08:16, giá trị mình sẽ có 10 cái giá trị cho
+0:08:12 - 0:08:18, cái layer thứ ở giữa còn ở cái lớp đầu
+0:08:16 - 0:08:20, tiên thì chúng ta chỉ có duy nhất một
+0:08:18 - 0:08:22, cái bias thôi trong lớp đầu tiên chúng
+0:08:20 - 0:08:24, ta sẽ có duy nhất một cái bias còn sang
+0:08:22 - 0:08:25, cái lớp tiếp theo thì chúng ta sẽ có đến
+0:08:24 - 0:08:30, 10 cái
+0:08:25 - 0:08:32, bs và tương tự như vậy thì cho cái hệ số
+0:08:30 - 0:08:36, thì chúng ta cũng sẽ có các cái layer
+0:08:32 - 0:08:39, mỗi layer chúng ta sẽ có các cái hệ số
+0:08:36 - 0:08:41, cho các cái trọng số của mạng neuron và
+0:08:39 - 0:08:45, ở đây thì chúng ta có sẵn một cái chương
+0:08:41 - 0:08:48, trình để giúp chúng ta trực quan hóa cái
+0:08:45 - 0:08:51, mạng các cái kết quả trọng số của cái
+0:08:48 - 0:08:54, mạng ha chúng ta thấy là với mỗi một cái
+0:08:51 - 0:08:58, neuron với mỗi một một neuron nó bản
+0:08:54 - 0:09:00, chất chính là một cái Logistic ession mà
+0:08:58 - 0:09:04, một cái Logistic ession thì bản chất Nó
+0:09:00 - 0:09:05, là một cái lá cắt một cái đường phân lớp
+0:09:04 - 0:09:07, như vậy một cái neuron trong 10 cái
+0:09:05 - 0:09:09, neuron của mình nó sẽ là một cái đường
+0:09:07 - 0:09:12, thẳng như thế này và chúng ta có 10
+0:09:09 - 0:09:14, neuron thì chúng ta sẽ có 10 cái đoạn
+0:09:12 - 0:09:16, thẳng và chúng ta thấy rằng mỗi một cái
+0:09:14 - 0:09:19, neuron sẽ là một cái Quick classifier
+0:09:16 - 0:09:21, tức là một cái bộ phân lớp yếu với một
+0:09:19 - 0:09:23, cái phân lớp màu xanh lá như thế này
+0:09:21 - 0:09:25, chúng ta thấy nó sẽ phân ra là màu xanh
+0:09:23 - 0:09:27, dương là những cái điểm nào mà nằm về
+0:09:25 - 0:09:28, phía bên đây là chắc chắn là xanh dương
+0:09:27 - 0:09:31, còn những điểm nào mà nằm ở phía ngược
+0:09:28 - 0:09:33, lại thì không chắc do đó thì nó sẽ phải
+0:09:31 - 0:09:35, phối hợp nhiều cái neuron lại với nhau
+0:09:33 - 0:09:37, và khi chúng ta thấy khi phối hợp nhiều
+0:09:35 - 0:09:39, cái neuron lại với nhau thì nó đã giúp
+0:09:37 - 0:09:42, cho chúng ta tách được các cái điểm màu
+0:09:39 - 0:09:45, xanh và màu đỏ ra những cái điểm nào màu
+0:09:42 - 0:09:47, đỏ thì nó sẽ nằm bên trong và những cái
+0:09:45 - 0:09:50, điểm màu xanh thì nó sẽ nằm bên ngoài
+0:09:47 - 0:09:53, như đây như vậy thì đây chính là một cái
+0:09:50 - 0:09:57, cách để cho chúng ta có thể trực qua hóa
+0:09:53 - 0:09:58, mạng neuro Network với các cái nốt nốt
+0:09:57 - 0:10:02, ẩn của mình mỗi một cái neuron trong cái
+0:09:58 - 0:10:04, lớp Ẩn này sẽ được à vẽ lên dưới dạng là
+0:10:02 - 0:10:07, một cái đường thẳng và một cái mạng
+0:10:04 - 0:10:10, neuro Network thì nó sẽ là tổ hợp của
+0:10:07 - 0:10:13, nhiều cái neuron tương ứng là tổ hợp của
+0:10:10 - 0:10:15, nhiều các cái qu classifier các cái bộ
+0:10:13 - 0:10:18, phân lớp yếu nhiều bộ phân lớp yếu nó sẽ
+0:10:15 - 0:10:20, tạo ra thành một cái bộ phân lớp mạnh và
+0:10:18 - 0:10:22, như vậy thì nó đã giúp cho chúng ta chia
+0:10:20 - 0:10:25, tách hai cái tập điểm màu xanh và màu đỏ
+0:10:22 - 0:10:28, này ra làm hai phần thì trên đây chính
+0:10:25 - 0:10:31, là cái minh họa cho việc à tạo ra các
+0:10:28 - 0:10:33, cái bộ phân lớp trên dữ liệu Phi tuyến
+0:10:31 - 0:10:35, tính sử dụng cả Logistic regression và
+0:10:33 - 0:10:38, neural Network đối với Logistic
+0:10:35 - 0:10:40, regression thì chúng ta đối với dữ liệu
+0:10:38 - 0:10:41, Phi tuyến thì chúng ta phải là chịu khó
+0:10:40 - 0:10:43, chúng ta làm thêm cái bước feature
+0:10:41 - 0:10:46, Engineering mà để đạt được cái feature
+0:10:43 - 0:10:49, Engineering này mà tốt thì chúng ta sẽ
+0:10:46 - 0:10:52, phải có cái kinh nghiệm có cái kiến thức
+0:10:49 - 0:10:53, về cái dữ liệu của mình Mình biết cái dữ
+0:10:52 - 0:10:56, liệu của mình nó có cái phụ thuộc như
+0:10:53 - 0:10:58, thế nào để mà mình chọn cái đặc trưng
+0:10:56 - 0:11:01, mới cho nó phù hợp Còn trong trường hợp
+0:10:58 - 0:11:03, mà chúng ta không có được cái Đạt Trương
+0:11:01 - 0:11:05, mới xin lỗi chúng ta không biết được cái
+0:11:03 - 0:11:08, thông tin không có được cái tri thức thì
+0:11:05 - 0:11:10, chúng ta sẽ sử dụng mạng neuro Network
+0:11:08 - 0:11:14, và mạng nuro Network này thì một cách
+0:11:10 - 0:11:18, tổng quát nó có thể là có nhiều layer Ẩn
+0:11:14 - 0:11:18, chứ không nhất thiết là chỉ có một layer

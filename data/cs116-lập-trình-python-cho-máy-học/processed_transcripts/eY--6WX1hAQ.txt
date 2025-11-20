@@ -1,0 +1,303 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:19, Chào mừng các bạn đến với môn học CS116
+0:00:16 - 0:00:22, lập trình Python cho máy học hôm nay
+0:00:19 - 0:00:24, chúng ta sẽ đến với bài mở đầu thì tôi
+0:00:22 - 0:00:26, xin tự giới thiệu Tôi tên là Nguyễn Văn
+0:00:24 - 0:00:27, Thiệu hiện đang là trưởng phòng thí
+0:00:26 - 0:00:29, nghiệm truyền thông đa phương tiện Đại
+0:00:27 - 0:00:31, học Công Nghệ Thông Tin Đại học Quốc gia
+0:00:29 - 0:00:34, thành phố Hồ Chí Minh và nội dung của
+0:00:31 - 0:00:37, ngày hôm nay thì chúng ta sẽ tìm hiểu về
+0:00:34 - 0:00:41, các cái nội dung chính trong cái môn học
+0:00:37 - 0:00:43, này, sau đó thì chúng ta sẽ lướt qua một
+0:00:41 - 0:00:46, số lịch sử và thành tựu của máy học và
+0:00:43 - 0:00:48, cuối cùng đó là chúng ta sẽ giới thiệu
+0:00:46 - 0:00:49, về cái ngôn ngữ lập trình Python, thật
+0:00:48 - 0:00:53, ra không phải là giới thiệu mà chúng ta
+0:00:49 - 0:00:56, sẽ là ôn tập tại vì cái ngôn ngữ lập
+0:00:53 - 0:00:59, trình Python các bạn chắc đã cũng đã
+0:00:56 - 0:01:02, từng học trong một số cái môn học trước
+0:01:02 - 0:01:07, đây cũng như là có thể sử dụng nó như là
+0:01:03 - 0:01:07, một cái thành phần quan trọng trong cái
+0:01:08 - 0:01:13, đồ án môn học của các bạn. Về
+0:01:10 - 0:01:17, nội dung của khóa học này thì khóa học
+0:01:13 - 0:01:21, này sẽ diễn ra trong vòng 15 tuần
+0:01:17 - 0:01:24, và sau đây sẽ là nội dung của các cái
+0:01:21 - 0:01:26, kiến thức mà chúng ta sẽ được
+0:01:24 - 0:01:29, thảo luận trong cái môn học này. Đầu tiên
+0:01:26 - 0:01:31, đó là Tuần số 1 thì chúng ta sẽ giới
+0:01:29 - 0:01:33, thiệu môn học và lướt qua lịch sử, rồi ôn
+0:01:31 - 0:01:37, tập ngôn ngữ Python như đã đề cập
+0:01:33 - 0:01:42, trước đây. Tiếp theo Tuần thứ hai chúng
+0:01:37 - 0:01:44, ta sẽ học về hai cái thư viện rất là phổ
+0:01:42 - 0:01:47, biến và nổi tiếng của Python đó là thư
+0:01:44 - 0:01:51, viện NumPy và
+0:01:47 - 0:01:53, Matplotlib. NumPy là một cái thư viện giúp cho
+0:01:51 - 0:01:55, chúng ta có thể lập trình tính toán trên
+0:01:53 - 0:01:59, các cái công cụ sử dụng các cái công cụ
+0:01:55 - 0:02:01, của đại số tuyến tính. Matplotlib
+0:01:59 - 0:02:04, là một trong những cái thư viện rất là
+0:02:01 - 0:02:07, nổi tiếng để mà giúp cho chúng ta trực
+0:02:04 - 0:02:09, quan hóa dữ liệu. Thì đây sẽ là hai cái
+0:02:07 - 0:02:13, thư viện, hai cái công cụ sẽ đi xuyên suốt với chúng ta trong suốt môn học này.
+0:02:10 - 0:02:16, Bên cạnh đó thì chúng ta sẽ còn một cái
+0:02:13 - 0:02:19, thư viện nữa. Tuy nhiên thì cái thư viện
+0:02:16 - 0:02:21, này nó tên là Scikit-learn.
+0:02:19 - 0:02:23, Cái thư viện này nó sẽ đi xuyên suốt
+0:02:21 - 0:02:26, trong toàn bộ những cái Tuần số 3 và số
+0:02:23 - 0:02:30, 4 cho đến hết. Do đó thì chúng ta sẽ
+0:02:26 - 0:02:31, không có cái phần ôn tập này mà chúng ta
+0:02:30 - 0:02:33, sẽ sử dụng nó như là một cái công cụ
+0:02:31 - 0:02:38, chính cho cái môn học, còn các cái thư
+0:02:33 - 0:02:38, viện như là NumPy và Matplotlib là nền tảng.
+0:02:38 - 0:02:44, Tuần thứ ba thì chúng ta sẽ tiến hành tìm
+0:02:42 - 0:02:47, hiểu về một cái quy trình xây dựng một
+0:02:44 - 0:02:49, cái mô hình máy học như thế nào, nó sẽ
+0:02:47 - 0:02:52, gồm các cái bước thực hiện như thế nào.
+0:02:49 - 0:02:55, Tuần thứ tư thì chúng ta sẽ được học về
+0:02:52 - 0:02:58, các cái kỹ thuật về tiền xử lý dữ liệu,
+0:02:55 - 0:02:59, đó là cái bước đầu tiên. Và đánh giá một
+0:02:58 - 0:03:02, cái mô hình máy học đó là cái bước cuối
+0:02:59 - 0:03:04, cùng. Sang các cái tuần tiếp theo như là
+0:03:02 - 0:03:07, Tuần 5, Tuần 6 cho đến các tuần tiếp theo
+0:03:04 - 0:03:08, thì chúng ta sẽ học về các cái mô hình
+0:03:07 - 0:03:10, máy học,
+0:03:08 - 0:03:11, ví dụ như là mô hình máy học không giám
+0:03:10 - 0:03:14, sát.
+0:03:11 - 0:03:17, Tuần 7 cho đến Tuần 10 thì chúng ta sẽ
+0:03:14 - 0:03:20, học về các cái mô hình có giám sát. Tuần
+0:03:17 - 0:03:24, 11 cho đến Tuần 12 thì chúng ta sẽ tìm
+0:03:20 - 0:03:27, cách tối ưu các siêu tham số. Tuần thứ 13
+0:03:24 - 0:03:32, thì chúng ta sẽ tiến hành đó là
+0:03:27 - 0:03:35, học tổng hợp, còn gọi là đây là một trong
+0:03:32 - 0:03:37, những cái kỹ thuật để giúp tăng cường hiệu
+0:03:35 - 0:03:38, quả độ chính xác của hệ thống rất là
+0:03:37 - 0:03:43, nhiều và được sử dụng trong các cuộc
+0:03:38 - 0:03:45, thi của Kaggle. Và Tuần 14 và 15 sẽ
+0:03:43 - 0:03:47, được dành để báo cáo đồ án cuối
+0:03:45 - 0:03:50, kỳ cũng như là ôn tập
+0:03:47 - 0:03:50, chuẩn bị đề thi cuối kỳ.
+0:03:51 - 0:03:55, Về hình thức đánh giá thì môn học này
+0:03:53 - 0:03:58, chúng ta sẽ có 3 cái thành phần điểm
+0:03:55 - 0:04:01, chính. Thành phần đầu tiên đó chính là
+0:03:58 - 0:04:04, bài tập sẽ bao gồm là 30% điểm.
+0:04:01 - 0:04:06, Để có được cái cột điểm này thì chúng ta
+0:04:04 - 0:04:09, sẽ phải làm các cái bài quiz, tức là các
+0:04:06 - 0:04:12, cái bài trắc nghiệm trên lớp và bài tập
+0:04:09 - 0:04:14, lập trình hàng tuần. Một điểm thứ hai đó
+0:04:12 - 0:04:17, chính là đồ án chiếm 30% điểm thì chúng
+0:04:14 - 0:04:20, ta sẽ làm đồ án theo nhóm và chúng ta sẽ
+0:04:17 - 0:04:22, nộp báo cáo vào cuối kỳ. Và thành phần
+0:04:20 - 0:04:26, thứ ba có tỷ trọng điểm cao nhất,
+0:04:22 - 0:04:30, 40% điểm đó là cột điểm cuối kỳ thì nó sẽ
+0:04:26 - 0:04:33, là cột điểm của phần thi viết và đề sẽ
+0:04:30 - 0:04:37, là đề đóng được tổ chức tập trung.
+0:04:33 - 0:04:39, Tiếp theo thì chúng ta sẽ cùng lướt qua
+0:04:37 - 0:04:42, một số cái thành tựu lịch sử và thành
+0:04:39 - 0:04:45, tựu của máy học. Thì như đã đề cập ở
+0:04:42 - 0:04:46, trong cái tên môn học của chúng ta, tên
+0:04:45 - 0:04:50, môn học đó chính là
+0:04:46 - 0:04:53, lập trình Python cho máy học. Thế thì máy
+0:04:50 - 0:04:55, học nó xuất hiện từ khi nào? Thì trước
+0:04:53 - 0:04:58, khi máy học thì chúng ta sẽ có cái khái
+0:04:55 - 0:05:02, niệm nó gọi là AI hay còn gọi là Artificial
+0:04:58 - 0:05:05, Intelligence. Và ngay từ khi máy tính mới ra
+0:05:02 - 0:05:07, đời thì các cái nhà khoa học đã có một
+0:05:05 - 0:05:08, cái mong muốn đó là làm sao cho máy tính
+0:05:07 - 0:05:11, có khả năng thông minh như con người. Thì
+0:05:08 - 0:05:14, cái khái niệm về AI nó đã xuất hiện từ
+0:05:11 - 0:05:17, những năm 1950.
+0:05:14 - 0:05:21, Nhưng mà trong cái giai đoạn từ năm 1950
+0:05:17 - 0:05:23, cho đến những năm 1980 thì nó chưa có
+0:05:21 - 0:05:26, nhiều cái thành tựu nổi bật.
+0:05:23 - 0:05:28, Mãi cho đến khi cái khái niệm về Machine
+0:05:26 - 0:05:31, Learning, tức là máy học ra đời, tức là vào
+0:05:28 - 0:05:33, khoảng những năm 1980 thì các nhà
+0:05:31 - 0:05:36, khoa học họ suy nghĩ rằng là nếu như
+0:05:33 - 0:05:39, mình thiết kế các cái thuật toán AI
+0:05:36 - 0:05:42, mà một cách không tường minh,
+0:05:39 - 0:05:44, tức là chúng ta sẽ lên các cái rule, các
+0:05:42 - 0:05:47, cái luật hoặc là lập trình các cái bước
+0:05:44 - 0:05:50, xử lý thuật toán cố định thì nó sẽ khiến
+0:05:47 - 0:05:52, cho cái trí tuệ nhân tạo của mình nó
+0:05:50 - 0:05:55, không có khả năng uyển chuyển và
+0:05:52 - 0:05:59, thích ứng dần theo thời gian. Mà đối với
+0:05:55 - 0:06:01, cái bộ não của con người thì một trong
+0:05:59 - 0:06:03, những cái tính chất rất là quan trọng đó
+0:06:01 - 0:06:05, chính là có khả năng thích ứng theo môi
+0:06:03 - 0:06:08, trường, thích ứng theo thời gian.
+0:06:05 - 0:06:11, Do đó thì cái khái niệm Machine Learning ra
+0:06:08 - 0:06:13, đời và nó sẽ lấy được cái ý tưởng chính
+0:06:11 - 0:06:16, đó chính là có thể học từ dữ liệu, tức là
+0:06:13 - 0:06:18, các thuật toán máy học nó sẽ có tính
+0:06:16 - 0:06:20, thích nghi và
+0:06:18 - 0:06:22, uyển chuyển theo thời gian dựa trên dữ
+0:06:20 - 0:06:24, liệu. Nếu như chúng ta đưa vào những cái
+0:06:22 - 0:06:27, dữ liệu khác nhau thì cái mô hình nó sẽ
+0:06:24 - 0:06:30, thay đổi cái hành vi đi theo đó.
+0:06:27 - 0:06:33, Và gần đây thì Deep Learning là một
+0:06:30 - 0:06:36, nhánh của Machine Learning. Deep Learning
+0:06:33 - 0:06:38, thì xuất hiện cũng tương đối là lâu. Tuy
+0:06:36 - 0:06:41, nhiên đến năm 2010 và chính xác là năm
+0:06:38 - 0:06:42, 2012 trong một cái cuộc thi của ImageNet
+0:06:41 - 0:06:46, về
+0:06:42 - 0:06:47, phân loại hình ảnh thì các cái mô hình cho
+0:06:46 - 0:06:49, cái kết quả vượt trội so với các cái mô
+0:06:47 - 0:06:53, hình Machine Learning truyền thống. Và từ
+0:06:49 - 0:06:55, đó thì các nhà khoa học máy tính họ
+0:06:53 - 0:06:58, đã chuyển sang cái hướng là nghiên cứu
+0:06:55 - 0:07:01, về Deep Learning để khai thác những cái
+0:06:58 - 0:07:04, điểm mạnh cũng như là tối ưu được cái
+0:07:01 - 0:07:05, vấn đề về dữ liệu. Tại vì sau cuộc
+0:07:04 - 0:07:09, cách mạng
+0:07:05 - 0:07:12, về Internet và sự phát triển rầm rộ của
+0:07:09 - 0:07:14, mạng xã hội thì các cái dữ liệu do người
+0:07:12 - 0:07:15, dùng tạo ra ngày càng nhiều. Và với cái
+0:07:14 - 0:07:17, khối lượng dữ liệu ngày càng nhiều như
+0:07:15 - 0:07:20, vậy thì các cái mô hình máy học cũng
+0:07:17 - 0:07:23, phải có khả năng học được các dữ liệu
+0:07:20 - 0:07:25, này thì Deep Learning ra đời là để khai
+0:07:23 - 0:07:28, thác được cái nguồn dữ liệu rất là lớn
+0:07:25 - 0:07:28, của cái kỷ nguyên Internet.
+0:07:29 - 0:07:34, Thì máy học nói chung và trí tuệ nhân
+0:07:33 - 0:07:37, tạo,
+0:07:34 - 0:07:40, máy học nói chung và Deep Learning nói
+0:07:37 - 0:07:42, riêng thì gần đây có rất nhiều những cái
+0:07:40 - 0:07:44, thành tựu. Thì ở đây có thể kể đến ví dụ
+0:07:42 - 0:07:47, trong lĩnh vực về robot thì các cái
+0:07:44 - 0:07:49, bot có khả năng chiến thắng các cái
+0:07:47 - 0:07:52, nhà
+0:07:49 - 0:07:55, dựa trên trò chơi hoặc là chơi game, các game
+0:07:52 - 0:07:57, thủ. Ví dụ như cái con bot AlphaGo
+0:07:55 - 0:08:02, có thể thắng được các kiện tướng cờ
+0:07:57 - 0:08:03, vây. Hoặc là các cái con bot trong AI và
+0:08:02 - 0:08:05, có thể chiến thắng được các cái game
+0:08:03 - 0:08:07, StarCraft, Warcraft là các game chiến
+0:08:05 - 0:08:10, thuật và có cái tính linh động rất là
+0:08:07 - 0:08:13, cao nhưng mà các cái bot này vẫn có
+0:08:10 - 0:08:16, thể chiến thắng được các game thủ.
+0:08:13 - 0:08:19, Ngoài ra thì trong lĩnh vực về xử lý dữ
+0:08:16 - 0:08:22, liệu bảng và ứng dụng trong những cái
+0:08:19 - 0:08:25, ngành nghề về tài chính thì chúng ta
+0:08:22 - 0:08:27, thấy rằng là nó ứng dụng rất là nhiều. Mình
+0:08:25 - 0:08:29, khá là mọi nơi. Thì các cái mô hình tài
+0:08:27 - 0:08:33, chính định lượng hiện nay thì đâu đó đều
+0:08:29 - 0:08:36, có sử dụng các cái kỹ thuật của học máy.
+0:08:33 - 0:08:40, Và không chỉ dừng lại ở đó thì
+0:08:36 - 0:08:42, các cái mô hình máy học còn có ứng dụng
+0:08:40 - 0:08:45, trong các lĩnh vực về xử lý và liên quan đến
+0:08:42 - 0:08:46, cái xử lý dữ liệu hình ảnh và xử lý ngôn
+0:08:45 - 0:08:49, ngữ tự nhiên.
+0:08:46 - 0:08:52, Và các thành tựu này thì nó áp dụng
+0:08:49 - 0:08:54, trong rất nhiều những cái lĩnh vực của
+0:08:52 - 0:08:57, cuộc sống bao gồm lĩnh vực chăm sóc sức
+0:08:54 - 0:08:59, khỏe, lĩnh vực về tài chính, thương mại
+0:08:57 - 0:09:01, điện tử và môi trường thông minh. Thì
+0:08:59 - 0:09:03, trong đó đình đám nhất gần đây chính là
+0:09:01 - 0:09:06, cái môi trường thông minh thì chúng ta
+0:09:03 - 0:09:09, thấy là các cái xe hơi nó đã có khả năng
+0:09:06 - 0:09:11, gọi là tự lái rồi. Các cái con bot có
+0:09:09 - 0:09:15, khả năng hỗ trợ người dùng trong cái
+0:09:11 - 0:09:17, việc là theo dõi công việc rồi theo dõi
+0:09:15 - 0:09:20, lịch trình hoặc là trả lời các cái câu
+0:09:17 - 0:09:23, hỏi từ những cái yêu cầu
+0:09:20 - 0:09:26, cá nhân. Và gần đây thì trong các cái
+0:09:23 - 0:09:28, thiết bị thông minh ở bên trong gia đình
+0:09:26 - 0:09:30, như tivi chẳng hạn thì chúng ta có
+0:09:28 - 0:09:33, thể điều khiển bằng giọng nói. Thay vì
+0:09:30 - 0:09:36, trước đây chúng ta sẽ phải sử dụng các
+0:09:33 - 0:09:37, cái lệnh, các cái nút lệnh tốn
+0:09:36 - 0:09:39, rất là nhiều thời gian thì ở đây chúng
+0:09:37 - 0:09:41, ta có thể điều khiển bằng giọng nói bằng
+0:09:39 - 0:09:45, cách dễ dàng và tự nhiên.
+0:09:41 - 0:09:48, Thì trước cái sự bùng nổ về các cái
+0:09:45 - 0:09:51, thành tựu về AI, về Machine Learning như vậy
+0:09:48 - 0:09:53, thì nó làm cho chúng ta có một
+0:09:51 - 0:09:58, cái động lực đó là trong cái môn học này
+0:09:53 - 0:10:00, làm sao chúng ta có thể sử dụng các công
+0:10:00 - 0:10:05, nghệ của máy học để mình có thể áp dụng vào trong cuộc sống.
+0:10:02 - 0:10:09, Và có rất nhiều những cái hướng tiếp cận
+0:10:05 - 0:10:11, khác nhau hiện nay. Tuy nhiên thì
+0:10:09 - 0:10:13, đối với cái lập trình truyền thống thì
+0:10:11 - 0:10:16, chúng ta thấy rằng là các cái mô hình
+0:10:13 - 0:10:18, máy tính nó đòi hỏi là chúng ta phải
+0:10:16 - 0:10:20, cung cấp cho nó những cái rule, tức là
+0:10:18 - 0:10:23, những cái quy luật. Thì các cái rule này
+0:10:20 - 0:10:26, thì thông thường là sẽ dựa trên những
+0:10:23 - 0:10:28, cái kinh nghiệm của các cái nhà khoa học,
+0:10:26 - 0:10:31, chúng ta biết rồi, các kinh nghiệm của
+0:10:28 - 0:10:33, các nhà khoa học. Về lưu ý là các nhà
+0:10:31 - 0:10:34, khoa học này thì không phải là đến từ
+0:10:33 - 0:10:36, ngành máy tính
+0:10:34 - 0:10:40, mà các cái rule này thì sẽ đến từ các
+0:10:36 - 0:10:43, cái nhà khoa học trong cái lĩnh vực
+0:10:40 - 0:10:46, chuyên môn.
+0:10:43 - 0:10:50, Ví dụ như chúng ta làm một
+0:10:46 - 0:10:51, cái hệ thống cho tài chính thì chúng ta
+0:10:50 - 0:10:53, cần các cái
+0:10:51 - 0:10:56, chuyên gia trong lĩnh vực về tài
+0:10:53 - 0:10:58, chính. Chúng ta làm trong lĩnh vực y tế
+0:10:56 - 0:11:01, thì chúng ta cần các cái chuyên gia về y
+0:10:58 - 0:11:04, tế sẽ ngồi lại và liệt kê ra những cái
+0:11:01 - 0:11:07, rule, những cái quy luật được sử dụng
+0:11:04 - 0:11:08, trong các lĩnh vực đó để từ đó chúng ta
+0:11:07 - 0:11:11, sẽ hiện thực hóa, chúng ta sẽ cài đặt các
+0:11:08 - 0:11:16, cái rule này vào bên trong máy tính
+0:11:11 - 0:11:18, và đưa ra được cái kết quả. Còn cái hướng
+0:11:16 - 0:11:23, tiếp cận mà máy học hay còn gọi là học
+0:11:18 - 0:11:27, máy thì chúng ta sẽ cung cấp
+0:11:23 - 0:11:28, các cái câu hỏi và câu trả lời hay còn
+0:11:27 - 0:11:30, gọi các đáp án.
+0:11:28 - 0:11:33, Kết hợp với một số cái dữ liệu khác thì
+0:11:30 - 0:11:35, các cái mô hình Machine Learning nó sẽ tự tìm ra
+0:11:33 - 0:11:38, quy luật.
+0:11:35 - 0:11:40, Khác ở chỗ đầu vào và đầu ra này. Đối với
+0:11:38 - 0:11:43, phương pháp truyền thống thì chúng ta
+0:11:40 - 0:11:46, cần phải có những cái rule do các chuyên
+0:11:43 - 0:11:50, gia đưa ra. Còn trong cái mô hình máy học
+0:11:46 - 0:11:53, thì Machine Learning nó sẽ giống như là
+0:11:50 - 0:11:58, cái chuyên gia, nó sẽ dựa trên dữ liệu
+0:11:53 - 0:12:01, thô và các cái đáp án để mà tự rút trích
+0:11:58 - 0:12:04, rút trích ra được các quy luật.
+0:12:01 - 0:12:08, Như vậy thì sau này chúng ta chỉ cần
+0:12:04 - 0:12:11, cung cấp cho các cái mô hình máy học các
+0:12:08 - 0:12:14, cái dữ liệu đầu vào, các cái bộ
+0:12:11 - 0:12:17, câu hỏi hoặc là đáp án, câu hỏi và đáp án
+0:12:14 - 0:12:20, thì nó sẽ thích nghi và nó sẽ tìm ra
+0:12:17 - 0:12:25, được các quy luật mới.
+0:12:20 - 0:12:28, Tiếp theo chúng ta sẽ tìm hiểu về ngôn
+0:12:25 - 0:12:30, ngữ lập trình Python. Thì tại tiếp
+0:12:28 - 0:12:33, theo lại là ngôn ngữ lập trình Python.
+0:12:30 - 0:12:35, Hiện nay thì chúng ta đã biết, ngoài Python,
+0:12:33 - 0:12:37, chúng ta có rất nhiều những cái
+0:12:35 - 0:12:42, ngôn ngữ lập trình khác, ví dụ như là C,
+0:12:37 - 0:12:46, C++, rồi C#, Java,
+0:12:42 - 0:12:49, rồi PHP, và gần đây thì cũng có ngôn ngữ
+0:12:46 - 0:12:52, rất là nổi tiếng là Go. Vậy thì câu hỏi
+0:12:49 - 0:12:54, là tại sao chúng ta lại dùng Python cho
+0:12:52 - 0:12:59, máy học mà không phải là C++ cho máy học,
+0:12:54 - 0:12:59, C# cho máy học, Java cho máy học?
+0:12:59 - 0:13:05, Để trả lời câu hỏi này thì chúng ta phải
+0:13:02 - 0:13:06, xem xét rất nhiều những cái khía cạnh
+0:13:05 - 0:13:10, khác nhau của các ngôn ngữ lập trình.
+0:13:06 - 0:13:14, Python. Chúng ta thấy rằng là Python có
+0:13:10 - 0:13:14, thể vừa có thể lập trình được ứng dụng.
+0:13:16 - 0:13:21, Ví dụ như chúng ta có thể dùng Python để
+0:13:18 - 0:13:23, lập trình web với thư viện là Django,
+0:13:21 - 0:13:25, rồi chúng ta có thể dùng Python để
+0:13:23 - 0:13:29, lập trình app trên desktop. Và Python thì
+0:13:25 - 0:13:33, cũng có thể dùng để lập trình về máy học.
+0:13:29 - 0:13:33, Python
+0:13:34 - 0:13:39, thì cũng có thể được sử dụng để lập
+0:13:37 - 0:13:42, trình về Big Data.
+0:13:39 - 0:13:45, Như vậy thì chúng ta có thể thấy liệt kê
+0:13:42 - 0:13:47, sơ qua một số cái phạm vi ứng dụng của
+0:13:45 - 0:13:50, Python. Thì Python ứng dụng trong rất
+0:13:47 - 0:13:52, nhiều những cái lĩnh vực khác nhau, dẫn
+0:13:50 - 0:13:54, đến là chúng ta thấy Python nó rất là
+0:13:52 - 0:13:57, đa năng. Chính cái sự đa năng này thì nó
+0:13:54 - 0:13:59, cho cái kết quả đó là Python là một
+0:13:57 - 0:14:02, trong những cái top trending, tức là
+0:13:59 - 0:14:04, những cái ngôn ngữ lập trình được sử dụng
+0:14:02 - 0:14:06, phổ biến trong vài năm gần
+0:14:04 - 0:14:06, đây.

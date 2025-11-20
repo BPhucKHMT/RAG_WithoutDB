@@ -1,0 +1,181 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:20, Hôm nay thì chúng ta sẽ cùng đến với bài
+0:00:17 - 0:00:24, số hai đó là lập trình với các cái thư
+0:00:20 - 0:00:26, viện nổi tiếng của Python được sử dụng
+0:00:24 - 0:00:29, và trong cái môn học này đó là thư viện
+0:00:26 - 0:00:32, NP thì đây là thư viện mà giúp cho chúng
+0:00:29 - 0:00:35, ta thực hiện các cái tính toán trên số
+0:00:32 - 0:00:37, học và trên đại số tuyến tính
+0:00:35 - 0:00:41, MP là cái thư viện để giúp cho chúng ta
+0:00:37 - 0:00:44, trực quan à Trực Quang Hóa dữ liệu và
+0:00:41 - 0:00:47, pandas là cái thư viện để giúp cho chúng
+0:00:44 - 0:00:50, ta có thể xử lý trên cái dữ liệu dạng
+0:00:47 - 0:00:51, bản Giúp cho chúng ta xử lý nè các cái
+0:00:50 - 0:00:56, dữ
+0:00:51 - 0:00:58, liệu mà ở dạng bản đó thì trong bài học
+0:00:56 - 0:01:01, ngày hôm nay chúng ta sẽ cùng tìm hiểu
+0:00:58 - 0:01:04, về ba cái thươ việc này
+0:01:01 - 0:01:07, đầu tiên đó là thư viện
+0:01:04 - 0:01:09, nump thì thư viện LP là một cái thư viện
+0:01:07 - 0:01:12, tính toán khoa học mà nó có cái hiệu
+0:01:09 - 0:01:14, năng rất là cao tức là nếu như chúng ta
+0:01:12 - 0:01:17, sử dụng các cái hàm của nump để thực
+0:01:14 - 0:01:22, hiện các cái thao tác tính toán trên ma
+0:01:17 - 0:01:24, trận trên vectơ hoặc là trên tenser thì
+0:01:22 - 0:01:27, cái tốc độ của nó cực kỳ nhanh tại vì
+0:01:24 - 0:01:29, nump nó bên dưới ngầm bên dưới của nó đã
+0:01:27 - 0:01:31, được cài đặt bằng các cái ngôn ngữ cấp
+0:01:29 - 0:01:34, thấp nên cái tốc độ tính toán của nó rất
+0:01:31 - 0:01:36, là nhanh nếu như chúng ta cố gắng cài
+0:01:34 - 0:01:39, đặt lại các cái thao tác cộng trừ nhân
+0:01:36 - 0:01:41, chia ma chậu mà bằng các cái vòng For
+0:01:39 - 0:01:43, bình thường của Python á thì chắc chắn
+0:01:41 - 0:01:45, luôn là cái tốc độ của mình nó sẽ thấp
+0:01:43 - 0:01:47, hơn rất là nhiều so với cái việc là
+0:01:45 - 0:01:50, chúng ta sử dụng các cái hàm trong thư
+0:01:47 - 0:01:52, viện NP này đó thì đây là một cái thư
+0:01:50 - 0:01:53, viện rất là phổ biến trong Python thể
+0:01:52 - 0:01:56, nói là một trong những thư viện phổ biến
+0:01:53 - 0:01:59, nhất tại vì khi nói về lập trình với
+0:01:56 - 0:02:02, Python thì chúng ta sẽ phải lập trình
+0:01:59 - 0:02:06, với à xử lý các cái số liệu rất là nhiều
+0:02:02 - 0:02:08, và trong các cái xử lý số liệu thì xử lý
+0:02:06 - 0:02:12, trên các cái đối tượng là đại số tiến
+0:02:08 - 0:02:14, tính như là vectơ ma trận và tenser là
+0:02:12 - 0:02:17, những cái loại dữ liệu mà được sử dụng
+0:02:14 - 0:02:18, sử dụng rất là phổ biến và một số cái
+0:02:17 - 0:02:22, chủ đề
+0:02:18 - 0:02:25, chính trong cái thư viện nump đó chính
+0:02:22 - 0:02:28, là về array hay là indexing hoặc là
+0:02:25 - 0:02:31, slicing array tức là chúng ta sẽ khởi
+0:02:28 - 0:02:36, tạo ra một cái đối tượng à Ví dụ như đối
+0:02:31 - 0:02:38, tượng dạng số học 7 3 7 - 5 chúng tạo
+0:02:36 - 0:02:41, chúng ta tạo ra một cái vector như thế
+0:02:38 - 0:02:43, nào hoặc là chúng ta tạo ra một cái ma
+0:02:41 - 0:02:48, trọng như thế
+0:02:43 - 0:02:53, nào rồi và chúng ta sẽ tìm hiểu về cái
+0:02:48 - 0:02:55, cơ chế đánh chỉ mục trong cái num nó có
+0:02:53 - 0:02:57, khác gì so với cái chỉ mục của Python
+0:02:55 - 0:02:59, hay không thì cái Cách đánh chỉ mục của
+0:02:57 - 0:03:01, nó nó cũng tương tự như trong Python đó
+0:02:59 - 0:03:04, là là chỉ mục của mình là chỉ mục dạng
+0:03:01 - 0:03:05, số nguyên và chỉ số của mình nó sẽ bắt
+0:03:04 - 0:03:09, đầu từ
+0:03:05 - 0:03:12, 0 thì ví dụ ở đây là theo cột thì đây là
+0:03:09 - 0:03:15, cột thứ 0 cột thứ một cột thứ hai Còn
+0:03:12 - 0:03:19, Đây là dòng thứ không dòng thứ một thì
+0:03:15 - 0:03:22, đó là indexing à đánh chỉ m slicing là
+0:03:19 - 0:03:25, cái cơ chế để cho phép chúng ta trích ra
+0:03:22 - 0:03:28, trong cái vector hoặc là chích ra trong
+0:03:25 - 0:03:30, cái ma trận các cái vectơ con là ma trận
+0:03:28 - 0:03:34, con Ví dụ chúng chúng ta muốn lấy ra hai
+0:03:30 - 0:03:37, cái giá trị cuối ở bên trong cái vector
+0:03:34 - 0:03:38, này thì chúng ta sẽ lấy ra như thế nào
+0:03:37 - 0:03:41, chúng ta lấy ra hai cái giá trị cuối này
+0:03:38 - 0:03:43, để xử lý hoặc là chúng ta muốn lấy ra
+0:03:41 - 0:03:47, bốn cái giá trị cuối cùng này thì chúng
+0:03:43 - 0:03:52, ta sẽ lấy ra như thế nào bằng cái cơ chế
+0:03:47 - 0:03:55, slicing rồi kiểu dữ liệu thì trong
+0:03:52 - 0:03:58, LP nó có hỗ trợ các cái kiểu dữ liệu nào
+0:03:55 - 0:04:01, khi chúng ta xây dựng một cái array đúng
+0:03:58 - 0:04:03, không Thì ở trong cái array thì nó sẽ
+0:04:01 - 0:04:04, phải thỏa mãn một tính chất đó là tất cả
+0:04:03 - 0:04:06, các cái giá trị trong cùng một cái array
+0:04:04 - 0:04:09, nó phải cùng một cái kiểu dữ liệu Thế
+0:04:06 - 0:04:12, thì cái kiểu dữ liệu mà NP array nó hỗ
+0:04:09 - 0:04:16, trợ Đó là những cái dữ liệu gì Ví dụ như
+0:04:12 - 0:04:20, NP array sẽ hỗ trợ dữ liệu là kiểu số
+0:04:16 - 0:04:23, nguyên hoặc là số
+0:04:20 - 0:04:25, thực hoặc là
+0:04:23 - 0:04:27, bullin và ngoài những kiểu này ra thì
+0:04:25 - 0:04:31, còn những kiểu nào hay
+0:04:27 - 0:04:35, không rồi C còn hỗ trợ các cái thao tác
+0:04:31 - 0:04:39, là copy và view dữ liệu copy tức là
+0:04:35 - 0:04:43, chúng ta sẽ tạo một cái đối tượng mới từ
+0:04:39 - 0:04:46, một cái array cũ hay là chúng ta Clone
+0:04:43 - 0:04:48, cái dữ liệu của mình ra như thế nào rồi
+0:04:46 - 0:04:50, chúng ta sẽ trực quan chúng ta sẽ xem
+0:04:48 - 0:04:53, cái dữ liệu đó hiển thị lên trên màn
+0:04:50 - 0:04:56, hình như thế
+0:04:53 - 0:05:00, nào và một phần cũng rất là quan trọng
+0:04:56 - 0:05:02, trong cái thư viện numi này và được sử
+0:05:00 - 0:05:06, dụng cũng rất là thường xuyên đó chính
+0:05:02 - 0:05:09, là array Shap và reset array Shap là cái
+0:05:06 - 0:05:11, cơ chế là cái phương thức để giúp cho
+0:05:09 - 0:05:13, chúng ta biết cái array của mình nó có
+0:05:11 - 0:05:15, kích thước là bao nhiêu nó có bao nhiêu
+0:05:13 - 0:05:20, chiều và kích thước cho từng chiều là
+0:05:15 - 0:05:23, bao nhiêu ví dụ đây là một cái array có
+0:05:20 - 0:05:25, cái số chiều là 1 nhưng mà cái kích
+0:05:23 - 0:05:28, thước cho từng chiều của mình nó là 3
+0:05:25 - 0:05:30, như vậy nó sẽ là 3 phẩy rồi ối với cái
+0:05:28 - 0:05:34, array này thì cái shave của của nó nó sẽ
+0:05:30 - 0:05:37, là bao nhiêu đó SH ở đây nó sẽ là 2 3
+0:05:34 - 0:05:39, tức là đây là một cái array có hai chiều
+0:05:37 - 0:05:43, trong đó thành phần thứ nhất có kích
+0:05:39 - 0:05:46, thước đó là 2 và cái chiều thứ hai kích
+0:05:43 - 0:05:50, thước của nó là 3 và nó cho phép cái cơ
+0:05:46 - 0:05:52, chế để chuyển đổi à Cái array của mình
+0:05:50 - 0:05:54, từ cái chiều từ cái dạng này sang cái
+0:05:52 - 0:05:58, dạng khác Ví
+0:05:54 - 0:06:01, dụ đối với cái Dữ liệu ma trận nó có thể
+0:05:58 - 0:06:03, biến TH thành dữ liệu dạng vector chúng
+0:06:01 - 0:06:06, ta sẽ trải cái giá các cái giá trị của
+0:06:03 - 0:06:06, ma trận này ra thành
+0:06:07 - 0:06:12, vector thì để mà có thể biến một cái ma
+0:06:10 - 0:06:14, trận thành một cái vector chúng ta sẽ
+0:06:12 - 0:06:17, phải dùng cái hàm là
+0:06:14 - 0:06:20, reset chúng ta sẽ phải dùng cái hàm là
+0:06:17 - 0:06:23, reset thì đ hàm reset sẽ cho phép chúng
+0:06:20 - 0:06:25, ta chuyển đổi dữ liệu một cách tuyển
+0:06:23 - 0:06:27, chuyển từ các cái kích thước này sang
+0:06:25 - 0:06:30, các kích thước khác từ ma Trọng Thành
+0:06:27 - 0:06:31, vectơ hoặc từ ma à từ vectơ chuyển vược
+0:06:30 - 0:06:34, trở về thành ma
+0:06:31 - 0:06:37, trợn rồi chúng ta sẽ thực hiện cái Thao
+0:06:34 - 0:06:40, tác lập ở trên cái array như thế
+0:06:37 - 0:06:43, nào rồi chúng ta sẽ thực hiện cái thao
+0:06:40 - 0:06:46, tác là nhập hoặc là t array tức là chúng
+0:06:43 - 0:06:54, ta sẽ có hai cái array khác nhau ví dụ
+0:06:46 - 0:06:57, như là 1 2 3 rồi array là 4 5 6 chúng ta
+0:06:54 - 0:06:59, sẽ nhập hai cái array này lại với nhau
+0:06:57 - 0:07:03, theo nhiều cách có thể là nhập theo
+0:06:59 - 0:07:06, chiều ngang đó là 1 2 3 rồi sau đó là 4
+0:07:03 - 0:07:13, 5 6 hoặc là chúng ta có thể nhập theo
+0:07:06 - 0:07:16, chiều dọc đó là 1 2 3 4 5 6 để tạo ra
+0:07:13 - 0:07:19, thành một cái ma trận đó chúng ta có thể
+0:07:16 - 0:07:20, tách tương tự như vậy thì chúng ta sẽ từ
+0:07:19 - 0:07:22, một cái ma trọng Chúng ta sẽ tách ra
+0:07:20 - 0:07:27, thành từng hàng như thế
+0:07:22 - 0:07:29, nào đó hoặc là chúng ta làm trên những
+0:07:27 - 0:07:31, cái dữ liệu tenser thì chúng ta sẽ tách
+0:07:29 - 0:07:35, ra ra thành từng cái ma trận như thế nào
+0:07:31 - 0:07:37, thì đó là nhập và T và trong cái thư
+0:07:35 - 0:07:40, viện của numi nó cho phép chúng ta có
+0:07:37 - 0:07:42, thể thực hiện cái thao tác tìm kiếm tìm
+0:07:40 - 0:07:44, kiếm trên array tức là chúng ta sẽ xác
+0:07:42 - 0:07:47, định Xem những cái phần tử thỏa mãn một
+0:07:44 - 0:07:49, số cái tính chất Tìm kiếm nào đó ví dụ ở
+0:07:47 - 0:07:53, đây chúng ta muốn tìm những cái phần tử
+0:07:49 - 0:07:55, nào có cái giá trị là số chậu thì khi đó
+0:07:53 - 0:07:58, với cái array này ha chúng ta muốn tìm
+0:07:55 - 0:08:00, những cái phần tử là dạng số chẵn thì
+0:07:58 - 0:08:02, array nó sẽ cho phép mình có cái cơ chế
+0:08:00 - 0:08:04, để thực hiện cái việc tìm kiếm với cái
+0:08:02 - 0:08:07, hàm là hàm
+0:08:04 - 0:08:09, We và chúng ta sẽ truyền cái tính chất
+0:08:07 - 0:08:12, vô đây ví dụ như nếu chúng ta muốn tìm
+0:08:09 - 0:08:14, những số chảng thì khi chúng ta trả về
+0:08:12 - 0:08:18, nó sẽ trả về là
+0:08:14 - 0:08:24, F rồi hai là chẳn đúng không nó sẽ là
+0:08:18 - 0:08:24, true ba là lẻ nó sẽ trả về là false
+0:08:25 - 0:08:31, true
+0:08:28 - 0:08:32, tr đó thì khi chúng ta sử dụng hàm weare
+0:08:31 - 0:08:36, nó sẽ trả về một
+0:08:32 - 0:08:38, cái kiểu array có kích thước tương tự
+0:08:36 - 0:08:40, như cái đầu bào và nó sẽ trả về các cái
+0:08:38 - 0:08:42, giá trị true phone để tương ứng là nó có
+0:08:40 - 0:08:44, thỏa mãn cái điều kiện Tìm kiếm của mình
+0:08:42 - 0:08:47, hay không thì toàn bộ những cái nội dung
+0:08:44 - 0:08:50, này thì sẽ được trình bày trong cái code
+0:08:47 - 0:08:50, tham khảo ở đây

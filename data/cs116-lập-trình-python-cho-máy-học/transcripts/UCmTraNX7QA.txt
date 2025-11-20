@@ -1,0 +1,190 @@
+0:00:00 - 0:00:04, Chúng ta sẽ cùng đến phần cuối cùng của
+0:00:02 - 0:00:06, học có giám sát đó chính là mô hình phân
+0:00:04 - 0:00:08, lớ
+0:00:06 - 0:00:11, classification thì vị trí của cái bài
+0:00:08 - 0:00:15, học này đó là chúng ta
+0:00:11 - 0:00:18, sẽ nội dung của cái bài học có giám sát
+0:00:15 - 0:00:20, và mô hình hồi quy cũng như là mô hình
+0:00:18 - 0:00:23, phân lớp thì đều nằm trong cái bước gọi
+0:00:20 - 0:00:26, là modo Training tức là chúng ta sẽ tiến
+0:00:23 - 0:00:28, hành xây dựng và huấn luyện cái mô hình
+0:00:26 - 0:00:31, của mình từ cái tập dữ liệu đã được
+0:00:28 - 0:00:33, chuẩn bị ở cái bước trước đó thì đối với
+0:00:31 - 0:00:37, cái mô hình hội quy hoặc là mô hình phân
+0:00:33 - 0:00:40, lớp thì đều mục tiêu đó là chúng ta sẽ
+0:00:37 - 0:00:43, phải ước lượn cái hàm FX sao cho nó đưa
+0:00:40 - 0:00:45, ra được cái giá trị Dự đoán y và giá trị
+0:00:43 - 0:00:48, này thì chúng ta mong muốn đó là nó sẽ
+0:00:45 - 0:00:52, xắp xỉ với lại cái giá trị
+0:00:48 - 0:00:54, Ờ thực tế thì đó là mục tiêu của học có
+0:00:52 - 0:00:57, giám sát và như vậy Để có thể học ra
+0:00:54 - 0:01:01, được cái hàm f này chúng ta cần phải có
+0:00:57 - 0:01:03, các cái cặp giá trị là xy bao gồm là x
+0:01:01 - 0:01:07, là đặc trưng đầu vào và y là cái nhãn
+0:01:03 - 0:01:10, đầu ra thì đối với cái mô hình về phân
+0:01:07 - 0:01:13, loại thì chúng ta sẽ học về mô hình
+0:01:10 - 0:01:16, Logistic ession và một số mô hình cho
+0:01:13 - 0:01:18, cái loại dữ liệu có quan hệ Phi tuyến
+0:01:16 - 0:01:21, đối với mô hình Logistic ession thì đây
+0:01:18 - 0:01:23, là một cái mô hình để giải quyết cho cái
+0:01:21 - 0:01:26, trường hợp mà dữ liệu y của mình nó sẽ
+0:01:23 - 0:01:28, có một cái mối quan hệ tuyến tính F của
+0:01:26 - 0:01:31, mình trong trường hợp này đó là một cái
+0:01:28 - 0:01:31, hàm tuyến tính
+0:01:32 - 0:01:36, Còn trong trường hợp F là một cái hàm
+0:01:34 - 0:01:39, Phi tuyến thì chúng ta phải sử dụng
+0:01:36 - 0:01:42, những cái mô hình phước tạp hơn đầu tiên
+0:01:39 - 0:01:45, đó là mô hình Logistic thì chúng ta xét
+0:01:42 - 0:01:49, hai cái tập điểm là màu xanh và màu cam
+0:01:45 - 0:01:51, Nếu như chúng ta sử dụng Ờ hai cái chuỗi
+0:01:49 - 0:01:53, ký tự là xanh và cam này để đưa vào mô
+0:01:51 - 0:01:56, hình học á thì rõ ràng là mô hình nó sẽ
+0:01:53 - 0:01:58, không học được do hai cái giá trị này nó
+0:01:56 - 0:02:01, không phải là cái con số do đó thì chúng
+0:01:58 - 0:02:04, ta sẽ biểu diễn bằng cách đó là màu xanh
+0:02:01 - 0:02:07, thì chúng ta sẽ biểu diễn bằng y là bằng
+0:02:04 - 0:02:11, 1 và màu cam thì chúng ta sẽ biểu diễn
+0:02:07 - 0:02:14, bằng số 0 đó tương ứng là như trên cái
+0:02:11 - 0:02:16, biểu đồ như sau và ở đây ở trong cái
+0:02:14 - 0:02:19, không gian hai chiều này thì hai cái
+0:02:16 - 0:02:22, thành phần x1 và x2 chính là cái đặc
+0:02:19 - 0:02:25, trưng của cái dữ liệu của mình đó là đặc
+0:02:22 - 0:02:30, trưng của cái dữ liệu của mình và chúng
+0:02:25 - 0:02:32, ta sẽ có cái à mô hình dự đoán à
+0:02:30 - 0:02:34, mũ sẽ là bằng sig m của
+0:02:32 - 0:02:37, betax trong
+0:02:34 - 0:02:40, đó hai cái tập điểm màu xanh và màu cam
+0:02:37 - 0:02:41, này nè thì nó sẽ được chia cắt bởi một
+0:02:40 - 0:02:43, cái đường thẳng thì đây chính là cái
+0:02:41 - 0:02:46, tính chất tuyến tính của cái bài toán
+0:02:43 - 0:02:48, của mình tức là các cái tập điểm có thể
+0:02:46 - 0:02:50, được chia cách bởi một cái đường thẳng
+0:02:48 - 0:02:54, tuyến tính một cái đường thẳng thì nó
+0:02:50 - 0:02:57, gọi là bài toán tuyến tính cho bài toán
+0:02:54 - 0:03:00, FL và trên cái đường thẳng này thì nó sẽ
+0:02:57 - 0:03:05, có cái phương trình là beta mũ x là bằng
+0:03:00 - 0:03:06, 0 và những cái điểm nào mà màu xanh và
+0:03:05 - 0:03:08, tất cả những cái điểm nào mà nằm về một
+0:03:06 - 0:03:09, nửa phía cùng phía với màu xanh chứ
+0:03:08 - 0:03:11, không nhất thiết là những điểm màu xanh
+0:03:09 - 0:03:14, ha ví dụ cái điểm ở đây cũng được thì
+0:03:11 - 0:03:17, khi chúng ta thế nó vào thế cái tọa độ
+0:03:14 - 0:03:19, nó vào cái công thức b mũ x thì nó sẽ
+0:03:17 - 0:03:22, cho cái giá trị là lớn hơn 0 và cái giá
+0:03:19 - 0:03:25, trị này nó có thể là tiến đến vô cùng
+0:03:22 - 0:03:27, cộng vô cùng và tương tự như vậy Những
+0:03:25 - 0:03:29, cái điểm nào mà nằm về cùng một phía với
+0:03:27 - 0:03:31, cái điểm màu cam Ví dụ như điểm này đó
+0:03:29 - 0:03:33, thì khi chúng ta thế cái tọa độ nó vào
+0:03:31 - 0:03:37, đây thì cũng chúng ta cũng sẽ ra một cái
+0:03:33 - 0:03:41, giá trị là bé hơn 0 và miền giá trị của
+0:03:37 - 0:03:44, beta X này nó có thể tiến đến trừ vối
+0:03:41 - 0:03:48, cùng nhưng ở đây chúng ta đã biểu diễn
+0:03:44 - 0:03:50, các cái giá trị y và các cái giá trị
+0:03:48 - 0:03:52, tương ứng với lại hai cái phân lớp là
+0:03:50 - 0:03:55, xanh và cam của mình là bởi hai cái giá
+0:03:52 - 0:03:58, trị là 1 và 0 do đó thì chúng ta sẽ phải
+0:03:55 - 0:04:03, tìm cách để ép cái miền giá trị của
+0:03:58 - 0:04:05, betax về cái đoạn là từ 0 cho đến 1 đó
+0:04:03 - 0:04:07, thì may quá chúng ta sẽ có một cái hàm X
+0:04:05 - 0:04:10, moi hàm X moi này sẽ giúp cho chúng ta
+0:04:07 - 0:04:13, ép cái mì giá trị của beta x từ trừ vô
+0:04:10 - 0:04:16, cùng cộng vô cùng nó sẽ đưa về cái mì
+0:04:13 - 0:04:18, giá trị là từ 0 cho đến 1 và nếu như nó
+0:04:16 - 0:04:20, chạm được đến cái giá trị là 0 tức là
+0:04:18 - 0:04:23, chúng ta đang đưa ra cái quyết định phân
+0:04:20 - 0:04:25, loại đó là màu cam và nếu như nó chạm
+0:04:23 - 0:04:28, đến cái giá trị là 1 tức là chúng ta
+0:04:25 - 0:04:32, đang ờ xác định cái nhãn của nó chính là
+0:04:28 - 0:04:34, màu xanh Thì đó chính là cái mô hình
+0:04:32 - 0:04:36, Logistic regression và với mô hình
+0:04:34 - 0:04:39, Logistic regression thì chúng ta sẽ có
+0:04:36 - 0:04:41, cái hàm độ lỗi hàm độ lỗi này là thể
+0:04:39 - 0:04:44, hiện cái sai số giữa giá trị Dự đoán và
+0:04:41 - 0:04:47, giá trị thực tế thì công thức của hàm độ
+0:04:44 - 0:04:51, lỗi này đó chính là binary cross
+0:04:47 - 0:04:53, entropy binary cross entropy này đó là
+0:04:51 - 0:04:55, một cái công thức đặc biệt cho cái
+0:04:53 - 0:05:00, trường hợp tổng
+0:04:55 - 0:05:03, quát của cái công thức lock loss
+0:05:00 - 0:05:11, thì cái công thức log slot này á đó là
+0:05:03 - 0:05:15, bằng tổng của i à log y ngã với k là
+0:05:11 - 0:05:20, chạy từ 1 cho đến K trong đó y và y ngã
+0:05:15 - 0:05:23, n ở đây y và y ngã đều là một cái vectơ
+0:05:20 - 0:05:25, có k chiều Ví dụ như chúng ta đang cần
+0:05:23 - 0:05:29, phân lớp
+0:05:25 - 0:05:31, Ờ ba lớp thì cái k này của mình nó sẽ là
+0:05:29 - 0:05:33, bằng 3 vậy Lúc đó I của mình nó sẽ là
+0:05:31 - 0:05:36, một cái vectơ ba thành
+0:05:33 - 0:05:38, phần nếu như chúng ta phân lớp cho cái
+0:05:36 - 0:05:42, bài toán mà 10 lớp thì K của mình bằng
+0:05:38 - 0:05:44, 10 và đây sẽ là vectơ có k thức là 10
+0:05:42 - 0:05:47, còn trong trường hợp phân tích dị phân
+0:05:44 - 0:05:52, thì chúng ta không cần phải tạo
+0:05:47 - 0:05:54, ra I là y và y Ngã là vectơ cái k là
+0:05:52 - 0:05:56, bằng 2 tức là vectơ hai chiều Tại vì ở
+0:05:54 - 0:05:59, đây chúng ta chỉ cần một giá trị đầu ra
+0:05:56 - 0:06:02, thôi thì giá trị này nó sẽ nhận giá trị
+0:05:59 - 0:06:06, trên cái đoạn là từ 0 cho đến 1 tương
+0:06:02 - 0:06:08, ứng nó sẽ là cái hai cái trạng thái của
+0:06:06 - 0:06:10, cái giá trị đầu ra của mình rồi do đó
+0:06:08 - 0:06:12, thì không nhất thiết mình phải dùng một
+0:06:10 - 0:06:15, cái vector hai chiều mà mình chỉ cần
+0:06:12 - 0:06:17, dùng duy nhất một cái giá trị output Tại
+0:06:15 - 0:06:19, vì output nó sẽ có hai trạng thái là 0
+0:06:17 - 0:06:22, và 1 thì nó tương ứng V hai cái lớp rồi
+0:06:19 - 0:06:25, rồi và công thức của mình cho cái trường
+0:06:22 - 0:06:27, hợp mà nó có nhiều lớp thì ở đây nếu mà
+0:06:25 - 0:06:30, Đúng là chúng ta nên có cái trung bình
+0:06:27 - 0:06:36, cộng chúng ta sẽ để cái trừ đằng trước
+0:06:30 - 0:06:41, tức là trung bình cộng đó rồi y log y mũ
+0:06:36 - 0:06:43, rồi cộng cho 1 - y log 1 - y thì cái
+0:06:41 - 0:06:48, công thức này nó sẽ thỏa mãn đó là nếu
+0:06:43 - 0:06:50, như cái giá trị Dự đoán mà Đán trúng đó
+0:06:48 - 0:06:53, thì cái log của cái loss của mình nó sẽ
+0:06:50 - 0:06:59, tiến về 0 Còn trong trường hợp mà chúng
+0:06:53 - 0:07:01, ta Đán sai Ví dụ như y y = 1 mà y mũ y
+0:06:59 - 0:07:03, của mình mà bằng 0 á thì cái loss này
+0:07:01 - 0:07:05, của mình nó sẽ tiến đến cộng vô cùng tức
+0:07:03 - 0:07:08, là sai số rất là lớn thì điều này nó sẽ
+0:07:05 - 0:07:11, ép cho cái mô hình nó học sẽ nhanh hơn
+0:07:08 - 0:07:13, như vậy thì cái mô hình Logistic
+0:07:11 - 0:07:16, duration nó cũng sẽ có những cái đặc
+0:07:13 - 0:07:18, điểm về ưu điểm và quyết điểm thứ nhất
+0:07:16 - 0:07:21, đó là mô hình này cũng tương đối là đơn
+0:07:18 - 0:07:24, giản và dễ cài đặt Và thậm chí trong s
+0:07:21 - 0:07:26, kit l thì chúng ta cũng đã có cái module
+0:07:24 - 0:07:28, tên là Logistic ession luôn chúng ta đã
+0:07:26 - 0:07:30, có cái cái cài đặt sẵn trong thương viện
+0:07:28 - 0:07:33, s k lên rồi và chúng ta hoàn toàn có thể
+0:07:30 - 0:07:35, dễ dàng mở rộng m Logistic regression
+0:07:33 - 0:07:38, này cho các cái bài toán phân loại nhiều
+0:07:35 - 0:07:42, lớp bằng cách thay vì chúng ta sử dụng
+0:07:38 - 0:07:44, cái y là bằng sigm của beta mũ x chúng
+0:07:42 - 0:07:47, ta thay cái hàm này bằng một cái hàm s
+0:07:44 - 0:07:49, max và với cái hàm sop này thì cái
+0:07:47 - 0:07:52, output của mình nó không nhất thiết là
+0:07:49 - 0:07:54, ra một giá trị từ 0 đến 1 mà nó có thể
+0:07:52 - 0:07:56, ra một cái vectơ ở dạng là One hot để
+0:07:54 - 0:07:59, giúp cho chúng ta có thể giải quyết được
+0:07:56 - 0:08:01, cái bài toán là phân lớp nhiều lớp và
+0:07:59 - 0:08:03, khuyết điểm của mô hình này đó chính là
+0:08:01 - 0:08:05, nó không giải quyết được những cái
+0:08:03 - 0:08:07, trường hợp là dữ liệu nó phức tạp nghĩa
+0:08:05 - 0:08:09, là dữ liệu của mình nó có mối quan hệ
+0:08:07 - 0:08:12, Phi
+0:08:09 - 0:08:14, tuyến và nó rất dễ bị ảnh hưởng bởi
+0:08:12 - 0:08:17, những cái điểm nhiễu bởi những cái dữ
+0:08:14 - 0:08:21, liệu Nhiễu Điều gì xảy ra nếu như trong
+0:08:17 - 0:08:23, cái tập dữ liệu của mình đó ở đây chúng
+0:08:21 - 0:08:26, ta sẽ có những cái điểm nhiễu là những
+0:08:23 - 0:08:28, cái điểm mà nằm ở đây thì nó sẽ kéo cái
+0:08:26 - 0:08:31, mô hình của mình lệch về phía này dẫn
+0:08:28 - 0:08:34, đến là Mất đi cái tính tổng quát mô hình
+0:08:31 - 0:08:37, của mình nó sẽ bị mất đi cái tính tổng
+0:08:34 - 0:08:39, quát trong khi đó lẽ ra cái mô hình đúng
+0:08:37 - 0:08:41, của mình nó nên là cái đường như thế này
+0:08:39 - 0:08:43, thì nó sẽ trung dung hơn và thực toán
+0:08:41 - 0:08:45, svm là một trong những thực toán nó giúp
+0:08:43 - 0:08:48, cho mình loại bỏ được những cái điểm
+0:08:45 - 0:08:48, nhiễu tốt hơn

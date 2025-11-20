@@ -10,10 +10,10 @@
 0:01:01 - 0:01:08, thì chúng ta thấy các giá trị của vector đầu tiên đó là 123
 0:01:08 - 0:01:13, tập hợp các vector cùng chiều thì nó sẽ tạo ra một ma trận
 0:01:13 - 0:01:17, và chúng ta sẽ có ma trận là 123456
-0:01:17 - 0:01:19, tương ứng nó sẽ là lát cắt ở đây
-0:01:19 - 0:01:28, và tập hợp các lát cắt này, chúng ta sẽ có 10, 20, 30, 40, 50, 60 là một lát cắt
-0:01:28 - 0:01:34, rồi 100, 200, 300, 400, 500, 600 là một lát cắt
-0:01:34 - 0:01:38, thì tập hợp tất cả các lát cắt ma trận này, nó sẽ tạo thành một tensor
+0:01:17 - 0:01:19, tương ứng nó sẽ là lớp cắt ở đây
+0:01:19 - 0:01:28, và tập hợp các lớp cắt này, chúng ta sẽ có 10, 20, 30, 40, 50, 60 là một lớp cắt
+0:01:28 - 0:01:34, rồi 100, 200, 300, 400, 500, 600 là một lớp cắt
+0:01:34 - 0:01:38, thì tập hợp tất cả các lớp cắt ma trận này, nó sẽ tạo thành một tensor
 0:01:38 - 0:01:41, và tensor 3D.
 0:01:41 - 0:01:52, và tương tự như vector và scalar thì tensor 3D thì chúng ta sẽ sử dụng ndim và shape
 0:01:52 - 0:01:56, để kiểm tra xem số chiều của nó có phải là 3
@@ -26,7 +26,7 @@
 0:02:35 - 0:02:39, là một trong những các ảnh màu nổi tiếng và phổ biến
 0:02:39 - 0:02:41, thì chúng ta thấy có một hình mẫu ở đây
 0:02:41 - 0:02:44, Bản chất tấm hình mà chúng ta nhìn thấy ở đây
-0:02:44 - 0:02:48, đó chính là được tạo bởi 3 lát cắt
+0:02:44 - 0:02:48, đó chính là được tạo bởi 3 lớp cắt
 0:02:48 - 0:02:52, tương ứng là 3 kênh màu Red, Green và Blue
 0:02:52 - 0:02:57, và các giá trị trên từng kênh Red, Green, Blue này
 0:03:01 - 0:03:04, thì nó sẽ tạo thành một tensor

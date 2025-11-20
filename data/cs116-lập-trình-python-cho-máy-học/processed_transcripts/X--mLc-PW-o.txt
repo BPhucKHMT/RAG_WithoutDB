@@ -1,0 +1,193 @@
+0:00:01 - 0:00:05, trong phần tiếp theo thì chúng ta sẽ
+0:00:02 - 0:00:08, cùng cài đặt hai mô hình rất là quan
+0:00:05 - 0:00:10, trọng đó là mô hình Logistic Regression và
+0:00:08 - 0:00:13, mô hình Neural Network trong đó Mô hình
+0:00:10 - 0:00:15, Logistic Regression thì mô hình này thường
+0:00:13 - 0:00:17, được sử dụng cho dữ liệu của mình ở dạng
+0:00:15 - 0:00:20, có thể phân chia được bởi một đường
+0:00:17 - 0:00:22, thẳng tuyến tính thì ở bên đây dưới đây
+0:00:20 - 0:00:24, chúng ta sẽ có một cái hình ảnh minh họa
+0:00:22 - 0:00:26, cho cái dữ liệu mà chúng ta sẽ làm việc
+0:00:24 - 0:00:29, tiếp theo ở đây chúng ta sẽ thấy là có
+0:00:26 - 0:00:31, hai tập điểm màu xanh và màu đỏ thì hai
+0:00:29 - 0:00:34, tập điểm này chúng ta có thể chia tách
+0:00:31 - 0:00:37, nó ra được làm hai phần à bằng một cái
+0:00:34 - 0:00:39, đường thẳng chia ra làm hai thì đây là
+0:00:37 - 0:00:42, dữ liệu và có thể phân chia được một
+0:00:39 - 0:00:44, cách tuyến tính và mô hình Logistic
+0:00:42 - 0:04:10, Regression thì rất là phù hợp đối với lại
+0:04:08 - 0:04:12, của mình là bằng 2 thì ở đây chúng ta sẽ
+0:04:10 - 0:04:13, thấy có một số trường hợp sai số lớn nó
+0:04:12 - 0:04:15, sẽ kéo cái điểm màu đỏ lại đây luôn
+0:04:13 - 0:04:16, nhưng mà đây là cái tình huống mà chúng
+0:04:15 - 0:04:21, ta không
+0:04:16 - 0:04:26, muốn rồi Ok Nếu vậy thì chúng ta sẽ giảm
+0:04:21 - 0:04:26, cái sai số này xuống còn là 1.5
+0:04:32 - 0:04:37, rồi Như vậy thì chúng ta thấy là hai tập
+0:04:34 - 0:04:41, điểm này đã được tách biệt nhau ra
+0:04:37 - 0:04:43, và chúng ta sẽ tạo hai cái X là dữ
+0:04:41 - 0:04:45, liệu train thì cái dữ liệu train của
+0:04:43 - 0:04:51, mình sẽ bao gồm cả hai cái tập xanh và
+0:04:45 - 0:04:51, đỏ này do đó thì chúng ta sẽ dùng là np.
+0:04:52 - 0:05:01, concatenate và sẽ truyền vào hai biến X_Red và
+0:04:57 - 0:05:04, à Xin lỗi X_Blue
+0:05:01 - 0:05:06, rồi và Y của mình trong trường hợp này
+0:05:04 - 0:05:10, sẽ là
+0:05:06 - 0:05:13, bằng các cái giá trị là
+0:05:10 - 0:05:16, 0 giả sử như màu đỏ màu đỏ của mình là 0
+0:05:13 - 0:05:22, ha và màu xanh của mình là 1 rồi thì ở
+0:05:16 - 0:05:22, đây sẽ nhân cho số samples cộng
+0:05:23 - 0:05:29, cho 1 nhân cho số samples rồi
+0:05:31 - 0:05:35, rồi bây giờ chúng ta sẽ cùng in ra thử
+0:05:33 - 0:05:39, ha
+0:05:35 - 0:05:41, X đó, X của mình là các cái là một cái
+0:05:39 - 0:05:44, mảng hai chiều trong đó thì có hai cột
+0:05:41 - 0:05:46, cột đầu tiên tương ứng là đặc trưng x1
+0:05:44 - 0:05:48, và cột thứ hai tương ứng là đặc trưng X2
+05:46 - 05:50, tương ứng là cái tọa độ theo trục tung
+05:48 - 05:53, trục hoành và trục tung chúng ta sẽ xem
+05:50 - 05:58, cái shape của X là bao
+05:53 - 06:02, nhiêu ở đây sẽ là 20 2 trong đó 20 là vì
+05:58 - 06:04, số samples cho một cái tập điểm màu đỏ là
+06:02 - 06:09, 10 và tập điểm màu xanh là 10 tổng lại
+06:04 - 06:09, là 20. Rồi chúng ta sẽ xem
+06:09 - 06:15, Y
+06:11 - 06:19, à Y của mình nó sẽ không có shape Tại vì Y
+06:15 - 06:22, của mình là list rồi Như vậy thì sẽ là 0
+06:19 - 06:25, 1, 1, 1 đó thì những cái phần tử đầu tiên
+06:22 - 06:29, tương ứng là màu đỏ sẽ là nhãn 0 và
+06:25 - 06:33, những phần tử thứ hai sẽ là các cái tập
+06:29 - 06:35, điểm xanh dương chính là một có nhãn là
+06:33 - 06:37, 1 rồi Tiếp theo thì chúng ta sẽ cùng
+06:35 - 06:40, build cái model thì
+06:37 - 06:44, Logistic nó sẽ nằm trong cái module là
+06:40 - 06:48, sklearn.linear_model và để gọi thì nó
+06:44 - 06:51, cũng hoàn toàn tương tự như
+06:48 - 06:55, cái bài Linear Regression ha chúng ta sẽ là
+06:51 - 07:00, Logistic Regression và tên của cái biến thì ở
+06:55 - 07:04, đây chúng ta sẽ đặt tên là Logistic
+07:00 - 07:04, Logistic Logistic
+07:05 - 07:11, fit rồi Logistic.fit chưa được define
+07:09 - 07:13, Logistic Regression chưa được define cho
+07:11 - 07:16, chúng ta chưa chạy cái code block ở phía
+07:13 - 07:20, trên và sau khi chạy xong thì chúng ta
+07:16 - 07:24, sẽ xem cái các cái trọng số của mình
+07:20 - 07:28, Chúng ta sẽ xem các cái trọng số của
+07:24 - 07:28, mình đầu tiên đó là Logistic.coef_
+07:28 - 07:33, coefficients
+07:34 - 07:41, đây thì chúng ta sẽ xem coi nó là cái gì
+07:38 - 07:44, đó nó sẽ có bao gồm hai cái hệ số hai
+07:41 - 07:47, cái hệ số này tương ứng là hai cái hệ số
+07:44 - 07:49, cho các cái đặc trưng chiều ngang là x1
+07:47 - 07:52, và chiều dọc là X2 hay là trục hoành
+07:49 - 07:55, trục tung rồi
+07:52 - 07:59, và cái thành phần tiếp theo đó chính là
+07:55 - 07:59, bias là intercept_
+08:01 - 08:06, rồi thì nó sẽ là 1,0 thế thì nếu như
+08:04 - 08:09, chúng ta nhìn vô các cái hệ số này chúng
+08:06 - 08:11, ta sẽ rất khó biết là nó có đúng hay
+08:09 - 08:14, không Thế thì chúng ta sẽ phải trực quan
+08:11 - 08:19, hóa cái mô hình này bằng cách mình sẽ vẽ
+08:14 - 08:21, à Cái đường thẳng tạo bởi các cái hệ số
+08:19 - 08:22, này lên trên thế thì để vẽ cái để trực
+08:21 - 08:25, quan hóa cái mô hình này lên thì đầu
+08:22 - 08:31, tiên chúng ta sẽ phải vẽ lại các cái
+08:25 - 08:34, điểm vẽ lại các cái điểm huấn luyện
+08:31 - 08:38, ha rồi chúng ta sẽ copy cái code ở trên
+08:34 - 08:42, để cho chúng ta à Có thể đỡ mất thời
+08:38 - 08:45, gian và tiếp theo thì chúng ta sẽ vẽ cái
+08:42 - 08:48, mô hình vẽ cái hàm mô
+08:45 - 08:50, hình thì để vẽ cái hàm mô hình thì chúng
+08:48 - 08:51, ta sẽ có một cái lưu ý như thế này đó là
+08:50 - 08:57, cái phương trình đường thẳng của mình á
+08:51 - 09:00, nó sẽ có cái dạng là à w1 X1 cộng cho w2
+08:57 - 09:04, X2 cộng cho
+09:00 - 09:04, bias cộng cho
+09:05 - 09:10, bias bằng 0 đúng không thì đây là cái
+09:08 - 09:12, phương trình đường thẳng mà chúng ta đã
+09:10 - 09:14, được biết trong cái chương trình cấp 3
+09:12 - 09:17, Tuy nhiên ở đây thì mình đang muốn vẽ
+09:14 - 09:23, đường vẽ cái đường thẳng trong đó cái
+09:17 - 09:25, thành phần x2 x2 sẽ phụ thuộc vào x1 x2
+09:23 - 09:28, sẽ được phụ thuộc vào X1 thì khi đó
+09:25 - 09:30, chúng ta lấy một cái điểm lấy một cái
+09:28 - 09:32, điểm Ví dụ như cái điểm
+09:30 - 09:35, -1 ở đây đi lấy điểm -1 thì tương ứng
+09:32 - 09:37, cái điểm X2 sẽ là bao nhiêu rồi lấy cái
+09:35 - 09:39, điểm 8 ở đây X1 là bằng 8 ở đây thì X2
+09:37 - 09:42, tương ứng sẽ là bao
+09:39 - 09:45, nhiêu thì ở đây chúng ta
+09:42 - 09:48, sẽ chuyển đổi cái công thức này chuyển
+09:45 - 09:50, đổi cái công thức này về dạng là X2 sẽ
+09:48 - 09:53, là bằng một cái hàm phụ thuộc theo X1 nó
+09:50 - 09:56, giống như là y bằng ax + b thì X2 sẽ được
+09:53 - 09:58, tính theo X1 bằng cách chúng ta sẽ đem
+09:56 - 10:05, cái thành phần này qua đúng không là sẽ
+09:58 - 10:09, trừ w1 X1 trừ cho bias tất cả tất cả sẽ
+10:05 - 10:15, cùng chia cho w2 tất cả cùng chia cho
+10:09 - 10:18, w2 thế thì ở đây w1 là gì w2 là gì w1 nó
+10:15 - 10:21, chính là cái hệ số này cho cái thành
+10:18 - 10:22, phần đầu tiên nó chính là cái hệ số này
+10:21 - 10:25, cho cái thành phần đầu tiên
+10:22 - 10:25, ha
+10:26 - 10:33, rồi và w2
+10:29 - 10:39, thì nó sẽ là cái thành phần thứ hai và
+10:33 - 10:39, bias đó chính là bằng Logistic.intercept_
+10:43 - 10:49, rồi Như vậy thì chúng ta sẽ hiện thực
+10:46 - 10:49, hóa cái công thức này
+10:49 - 10:58, def calculate_X2 đúng không Chúng ta sẽ truyền
+10:54 - 11:02, vào X1 rồi Return dựa trên cái công thức
+10:58 - 11:04, này nó sẽ là bằng trừ của w1 nhân cho X1
+11:02 - 11:08, trừ cho
+11:04 - 11:08, bias tất cả chia cho
+11:09 - 11:15, w2 rồi thì ở đây chúng ta đã có được cái
+11:12 - 11:21, hàm tính X2 theo x1 và bây giờ chúng ta
+11:15 - 11:22, sẽ tiến hành vẽ là plt.plot và hai điểm
+11:21 - 11:26, ở đây chúng ta
+11:22 - 11:31, muốn đó là điểm ở -1 và điểm 8 đúng
+11:26 - 11:31, không X1 của mình sẽ là -1 và 8
+11:33 - 11:38, rồi X1 sẽ là -1 và 8 thì tương
+11:39 - 11:43, ứng tương ứng mình sẽ gọi cái hàm
+11:41 - 11:47, calculate
+11:43 - 11:47, X2 theo cái điểm
+11:51 - 11:57, X1 rồi chúng ta sẽ cùng vẽ lên đó như
+11:55 - 11:59, vậy thì chúng ta thấy là cái đường mô
+11:57 - 12:01, hình của mình nó đã chia hai cái tập
+11:59 - 12:03, điểm này ra làm hai phần như vậy thì
+12:01 - 12:07, trong cái phần trực quan hóa chúng ta thấy
+12:03 - 12:09, rằng là các cái hệ số cái tham số của mô
+12:07 - 12:12, hình Logistic của mình đã thực hiện đúng
+12:09 - 12:14, như cái ý đồ mình mong muốn đó là chia
+12:12 - 12:16, nó ra làm hai phần với một cái đường
+12:14 - 12:18, thẳng trong phần tiếp theo thì chúng ta
+12:16 - 12:21, sẽ tiến hành đánh giá xem là một cách
+12:18 - 12:23, định lượng cái mô hình này cho cái kết
+12:21 - 12:26, quả là độ chính xác bao nhiêu phần trăm thì
+12:23 - 12:28, nhìn thôi thì chúng ta cũng thấy là cái
+12:26 - 12:31, score của nó độ chính xác là bằng
+12:28 - 12:33, 100% đó thì ở đây chúng ta có hai cách
+12:31 - 12:36, một là chúng ta sẽ
+12:33 - 12:39, dùng Logistic
+12:36 - 12:41, chấm predict cái giá trị Sau đó chúng ta
+12:39 - 12:45, sẽ đi so sánh cái predict này với lại
+12:41 - 12:48, cái y_true để xem xem độ chính xác là
+12:45 - 12:50, bao nhiêu thì ở đây chúng ta sẽ có cái y_predict
+12:48 - 12:52, là bằng Logistic.predict và chúng
+12:50 - 12:54, ta sẽ gọi sklearn.metrics để lấy cái
+12:52 - 12:57, accuracy score là một cái hàm Giúp cho
+12:54 - 13:00, chúng ta tính ha
+12:57 - 13:03, à ở đây chúng ta phải chạy cái y_predict
+13:00 - 13:05, trước rồi sau đó chúng ta mới bắt đầu so
+13:03 - 13:08, sánh y_predict với cái y_true thì chúng ta
+13:05 - 13:11, thấy độ chính xác là 100% (tức là 1) tức là 100
+13:08 - 13:14, phần trăm ngoài cái cách tính dùng hàm này thì
+13:11 - 13:16, chúng ta cũng có thể cài đặt à Nhanh cái
+13:14 - 13:20, này thì chủ yếu để luyện tập Python thôi
+13:16 - 13:23, ha là y_predict có bằng bằng với lại cái
+13:20 - 13:26, y_true hay không Nếu bằng đúng không
+13:23 - 13:28, thì chúng ta sẽ tính tổng và tổng số
+13:26 - 13:31, những cái phần tử bằng này á chúng ta sẽ
+13:28 - 13:35, chia cho cho len của y đúng không Thì nó
+13:31 - 13:37, chính là ra cái accuracy như vậy thì hai
+13:35 - 13:40, cái con số này nó đều khớp với nhau là
+13:37 - 13:40, ra 100%

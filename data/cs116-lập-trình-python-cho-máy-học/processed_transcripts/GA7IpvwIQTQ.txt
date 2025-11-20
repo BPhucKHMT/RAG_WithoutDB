@@ -1,0 +1,473 @@
+0:00:00 - 0:00:07, trong phần tiếp theo thì chúng ta sẽ tìm
+0:00:03 - 0:00:09, hiểu về cái phương pháp tạo ra các cái
+0:00:07 - 0:00:12, đặc trưng mới thì tên tiếng Anh của nó
+0:00:09 - 0:00:16, đó là feature extraction
+0:00:12 - 0:00:20, Ờ ở đây chúng ta sẽ có một cái ví dụ đó
+0:00:16 - 0:00:22, là chúng ta đã có các cái cột thông tin
+0:00:20 - 0:00:24, như là nhân viên nè vận tốc và thời gian
+0:00:22 - 0:00:26, và chúng ta có thể thực hiện các cái
+0:00:24 - 0:00:29, biến đổi toán học các cái biến đổi toán
+0:00:26 - 0:00:31, học giữa các đặc trưng đã có ví dụ như
+0:00:29 - 0:00:34, cột vận tốc và cột thời gian thì chúng
+0:00:31 - 0:00:37, ta có thể suy ra được cái quãng đường di
+0:00:34 - 0:00:40, chuyển đó là bằng vận tốc nhân với thời
+0:00:37 - 0:00:44, gian thì đây chính là một cái biến đổi
+0:00:40 - 0:00:47, toán học để tạo ra một cái cột dữ liệu
+0:00:44 - 0:00:50, mới Ngoài ra thì chúng ta cũng có thể
+0:00:47 - 0:00:53, thực hiện cái thao tác là đếm cái tần số
+0:00:50 - 0:00:56, xuất hiện như là một cái đặc trưng lấy
+0:00:53 - 0:01:00, ví dụ ở đây chúng ta thấy là cái cột Màu
+0:00:56 - 0:01:03, sắc này thì màu đỏ Red là xuất hiện ba
+0:01:00 - 0:01:07, lần, Blue là xuất hiện hai lần và
+0:01:03 - 0:01:09, Green là xuất hiện một lần thì chúng ta
+0:01:07 - 0:01:11, suy đoán rằng là cái tần suất xuất hiện
+0:01:09 - 0:01:14, nó cũng thể hiện được một số cái tính
+0:01:11 - 0:01:16, chất nhất định cho cái dữ liệu của mình
+0:01:14 - 0:01:20, do đó chúng ta có thể tạo ra thêm một
+0:01:16 - 0:01:23, cái cột mới đó là Color Count và số lần xuất
+0:01:20 - 0:01:25, hiện của Red nó sẽ là 3 và cứ bất cứ
+0:01:23 - 0:01:26, những cái dòng nào mà có giá trị là Red
+0:01:25 - 0:01:29, thì nó sẽ điền là
+0:01:26 - 0:01:31, 3 rồi Chỗ nào mà có sự xuất hiện của
+0:01:29 - 0:01:34, dòng Blue thì chúng ta sẽ để là
+0:01:31 - 0:01:37, 2 thì tạo ra thêm một cái đặc trưng mới
+0:01:34 - 0:01:40, dựa trên cái số lần xuất
+0:01:37 - 0:01:43, hiện tổng hợp đặc trưng theo nhiều theo
+0:01:40 - 0:01:46, cái nhiều cột thì ở đây chúng ta giả sử
+0:01:43 - 0:01:49, rằng là có ba cái cột là Bus, Car và Motor.
+0:01:46 - 0:01:51, Đây là các cái phương tiện di chuyển ở
+0:01:49 - 0:01:54, đây là mỗi hàng là tương ứng cách thức
+0:01:51 - 0:01:56, mà một người chọn cái phương tiện di
+0:01:54 - 0:02:01, chuyển thì chúng ta có thể tạo ra một
+0:01:56 - 0:02:03, cái cột mới đó là Use Vehicle Tức là cái
+0:02:01 - 0:02:06, người đó có sử dụng bất cứ một cái
+0:02:03 - 0:02:08, phương tiện nào hay không thì cái cột
+0:02:06 - 0:02:12, Use Vehicle này nó sẽ thực hiện cái thao
+0:02:08 - 0:02:15, tác đó là tìm max của các cái giá trị
+0:02:12 - 0:02:20, trong một hàng này ví dụ như max của 0 0
+0:02:15 - 0:02:22, và 1 nó sẽ ra là 1 rồi max của 0 0 thì
+0:02:20 - 0:02:26, nó ra là 0 thì ở đây chúng ta sẽ dùng
+0:02:22 - 0:02:29, cái hàm gọi là hàm Max rồi max của 011
+0:02:26 - 0:02:32, chính là là 1 như vậy thì đây sẽ là tổng
+0:02:29 - 0:02:35, hợp đặc trưng theo nhiều
+0:02:32 - 0:02:38, cột và phương pháp tiếp theo đó chính là
+0:02:35 - 0:02:41, phương pháp phân rã đặc trưng Tức là
+0:02:38 - 0:02:43, trong nhiều tình huống thì cái dữ liệu
+0:02:41 - 0:02:46, của mình dữ liệu mà cột của mình nó đã
+0:02:43 - 0:02:49, chứa rất nhiều thông tin trong đó
+0:02:46 - 0:02:52, lấy ví dụ như thông tin mã số sinh viên
+0:02:52 - 0:02:57, hồi nãy thì mình nói là mã số sinh viên
+0:02:56 - 0:03:00, đôi khi là nó không có cái Ờ mang cái
+0:02:57 - 0:03:03, trong nhiều tình huống thì cái mã số
+0:03:00 - 0:03:06, sinh viên của mình nó có quy định một số
+0:03:03 - 0:03:10, cái tính chất ví dụ
+0:03:06 - 0:03:13, 06 đó là hệ cái năm học Ví dụ như cái
+0:03:10 - 0:03:16, năm tuyển đầu vào của mình là khóa 2006
+0:03:13 - 0:03:20, một tương ứng người đó là học theo hệ
+0:03:16 - 0:03:22, chính quy con số 2 ở đây nó tương ứng là
+0:03:20 - 0:03:24, cho cái khoa Ví dụ như số 2 người ta quy
+0:03:22 - 0:03:27, định đó là Khoa Khoa Học Máy Tính và số
+0:03:24 - 0:03:29, 450 cuối cùng đó là cái số thứ tự thì
+0:03:27 - 0:03:32, cái này có thể là một cái đặc trưng
+0:03:29 - 0:03:35, không quan trọng và như vậy thì chúng ta
+0:03:32 - 0:03:37, có thể dựa trên một cái Đặc trưng nào đó
+0:03:35 - 0:03:39, chúng ta sẽ phân rã nó ra thành nhiều
+0:03:37 - 0:03:41, cái đặc trưng thành phần ở dưới đây thì
+0:03:39 - 0:03:43, chúng ta sẽ có một cái ví dụ khác đó là
+0:03:41 - 0:03:46, giả sử như chúng ta có một cái cột đặc
+0:03:43 - 0:03:50, trưng là dạng
+0:03:46 - 0:03:52, chuỗi và nó có cái tên của cái hệ điều
+0:03:50 - 0:03:56, hành của mình thì ở đây chúng ta có thể
+0:03:52 - 0:03:59, tách cái cột đặc trưng này ra làm hai
+0:03:56 - 0:04:02, cái cột đặc trưng đó là cột operating
+0:03:59 - 0:04:06, system là macOS đó là một cái đặc trưng
+0:04:02 - 0:04:11, Rồi phiên bản là một cái đặc trưng hoặc
+0:04:06 - 0:04:13, là cái cột về policy corporate L3 thì
+0:04:11 - 0:04:16, cái cái cái loại dữ liệu xin lỗi cái
+0:04:13 - 0:04:19, loại policy của mình nó sẽ là corporate
+0:04:16 - 0:04:22, và cái mức độ cái Level của mình sẽ là
+0:04:19 - 0:04:25, level 3 đó thì từ một cái dạng chuỗi
+0:04:22 - 0:04:27, chúng ta có thể dùng cái kỹ thuật tách
+0:04:25 - 0:04:31, tách chuỗi cắt chuỗi để tạo ra những
+0:04:27 - 0:04:34, cái đặc trưng mới
+0:04:31 - 0:04:37, và cách tạo đặc trưng tiếp theo đó chính
+0:04:34 - 0:04:38, là tổng hợp đặc trưng thì ở đây nó sẽ
+0:04:37 - 0:04:40, ngược so với lại cái phương pháp trước
+0:04:38 - 0:04:42, đó phương pháp trước đó là từ một cột
+0:04:40 - 0:04:44, chúng ta sẽ tách ra làm nhiều cái đặc
+0:04:42 - 0:04:48, trưng con còn ở đây là chúng ta có nhiều
+0:04:44 - 0:04:51, cái đặc trưng con như là Make và Type
+0:04:48 - 0:04:54, chúng ta có thể tạo ra thành một cái đặc
+0:04:51 - 0:04:57, trưng tổng hợp đó chính là nối hai cái
+0:04:54 - 0:04:59, chuỗi này lại ví dụ như ở đây là Toyota
+0:04:57 - 0:05:01, và Sedan thì ở đây chúng ta sẽ có thêm
+0:04:59 - 0:05:06, một cái đặc trưng đó là vừa có kết hợp
+0:05:01 - 0:05:10, Make và Type đó là Toyota gạch
+0:05:06 - 0:05:12, Sedan rồi tổng hợp theo nhóm thì ở đây
+0:05:10 - 0:05:15, chúng ta có thể thực hiện các cái thao
+0:05:12 - 0:05:18, tác là group theo nhóm Sau đó chúng ta
+0:05:15 - 0:05:20, sẽ tính các cái giá trị mang tính chất
+0:05:18 - 0:05:23, thống kê trên các cái nhóm dữ liệu đó ví
+0:05:20 - 0:05:27, dụ đối với cái cột dữ liệu là Đà Nẵng
+0:05:23 - 0:05:30, chúng ta sẽ gom nhóm tất cả những cái Ờ
+0:05:27 - 0:05:33, dòng dữ liệu nào mà có cái cột
+0:05:30 - 0:05:35, là Đà Nẵng có cái cái cái trường thông
+0:05:33 - 0:05:37, tin CT là Đà Nẵng thì chúng ta sẽ thấy
+0:05:35 - 0:05:39, là có hai giá trị có hai cái hàng dữ
+0:05:37 - 0:05:42, liệu ở đây và chúng ta sẽ gom nhóm lại
+0:05:39 - 0:05:45, thì sẽ có hai cái giá trị lương là 10
+0:05:42 - 0:05:48, triệu và 14 triệu ở đây Sau đó chúng ta
+0:05:45 - 0:05:51, thực hiện cái thao tác là tính trung
+0:05:48 - 0:05:56, bình cộng thì 10 + 14 chia 2 thì chúng
+0:05:51 - 0:05:58, ta sẽ ra là 12 như vậy thì ứng với cái
+0:05:56 - 0:06:01, cột Đà Nẵng chúng ta sẽ có thêm một cái
+0:05:58 - 0:06:04, cột nữa đó là Lương Trung bình đó là 12
+0:06:01 - 0:06:06, thì hi vọng rằng là với cái cột lương
+0:06:04 - 0:06:10, trung bình này thì nó sẽ giúp cho chúng
+0:06:06 - 0:06:12, ta biết là lương của cái record của cái
+0:06:10 - 0:06:14, dòng dữ liệu này là đang thấp hơn hay là
+0:06:12 - 0:06:16, nhỏ hơn so với cái giá trị trung bình
+0:06:14 - 0:06:20, của tất cả những cái dòng dữ liệu thuộc
+0:06:16 - 0:06:24, về Đà Nẵng tương tự như vậy thì cho cái
+0:06:20 - 0:06:26, trường thông tin CT đối với các cái giá
+0:06:24 - 0:06:29, trị là Hồ Chí Minh và Hà Nội chúng ta
+0:06:26 - 0:06:31, cũng sẽ thêm vô Ờ thêm một cái đặc trưng
+0:06:29 - 0:06:33, mới đó là lương trung bình của cái thành
+0:06:31 - 0:06:36, phố
+0:06:33 - 0:06:38, đó và tiếp theo đó là chúng ta có thể
+0:06:36 - 0:06:42, thêm cái đặc trưng dạng
+0:06:38 - 0:06:47, cụm thêm cái đặc trưng dạng cụm lấy ví
+0:06:42 - 0:06:50, dụ như Ờ ở đây chúng ta sẽ có là sử dụng
+0:06:47 - 0:06:53, cái thuật toán gom cụm đó thì các cái
+0:06:50 - 0:06:56, năm mà xây dựng á là từ bên trái sang
+0:06:53 - 0:07:00, bên phải là từ 1880 cho đến những năm
+0:06:56 - 0:07:02, 2000 giả sử như chúng ta có ba cụm
+0:07:00 - 0:07:04, Chúng ta có ba cụm thì chúng ta sẽ chia
+0:07:02 - 0:07:06, ra làm ba phần bằng một cái thuật toán
+0:07:04 - 0:07:09, gom cụm nào đó và những cái giá trị
+0:07:06 - 0:07:14, nào từ đầu cho đến cái giá trị
+0:07:09 - 0:07:17, 1990 thì nó được xếp vào một cụm từ
+0:07:14 - 0:07:20, 1940 cho đến 1980 thì nó sẽ xếp vào một
+0:07:17 - 0:07:21, cái cụm được biểu hiện bởi màu xanh lá
+0:07:20 - 0:07:24, và từ
+0:07:21 - 0:07:28, 1980 trở về sau thì nó được đánh dấu
+0:07:24 - 0:07:31, bằng màu xanh dương và giả sử như ba cái
+0:07:28 - 0:07:34, giá trị này chúng ta được tạo cho nó là
+0:07:31 - 0:07:37, cái cluster ID Tức là cái định danh cho
+0:07:34 - 0:07:42, cái cho các cái cụm đó là các con số là
+0:07:37 - 0:07:44, 0 1 2 thì tất cả những cái phần tử nào
+0:07:42 - 0:07:46, những cái giá trị nào mà có n trong
+0:07:44 - 0:07:48, khoảng này thì chúng ta thay thế nó bằng
+0:07:46 - 0:07:55, giá trị là là
+0:07:48 - 0:07:57, 0 còn ở đây sẽ là 2 và ở đây sẽ là là 1
+0:07:55 - 0:08:00, thì chúng ta sẽ thay thế các cái giá trị
+0:07:57 - 0:08:03, tương ứng đó tương tự như vậy cho cái
+0:08:00 - 0:08:05, trường hợp mà đặc trưng của mình nó bao
+0:08:03 - 0:08:09, gồm hai cột dữ liệu là longitude và
+0:08:05 - 0:08:11, latitude Tức là cái tọa độ trong cái bản
+0:08:09 - 0:08:14, đồ đó thì cái thuật toán gom cụm của
+0:08:11 - 0:08:17, mình có thể thực hiện trên những cái dữ
+0:08:14 - 0:08:18, liệu mà scalar hoặc là dữ liệu là dạng
+0:08:17 - 0:08:22, một
+0:08:18 - 0:08:25, feature hoặc là trên một tổ hợp của
+0:08:22 - 0:08:28, nhiều hơn ờ lớn hơn hoặc bằng hai
+0:08:25 - 0:08:30, feature thì đều có thể thực hiện được
+0:08:28 - 0:08:32, cái thuật toán gom cụm và khi gom cụm
+0:08:30 - 0:08:35, xong thì chúng ta sẽ có cái định danh
+0:08:32 - 0:08:36, cho cái cụm và chúng ta sẽ tạo ra thêm
+0:08:35 - 0:08:39, một cái cột
+0:08:36 - 0:08:42, mới có cái giá trị tương ứng là cái định
+0:08:39 - 0:08:45, danh của cái cụm đó thì chúng ta sẽ xét
+0:08:42 - 0:08:47, đến cái ví dụ cụ thể như sau chúng ta có
+0:08:45 - 0:08:51, hai cái cột là CT và
+0:08:47 - 0:08:54, salary và chúng ta sẽ tạo ra thêm hai
+0:08:51 - 0:08:55, cái cột mới, xin lỗi, chúng ta sẽ tạo
+0:08:54 - 0:08:58, ra thêm một cái cột mới đó là cái
+0:08:55 - 0:09:02, cluster cái cluster này tương ứng nó sẽ
+0:08:58 - 0:09:05, thể hiện là cái mức lương của mình nó
+0:09:02 - 0:09:10, nằm trong cái phân cụm nào thì chúng ta
+0:09:05 - 0:09:13, sẽ thấy là cái mức lương là 35 triệu và 30
+0:09:10 - 0:09:15, triệu thì nó nằm trong cùng một cái cụm
+0:09:13 - 0:09:17, có định danh là 2 nếu như chúng ta đối
+0:09:15 - 0:09:21, chiến vào các cái giá trị trên cái cột
+0:09:17 - 0:09:24, lương này thì chúng ta thấy 35 và 30 nó
+0:09:21 - 0:09:25, nằm ở cái ngưỡng cái giá trị lương là mức
+0:09:24 - 0:09:28, độ
+0:09:25 - 0:09:31, cao ví dụ từ 30 trở về
+0:09:28 - 0:09:37, sau thì đây là ngưỡng lương
+0:09:31 - 0:09:39, cao và à ở các cái giá trị số 0 đó hoặc
+0:09:37 - 0:09:45, là giá trị số 1 đi chúng ta thấy là 10
+0:09:39 - 0:09:49, nè 8 nè 12 nè và 5 Tức là nó đang nằm ở
+0:09:45 - 0:09:53, nửa dưới à những cái mức lương mà dưới 12
+0:09:49 - 0:09:56, 10 nè 8 nè 5 thì đây sẽ là những cái mức
+0:09:53 - 0:09:57, lương ở nửa dưới thì đây là mức lương
+0:09:56 - 0:10:01, dạng
+0:10:01 - 0:10:04, thấp và các cái giá trị như là 0 là 20
+0:10:04 - 0:10:13, 15 15
+0:10:13 - 0:10:23, 14 14 nè 15 20 thì đây là cái nhóm trung
+0:10:18 - 0:10:27, bình và nó được ký hiệu đó là 1 cao thì
+0:10:23 - 0:10:30, nó sẽ ký hiệu là 0 mức thấp
+0:10:27 - 0:10:33, đó là 1 và lưu ý đó là cái cluster ID
+0:10:30 - 0:10:35, này thì không có thể hiện cái tính ờ cao
+0:10:33 - 0:10:37, thấp khi chúng ta chọn Ví dụ như mức
+0:10:35 - 0:10:39, thấp chúng ta có thể chọn một cái con số
+0:10:37 - 0:10:42, bất kỳ để đại diện cho mức thấp à chứ
+0:10:39 - 0:10:45, không nhất thiết phải là cao phải lớn
+0:10:42 - 0:10:47, hơn thấp ở đây cái từ khóa Cao và Thấp
+0:10:45 - 0:10:50, trung bình đó là do chúng ta quy ước
+0:10:47 - 0:10:53, thôi thì những cái giá trị của mức lương
+0:10:50 - 0:10:57, mà nằm trong cùng một cụm thì sẽ nhận
+0:10:53 - 0:11:01, một cái À cái cluster ID tương ứng thì
+0:10:57 - 0:11:01, đây là đặc trưng theo phân cụm
+0:11:03 - 0:11:08, và tiếp theo thì chúng ta có thể sử dụng
+0:11:06 - 0:11:13, những cái công cụ phân tích thành phần
+0:11:08 - 0:11:13, chính PCA, PCA là viết tắt của chữ
+0:11:14 - 0:11:17, principal
+0:11:18 - 0:11:21, component
+0:11:22 - 0:11:28, analysis thì đây là một cái phương pháp
+0:11:24 - 0:11:30, phân tích các cái thành phần chính thì
+0:11:28 - 0:11:33, các cái thành phần chính của dữ liệu nó
+0:11:30 - 0:11:35, sẽ mang nhiều thông tin hơn nó sẽ mang
+0:11:33 - 0:11:38, nhiều thông tin hơn à so với lại các cái
+0:11:35 - 0:11:42, đặc trưng ban đầu đó thì với phương pháp
+0:11:38 - 0:11:45, PCA nó sẽ giúp cho chúng ta loại bỏ loại
+0:11:42 - 0:11:47, bỏ những cái thành phần Hoặc là những
+0:11:45 - 0:11:51, cái đặc
+0:11:47 - 0:11:51, trưng mà không quan
+0:11:52 - 0:11:58, trọng hoặc là không có nhiều thông tin
+0:12:00 - 0:12:05, đó thì ở đây chúng ta sẽ có một cái ví
+0:12:02 - 0:12:07, dụ là bốn cái đặc trưng
+0:01:03 - 0:01:09, Green là xuất hiện một lần thì chúng ta
+0:01:07 - 0:01:11, suy đoán rằng là cái tần suất xuất hiện
+0:01:09 - 0:01:14, nó cũng thể hiện được một số cái tính
+0:01:11 - 0:01:16, chất nhất định cho cái dữ liệu của mình
+0:01:14 - 0:01:20, do đó chúng ta có thể tạo ra thêm một
+0:01:16 - 0:01:23, cái cột mới đó là Color Count và số lần xuất
+0:01:20 - 0:01:25, hiện của Red nó sẽ là 3 và cứ bất cứ
+0:01:23 - 0:01:26, những cái dòng nào mà có giá trị là Red
+0:01:25 - 0:01:29, thì nó sẽ điền là
+0:01:26 - 0:01:31, 3 rồi Chỗ nào mà có sự xuất hiện của
+0:01:29 - 0:01:34, dòng Blue thì chúng ta sẽ để là
+0:01:31 - 0:01:37, 2 thì tạo ra thêm một cái đặc trưng mới
+0:01:34 - 0:01:40, dựa trên cái số lần xuất
+0:01:37 - 0:01:43, hiện tổng hợp đặc trưng theo nhiều theo
+0:01:40 - 0:01:46, cái nhiều cột thì ở đây chúng ta giả sử
+0:01:43 - 0:01:49, rằng là có ba cái cột là Bus, Car và Motor.
+0:01:46 - 0:01:51, Đây là các cái phương tiện di chuyển ở
+0:01:49 - 0:01:54, đây là mỗi hàng là tương ứng cách thức
+0:01:51 - 0:01:56, mà một người chọn cái phương tiện di
+0:01:54 - 0:02:01, chuyển thì chúng ta có thể tạo ra một
+0:01:56 - 0:02:03, cái cột mới đó là Use Vehicle Tức là cái
+0:02:01 - 0:02:06, người đó có sử dụng bất cứ một cái
+0:02:03 - 0:02:08, phương tiện nào hay không thì cái cột
+0:02:06 - 0:02:12, Use Vehicle này nó sẽ thực hiện cái thao
+0:02:08 - 0:02:15, tác đó là tìm max của các cái giá trị
+0:02:12 - 0:02:20, trong một hàng này ví dụ như max của 0 0
+0:02:15 - 0:02:22, và 1 nó sẽ ra là 1 rồi max của 0 0 thì
+0:02:20 - 0:02:26, nó ra là 0 thì ở đây chúng ta sẽ dùng
+0:02:22 - 0:02:29, cái hàm gọi là hàm Max rồi max của 011
+0:02:26 - 0:02:32, chính là là 1 như vậy thì đây sẽ là tổng
+0:02:29 - 0:02:35, hợp đặc trưng theo nhiều
+0:02:32 - 0:02:38, cột và phương pháp tiếp theo đó chính là
+0:02:35 - 0:02:41, phương pháp phân rã đặc trưng Tức là
+0:02:38 - 0:02:43, trong nhiều tình huống thì cái dữ liệu
+0:02:41 - 0:02:46, của mình dữ liệu mà cột của mình nó đã
+0:02:43 - 0:02:49, chứa rất nhiều thông tin trong đó
+0:02:46 - 0:02:52, lấy ví dụ như thông tin mã số sinh viên
+0:02:52 - 0:02:57, hồi nãy thì mình nói là mã số sinh viên
+0:02:56 - 0:03:00, đôi khi là nó không có cái Ờ mang cái
+0:02:57 - 0:03:03, trong nhiều tình huống thì cái mã số
+0:03:00 - 0:03:06, sinh viên của mình nó có quy định một số
+0:03:03 - 0:03:10, cái tính chất ví dụ
+0:03:06 - 0:03:13, 06 đó là hệ cái năm học Ví dụ như cái
+0:03:10 - 0:03:16, năm tuyển đầu vào của mình là khóa 2006
+0:03:13 - 0:03:20, một tương ứng người đó là học theo hệ
+0:03:16 - 0:03:22, chính quy con số 2 ở đây nó tương ứng là
+0:03:20 - 0:03:24, cho cái khoa Ví dụ như số 2 người ta quy
+0:03:22 - 0:03:27, định đó là Khoa Khoa Học Máy Tính và số
+0:03:24 - 0:03:29, 450 cuối cùng đó là cái số thứ tự thì
+0:03:27 - 0:03:32, cái này có thể là một cái đặc trưng
+0:03:29 - 0:03:35, không quan trọng và như vậy thì chúng ta
+0:03:32 - 0:03:37, có thể dựa trên một cái Đặc trưng nào đó
+0:03:35 - 0:03:39, chúng ta sẽ phân rã nó ra thành nhiều
+0:03:37 - 0:03:41, cái đặc trưng thành phần ở dưới đây thì
+0:03:39 - 0:03:43, chúng ta sẽ có một cái ví dụ khác đó là
+0:03:41 - 0:03:46, giả sử như chúng ta có một cái cột đặc
+0:03:43 - 0:03:50, trưng là dạng
+0:03:46 - 0:03:52, chuỗi và nó có cái tên của cái hệ điều
+0:03:50 - 0:03:56, hành của mình thì ở đây chúng ta có thể
+0:03:52 - 0:03:59, tách cái cột đặc trưng này ra làm hai
+0:03:56 - 0:04:02, cái cột đặc trưng đó là cột operating
+0:03:59 - 0:04:06, system là macOS đó là một cái đặc trưng
+0:04:02 - 0:04:11, Rồi phiên bản là một cái đặc trưng hoặc
+0:04:06 - 0:04:13, là cái cột về policy corporate L3 thì
+0:04:11 - 0:04:16, cái cái cái loại dữ liệu xin lỗi cái
+0:04:13 - 0:04:19, loại policy của mình nó sẽ là corporate
+0:04:16 - 0:04:22, và cái mức độ cái Level của mình sẽ là
+0:04:19 - 0:04:25, level 3 đó thì từ một cái dạng chuỗi
+0:04:22 - 0:04:27, chúng ta có thể dùng cái kỹ thuật tách
+0:04:25 - 0:04:31, tách chuỗi cắt chuỗi để tạo ra những
+0:04:27 - 0:04:34, cái đặc trưng mới
+0:04:31 - 0:04:37, và cách tạo đặc trưng tiếp theo đó chính
+0:04:34 - 0:04:38, là tổng hợp đặc trưng thì ở đây nó sẽ
+0:04:37 - 0:04:40, ngược so với lại cái phương pháp trước
+0:04:38 - 0:04:42, đó phương pháp trước đó là từ một cột
+0:04:40 - 0:04:44, chúng ta sẽ tách ra làm nhiều cái đặc
+0:04:42 - 0:04:48, trưng con còn ở đây là chúng ta có nhiều
+0:04:44 - 0:04:51, cái đặc trưng con như là Make và Type
+0:04:48 - 0:04:54, chúng ta có thể tạo ra thành một cái đặc
+0:04:51 - 0:04:57, trưng tổng hợp đó chính là nối hai cái
+0:04:54 - 0:04:59, chuỗi này lại ví dụ như ở đây là Toyota
+0:04:57 - 0:05:01, và Sedan thì ở đây chúng ta sẽ có thêm
+0:04:59 - 0:05:06, một cái đặc trưng đó là vừa có kết hợp
+0:05:01 - 0:05:10, Make và Type đó là Toyota gạch
+0:05:06 - 0:05:12, Sedan rồi tổng hợp theo nhóm thì ở đây
+0:05:10 - 0:05:15, chúng ta có thể thực hiện các cái thao
+0:05:12 - 0:05:18, tác là group theo nhóm Sau đó chúng ta
+0:05:15 - 0:05:20, sẽ tính các cái giá trị mang tính chất
+0:05:18 - 0:05:23, thống kê trên các cái nhóm dữ liệu đó ví
+0:05:20 - 0:05:27, dụ đối với cái cột dữ liệu là Đà Nẵng
+0:05:23 - 0:05:30, chúng ta sẽ gom nhóm tất cả những cái Ờ
+0:05:27 - 0:05:33, dòng dữ liệu nào mà có cái cột
+0:05:30 - 0:05:35, là Đà Nẵng có cái cái cái trường thông
+0:05:33 - 0:05:37, tin CT là Đà Nẵng thì chúng ta sẽ thấy
+0:05:35 - 0:05:39, là có hai giá trị có hai cái hàng dữ
+0:05:37 - 0:05:42, liệu ở đây và chúng ta sẽ gom nhóm lại
+0:05:39 - 0:05:45, thì sẽ có hai cái giá trị lương là 10
+0:05:42 - 0:05:48, triệu và 14 triệu ở đây Sau đó chúng ta
+0:05:45 - 0:05:51, thực hiện cái thao tác là tính trung
+0:05:48 - 0:05:56, bình cộng thì 10 + 14 chia 2 thì chúng
+0:05:51 - 0:05:58, ta sẽ ra là 12 như vậy thì ứng với cái
+0:05:56 - 0:06:01, cột Đà Nẵng chúng ta sẽ có thêm một cái
+0:05:58 - 0:06:04, cột nữa đó là Lương Trung bình đó là 12
+0:06:01 - 0:06:06, thì hi vọng rằng là với cái cột lương
+0:06:04 - 0:06:10, trung bình này thì nó sẽ giúp cho chúng
+0:06:06 - 0:06:12, ta biết là lương của cái record của cái
+0:06:10 - 0:06:14, dòng dữ liệu này là đang thấp hơn hay là
+0:06:12 - 0:06:16, nhỏ hơn so với cái giá trị trung bình
+0:06:14 - 0:06:20, của tất cả những cái dòng dữ liệu thuộc
+0:06:16 - 0:06:24, về Đà Nẵng tương tự như vậy thì cho cái
+0:06:20 - 0:06:26, trường thông tin CT đối với các cái giá
+0:06:24 - 0:06:29, trị là Hồ Chí Minh và Hà Nội chúng ta
+0:06:26 - 0:06:31, cũng sẽ thêm vô Ờ thêm một cái đặc trưng
+0:06:29 - 0:06:33, mới đó là lương trung bình của cái thành
+0:06:31 - 0:06:36, phố
+0:06:33 - 0:06:38, đó và tiếp theo đó là chúng ta có thể
+0:06:36 - 0:06:42, thêm cái đặc trưng dạng
+0:06:38 - 0:06:47, cụm thêm cái đặc trưng dạng cụm lấy ví
+0:06:42 - 0:06:50, dụ như Ờ ở đây chúng ta sẽ có là sử dụng
+0:06:47 - 0:06:53, cái thuật toán gom cụm đó thì các cái
+0:06:50 - 0:06:56, năm mà xây dựng á là từ bên trái sang
+0:06:53 - 0:07:00, bên phải là từ 1880 cho đến những năm
+0:06:56 - 0:07:02, 2000 giả sử như chúng ta có ba cụm
+0:07:00 - 0:07:04, Chúng ta có ba cụm thì chúng ta sẽ chia
+0:07:02 - 0:07:06, ra làm ba phần bằng một cái thuật toán
+0:07:04 - 0:07:09, gom cụm nào đó và những cái giá trị
+0:07:06 - 0:07:14, nào từ đầu cho đến cái giá trị
+0:07:09 - 0:07:17, 1990 thì nó được xếp vào một cụm từ
+0:07:14 - 0:07:20, 1940 cho đến 1980 thì nó sẽ xếp vào một
+0:07:17 - 0:07:21, cái cụm được biểu hiện bởi màu xanh lá
+0:07:20 - 0:07:24, và từ
+0:07:21 - 0:07:28, 1980 trở về sau thì nó được đánh dấu
+0:07:24 - 0:07:31, bằng màu xanh dương và giả sử như ba cái
+0:07:28 - 0:07:34, giá trị này chúng ta được tạo cho nó là
+0:07:31 - 0:07:37, cái cluster ID Tức là cái định danh cho
+0:07:34 - 0:07:42, cái cho các cái cụm đó là các con số là
+0:07:37 - 0:07:44, 0 1 2 thì tất cả những cái phần tử nào
+0:07:42 - 0:07:46, những cái giá trị nào mà có n trong
+0:07:44 - 0:07:48, khoảng này thì chúng ta thay thế nó bằng
+0:07:46 - 0:07:55, giá trị là là
+0:07:48 - 0:07:57, 0 còn ở đây sẽ là 2 và ở đây sẽ là là 1
+0:07:55 - 0:08:00, thì chúng ta sẽ thay thế các cái giá trị
+0:07:57 - 0:08:03, tương ứng đó tương tự như vậy cho cái
+0:08:00 - 0:08:05, trường hợp mà đặc trưng của mình nó bao
+0:08:03 - 0:08:09, gồm hai cột dữ liệu là longitude và
+0:08:05 - 0:08:11, latitude Tức là cái tọa độ trong cái bản
+0:08:09 - 0:08:14, đồ đó thì cái thuật toán gom cụm của
+0:08:11 - 0:08:17, mình có thể thực hiện trên những cái dữ
+0:08:14 - 0:08:18, liệu mà scalar hoặc là dữ liệu là dạng
+0:08:17 - 0:08:22, một
+0:08:18 - 0:08:25, feature hoặc là trên một tổ hợp của
+0:08:22 - 0:08:28, nhiều hơn ờ lớn hơn hoặc bằng hai
+0:08:25 - 0:08:30, feature thì đều có thể thực hiện được
+0:08:28 - 0:08:32, cái thuật toán gom cụm và khi gom cụm
+0:08:30 - 0:08:35, xong thì chúng ta sẽ có cái định danh
+0:08:32 - 0:08:36, cho cái cụm và chúng ta sẽ tạo ra thêm
+0:08:35 - 0:08:39, một cái cột
+0:08:36 - 0:08:42, mới có cái giá trị tương ứng là cái định
+0:08:39 - 0:08:45, danh của cái cụm đó thì chúng ta sẽ xét
+0:08:42 - 0:08:47, đến cái ví dụ cụ thể như sau chúng ta có
+0:08:45 - 0:08:51, hai cái cột là CT và
+0:08:47 - 0:08:54, salary và chúng ta sẽ tạo ra thêm hai
+0:08:51 - 0:08:55, cái cột mới, xin lỗi, chúng ta sẽ tạo
+0:08:54 - 0:08:58, ra thêm một cái cột mới đó là cái
+0:08:55 - 0:09:02, cluster cái cluster này tương ứng nó sẽ
+0:08:58 - 0:09:05, thể hiện là cái mức lương của mình nó
+0:09:02 - 0:09:10, nằm trong cái phân cụm nào thì chúng ta
+0:09:05 - 0:09:13, sẽ thấy là cái mức lương là 35 triệu và 30
+0:09:10 - 0:09:15, triệu thì nó nằm trong cùng một cái cụm
+0:09:13 - 0:09:17, có định danh là 2 nếu như chúng ta đối
+0:09:15 - 0:09:21, chiến vào các cái giá trị trên cái cột
+0:09:17 - 0:09:24, lương này thì chúng ta thấy 35 và 30 nó
+0:09:21 - 0:09:25, nằm ở cái ngưỡng cái giá trị lương là mức
+0:09:24 - 0:09:28, độ
+0:09:25 - 0:09:31, cao ví dụ từ 30 trở về
+0:09:28 - 0:09:37, sau thì đây là ngưỡng lương
+0:09:31 - 0:09:39, cao và à ở các cái giá trị số 0 đó hoặc
+0:09:37 - 0:09:45, là giá trị số 1 đi chúng ta thấy là 10
+0:09:39 - 0:09:49, nè 8 nè 12 nè và 5 Tức là nó đang nằm ở
+0:09:45 - 0:09:53, nửa dưới à những cái mức lương mà dưới 12
+0:09:49 - 0:09:56, 10 nè 8 nè 5 thì đây sẽ là những cái mức
+0:09:53 - 0:09:57, lương ở nửa dưới thì đây là mức lương
+0:09:56 - 0:10:01, dạng
+0:10:01 - 0:10:04, thấp và các cái giá trị như là 0 là 20
+0:10:04 - 0:10:13, 15 15
+0:10:13 - 0:10:23, 14 14 nè 15 20 thì đây là cái nhóm trung
+0:10:18 - 0:10:27, bình và nó được ký hiệu đó là 1 cao thì
+0:10:23 - 0:10:30, nó sẽ ký hiệu là 0 mức thấp
+0:10:27 - 0:10:33, đó là 1 và lưu ý đó là cái cluster ID
+0:10:30 - 0:10:35, này thì không có thể hiện cái tính ờ cao
+0:10:33 - 0:10:37, thấp khi chúng ta chọn Ví dụ như mức
+0:10:35 - 0:10:39, thấp chúng ta có thể chọn một cái con số
+0:10:37 - 0:10:42, bất kỳ để đại diện cho mức thấp à chứ
+0:10:39 - 0:10:45, không nhất thiết phải là cao phải lớn
+0:10:42 - 0:10:47, hơn thấp ở đây cái từ khóa Cao và Thấp
+0:10:45 - 0:10:50, trung bình đó là do chúng ta quy ước
+0:10:47 - 0:10:53, thôi thì những cái giá trị của mức lương
+0:10:50 - 0:10:57, mà nằm trong cùng một cụm thì sẽ nhận
+0:10:53 - 0:11:01, một cái À cái cluster ID tương ứng thì
+0:10:57 - 0:11:01, đây là đặc trưng theo phân cụm
+0:11:03 - 0:11:08, và tiếp theo thì chúng ta có thể sử dụng
+0:11:06 - 0:11:13, những cái công cụ phân tích thành phần
+0:11:08 - 0:11:13, chính PCA, PCA là viết tắt của chữ
+0:11:14 - 0:11:17, principal
+0:11:18 - 0:11:21, component
+0:11:22 - 0:11:28, analysis thì đây là một cái phương pháp
+0:11:24 - 0:11:30, phân tích các cái thành phần chính thì
+0:11:28 - 0:11:33, các cái thành phần chính của dữ liệu nó
+0:11:30 - 0:11:35, sẽ mang nhiều thông tin hơn nó sẽ mang
+0:11:33 - 0:11:38, nhiều thông tin hơn à so với lại các cái
+0:11:35 - 0:11:42, đặc trưng ban đầu đó thì với phương pháp
+0:11:38 - 0:11:45, PCA nó sẽ giúp cho chúng ta loại bỏ loại
+0:11:42 - 0:11:47, bỏ những cái thành phần Hoặc là những
+0:11:45 - 0:11:51, cái đặc
+0:11:47 - 0:11:51, trưng mà không quan
+0:11:52 - 0:11:58, trọng hoặc là không có nhiều thông tin
+0:12:00 - 0:12:05, đó thì ở đây chúng ta sẽ có một cái ví
+0:12:02 - 0:12:07, dụ là bốn cái đặc trưng
+0:12:05 - 0:12:10, Ờ bốn cái đặc trưng của tập dữ liệu là
+0:12:07 - 0:12:13, Iris dataset ha Thì sau khi chúng ta áp
+0:12:10 - 0:12:15, dụng cái thuật toán PCA là từ bốn chiều
+0:12:13 - 0:12:17, chúng ta sẽ giảm xuống là còn hai chiều
+0:12:15 - 0:12:20, tức là chúng ta Giả định rằng là chúng
+0:12:17 - 0:12:24, ta chỉ cần lấy thông tin của hai cái đặc
+0:12:20 - 0:12:26, trưng mà tốt nhất hai đặc trưng mà có
+0:12:24 - 0:12:28, nhiều thông tin nhất để chúng ta bổ trợ
+0:12:26 - 0:12:32, thêm đó thì nó sẽ có hai cái thành phần
+0:12:28 - 0:12:35, là PC1 và PCA2, PC3 và PC4 chúng ta
+0:12:32 - 0:12:38, sẽ loại bỏ đi à và lưu ý chính là thuật toán
+0:12:35 - 0:12:41, PCA ở đây sẽ được thực hiện trên các cái
+0:12:38 - 0:12:44, đặc trưng đã được chuẩn
+0:12:41 - 0:12:48, hóa và như vậy thì cái dữ liệu của mình
+0:12:44 - 0:12:51, nó đã được bổ sung từ 4 lên là thành 6
+0:12:48 - 0:12:51, đặc trưng

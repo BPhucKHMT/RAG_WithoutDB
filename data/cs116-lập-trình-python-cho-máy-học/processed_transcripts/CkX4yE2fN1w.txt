@@ -1,0 +1,115 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:19, tiếp theo thì chúng ta sẽ cùng tìm hiểu
+0:00:17 - 0:00:22, về hàm. Thì trong quá trình lập trình
+0:00:19 - 0:00:23, chúng ta sẽ có cái nhu cầu đó là tái sử
+0:00:22 - 0:00:26, dụng
+0:00:23 - 0:00:26, mã nguồn,
+0:00:27 - 0:00:31, tức là sẽ có những cái đoạn mã nguồn mà
+0:00:30 - 0:00:34, chúng ta sẽ dùng đi dùng lại nhiều lần.
+0:00:31 - 0:00:36, Trong quá trình mà làm việc của mình thì
+0:00:34 - 0:00:39, mình sẽ đóng gói nó lại thành một cái
+0:00:36 - 0:00:40, cái hàm. Và để thực hiện được cái việc
+0:00:39 - 0:00:43, đóng gói này thì chúng ta sẽ sử dụng cái
+0:00:40 - 0:00:47, cú pháp sau: `def` chính là cái keyword,
+0:00:43 - 0:00:47, và function name này sẽ do chúng ta đặt.
+0:00:51 - 0:00:56, Và đây sẽ là các cái tham số số 1, tham
+0:00:54 - 0:00:58, số số 2 để đưa vào để có thể thực hiện
+0:00:56 - 0:01:01, được với cái hàm này. Và đây sẽ là những
+0:00:58 - 0:01:04, cái câu lệnh logic. Đây là những câu
+0:01:01 - 0:01:07, lệnh. Và đối với hàm mà có trả kết quả về thì
+0:01:04 - 0:01:11, chúng ta sẽ dùng cái từ khóa là `return`.
+0:01:07 - 0:01:13, Rồi thì ưu điểm đó là sẽ giúp cho tái sử
+0:01:11 - 0:01:14, dụng được mã nguồn và dễ dàng quản lý
+0:01:13 - 0:01:18, được cái mã nguồn. Thì sau đây chúng ta
+0:01:14 - 0:01:22, sẽ làm một cái ví dụ đó là cái hàm đếm
+0:01:18 - 0:01:25, số lượng điểm trung bình của lớp học.
+0:01:22 - 0:01:28, Trong đó thì có bao nhiêu điểm là lớn
+0:01:25 - 0:01:30, hơn 5 và có bao nhiêu điểm là nhỏ hơn 5. Lưu
+0:01:28 - 0:01:31, ý lớn hơn ở đây chúng ta hiểu là lớn hơn
+0:01:30 - 0:01:34, hoặc bằng.
+0:01:31 - 0:01:36, Thì chúng ta sẽ qua cái phần lập trình
+0:01:34 - 0:01:39, tương ứng ở đây ha. Đầu tiên đó là khởi
+0:01:36 - 0:01:42, tạo cái điểm trung bình
+0:01:39 - 0:01:45, GPA là điểm trung bình. Cụ thể sẽ là một số
+0:01:42 - 0:01:50, nhiều. Chúng ta sẽ có một list các cái
+0:01:45 - 0:01:50, điểm trung bình ví dụ như là 4.5, 7.5,
+0:01:50 - 0:01:54, 9.0, 5.0,
+0:01:55 - 0:02:02, nhiêu vậy. Rồi 8.0. Và bây giờ chúng ta sẽ
+0:02:00 - 0:02:05, viết một cái hàm
+0:02:02 - 0:02:08, để kiểm tra xem.
+0:02:05 - 0:02:10, Và chúng ta sẽ truyền vào cái GPA. Chú ý
+0:02:08 - 0:02:11, là chúng ta không nhất thiết phải đặt
+0:02:10 - 0:02:14, cái tên biến trùng với cái tên biến ở
+0:02:11 - 0:02:16, đây. Chúng ta có thể để tên là
+0:02:14 - 0:02:19, list
+0:02:16 - 0:02:19, GPA.
+0:02:21 - 0:02:26, Ở đây nếu như chúng ta thực hiện, đương
+0:02:24 - 0:02:30, nhiên chúng ta hoàn toàn có thể dùng cái
+0:02:26 - 0:02:33, vòng lặp `for` để đếm một cách gọi là
+0:02:30 - 0:02:34, theo cái phong cách sử dụng ngôn ngữ
+0:02:33 - 0:02:38, lập trình giống như C++. Chúng ta sẽ dùng
+0:02:34 - 0:02:38, `for`, đó là `for`
+0:02:39 - 0:02:42, `gpa`
+0:02:43 - 0:02:48, `in a`
+0:02:46 - 0:02:51, `list`
+0:02:48 - 0:02:53, `GPA`. Đây là cái phong cách của C
+0:02:51 - 0:02:54, nha. Và đương nhiên khi lập trình Python
+0:02:53 - 0:02:57, thì chúng ta hoàn toàn không có khuyến
+0:02:54 - 0:02:59, khích sử dụng cái vòng lặp `for`, nhưng mà để
+0:02:57 - 0:03:01, đơn giản chúng ta chỉ đang minh họa cho
+0:02:59 - 0:03:02, cái việc lập trình một cái hàm do đó
+0:03:01 - 0:03:05, mình cũng muốn là làm phức tạp cái này
+0:03:02 - 0:03:08, một chút đó là viết trong vòng lặp `for`. Thì
+0:03:05 - 0:03:11, `for gpa in list_GPA:`
+0:03:08 - 0:03:14, `if gpa`
+0:03:11 - 0:03:17, lớn hơn hoặc bằng 5 thì mình sẽ có
+0:03:14 - 0:03:17, một cái biến đếm là
+0:03:19 - 0:03:24, [âm nhạc]
+0:03:22 - 0:03:27, bằng 0.
+0:03:24 - 0:03:29, Và ở đây thì chúng ta sẽ tăng cái
+0:03:27 - 0:03:31, biến đếm pass
+00:03:29 - 0:03:34, này
+0:03:31 - 0:03:36, lên 1 đơn vị.
+0:03:34 - 0:03:39, Và ngược lại thì sao? Thì chúng ta sẽ tăng biến đếm fail
+0:03:36 - 0:03:39, lên
+0:03:54 - 0:03:59, một đơn
+0:03:57 - 0:04:01, vị.
+0:03:59 - 0:04:04, Và kết thúc cái vòng `for` này thì chúng
+0:04:01 - 0:04:06, ta sẽ `return` đó là
+0:04:04 - 0:04:09, `count_pass`, `count_fail`.
+0:04:06 - 0:04:12, Các bạn lưu ý đó là cái hàm này mình
+0:04:09 - 0:04:13, đang cố tình viết nó phức tạp và nó sẽ
+0:04:12 - 0:04:16, không thực sự tối ưu. Các bạn hoàn toàn
+0:04:13 - 0:04:18, có thể viết cái hàm này mà không có sử
+0:04:16 - 0:04:21, dụng vòng `for` được.
+0:04:18 - 0:04:23, Thì đây là minh họa cho cái việc là dùng
+0:04:21 - 0:04:28, một cái vòng lặp `for`.
+0:04:23 - 0:04:28, Chúng ta sẽ đóng gói cái dữ liệu `count`.
+0:04:29 - 0:04:33, Thì bây giờ chúng ta sẽ tiến hành gọi
+0:04:32 - 0:04:36, cái hàm
+0:04:33 - 0:04:37, `count` này ha. Chúng ta sẽ tiến hành gọi cái
+0:04:36 - 0:04:40, hàm `count`
+0:04:37 - 0:04:42, và truyền vào cái tham số. Trong trường
+0:04:40 - 0:04:45, hợp này thì chúng ta sẽ sử dụng một tham
+0:04:42 - 0:04:45, số thôi đó là
+0:04:46 - 0:04:53, `GPAs`. Và kết quả sẽ trả về ví dụ như là
+0:04:51 - 0:04:58, `pass`
+0:04:53 - 0:04:58, và `fail_count`.
+0:04:58 - 0:05:04, [âm nhạc]
+0:05:00 - 0:05:04, đó thì mình sẽ in ra
+0:05:04 - 0:05:10, số
+0:05:07 - 0:05:12, lượng sinh viên rớt
+0:05:10 - 0:05:17, Nguyên cái này là mình không mong muốn
+0:05:12 - 0:05:17, ha. Rồi, `fail_count`.
+0:05:24 - 0:05:28, Rồi số lượng đậu.
+0:05:30 - 0:05:33, [âm nhạc]
+0:05:33 - 0:05:38, Đó thì với cái ví dụ ở trên chúng ta
+0:05:35 - 0:05:42, thấy là số sinh viên rớt sẽ là 1, 2 và số
+0:05:38 - 0:05:44, sinh viên đậu sẽ là 1, 2, 3, 4. Rồi thì đây
+0:05:42 - 0:05:47, là một cái minh họa cho cái việc là
+0:05:44 - 0:05:49, chúng ta viết một cái hàm, viết một cái hàm
+0:05:47 - 0:05:53, `count` và có truyền tham số cũng
+0:05:49 - 0:05:54, như là có cái trả về kết quả. Và hàm này
+0:05:53 - 0:05:55, nhắc lại một lần nữa hàm này chúng ta
+0:05:54 - 0:05:58, hoàn toàn có thể viết mà không sử dụng
+0:05:55 - 0:05:58, một vòng lặp `for`.

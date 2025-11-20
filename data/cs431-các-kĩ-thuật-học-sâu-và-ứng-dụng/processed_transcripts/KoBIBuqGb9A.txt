@@ -7,8 +7,8 @@
 0:00:37 - 0:00:39, học các bộ lọc trích xuất đặc trưng
 0:00:39 - 0:00:41, thông qua các phép biến đổi convolution
 0:00:44 - 0:00:49, Thì những cái cải tiến chính của AlexNet
-0:00:49 - 0:00:52, đó chính là thay Sigmoid
-0:00:52 - 0:00:54, hàm activation Sigmoid bằng ReLU
+0:00:49 - 0:00:52, đó chính là thay SIGMOID
+0:00:52 - 0:00:54, hàm activation SIGMOID bằng ReLU
 0:00:54 - 0:01:01, thì cái việc này nó sẽ giúp cho chúng ta tránh được cái hiện tượng, giảm được cái hiện tượng là vanishing.
 0:01:03 - 0:01:04, Gradient
 0:01:08 - 0:01:10, Vanishing Gradient là gì?
@@ -35,17 +35,17 @@
 0:02:41 - 0:02:43, thì đó chính là hiện tượng vanishing gradient
 0:02:43 - 0:02:45, nó sẽ làm cho quá trình huấn luyện chậm
 0:02:53 - 0:02:55, Rồi, thì tại sao
-0:02:55 - 0:02:57, Sigmoid nó lại khiến cho
+0:02:55 - 0:02:57, sigmoid nó lại khiến cho
 0:02:57 - 0:02:59, hiện tượng vanishing gradient
 0:02:59 - 0:03:01, nó diễn ra
 0:03:01 - 0:03:03, gọi là phổ biến
 0:03:03 - 0:03:05, còn ReLU thì nó sẽ giúp cho mình giảm
 0:03:05 - 0:03:07, hiện tượng này, đó là
-0:03:07 - 0:03:09, thì chúng ta quan sát hàm Sigmoid
-0:03:13 - 0:03:16, Rồi, với hàm Sigmoid này thì chúng ta thấy nó rất dễ bị bão hòa
+0:03:07 - 0:03:09, thì chúng ta quan sát hàm sigmoid
+0:03:13 - 0:03:16, Rồi, với hàm sigmoid này thì chúng ta thấy nó rất dễ bị bão hòa
 0:03:16 - 0:03:17, Bão hòa theo nghĩa là gì?
 0:03:17 - 0:03:20, Khi giá trị đầu vào x của mình
-0:03:20 - 0:03:22, Sigmoid
+0:03:20 - 0:03:22, sigmoid
 0:03:22 - 0:03:24, Khi giá trị đầu vào x của mình
 0:03:24 - 0:03:27, nó chỉ mới đạt được những giá trị rất là bé thôi
 0:03:27 - 0:03:29, thì nó đã đạt được trạng thái đó là
@@ -122,14 +122,14 @@
 0:09:34 - 0:09:44, Điểm đặc trưng này được tạo ra ở vùng có kích thước là 3x3 của feature map này
 0:09:44 - 0:09:51, Vùng 3x3 được tạo ra bởi vùng 5x5
 0:09:51 - 0:10:07, Vùng 3x3 này thì tạo ra bởi vùng này, cái điểm này thì tạo ra bởi vùng này, cái điểm này thì tạo ra bởi vùng này
-0:10:07 - 0:10:20, Vì vậy, feature map của phép biến đổi cuối cùng sẽ được tạo bởi các điểm trong feature map của lớp trung gian.
+0:10:07 - 0:10:20, Vì vậy, Feature Map của phép biến đổi cuối cùng sẽ được tạo bởi các điểm trong Feature Map của lớp trung gian.
 0:10:20 - 0:10:24, Và vùng kích thước sẽ là 3x3.
 0:10:24 - 0:10:29, Và vùng 3x3 sẽ được tạo bởi vùng 5x5 ở trên ảnh đầu vào.
 0:10:29 - 0:10:32, Vì vậy, xét về bản chất và tổng hợp thông tin.
 0:10:32 - 0:10:41, Nếu sử dụng phép biến đổi 5x5, thì một feature map output sẽ bị ảnh hưởng bởi 1 vùng 5x5 input đầu vào
 0:10:41 - 0:10:45, và dùng 2 phép convolution liên tiếp nhau thì nó cũng tương đương như vậy
 0:10:45 - 0:10:49, tức là 1 điểm ở đây sẽ được tổng hợp thông tin bởi 1 vùng 5x5
-0:10:49 - 0:10:53, Vùng ảnh hưởng này người ta gọi là receptive field
+0:10:49 - 0:10:53, Vùng ảnh hưởng này người ta gọi là Receptive Field
 0:10:53 - 0:11:07, Cách làm của VGG có cái gì hơn?
 0:11:07 - 0:11:19, Để tìm số lượng tham số, nếu dùng kernel 5x5 thì tổng số lượng tham số của mình là 25 tham số
 0:11:19 - 0:11:24, sau này mình sẽ viết tắt bằng chữ P đi
@@ -153,7 +153,7 @@
 0:12:39 - 0:12:45, Đó là thay các cái filter lớn bằng những cái filter 3x3 liên tiếp
 0:12:45 - 0:12:51, Và trên đây thì chúng ta sẽ thấy là sơ đồ của một kiến trúc mạng là VGG16.
 0:12:51 - 0:12:56, Trong đó là VGG16 thì 16 thể hiện là các phép biến đổi bao gồm
-0:12:56 - 0:12:58, convolution và Fully Connected.
+0:12:56 - 0:12:58, Convolution và Fully Connected.
 0:12:58 - 0:13:01, Tuy nhiên đây là 1, 2, 3, 4.
 0:13:01 - 0:13:06, Ở cái bước pooling này thì nó không có tạo ra đặc trưng mà nó chỉ là giảm chiều thôi nên nó không được tính.
 0:13:06 - 0:13:14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16.

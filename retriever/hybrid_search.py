@@ -16,10 +16,12 @@ thực thi ensemble retriever:
 class HybridSearch:
     def __init__(self,
                  vector_retriever,
-                 keyword_retriever):
+                 keyword_retriever,
+                 k= 40):
         self.retriever = EnsembleRetriever(
             retrievers=[vector_retriever, keyword_retriever],
-            weights=[0.5, 0.5]  # điều chỉnh trọng số theo nhu cầu
+            weights=[0.5, 0.5],  # điều chỉnh trọng số theo nhu cầu,
+            k=k
         )
 
     def get_retriever(self):

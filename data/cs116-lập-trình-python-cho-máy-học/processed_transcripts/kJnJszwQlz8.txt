@@ -1,0 +1,94 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:18, Hôm nay chúng ta sẽ cùng đến với cái nội
+0:00:15 - 0:00:21, dung tiếp theo đó là học có giám sát và
+0:00:18 - 0:00:23, tên tiếng Anh đó chính là supervised
+0:00:21 - 0:00:25, learning và mô hình đầu tiên mà chúng ta
+0:00:23 - 0:00:27, sẽ tiếp cận trong ngày hôm nay đó là mô
+0:00:25 - 0:00:30, hình hồi quy trong những bài tiếp theo
+0:00:27 - 0:00:34, thì chúng ta sẽ tiếp cận đến mô hình
+0:00:30 - 0:00:34, phân lớp. Về vị trí của cái bài học ngày hôm
+0:00:34 - 0:00:38, nay
+0:00:34 - 0:00:40, thì học có giám sát nó sẽ nằm ở trong
+0:00:38 - 0:00:43, cái bài là trong cái Machine Learning
+0:00:40 - 0:00:45, pipeline đó là ở bước Model Training hay
+0:00:43 - 0:00:49, còn gọi đó là xây dựng và huấn luyện mô
+0:00:45 - 0:00:51, hình. Thì học có giám sát là gì? Tên
+0:00:49 - 0:00:54, tiếng Anh của học có giám sát chính là
+0:00:51 - 0:00:57, supervised learning, đó là một nhánh của lĩnh vực
+0:00:54 - 0:01:01, máy học và mục tiêu của nó đó là nhằm dự
+0:01:01 - 0:01:03, đoán cái giá trị đầu ra
+0:01:01 - 0:01:05, từ cái đặc trưng đầu vào, từ một cái đặc
+0:01:03 - 0:01:08, trưng đầu vào và cái đặc trưng này là một
+0:01:05 - 0:01:10, cái đặc trưng mới. Thế thì để có thể đưa
+0:01:08 - 0:01:13, ra được cái dự đoán này nó sẽ phải dựa
+0:01:10 - 0:01:15, trên các cái dữ liệu huấn luyện trước đó.
+0:01:13 - 0:01:17, Nó phải dựa trên các cái dữ liệu huấn
+0:01:15 - 0:01:19, luyện trước đó thì cái dữ liệu huấn
+0:01:17 - 0:01:22, luyện của mình á nó sẽ bao gồm các cái
+0:01:19 - 0:01:25, cặp đặc trưng đầu vào và đặc trưng đầu
+0:01:22 - 0:01:28, ra mình mong muốn, mình mong muốn thì ký
+0:01:25 - 0:01:31, hiệu là x và y, trong đó x chính là cái
+0:01:28 - 0:01:33, đặc trưng đầu vào và y chính là cái giá
+0:01:31 - 0:01:36, trị đầu ra mong muốn của mô hình của
+0:01:33 - 0:01:39, mình. Và trong cái biểu đồ ở dưới đây thì
+0:01:36 - 0:01:41, chúng ta thấy dữ liệu X của mình nó sẽ
+0:01:39 - 0:01:45, là đầu vào cho cái mô hình máy học được
+0:01:41 - 0:01:48, ký hiệu bởi một cái hàm f(x; θ), trong đó f
+0:01:45 - 0:01:49, là một cái dạng hàm tuyến tính nếu như
+0:01:48 - 0:01:52, đây là một cái dữ liệu có mối quan hệ
+0:01:49 - 0:01:54, tuyến tính, và f sẽ là một cái hàm phi
+0:01:52 - 0:01:57, tuyến nếu như đây là một cái mối quan hệ
+0:01:54 - 0:02:00, phi tuyến. Và trong cái hàm này thì nó sẽ
+0:01:57 - 0:02:02, có cái tham số của mô hình và mục tiêu
+0:02:00 - 0:02:03, của cái huấn luyện của một cái mô hình
+0:02:02 - 0:02:07, máy học đó chính là chúng ta đi tìm cái
+0:02:03 - 0:02:09, tham số theta này. Và với cái hàm mô hình
+0:02:07 - 0:02:12, máy học f(x; θ) chúng ta sẽ ra được cái giá
+0:02:09 - 0:02:16, trị dự đoán y và ở đây chúng ta sẽ ký
+0:02:12 - 0:02:18, hiệu là y mũ, tức là giá trị chúng ta dự
+0:02:16 - 0:02:20, đoán thôi. Và chúng ta luôn mong muốn cái
+0:02:18 - 0:02:23, giá trị này xấp xỉ với lại cái giá trị
+0:02:20 - 0:02:26, mong muốn y. Thì cái cặp dữ liệu x và y ở
+0:02:23 - 0:02:28, đây chính là cái cặp dữ liệu à huấn
+0:02:26 - 0:02:31, luyện của mình, đó là cái dữ liệu huấn
+0:02:28 - 0:02:34, luyện của mình. Và chúng ta sẽ có hai cái
+0:02:31 - 0:02:36, giá trị y mũ và y này xấp xỉ với
+0:02:34 - 0:02:39, nhau khi chúng ta có được một cái hàm
+0:02:36 - 0:02:41, hàm mất mát hay còn gọi là hàm loss. Và
+0:02:39 - 0:02:44, hàm loss này á thì cái biến số của
+0:02:41 - 0:02:46, mình nó chính là theta, và x và y của mình nó
+0:02:44 - 0:02:49, sẽ đóng vai trò như là dữ liệu. Đây chính
+0:02:46 - 0:02:49, là cái dữ liệu huấn
+0:02:50 - 0:02:57, luyện, đây chính là dữ liệu huấn
+0:02:53 - 0:03:00, luyện. Và mình sẽ phải tìm tham số theta
+0:02:57 - 0:03:04, này sao cho cái hàm này đạt được cái
+0:03:00 - 0:03:06, giá trị là nhỏ nhất. Và
+0:03:04 - 0:03:10, chúng ta sẽ có hai cái loại bài toán
+0:03:06 - 0:03:13, chính, đó chính là bài toán hồi quy và
+0:03:10 - 0:03:15, bài toán phân lớp. Bài toán hồi quy thì
+0:03:13 - 0:03:17, chúng ta sẽ dựa trên cái đặc điểm của
+0:03:15 - 0:03:20, cái giá trị đầu ra mong muốn của mình.
+0:03:17 - 0:03:23, Nếu y của mình là một cái giá trị liên
+0:03:20 - 0:03:25, tục thì đó chính là bài toán hồi quy. Và
+0:03:23 - 0:03:27, cái khái niệm liên tục này á thì chúng
+0:03:25 - 0:03:30, ta phải hiểu đó là cái khái niệm cái
+0:03:27 - 0:03:32, tính thứ tự của cái
+0:03:30 - 0:03:35, y của mình thể hiện qua việc là nếu như
+0:03:32 - 0:03:37, hai cái giá trị y1 và y2 bất kỳ của mình
+0:03:35 - 0:03:39, trong cái giá trị đầu ra, nếu như chúng
+0:03:37 - 0:03:42, ta có thể thực hiện được cái thao tác so
+0:03:39 - 0:03:45, sánh lớn, bé, bằng hoặc là khác thì đó
+0:03:42 - 0:03:47, chính là bài toán hồi quy. Ngược lại đối với
+0:03:45 - 0:03:51, bài toán phân lớp thì y của mình nó sẽ
+0:03:47 - 0:03:53, thuộc một cái tập C là bao gồm C1,
+0:03:51 - 0:03:56, C2,...,
+0:03:53 - 0:03:58, C_k và cái tập này nó sẽ là một cái tập
+0:03:56 - 0:04:01, rời rạc. Nhưng mà định nghĩa thế nào gọi
+0:03:58 - 0:04:04, là rời rạc thì chúng ta sẽ phải xét đến
+0:04:01 - 0:04:06, cái yếu tố là hai giá trị y1 và y2 bất
+0:04:04 - 0:04:08, kỳ ở trong cái tập C này thì chúng ta
+0:04:06 - 0:04:11, chỉ có thể thực hiện được cái thao tác
+0:04:08 - 0:04:13, là bằng hoặc khác mà thôi, còn chúng
+0:04:11 - 0:04:15, ta không thể thực hiện được cái thao tác
+0:04:13 - 0:04:19, so sánh lớn, bé thì khi đó nó gọi là bài
+0:04:15 - 0:04:19, toán phân lớp.

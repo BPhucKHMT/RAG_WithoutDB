@@ -1,0 +1,315 @@
+0:00:00 - 0:00:05, và đến với cái phần mà mô hình sau khi
+0:00:03 - 0:00:08, đã được huấn luyện xong và chúng ta phải
+0:00:05 - 0:00:10, đánh giá cái mô hình của mình nó có tốt
+0:00:08 - 0:00:13, hay không thì tại sao chúng ta không sử
+0:00:10 - 0:00:14, dụng cái hàm lock loss đó nữa để làm một
+0:00:13 - 0:00:15, cái độ đo đánh giá tại sao chúng ta
+0:00:14 - 0:00:18, không sử dụng cái lock loss làm độ đo
+0:00:15 - 0:00:21, đánh giá tại vì như chúng ta đã giải
+0:00:18 - 0:00:23, thích trước đây á là một cái hàm độ lỗi
+0:00:21 - 0:00:25, của cái mô hình khi huấn luyện không
+0:00:23 - 0:00:27, nhất thiết nó phải là cái hàm để đánh
+0:00:25 - 0:00:29, giá thì trong trường hợp này Tại sao
+0:00:27 - 0:00:32, chúng ta không dùng nếu như chúng ta sử
+0:00:29 - 0:00:36, dụng cái độ đo lock l thì rõ ràng là nó
+0:00:32 - 0:00:39, sẽ khó hiểu nó sẽ rất khó hiểu đối với
+0:00:36 - 0:00:41, cái người à người sử người mà không có
+0:00:39 - 0:00:43, chuyên môn hoặc về machine learning hoặc
+0:00:41 - 0:00:46, là đối với khách hàng của mình mà chúng
+0:00:43 - 0:00:48, ta phải sử dụng cái độ đo nó dễ hiểu hơn
+0:00:46 - 0:00:52, và dễ cảm nhận hơn họ sẽ không hiểu là
+0:00:48 - 0:00:54, tại sao chúng ta lại dùng là trừ của y
+0:00:52 - 0:00:57, log y
+0:00:54 - 0:01:00, tổng Tại sao lại có cái thành phần log
+0:00:57 - 0:01:02, này thì nguyên nhân của đó đó là để giúp
+0:01:00 - 0:01:04, cho cái quá trình huấn luyện nó sẽ nhanh
+0:01:02 - 0:01:07, hơn giúp cho cái quá trình huấn luyện nó
+0:01:04 - 0:01:07, hiệu quả
+0:01:07 - 0:01:12, hơn
+0:01:09 - 0:01:13, thì đối với khách hàng hoặc là đối với
+0:01:12 - 0:01:16, những người dùng đối với những cái người
+0:01:13 - 0:01:18, mà không có cái kiến thức đó về machine
+0:01:16 - 0:01:21, learning Họ sẽ không quan tâm lắm Về cái
+0:01:18 - 0:01:24, độ đo này mà họ cần có một cái độ đo mà
+0:01:21 - 0:01:29, người ta cảm nhận được thì ch Index là
+0:01:24 - 0:01:32, một cái độ đo như vậy Giả sử như y là
+0:01:29 - 0:01:35, cái tập giá tr thực tế của cái tập test
+0:01:32 - 0:01:40, của mình và y Ngã là tập các cái giá trị
+0:01:35 - 0:01:44, dự đoán thì ch K của y và y ngã thì nó
+0:01:40 - 0:01:48, sẽ được tính là bằng phần dao y và y ngã
+0:01:44 - 0:01:52, so với lại cái phần hợp của y và y
+0:01:48 - 0:01:54, ngã thì giả sử như là chúng ta có cái y
+0:01:52 - 0:01:55, của mình là
+0:01:54 - 0:02:01, 11
+0:01:55 - 0:02:06, 10 1 rồi y Ngã của mình sẽ là 11 10
+0:02:01 - 0:02:10, 10 thì khi đó cái phần dao của hai cái y
+0:02:06 - 0:02:13, và y Ngã của mình nó sẽ là năm phần tử
+0:02:10 - 0:02:17, tại sao ở đây là giống nè Ở đây là giống
+0:02:13 - 0:02:21, nè Giống giống V à x rồi đây không dấu
+0:02:17 - 0:02:23, đây là dấu như vậy thì có tất cả là năm
+0:02:21 - 0:02:26, phần tử
+0:02:23 - 0:02:27, giống và trên tổng số phần tử của mình
+0:02:26 - 0:02:31, đó
+0:02:27 - 0:02:35, là có bảy phần tử như vậy thì cái ch của
+0:02:31 - 0:02:40, mình đó sẽ là bằng 5 mẫu Đúng trên tổng
+0:02:35 - 0:02:42, số mẫu của mình là 7 mẫu cộng cho 7 - 5
+0:02:40 - 0:02:45, cho 7 -
+0:02:42 - 0:02:49, 5 thì dựa trên cái công thức này y là
+0:02:45 - 0:02:51, tổng số mẫu nè y Ngã là tổng số mẫu dự
+0:02:49 - 0:02:53, đoán nè
+0:02:51 - 0:02:57, trong tổng số mẫu dự đoán còn y là tổng
+0:02:53 - 0:02:58, số mẫu thực tế trừ cho trừ cho cái thành
+0:02:57 - 0:03:02, phần
+0:02:58 - 0:03:05, mà giao của hai cái thằng này đi Tức là
+0:03:02 - 0:03:09, đây là những cái chúng ta dự đoán đúng
+0:03:05 - 0:03:11, đúng không Và đây là cái mà trừ này ra
+0:03:09 - 0:03:12, thì nó sẽ là loại bỏ đi cái thành phần
+0:03:11 - 0:03:17, dự đoán đúng này đi Tức là những cái
+0:03:12 - 0:03:21, thành phần mà chúng ta dự đoán sai thì
+0:03:17 - 0:03:23, đó chính là cái diện tích của cái phần
+0:03:21 - 0:03:27, này cái phần mẫu số của mình nó sẽ là
+0:03:23 - 0:03:27, diện tích của cái phần này
+0:03:30 - 0:03:37, chúng ta sẽ lấy y là toàn bộ cái tập này
+0:03:33 - 0:03:41, cộng cho Y ngã y mũ là tập này chúng ta
+0:03:37 - 0:03:42, sẽ trừ đi cái thành phần giao y và y ngã
+0:03:41 - 0:03:45, thì nó sẽ ra được cái thành phần là phần
+0:03:42 - 0:03:48, hợp mà y giao với y ngã Tức là những cái
+0:03:45 - 0:03:50, thành phần mà chúng ta dự đoán đúng như
+0:03:48 - 0:03:53, vậy thì với cái độ đo trắc K thì chúng
+0:03:50 - 0:03:56, ta sẽ thấy được rằng là tổng số mẫ đúng
+0:03:53 - 0:04:00, chia cho tổng số mẫu mà thuộc cái phần
+0:03:56 - 0:04:01, hợp này thì nó sẽ ra là 0.41
+0:04:00 - 0:04:05, và với cái độ đo này thì chúng ta sẽ
+0:04:01 - 0:04:09, thấy rằng là trong trường hợp mà hoàn
+0:04:05 - 0:04:11, hảo nhất tức là hai cái tập y và y Ngã
+0:04:09 - 0:04:13, này trùng khớp với nhau hoàn toàn giá
+0:04:11 - 0:04:15, trị trên với giá trị dưới nó khớp nhau
+0:04:13 - 0:04:17, hoàn toàn tức là chúng ta đang có hai
+0:04:15 - 0:04:20, cái vòng tròn đúng không Chúng ta sẽ có
+0:04:17 - 0:04:22, hai phòng tròn trồng lên
+0:04:20 - 0:04:25, nhau
+0:04:22 - 0:04:28, y đồng thời chính là y ngã thì khi đó
+0:04:25 - 0:04:30, phần giao của y và y ngã nó chính là
+0:04:28 - 0:04:34, tổng số phần tử của của mình luôn đó
+0:04:30 - 0:04:37, chính là tổng số phần tử thì giao với y
+0:04:34 - 0:04:40, ngã thì nó cũng chính là bằng cái nực
+0:04:37 - 0:04:43, lượng của tập y này luôn và
+0:04:40 - 0:04:51, y cộng cho Y
+0:04:43 - 0:04:54, ngã trừ cho phần giao của y và y
+0:04:51 - 0:04:57, ngã thì nó cũng chính là bằng
+0:04:54 - 0:05:00, y cộng cho Y tại vì y và y ngã giống
+0:04:57 - 0:05:04, nhau đúng không y cộng cho Y trừ cho cái
+0:05:00 - 0:05:07, phần này là giống là 1 I luôn như vậy là
+0:05:04 - 0:05:10, bỏ như vậy là tử số là lực lượng của tập
+0:05:07 - 0:05:12, y và mẫu số là lượng lượng của t y do đó
+0:05:10 - 0:05:14, thì trong cái trường hợp này nó sẽ ra là
+0:05:12 - 0:05:18, 1 tức là 100
+0:05:14 - 0:05:22, ph còn trong tình hộng tình huống tệ
+0:05:18 - 0:05:24, nhất đó là không có giao thì hai cái
+0:05:22 - 0:05:28, đường tròn
+0:05:24 - 0:05:30, này không giao nhau như vậy là cái phần
+0:05:28 - 0:05:34, tử số là
+0:05:30 - 0:05:36, y giao với lại y y ngã thì nó sẽ là bằng
+0:05:34 - 0:05:39, 0 0 chia cho bao nhiêu cũng bằng
+0:05:36 - 0:05:43, 0 thì với cái cách sử dụng cái độ đo
+0:05:39 - 0:05:46, chck chck ga này thì nó sẽ cho chúng ta
+0:05:43 - 0:05:49, cảm nhận được cái ý nghĩa của cái phép
+0:05:46 - 0:05:52, tính giác của mình ngoài ra thì chúng ta
+0:05:49 - 0:05:57, cũng có thể sử dụng các cái độ đo về
+0:05:52 - 0:06:00, precision recon là F1 score prision là
+0:05:57 - 0:06:02, thể hiện số mẫu mà mình dự đoán đúng Tức
+0:06:00 - 0:06:06, là trong số những cái kết quả mà mình Dự
+0:06:02 - 0:06:10, đoán dự đoán thì số mẫu mà mình dự đoán
+0:06:06 - 0:06:13, đúng chia cho tổng số mẫu chia cho tổng
+0:06:10 - 0:06:15, số mẫu mà mình đưa ra cái phán đoán Ví
+0:06:13 - 0:06:17, dụ ở đây precision nó sẽ được tính bằng
+0:06:15 - 0:06:22, công thức là true posit chia cho true
+0:06:17 - 0:06:24, posit cộng cho f posit true posit tức là
+0:06:22 - 0:06:27, nếu như mình nói đó là positive và nó
+0:06:24 - 0:06:30, thực sự là positive còn f positive tức
+0:06:27 - 0:06:33, là nếu như mình nói nó là positive nhưng
+0:06:30 - 0:06:34, mà nó sai nó không đúng thì bây giờ
+0:06:33 - 0:06:38, chúng ta sẽ
+0:06:34 - 0:06:40, có cái F1 score và tương tự như prision
+0:06:38 - 0:06:44, và record thì nó cũng sẽ thỏa mãn là
+0:06:40 - 0:06:47, tính chất đó là độ chính xác mà càng cao
+0:06:44 - 0:06:49, thì nó sẽ càng cao à nó khác so với lại
+0:06:47 - 0:06:52, cái độ Đo hàm độ lỗi đối với hàm độ lỗi
+0:06:49 - 0:06:55, như là LCK loss
+0:06:52 - 0:06:59, thì loss mà càng thấp thì càng tốt thì
+0:06:55 - 0:07:02, F1 score F1 score độ chính xác nó sẽ
+0:06:59 - 0:07:04, càng tiến về 1 độ chính xác càng cao thì
+0:07:02 - 0:07:06, thì thì cái giá trị F1 score nó sẽ càng
+0:07:04 - 0:07:08, tiến về 1 tương tự như vậy vì precis
+0:07:06 - 0:07:12, precision và record thì nó sẽ càng chính
+0:07:08 - 0:07:17, xác nếu như nó càng tiến về 1 recon thì
+0:07:12 - 0:07:20, nó là bằng tập hợp true positive chia
+0:07:17 - 0:07:22, cho true positive cộng cho 4 negative F1
+0:07:20 - 0:07:24, score thì đây là Công thức trung bình
+0:07:22 - 0:07:26, điều
+0:07:24 - 0:07:31, hòa trung
+0:07:26 - 0:07:31, bình điều hòa
+0:07:32 - 0:07:38, rồi cả F1 score lẫn là precision hoặc là
+0:07:35 - 0:07:40, recall thì đều thả mãn tính chất đó là
+0:07:38 - 0:07:43, càng tiến đến 1 thì độ chính xác càng
+0:07:40 - 0:07:46, cao chứ không phải là chỉ có f1
+0:07:43 - 0:07:48, score và bây giờ thì chúng ta
+0:07:46 - 0:07:52, sẽ tính toán
+0:07:48 - 0:07:56, thử tính toán thử đầu tiên đó là với cái
+0:07:52 - 0:08:01, Phán đoán là đây là đoán nha Đây là đoán
+0:07:56 - 0:08:04, nè là chân mà bằng 0 thì precision
+0:08:01 - 0:08:06, record và F1 score là bao nhiêu thì
+0:08:04 - 0:08:09, chúng ta phải xem n chúng ta sẽ xét trên
+0:08:06 - 0:08:11, cái cột dựn đoán nè trên m = 0 tức là
+0:08:09 - 0:08:14, chúng ta đang muốn nói đến nguyên cái
+0:08:11 - 0:08:17, cột này chúng ta đang muốn nói đến
+0:08:14 - 0:08:19, nguyên cái cột này à Thì trên bằng 0 có
+0:08:17 - 0:08:21, nghĩa là ở đây chúng ta quên hết Công
+0:08:19 - 0:08:24, thức này đi chúng ta sẽ hiểu cái ý nghĩa
+0:08:21 - 0:08:28, của công thức để chúng ta ráp số vào
+0:08:24 - 0:08:32, à đối với Trân bằng 0 tức là tổng số mẫu
+0:08:28 - 0:08:38, mà tôi dự đoán đó chính là
+0:08:32 - 0:08:41, 24 cộng 9 mẫu 24 + 9 mẫu và trong số 24
+0:08:38 - 0:08:43, C 9 mẫu này thì những cái thằng mà tôi
+0:08:41 - 0:08:46, đoán đúng tức là true negative true tức
+0:08:43 - 0:08:48, là đúng là
+0:08:46 - 0:08:51, 24 như vậy thì
+0:08:48 - 0:08:55, precision cho cái chân bằng
+0:08:51 - 0:08:56, 0 tương ứng nó sẽ là đoán negative đúng
+0:08:55 - 0:09:00, không Mình đang chân là bằng 0 t là
+0:08:56 - 0:09:02, negative đoán negative là 24 À Đoán mà
+0:09:00 - 0:09:07, đoán đúng nha chia cho tổng cái số mà
+0:09:02 - 0:09:10, tôi đoán negative tức là 24 cộng cho 9
+0:09:07 - 0:09:14, chín thằng này là tôi đoán sai Tôi đoán
+0:09:10 - 0:09:16, sai C còn 24 thằng này là tôi đoán đúng
+0:09:14 - 0:09:18, rồi và chúng ta sẽ dùng máy tính chúng
+0:09:16 - 0:09:21, ta sẽ tính ra được cái con số ở đây
+0:09:18 - 0:09:26, record nó sẽ là bằng
+0:09:21 - 0:09:29, 24 chia cho tổng số mẫu mà lẽ ra Lẽ ra
+0:09:26 - 0:09:33, tôi phải thực sự có đúng không Thì chúng
+0:09:29 - 0:09:36, ta sẽ tính trên cái cột này à Xin lỗi
+0:09:33 - 0:09:37, tính trên cái hàng này 24 này là cái
+0:09:36 - 0:09:40, chúng ta đã phát hiện ra được nhưng mà
+0:09:37 - 0:09:43, chúng ta đã bỏ sót mức một cái phun
+0:09:40 - 0:09:45, positive tức là bỏ sót m mức một mẫ nó
+0:09:43 - 0:09:50, thực sự là negative như vậy thì ở đây nó
+0:09:45 - 0:09:53, sẽ là bằng 24 chia cho 24 cộng
+0:09:50 - 0:09:55, 1 và F1 score thì nó sẽ là bằng trung
+0:09:53 - 0:09:58, bình điều hòa dựa trên cái công thức này
+0:09:55 - 0:10:00, chúng ta sẽ tính ra cái giá trị ở đây đó
+0:09:58 - 0:10:06, thì có cái Công thức này rồi thì khá là
+0:10:00 - 0:10:08, dễ tính rồi chân bằng à 1 thì lúc này
+0:10:06 - 0:10:12, chúng ta
+0:10:08 - 0:10:13, sẽ xét đến cái Dực đoán của mình là chân
+0:10:12 - 0:10:18, bằng
+0:10:13 - 0:10:20, 1 tức là chúng ta sẽ xét đến cái cột này
+0:10:18 - 0:10:23, chúng ta đang xét đến giá trị Dự đoán và
+0:10:20 - 0:10:26, sáu cái cái cái dự đoán của mình là đúng
+0:10:23 - 0:10:28, là true positive thì đây là cái công
+0:10:26 - 0:10:31, thức dành cho cái việc dự đoán chân là
+0:10:28 - 0:10:34, bằng 1 rồi thì chúng ta sẽ có sáu mẫu dự
+0:10:31 - 0:10:36, đoán đúng trên tổng số mẫu ở đây mà
+0:10:34 - 0:10:41, chúng ta đoán đó là 6 +
+0:10:36 - 0:10:44, 1 tức là 6/7 và record tương ứng của
+0:10:41 - 0:10:47, mình nó sẽ là bằng 6 6 mẫu chia cho tổng
+0:10:44 - 0:10:49, số mẫu mà Lẽ ra mình phải trả về đây là
+0:10:47 - 0:10:53, thực tế nè thực tế chân bằng 1 thì nó sẽ
+0:10:49 - 0:10:55, là có 15 mẫu trong đó Sáu mẫu đã được
+0:10:53 - 0:10:58, thuật toán của mình nó phát hiện ra chín
+0:10:55 - 0:11:01, mẫu thì bỏ sót như vậy Ở đây sẽ là 6 + 9
+0:10:58 - 0:11:03, và như vậy thì hai cái giá trị này thực
+0:11:01 - 0:11:05, hiện trung bình điều hòa chúng ta sẽ ra
+0:11:03 - 0:11:10, được cái giá trị ở
+0:11:05 - 0:11:12, đây rồi và một cách Trung bình thì chúng
+0:11:10 - 0:11:14, ta sẽ lấy trung bình cộng của precision
+0:11:12 - 0:11:16, này với precis này sẽ ra được trung bình
+0:11:14 - 0:11:20, cộng này v c này với rec này chúng ta sẽ
+0:11:16 - 0:11:22, ra giá trị trung bình và F F1 score F1
+0:11:20 - 0:11:24, score ở đây cho hai trường hợp là Trân
+0:11:22 - 0:11:26, bằng 0 và trân bằng 1 thì chúng ta sẽ
+0:11:24 - 0:11:30, cộng lại chia đôi chúng ta sẽ ra cái giá
+0:11:26 - 0:11:32, trị ở đây thì đó là cái cách chúng ta
+0:11:30 - 0:11:36, tính toán trên cái độ đo đánh giá là
+0:11:32 - 0:11:41, precision rec và F1
+0:11:36 - 0:11:45, score và nhận xét Đó là các cái độ đo
+0:11:41 - 0:11:48, đánh giá rồi hàm độ lỗi trên đó là các
+0:11:45 - 0:11:50, cái cách tính trung bình thực tế thì
+0:11:48 - 0:11:53, chúng ta có thể có cái cách tính nó
+0:11:50 - 0:11:54, Thiên lệch nghĩa là sao khi chúng ta
+0:11:53 - 0:11:57, không biết
+0:11:54 - 0:12:00, cái cái nhãn nào thực sự là quan trọng
+0:11:57 - 0:12:04, lấy ví dụ như à cái
+0:12:00 - 0:12:07, chân bằng 0 với lại cái
+0:12:04 - 0:12:10, chân bằng 1 thì trong thực tế nếu như
+0:12:07 - 0:12:13, chúng ta dự đoán chân bằng 0 nó có cái
+0:12:10 - 0:12:17, vai trò có cái tầm ảnh hưởng lớn hơn thì
+0:12:13 - 0:12:17, như vậy nó sẽ có cái trọng
+0:12:17 - 0:12:25, số nó sẽ có cái Quân trọng số là à Lớn
+0:12:22 - 0:12:25, hơn
+0:12:30 - 0:12:36, đó trọng số lớn hơn còn chân bằng 1 thì
+0:12:34 - 0:12:38, cái trọng số của mình nhỏ hơn thì lúc đó
+0:12:36 - 0:12:42, chúng ta sẽ không cộng Thung Bình mà
+0:12:38 - 0:12:46, chúng ta sẽ lấy cái F1 F1 của cái tình
+0:12:42 - 0:12:49, huống đó là chân bằng 0 chúng ta sẽ cho
+0:12:46 - 0:12:54, nó trọng số là ví dụ như là
+0:12:49 - 0:13:01, 0.8 đ Sau đó chúng ta sẽ cộng cho 0.2
+0:12:54 - 0:13:01, của cái F1 nhưng mà với Trân là bằng 1
+0:13:01 - 0:13:06, thì tùy vào cái tình huống thực tế của
+0:13:04 - 0:13:07, mình Chúng ta sẽ có thể có trọng số nó
+0:13:06 - 0:13:10, khác nhau chứ không nhất thiết chúng ta
+0:13:07 - 0:13:12, là cộng trung bình rồi tương tự như vậy
+0:13:10 - 0:13:14, đến cái cấp độ là mẫu dữ liệu đến cái
+0:13:12 - 0:13:16, cấp độ mẫu dữ liệu thì bình thường là
+0:13:14 - 0:13:18, chúng ta sử dụng công thức là trung bình
+0:13:16 - 0:13:20, cộng nhưng mà trong thực tế thì chúng ta
+0:13:18 - 0:13:25, có thể là sử dụng công thức là trung
+0:13:20 - 0:13:28, bình trọng số rồi một số độ đo thì nó có
+0:13:25 - 0:13:30, thể bắt nguồn từ cái yếu tố thực tiễn ở
+0:13:28 - 0:13:33, đây tất cả tất cả các độ đo này thì
+0:13:30 - 0:13:35, chúng ta dựa trên cái sự sai số sai biệt
+0:13:33 - 0:13:38, hoặc là đếm chỉ đơn giản là đếm số phần
+0:13:35 - 0:13:41, trữ trúng chia cho tổng số mẫu đó nhưng
+0:13:38 - 0:13:44, trong thực tế thì cái hàm độ đo của mình
+0:13:41 - 0:13:47, hàm độ lỗi hoặc là cái độ đo đách giá
+0:13:44 - 0:13:49, của mình Nó có thể là các cái độ đo liên
+0:13:47 - 0:13:51, quan đến yếu tố về doanh thu có thể là
+0:13:49 - 0:13:54, yếu tố về mặt lợi nhuận lợi lợi nhuật
+0:13:51 - 0:13:57, biên hoặc là thiệt hại kinh tế như là
+0:13:54 - 0:13:59, một cái hàm loss thì các cái độ đo đó Nó
+0:13:57 - 0:14:01, hoàn toàn có thể được sử dụng như như là
+0:13:59 - 0:14:05, một cái hàm để cho mô hình nó học để cho
+0:14:01 - 0:14:07, tối ưu cái mô hình của mình rồi một số
+0:14:05 - 0:14:10, cái hàm độ lỗi thì lấy trực tiếp từ cái
+0:14:07 - 0:14:13, độ đo đánh giá tức là ok bình thường
+0:14:10 - 0:14:13, mình phân biệt Đó là hàm độ
+0:14:15 - 0:14:24, lỗi so và hàm đánh giá
+0:14:20 - 0:14:26, dạ cái độ đo đánh giá đó là hai cái con
+0:14:24 - 0:14:29, số khác nhau nhưng mà trong một số tình
+0:14:26 - 0:14:30, huống người ta lấy trực tiếp tức là
+0:14:29 - 0:14:33, chúng ta sẽ dùng hàm độ lỗi này như là
+0:14:30 - 0:14:36, một cái hàm đánh giá luôn thì khi sau
+0:14:33 - 0:14:38, này chúng ta đánh giá thì cái cái cái
+0:14:36 - 0:14:41, cái giá trị đánh giá của mình đúng không
+0:14:38 - 0:14:45, là nó sẽ đạt được cái hiệu suất cao
+0:14:41 - 0:14:47, nhưng mà như mình có nói trước đó Tức là
+0:14:45 - 0:14:50, trong nhiều tình huống người ta sử dụng
+0:14:47 - 0:14:51, cái độ lỗi là một cái hàm nó khác với
+0:14:50 - 0:14:53, hàm đnh giá tức là một cách tổng quát
+0:14:51 - 0:14:57, thì độ lỗi của mình nó không nhất thiết
+0:14:53 - 0:14:59, phải giống cái hàm đánh giá tại vì cái
+0:14:57 - 0:15:01, việc thiết kế hàm độ lỗi nó còn phục
+0:14:59 - 0:15:03, phục vụ cho cái mô hình của mình đó huấn
+0:15:01 - 0:15:05, luyện nhanh hơn thì khi đó người ta sẽ
+0:15:03 - 0:15:08, có những cái thủ thuật có những cái trí
+0:15:05 - 0:15:10, có những cái mẹo trong tán học để làm
+0:15:08 - 0:15:11, sao cho sử dụng cái hàm Độ đổi này thì
+0:15:10 - 0:15:15, cái mô hình của mình huấn luyện rất là
+0:15:11 - 0:15:16, nhanh đó nhưng có thể là mô hình nó huấn
+0:15:15 - 0:15:19, luyện nhanh nhưng mà khi chúng ta đánh
+0:15:16 - 0:15:21, giá thì nó sẽ không được như chúng ta
+0:15:19 - 0:15:24, mong muốn do đó thì người ta muốn đạt
+0:15:21 - 0:15:25, được cái độ đo đánh giá sau khi chúng ta
+0:15:24 - 0:15:27, đã huấn luyện xong chúng ta muốn cái mô
+0:15:25 - 0:15:29, hình của mình có cái sự đánh giá tốt thì
+0:15:27 - 0:15:33, chúng ta sử dụng trực tiếp cái hàm độ
+0:15:29 - 0:15:33, lỗi này là cái hàm đánh giá luôn

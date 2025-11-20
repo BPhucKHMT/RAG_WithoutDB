@@ -1,0 +1,262 @@
+0:00:00 - 0:00:05, và bên cạnh cái độ đo information Gain
+0:00:04 - 0:00:10, thì chúng ta còn có thể sử dụng một số
+0:00:05 - 0:00:10, độ đo khác ví dụ độ đo về gini độ đo
+0:00:10 - 0:00:15, gini thì đây cũng là một cái loại độ đo
+0:00:13 - 0:00:17, nhưng mà ở đây thì chúng ta chỉ tìm hiểu
+0:00:15 - 0:00:19, về cái ý tưởng của thuật toán decision 3
+0:00:17 - 0:00:23, do đó chúng ta chỉ lấy ra à Cái độ đ
+0:00:19 - 0:00:25, information Gain để làm một cái ví dụ và
+0:00:23 - 0:00:27, ở đây chúng ta sẽ nhận xét về thuật toán
+0:00:25 - 0:00:28, decision thì ưu điểm của thuật toán này
+0:00:27 - 0:00:30, đó chính là cái tính giải thích của mô
+0:00:28 - 0:00:33, hình rất là cao
+0:00:30 - 0:00:35, do chúng ta nhìn vô cái đường đi của cái
+0:00:33 - 0:00:38, cây đó chúng ta thấy à nếu như cái đặc
+0:00:35 - 0:00:40, trưng này nó đạt được cái điều kiện này
+0:00:38 - 0:00:42, thì chúng ta sẽ đi như thế nào đó thì
+0:00:40 - 0:00:44, cái việc chia ra các cái giá trị theo
+0:00:42 - 0:00:46, các cái nhánh nó sẽ giúp cho chúng ta có
+0:00:44 - 0:00:48, thể giải thích được cái mô hình của mình
+0:00:46 - 0:00:51, nó vận hành như thế nào và nó có thể làm
+0:00:48 - 0:00:53, việc được trên cả những cái dữ liệu dạng
+0:00:51 - 0:00:55, số lẫn cái dữ liệu Lạ tân loại ví dụ đối
+0:00:53 - 0:00:57, với cái dư liệu dạng phân loại thì rất
+0:00:55 - 0:01:00, là dễ rồi chúng ta sẽ đưa vô một cái
+0:00:57 - 0:01:05, biến x và ở đây chúng ta sẽ có có cái
+0:01:00 - 0:01:07, loại là x1 x2 x3 trong trường hợp mà dữ
+0:01:05 - 0:01:09, liệu của mình dạng số thì chúng ta cũng
+0:01:07 - 0:01:11, có khả năng phân loại được ví dụ như
+0:01:09 - 0:01:14, chúng ta đưa vô x nhánh của mình đó là x
+0:01:11 - 0:01:19, sẽ bé hơn A rồi Ở đây sẽ là x của mình
+0:01:14 - 0:01:22, là từ A cho đến B và ở đây sẽ là x lớn
+0:01:19 - 0:01:24, hơn b thì cho dù dữ liệu loại số hay là
+0:01:22 - 0:01:25, dữ liệu loại phương loại thì chúng ta
+0:01:24 - 0:01:28, vẫn có thể làm việc
+0:01:25 - 0:01:31, được Và đây là một cái mô hình phi tam
+0:01:28 - 0:01:33, số do nó không đ đưa ra các cái Gia Định
+0:01:31 - 0:01:35, về cái sự phân bố của các cái biến và
+0:01:33 - 0:01:37, mối quan hệ giữa các cái đặc trưng với
+0:01:35 - 0:01:42, nhau của các cái đặc trưng với cái
+0:01:37 - 0:01:44, output Tức là ở đây X và Y à x và y
+0:01:42 - 0:01:46, Chúng ta không có một cái sự tính toán
+0:01:44 - 0:01:48, nhân với một cái đại lượ theta nào đó x
+0:01:46 - 0:01:51, nhân với theta nào đó để mà ra cái thằng
+0:01:48 - 0:01:53, y t chúng ta sẽ không có cái sự tương
+0:01:51 - 0:01:56, tác chúng ta sẽ không có cái sự tương
+0:01:53 - 0:01:58, tác này với lại một cái tham số nào đó
+0:01:56 - 0:01:58, do đó thì đây là một cái mô hình phi
+0:01:58 - 0:02:02, tham
+0:01:58 - 0:02:04, số và ưu điểm tiếp theo đó là nó được sử
+0:02:02 - 0:02:08, dụng trong cái việc là lựa chọn đặc
+0:02:04 - 0:02:11, trưng r decision tre cũng được sử dụng
+0:02:08 - 0:02:14, cho cái bước gọi là lựa chọn đặc trưng
+0:02:11 - 0:02:15, feature Selection Tại vì sao Tại vì khi
+0:02:14 - 0:02:17, chúng
+0:02:15 - 0:02:19, ta trong cái quá trình mà chúng ta xây
+0:02:17 - 0:02:21, dựng cái cây chúng ta thực hiện rất
+0:02:19 - 0:02:25, nhiều những cái loại độ đo và với những
+0:02:21 - 0:02:28, cái loại độ đo đó thì nó đã vô tình tạo
+0:02:25 - 0:02:30, cho chúng ta là xác định xem cái mối
+0:02:28 - 0:02:32, quan hệ giữa cái đặc trưng
+0:02:30 - 0:02:35, mà mình đang xem xét tại một cái nốt một
+0:02:32 - 0:02:37, cái nút một cái feature x y nào đó Tại
+0:02:35 - 0:02:39, một cái nút nó có cái mối quan hệ như
+0:02:37 - 0:02:42, thế nào so với k output I này nếu như
+0:02:39 - 0:02:45, chúng ta chọn cái nút này tức là cái xy
+0:02:42 - 0:02:48, có một cái mối quan hệ gắn bó với lại
+0:02:45 - 0:02:51, cái giá trị output nếu như chúng ta chọn
+0:02:48 - 0:02:54, cái nút này để mà tiến hành là đi xuống
+0:02:51 - 0:02:57, các cái nhánh Còn nếu như cái xi này nó
+0:02:54 - 0:02:58, không có được chọn Tức là cái hàm lượng
+0:02:57 - 0:03:02, thông tin hoặc là cái mối liên hệ giữa
+0:02:58 - 0:03:05, si với lại i này nó rất thấp đó như vậy
+0:03:02 - 0:03:07, thì ưu điểm của nó đó là nhờ cái cơ chế
+0:03:05 - 0:03:09, Lựa Chọn đặc trưng nó sẽ ưu tiên các cái
+0:03:07 - 0:03:13, đặc trưng mà có nhiều thông tin để phân
+0:03:09 - 0:03:15, thành các cái nhánh mới thì đây chính là
+0:03:13 - 0:03:17, ưu điểm của nó và nó có thể sử dụng cái
+0:03:15 - 0:03:19, này để cho cái bút là feature Selection
+0:03:17 - 0:03:21, chọn được đặc trưng Ờ mô hình nào cũng
+0:03:19 - 0:03:23, vậy nó cũng sẽ có những cái Ưu điểm và
+0:03:21 - 0:03:25, khuyết điểm thì khuyết điểm của mô hình
+0:03:23 - 0:03:28, này chính là có khả năng nó sẽ bị
+0:03:25 - 0:03:31, overing overfitting tức là nó dễ bị
+0:03:28 - 0:03:33, overfit với cái g liệu nếu như cây của
+0:03:31 - 0:03:35, mình nó không được cắt tỉa nó không có
+0:03:33 - 0:03:36, được tỉa cắt tỉa hoặc là cái cây của
+0:03:35 - 0:03:39, mình nó quá sâu Tức là cái mô hình của
+0:03:36 - 0:03:42, mình nó quá phức tạp thì khi đó nó sẽ dễ
+0:03:39 - 0:03:43, bị overfitting và để giải quyết vấn đề
+0:03:42 - 0:03:46, này thì trong những cái phiên bản của
+0:03:43 - 0:03:50, decry phía sau thì người ta có kết hợp
+0:03:46 - 0:03:51, cái việc là cắt tỉa cái cành để làm sao
+0:03:50 - 0:03:54, cho cái cây của mình nó bớt cái sự phức
+0:03:51 - 0:03:56, tạp đi đồng thời chúng ta sẽ có những
+0:03:54 - 0:03:59, cái xy tham số để giới hạn cái độ sâu
+0:03:56 - 0:04:03, của cái mô hình và mấy cái mô hình nâng
+0:03:59 - 0:04:05, cao ensemble thì thay vì chúng ta làm
+0:04:03 - 0:04:08, trên một cái toàn bộ cái dữ liệu của
+0:04:05 - 0:04:10, mình thì chúng ta sẽ làm trên ngẫu nhiên
+0:04:08 - 0:04:12, trên những cái bộ giá trị trên những cái
+0:04:10 - 0:04:14, tập dữ liệu ngẫu nhiên từ cái tập dữ
+0:04:12 - 0:04:16, liệu Trend để Hy vọng rằng là cái cây
+0:04:14 - 0:04:20, của mình nó có cái tính tổng quát cao
+0:04:16 - 0:04:22, hơn tránh bị overfit vô cái dữ liệu cái
+0:04:20 - 0:04:25, khuyết điểm tiếp theo đó là cái tính
+0:04:22 - 0:04:29, không ổn định của cái decision tree
+0:04:25 - 0:04:31, Ờ chỉ việc chúng ta chỉ cần thay đổi cái
+0:04:29 - 0:04:32, dữ liệu của của mình một phần nhỏ chúng
+0:04:31 - 0:04:34, ta chỉ cần thay đổi cái dữ liệu một phần
+0:04:32 - 0:04:36, nhỏ thì cây của mình nó có thể thay đổi
+0:04:34 - 0:04:39, hoàn toàn tức là nó thay đổi cái cấu
+0:04:36 - 0:04:41, trúc của toàn bộ cái cái cái cái cái cái
+0:04:39 - 0:04:43, cây quyết định này của mình luôn và kỹ
+0:04:41 - 0:04:45, thuật ở đây để chống cái hiện tượng là
+0:04:43 - 0:04:48, không ổn định này là như mình đã chúng
+0:04:45 - 0:04:52, đã đề cập ở trong cái phần overfitting
+0:04:48 - 0:04:55, đó là chúng ta sẽ chọn ra ngẫu nhiên một
+0:04:52 - 0:04:57, cái tập Con của cái dữ liệu của mình để
+0:04:55 - 0:05:00, để khi chúng ta làm trên những cái tập
+0:04:57 - 0:05:03, con đó và tạo ra nhiều cái cây á thì nó
+0:05:00 - 0:05:06, sẽ tạo ra cái mô hình có cái tính ổn
+0:05:03 - 0:05:09, định cao hơn nếu như có một cái dữ liệu
+0:05:06 - 0:05:13, nào đó mà nhiễu à có một cái dữ liệu
+0:05:09 - 0:05:16, nhiễu nào đó thì cái mô hình mà cây nó
+0:05:13 - 0:05:17, chỉ ảnh hưởng trên cái bộ phận ở trên
+0:05:16 - 0:05:20, cái tập dữ liệu đó thôi tức là cái cây
+0:05:17 - 0:05:22, đó nó sẽ overfit trên cái dữ liệu mà bị
+0:05:20 - 0:05:26, nhiễu đó thôi còn rất nhiều những cái dữ
+0:05:22 - 0:05:28, liệu khác tổng quát hơn và nó sẽ tạo ra
+0:05:26 - 0:05:31, nhiều cái cây có cái tính gọi là tổng
+0:05:28 - 0:05:33, quát hó cao thì nó sẽ bù được cái bù trừ
+0:05:31 - 0:05:36, được cho cái cây mà bị nhiễu bởi cái cái
+0:05:33 - 0:05:41, dương liệu nhiễu đó thì cái kỹ thuật này
+0:05:36 - 0:05:43, nó gọi là ensemble của random Forest và
+0:05:41 - 0:05:46, một cái điểm yếu khác đó chính là nó bị
+0:05:43 - 0:05:48, khó tối ưu cái việc tìm ra cái cây nó
+0:05:46 - 0:05:49, tốn cái chi phí rất là tính toán rất là
+0:05:48 - 0:05:52, cao tại vì sao trong một cái lần mà nó
+0:05:49 - 0:05:54, duyệt thì nó sẽ phải thực hiện tính toán
+0:05:52 - 0:05:57, trên toàn bộ tất cả các cái nốt để tìm
+0:05:54 - 0:06:00, ra cái cái Đặc trưng nào mà có cái
+0:05:57 - 0:06:02, information Gain tối ưu thì như vậy thì
+0:06:00 - 0:06:04, nó phải duyệt qua hết tất cả các đặc
+0:06:02 - 0:06:06, trưng và duyệt qua hết tất cả các cái
+0:06:04 - 0:06:08, biến của mình hết Cái cái dữ liệu của
+0:06:06 - 0:06:11, mình như vậy thì cái chi phí tính toán
+0:06:08 - 0:06:13, của nó cao và khi dùng hortic nếu như
+0:06:11 - 0:06:16, chúng ta có sử dụng một số kỹ thuật
+0:06:13 - 0:06:18, hortic thì lúc đó cái cây của mình nó
+0:06:16 - 0:06:20, không chắc là nó đảm bảo được tối ưu như
+0:06:18 - 0:06:22, vậy là đây là cái sự đánh đổi giữa độ
+0:06:20 - 0:06:24, chính xác và cái yếu tố tốc độ nếu như
+0:06:22 - 0:06:26, mình xây dựng cái cây theo cái kiểu
+0:06:24 - 0:06:27, hortic thì chúng ta có thể đánh đổi là
+0:06:26 - 0:06:30, cái cây của mình nó không có đạt được
+0:06:27 - 0:06:33, cái mức độ tối ưu
+0:06:30 - 0:06:37, và cuối cùng đó chính là bias bias thì
+0:06:33 - 0:06:37, nó sẽ có cái xu hướng
+0:06:37 - 0:06:43, là bị ảnh hưởng bởi các cái đặc trưng mà
+0:06:41 - 0:06:46, có nhiều cái giá trị tức là có nhiều cái
+0:06:43 - 0:06:50, biến phong loại hoặc là cái phạm vi của
+0:06:46 - 0:06:52, mình nó lớn hơn biến số cái phạm vi của
+0:06:50 - 0:06:55, mình nó lớn hơn vì nó sẽ giúp cho mình
+0:06:52 - 0:06:58, tạo ra nhiều nhánh hơn như vậy thì trong
+0:06:55 - 0:07:01, cái phần bias này nó cũng tương tự như
+0:06:58 - 0:07:04, cái overfitting ở đây BS nó tương t
+0:07:01 - 0:07:09, opting tức là vì cái mô hình của mình nó
+0:07:04 - 0:07:12, sẽ dễ bị bias dẫn đến là nó kéo theo cái
+0:07:09 - 0:07:12, hiện tượng overfit
+0:07:12 - 0:07:17, này thì nếu như trong trường hợp của
+0:07:15 - 0:07:20, mình
+0:07:17 - 0:07:23, mà chúng ta có một cái biến X1 nào đó và
+0:07:20 - 0:07:25, cái X1 này nó có rất nhiều cái giá trị
+0:07:23 - 0:07:29, Ví dụ như nó sẽ bao gồm
+0:07:25 - 0:07:31, là giá trị là a giá trị là B giá trị là
+0:07:29 - 0:07:34, C vân vân cho đến gi chị là Z Tức là nó
+0:07:31 - 0:07:37, có rất nhiều cái giá trị thì cái cây của
+0:07:34 - 0:07:40, mình nó có xu hướng là nó sẽ bias vào
+0:07:37 - 0:07:43, cái biến x mà có nhiều giá trị Ví dụ nếu
+0:07:40 - 0:07:48, X2 của mình nó chỉ có hai giá trị thôi
+0:07:43 - 0:07:50, đó là u và p thôi ví dụ vậy thì mô hình
+0:07:48 - 0:07:52, của mình nó sẽ ưu tiên chọn cái x nó sẽ
+0:07:50 - 0:07:55, chọn cái x thay vì nó chọn cái y thì đây
+0:07:52 - 0:07:55, chính là cái tính
+0:07:55 - 0:07:59, bias và đây là một cái hình ảnh ví dụ
+0:07:59 - 0:08:02, cho
+0:07:59 - 0:08:05, cái một dataset đó là Titanic dataset
+0:08:02 - 0:08:07, Đây là hai cái cây được tạo ra bởi hai
+0:08:05 - 0:08:12, cái cấu hình hai cái siêu tham số khác
+0:08:07 - 0:08:15, nhau của decision tre trong cái thư viện
+0:08:12 - 0:08:19, là s kit lên thì ở đây nếu như chúng ta
+0:08:15 - 0:08:22, dùng cái giới tính đúng không là ở đây
+0:08:19 - 0:08:25, là bé 0.5 thì mình không rõ bé 0.5 đó là
+0:08:22 - 0:08:28, nam hay nữ ha ví dụ bé 0.5 là nữ đi thì
+0:08:25 - 0:08:32, chúng ta sẽ chia ra làm hai nhánh là
+0:08:28 - 0:08:34, true hay F Nếu tru tức là nữ thì đến đây
+0:08:32 - 0:08:36, là chúng ta sẽ xem cái p cl của mình là
+0:08:34 - 0:08:39, bé 2.5 hay không rồi chúng ta sẽ đưa ra
+0:08:36 - 0:08:42, cái quyết định đó thì đây là một cái cấu
+0:08:39 - 0:08:45, trúc cây đó mỗi một cái nốt này nó sẽ
+0:08:42 - 0:08:45, tương ứng với lại một cái
+0:08:45 - 0:08:51, feature một cái
+0:08:48 - 0:08:54, feature và trong cái phần thực hành thì
+0:08:51 - 0:08:57, chúng ta sẽ thử nghiệm với cái dataset
+0:08:54 - 0:08:59, này và bên cạnh cái mô hình decision thì
+0:08:57 - 0:09:02, chúng ta sẽ còn rất nhiều những cái mô
+0:08:59 - 0:09:04, hình phân lớp khác à rất là hiệu quả ví
+0:09:02 - 0:09:07, dụ như là mô hình support vector machine
+0:09:04 - 0:09:09, thì trước cái thời điểm năm 2012 khi mà
+0:09:07 - 0:09:12, di ling ra đời thì các cái mô hình máy
+0:09:09 - 0:09:16, học đều dựa trên cái nền tảng
+0:09:12 - 0:09:18, Ờ về large machine tức là có xây dựng
+0:09:16 - 0:09:21, cái mô hình sao cho cái biên phân loại
+0:09:18 - 0:09:22, của mình là lớn nhất thì support V
+0:09:21 - 0:09:26, machine là trong cái giai đoạn đó là
+0:09:22 - 0:09:28, thời kỳ hoài Kim và cho cái độ chính xác
+0:09:26 - 0:09:30, rất là cao cũng như là nó dựa trên cái
+0:09:28 - 0:09:31, nền tảng toán vững chắc
+0:09:30 - 0:09:33, Ngoài ra thì chúng ta còn có các cái mô
+0:09:31 - 0:09:35, hình như là nbs Dựa trên lý thuyết về
+0:09:33 - 0:09:37, thống kê random Forest thì chúng ta đã
+0:09:35 - 0:09:40, đề cập hồi nãy tức là chúng ta sẽ xây
+0:09:37 - 0:09:43, dựng rất nhiều cái cây trên rất nhiều
+0:09:40 - 0:09:47, những cái tập dữ liệu con khác nhau rồi
+0:09:43 - 0:09:50, và dựa trên cái cơ chế đó là backing là
+0:09:47 - 0:09:52, thực hiện độc lập train các cái cây cái
+0:09:50 - 0:09:54, cái cây quyết định nó độc lập và cuối
+0:09:52 - 0:09:56, cùng đó là nhóm các cái thuật toán về
+0:09:54 - 0:09:58, boosting thì đây chính là những cái
+0:09:56 - 0:10:02, thuật toán mà cho cái độ chính xác rất
+0:09:58 - 0:10:05, là cao ở trong các cái cuộc thi của
+0:10:02 - 0:10:08, carle Như vậy thì bài hôm nay chúng ta
+0:10:05 - 0:10:12, đã cùng lượt qua các cái mô hình từ mô
+0:10:08 - 0:10:12, hình tuyến tính với Logistic
+0:10:14 - 0:10:21, Direction và các cái mô hình phi tuyến
+0:10:17 - 0:10:24, tính ví dụ như là car nearest neighbor
+0:10:21 - 0:10:27, rồi mlp mạng neuro Network tức là mạng
+0:10:24 - 0:10:31, có nhiều lớp mạng nur có nhiều lớp rồi
+0:10:27 - 0:10:31, decision Tre
+0:10:32 - 0:10:38, và đồng thời chúng ta cũng được giới
+0:10:34 - 0:10:40, thiệu qua một số các một số cái cái cái
+0:10:38 - 0:10:42, tên của mật số cái mô hình trong đó có
+0:10:40 - 0:10:44, cái nhóm Thục toán về
+0:10:42 - 0:10:47, boosting là những cái Thục toán mà cho
+0:10:44 - 0:10:49, cái độ chính xác rất là cao trên cái
+0:10:47 - 0:10:52, cuộc thi của
+0:10:49 - 0:10:55, carle và sau này khi mà chúng ta cần
+0:10:52 - 0:10:58, thực hiện cái dự án mà đòi hỏi có cái sự
+0:10:55 - 0:11:01, gọi là đòi hỏi có cái cái độ chính xác
+0:10:58 - 0:11:03, cao thì chúng ta sẽ sử dụng cái Thục
+0:11:01 - 0:11:05, toán và boosting thay vì chúng ta sử
+0:11:03 - 0:11:07, dụng các cái Thục toán về linear tại vì
+0:11:05 - 0:11:09, những Cái m cái dữ liệu của mình Trong
+0:11:07 - 0:11:12, thực tế đa số là có mối quan hệ rất là
+0:11:09 - 0:11:14, phức tạp thì decision tree cũng là một
+0:11:12 - 0:11:17, trong những cái hướng tiếp cậu và cũng
+0:11:14 - 0:11:20, được sử dụng khá là phổ biến hiện nay và
+0:11:17 - 0:11:22, các cái biến thể của decision tre như là
+0:11:20 - 0:11:25, random Forest các cái thực toán như là
+0:11:22 - 0:11:28, radiant Boost thì nó cũng đâu đó có sử
+0:11:25 - 0:11:32, dụng cái thành phần trong cái mô hình đó
+0:11:28 - 0:11:32, là ment I

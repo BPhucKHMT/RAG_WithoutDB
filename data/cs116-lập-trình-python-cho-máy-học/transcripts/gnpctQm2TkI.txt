@@ -1,0 +1,116 @@
+0:00:00 - 0:00:07, Kỹ thuật tiếp theo là kỹ thuật backing.
+0:00:07 - 0:00:11, Baking là khi chúng ta chia ra thành cái túi.
+0:00:11 - 0:00:17, Khác với hai kỹ thuật trước đây, backing sẽ sử dụng cùng một thuật toán.
+0:00:17 - 0:00:22, Nếu như trong kỹ thuật blending hoặc start,
+0:00:22 - 0:00:28, mô đồ 123 cho đến N có thể là mô đồ khác nhau.
+0:00:28 - 0:00:38, Ví dụ như là mô hình Canary's neighbor, Neural Network, Decision Tree
+0:00:38 - 0:00:47, Thì đối với kỹ thuật Backing, các mô hình mà mình học ở đây đều là cùng một loại mô hình
+0:00:47 - 0:00:51, Cùng một loại mô hình, cùng một loại thực toán
+0:00:51 - 0:01:03, Mô độ 2, 3, đến Mô độ N có cùng màu để thể hiện việc là cùng loại, cùng thức toán.
+0:01:03 - 0:01:14, Backgain sẽ huấn luyện độc lập, đây chính là sự khác biệt giữa mô hình Backgain
+0:01:14 - 0:01:20, so với mô hình Boosting ở trong slide tiếp theo.
+0:01:20 - 0:01:28, Dự liệu gốc của mình, data set gốc của mình sẽ được split,
+0:01:28 - 0:01:31, Chia ra thành các cái túi
+0:01:31 - 0:01:35, là back xung 1, 2, 3, cho đến back xung n
+0:01:35 - 0:01:40, Đây sẽ là dữ liệu phục vụ cho việc huấn luyện mô hình
+0:01:40 - 0:01:46, Với từng dữ liệu này, chúng ta sẽ đi train cho các mô hình tương ứng
+0:01:46 - 0:01:52, Và một lần nữa, nhắc lại, các mô hình này đều dùng chung một cái thực toán
+0:01:52 - 0:02:00, và bác số 3, số 4 cho n, chúng ta sẽ train và chúng ta sẽ có n cái mô hình này
+0:02:00 - 0:02:06, sau đó cuối cùng chúng ta sẽ tổ hợp kết quả của cả n cái mô hình này
+0:02:06 - 0:02:10, thì kỹ thuật tổ hợp ở đây chúng ta có thể sử dụng kỹ thuật trước đây
+0:02:10 - 0:02:18, ví dụ như là voting, averaging, hoặc là thậm chí chúng ta có thể sử dụng backing
+0:02:18 - 0:02:26, hoặc là chúng ta có thể xử dụng kỹ thuật weighted averaging cũng được
+0:02:26 - 0:02:33, Rồi, thì tại sao kỹ thuật Backing này tạo ra sự ưu quả?
+0:02:33 - 0:02:40, Tại vì chính việc chúng ta chia tập dữ liệu ra thành nhiều thành phần khác nhau
+0:02:40 - 0:02:47, thì nó sẽ giúp cho mô hình của mình sau này khi chúng ta tổng hợp, nó sẽ có tính chất tổ quát
+0:02:47 - 0:02:54, Nó sẽ không quá bị phụ thuộc vào một mẫu dữ liệu nào đó.
+0:02:54 - 0:03:04, Ví dụ, cái model số 1 sẽ được train và thực thi rất tốt trên tập dữ liệu là patch số 1.
+0:03:04 - 0:03:12, Sang cái model dữ liệu, nó sẽ có những điểm yếu và điểm yếu đó thông thường sẽ biểu hiện ở những patch còn lại.
+0:03:12 - 0:03:22, Mô độ số 2 sẽ được khuôn luyện và thực hiện rất tốt trên tập dữ liệu ở bách số 2.
+0:03:22 - 0:03:26, Mô độ số 3 cũng sẽ thực hiện rất tốt trên những tình huống của dữ liệu.
+0:03:26 - 0:03:39, Nhưng khi các mô độ này là cùng loại, khi mà mình ensemble, nó sẽ đạt được ủ tố, đó là tính bổ trợ bổ sung cho nhau.
+0:03:39 - 0:03:48, Módul số 1 sẽ yếu ở những mét số 2, tình huống dữ liệu số 2, số 3, số n thì módul số 2 sẽ mù đáp
+0:03:48 - 0:03:56, Módul số 2 yếu ở những tình huống số 1, số 3, số n thì módul số 1, số 3 và số n sẽ mù đáp lại cho módul số 2
+0:03:56 - 0:04:01, Đấy chính là ý nghĩa của kỹ thuật backing
+0:04:01 - 0:04:14, Kỹ thuật Backing là một mô hình thành phần của kỹ thuật Random Forest, đó là một dịp dàng dàng
+0:04:17 - 0:04:22, Mô đồ thành phần
+0:04:22 - 0:04:47, Mỗi một tree là một model thành phần, được huấn luyện trên những cái tập, những cái bag dữ liệu, những cái túi dữ liệu đã được phân ra từ cái bộ dữ liệu góc.
+0:04:47 - 0:04:49, Chúng ta sẽ có nhiều cái cây này
+0:04:49 - 0:04:54, Và khi chúng ta có một cái mẫu dựng địa mới cần phải dự đoán
+0:04:56 - 0:05:01, Đây chính là cái feature, đây là một cái feature mới
+0:05:05 - 0:05:10, Thì qua cái cây số 1, nó sẽ đi theo cái đường như thế này
+0:05:10 - 0:05:14, Và nó đưa ra cái dự đoán đó là Class A
+0:05:14 - 0:05:26, Vì vậy, nếu chúng ta có thể sử dụng kỹ thuật Ensemble như đã học trong phần cơ bản, đó là kỹ thuật lố tinh, thì chúng ta sẽ đưa ra final class.
+0:05:26 - 0:05:39, Ví dụ, nếu chúng ta có thể sử dụng kỹ thuật Ensemble như đã học trong phần cơ bản, đó là kỹ thuật lố tinh, thì chúng ta sẽ đưa ra final class.
+0:05:39 - 0:05:46, Với vụ như N trong trường hợp này bằng 3, thì chúng ta thấy 2 đa bán B và 1 đa bán E
+0:05:46 - 0:05:52, Vì vậy nó sẽ giúp chúng ta đưa ra kết luận cuối cùng, đây chính là cái nhạc Class B
+0:05:52 - 0:06:11, Và ưu điểm của kỹ thuật backing và random forest nó chính là nó có tính hiệu quả do đạt được kế độ chính xác cũng như là đạt được kế tố tổng vải hóa
+0:06:11 - 0:06:16, Như đã giải thích ở trong slide trước, tức là việc chia ra thành những dữ liệu khác nhau
+0:06:16 - 0:06:19, Rồi nó sẽ chia ra các tình huống dữ liệu
+0:06:19 - 0:06:23, Và các mô đồ của mình sẽ học cho các tình huống đó
+0:06:23 - 0:06:30, Thì khi chúng ta tổng hợp lại, nó sẽ thành một cái mô đồ
+0:06:30 - 0:06:36, Có tính tổng quá cao, do nó khai thác được những điểm mạnh, điểm yếu
+0:06:36 - 0:06:38, Nó sẽ khai thác được điểm mạnh của tất cả các mô hình
+0:06:38 - 0:06:46, và các địa mếu của từng mô hình sẽ bị giảm bớt do sự bổ trợ bù trừng từng mô đồ còn lại.
+0:06:46 - 0:06:58, Tiện loại là nó có thể thực hiện được trên số lượng đặc trưng rất là lớn mà không cần phải bước phân tích đặc trưng hay còn gọi là EDA hoặc feature engineering.
+0:06:58 - 0:07:03, Đây chính là một trong những tiện loại của thuộc toán của nhóm Random Forest.
+0:07:03 - 0:07:12, Tại vì sao? Khi chúng ta có rất nhiều đặc trưng, khi đưa vào mô hình Decision Tree,
+0:07:12 - 0:07:16, thì tại một cái node, nó sẽ làm việc cho một cái feature.
+0:07:16 - 0:07:24, Tại một cái node này, nó sẽ đưa ra và nó sẽ đưa ra cái quyết định cuối cùng khi đến được cái nút lá.
+0:07:24 - 0:07:33, Rất nhiều cái feature đó sẽ rải ra cho các cái cây này.
+0:07:33 - 0:07:39, sẽ rải đều ra cho các cái cây này, nó sẽ phân tán.
+0:07:39 - 0:07:42, Và như vậy thì việc phân tán các cái feature này,
+0:07:42 - 0:07:48, nó đồng thời cũng sẽ giúp cho mình đó là không có bị quá biased,
+0:07:48 - 0:07:51, không có bị quá phụ thuộc vào một cái feature nào hết,
+0:07:51 - 0:07:57, mà nó đòi hỏi phải có cái sự tổng hợp, tổng thể của toàn bộ tất cả các cái feature với nhau.
+0:07:57 - 0:08:01, Cái sự phối hợp đó, nó tạo ra cái tính tổ bác cho cái mùi hình của mình.
+0:08:01 - 0:08:11, Tính Linh Hoạt là chúng ta có thể dùng cả cho mô hình Random Forest này cho bài toán hồi quy, lẫn full-up.
+0:08:11 - 0:08:19, Ví dụ như trong Scikit Learn, chúng ta sẽ có Random Forest Regressor cho bài toán hồi quy
+0:08:19 - 0:08:25, và Random Forest Classifier cho bài toán full-up.
+0:08:25 - 0:08:29, thì nó có thể giải quyết cho cả hai loại bài toán này
+0:08:29 - 0:08:32, nó có thể xâm xấu hóa được thục ván
+0:08:32 - 0:08:36, đây chính là một trong những nỉa mạng của thục ván này
+0:08:36 - 0:08:37, tại vì sao?
+0:08:37 - 0:08:41, tại vì việc chúng ta chia ra các mô đồ với nhau
+0:08:41 - 0:08:44, thì dẫn đến là nó sẽ tổng hợp được
+0:08:44 - 0:08:49, nó sẽ có thể tách biệt ra được các dữ liệu và các mô đồ
+0:08:49 - 0:08:51, không có dính dán gì với nhau hết
+0:08:51 - 0:08:54, do đó thì mỗi một cái core xử lý của GPU
+0:08:54 - 0:08:56, và nó sẽ làm cách độc lập với nhau.
+0:08:56 - 0:09:00, Và cái cuối cùng, đó chính là cái tố về bình vững.
+0:09:00 - 0:09:04, Tức là nó sẽ ít bị ảnh hưởng bởi cái outlier,
+0:09:04 - 0:09:08, tức là những cái đặc trưng nào, hoặc là cái mẫu dữ liệu nào,
+0:09:08 - 0:09:14, mà nó tạo ra cái sự gọi là khác biệt so với lại những cái cọ bại.
+0:09:14 - 0:09:20, Thì nếu như nó có ảnh hưởng, thì nó chỉ bị ảnh hưởng bởi một cái khu vực nào đó thôi.
+0:09:20 - 0:09:23, Ví dụ, nếu như nó có ảnh hưởng, thì nó chỉ bị ảnh hưởng bởi một cái khu vực nào đó thôi.
+0:09:23 - 0:09:26, Ví dụ nó sẽ bị ảnh hưởng bởi một khu vực này
+0:09:26 - 0:09:36, Còn rất nhiều những nhánh còn lại hoặc là những cây còn lại thì nó đều có thể là không bị ảnh hưởng
+0:09:36 - 0:09:39, Nó chỉ bị ảnh hưởng bởi một tố nạ cục bộ thôi
+0:09:39 - 0:09:51, Bị ảnh hưởng một cách cục bộ mà không có sự lan truyền cho tất cả những nốt còn lại trong nguyên rừng random forest
+0:09:51 - 0:10:00, Và chính điều đó cũng gây ra ảnh hưởng đến việc đó là ít có khả năng bị overfitting
+0:10:00 - 0:10:07, Tại vì sao? Tại vì nó phân táng ra, phân táng dữ liệu ra rất nhiều các back khác nhau
+0:10:07 - 0:10:14, Từng model của mình nếu như có overfit thì cũng chỉ overfit trên 1 back thôi
+0:10:14 - 0:10:19, Nhưng tổ hợp của nhiều mô hình thì nó lại giúp cho mình giảm được hiệp được overfitting này
+0:10:19 - 0:10:25, Đối với kỹ thuật backing, nó sẽ khó giải thích mô hình tại vì sao?
+0:10:25 - 0:10:34, Tại vì khi chúng ta chia ra làm rất nhiều cây, tổ hợp của các feature sẽ rải ra rất nhiều
+0:10:34 - 0:10:44, Tại vì sao? Tại vì khi chúng ta chia ra làm rất nhiều cây và tổ hợp của các feature ở đây nó sẽ rải ra rất nhiều
+0:10:44 - 0:10:54, Và việc tổng hợp nó lại để mà có thể biết là feature này nó sẽ kết hợp với feature kia để tạo ra được quyết định cuối cùng
+0:10:54 - 0:11:02, Rõ ràng đó là không có yếu tố hoặc rất là khó để có thể cảm nhận được tại sao mình lại có thể chia ra thành các cây như vậy
+0:11:02 - 0:11:09, và các cái cây này vận hành nhưng mà cái sự tương tác giữa các feature với nhau thì cũng rất là khó giải thích.
+0:11:10 - 0:11:17, Cái độ phức tạp của thuật toán nó cũng cao tại vì bản thân thuật toán Decision Tree là nó cũng đã có cái độ phức tạp cao rồi.
+0:11:18 - 0:11:27, Nó sẽ phải xét trên các cái độ ný thuyết về information gain, tức là sự gia tăng về thông tin
+0:11:28 - 0:11:31, hoặc là sử dụng các độ đo như là gini để bớt đuối xứng.
+0:11:31 - 0:11:41, Tính toán trên từng cái node này và sau đó thì nó sẽ tìm ra cái node nào cho lượng thông tin nhiều nhất để nó xây dựng cái cây.
+0:11:41 - 0:11:46, Tóm lại đó là độ phức tạp cao là nó đến từ việc xây dựng từng cái cấu túc cây.
+0:11:48 - 0:11:54, Và nó có thể bị bias với cái dĩa liệu, cái tình huống đó là cái dĩa liệu không cân bằng.
+0:11:54 - 0:12:02, Đối với mẫu dữ liệu có nhãn quá thiên lạch,
+0:12:02 - 0:12:05, ví dụ 3 nhãn là ABC,
+0:12:05 - 0:12:11, ABC quá thiên lạch cho một class nào đó,
+0:12:11 - 0:12:17, thì mô hình sẽ tập trung vào class A,
+0:12:17 - 0:12:21, mà không có chính bệnh yếu tố random,
+0:12:21 - 0:12:26, random nên những mẫu nào nó xuất hiện nhiều thì nó sẽ bị bias vào những mẫu đó
+0:12:26 - 0:12:28, do kỹ tố sát xuất
+0:12:28 - 0:12:32, thì sát xuất liên quan đến việc là những điều không cân bằng
+0:12:32 - 0:12:40, chứ còn nếu 3 cái mẫu, 3 cái class A, B, C này mà có sự gọi là phân bốt đồng đều
+0:12:40 - 0:12:45, thì nó sẽ không có sự quá thiên lạch cho 1 cái class nào hết
+0:12:45 - 0:13:09, Một số mô hình điển hình đó là Random Forest, Backcat, Kainan, Backsvm

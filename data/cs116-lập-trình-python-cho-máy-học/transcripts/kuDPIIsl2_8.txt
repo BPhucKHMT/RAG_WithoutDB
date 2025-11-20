@@ -1,0 +1,143 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:18, Chúng ta sẽ cùng đến với bài học tiếp
+0:00:15 - 0:00:20, theo đó là machine learning pipeline và
+0:00:18 - 0:00:23, phân tích dữ liệu thì tên tiếng Việt của
+0:00:20 - 0:00:26, machine learning pipeline đó chính là
+0:00:23 - 0:00:28, quy trình xây dựng cái mô hình ở máy học
+0:00:26 - 0:00:31, và đây có lẽ là một trong những cái bài
+0:00:28 - 0:00:35, học quan trọng vì nó đi xuyên suốt trong
+0:00:31 - 0:00:37, toàn bộ Cái môn học này machine pipeline
+0:00:35 - 0:00:39, nó sẽ cho chúng ta biết được cái quy
+0:00:37 - 0:00:41, trình thực hiện bao gồm những cái bước
+0:00:39 - 0:00:44, nào và trong cái quá trình thực hiện thì
+0:00:41 - 0:00:47, chúng ta biết được cái vai trò của từng
+0:00:44 - 0:00:50, cái bước trong machine learning pipeline
+0:00:47 - 0:00:52, là gì thì nội dung ngày hôm nay đó là
+0:00:50 - 0:00:56, chúng ta sẽ giới thiệu về khái niệm
+0:00:52 - 0:00:58, machine learning pipeline và vai trò của
+0:00:56 - 0:01:01, nó tại sao chúng ta cần phải thực hiện
+0:00:58 - 0:01:03, một cái quy trình máy h học và trong
+0:01:01 - 0:01:05, phần thứ hai thì chúng ta sẽ cùng tìm
+0:01:03 - 0:01:07, hiểu về một số cái thành phần chính của
+0:01:05 - 0:01:10, machine learning pipeline và cuối cùng
+0:01:07 - 0:01:12, thì chúng ta sẽ đến với một trong những
+0:01:10 - 0:01:14, cái bước đầu tiên của cái quy trình đó
+0:01:12 - 0:01:17, chính là phân tích dữ liệu hay là
+0:01:14 - 0:01:20, exploratory data analysis hay quết tắt
+0:01:17 - 0:01:20, đó là
+0:01:24 - 0:01:30, edi đến với khái niệm về machine
+0:01:26 - 0:01:33, learning pipeline thì đây là một chụ các
+0:01:30 - 0:01:36, cái bước xử lý và xây dựng cái mô hình
+0:01:33 - 0:01:39, của mình được liệt kê được liên kết với
+0:01:36 - 0:01:42, nhau để chuẩn hóa tối ưu cái quá trình
+0:01:39 - 0:01:44, xây dựng và huấn luyện đồng thời là đánh
+0:01:42 - 0:01:46, giá cũng như là triển khai mô hình máy
+0:01:44 - 0:01:49, học đến với thực tế thì ở trên đây chúng
+0:01:46 - 0:01:52, ta thấy là một cái sơ đồ gồm các cái
+0:01:49 - 0:01:55, bước trong machine learning pipeline và
+0:01:52 - 0:01:57, chúng ta lưu ý rằng là cái sơ đồ này thì
+0:01:55 - 0:02:00, có nhiều cái phiên bản khác nhau và đây
+0:01:57 - 0:02:01, là một cái sơ đồ điển hình có thể là một
+0:02:00 - 0:02:05, số
+0:02:01 - 0:02:08, cái một số cái tác giả khác có thể là
+0:02:05 - 0:02:10, chọn những cái quan điểm thiết kế một
+0:02:08 - 0:02:12, cái pipeline khác nhau tuy nhiên thì đâu
+0:02:10 - 0:02:14, đó nó cũng sẽ bao gồm các cái bước cơ
+0:02:12 - 0:02:18, bản như
+0:02:14 - 0:02:20, trên và tại sao chúng ta cần phải thực
+0:02:18 - 0:02:22, hiện cái quy trình mấy học này đầu tiên
+0:02:20 - 0:02:24, đó là chúng ta phải nói đến cái tính
+0:02:22 - 0:02:25, hiệu quả Cái quy trình này nó sẽ giúp
+0:02:24 - 0:02:28, cho chúng ta
+0:02:25 - 0:02:32, Ờ quy trình hóa tức là chúng ta modu hóa
+0:02:28 - 0:02:33, ờ các cái bước cần phải thực hiện khi
+0:02:32 - 0:02:36, chúng ta xây dựng một cái mô hình máy
+0:02:33 - 0:02:38, học và đồng thời nếu như chúng ta làm
+0:02:36 - 0:02:41, tốt thì chúng ta cũng có khả năng tự
+0:02:38 - 0:02:44, động hóa cái việc cái mô hình máy học nó
+0:02:41 - 0:02:47, vận hành triển khai từ cái khâu
+0:02:44 - 0:02:49, là thu thập dữ liệu kiểm định dữ liệu
+0:02:47 - 0:02:51, cho đến các cái bước là huấn luyện mô
+0:02:49 - 0:02:54, hình Và thậm chí là đến được các bước
+0:02:51 - 0:02:55, triển khai đến cái nguy dụng cuối thì
+0:02:54 - 0:02:57, nếu mà chúng ta thực hiện tốt thì chúng
+0:02:55 - 0:03:00, ta có thể tự động hóa được
+0:02:57 - 0:03:03, luôn và cái tính hiệu quả này nó còn thể
+0:03:00 - 0:03:06, hiện ở chỗ đó là nó giúp cho chúng ta
+0:03:03 - 0:03:09, tiết kiệm được thời gian và nguồn lực
+0:03:06 - 0:03:11, thời gian thì bao gồm là các cái công
+0:03:09 - 0:03:13, đoạn trong quá trình mà xây dựng một mô
+0:03:11 - 0:03:16, hình máy học nếu như chúng ta làm mà
+0:03:13 - 0:03:19, không có quy trình và không có cái sự
+0:03:16 - 0:03:21, liên kết giữa các cái module với nhau
+0:03:19 - 0:03:24, thì đâu đó chúng ta sẽ phải tốn thời
+0:03:21 - 0:03:26, gian trong cái việc là triển khai cái mô
+0:03:24 - 0:03:29, hình trong thực tế về nguồn lực thì nó
+0:03:26 - 0:03:31, tương ứng đó là chúng ta phải tốn nhiều
+0:03:29 - 0:03:33, nh cái nhân sự hơn để mà xây dựng cái mô
+0:03:31 - 0:03:36, hình này có thể triển khai được đến
+0:03:33 - 0:03:38, người dùng cuối cũng như là bảo trì rồi
+0:03:36 - 0:03:41, cập nhật nâng cấp cái mô hình máy học
+0:03:38 - 0:03:43, của mình thì cái tính hiệu quả là nó thể
+0:03:41 - 0:03:47, hiện ở những yếu tố như vậy về khả năng
+0:03:43 - 0:03:50, tái lập tức là reproducibility là chúng
+0:03:47 - 0:03:52, ta có khả năng lặp lại được những cái
+0:03:50 - 0:03:54, kết quả đã thực hiện được trước đó hay
+0:03:52 - 0:03:57, không khi chúng ta thử nghiệm ở nhiều
+0:03:54 - 0:03:59, môi trường khác nhau và từ cái giai đoạn
+0:03:57 - 0:04:01, gọi là phát triển thử nghiệm ở trong
+0:03:59 - 0:04:04, phòng thí nghiệm đến những cái bước mà
+0:04:01 - 0:04:07, chúng ta thực hiện và triển khai cho
+0:04:04 - 0:04:09, người dùng cuối sử dụng thì liệu là từ
+0:04:07 - 0:04:11, trong cái giai đoạn ở phòng thí nghiệm
+0:04:09 - 0:04:13, cho đến lúc mà triển khai cho người dùng
+0:04:11 - 0:04:16, cuối cái mô hình của mình có được bảo
+0:04:13 - 0:04:17, trì có được đảm bảo rằng là đang thực
+0:04:16 - 0:04:21, hiện trên cùng một cái phiên bản hay
+0:04:17 - 0:04:25, không đó Thì đó chính là cái tính lặp
+0:04:21 - 0:04:27, lại được tính ờ triển khai trong thực tế
+0:04:25 - 0:04:30, nó phải giống nhau giữa phòng thí nghiệm
+0:04:27 - 0:04:33, và trong cái môi trường triển khai
+0:04:30 - 0:04:35, đơn giản hóa cái việc triển khai thì mô
+0:04:33 - 0:04:38, hình của mình triển khai luôn được sẵn
+0:04:35 - 0:04:40, sàng chuyển giao từ thí nghiệm sang thực
+0:04:38 - 0:04:43, thế nghĩa là trong suốt cái quá trình mà
+0:04:40 - 0:04:46, chúng ta phát triển các cái mô hình thì
+0:04:43 - 0:04:48, chúng ta có thể triển khai ngay được một
+0:04:46 - 0:04:51, cái mô hình nào đó ở trong phòng thí
+0:04:48 - 0:04:53, nghiệm sang cái môi trường thực tế mà
+0:04:51 - 0:04:56, không gặp phải những cái rủi ro về dữ
+0:04:53 - 0:05:00, liệu rủi ro về độ chính xác rủi ro về
+0:04:56 - 0:05:04, hiệu năng của hệ thống cái tính khả năng
+0:05:00 - 0:05:07, tái sử dụng reusable là các cái mã nguồn
+0:05:04 - 0:05:10, rồi những cái module trong cái
+0:05:07 - 0:05:12, Ờ quy trình thực hiện thì có được tái sử
+0:05:10 - 0:05:15, dụng cho những cái dự án khác hay không
+0:05:12 - 0:05:18, thì đó là cái tính tái sử dụng cái tính
+0:05:15 - 0:05:20, dễ kiểm soát tức là chúng ta có thể biết
+0:05:18 - 0:05:21, được rằng là cái hệ thống hiện tại đang
+0:05:20 - 0:05:24, được vận hành
+0:05:21 - 0:05:26, Ờ khi triển khai thực tế là đang phiên
+0:05:24 - 0:05:28, bản thứ bao nhiêu rồi cái phiên bản
+0:05:26 - 0:05:30, trong phòng thí nghiệm đang thực hiện
+0:05:28 - 0:05:33, đang thử nghiệm thì nó đang là ở phiên
+0:05:30 - 0:05:36, bản bao nhiêu và chúng ta liệu có đảm
+0:05:33 - 0:05:38, bảo được rằng là cái phiên bản hiện tại
+0:05:36 - 0:05:39, mà chúng ta đang phát triển hoặc là đang
+0:05:38 - 0:05:41, triển khai trong thực tế đó có phải là
+0:05:39 - 0:05:45, phiên bản mới nhất hay không thì đó
+0:05:41 - 0:05:47, chính là cái tính dễ kiểm soát và cuối
+0:05:45 - 0:05:50, cùng đó chính là cái tính dễ cộng tác
+0:05:47 - 0:05:54, Tức là khi chúng ta mô hình hóa quy
+0:05:50 - 0:05:56, trình hóa cái à machine learning cái cái
+0:05:54 - 0:05:58, cái việc xây dựng cái mô hình máy học
+0:05:56 - 0:06:01, thì chúng ta sẽ có thể dễ dàng phân chia
+0:05:58 - 0:06:03, nó ra cho nhiều người quản lý và mỗi
+0:06:01 - 0:06:07, người sẽ handle hoặc là mỗi nhóm sẽ
+0:06:03 - 0:06:09, handle cho một cái module và các cái
+0:06:07 - 0:06:11, module đó thì có thể song song hóa được
+0:06:09 - 0:06:13, với nhau hay không thì chúng ta sẽ có
+0:06:11 - 0:06:16, thể cho cái công việc của mình nó thực
+0:06:13 - 0:06:18, hiện một cách đồng thời thì đó chính là
+0:06:16 - 0:06:22, cái tính dễ cộng tác khi chúng ta xây
+0:06:18 - 0:06:22, dựng cái machine learning pipeline

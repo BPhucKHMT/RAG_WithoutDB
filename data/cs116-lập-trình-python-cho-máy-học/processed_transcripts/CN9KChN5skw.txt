@@ -1,0 +1,372 @@
+0:00:00 - 0:00:07, và đến cái tầng à tiếp theo đó chính là
+0:00:03 - 0:00:11, tầng activation tầng activation này thì
+0:00:07 - 0:00:11, đây là một cái tầng mà Biến đổi Phi
+0:00:11 - 0:00:15, tuyến thì như chúng ta đã từng nhận xét
+0:00:13 - 0:00:18, trước đó cái phép conclusion này á đó là
+0:00:15 - 0:00:18, cái phép biến đổi tuyến
+0:00:18 - 0:00:23, tính nếu như chúng ta thực hiện cái phép
+0:00:21 - 0:00:26, conversion nối tiếp với một cái phép
+0:00:23 - 0:00:28, convolution mà không có cái phép tuyến
+0:00:26 - 0:00:30, tính ở giữa thì có không có một cái phép
+0:00:28 - 0:00:31, Phi tuyến ở giữa đó thì đâu đó nó nó sẽ
+0:00:30 - 0:00:35, tạo ra thành một cái tổ
+0:00:31 - 0:00:37, hợp một cái tổ hợp tuyến tính mà thôi
+0:00:35 - 0:00:38, tức là tuyến tính rồi lại biến đổi tuyến
+0:00:37 - 0:00:40, tính thì nó sẽ tạo ra một cái tổ hợp
+0:00:38 - 0:00:45, tuyến tính mà cái tổ hợp tuyến tính thì
+0:00:40 - 0:00:49, nó sẽ không giải được à nó sẽ không giải
+0:00:45 - 0:00:49, quyết được các cái bài toán Phi
+0:00:49 - 0:00:54, tuyến do đó thì chúng ta sẽ phải Ngay
+0:00:52 - 0:00:56, sau cái phép tiến nửa conclusion chúng
+0:00:54 - 0:00:58, ta phải có một cái tầng activation Phi
+0:00:56 - 0:01:01, tuyến thì trước đây người ta sử dụng cái
+0:00:58 - 0:01:04, hàm là hàm sig
+0:01:01 - 0:01:06, nhưng mà gần đây thì khi cái khối lượng
+0:01:04 - 0:01:09, dữ liệu lớn khi cái kiến trúc mạng nó
+0:01:06 - 0:01:11, càng sâu hơn thì người ta nhận thấy rằng
+0:01:09 - 0:01:13, là đổi từ sigmo sang relu thì sẽ giúp
+0:01:11 - 0:01:17, cho cái Việc huấn
+0:01:13 - 0:01:21, luyện sẽ nhanh hơn cái Việc huấn luyện
+0:01:17 - 0:01:25, sẽ nhanh hơn và cái việc này đó là do
+0:01:21 - 0:01:25, chúng ta làm giảm cái hiện tượng
+0:01:25 - 0:01:28, vaning
+0:01:28 - 0:01:34, radient đó thì đây sẽ là một cái chủ đề
+0:01:31 - 0:01:37, thêm để cho các bạn tìm hiểu về sau ha
+0:01:34 - 0:01:40, Nhưng đại khí đó là với cái việc sử dụng
+0:01:37 - 0:01:42, tầng activation là rue thì nó đã giúp
+0:01:40 - 0:01:45, cho mình giảm cái hiện tượng vanishing
+0:01:42 - 0:01:47, radient tức là tiêu biến cái cái đạo hàm
+0:01:45 - 0:01:49, đạo hàm của mình mà trong quá trình cập
+0:01:47 - 0:01:51, nhật mà nó càng lúc càng nhỏ thì dẫn đến
+0:01:49 - 0:01:54, cái bước cập nhật của mình nó sẽ càng
+0:01:51 - 0:01:56, chậm đúng không Thì activation mà dùng
+0:01:54 - 0:01:58, hàm relu thì cái đạo hàm của mình nó sẽ
+0:01:56 - 0:02:00, bị không có bị cái hiện tượng này và
+0:01:58 - 0:02:01, không bị hiện tượng này thì nó sẽ huấn
+0:02:00 - 0:02:05, luyện nhanh
+0:02:01 - 0:02:08, hơn thì đối với cái tầng
+0:02:05 - 0:02:10, activation thì chúng ta sử dụng hàm ru
+0:02:08 - 0:02:13, và cái công thức của cái hàm rue nó sẽ
+0:02:10 - 0:02:16, là bằng rue của hàm của j j là đầu vào
+0:02:13 - 0:02:20, ha sẽ là bằng max của 0 và j thì hiểu
+0:02:16 - 0:02:24, một cách nô na Đó là những cái dữ liệu j
+0:02:20 - 0:02:27, mà bé hơn 0 á thì nó sẽ trệt tiêu đi nó
+0:02:24 - 0:02:30, sẽ đưa về cái con số đó là 0 rồi còn
+0:02:27 - 0:02:31, những cái dữ liệm J Những cái giá trị
+0:02:30 - 0:02:35, đầu vào của mình là những cái giá trị
+0:02:31 - 0:02:37, lớn hơn Không thì nó sẽ giữ nguyên Nếu j
+0:02:35 - 0:02:40, mà lớn hơn 0 thì nó sẽ giữ nguyên hay
+0:02:37 - 0:02:43, hiểu một cách nô na rue này nó sẽ lọc
+0:02:40 - 0:02:46, những cái thông
+0:02:43 - 0:02:46, tin không cần
+0:02:47 - 0:02:54, thiết và chỉ chừa những cái thông tin
+0:02:50 - 0:02:56, quan trọng mà thôi rồi và cái tầng Chúng
+0:02:54 - 0:02:58, ta có một cái lưu ý đó là trong cái mạng
+0:02:56 - 0:03:01, CNN thì cái tầng value là thường phải
+0:02:58 - 0:03:04, Ngay sau Thường ngay theo sau tầng
+0:03:01 - 0:03:07, conion tại vì cái thằng này là conion đó
+0:03:04 - 0:03:08, là tuyến tính đó và ngay sau tuyến tính
+0:03:07 - 0:03:12, thì chúng ta phải có một cái phép biến
+0:03:08 - 0:03:14, đổi Phi tuyến Ngoài ra thì ru chúng ta
+0:03:12 - 0:03:18, có thể thay cho các cái hàm khác là hàm
+0:03:14 - 0:03:20, sigmo hàm Tank licky ru vân vân Nhưng mà
+0:03:18 - 0:03:23, như chúng ta nói cái biến thể của cái
+0:03:20 - 0:03:24, mạng CNN mà trong những thời trong trong
+0:03:23 - 0:03:26, cái thời gian gần đây á thì người ta rất
+0:03:24 - 0:03:28, hay sử dụng ru là vì nó giúp cho cái
+0:03:26 - 0:03:30, mạng của mình nó huấn luyện nhanh thì
+0:03:28 - 0:03:32, trong cái phần bài tập chúng ta sẽ có
+0:03:30 - 0:03:34, cái phần thử nghiệm thay vì sử dụng
+0:03:32 - 0:03:37, value chúng ta sẽ dùng sigmo thì khi mà
+0:03:34 - 0:03:38, chúng ta đưa vô với hàm xmo nó sẽ huấn
+0:03:37 - 0:03:40, luyện rất là chậm Nhưng mà nếu như chúng
+0:03:38 - 0:03:42, ta sử dụng cái HP ru thì tốc độ huấn
+0:03:40 - 0:03:44, luyện nó sẽ rất là
+0:03:42 - 0:03:49, nhanh rồi thì ở đây chúng ta sẽ có một
+0:03:44 - 0:03:51, cái bài tập để tính nháp trên cái phép
+0:03:49 - 0:03:54, biến đổi à trên cái tầng activation này
+0:03:51 - 0:03:56, ha giả sử như chúng ta có một cái input
+0:03:54 - 0:04:00, à là một cái
+0:03:56 - 0:04:05, tensor 3 x 3 nhân
+0:04:00 - 0:04:08, 2 3 x 3 x 2 thì ở đây chúng ta sẽ có hai
+0:04:05 - 0:04:09, lá cắt thì ở đây mỗi cái Ma Trận này nó
+0:04:08 - 0:04:12, tương ứng là một cái lá
+0:04:09 - 0:04:14, cắt thì chúng ta sẽ có cái giá trị này
+0:04:12 - 0:04:17, và nếu như chúng
+0:04:14 - 0:04:20, ta nhân Xin lỗi chúng ta thực hiện với
+0:04:17 - 0:04:23, cái tầng activation và hàm R thì cái
+0:04:20 - 0:04:26, output của mình nó sẽ ra cái cal như thế
+0:04:23 - 0:04:30, nào thì các bạn sẽ tính toán thử ha số 0
+0:04:26 - 0:04:33, nó sẽ biến thành số 0 -1 nó nó sẽ biến
+0:04:30 - 0:04:35, thành số 0 0 sẽ biến thành số 0 đó Cứ
+0:04:33 - 0:04:38, như vậy Số này là số dương đúng không nó
+0:04:35 - 0:04:38, sẽ giữ nguyên
+0:04:43 - 0:04:49, rồi đó thì đây là những cái số chữ cái
+0:04:47 - 0:04:51, màu đỏ đó chính là cái kết quả sau khi
+0:04:49 - 0:04:54, chúng ta thực hiện với lại cái phép biến
+0:04:51 - 0:04:58, đổi rectify linear unit
+0:04:54 - 0:05:01, relu tầng thứ ba trong cái kiến trúc
+0:04:58 - 0:05:05, mạng cdn chính là cái tầng pulling thì
+0:05:01 - 0:05:08, cái pulling này á là phi tham
+0:05:05 - 0:05:11, số phi tham số nghĩa là sao Tức là chúng
+0:05:08 - 0:05:14, ta sẽ không có cái tham số để huấn luyện
+0:05:11 - 0:05:14, không có cái tham số huấn
+0:05:15 - 0:05:20, luyện nó nhiệm vụ của cái tầng pooling
+0:05:18 - 0:05:24, này nó chỉ đơn giản là để giảm cái kích
+0:05:20 - 0:05:26, thước của cái feature Map của mình Ví dụ
+0:05:24 - 0:05:29, trong trường hợp này chúng ta có một cái
+0:05:26 - 0:05:34, ảnh 4 x 4 khi áp dụng với cái filter 2
+0:05:29 - 0:05:36, nh 2 2 nhân 2 và với cái bức nhảy là 2
+0:05:34 - 0:05:38, thì đâu đó chúng ta sẽ thấy là ảnh 4 x 4
+0:05:36 - 0:05:41, nó sẽ giảm xuống còn một cái ảnh kích
+0:05:38 - 0:05:43, thước là 2 x 2 và cái cách thức chúng ta
+0:05:41 - 0:05:45, sẽ thực hiện với hai cái phép biến đổi
+0:05:43 - 0:05:48, Max spoling và average pulling max
+0:05:45 - 0:05:51, pooling là gì khi chúng ta
+0:05:48 - 0:05:53, Ờ khi chúng ta đưa cái filter này lên
+0:05:51 - 0:05:57, trên đây thì chúng ta sẽ lấy ra được bốn
+0:05:53 - 0:06:00, giá trị là 20 1 1 và chúng ta sẽ thực
+0:05:57 - 0:06:01, hiện cái phép biến đổi là max thì 2011
+0:06:00 - 0:06:05, giá trị lớn nhất của mình đó chính là 2
+0:06:01 - 0:06:09, chúng ta sẽ điền 2 qua đây và 2011 mà
+0:06:05 - 0:06:15, cộng trung bình đúng không Thì nó sẽ ra
+0:06:09 - 0:06:17, là 1 đó do đó thì giá trị lớn nhất max
+0:06:15 - 0:06:20, pulling thì tại đây nó sẽ ra là 2 nhưng
+0:06:17 - 0:06:23, mà average pulling thì ở đây nó sẽ ra là
+0:06:20 - 0:06:25, 1 rồi chúng ta sẽ trượt với cái bước
+0:06:23 - 0:06:27, nhảy Strike là bằng 2 ha Như vậy chúng
+0:06:25 - 0:06:29, ta bỏ qua Cái ô này chúng ta bỏ qua ô
+0:06:27 - 0:06:33, này và đến đây thì chúng ta sẽ đ tiếp
+0:06:29 - 0:06:35, các giá trị max của nó sẽ là 4 và trung
+0:06:33 - 0:06:38, bình của nó sẽ là 2 rồi lại tiếp tục
+0:06:35 - 0:06:42, nhảy khóc vàở đây max của nó sẽ là 3
+0:06:38 - 0:06:44, trung bình sẽ là 2 rồi max sẽ là 5 và
+0:06:42 - 0:06:47, trung bình sẽ là 3 thì đây chính là cái
+0:06:44 - 0:06:50, phép biến đổ pulling
+0:06:47 - 0:06:52, và Strike thì thường có kích thước bằng
+0:06:50 - 0:06:56, với lại cái kích thước của cái filter Ví
+0:06:52 - 0:06:59, dụ như ở đây filter là 2 nhân 2 thì st
+0:06:56 - 0:07:02, của mình nó sẽ là bằng 2 và các cái
+0:06:59 - 0:07:06, futter này thì được áp dụng độc lập
+0:07:02 - 0:07:10, à áp dụng độc lập đó ví dụ như
+0:07:06 - 0:07:13, cái feature map đầu vào của
+0:07:10 - 0:07:15, mình không nó sẽ có cái độ sâu là D thì
+0:07:13 - 0:07:20, nó sẽ lấy cái cơ đồ này nó sẽ áp dụng
+0:07:15 - 0:07:20, độc lập trên từng cái l Cup feature
+0:07:20 - 0:07:27, này và sau đó nó sẽ tạo ra với cái phép
+0:07:24 - 0:07:30, pulling này ha với cái phép pulling nó
+0:07:27 - 0:07:34, sẽ tạo ra một cái feature m
+0:07:30 - 0:07:36, kích thước à Có cái độ sâu đúng bằng D
+0:07:34 - 0:07:38, luôn Ví dụ ở đây là D thì ở đây đúng
+0:07:36 - 0:07:40, bằng D tại vì cứ một cái lá CT bên đây
+0:07:38 - 0:07:42, nó sẽ tạo ra một lá cắt bên đây một cái
+0:07:40 - 0:07:45, lá cắt bên đây nó sẽ tạo ra một lá CT
+0:07:42 - 0:07:47, bên đây còn kích thước của bè ngang bề
+0:07:45 - 0:07:49, cao thì có thể thay đổi nha do Strike
+0:07:47 - 0:07:51, bằng 2 thì kích thước này nó có thể giảm
+0:07:49 - 0:07:55, xuống còn nữa
+0:07:51 - 0:07:58, thôi rồi và cuối cùng đó chính là tầng
+0:07:55 - 0:08:00, Fully conned Thì trước khi thực hiện cái
+0:07:58 - 0:08:02, tầng Fully coned này nó sẽ có một cái
+0:08:00 - 0:08:05, bước nó là flattening tại sao lại như
+0:08:02 - 0:08:08, vậy Tại vì sao cái phép biến đổi
+0:08:05 - 0:08:11, convolution đúng không Nó
+0:08:08 - 0:08:16, biến một cái
+0:08:11 - 0:08:16, tensor nó sẽ biến thành một cái
+0:08:17 - 0:08:26, tensor rồi cái phép ru cái hàm kích hoạt
+0:08:21 - 0:08:28, ru thì nó cũng sẽ biến đổi một
+0:08:26 - 0:08:31, cái
+0:08:28 - 0:08:31, tensor thành một cái
+0:08:33 - 0:08:37, tenser rồi cái phép biến đổi
+0:08:38 - 0:08:41, Ờ
+0:08:41 - 0:08:48, fulling thì nó cũng sẽ biến đổi một cái
+0:08:45 - 0:08:49, tensor biến thành một cái tensor Tuy
+0:08:48 - 0:08:53, nhiên cái tensor này thường nó sẽ có
+0:08:49 - 0:08:57, kích thước nhỏ hơn đó thì suy cho cùng
+0:08:53 - 0:08:58, contion ru và pulling một chuỗi phối hợp
+0:08:57 - 0:09:03, các cái phép biến đổi này nó sẽ biến
+0:08:58 - 0:09:04, tenser thành một cái tensor đó rồi mà
+0:09:03 - 0:09:07, tensor thì nó không phải là cái dạng
+0:09:04 - 0:09:09, chuẩn đầu vào để mà cho chúng ta thực
+0:09:07 - 0:09:12, hiện với cái phép Fully connected đây
+0:09:09 - 0:09:14, chính là cái mạng neuron đây chính là
+0:09:12 - 0:09:16, cái mạng neuron Network của
+0:09:14 - 0:09:19, mình như vậy thì chúng ta sẽ phải có một
+0:09:16 - 0:09:22, cái bước để chuyển đổi cái tensor này
+0:09:19 - 0:09:27, biến nó thành một cái vector đó để làm
+0:09:22 - 0:09:30, đầu vào cho cái mạng Fully contic ở đây
+0:09:27 - 0:09:35, ha rồi thì ở đây chúng ta Giả sử có một
+0:09:30 - 0:09:39, cái tenser kích thước là 2 x 2 nhân
+0:09:35 - 0:09:41, 2 và ở đây thì chúng ta sẽ cắt cái thằng
+0:09:39 - 0:09:46, này ra đúng không mỗi lá cắt chúng sẽ
+0:09:41 - 0:09:48, tạo ra ở đây thì 0 10 1 đó mỗi cái lá
+0:09:46 - 0:09:51, Cát này chúng ta sẽ có các cái giá trị
+0:09:48 - 0:09:54, đầu bào như thế này thì flaton bản chất
+0:09:51 - 0:09:56, nó là duỗi nó duỗi một cái tenser 3D để
+0:09:54 - 0:09:58, tạo thành một cái tensor 1D tức là một
+0:09:56 - 0:10:02, cái vector thì số
+0:09:58 - 0:10:06, 0 chép qua đây số 1 chép qua đây rồi số
+0:10:02 - 0:10:10, 0 chép qua đây số 1 chép qua
+0:10:06 - 0:10:10, đây r số
+0:10:13 - 0:10:18, 0 đó thì nó sẽ tạo thành vectơ và với
+0:10:16 - 0:10:21, cái vectơ này thì nó sẽ thực hiện cái
+0:10:18 - 0:10:24, phép biến đổi Fully connected để tạo ra
+0:10:21 - 0:10:26, từ một cái vectơ tạo ra thành một cái
+0:10:24 - 0:10:27, vectơ khác thì trong trường hợp Ví dụ
+0:10:26 - 0:10:31, như bài này chúng ta nhận dạng ba lớp đó
+0:10:27 - 0:10:34, là à nhạc cửa nè người nè cây nè đúng
+0:10:31 - 0:10:36, không Thì ở đây nó sẽ có ba cái nốt đồ
+0:10:34 - 0:10:41, ra thì ở đây chúng ta sẽ có cái bộ tham
+0:10:36 - 0:10:43, số thta để phân loại cái đặc trưng đã
+0:10:41 - 0:10:48, rút trích được từ cái bước là conion
+0:10:43 - 0:10:52, relu Và poing đây là cái đặc trưng
+0:10:48 - 0:10:54, đó và chúng ta sẽ đi qua cái f contic
+0:10:52 - 0:10:58, này như là một cái máy phân
+0:10:54 - 0:11:00, lớp đó để phân lớp và tạo ra một cái
+0:10:58 - 0:11:05, neuron output
+0:11:00 - 0:11:08, thì đây chính là các cái thành phần để
+0:11:05 - 0:11:12, tạo ra một cái mạng CNN đó Như vậy tổng
+0:11:08 - 0:11:15, kết thì mạng CNN nó sẽ kế thừa từ cái
+0:11:12 - 0:11:17, mạng neuro Network đúng không và cái đầu
+0:11:15 - 0:11:19, tiên của nó đó là nó không có sử dụng
+0:11:17 - 0:11:22, cái phép biến đổi
+0:11:19 - 0:11:24, Fully connected
+0:11:22 - 0:11:27, à nó sẽ không còn sử dụng cái cơ chế
+0:11:24 - 0:11:30, Fully contic nữa mà nó sẽ dùng cơ chế là
+0:11:27 - 0:11:31, chia sẻ trọng số và kết nối của bộ đó
+0:11:30 - 0:11:33, thì bản chất của th này đó chính là cái
+0:11:31 - 0:11:36, phép
+0:11:33 - 0:11:40, convolution rồi đồng thời
+0:11:36 - 0:11:43, CNN sẽ bao gồm các cái tầng biến đổi đó
+0:11:40 - 0:11:47, là tầng conion activation pulling và kết
+0:11:43 - 0:11:52, nối đầy đủ thì sau đây à mình sẽ vẽ một
+0:11:47 - 0:11:53, cái mạng CNN mà nó có cái sự kết nối
+0:11:52 - 0:11:56, giữa các cái tầng này ha và đương nhiên
+0:11:53 - 0:11:59, cái mạng cnm này thì chúng ta sẽ phải ở
+0:11:56 - 0:12:03, mức độ là đơn giản thôi đầu vào của mình
+0:11:59 - 0:12:06, nó sẽ có một cái tấm ảnh đó và thường
+0:12:03 - 0:12:07, ảnh này là ảnh màu thì dep ở đây nó sẽ
+0:12:06 - 0:12:12, là bằng
+0:12:07 - 0:12:13, 3 qua cái phép biến đổi
+0:12:12 - 0:12:17, conclusion
+0:12:13 - 0:12:20, với d cái filter D cái
+0:12:17 - 0:12:22, filter thì chúng ta sẽ tạo ra một cái
+0:12:20 - 0:12:27, feature
+0:12:22 - 0:12:27, map có kích thước là D
+0:12:29 - 0:12:35, rồi sau đó chúng ta nếu mà chúng ta kết
+0:12:32 - 0:12:37, hợp cả cái conion này cộng với lại ru
+0:12:35 - 0:12:39, luôn ha cộng với Ru thì nó sẽ tạo ra một
+0:12:37 - 0:12:42, cái feature map như thế này rồi sau đó
+0:12:39 - 0:12:44, chúng ta thực hiện cái phép pulling đó
+0:12:42 - 0:12:47, thì nó sẽ tạo ra một cái feature map có
+0:12:44 - 0:12:49, cái bèn ngang và bề cao nhỏ hơn một nửa
+0:12:47 - 0:12:53, nếu như Strike là bằng 2 ha Nó sẽ nhỏ
+0:12:49 - 0:12:55, hơn một nửa và cái độ sâu của mình nó
+0:12:53 - 0:12:58, cũng giữ nguyên đó là bằng
+0:12:55 - 0:13:01, D tại vì cái phép pulling này nó sẽ thực
+0:12:58 - 0:13:04, hiện độc lập trên từng cái
+0:13:01 - 0:13:07, kênh độc lập trên từng kênh do đó Ở đây
+0:13:04 - 0:13:10, có D cái l cắ thì qua bên đây nó sẽ là
+0:13:07 - 0:13:14, có D cái l rồi sau đó nó lại tiếp tục
+0:13:10 - 0:13:16, contion kết hợp với lại relu đúng không
+0:13:14 - 0:13:19, nó sẽ tạo ra một cái
+0:13:16 - 0:13:22, tensor và cái số lượng tensor này nó có
+0:13:19 - 0:13:26, thể thay đổi do là cái số lượng filter
+0:13:22 - 0:13:31, của mình thay đổi nó sẽ ra là D ph đi
+0:13:26 - 0:13:31, rồi sau đó nó lại p link
+0:13:34 - 0:13:39, rồi sau đó nó sẽ thực hiện cái này là
+0:13:37 - 0:13:42, phép pulling ha rồi sau đó nó sẽ thực
+0:13:39 - 0:13:46, hiện cái phép
+0:13:42 - 0:13:46, flatten để tạo ra thành một cái
+0:13:46 - 0:13:54, vector rồi cái vector này chúng ta sẽ
+0:13:50 - 0:13:57, thực hiện cái phép biến đổi Fully
+0:13:54 - 0:13:59, connected Fully connected biết tắt ha
+0:13:57 - 0:14:02, rồi và lưu ý là cái phép Fully connected
+0:13:59 - 0:14:04, này nó có thể kết hợp à Nhiều cái phép
+0:14:02 - 0:14:06, Fully connected với nhau Ví dụ như đây
+0:14:04 - 0:14:10, là một lớp nè chúng ta sẽ tạo ra thêm
+0:14:06 - 0:14:14, một lớp nữa nè đó rồi FC nè Rồi cái lớp
+0:14:10 - 0:14:17, cuối thì chúng ta sẽ qua cái hàm s max
+0:14:14 - 0:14:21, đó để tạo nó ra thành một cái vector nó
+0:14:17 - 0:14:21, thỏa mãn một cái phân bố xác
+0:14:23 - 0:14:29, suất rồi thì đây chính là cái bước số
+0:14:26 - 0:14:31, một toàn bộ nãy giờ mình nói đó chính là
+0:14:29 - 0:14:36, cái bước số
+0:14:31 - 0:14:39, 1 trong cái việc thiết kế f thx Thế thì
+0:14:36 - 0:14:40, cái câu hỏi đó là cái bước số hai đúng
+0:14:39 - 0:14:44, không cái bước số
+0:14:40 - 0:14:46, hai là hàm loss của mình trong trường
+0:14:44 - 0:14:49, hợp này là như thế nào thì ở đây chúng
+0:14:46 - 0:14:53, ta có cái giá trị là y Ngã là giá trị Dự
+0:14:49 - 0:14:55, đoán và mình sẽ có cái giá trị y là giá
+0:14:53 - 0:14:58, trị thực tế và để hai cái thằng này gần
+0:14:55 - 0:14:59, xắp xỉ với nhau thì chúng ta sẽ sử dụng
+0:14:58 - 0:15:02, một cái hàm l
+0:14:59 - 0:15:05, theta và hàm l này chúng ta sẽ sử dụng
+0:15:02 - 0:15:09, luôn đó chính là công thức cross entropy
+0:15:05 - 0:15:14, y chang như cái bài s
+0:15:09 - 0:15:17, max y chang như cái bài sop max thì đây
+0:15:14 - 0:15:19, là toàn bộ cái mạng CNN khi chúng ta đã
+0:15:17 - 0:15:22, biến đổi thì cái giai đoạn đầu cái giai
+0:15:19 - 0:15:24, đoạn đầu đó là feature instruction rút
+0:15:22 - 0:15:24, chích đặc
+0:15:27 - 0:15:33, trưng rồi cái giai đạn sau thì nó tương
+0:15:30 - 0:15:37, ứng đó là đi phân
+0:15:33 - 0:15:37, lớp các cái đặc
+0:15:38 - 0:15:43, trưng và nó sử dụng cái mạng neuron
+0:15:40 - 0:15:46, Network rồi khi chúng ta đã có cái loss
+0:15:43 - 0:15:49, này rồi chúng ta sẽ có cái l này rồi thì
+0:15:46 - 0:15:51, chúng ta sẽ sử dụng cái tực toán radian
+0:15:49 - 0:15:54, descend với cái tên gọi khác cho cái
+0:15:51 - 0:15:58, mạng CNN này đó là Thục toán
+0:15:54 - 0:15:58, back propagation
+0:16:01 - 0:16:07, và lưu ý đó là cái back propagation này
+0:16:03 - 0:16:07, á thì đâu đó trong cái Deep learning
+0:16:07 - 0:16:13, Framework nó đã giúp cho chúng ta đi tối
+0:16:10 - 0:16:15, ưu tìm cái thta để cho cái hàm loss này
+0:16:13 - 0:16:17, là nhỏ nhất rồi Ở đây chúng ta sẽ có một
+0:16:15 - 0:16:21, cái câu hỏi theta của mình nó là cái gì
+0:16:17 - 0:16:23, đó thì theta của mình trong trường hợp
+0:16:21 - 0:16:25, này nó chính là những cái trọng số n đó
+0:16:23 - 0:16:29, là những cái trọng số nè Ví dụ đây là th
+0:16:25 - 0:16:31, 1 nè đến đây ping là không có tham số
+0:16:29 - 0:16:34, đến đây là conclusion và chúng ta sẽ có
+0:16:31 - 0:16:37, là theta 2 nè rồi pulling không có tham
+0:16:34 - 0:16:41, số đến đây là FC đúng không Chúng ta sẽ
+0:16:37 - 0:16:44, có là theta 3 đến đây chúng ta sẽ có
+0:16:41 - 0:16:46, theta 4 nè đó thì toàn bộ theta 1 theta
+0:16:44 - 0:16:50, 2 cho đến theta 4 chính là những cái
+0:16:46 - 0:16:50, tham số của cái mạng CNN của
+0:16:51 - 0:16:58, mình và cái mạng CNN này nó có ứng dụng
+0:16:55 - 0:17:00, cực kỳ nhiều trong các cái bài toán của
+0:16:58 - 0:17:03, lĩnh vực thị giá máy tính nó có ứng dụng
+0:17:00 - 0:17:06, trong bài toán là phân loại phân lớp à
+0:17:03 - 0:17:09, phân lớp đối tượng nó có tác dụng trong
+0:17:06 - 0:17:11, cái bài là định vị đối tượng à tức là
+0:17:09 - 0:17:13, khi chúng ta đã phân lớp là biết trong
+0:17:11 - 0:17:15, cái tấm hình này nó đã có cái đối tượng
+0:17:13 - 0:17:17, tên là con mèo rồi thì chúng ta sẽ cho
+0:17:15 - 0:17:21, biết là cái vị trí của con mèo này nó
+0:17:17 - 0:17:25, nằm ở đâu và chúng ta sẽ có thể dùng cái
+0:17:21 - 0:17:28, mạng CNN này để ứng dụng cho cái bài
+0:17:25 - 0:17:30, toán là object detection tức là phát
+0:17:28 - 0:17:32, hiện xem trong tấm tấm hình này có những
+0:17:30 - 0:17:34, cái loại đối tượng gì đây là khu vực có
+0:17:32 - 0:17:37, hình con chó Đây là khu vực có hình con
+0:17:34 - 0:17:39, vịt đây là khu vực có kh hình con mèo nó
+0:17:37 - 0:17:42, sẽ chỉ ra được cái vị trí và ở trong
+0:17:39 - 0:17:44, trường hợp object detection thì nó sẽ là
+0:17:42 - 0:17:47, nhiều object có thể phát hiện cùng lúc
+0:17:44 - 0:17:49, nhiều object và ở cấp độ cao nhất của
+0:17:47 - 0:17:52, cái việc định vị đối tượng á đó chính là
+0:17:49 - 0:17:55, instant segmentation tức là chúng ta sẽ
+0:17:52 - 0:17:58, khoanh vùng chính xác đến cái cấp độ là
+0:17:55 - 0:18:00, Pixel đối với object detection thì chúng
+0:17:58 - 0:18:03, ta phân vùng chính xác đến cái cấp độ là
+0:18:00 - 0:18:06, bing box còn instant segmentation thì nó
+0:18:03 - 0:18:08, sẽ chính xác đến cái cấp độ là Pixel và
+0:18:06 - 0:18:12, mạng CNN của mình cho đến bây giờ tất cả
+0:18:08 - 0:18:15, các cái mô hình localized object định vị
+0:18:12 - 0:18:17, object rồi phát hiện đối tượng rồi phân
+0:18:15 - 0:18:21, đoạn Ngư nghĩa đối tượng thì đều sử dụng
+0:18:17 - 0:18:21, cái kiến trức mạng CNN

@@ -1,0 +1,346 @@
+0:00:00 - 0:00:06, cuối cùng đó là chúng ta sẽ cùng tìm
+0:00:02 - 0:00:08, hiểu về một số cái mô hình để giảm chiều
+0:00:06 - 0:00:11, dữ liệu trong học không giám sát. Thế thì
+0:00:08 - 0:00:13, giảm chiều dữ liệu là gì thì đó là một
+0:00:11 - 0:00:16, cái quá trình mà chúng ta chuyển đổi dữ
+0:00:13 - 0:00:19, liệu từ cái không gian đa chiều sang cái
+0:00:16 - 0:00:22, không gian ít chiều hơn. Ví dụ cái không
+0:00:19 - 0:00:25, gian ban đầu của mình đó là n chiều, sau
+0:00:22 - 0:00:30, khi chúng ta giảm xong thì nó sẽ đưa về
+0:00:25 - 0:00:32, là cái không gian ít chiều hơn là n'.
+0:00:30 - 0:00:34, Và cái n' này thì nó sẽ nhỏ hơn so với
+0:00:32 - 0:00:36, cái N lớn. Tức là giảm chiều thì cái số
+0:00:34 - 0:00:39, chiều sau khi chúng ta đã biến đổi thì
+0:00:36 - 0:00:42, nó phải ít hơn.
+0:00:39 - 0:00:45, Và không phải chỉ là biểu diễn ít chiều
+0:00:42 - 0:00:48, hơn là đủ mà nó phải thỏa mãn một số
+0:00:45 - 0:00:50, tính chất nữa đó, đó là cái biểu diễn
+0:00:48 - 0:00:54, trong cái không gian ít chiều hơn nhưng
+0:00:50 - 0:00:56, nó vẫn phải đảm bảo được là vẫn giữ được
+0:00:54 - 0:01:00, một số cái tính chất có ý nghĩa trong
+0:00:56 - 0:01:03, cái dữ liệu gốc, cái tính chất có ý nghĩa
+0:01:00 - 0:01:05, chứ nó không phải là tạo ra một cái
+0:01:03 - 0:01:08, vectơ ít chiều hơn nhưng mà đó là những
+0:01:05 - 0:01:09, cái vectơ ngẫu nhiên và nó không có một
+0:01:08 - 0:01:12, cái sự liên hệ gì đến dữ liệu gốc thì
+0:01:09 - 0:01:14, khi đó thuật toán của mình cũng không có
+0:01:12 - 0:01:16, thực sự hiệu quả. Tại vì các cái đặc
+0:01:14 - 0:01:19, trưng ở trong cái không gian ít chiều
+0:01:16 - 0:01:21, hơn này nó không giúp cho mình mang
+0:01:19 - 0:01:22, những cái thông tin gốc ban đầu và nó sẽ
+0:01:21 - 0:01:24, không giúp cho mình giải quyết được
+0:01:22 - 0:01:28, những cái bài toán phân loại hoặc là các
+0:01:24 - 0:01:31, bài toán hồi quy về sau. Thì hình ở bên
+0:01:28 - 0:01:35, đây chúng ta đang minh họa cho một cái
+0:01:31 - 0:01:40, không gian đặc trưng mà giảm số chiều
+0:01:35 - 0:01:40, bởi PCA. Giả sử như ở đây chúng ta có cái
+0:01:40 - 0:01:47, Ờ điểm nằm trong không gian là hai chiều
+0:01:43 - 0:01:50, là E1 và E2 và chúng ta biến đổi nó về
+0:01:47 - 0:01:53, cái không gian U1 và U2 đó. Thì đây là
+0:01:50 - 0:01:56, cái thuật toán PCA ha, và nó sẽ tìm cách
+0:01:53 - 0:01:59, đó là nó loại bỏ đi, nó loại bỏ đi cái
+0:01:56 - 0:02:01, trục U1 này. Nó chỉ cần duy nhất một cái
+0:01:59 - 0:02:04, trục đó là, xin lỗi, nó loại bỏ đi cái trục
+0:02:01 - 0:02:06, U2 và nó chỉ chừa lại cái trục U1 này
+0:02:04 - 0:02:09, thôi. Thì khi đó là cái số chiều của mình
+0:02:06 - 0:02:12, đang từ hai chiều gốc ban đầu là E1, E2
+0:02:09 - 0:02:15, bây giờ chúng ta chỉ còn duy nhất là một
+0:02:12 - 0:02:17, chiều là U1. Nhưng mà cái căn cứ tại sao
+0:02:15 - 0:02:20, chúng ta lại có thể bỏ được cái trục U1
+0:02:17 - 0:02:23, này thì chút nữa chúng ta sẽ xem cái ví
+0:02:20 - 0:02:25, dụ và để cho chúng ta có thể cảm quan,
+0:02:23 - 0:02:29, cảm nhận được tại sao chúng ta có thể bỏ
+0:02:25 - 0:02:31, được. Và đây là một cái trực quan hóa
+0:02:29 - 0:02:34, cho cái thuật toán PCA. Thì chi tiết của
+0:02:31 - 0:02:36, cái PCA chúng ta sẽ tìm hiểu trong những
+0:02:34 - 0:02:39, cái phần sau. Nhưng mà ý tưởng của nó đó
+0:02:36 - 0:02:41, là nó sẽ đưa về một cái không gian mới
+0:02:39 - 0:02:44, và trong cái không gian mới này
+0:02:41 - 0:02:46, thì những cái điểm, những cái trục không
+0:02:44 - 0:02:48, gian nào mà nó ít thông tin hơn thì
+0:02:46 - 0:02:50, chúng ta sẽ loại bỏ đi. Còn những cái
+0:02:48 - 0:02:52, trục không gian nào mà nó
+0:02:52 - 0:03:00, Ờ có nhiều thông tin thì chúng ta sẽ giữ
+0:02:55 - 0:03:02, lại. Và đó chính là cái ý tưởng của PCA.
+0:03:00 - 0:03:05, Thế thì giảm chiều dữ liệu nó có rất
+0:03:02 - 0:03:08, nhiều những cái hướng tiếp cận. Thì trong
+0:03:05 - 0:03:10, đó ở đây chúng ta sẽ tiếp cận bằng hai
+0:03:08 - 0:03:13, cái mô hình chính. Mô hình đầu tiên đó là
+0:03:10 - 0:03:17, phân tích thành phần chính là Principal
+0:03:13 - 0:03:19, Component Analysis. Thì đây là cái mô
+0:03:17 - 0:03:21, hình mà chúng ta vừa mới đề cập lúc nãy
+0:03:19 - 0:03:24, khi đề cập trong cái trực quan hóa hồi
+0:03:21 - 0:03:26, nãy. Chi tiết của PCA chúng ta sẽ thảo
+0:03:24 - 0:03:27, luận ở trong cái slide tiếp theo. Và
+0:03:26 - 0:03:30, phương pháp thứ hai cũng rất là nổi
+0:03:27 - 0:03:34, tiếng đó chính là t-SNE. Thì đây chính là
+0:03:30 - 0:03:36, cái phương pháp dùng để mà giảm chiều
+0:03:34 - 0:03:38, với cái dữ liệu của mình có mối quan hệ
+0:03:36 - 0:03:40, phi tuyến tính. Và cái công dụng chính,
+0:03:38 - 0:03:44, công dụng mà được sử dụng nhiều nhất của
+0:03:40 - 0:03:44, t-SNE chính là để trực quan hóa dữ
+0:03:49 - 0:03:55, liệu. Tại sao có thể trực quan hóa dữ
+0:03:52 - 0:03:58, liệu được? Đó là vì khi chúng ta ở trong
+0:03:55 - 0:04:00, không gian N chiều, N này có thể là không
+0:03:58 - 0:04:02, gian lớn hơn 3 chiều. Ví dụ trong không
+0:04:00 - 0:04:04, gian 3 chiều thì chúng ta còn có thể
+0:04:02 - 0:04:06, trực quan hóa được. Nhưng mà không gian
+0:04:04 - 0:04:08, có thể là 4, 5, 6 chiều thì khi đó cái
+0:04:06 - 0:04:10, việc trực quan hóa nó rất là khó. Chúng
+0:04:08 - 0:04:13, ta sẽ đưa nó về cái không gian là 2D
+0:04:10 - 0:04:16, hoặc là 3D. Và khi đó thì chúng ta có thể
+0:04:13 - 0:04:19, dễ dàng vẽ dưới dạng là các cái trong cái
+0:04:16 - 0:04:20, không gian mà XY hoặc là XYZ. Trong cái
+0:04:19 - 0:04:23, không gian ba chiều
+0:04:20 - 0:04:25, XYZ. Thì khi chúng ta đưa về trong cái
+0:04:23 - 0:04:28, không gian hai chiều và ba chiều nó vẫn
+0:04:25 - 0:04:30, phải giữ được những cái tính chất, nó vẫn
+0:04:28 - 0:04:35, phải giữ được
+0:04:30 - 0:04:38, cái tính chất nào đó, tính chất nhất định
+0:04:35 - 0:04:38, của cái không gian
+0:04:43 - 0:04:48, gốc thì khi đó cái việc trực quan này nó
+0:04:46 - 0:04:49, mới có ý nghĩa. Chứ còn nếu chúng ta đưa
+0:04:48 - 0:04:51, về không gian hai chiều ba chiều nhưng
+0:04:49 - 0:04:53, mà ngẫu nhiên, tức là chúng ta lấy đại
+0:04:51 - 0:04:55, những cái giá trị hai chiều hoặc là ba
+0:04:53 - 0:04:57, chiều để đại diện cho các cái đặc trưng
+0:04:55 - 0:05:00, thì rõ ràng là nó không có thể hiện được
+0:04:57 - 0:05:01, cái tính chất của cái dữ liệu ban đầu.
+0:05:00 - 0:05:04, Thì mỗi phương, tương tự như vậy, mỗi
+0:05:01 - 0:05:07, phương pháp PCA hoặc là t-SNE nó cũng sẽ
+0:05:04 - 0:05:09, có những đặc điểm và những cái vai trò
+0:05:07 - 0:05:11, về ứng dụng riêng. Do đó thì tùy vào bộ
+0:05:09 - 0:05:14, dữ liệu cũng như là mục tiêu mà mình sẽ
+0:05:11 - 0:05:16, sử dụng cái thuật toán cho hoặc là cái
+0:05:14 - 0:05:19, phương pháp cho nó phù
+0:05:16 - 0:05:21, hợp. Hồi nãy chúng ta có đề cập đến cái
+0:05:19 - 0:05:25, việc đó là chúng ta có hai trục không
+0:05:21 - 0:05:28, gian U1 và U2 và tại sao chúng ta lại
+0:05:25 - 0:05:31, giữ U1 và chúng ta lại bỏ U2. Thì bây giờ
+0:05:28 - 0:05:34, chúng ta sẽ cùng đến với một cái ví dụ
+0:05:31 - 0:05:36, rất là đơn giản và dễ hiểu như sau. Giả
+0:05:34 - 0:05:39, sử như chúng ta có một cái bảng điểm dữ
+0:05:36 - 0:05:42, liệu của một cái lớp học. Và các cái bạn
+0:05:39 - 0:05:44, có nhận ra rằng cái cột điểm Văn này nó
+0:05:42 - 0:05:47, có cái tính chất gì hay
+0:05:44 - 0:05:49, không? Nếu như các cái trục không gian
+0:05:47 - 0:05:52, khác, ví dụ như họ tên chúng ta thấy là
+0:05:49 - 0:05:54, họ tên, ờ họ tên một, họ tên hai, họ tên
+0:05:52 - 0:05:58, 3 cho đến họ tên 5 thì đây là các cái
+0:05:54 - 0:06:00, giá trị rất là khác nhau. Giới tính thì
+0:05:58 - 0:06:02, chúng ta sẽ thấy là các giá trị cũng rất
+0:06:00 - 0:06:04, là khác nhau: nam nữ, nam nữ, nam
+0:06:02 - 0:06:08, nữ, tỉ lệ của nó cũng rất là đồng đều.
+0:06:04 - 0:06:11, Điểm Toán thì cái điểm của mình nó cũng
+0:06:08 - 0:06:13, trải từ những cái giá trị rất là thấp
+0:06:11 - 0:06:17, như là 6,5 cho đến những cái điểm rất là
+0:06:13 - 0:06:20, cao ví dụ như là 9,5, nó trải đều. Nhưng
+0:06:17 - 0:06:23, mà riêng cái điểm Văn thì nó lại có một
+0:06:20 - 0:06:27, tính chất đó là tất cả đều bằng
+0:06:23 - 0:06:29, 7 và độ lệch của mình trong trường hợp
+0:06:27 - 0:06:31, này là bằng 0. Độ lệch trong trường hợp
+0:06:29 - 0:06:32, này bằng 0. Như vậy thì chúng ta sẽ
+0:06:31 - 0:06:37, có cái ý tưởng
+0:06:32 - 0:06:41, gì? Đó là chúng ta sẽ thay vì lưu hết mỗi
+0:06:37 - 0:06:43, bạn là một cái điểm Văn là 7 điểm thì
+0:06:41 - 0:06:45, để tiết kiệm chúng ta chỉ cần lưu đúng
+0:06:43 - 0:06:51, một cái số 7 thôi. Chúng ta chỉ cần lưu
+0:06:45 - 0:06:54, một cái điểm chung đó là số 7. Và khi đó
+0:06:51 - 0:06:57, chúng ta loại bỏ đi cái cột điểm Văn
+0:06:54 - 0:07:00, này. Và khi đó thì cái thuật toán này của
+0:06:57 - 0:07:03, mình nó đã giúp cho mình giảm được
+0:07:00 - 0:07:06, một cột trên bốn
+0:07:03 - 0:07:08, cột. Ở đây là chúng ta có bốn cột đúng
+0:07:06 - 0:07:10, không? Và bỏ được cái cột Văn này tức
+0:07:08 - 0:07:15, là nó đã giúp cho chúng ta giảm được 1/4
+0:07:10 - 0:07:18, tức là 25% dữ liệu. Tại sao ở đây là
+0:07:15 - 0:07:21, mình dùng cái dấu xấp xỉ? Tại vì chúng ta
+0:07:18 - 0:07:24, vẫn phải tốn thêm một cái bộ nhớ nữa để
+0:07:21 - 0:07:26, lưu cái con số 7 này. Nhưng thực sự mà
+0:07:24 - 0:07:28, nói cái con số 7 này nó quá ít so với
+0:07:26 - 0:07:31, lại tất cả các cái mẫu dữ liệu này nên
+0:07:28 - 0:07:33, mình để cái dấu là xấp xỉ, xấp xỉ là
+0:07:31 - 0:07:36, 1/4. Và chúng ta sẽ đến một cái ví dụ
+0:07:33 - 0:07:37, khác khi cái điểm Văn của mình là 7
+0:07:36 - 0:07:40, điểm hết thì rõ ràng đó là tình huống
+0:07:37 - 0:07:42, thi thực tế đúng không? Thì chúng ta sẽ
+0:07:40 - 0:07:44, xem đến một cái tình huống nó khác hơn
+0:07:42 - 0:07:46, một chút đó là điểm Văn của mình có cái
+0:07:44 - 0:07:48, sự dao động. Cái điểm Văn của mình có cái
+0:07:46 - 0:07:52, sự dao động. Ví dụ như điểm Văn ở đây là
+0:07:48 - 0:07:56, 7 điểm, 6,5 điểm, 7 điểm, 7,5 điểm.
+0:07:52 - 0:07:58, Thì cái độ lệch của các cái điểm này lúc
+0:07:56 - 0:08:00, này nó đã tăng lên thay vì là nó bằng 0
+0:07:58 - 0:08:05, thì nó tiến lên là cỡ
+0:08:00 - 0:08:07, 0.32. Thì nhìn chung cái 0.32 này nó vẫn
+0:08:05 - 0:08:11, là một cái con số bé hơn cái con số 0.5
+0:08:07 - 0:08:12, tức là cái điểm nhỏ nhất, cái bước nhảy
+0:08:11 - 0:08:14, điểm nhỏ nhất trong cái chương trình phổ
+0:08:12 - 0:08:19, thông của mình. Như vậy thì đây là một
+0:08:14 - 0:08:22, cái độ lệch nhỏ và chấp nhận được. Do đó
+0:08:19 - 0:08:26, thì chúng ta vẫn sẽ chỉ cần lưu, chỉ lưu
+0:08:22 - 0:08:28, những cái điểm trung bình là 7
+0:08:26 - 0:08:31, điểm. Thay vì chúng ta lưu cái giá trị
+0:08:28 - 0:08:36, gốc thì chúng ta sẽ lưu cái điểm trung
+0:08:31 - 0:08:38, bình là 7 điểm. Thì khi này cái hiệu quả
+0:08:36 - 0:08:41, trong cái việc là giảm chiều bộ nhớ, giảm
+0:08:38 - 0:08:43, chiều dữ liệu của mình á là nó vẫn đạt
+0:08:41 - 0:08:47, được tương đương đó là chúng
+0:08:43 - 0:08:49, ta giảm được khoảng 1/4 tức là 25% dữ
+0:08:47 - 0:08:51, liệu. Chuyện này không đổi so với cái ví
+0:08:49 - 0:08:54, dụ trước. Nhưng cái điểm khác đó là khi
+0:08:51 - 0:08:57, khôi phục, à thì cái dữ liệu của chúng ta
+0:08:54 - 0:09:00, không thể nào khôi phục được về cái dữ
+0:08:57 - 0:09:02, liệu gốc.
+0:09:00 - 0:09:04, Thì cái điểm ở đây chúng ta đang muốn
+0:09:02 - 0:09:07, bàn đến đó là khi chúng ta giảm chiều dữ
+0:09:04 - 0:09:08, liệu chúng ta có đánh đổi cái việc đó là
+0:09:07 - 0:09:10, chúng ta có khả năng khôi phục lại với
+0:09:08 - 0:09:13, lại dữ liệu gốc hay không? Thì đối với
+0:09:10 - 0:09:16, cái thuật toán PCA mà chúng ta sẽ thảo
+0:09:13 - 0:09:18, luận sắp tới thì nó nằm trong cái nhóm
+0:09:16 - 0:09:22, tiếp cận đó là nó sẽ không thể khôi phục
+0:09:18 - 0:09:25, lại 100% so với lại dữ liệu gốc. Do đó
+0:09:22 - 0:09:27, chúng ta chỉ chọn những cái chiều nào mà
+0:09:25 - 0:09:30, có cái độ lệch
+0:09:27 - 0:09:33, thấp thì chúng ta sẽ loại bỏ nó đi. Còn
+0:09:30 - 0:09:35, ví dụ như cái cột Toán hoặc là cái cột
+0:09:33 - 0:09:41, giới tính, họ tên, chúng ta thấy có cái độ
+0:09:35 - 0:09:44, biến động cao từ 6 lên 6,5, từ 6 lên 9,5,
+0:09:41 - 0:09:46, từ 6 lên 9 rồi từ 6,5 lên 7,5 vân vân,
+0:09:44 - 0:09:50, thì cái độ biến động của nó thấp thì khi
+0:09:46 - 0:09:50, đó là chúng ta sẽ giữ
+0:09:50 - 0:09:59, nguyên biến động
+0:09:54 - 0:09:59, thấp. Xin lỗi, đây là biến động cao.
+0:10:02 - 0:10:08, Rồi đây là độ biến động cao thì khi đó
+0:10:05 - 0:10:12, là nó sẽ có nhiều thông
+0:10:08 - 0:10:16, tin. Mà có nhiều thông
+0:10:12 - 0:10:19, tin thì khi đó chúng ta không nên, không
+0:10:16 - 0:10:22, nên loại bỏ cái cột
+0:10:19 - 0:10:25, này, chúng ta không nên bỏ cái cột này đó.
+0:10:22 - 0:10:28, Còn cái cột Văn thì mặc dù có cái sự
+0:10:25 - 0:10:30, thay đổi về điểm nhưng mà chúng ta thấy
+0:10:28 - 0:10:32, là cái độ lệch của nó, cái độ biến động
+0:10:30 - 0:10:36, của nó, độ dao động của nó thấp. Do đó
+0:10:32 - 0:10:38, mình không nhất thiết mình có thể cần
+0:10:36 - 0:10:40, phải lưu lại. Mình cần phải khôi phục lại
+0:10:38 - 0:10:42, nguyên với dữ liệu ban đầu. Trong nhiều
+0:10:40 - 0:10:44, tình huống thì chúng ta chỉ cần khôi
+0:10:42 - 0:10:46, phục lại một phần thôi. Có cái sự sai số
+0:10:44 - 0:10:48, nhất định mà vẫn có thể giải quyết được
+0:10:46 - 0:10:51, một số cái bài toán thì khi đó PCA là một
+0:10:48 - 0:10:52, trong những cái giải pháp mà luôn luôn
+0:10:51 - 0:10:56, là ưu tiên để chọn.
+0:10:52 - 0:10:58, Như vậy thì chiều của dữ liệu nào
+0:10:56 - 0:11:00, mà ít biến động, chúng ta có cái kết luận
+0:10:58 - 0:11:02, là chiều của dữ liệu nào mà ít biến động
+0:11:00 - 0:11:04, thì khi đó chúng ta có thể loại bỏ. Và
+0:11:02 - 0:11:08, đây chính là cái ý tưởng lớn nhất của
+0:11:04 - 0:11:12, thuật toán PCA. PCA là nó sẽ tìm ra một
+0:11:08 - 0:11:15, cái không gian con tuyến tính mới. Nó là
+0:11:12 - 0:11:17, một cái không gian con C và không gian
+0:11:15 - 0:11:18, con này nó vẫn đảm bảo được cái tính
+0:11:17 - 0:11:21, chất là tuyến tính, nó khác so với lại
+0:11:18 - 0:11:26, cái không gian ban đầu. Và dữ liệu này
+0:11:21 - 0:11:29, thì nó được biểu diễn một cách hiệu quả
+0:11:26 - 0:11:32, nhất. Thì ví dụ như đây là cái không gian
+0:11:29 - 0:11:32, ban đầu nè. Đây là không gian ban
+0:11:37 - 0:11:44, đầu. Nó sẽ thực hiện cái thao tác đó là
+0:11:41 - 0:11:46, trừ cho cái giá trị mean. Thì rõ ràng mean
+0:11:44 - 0:11:48, của các cái điểm dữ liệu của mình nó nằm
+0:11:46 - 0:11:49, ở đây. Khi chúng ta trừ cho mean tức là
+0:11:48 - 0:11:55, chúng ta đang làm một thao
+0:11:49 - 0:11:57, tác dịch chuyển tịnh tiến cái không gian
+0:11:55 - 0:11:59, của mình đúng cái trục hệ trục tọa độ
+0:11:57 - 0:12:02, của mình về cái giá trị mean ở đây sẽ
+0:11:59 - 0:12:05, dịch chuyển vào đây. Sau đó Bước số ba và
+0:12:02 - 0:12:10, bước số 4 là nó đi tìm ra một cái không
+0:12:05 - 0:12:14, gian con C, nó đi tìm cái không gian
+0:12:10 - 0:12:16, C sao cho nó biểu diễn hiệu quả. Thì cái
+0:12:14 - 0:12:21, không gian con C này á đó chính là cái không
+0:12:16 - 0:12:24, gian của vectơ U1 và U2. U1 là cái trục
+0:12:21 - 0:12:27, nét đứt như thế này và U2 là cái trục
+0:12:24 - 0:12:28, như thế này. Thì để thực hiện được cái
+0:12:27 - 0:12:31, việc mà tìm cái hệ trục U1 và U2 thì
+0:12:28 - 0:12:34, chúng ta sẽ tính S là bằng trung
+0:12:31 - 0:12:37, bình cộng của cái giá trị mà đã được trừ
+0:12:34 - 0:12:39, đi cái mean ở bước số 2 nhân với chuyển
+0:12:37 - 0:12:42, vị của nó. Thì thực ra đây chính là cái
+0:12:39 - 0:12:46, thao tác mà tính cái độ lệch đúng không?
+0:12:42 - 0:12:48, Cái covariance. Đây là cái covariance, cái ma
+0:12:46 - 0:12:51, trận tính cái ma trận covariance của
+0:12:48 - 0:12:54, mình. Và với cái việc mà tính cái ma trận
+0:12:51 - 0:12:56, covariance, sau đó chúng ta sẽ phân tích
+0:12:54 - 0:12:59, các cái giá trị
+0:12:56 - 0:13:02, eigenvalue tức là các cái trị
+0:12:59 - 0:13:05, riêng và các cái vector riêng (eigen)
+0:13:02 - 0:13:07, vector đó của cái ma trận S này thì
+0:13:05 - 0:13:12, chúng ta sẽ ra được các cái giá trị trị
+0:13:07 - 0:13:15, riêng lambda 1, lambda 2, lambda và vectơ riêng đó
+0:13:12 - 0:13:18, là U1, U2, U3. Thì chúng ta sẽ có một cái
+0:13:15 - 0:13:20, lưu ý đó là các cái lambda 1, lambda 2 nó sẽ
+0:13:18 - 0:13:24, được sắp xếp lại theo một
+0:13:20 - 0:13:27, cái trình tự là giảm dần hoặc là tăng
+0:13:24 - 0:13:29, dần. Thì với cái giá trị trị riêng này nó
+0:13:27 - 0:13:32, sẽ giúp cho chúng ta biết rằng là cái
+0:13:29 - 0:13:36, hàm lượng thông tin của mình ứng với
+0:13:32 - 0:13:38, lại cái trục U của mình là nhiều hay ít.
+0:13:36 - 0:13:40, Thì chúng ta lấy một cái ví dụ ở đây.
+0:13:38 - 0:13:42, Chúng khi chúng ta tách
+0:13:40 - 0:13:44, cái dữ liệu ở đây, chúng ta phân tích cái
+0:13:42 - 0:13:48, dữ liệu ở đây thì chúng ta sẽ có hai cái
+0:13:44 - 0:13:51, giá trị là lambda 1, U1 tương ứng nó sẽ là
+0:13:48 - 0:13:54, cái vectơ U1 và lambda 2,
+0:13:51 - 0:13:56, U2. Và chúng ta thấy là cái lambda tương
+0:13:54 - 0:14:00, ứng cho cái U1 này
+0:13:56 - 0:14:02, nè thì nó sẽ lớn hơn là lambda 2. Tức là chúng
+0:14:00 - 0:14:07, ta đang sắp xếp tăng dần từ trái sang
+0:14:02 - 0:14:10, phải. Thì cái lambda 1 tương ứng với
+0:14:07 - 0:14:12, lại cái trục U1 này á thì nó sẽ cho
+0:14:10 - 0:14:14, chúng ta biết rằng là cái thông tin khi
+0:14:12 - 0:14:17, chúng ta chiếu các cái điểm gốc này nè
+0:14:14 - 0:14:19, xuống dưới cái hệ trục U1 thì nó sẽ cho
+0:14:17 - 0:14:22, thông tin nó nhiều hơn hay là cái độ
+0:14:23 - 0:14:33, động nhiều
+0:14:27 - 0:14:33, hơn. Còn ở đây thì là cái độ biến động ít
+0:14:37 - 0:14:44, hơn. Như vậy thì với cái lambda 2 và tương
+0:14:41 - 0:14:48, ứng với U2 thì chúng ta thấy cái trục U1,
+0:14:44 - 0:14:53, à Xin lỗi, cái trục U2 nó sẽ ít thông tin
+0:14:48 - 0:14:53, hơn do đó có thể chúng ta có thể loại
+0:14:53 - 0:14:59, bỏ đó. Và khi này cái U2 của chúng ta
+0:14:57 - 0:15:02, thay vì chúng ta lưu các cái giá trị
+0:15:02 - 0:15:08, trên cái trục U2 như thế
+0:15:05 - 0:15:11, này, lưu cái giá trị đó, thì chúng ta chỉ
+0:15:08 - 0:15:14, cần lưu duy nhất một giá trị đó là số 0.
+0:15:11 - 0:15:17, Tại vì chúng ta đã bỏ đi cái trục U2 này
+0:15:14 - 0:15:21, rồi. Thì đây chúng ta liên tưởng đến cái
+0:15:17 - 0:15:24, ví dụ trước đây. Thay vì chúng ta lưu cái
+0:15:21 - 0:15:25, điểm gốc, cái giá trị gốc đúng không, thì
+0:15:24 - 0:15:27, chúng ta chỉ cần lưu cái giá trị trung
+0:15:25 - 0:15:30, bình ở đây thôi. Và trong trường hợp bên
+0:15:27 - 0:15:33, đây thì cái giá trị trung bình của mình
+0:15:30 - 0:15:35, trong trường hợp này chính là 0. Tại vì
+0:15:33 - 0:15:37, chúng ta đã thực hiện cái thao tác là
+0:15:35 - 0:15:38, trừ cho cái giá trị mean rồi nên trung
+0:15:37 - 0:15:39, bình của mình trong trường hợp này nó sẽ
+0:15:38 - 0:15:43, là bằng
+0:15:39 - 0:15:45, 0. Rồi và sau khi chúng ta loại bỏ được
+0:15:43 - 0:15:47, cái trục U2 này rồi thì chúng ta sẽ
+0:15:45 - 0:15:49, chiếu. Ở đây chúng ta thấy cái ký hiệu nè.
+0:15:47 - 0:15:53, Chúng ta sẽ chiếu các cái data point này lên
+0:15:49 - 0:15:56, trên cái trục U1. Và cái giá trị của cái
+0:15:53 - 0:16:01, thao tác chiếu này chính là cái đặc
+0:15:56 - 0:16:04, trưng mới mà chúng ta sẽ lưu trữ. Và như
+0:16:01 - 0:16:07, vậy thì thay vì chúng ta lưu hai chiều
+0:16:04 - 0:16:10, chúng ta chỉ cần lưu các cái giá trị là
+0:16:07 - 0:16:12, hình chiếu là giá trị của cái phép chiếu
+0:16:10 - 0:16:13, của cái điểm gốc lên trên cái U1 này
+0:16:12 - 0:16:15, thôi. Như vậy là chúng ta chỉ cần lưu
+0:16:13 - 0:16:19, một chiều. Như vậy là chúng ta đã tiết
+0:16:15 - 0:16:19, kiệm được 50% dữ
+0:16:19 - 0:16:26, liệu đó. Thì chúng ta sẽ obtain N
+0:16:23 - 0:16:28, projected Point in low dimension. Tức là
+0:16:26 - 0:16:30, chúng ta chỉ cần lưu các cái điểm màu đỏ
+0:16:28 - 0:16:32, là những cái điểm hình chiếu trong
+0:16:30 - 0:16:36, một cái không gian ít chiều hơn đó là
+0:16:32 - 0:16:36, không gian của U1.

@@ -1,0 +1,318 @@
+0:00:00 - 0:00:05, cuối cùng đó chính là cái quy trình đánh
+0:00:02 - 0:00:08, giá khách quan trong hai mục hai và 3 thì
+0:00:05 - 0:00:10, chúng ta nói về độ đo chúng ta nói về độ
+0:00:08 - 0:00:13, đo Ừ thế nào là một mô hình tốt thế nào
+0:00:10 - 0:00:16, là một mô hình không tốt rồi mô hình nào
+0:00:13 - 0:00:17, tốt hơn mô hình nào độ đo ra sao nhưng
+0:00:16 - 0:00:21, mà
+0:00:17 - 0:00:24, để cái kết quả mà cái con số mà chúng ta
+0:00:21 - 0:00:27, ra được ở đây á là cái con số khách quan
+0:00:24 - 0:00:29, và hợp lý thì chúng ta phải có cái quy
+0:00:27 - 0:00:32, trình thực hiện cái quy trình thực hiện
+0:00:29 - 0:03:10, nó là rất là quan trọng thế Thì ở đây
+0:00:32 - 0:00:38, chúng ta xét đến một cái quy trình đầu
+0:00:34 - 0:00:39, tiên mà mọi người có thể thấy đó là tập
+0:00:38 - 0:00:42, dữ liệu train của mình nó sẽ là một phần
+0:00:39 - 0:00:44, của tập dữ liệu test Tức là ở đây chúng
+0:00:42 - 0:00:47, ta sẽ có toàn bộ cái dataset của mình là
+0:00:44 - 0:00:49, các cái điểm ở đây và tập train của mình
+0:00:47 - 0:00:53, mình sẽ lấy hết toàn bộ các cái tập
+0:00:49 - 0:00:59, trong dataset để làm cái tập train Và
+0:00:53 - 0:00:59, khi chúng ta muốn kiểm tra xem cái
+0:01:00 - 0:01:04, hiệu năng cái hiệu quả của cái mô hình
+0:01:02 - 0:01:07, này như thế nào thì chúng ta sẽ lấy luôn
+0:01:04 - 0:01:09, một phần chúng ta sẽ lấy luôn một phần
+0:01:07 - 0:01:11, dữ liệu của tập train ra để chúng ta đánh
+0:01:09 - 0:01:15, giá thì rõ ràng là cái cách đánh giá này
+0:01:11 - 0:01:20, nó không khách quan nó không khách
+0:01:15 - 0:01:22, quan nó không khách quan tại vì test
+0:01:20 - 0:01:25, trên chính cái dữ liệu train của mình nó
+0:01:22 - 0:01:29, sẽ rất dễ bị cái hiện tượng nó gọi là
+0:01:25 - 0:01:31, overfit nó không có tính tổng quát dữ
+0:01:29 - 0:01:34, liệu của mình sẽ rất là khớp với lại các
+0:01:31 - 0:01:34, cái mẫu dữ liệu này với toàn bộ mẫu dữ
+0:01:34 - 0:01:37, liệu
+0:01:34 - 0:01:40, này sau này khi chúng ta thử nghiệm trên
+0:01:37 - 0:01:42, những cái dữ liệu mới hoàn toàn chưa
+0:01:40 - 0:01:44, từng gặp trong cái bộ dataset thì có thể
+0:01:42 - 0:01:46, độ chính xác của mình nó sẽ rất là thấp
+0:01:44 - 0:01:49, do đó thì cái quy trình số một này nó
+0:01:46 - 0:01:51, vẫn có những cái giá trị nhất định nó sẽ
+0:01:49 - 0:01:54, phù hợp đối với những cái tình huống là
+0:01:51 - 0:01:57, dữ liệu của mình nó ít đó hoặc là cái
+0:01:54 - 0:02:00, thời gian huấn luyện của mình, thời gian
+0:01:57 - 0:02:02, để mà cái cái cái tốc độ để mà chạy cái
+0:02:00 - 0:02:04, mô hình của mình
+0:02:02 - 0:02:06, rất là chậm thì lúc đó mình sẽ sử dụng
+0:02:04 - 0:02:07, luôn chính cái tập train làm tập test tức
+0:02:06 - 0:02:09, là chúng ta khai thác những cái dữ liệu
+0:02:07 - 0:02:12, mà chúng ta đã được xử lý tính toán
+0:02:09 - 0:02:14, rồi và
+0:02:12 - 0:02:17, à nó sẽ bị cái hiện tượng giống như
+0:02:14 - 0:02:19, chúng ta nói đó là không có cái tính
+0:02:17 - 0:02:21, khách quan và độ chính xác của mình nó
+0:02:19 - 0:02:24, sẽ thấp khi chúng ta thực hiện trên
+0:02:21 - 0:02:26, những cái tập nó gọi là out of sample
+0:02:24 - 0:02:29, dataset Tức là trên những cái tập ngoài
+0:02:26 - 0:02:31, mẫu trên tập ngoài mẫu thì cái độ chính
+0:02:29 - 0:02:36, xác của mình sẽ rất là
+0:02:31 - 0:02:39, kém và à đối với cái quy trình một thì
+0:02:36 - 0:02:42, nó sẽ độ chính xác cao cũng không thể
+0:02:39 - 0:02:44, phản ánh được đúng cái hiệu quả của mình
+0:02:42 - 0:02:47, tức là chúng ta không nên tự mãn hoặc tự
+0:02:44 - 0:02:49, à gọi là vui mừng khi mà chúng ta thấy
+0:02:47 - 0:02:51, với cái quy trình số một mà độ chính xác
+0:02:49 - 0:02:53, mà mình rất là tốt thì mình không nên
+0:02:51 - 0:02:55, lấy cái đó làm niềm vui chúng ta phải
+0:02:53 - 0:02:58, luôn đặt trong cái sự nghi ngờ đúng
+0:02:55 - 0:03:01, không và nó sẽ là một cái sự
+0:02:58 - 0:03:04, à nó gọi là kết quả của cái hiện tượng
+0:03:01 - 0:03:07, overfitting tức là mô hình đã được train
+0:03:04 - 0:03:10, quá đà trên tập dữ liệu dẫn đến là học
+0:03:07 - 0:03:12, cả những cái dữ liệu nhiễu và cái mô hình
+0:03:10 - 0:03:14, của mình nó sẽ không có cái
+0:03:12 - 0:03:17, tính tổng quát Tóm lại đó là khi chúng
+0:03:14 - 0:03:18, ta làm với cái quy trình số 1 này thì
+0:03:17 - 0:03:21, điểm Lợi duy nhất đó chính là chúng ta
+0:03:18 - 0:03:23, tiết kiệm được thời gian nhưng mà điểm
+0:03:21 - 0:03:27, hại rất là nhiều nó sẽ khiến cho mô hình
+0:03:23 - 0:03:30, của mình chỉ tìm cách đó là tập trung
+0:03:27 - 0:03:33, trên những cái dữ liệu mà đang có của
+0:03:30 - 0:03:35, mình thôi và nó sẽ không có cố gắng để
+0:03:33 - 0:03:38, mà tổng quát hóa cái mô hình của mình
+0:03:35 - 0:03:42, lên và độ chính xác trên cái tập ngoài
+0:03:38 - 0:03:43, mẫu thì ờ độ chính xác trên cái tập
+0:03:42 - 0:03:47, ngoài mẫu thì nó phản ánh được cái hiệu
+0:03:43 - 0:03:49, quả khi áp dụng thực tế và làm sao để có
+0:03:47 - 0:03:51, thể cải thiện được cái độ chính xác trên
+0:03:49 - 0:03:53, cái tập ngoài mẫu này thì chúng ta sẽ
+0:03:51 - 0:03:56, phải sử dụng một cái quy trình khác chứ
+0:03:53 - 0:04:00, không thể nào mà sử dụng cái quy trình
+0:03:56 - 0:04:01, số một này và quy trình mà cải thiện cải
+0:04:00 - 0:04:04, thiện hơn so với lại cái phiên bản trước
+0:04:01 - 0:04:07, quy trình trước đó chính là quy trình số
+0:04:04 - 0:04:11, hai là tập train và tập test nó
+0:04:07 - 0:04:14, tách biệt hay còn gọi là train-test split
+0:04:11 - 0:04:17, thì nếu như đây là cái dataset toàn bộ
+0:04:14 - 0:04:19, dataset của mình thì chúng ta sẽ lấy
+0:04:17 - 0:04:22, những cái tập train và những tập test là
+0:04:19 - 0:04:24, những cái tập mà có cái khác nhau về cái
+0:04:22 - 0:04:27, mẫu ví
+0:04:24 - 0:04:31, dụ đây chính là những cái mẫu dữ liệu mà
+0:04:27 - 0:04:33, chúng ta sẽ chọn ra để train
+0:04:31 - 0:04:36, nó sẽ có cái màu khác với cái màu này ha
+0:04:33 - 0:04:38, và khi test thì đây chính là những cái
+0:04:36 - 0:04:42, mẫu dữ liệu chúng ta sử dụng để
+0:04:38 - 0:04:45, test thì tập train và tập test nó tách
+0:04:42 - 0:04:48, biệt nhau ra hoàn toàn không có trùng
+0:04:45 - 0:04:51, lớp nhau thì đó là ý tưởng của cái quy
+0:04:48 - 0:04:55, trình số hai và với cái quy trình số hai
+0:04:51 - 0:04:58, thì nó sẽ không có đảm bảo được một số
+0:04:55 - 0:05:00, cái yếu tố khách quan ví dụ điều gì xảy
+0:04:58 - 0:05:02, ra nếu như những cái dữ liệu này chúng
+0:05:00 - 0:05:06, ta random ở đây đó là những cái tập dữ
+0:05:02 - 0:05:09, liệu dễ hoặc là đó là những cái tập dữ
+0:05:06 - 0:05:11, liệu Nó quá khó Nó quá khó dẫn đến khi
+0:05:09 - 0:05:13, chúng ta test thì chúng ta sẽ không biết
+0:05:11 - 0:05:16, được là ok mô hình của mình nó có thật
+0:05:13 - 0:05:18, sự quá xuất sắc hay không Nếu như chúng
+0:05:16 - 0:05:19, ta thử nghiệm trên dữ liệu dễ độ chính
+0:05:18 - 0:05:21, xác rất là cao nhưng mà đồng thời chúng
+0:05:19 - 0:05:24, ta cũng không biết là mô hình của mình
+0:05:21 - 0:05:27, có quá tệ hay không lỡ chúng ta gặp
+0:05:24 - 0:05:31, những cái dữ liệu quá khó gặp những dữ
+0:05:27 - 0:05:32, liệu quá khó thì dẫn đến đó là à độ
+0:05:31 - 0:05:35, chính xác của mình thấp và chúng ta cảm
+0:05:32 - 0:05:37, thấy bi quan về cái mô hình của mình đó
+0:05:35 - 0:05:40, do đó thì nó sẽ có một cái quy trình số
+0:05:37 - 0:05:43, ba đó là quy trình kiểm định chéo là K-fold
+0:05:40 - 0:05:46, cross validation thì với K-fold cross
+0:05:43 - 0:05:49, validation thì nó sẽ lần lượt chia cái
+0:05:46 - 0:05:53, tập dữ liệu của mình ra làm nhiều
+0:05:49 - 0:05:57, phần và ở trong trường hợp này K của
+0:05:53 - 0:06:01, mình chính là bằng 4 k của mình bằng 4
+0:05:57 - 0:06:04, và cái
+0:06:01 - 0:06:06, đối với cái fold số 1 đúng không thì
+0:06:04 - 0:06:07, chúng ta sẽ có cái tập như thế này đây
+0:06:06 - 0:06:11, chính là cái tập dữ liệu để
+0:06:07 - 0:06:14, train và đây chính là cái tập dữ liệu để
+0:06:11 - 0:06:16, test đối với cái fold số 2 thì chúng ta
+0:06:14 - 0:06:19, hoán đổi đây chính là cái tập dữ
+0:06:16 - 0:06:23, liệu để test và còn lại là để train đây
+0:06:19 - 0:06:27, sẽ là tập để test đây sẽ là tập để test
+0:06:23 - 0:06:30, rồi và chúng ta sẽ lần lượt sử dụng các
+0:06:27 - 0:06:32, cái tập dữ liệu của mình để train và
+0:06:30 - 0:06:34, test chúng ta sẽ lần lượt sử dụng các
+0:06:32 - 0:06:36, cái tập dữ liệu để train và test đầu
+0:06:34 - 0:06:40, tiên đó
+0:06:36 - 0:06:42, là với cái mẫu dữ liệu mà chúng ta test
+0:06:40 - 0:06:46, ở đây độ chính xác chúng ta ra được là
+0:06:42 - 0:06:49, 80% tức là khi chúng ta train trên cái
+0:06:46 - 0:06:52, 3/4 dữ liệu ở dưới rồi sau đó chúng ta
+0:06:49 - 0:06:54, test trên cái phần này thì nó ra được là
+0:06:52 - 0:06:57, 80%
+0:06:54 - 0:06:59, đối với cái fold số 2 chúng ta train
+0:06:57 - 0:07:02, trên cái phần này và chúng ta test trên
+0:06:59 - 0:07:07, cái dữ liệu ở đây thì độ chính xác của
+0:07:02 - 0:07:07, mình nó ra là 84%
+0:07:09 - 0:07:17, rồi tương tự như vậy cho cái fold số 3
+0:07:13 - 0:07:20, độ chính xác là 82% fold số 4 độ chính
+0:07:17 - 0:07:22, xác là 86% như vậy thì chúng ta thấy
+0:07:20 - 0:07:25, với cái cách làm của cái quy trình số 3
+0:07:22 - 0:07:28, là chúng ta đã test được đầy đủ trên
+0:07:25 - 0:07:30, toàn bộ mẫu dữ liệu rồi Mặc dù tại một
+0:07:28 - 0:07:33, thời điểm chúng ta chỉ test
+0:07:30 - 0:07:36, 20% số mẫu thôi chúng ta chỉ test 20%
+0:07:33 - 0:07:38, số mẫu nhưng mà qua 4 fold thì chúng ta
+0:07:36 - 0:07:40, đã duyệt qua hết tất cả những cái dữ
+0:07:38 - 0:07:42, liệu trong cái tập toàn bộ dataset của
+0:07:40 - 0:07:44, mình rồi và nó vẫn thỏa mãn được cái
+0:07:42 - 0:07:47, tính khách quan đó là tập dữ liệu train
+0:07:44 - 0:07:50, và test nó không có trùng
+0:07:47 - 0:07:53, nhau thì khi đó chúng ta sẽ có một cái
+0:07:50 - 0:07:58, độ chính xác trung bình đó là bằng 80 cộng
+0:07:53 - 0:08:01, 84 cộng 82 cộng 86 tất cả chia 4 nó sẽ ra là 83%
+0:07:58 - 0:08:03, như vậy thì cái con số 83% sẽ là một cái
+0:08:01 - 0:08:06, con số mà mang tính chất khách quan tại
+0:08:03 - 0:08:08, vì nó đã được thử nghiệm trên tất cả
+0:08:06 - 0:08:10, những cái mẫu dữ liệu trong bộ dataset
+0:08:08 - 0:08:13, của mình theo cái quy trình chuẩn đó là
+0:08:10 - 0:08:18, tập train và test tách biệt
+0:08:13 - 0:08:21, nhau như vậy thì ở đây chúng ta sẽ Ờ có
+0:08:18 - 0:08:24, một cái góc nhìn tổng thể hơn để so sánh
+0:08:21 - 0:08:26, những cái Ưu khuyết điểm của ba cái Ờ ba
+0:08:24 - 0:08:28, cái phương pháp ở trên đối với cái
+0:08:26 - 0:08:31, Phương pháp mà tập test là một phần của
+0:08:28 - 0:08:33, tập train thì ưu điểm của nó rất là đơn
+0:08:31 - 0:08:36, giản đúng không quy trình của mình rất
+0:08:33 - 0:08:38, là đơn giản nhanh do chúng ta chỉ cần
+0:08:36 - 0:08:41, train một lần và chúng ta sẽ dùng một
+0:08:38 - 0:08:43, phần cái tập test xin lỗi dùng một phần
+0:08:41 - 0:08:45, cái dữ liệu train để đánh giá luôn như
+0:08:43 - 0:08:48, vậy là nó sẽ nhanh nhưng điểm yếu của nó
+0:08:45 - 0:08:50, đó là nó không khách quan và tính tổng
+0:08:48 - 0:08:53, quát của mô hình nó không được đảm
+0:08:50 - 0:08:54, bảo Tại vì mình train Sau đó mình test
+0:08:53 - 0:08:58, trên chính dữ liệu đó thì nó không có tổng
+0:08:54 - 0:09:00, quát Còn đối với cái train-test split thì ý
+0:08:58 - 0:09:02, tưởng của nó thì cũng đơn giản dễ thực
+0:09:00 - 0:09:06, hiện Chúng ta chỉ tách nó ra làm hai
+0:09:02 - 0:09:09, phần 80 20 70 30 ví dụ vậy và cũng ít
+0:09:06 - 0:09:11, tốn kém về mặt chi phí so với lại cross
+0:09:09 - 0:09:13, validation Tại vì chúng ta train trên 80%
+0:09:11 - 0:09:15, Sau đó chúng ta chỉ test trên 20%
+0:09:13 - 0:09:17, còn lại và chúng ta chỉ thực hiện cái
+0:09:15 - 0:09:19, việc này đúng một lần thôi thì so với
+0:09:17 - 0:09:20, lại cái cross validation thì nó sẽ ít
+0:09:19 - 0:09:24, tốn kém
+0:09:20 - 0:09:28, hơn nhưng cái train-test split này thì
+0:09:24 - 0:09:30, mặc dù là nó không khách quan so với lại
+0:09:28 - 0:09:32, cái cross validation đúng không khuyết
+0:09:30 - 0:09:33, điểm của nó là nó không khách quan nhưng
+0:09:32 - 0:09:36, mà không khách quan này là so với cross
+0:09:33 - 0:09:38, validation thôi nhưng mà so với lại cái
+0:09:36 - 0:09:39, test là một phần của train thì nó đã
+0:09:38 - 0:09:42, khách quan hơn rồi
+0:09:39 - 0:09:44, đó và điểm yếu thứ hai đó là nó sẽ tốn
+0:09:42 - 0:09:46, thêm một cái thời gian để để test Nhưng
+0:09:44 - 0:09:49, mà thực sự mà nói thì cái thời gian này
+0:09:46 - 0:09:52, cũng không đáng kể lắm đó thì cái phương
+0:09:49 - 0:09:54, pháp train-test split này nó rất là phù
+0:09:52 - 0:09:55, hợp đối với cái tình huống đó là chúng
+0:09:54 - 0:10:01, ta không thể train đi train lại cái mô
+0:09:55 - 0:10:01, hình của mình nhiều lần chúng ta chỉ
+0:09:57 - 0:10:01, train một lần thôi thì nó phù hợp thì đó
+0:10:01 - 0:10:06, là khi cái tập dữ liệu của mình nó rất
+0:10:03 - 0:10:08, là lớn hoặc là cái mô hình của mình đó
+0:10:06 - 0:10:11, đó rất là nặng Ví dụ như các cái Deep
+0:10:08 - 0:10:13, learning Model nó train Nó sẽ tốn rất là
+0:10:11 - 0:10:15, nhiều thời gian và cuối cùng đó là K-fold
+0:10:13 - 0:10:17, cross validation thì ưu điểm của nó
+0:10:15 - 0:10:19, chính là nó đánh giá được toàn diện đánh
+0:10:17 - 0:10:21, giá được toàn diện cái tính tổng quát
+0:10:19 - 0:10:23, của mô hình tức là khi mà nó ra được cái
+0:10:21 - 0:10:25, con số là 83% thì cái con số đó là
+0:10:23 - 0:10:28, tương đối là khách quan tại vì nó đã
+0:10:25 - 0:10:31, được duyệt qua tất cả các cái tập dữ
+0:10:28 - 0:10:34, liệu trong dataset với quá trình train
+0:10:31 - 0:10:36, và test đó là tách biệt ra và Tuy
+0:10:34 - 0:10:38, nhiên thì cái K-fold validation này thì nó
+0:10:36 - 0:10:41, chỉ phù hợp với lại những cái tập dữ
+0:10:38 - 0:10:43, liệu ít hoặc là khi cái mô hình của mình
+0:10:41 - 0:10:46, nó huấn luyện nhanh tức là nếu như giả
+0:03:10 - 0:11:03, sử như chúng ta train Cái model đó nó
+0:10:43 - 0:10:47, tốn Khoảng vài tiếng thì ok chúng ta có
+0:10:46 - 0:10:52, thể dùng cross validation chúng ta thực
+0:10:47 - 0:10:54, hiện đó thì lặp đi lặp lại trên K lần
+0:10:52 - 0:10:57, nhưng nếu như cái mô hình này của mình
+0:10:54 - 0:10:59, nó train Nó tiến đến hàng tuần hoặc hàng
+0:10:57 - 0:11:01, tháng thì rõ ràng là phương pháp này
+0:10:59 - 0:11:03, không ổn nó không thể nào mà thực hiện
+0:11:01 - 0:11:07, đi thực hiện lại cái này được hàng tháng
+0:11:03 - 0:11:08, nhiều tháng trời được đúng không Và như
+0:11:07 - 0:11:10, khuyết điểm thì cũng đã đề cập á đó là
+0:11:08 - 0:11:12, cái chi phí của nó rất là cao do chúng
+0:11:10 - 0:11:14, ta phải huấn luyện nhiều lần cụ thể ở
+0:11:12 - 0:11:16, đây chính là huấn luyện K lần với k là
+0:11:14 - 0:11:20, số fold của
+0:11:16 - 0:11:22, mình số cái cái cái phần chia trong cái
+0:11:20 - 0:11:25, dataset của
+0:11:22 - 0:11:29, mình và như vậy thì trong bài hôm nay
+0:11:25 - 0:11:31, chúng ta đã cùng tìm hiểu về cách thức
+0:11:29 - 0:11:33, để chúng ta đánh giá cái mô hình của
+0:11:31 - 0:11:37, mình Tại sao chúng ta cần phải đánh giá
+0:11:33 - 0:11:40, cái mô hình các cái độ đo độ đo đánh giá
+0:11:37 - 0:11:43, của mình thì độ đo này nó sẽ là các cái
+0:11:40 - 0:11:46, hàm liên quan đến là hàm độ lỗi độ lỗi
+0:11:43 - 0:11:49, này sẽ phục vụ cho cái quá trình huấn
+0:11:46 - 0:11:52, luyện phục vụ cho cái quá trình huấn
+0:11:49 - 0:11:56, luyện và cái thứ hai đó là cái độ đo
+0:11:52 - 0:11:59, đánh giá độ đo đánh giá thì cái độ đo
+0:11:56 - 0:12:00, đánh giá này á là thực hiện thực hiện
+0:11:59 - 0:12:04, sau
+0:12:00 - 0:12:04, khi sau khi huấn
+0:12:05 - 0:12:12, luyện thì chính độ đo đánh giá này nó
+0:12:07 - 0:12:13, phải dễ hiểu và dễ cảm nhận bởi những
+0:12:12 - 0:12:16, cái người mà không có chuyên môn về máy
+0:12:13 - 0:12:19, học những cái khách hàng hoặc là người
+0:12:16 - 0:12:21, dùng cuối còn độ lỗi thì nhiệm vụ của nó
+0:12:19 - 0:12:24, đó là nó vẫn giúp cho cái mô hình của
+0:12:21 - 0:12:27, mình tiến đến cái giá trị Dự đoán và giá
+0:12:24 - 0:12:29, trị thực tế nó xấp xỉ nhau nhưng đồng
+0:12:27 - 0:12:31, thời nó phải tăng cái cái cái khả năng
+0:12:29 - 0:12:33, huấn luyện lên làm sao cho huấn luyện nó
+0:12:31 - 0:12:36, nhanh hơn do đó thì một cách tổng quát
+0:12:33 - 0:12:39, thì độ lỗi không nhất thiết phải là cái
+0:12:36 - 0:12:41, hàm độ đo đánh giá và cuối cùng đó là
+0:12:39 - 0:12:44, chúng ta nói về cái quy trình chúng ta
+0:12:41 - 0:12:48, nói về cái quy trình đánh
+0:12:44 - 0:12:50, giá tức là các cái độ đo này là các độ
+0:12:48 - 0:12:54, đo định lượng
+0:12:50 - 0:12:56, và đánh giá được cái kết quả của mình là
+0:12:54 - 0:12:59, tốt hay xấu Tuy nhiên nếu như không có
+0:12:56 - 0:13:01, cái quy trình mà khách quan á Nếu mà
+0:12:59 - 0:13:03, không có cái quy trình khách quan thì
+0:13:01 - 0:13:06, các cái con số này đôi khi nó cũng không
+0:13:03 - 0:13:09, khách quan do cái đặc thù của mô hình
+0:13:06 - 0:13:12, của mình là có khả năng nó sẽ nhớ nó sẽ
+0:13:09 - 0:13:14, overfit quá khớp với lại cái tập dữ liệu
+0:13:12 - 0:13:17, huấn luyện thì nếu như chúng ta dùng
+0:13:14 - 0:13:19, Chính cái tập dữ liệu huấn luyện để mà
+0:13:17 - 0:13:21, test luôn thì nó sẽ không khách quan
+0:13:19 - 0:13:23, chúng ta phải chia nó ra làm hai
+0:13:21 - 0:13:26, phần tách biệt nhưng mà chia ra làm hai
+0:13:23 - 0:13:28, phần tách biệt thì cũng không chắc là
+0:13:26 - 0:13:30, khách quan tại vì có khả năng là cái
+0:13:28 - 0:13:32, phần dữ liệu test của mình rất là dễ
+0:13:30 - 0:13:35, hoặc là rất là khó do đó thì chúng ta sử
+0:13:32 - 0:13:37, dụng cái K-fold validation nó sẽ giúp cho
+0:13:35 - 0:13:38, chúng ta đánh giá khách quan hơn nhưng mà
+0:13:37 - 0:13:40, nói như vậy thì cũng không có nghĩa Đó
+0:13:38 - 0:13:42, là từng cái phương pháp như vậy thì nó
+0:13:40 - 0:13:44, không được sử dụng nó sẽ phải tùy vào
+0:13:42 - 0:13:46, những cái tình huống tùy xem mô hình của
+0:13:44 - 0:13:48, mình nó có nặng không huấn luyện có tốn
+0:13:46 - 0:13:50, thời gian hay không dữ liệu của mình nó
+0:13:48 - 0:13:52, có lớn hay không để mà mình chọn lựa cái
+0:13:50 - 0:13:55, quy trình đánh giá khách quan cho phù
+0:13:52 - 0:13:55, hợp

@@ -1,0 +1,190 @@
+0:00:00 - 0:00:04, Chúng ta sẽ cùng đến phần cuối cùng của
+0:00:02 - 0:00:06, học có giám sát đó chính là mô hình phân
+0:00:04 - 0:00:08, lớp
+0:00:06 - 0:00:11, classification thì vị trí của cái bài
+00:00:08 - 0:00:15, học này đó là chúng ta
+0:00:11 - 0:00:18, sẽ nội dung của cái bài học có giám sát
+00:00:15 - 0:00:20, và mô hình hồi quy cũng như là mô hình
+00:00:18 - 0:00:23, phân lớp thì đều nằm trong cái bước gọi
+00:00:20 - 0:00:26, là model Training tức là chúng ta sẽ tiến
+00:00:23 - 0:00:28, hành xây dựng và huấn luyện cái mô hình
+00:00:26 - 0:00:31, của mình từ cái tập dữ liệu đã được
+000:00:28 - 0:00:33, chuẩn bị ở cái bước trước đó thì đối với
+000:00:31 - 0:00:37, cái mô hình hồi quy hoặc là mô hình phân
+000:00:33 - 0:00:40, lớp thì đều mục tiêu đó là chúng ta sẽ
+000:00:37 - 0:00:43, phải ước lượng cái hàm FX sao cho nó đưa
+000:00:40 - 0:00:45, ra được cái giá trị dự đoán y và giá trị
+000:00:43 - 0:00:48, này thì chúng ta mong muốn đó là nó sẽ
+000:00:45 - 0:00:52, xấp xỉ với lại cái giá trị
+000:00:48 - 0:00:54, Ờ thực tế thì đó là mục tiêu của học có
+000:00:52 - 0:00:57, giám sát và như vậy Để có thể học ra
+000:00:54 - 0:01:01, được cái hàm f này chúng ta cần phải có
+000:00:57 - 0:01:03, các cái cặp giá trị là xy bao gồm là x
+000:01:01 - 0:01:07, là đặc trưng đầu vào và y là cái nhãn
+000:01:03 - 0:01:10, đầu ra thì đối với cái mô hình về phân
+000:01:07 - 0:01:13, loại thì chúng ta sẽ học về mô hình
+000:01:10 - 0:01:16, Logistic Regression và một số mô hình cho
+000:01:13 - 0:01:18, cái loại dữ liệu có quan hệ Phi tuyến
+000:01:16 - 0:01:21, đối với mô hình Logistic Regression thì đây
+000:01:18 - 0:01:23, là một cái mô hình để giải quyết cho cái
+000:01:21 - 0:01:26, trường hợp mà dữ liệu y của mình nó sẽ
+000:01:23 - 0:01:28, có một cái mối quan hệ tuyến tính F của
+000:01:26 - 0:01:31, mình trong trường hợp này đó là một cái
+000:01:28 - 0:01:31, hàm tuyến tính
+000:01:32 - 0:01:36, Còn trong trường hợp F là một cái hàm
+000:01:34 - 0:01:39, Phi tuyến thì chúng ta phải sử dụng
+000:01:36 - 0:01:42, những cái mô hình phức tạp hơn đầu tiên
+000:01:39 - 0:01:45, đó là mô hình Logistic thì chúng ta xét
+000:01:42 - 0:01:49, hai cái tập điểm là màu xanh và màu cam
+000:01:45 - 0:01:51, Nếu như chúng ta sử dụng Ờ hai cái chuỗi
+000:01:49 - 0:01:53, ký tự là xanh và cam này để đưa vào mô
+000:01:51 - 0:01:56, hình học á thì rõ ràng là mô hình nó sẽ
+000:01:53 - 0:01:58, không học được do hai cái giá trị này nó
+000:01:56 - 0:02:01, không phải là cái con số do đó thì chúng
+000:01:58 - 0:02:04, ta sẽ biểu diễn bằng cách đó là màu xanh
+000:02:01 - 0:02:07, thì chúng ta sẽ biểu diễn bằng y là bằng
+000:02:04 - 0:02:11, 1 và màu cam thì chúng ta sẽ biểu diễn
+000:02:07 - 0:02:14, bằng số 0 đó tương ứng là như trên cái
+000:02:11 - 0:02:16, biểu đồ như sau và ở đây ở trong cái
+000:02:14 - 0:02:19, không gian hai chiều này thì hai cái
+000:02:16 - 0:02:22, thành phần x1 và x2 chính là cái đặc
+000:02:19 - 0:02:25, trưng của cái dữ liệu của mình đó là đặc
+000:02:22 - 0:02:30, trưng của cái dữ liệu của mình và chúng
+000:02:25 - 0:02:32, ta sẽ có cái à mô hình dự đoán y_hat
+000:02:30 - 0:02:34, sẽ là bằng sigmoid của
+000:02:32 - 0:02:37, beta x trong
+000:02:34 - 0:02:40, đó hai cái tập điểm màu xanh và màu cam
+000:02:37 - 0:02:41, này nè thì nó sẽ được chia cắt bởi một
+000:02:40 - 0:02:43, cái đường thẳng thì đây chính là cái
+000:02:41 - 0:02:46, tính chất tuyến tính của cái bài toán
+000:02:43 - 0:02:48, của mình tức là các cái tập điểm có thể
+000:02:46 - 0:02:50, được chia cách bởi một cái đường thẳng
+000:02:48 - 0:02:54, tuyến tính. Một cái đường thẳng thì nó
+000:02:50 - 0:02:57, gọi là bài toán tuyến tính cho bài toán
+000:02:54 - 0:03:00, phân loại và trên cái đường thẳng này thì nó sẽ
+000:02:57 - 0:03:05, có cái phương trình là beta x là bằng
+000:03:00 - 0:03:06, 0 và những cái điểm nào mà màu xanh và
+000:03:05 - 0:03:08, tất cả những cái điểm nào mà nằm về một
+000:03:06 - 0:03:09, nửa phía cùng phía với màu xanh chứ
+000:03:08 - 0:03:11, không nhất thiết là những điểm màu xanh
+000:03:09 - 0:03:14, ha ví dụ cái điểm ở đây cũng được thì
+000:03:11 - 0:03:17, khi chúng ta thế nó vào thế cái tọa độ
+000:03:14 - 0:03:19, nó vào cái công thức beta x thì nó sẽ
+000:03:17 - 0:03:22, cho cái giá trị là lớn hơn 0 và cái giá
+000:03:19 - 0:03:25, trị này nó có thể là tiến đến vô cùng
+000:03:22 - 0:03:27, cộng vô cùng và tương tự như vậy Những
+000:03:25 - 0:03:29, cái điểm nào mà nằm về cùng một phía với
+000:03:27 - 0:03:31, cái điểm màu cam Ví dụ như điểm này đó
+000:03:29 - 0:03:33, thì khi chúng ta thế cái tọa độ nó vào
+000:03:31 - 0:03:37, đây thì cũng chúng ta cũng sẽ ra một cái
+000:03:33 - 0:03:41, giá trị là bé hơn 0 và miền giá trị của
+000:03:37 - 0:03:44, beta X này nó có thể tiến đến trừ vô
+000:03:41 - 0:03:48, cùng nhưng ở đây chúng ta đã biểu diễn
+000:03:44 - 0:03:50, các cái giá trị y và các cái giá trị
+000:03:48 - 0:03:52, tương ứng với lại hai cái phân lớp là
+000:03:50 - 0:03:55, xanh và cam của mình là bởi hai cái giá
+000:03:52 - 0:03:58, trị là 1 và 0 do đó thì chúng ta sẽ phải
+000:03:55 - 0:04:03, tìm cách để ép cái miền giá trị của
+000:03:58 - 0:04:05, beta x về cái đoạn là từ 0 cho đến 1 đó
+000:04:03 - 0:04:07, thì may quá chúng ta sẽ có một cái hàm
+000:04:05 - 0:04:10, sigmoid hàm sigmoid này sẽ giúp cho chúng ta
+000:04:07 - 0:04:13, ép cái miền giá trị của beta x từ trừ vô
+000:04:10 - 0:04:16, cùng cộng vô cùng nó sẽ đưa về cái miền
+000:04:13 - 0:04:18, giá trị là từ 0 cho đến 1 và nếu như nó
+000:04:16 - 0:04:20, chạm được đến cái giá trị là 0 tức là
+000:04:18 - 0:04:23, chúng ta đang đưa ra cái quyết định phân
+000:04:20 - 0:04:25, loại đó là màu cam và nếu như nó chạm
+000:04:23 - 0:04:28, đến cái giá trị là 1 tức là chúng ta
+000:04:25 - 0:04:32, đang ờ xác định cái nhãn của nó chính là
+000:04:28 - 0:04:34, màu xanh Thì đó chính là cái mô hình
+000:04:32 - 0:04:36, Logistic Regression và với mô hình
+000:04:34 - 0:04:39, Logistic Regression thì chúng ta sẽ có
+000:04:36 - 0:04:41, cái hàm độ lỗi hàm độ lỗi này là thể
+000:04:39 - 0:04:44, hiện cái sai số giữa giá trị dự đoán và
+000:04:41 - 0:04:47, giá trị thực tế thì công thức của hàm độ
+000:04:44 - 0:04:51, lỗi này đó chính là Binary Cross
+000:04:47 - 0:04:53, Entropy Binary Cross Entropy này đó là
+000:04:51 - 0:04:55, một cái công thức đặc biệt cho cái
+000:04:53 - 0:05:00, trường hợp tổng
+000:04:55 - 0:05:03, quát của cái công thức Log Loss
+000:05:00 - 0:05:11, thì cái công thức Log Loss này á đó là
+000:05:03 - 0:05:15, bằng tổng của i à log y_hat với k là
+000:05:11 - 0:05:20, chạy từ 1 cho đến K trong đó y và y_hat
+000:05:15 - 0:05:23, ở đây y và y_hat đều là một cái vectơ
+000:05:20 - 0:05:25, có k chiều Ví dụ như chúng ta đang cần
+000:05:23 - 0:05:29, phân lớp
+000:05:25 - 0:05:31, Ờ ba lớp thì cái k này của mình nó sẽ là
+000:05:29 - 0:05:33, bằng 3 vậy Lúc đó I của mình nó sẽ là
+000:05:31 - 0:05:36, một cái vectơ ba thành
+000:05:33 - 0:05:38, phần nếu như chúng ta phân lớp cho cái
+000:05:36 - 0:05:42, bài toán mà 10 lớp thì K của mình bằng
+000:05:38 - 0:05:44, 10 và đây sẽ là vectơ có k chiều là 10
+000:05:42 - 0:05:47, còn trong trường hợp phân tích nhị phân
+000:05:44 - 0:05:52, thì chúng ta không cần phải tạo
+000:05:47 - 0:05:54, ra I là y và y_hat là vectơ cái k là
+000:05:52 - 0:05:56, bằng 2 tức là vectơ hai chiều Tại vì ở
+000:05:54 - 0:05:59, đây chúng ta chỉ cần một giá trị đầu ra
+000:05:56 - 0:06:02, thôi thì giá trị này nó sẽ nhận giá trị
+000:05:59 - 0:06:06, trên cái đoạn là từ 0 cho đến 1 tương
+000:06:02 - 0:06:08, ứng nó sẽ là cái hai cái trạng thái của
+000:06:06 - 0:06:10, cái giá trị đầu ra của mình rồi do đó
+000:06:08 - 0:06:12, thì không nhất thiết mình phải dùng một
+000:06:10 - 0:06:15, cái vector hai chiều mà mình chỉ cần
+000:06:12 - 0:06:17, dùng duy nhất một cái giá trị output Tại
+000:06:15 - 0:06:19, vì output nó sẽ có hai trạng thái là 0
+000:06:17 - 0:06:22, và 1 thì nó tương ứng với hai cái lớp rồi
+000:06:19 - 0:06:25, rồi và công thức của mình cho cái trường
+000:06:22 - 0:06:27, hợp mà nó có nhiều lớp thì ở đây nếu mà
+000:06:25 - 0:06:30, Đúng là chúng ta nên có cái trung bình
+000:06:27 - 0:06:36, cộng chúng ta sẽ để cái trừ đằng trước
+000:06:30 - 0:06:41, tức là trung bình cộng đó rồi y log y_hat
+000:06:36 - 0:06:43, rồi cộng cho 1 - y log 1 - y thì cái
+000:06:41 - 0:06:48, công thức này nó sẽ thỏa mãn đó là nếu
+000:06:43 - 0:06:50, như cái giá trị dự đoán mà đoán trúng đó
+000:06:48 - 0:06:53, thì cái log của cái loss của mình nó sẽ
+000:06:50 - 0:06:59, tiến về 0 Còn trong trường hợp mà chúng
+000:06:53 - 0:07:01, ta đoán sai Ví dụ như y = 1 mà y_hat
+000:06:59 - 0:07:03, của mình mà bằng 0 á thì cái loss này
+000:07:01 - 0:07:05, của mình nó sẽ tiến đến cộng vô cùng tức
+000:07:03 - 0:07:08, là sai số rất là lớn thì điều này nó sẽ
+000:07:05 - 0:07:11, ép cho cái mô hình nó học sẽ nhanh hơn
+000:07:08 - 0:07:13, như vậy thì cái mô hình Logistic
+000:07:11 - 0:07:16, Regression nó cũng sẽ có những cái đặc
+000:07:13 - 0:07:18, điểm về ưu điểm và khuyết điểm thứ nhất
+000:07:16 - 0:07:21, đó là mô hình này cũng tương đối là đơn
+000:07:18 - 0:07:24, giản và dễ cài đặt Và thậm chí trong scikit-learn
+000:07:21 - 0:07:26, thì chúng ta cũng đã có cái module
+000:07:24 - 0:07:28, tên là Logistic Regression luôn chúng ta đã
+000:07:26 - 0:07:30, có cái cái cài đặt sẵn trong thư viện
+000:07:28 - 0:07:33, scikit-learn rồi và chúng ta hoàn toàn có thể
+000:07:30 - 0:07:35, dễ dàng mở rộng mô hình Logistic Regression
+000:07:33 - 0:07:38, này cho các cái bài toán phân loại nhiều
+000:07:35 - 0:07:42, lớp bằng cách thay vì chúng ta sử dụng
+000:07:38 - 0:07:44, cái y là bằng sigmoid của beta x chúng
+000:07:42 - 0:07:47, ta thay cái hàm này bằng một cái hàm softmax
+000:07:44 - 0:07:49, và với cái hàm softmax này thì cái
+000:07:47 - 0:07:52, output của mình nó không nhất thiết là
+000:07:49 - 0:07:54, ra một giá trị từ 0 đến 1 mà nó có thể
+000:07:52 - 0:07:56, ra một cái vectơ ở dạng là One-hot để
+000:07:54 - 0:07:59, giúp cho chúng ta có thể giải quyết được
+000:07:56 - 0:08:01, cái bài toán là phân lớp nhiều lớp và
+000:07:59 - 0:08:03, khuyết điểm của mô hình này đó chính là
+000:08:01 - 0:08:05, nó không giải quyết được những cái
+000:08:03 - 0:08:07, trường hợp là dữ liệu nó phức tạp nghĩa
+000:08:05 - 0:08:09, là dữ liệu của mình nó có mối quan hệ
+000:08:07 - 0:08:12, Phi
+000:08:09 - 0:08:14, tuyến và nó rất dễ bị ảnh hưởng bởi
+000:08:12 - 0:08:17, những cái điểm nhiễu bởi những cái dữ
+000:08:14 - 0:08:21, liệu nhiễu. Điều gì xảy ra nếu như trong
+000:08:17 - 0:08:23, cái tập dữ liệu của mình đó ở đây chúng
+000:08:21 - 0:08:26, ta sẽ có những cái điểm nhiễu là những
+000:08:23 - 0:08:28, cái điểm mà nằm ở đây thì nó sẽ kéo cái
+000:08:26 - 0:08:31, mô hình của mình lệch về phía này dẫn
+000:08:28 - 0:08:34, đến là mất đi cái tính tổng quát. Mô hình
+000:08:31 - 0:08:37, của mình nó sẽ bị mất đi cái tính tổng
+000:08:34 - 0:08:39, quát trong khi đó lẽ ra cái mô hình đúng
+000:08:37 - 0:08:41, của mình nó nên là cái đường như thế này
+000:08:39 - 0:08:43, thì nó sẽ trung dung hơn và thuật toán
+000:08:41 - 0:08:45, SVM là một trong những thuật toán nó giúp
+000:08:43 - 0:08:48, cho mình loại bỏ được những cái điểm
+000:08:45 - 0:08:48, nhiễu tốt hơn

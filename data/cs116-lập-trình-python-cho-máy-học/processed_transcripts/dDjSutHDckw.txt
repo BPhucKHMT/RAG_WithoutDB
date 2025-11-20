@@ -1,0 +1,204 @@
+0:00:01 - 0:00:07, đối với thư viện pandas thì ở đây chúng
+0:00:03 - 0:00:09, ta sẽ có một cái file là pandas cheat sheet hay
+0:00:07 - 0:00:12, còn gọi là một cái cuốn sổ tay lưu các
+0:00:09 - 0:00:14, cái hàm hoặc là các cái phương thức mà
+0:00:12 - 0:00:17, chúng ta thường sử dụng ở trong thư viện
+0:00:14 - 0:00:19, này thì đầu tiên đó chính là các cái hàm
+0:00:17 - 0:00:21, liên quan đến việc là tạo DataFrame
+0:00:19 - 0:00:23, creating DataFrame thì một cái DataFrame
+0:00:21 - 0:00:25, nó sẽ là một cái cấu trúc bảng
+0:00:23 - 0:00:28, trong đó sẽ bao gồm các cái cột như
+0:00:25 - 0:00:32, chúng ta có thể thấy ở đây à cột của
+0:00:28 - 0:00:35, mình sẽ bao gồm các cái tên cột A, B, C
+0:00:32 - 0:00:37, và hàng của mình thì sẽ lưu các cái quan
+0:00:35 - 0:00:40, sát. Mỗi một cái hàng dữ liệu này sẽ là
+0:00:37 - 0:00:42, một cái quan sát, một cái mẫu dữ liệu. Ở
+0:00:40 - 0:00:44, bên trái ngoài cùng thì chúng ta sẽ thấy
+0:00:42 - 0:00:47, là nó không có cái tên cột đó tương ứng
+0:00:44 - 0:00:50, là cái chỉ số là index. Thì mục tiêu của
+0:00:47 - 0:00:53, cái chỉ số này là để giúp cho cái cấu
+0:00:50 - 0:00:55, trúc bảng có thể truy xuất nhanh, có thể
+0:00:53 - 0:00:58, làm các cái thao tác sắp xếp, vân vân
+0:00:55 - 0:01:00, được thực hiện một cách nhanh chóng. Và
+0:00:58 - 0:01:03, các cái giá trị ở trong các cái dòng dữ
+0:01:00 - 0:01:05, liệu này thì nó có thể là những kiểu dữ
+0:01:03 - 0:01:10, liệu bất kỳ chứ không nhất thiết phải là
+0:01:05 - 0:01:12, kiểu dữ liệu số. Nó có thể là kiểu dữ liệu
+0:01:10 - 0:01:15, chuỗi, có thể là kiểu dữ liệu số thực, vân
+0:01:12 - 0:01:20, vân. Và để tạo ra một cái DataFrame thì
+0:01:15 - 0:01:22, chúng ta chỉ đơn giản đó là PD. Thì PD là
+0:01:20 - 0:01:24, cái alias là viết tắt của pandas. PD.
+0:01:22 - 0:01:27, DataFrame và chúng ta sẽ truyền vào một
+0:01:24 - 0:01:30, cái dictionary. Trong cái dictionary này
+0:01:27 - 0:01:32, thì sẽ có chứa các cái tên cột và tương
+0:01:30 - 0:01:35, ứng các cái giá trị theo hàng, tên cột và
+0:01:32 - 0:01:37, các giá trị cho từng hàng. Và chúng ta
+0:01:35 - 0:01:39, lưu ý là số lượng các cái phần tử trong
+0:01:37 - 0:01:41, à cái list này á nó phải bằng nhau. Chứ
+0:01:39 - 0:01:46, nếu mà chúng ta cho nó chênh lệch nhau
+0:01:41 - 0:01:49, thì nó vẫn sẽ chạy được nhưng mà nó sẽ
+0:01:46 - 0:01:51, điền các cái giá trị NaN vào. Rồi cái
+0:01:49 - 0:01:54, cột chỉ số này thì như đã đề cập, nó
+0:01:51 - 0:01:56, chính là cái chỉ mục của cái pandas để
+0:01:54 - 0:01:57, giúp cho chúng ta có thể tăng cái tốc độ
+0:01:56 - 0:02:01, truy xuất.
+0:01:57 - 0:02:04, Rồi à cái phần thứ hai đó là liên
+0:02:01 - 0:02:06, quan đến cái hàm Reshaping data,
+0:02:04 - 0:02:09, tức là mình sẽ
+0:02:06 - 0:02:12, thực hiện cái việc là thay đổi các cái
+0:02:09 - 0:02:13, kích thước của bảng dữ liệu của mình. Thì
+0:02:12 - 0:02:15, đơn giản nhất mà chúng ta hay sử dụng đó
+0:02:13 - 0:02:18, chính là chúng ta làm thao tác nối bảng,
+0:02:15 - 0:02:21, nối cái bảng DataFrame 1 và DataFrame 2.
+0:02:18 - 0:02:23, Đây là DataFrame 1 và đây là DataFrame 2.
+0:02:21 - 0:02:26, Thì nếu như chúng ta nối mặc định là cái
+0:02:23 - 0:02:28, axis, cái axis của mình nè, là cái tham
+0:02:26 - 0:02:30, số này nè, nó mặc định là bằng 0. Do đó ở
+0:02:28 - 0:02:33, đây người ta không điền và nó sẽ chồng
+0:02:30 - 0:02:35, lên hàng trên hàng dưới, nó sẽ chồng lên.
+0:02:33 - 0:02:38, Thì nó sẽ tạo ra một cái DataFrame như
+0:02:35 - 0:02:40, thế này. Thì hai cái DataFrame df1 và df2
+0:02:38 - 0:02:44, nó sẽ phải có cùng cái số lượng cột và
+0:02:40 - 0:02:47, tên cột giống nhau. Rồi nếu như chúng ta
+0:02:44 - 0:02:50, nối cột, à xin lỗi, chúng ta nối cái bảng
+0:02:47 - 0:02:52, mà theo kiểu là nối ngang hàng thì
+0:02:50 - 0:02:54, đây là DataFrame 1 và đây là DataFrame 2.
+0:02:52 - 0:02:57, Thì khi nối ngang hàng thì đây là
+0:02:54 - 0:03:00, DataFrame 1 và DataFrame 2 nó sẽ phải có
+0:02:57 - 0:03:04, cùng cái số dòng, sẽ có cùng số dòng
+0:03:00 - 0:03:07, hoặc là có cùng số quan sát. Ngoài ra thì
+0:03:04 - 0:03:10, DataFrame còn có hỗ trợ các cái phương
+0:03:07 - 0:03:12, thức như là melt và pivot. Melt thì thực
+0:03:10 - 0:03:14, hiện cái việc đó là chuyển đổi các cái
+0:03:12 - 0:03:17, cột dữ liệu của mình sang cái dạng hàng,
+0:03:14 - 0:03:19, sang các cái dạng hàng. Ví dụ như ở đây
+0:03:17 - 0:03:22, là chúng ta có ba cột tương ứng là ba
+0:03:19 - 0:03:25, màu là màu xanh, màu cam và màu xanh
+0:03:22 - 0:03:28, dương. Thì ở đây các cái giá trị của xanh
+0:03:25 - 0:03:30, cam và xanh dương thì nó sẽ được gắn các
+0:03:28 - 0:03:33, cái giá trị tương ứng. Ví dụ như ở đây là
+0:03:30 - 0:03:35, màu xanh lá ha, thì nó sẽ có hai giá trị.
+0:03:33 - 0:03:37, Thì tương ứng nó sẽ có xanh lá giá trị
+0:03:35 - 0:03:39, một, xanh lá giá trị hai. Màu cam thì nó
+0:03:37 - 0:03:42, sẽ có hai giá trị. Thì tương ứng ở đây nó
+0:03:39 - 0:03:46, sẽ tên cột là màu cam giá trị một, màu
+0:03:42 - 0:03:49, cam giá trị hai. Và cứ như vậy. Pivot là cái
+0:03:46 - 0:03:52, thao tác ngược lại, nó chuyển từ, nó sẽ
+0:03:49 - 0:03:54, chuyển từ cái dạng dòng sang cái dạng
+0:03:52 - 0:03:56, cột, các cái giá trị dạng dòng về cái giá
+0:03:54 - 0:04:00, trị dạng
+0:03:56 - 0:04:02, cột. Rồi ngoài ra thì nó còn hỗ trợ các
+0:04:00 - 0:04:04, cái thao tác khác, ví dụ như là reset
+0:04:02 - 0:04:07, index, reset_index trong
+0:04:04 - 0:04:09, DataFrame. Rồi sắp xếp các index của mình
+0:04:07 - 0:04:13, theo thứ tự tăng dần hoặc giảm dần,
+0:04:09 - 0:04:15, hoặc là đổi cột, à xin lỗi, đổi tên
+0:04:13 - 0:04:17, của các cái cột của mình. Ví dụ như cái
+0:04:15 - 0:04:20, cột nào có tên là Y thì sẽ được đổi tên
+0:04:17 - 0:04:23, lại thành là YE như
+0:04:20 - 0:04:28, vậy. Ngoài ra thì pandas còn hỗ trợ các
+0:04:23 - 0:04:31, cái thao tác truy vấn và lấy những cái
+0:04:28 - 0:04:33, hàng hoặc là lấy những cái cột riêng
+0:04:31 - 0:04:38, biệt. Ví dụ chúng ta thấy ở nguyên một
+0:04:33 - 0:04:42, cái bảng như thế này và df['Length']
+0:04:38 - 0:04:44, lớn hơn 7. Tức là trích ra
+0:04:42 - 0:04:46, những cái dòng mà nó thỏa mãn cái điều
+0:04:44 - 0:04:48, kiện là cái giá trị của một cái cột nào
+0:04:46 - 0:04:52, đó, ví dụ cột này là cột Length, cột chiều
+0:04:48 - 0:04:54, dài lớn hơn 7. Thì trong số những cái giá
+0:04:52 - 0:04:57, trị trong cái cột này, cái cột Length này
+0:04:54 - 0:04:58, thì giá trị nào mà lớn hơn 7 thì nó sẽ
+0:04:57 - 0:05:01, lấy ra. Ví dụ như ở đây nó có hai dòng
+0:04:58 - 0:05:02, này có hai giá trị này là lớn hơn 7 thì
+0:05:01 - 0:05:06, nó sẽ pick ra hai
+0:05:02 - 0:05:10, dòng. Thì nó sẽ tạo ra là một cái
+0:05:06 - 0:05:12, bảng mới bao gồm là hai cái quan sát với
+0:05:10 - 0:05:15, cái trường Length của mình là lớn hơn 7.
+0:05:12 - 0:05:17, Rồi drop_duplicates. Tức là cái bảng của
+0:05:15 - 0:05:20, mình nó sẽ có tình huống là hai cái dòng
+0:05:17 - 0:05:22, dữ liệu có giá trị giống nhau thì nó sẽ
+0:05:20 - 0:05:25, loại bỏ đi, nó chỉ chừa lại duy nhất một
+0:05:22 - 0:05:28, cái một cái dòng
+0:05:25 - 0:05:32, thôi. Rồi ngoài ra thì còn rất nhiều
+0:05:28 - 0:05:35, những cái hàm khác, ví dụ như là df.head() tức
+0:05:32 - 0:05:38, là lấy ra N dòng đầu tiên. Hoặc là df.tail()
+0:05:35 - 0:05:41, là lấy ra N dòng cuối cùng. Rồi các cái
+0:05:38 - 0:05:43, thao tác trên cột. Ví dụ như đây là cái
+0:05:41 - 0:05:45, hàm, đây là cái phương thức để cho chúng
+0:05:43 - 0:05:48, ta có thể lấy ra những cái cột. Ví dụ như
+0:05:45 - 0:05:49, trong cái bảng này có rất nhiều cột,
+0:05:48 - 0:05:51, nhưng mà bây giờ chúng ta đang muốn lọc
+0:05:49 - 0:05:53, ra những cái cột màu xanh như thế này
+0:05:51 - 0:05:55, thì chúng ta sẽ điền cái tên cột mà
+0:05:53 - 0:05:59, chúng ta muốn lấy dữ liệu, ví dụ cột Width,
+0:05:55 - 0:06:02, cột Height và cột Species. À cột Width, cột
+0:05:59 - 0:06:05, Length, Species. Thì ở đây chúng ta có ba cột
+0:06:02 - 0:06:08, và nó sẽ trích ra ba cột này thôi. Rồi
+0:06:05 - 0:06:12, ngoài ra thì nó có thể cho phép chúng ta
+0:06:08 - 0:06:14, truy vấn ví dụ như là df.query() và chúng
+0:06:12 - 0:06:17, ta sẽ truyền vào một cái chuỗi. Trong đó
+0:06:14 - 0:06:20, thì có tên của cái cột, tên của cái cột
+0:06:17 - 0:06:22, của mình và cái điều kiện. Điều kiện để
+0:06:20 - 0:06:24, mà mình truy vấn ra. Thì cái này cái
+0:06:22 - 0:06:27, lệnh này nó cũng tương đương với lại cái
+0:06:24 - 0:06:30, lệnh này. Ngoài ra chúng ta có thể kết
+0:06:27 - 0:06:32, hợp, ví dụ Length lớn hơn 7 và Width nó phải
+0:06:30 - 0:06:34, bằng 8. Chúng ta có thể kết hợp. Rồi chúng ta
+0:06:32 - 0:06:38, cũng có thể sử dụng với các cái regular
+0:06:34 - 0:06:41, expression, biểu thức chính quy. Rồi để truy
+0:06:38 - 0:06:43, xuất đến các cái tập con của dòng vừa,
+0:06:41 - 0:06:45, dòng vừa cột thì chúng ta có thể sử dụng
+0:06:43 - 0:06:48, các cái phương thức liên quan ví dụ như
+0:06:45 - 0:06:51, là .loc và .iloc để chọn ra các cái
+0:06:48 - 0:06:54, dòng và cột hoặc là cả hai. Thì đây là
+0:06:51 - 0:06:57, một số cái ví dụ. Ví dụ ở đây là chọn ra
+0:06:54 - 0:07:02, các cái dòng có chỉ số là từ 10 cho đến
+0:06:57 - 0:07:04, 20 là .iloc từ cho đến 20. Rồi hoặc là
+0:07:02 - 0:07:08, chúng ta muốn lấy ra những cái cột, những
+0:07:04 - 0:07:11, cái cột tại cái vị trí là số 1, số 2 hoặc
+0:07:08 - 0:07:13, là số 5. Tức là chúng ta có rất nhiều cột,
+0:07:11 - 0:07:15, chúng ta sẽ lấy hết tất cả các dòng,
+0:07:13 - 0:07:18, nhưng mà cột thì chúng ta chỉ lấy ra cột
+0:07:15 - 0:07:20, có chỉ số là 1, 2 và 5 vân vân. Thì đây là
+0:07:18 - 0:07:24, những cái hàm liên quan đến cái việc là
+0:07:20 - 0:07:24, lấy ra một tập con của các cái dòng và
+0:07:24 - 0:07:31, cột. Rồi các cái thao tác liên quan đến
+0:07:28 - 0:07:34, cái việc là tổng hợp dữ liệu hoặc là
+0:07:31 - 0:07:36, xử lý dữ liệu thì ở giữa đây là có lẽ là
+0:07:34 - 0:07:38, một trong những cái nhóm phương thức mà
+0:07:36 - 0:07:41, được sử dụng rất nhiều trong phạm vi môn
+0:07:38 - 0:07:44, học này. dropna() tức là trong cái bảng của
+0:07:41 - 0:07:47, mình nếu như có những cái ô nào mà có
+0:07:44 - 0:07:51, giá trị là không xác định, là NaN hoặc là
+0:07:47 - 0:07:53, null á thì nó sẽ loại bỏ đi. Nó sẽ loại
+0:07:51 - 0:07:56, bỏ đi những cái dòng đó. fillna() tức là
+0:07:53 - 0:07:58, những cái giá trị nào mà có giá trị là
+0:07:56 - 0:08:01, NaN thì nó sẽ được thay thế bằng một cái
+0:07:58 - 0:08:03, giá trị mà mình chỉ định. Thì đây là
+0:08:01 - 0:08:07, Handling Missing data, tức là xử
+0:08:03 - 0:08:10, lý với những cái dữ liệu bị thiếu. Rồi
+0:08:07 - 0:08:12, chúng ta có thể tạo thêm những cái cột
+0:08:10 - 0:08:14, mới. Thì đây cũng là những cái phương
+0:08:12 - 0:08:16, thức được sử dụng rất là nhiều cho cái
+0:08:14 - 0:08:18, môn học này, ví dụ như cái bước gọi là
+0:08:16 - 0:08:20, Feature Engineering thì chúng ta sẽ tạo
+0:08:18 - 0:08:21, ra những cái đặc trưng mới. Mà muốn tạo
+0:08:20 - 0:08:24, ra những đặc trưng mới thì chúng ta sẽ
+0:08:21 - 0:08:26, phải tạo thêm những cái cột mới. Ví dụ ở
+0:08:24 - 0:08:29, đây chúng ta sẽ có một cái phương thức
+0:08:26 - 0:08:32, là đơn giản đó là chúng ta tạo ra thêm
+0:08:29 - 0:08:34, một cái cột nữa có tên là Volume. Và
+0:08:32 - 0:08:38, Volume này thì được tính là bằng cột Length
+0:08:34 - 0:08:41, nhân với cột Height nhân với lại cột
+0:08:38 - 0:08:44, Width. Thì ở đây là rất nhiều những cái
+0:08:41 - 0:08:46, phương thức và chúng ta hoàn toàn có thể
+0:08:44 - 0:08:48, tham khảo cũng như là tìm hiểu chi tiết
+0:08:46 - 0:08:50, hơn. Đối với những cái phương thức nào
+0:08:48 - 0:08:52, chúng ta không biết thì chúng ta có thể
+0:08:50 - 0:08:54, click vào đây. Ví dụ như groupby, chúng ta
+0:08:52 - 0:08:57, đang không hiểu groupby là gì thì chúng
+0:08:54 - 0:09:00, ta có thể là click vô đây để đến cái
+0:08:57 - 0:09:02, trang web gốc của pandas. Và trong cái
+0:09:00 - 0:09:05, trang web gốc của pandas này thì chúng
+0:09:02 - 0:09:10, ta sẽ xem các cái ví dụ minh họa tương
+0:09:05 - 0:09:10, ứng để chúng ta có thể hiểu rõ hơn.

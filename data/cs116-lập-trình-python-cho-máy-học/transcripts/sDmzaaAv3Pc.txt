@@ -1,0 +1,250 @@
+0:00:01 - 0:00:15, [âm nhạc]
+0:00:13 - 0:00:18, trong phần tiếp theo thì chúng ta sẽ
+0:00:15 - 0:00:21, cùng đến với cái phần cài đặt mô hình
+0:00:18 - 0:00:24, linear regression sử dụng thư viện s l
+0:00:21 - 0:00:26, thì bước đầu tiên đó là chúng ta sẽ cùng
+0:00:24 - 0:00:28, tạo sinh ra các cái dữ liệu mẫu thì ở
+0:00:26 - 0:00:31, đây chúng ta đã chuẩn bị sẵn một cái
+0:00:28 - 0:00:35, chương trình để tạo ra các cái dữ liệu
+0:00:31 - 0:00:39, trong đó x sẽ là các cái giá trị lấy mẫ
+0:00:35 - 0:00:45, từ 1 cho đến số nhỏ hơn 10 và bước nhảy
+0:00:39 - 0:00:49, là 0.5 tức là x sẽ là bằng 1 1,5 2 2,5
+0:00:45 - 0:00:51, vân vân cho đến 9,5 và chúng ta sẽ có
+0:00:49 - 0:00:54, thêm một cái đại lượng nữa đó là noise
+0:00:51 - 0:00:57, thì cái noise này nó sẽ có kích thước
+0:00:54 - 0:01:00, đúng bằng cái xf Tức là cái số phần tử
+0:00:57 - 0:01:03, của X ở đây noise này thì nó đại diện
+0:01:00 - 0:01:05, cho những cái phần ờ sai số trong quá
+0:01:03 - 0:01:09, trình mà chúng ta đo lường cái dữ liệu
+0:01:05 - 0:01:10, của mình khi trong thực tế và y thì sẽ
+0:01:09 - 0:01:14, là có cái công thức ở đây chúng ta sẽ
+0:01:10 - 0:01:17, cho trước một cái hàm phương trình là y
+0:01:14 - 0:01:21, = -6x + 10 và chúng ta sẽ cộng thêm cho
+0:01:17 - 0:01:23, một cái sii số noise theo cái nhiễu à
+0:01:21 - 0:01:26, tuân theo cái phân bố đó là phân bố
+0:01:23 - 0:01:28, chuẩn và sau đó thì chúng ta sẽ tiến
+0:01:26 - 0:01:32, hành vẽ các cái cặp điểm x và y lên trên
+0:01:28 - 0:01:36, cái ờ sơ đồ của mình bằng thư viện
+0:01:32 - 0:01:38, MP rồi thì chúng ta thấy ở đây là sẽ có
+0:01:36 - 0:01:41, các cái điểm là các cái size số của mình
+0:01:38 - 0:01:44, thì chúng ta có thể generate ra nhiều
+0:01:41 - 0:01:46, lần thì muốn cho cái noise này á mà nó
+0:01:44 - 0:01:50, có cái sự dao động lớn hơn thì chúng ta
+0:01:46 - 0:01:52, có thể tăng cái biên độ này lên bình
+0:01:50 - 0:01:55, thường chúng ta để là noise là 01 bây
+0:01:52 - 0:01:57, giờ chúng ta đang có là noise 02 V muốn
+0:01:55 - 0:02:00, tăng cái sai số này lên chúng ta có thể
+0:01:57 - 0:02:02, cho lên là 5
+0:02:00 - 0:02:05, đó thì các bạn sẽ thấy là cái sự dao
+0:02:02 - 0:02:09, động xung quanh cái đường thẳng y = -6x
+0:02:05 - 0:02:11, + 10 Nó lớn hơn Còn nếu như chúng ta cho
+0:02:09 - 0:02:14, cái dao động này là bằng
+0:02:11 - 0:02:17, 1 cái độ lệch này bằng 1 thì nó sẽ ít
+0:02:14 - 0:02:20, dao động hơn đó thì để cho mô phỏng gần
+0:02:17 - 0:02:22, giống với lại cái sai số trong thực tế
+0:02:20 - 0:02:25, thì chúng ta sẽ cho cái nhiễu này nó lớn
+0:02:22 - 0:02:28, một chút đó thì nó ra cái đường các cái
+0:02:25 - 0:02:31, điểm xoay xung quanh cái đường thẳng y
+0:02:28 - 0:02:34, bằ -6x x cng 10 thì đây là cái phương
+0:02:31 - 0:02:37, trình đúng mà mình sẽ phải tìm cách để
+0:02:34 - 0:02:39, đưa ra được cái dự đoán và chúng ta sẽ
+0:02:37 - 0:02:42, sử dụng cái mô hình linear regression để
+0:02:39 - 0:02:44, chúng ta đoán xem là các cái tham số
+0:02:42 - 0:02:47, tương ứng với lại cái X cái biến x và
+0:02:44 - 0:02:50, cái bias này là bao nhiêu khi chúng ta
+0:02:47 - 0:02:52, đưa vào tập các cái mẫu huấn luyện này
+0:02:50 - 0:02:54, đó thì ở đây chúng ta sẽ xem ha X của
+0:02:52 - 0:02:57, mình
+0:02:54 - 0:03:01, chs rồi Tức là ở đây chúng ta đang có 18
+0:02:57 - 0:03:02, mẫu tất cả rồi
+0:03:01 - 0:03:06, tiếp theo thì chúng ta sẽ Build cái
+0:03:02 - 0:03:08, model sử dụng thư viện ccit l esalon
+0:03:06 - 0:03:10, linear Model và chúng ta sẽ sử dụng mô
+0:03:08 - 0:03:15, hình là hồi quy Tiến tính linear
+0:03:10 - 0:03:17, regression và để truyền cái để tạo ra
+0:03:15 - 0:03:19, cái đối tượng là linear regression xong
+0:03:17 - 0:03:21, rồi chúng ta sẽ fit tức là chúng ta sẽ
+0:03:19 - 0:03:23, huấn luyện trên cái dữ liệu x và y Chúng
+0:03:21 - 0:03:26, ta đã train ở đây thì chúng ta sẽ gọi
+0:03:23 - 0:03:31, cái lệnh như sau là Red là viết tắc của
+0:03:26 - 0:03:34, regression linear regression rồi rfit xi
+0:03:31 - 0:03:34, Chúng ta sẽ chạy thử
+0:03:35 - 0:03:44, ha rồi thì ở đây nó có một cái thông báo
+0:03:38 - 0:03:48, lỗi à expected là 2D array nhưng nó lại
+0:03:44 - 0:03:53, got 1D array Tức là mình cái X này của
+0:03:48 - 0:03:53, mình á Bây giờ mình sẽ xem lại ha x
+0:03:53 - 0:03:59, chs ok ở đây thì nó đang nói đó là mình
+0:03:56 - 0:04:02, đang chỉ có 1D array trong khi đó Cái
+0:03:59 - 0:04:04, người ta kỳ vọng đó là 2D thì đầu vào
+0:04:02 - 0:04:07, của mình á là x sẽ là một tập hợp các
+0:04:04 - 0:04:08, cái điểm Ví dụ như X của mình nó sẽ là
+0:04:07 - 0:04:13, phải
+0:04:08 - 0:04:13, bằng rồi x1
+0:04:14 - 0:04:18, x2 rồi xuống dòng cho cái mẫu dữ liệu
+0:04:17 - 0:04:23, thứ
+0:04:18 - 0:04:27, hai rồi x2 x1
+0:04:23 - 0:04:30, x2 đó thì đây là cái ví dụ của mình
+0:04:27 - 0:04:32, trong trường hợp này thì chúng ta chỉ có
+0:04:30 - 0:04:35, duy nhất một cái mẫ dữ xin lỗi chúng ta
+0:04:32 - 0:04:35, chỉ có duy nhất một chiều
+0:04:37 - 0:04:40, thôi
+0:04:42 - 0:04:48, rồi thì như vậy
+0:04:44 - 0:04:52, thì ở đây nó sẽ Lẽ ra nó sẽ phải là một
+0:04:48 - 0:04:54, cái ma trận X của mình sẽ lẽ ra là một
+0:04:52 - 0:04:56, ma trận thay vì là một vector do đó thì
+0:04:54 - 0:05:00, chúng ta sẽ phải thực hiện một cái thao
+0:04:56 - 0:05:02, tác là reset như vậy là x sẽ là bằng x
+0:05:00 - 0:05:04, ch
+0:05:02 - 0:05:07, reset và chúng ta sẽ thấy là ở đây cái
+0:05:04 - 0:05:09, cột của mình á là nó sẽ có một cột đúng
+0:05:07 - 0:05:11, không Tại vì cái x của mình Nó là một
+0:05:09 - 0:05:13, cái giá trị scaler do đó thì nó chỉ có
+0:05:11 - 0:05:16, một cột trong trường hợp X của mình là
+0:05:13 - 0:05:19, vectơ nhiều chiều thì mình sẽ có nhiều
+0:05:16 - 0:05:24, cột hơn như vậy thì mình sẽ có là một
+0:05:19 - 0:05:25, cột và một cột còn số dòng thì ở đây
+0:05:24 - 0:05:27, mình sẽ không biết cái số dòng là bao
+0:05:25 - 0:05:30, nhiêu thực ra mình biết nó là 18 mình có
+0:05:27 - 0:05:33, thể để là 18 ph1
+0:05:30 - 0:05:36, 18,1 như thế này cũng được Tuy nhiên
+0:05:33 - 0:05:37, mình sẽ để cho Python thư Việ NP nó sẽ
+0:05:36 - 0:05:39, tự tính cái số dòng là bao nhiêu Mình
+0:05:37 - 0:05:42, chỉ cần biết là à x của mình là từ một
+0:05:39 - 0:05:45, cái dạng vectơ chuyển về một cái ma trận
+0:05:42 - 0:05:47, với cái số cột của mình là một cột rồi
+0:05:45 - 0:05:52, còn chuyển còn lại là số dòng nó sẽ tự
+0:05:47 - 0:05:52, tính như vậy thì ở đây mình sẽ để là -1
+0:05:53 - 0:05:57, rồi rồi và ở đây thì chắc mình sẽ in ra
+0:05:56 - 0:06:01, ha
+0:05:57 - 0:06:04, SH rồi như vậy thì nó đã chuyển thành
+0:06:01 - 0:06:07, một cái ma trận hai chiều trong đó cái
+0:06:04 - 0:06:09, chiều thứ hai sẽ là có một cột và số
+0:06:07 - 0:06:12, dòng tương ứng là cái số mẫu dữ liệu của
+0:06:09 - 0:06:14, mình sẽ là 18 bây giờ mình sẽ fit dữ
+0:06:12 - 0:06:16, liệu vào ok như vậy sau khi chúng ta fit
+0:06:14 - 0:06:18, xong thì chúng ta đã có được cái mô hình
+0:06:16 - 0:06:22, và bây giờ thì chúng ta sẽ tiến hành
+0:06:18 - 0:06:27, Trực Quan Hóa cái mô hình này thì khi
+0:06:22 - 0:06:29, chúng ta fit xong á thì các cái tham số
+0:06:27 - 0:06:31, của cái mô hình của mình nó đã được lưu
+0:06:29 - 0:06:33, bên trong cái biến là biến r này Bây giờ
+0:06:31 - 0:06:35, chúng ta sẽ cùng quan sát xem cái r này
+0:06:33 - 0:06:39, các cái biến số của R nó sẽ có cái gì ha
+0:06:35 - 0:06:42, r chấm thì ở đây chúng ta sẽ có cái
+0:06:39 - 0:06:45, thông số đó là coefficient coefficient
+0:06:42 - 0:06:50, tức là cho cho chúng ta biết là cái hệ
+0:06:45 - 0:06:51, số của cái biến x này là bao nhiêu của
+0:06:50 - 0:06:55, các cái tham số đầu vào của mình là bao
+0:06:51 - 0:06:59, nhiêu thì chúng ta sẽ in ra ở đây như
+0:06:55 - 0:07:01, vậy hệ số của mình là - 5,7 ở đây thì
+0:06:59 - 0:07:04, chúng ta sẽ có một cái array một cái
+0:07:01 - 0:07:06, mãng là ở đây nó sẽ để một cách tổng
+0:07:04 - 0:07:09, quát là trong trường hợp X của mình á Nó
+0:07:06 - 0:07:11, có nhiều À nó có nhiều cột trong trường
+0:07:09 - 0:07:13, hợp này thì X của mình chỉ có duy nhất
+0:07:11 - 0:07:15, là một giá trị scaler nhưng mà một cách
+0:07:13 - 0:07:17, tổng quát thì X của mình Nó có thể là có
+0:07:15 - 0:07:21, nhiều cột như vậy thì ở đây nó sẽ để là
+0:07:17 - 0:07:23, một cái ma trận à x để một cái
+0:07:21 - 0:07:25, vector để sẽ một để một vectơ và trong
+0:07:23 - 0:07:29, cái vectơ này thì nó chỉ có duy nhất một
+0:07:25 - 0:07:31, phần tử nếu x của mình có hai cột ba cột
+0:07:29 - 0:07:33, ví Ví dụ như X có ba cột thì ở đây nó sẽ
+0:07:31 - 0:07:35, có ba à ba giá trị tương ứng cái hệ số
+0:07:33 - 0:07:38, của từng cột của mình
+0:07:35 - 0:07:43, rồi thì hệ số của cái x của mình nó
+0:07:38 - 0:07:44, chính là coefficient là bằng trừ 5,7 thì
+0:07:43 - 0:07:47, chúng ta đối chiếu với lại cái phương
+0:07:44 - 0:07:49, trình này chúng ta thấy con số -5,7 nó
+0:07:47 - 0:07:52, cũng khá là gần với lại cái con số là hệ
+0:07:49 - 0:07:54, số -6 của cái mô hình mà mình cần phải
+0:07:52 - 0:07:57, dự đoán ở đây rồi bây giờ chúng ta sẽ có
+0:07:54 - 0:08:01, thêm một cái thành phần nữa đó là thành
+0:07:57 - 0:08:04, phần bias thì mình sẽ xem trong m linear
+0:08:01 - 0:08:06, ration thì cái bias nó lưu ở đâu trong m
+0:08:04 - 0:08:09, linear Direction thì bias nó lưu ở trong
+0:08:06 - 0:08:09, cái biến là
+0:08:09 - 0:08:14, intercept đó thì ở đây là hệ số của mình
+0:08:13 - 0:08:17, là
+0:08:14 - 0:08:19, 6.9 chúng ta cũng thấy đó là nó cũng gần
+0:08:17 - 0:08:22, với lại cái con số là 10 sợ dĩ là cái
+0:08:19 - 0:08:26, con số 6.9 nó vẫn còn thấp hơn con số 10
+0:08:22 - 0:08:28, là vì cái hệ cái cái size số ở đây chúng
+0:08:26 - 0:08:31, ta đang cho khá là lớn nếu như chúng ta
+0:08:28 - 0:08:33, giảm cái size số này xuống thì à Cái
+0:08:31 - 0:08:35, bias của mình Nó có thể sẽ gần chính xác
+0:08:33 - 0:08:39, hơn Ví dụ mình cho ở đây là bằng
+0:08:35 - 0:08:42, 3 rồi thì chúng ta sẽ thấy là cái lệch
+0:08:39 - 0:08:46, cái sự lệch của nó nó ít hơn và mình sẽ
+0:08:42 - 0:08:49, ờ cho chạy lại cái mô hình
+0:08:46 - 0:08:50, này rồi hệ số của mình hồi nãy đang là -
+0:08:49 - 0:08:54, 5.7 đúng
+0:08:50 - 0:08:59, không Rồi thì ở đây là nó vẫn sắp Xỉ là
+0:08:54 - 0:09:00, -5 - 5.3 và intersect của mình thì nó là
+0:08:59 - 0:09:04, là
+0:09:00 - 0:09:07, 6 ở đây thì vẫn còn lớn ha Ví dụ như nếu
+0:09:04 - 0:09:07, chúng ta cho nó là 1
+0:09:13 - 0:09:18, đi nó thì nó tiến tới là 5.9 trừ 5.9 xắp
+0:09:17 - 0:09:22, xỉ
+0:09:18 - 0:09:26, 6 và bias của mình là nó tiến đến 9.6
+0:09:22 - 0:09:30, Tức là gần bằng 10 gần bằng 10 thì
+0:09:26 - 0:09:32, nguyên nhân khiến cho cái các cái hệ số
+0:09:30 - 0:09:34, của biến x và bos của mình nó bị lệch đó
+0:09:32 - 0:09:36, chính là do cái nhiễu này thì bây giờ
+0:09:34 - 0:09:38, chúng ta đang giả lập trong cái tình
+0:09:36 - 0:09:40, huống là dữ liệu của mình nó bị nhiễu
+0:09:38 - 0:09:42, dao động nhiều thì chúng ta cứ để là cái
+0:09:40 - 0:09:44, giá trị nhiễu này là một con số khá là
+0:09:42 - 0:09:46, lớn cái size Số của mình là lớn cho là
+0:09:44 - 0:09:49, để 5
+0:09:46 - 0:09:54, chấm rồi bây giờ mình sẽ cho chạy lại
+0:09:49 - 0:09:54, hàm fit và xem các cái hệ số
+0:09:54 - 0:09:59, này rồi thì bây giờ mình sẽ trực quan
+0:09:57 - 0:10:01, hóa mình sẽ tiến hành Trực Quan Hóa cái
+0:09:59 - 0:10:03, mô hình này của mình bằng cách đó là
+0:10:01 - 0:10:05, mình sẽ vẽ ra một cái đường thẳng đi
+0:10:03 - 0:10:08, xuyên qua các cái điểm này và cái công
+0:10:05 - 0:10:12, thức của mình thì vẫn là y = trừ à thta
+0:10:08 - 0:10:14, X Y sẽ là bằng cái hệ số nhân với x cộng
+0:10:12 - 0:10:18, cho
+0:10:14 - 0:10:18, bias rồi
+0:10:21 - 0:10:30, Ờ rồi thì ở đây chúng ta sẽ vẽ lên cái
+0:10:24 - 0:10:34, mô hình này bằng cách plt ch plot thì
+0:10:30 - 0:10:37, chúng ta sẽ lấy các cái điểm x và y dự
+0:10:34 - 0:10:39, đoán đúng không x và y dự đoán thì cái X
+0:10:37 - 0:10:41, đầu tiên cái điểm đầu tiên của mình nó
+0:10:39 - 0:10:44, sẽ bắt đầu tại ở vị trí này đi Ví dụ
+0:10:41 - 0:10:47, chúng ta cho là -1 à Xin lỗi vị trí 1 đi
+0:10:44 - 0:10:50, ha và cái điểm cuối ở bên đây mình sẽ
+0:10:47 - 0:10:56, cho đó là 9 đó thì ở đây chúng ta sẽ có
+0:10:50 - 0:10:58, hai điểm là 1 và 9 rồi tương ứng thì
+0:10:56 - 0:11:00, mình sẽ có là mình sẽ lấy cái công thức
+0:10:58 - 0:11:02, ở trên đây ha lấy công thức ở trên đây
+0:11:00 - 0:11:05, lưu ý là các cái hệ số này mình không có
+0:11:02 - 0:11:08, sử dụng cái mô hình gốc như vậy là anzan
+0:11:05 - 0:11:12, mà chúng ta sẽ phải thay cái con số 6
+0:11:08 - 0:11:16, này bằng cái con số này bằng con số này
+0:11:12 - 0:11:20, rồi -6 thay -6 là bằng cái hệ số của mô
+0:11:16 - 0:11:24, hình đã huấn luyện được và bias thì sẽ
+0:11:20 - 0:11:27, lấy con số này là r.
+0:11:24 - 0:11:29, intercept rồi tương tự như vậy chúng ta
+0:11:27 - 0:11:31, sẽ làm cho à
+0:11:29 - 0:11:32, X của mình trong trường hợp này là bằng
+0:11:31 - 0:11:36, 1 ha X là bằng
+0:11:32 - 0:11:39, 1 rồi cái giá trị Dự đoán tiếp
+0:11:36 - 0:11:42, theo thì chúng ta sẽ copy cái cái công
+0:11:39 - 0:11:44, thức ở đây và chúng ta thay cái giá trị
+0:11:42 - 0:11:47, của mình đúng không thay cái giá trị của
+0:11:44 - 0:11:49, mình là 9 Nè và cái giá trị Dự đoán bởi
+0:11:47 - 0:11:51, cái mô hình của mình 9 và thay bởi cái
+0:11:49 - 0:11:54, giá trị Dự đoán bởi mô hình của mình nó
+0:11:51 - 0:12:00, sẽ có công thức là rion ch coefficient 0
+0:11:54 - 0:12:03, nhân với 9 cộng cho r. intercept rồi
+0:12:00 - 0:12:07, Ok thì ở đây nó đang có một cái lỗi m
+0:12:03 - 0:12:07, plot CP has no attribute à
+0:12:08 - 0:12:12, plot rồi thì chúng ta thấy là cái mô
+0:12:11 - 0:12:15, hình của mình nó đi xuyên qua các cái
+0:12:12 - 0:12:18, điểm như vậy là sau khi huấn luyện xong
+0:12:15 - 0:12:20, thì cái mô hình của mình nó khá là khớp
+0:12:18 - 0:12:23, với các cái điểm mà đã được generate
+0:12:20 - 0:12:23, trước đó

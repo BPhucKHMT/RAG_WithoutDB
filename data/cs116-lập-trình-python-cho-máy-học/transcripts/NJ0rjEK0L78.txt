@@ -1,0 +1,269 @@
+0:00:01 - 0:00:04, và cuối cùng đó là một cái thuật Quán
+0:00:03 - 0:00:08, nằm trong cái nhóm
+0:00:04 - 0:00:11, Ờ gọi là phân cụng nhưng mà dựa trên yếu
+0:00:08 - 0:00:14, tố về mặt mậc độ ý tưởng của thuật toán
+0:00:11 - 0:00:16, này đó chính là chúng ta sẽ phân cụm dựa
+0:00:14 - 0:00:19, trên mậc độ và gom các cái dữ liệu gần
+0:00:16 - 0:00:20, nhau gom các cái dữ liệu gần nhau gần
+0:00:19 - 0:00:22, nhau thì cái khái niệm là thế nào gọi là
+0:00:20 - 0:00:24, dữ liệu gần nhau thì chúng ta sẽ định
+0:00:22 - 0:00:27, nghĩa đó là những điểm mà có khoảng cách
+0:00:24 - 0:00:30, nhỏ hơn một cái ngưỡng epsilon và gần
+0:00:27 - 0:00:32, nhau không là chưa đủ mà nó phải có cái
+0:00:30 - 0:00:34, sự phân bố dày đặt tức là các cái điểm
+0:00:32 - 0:00:36, này nó phải co cụm nó phải co cụm lại
+0:00:34 - 0:00:39, với nhau chứ còn nếu mà gần nhau Nhưng
+0:00:36 - 0:00:41, mà nó rời rạt và không đủ tạo thành một
+0:00:39 - 0:00:43, cái mực độ lớn thì lúc đó chúng ta cũng
+0:00:41 - 0:00:45, sẽ không tách ra thành một cụm như vậy
+0:00:43 - 0:00:47, thì cái yếu tố đầu tiên đó là phải gom
+0:00:45 - 0:00:49, các cái điểm gần nhau và yếu tố thứ hai
+0:00:47 - 0:00:51, đó là phải có mực độ cao mực độ cao này
+0:00:49 - 0:00:54, thì được định nghĩa bằng số điểm tối
+0:00:51 - 0:00:56, thiểu trong cụm nó phải là Min Point tức
+0:00:54 - 0:01:00, là chúng ta sẽ tách nó ra một cụm Nếu
+0:00:56 - 0:01:01, như à cái số điểm trong cái cụm đó nó nó
+0:01:00 - 0:01:04, phải lớn hơn một cái con số tối thiểu là
+0:01:01 - 0:01:07, minp ở đây và các điểm nằm trong cái cụm
+0:01:04 - 0:01:10, có mậc độ thấp thì được gán Nhãn là
+0:01:07 - 0:01:13, nhiều tức là những cái điểm cũng gần
+0:01:10 - 0:01:15, nhau đấy nhưng mà nó không đủ tạo ra cái
+0:01:13 - 0:01:17, số lượng nó không đủ tạo ra cái số lượng
+0:01:15 - 0:01:20, không tạo ra được một cái quần thể đủ
+0:01:17 - 0:01:23, nhiều thì nó sẽ được set vào loại đó là
+0:01:20 - 0:01:26, nhiễu hay còn gọi là là noise và dưới
+0:01:23 - 0:01:29, đây là một cái mô phỏng cho cái thuật
+0:01:26 - 0:01:32, toán DB scan với các cái cấu hình tham
+0:01:29 - 0:01:34, số eps và min Point khác nhau thì trong
+0:01:32 - 0:01:37, trường hợp này chúng ta thấy epsilon của
+0:01:34 - 0:01:40, mình là bằng bằng 1 còn bên đây thì
+0:01:37 - 0:01:43, epsilon nhỏ hơn đó là bằng 0.6 Tức là
+0:01:40 - 0:01:46, những cái điểm nào mà phải đủ gần thì nó
+0:01:43 - 0:01:48, mới được xem là có cái Liên hệ láng diền
+0:01:46 - 0:01:50, với nhau còn ở đây những cái điểm mà
+0:01:48 - 0:01:54, tương đối xa nó đã gom xem như là láng
+0:01:50 - 0:01:57, diền rồi và trong cái trường hợp bên
+0:01:54 - 0:01:59, trái thì tám điểm phải tối thiểu là tám
+0:01:57 - 0:02:01, điểm thì chúng ta mới gom lại thành một
+0:01:59 - 0:02:03, cái quần thể còn bên đây thì chỉ có sáu
+0:02:01 - 0:02:08, điểm thôi thì chúng ta thấy là rõ ràng
+0:02:03 - 0:02:10, với cái thuật quán bên tay phải thì nó
+0:02:08 - 0:02:14, đã tách ra thành rất nhiều những cái
+0:02:10 - 0:02:14, nhóm nhỏ ở đây sẽ là co
+0:02:14 - 0:02:22, cụm và rất
+0:02:18 - 0:02:22, nhiều cái nhóm
+0:02:23 - 0:02:28, nhỏ trong khi bên đây cái tiêu chí nó
+0:02:25 - 0:02:30, thoáng hơn nó thoáng hơn khoảng cách để
+0:02:28 - 0:02:33, mà được xét l xét là một khi hai cái
+0:02:30 - 0:02:36, điểm gần nhau là nó cũng lớn hơn số điểm
+0:02:33 - 0:02:38, Ờ tối thiểu của mình nó phải là tám điểm
+0:02:36 - 0:02:39, thì nó mới tách ra thành một cái cụn thì
+0:02:38 - 0:02:42, khi đó là chúng ta thấy n ở đây nó chỉ
+0:02:39 - 0:02:44, gom ra thành bốn cái cụm lớn như thế này
+0:02:42 - 0:02:46, thôi nó gom ra thành bốn cụm lớn còn các
+0:02:44 - 0:02:48, cái điểm màu đen như thế này nó sẽ gọi
+0:02:46 - 0:02:52, là out layer hay còn gọi là
+0:02:48 - 0:02:55, nhiễu còn bên phải thì chúng ta thấy nè
+0:02:52 - 0:02:57, Nó đã tách ra thành các cái cụm nhỏ rất
+0:02:55 - 0:02:59, nhiều những cái cụm nhỏ còn các cái điểm
+0:02:57 - 0:03:02, màu đen này thì cũng rất nhiều đó là các
+0:02:59 - 0:03:05, cái outl các cái điểm nhiễu đó thì cái
+0:03:02 - 0:03:07, việc chọn lựa các cái tham số epsilon và
+0:03:05 - 0:03:09, min Point này nó cũng ảnh hưởng đến cái
+0:03:07 - 0:03:12, kết quả của mình nhưng nhìn chung đó là
+0:03:09 - 0:03:16, chúng ta thấy những điểm nào mà gần nhau
+0:03:12 - 0:03:18, thì nó sẽ tách ra thành một cái cụm và
+0:03:16 - 0:03:20, nó sẽ khắc phục được những cái điểm yếu
+0:03:18 - 0:03:24, của thuật toán
+0:03:20 - 0:03:26, kin như vậy thì cái ưu điểm của cái
+0:03:24 - 0:03:28, thuật toán này đó là chúng ta không cần
+0:03:26 - 0:03:29, phải biết trước cái số cụn Nếu như trong
+0:03:28 - 0:03:31, camin chúng ta phải biết trước cái số
+0:03:29 - 0:03:34, cụng là k còn ở đây chúng ta thấy Thục
+0:03:31 - 0:03:37, toán của mình nó sẽ cứ chạy chạy chạy
+0:03:34 - 0:03:39, cho đến khi nào mà nó gom được đủ tận nó
+0:03:37 - 0:03:44, sẽ tách ra nó chạy trên một cái điểm
+0:03:39 - 0:03:45, khác rồi lại tiếp tục Loan đó rồi các
+0:03:44 - 0:03:47, cái điểm ở khu vực này chính là các cái
+0:03:45 - 0:03:50, điểm
+0:03:47 - 0:03:53, nhiễu vì nó chưa đạt đủ được cái số
+0:03:50 - 0:03:55, lượng Min Point là 4 điểm đ không số Min
+0:03:53 - 0:04:00, Point nó chưa đạt đủ là số điểm là 4 nên
+0:03:55 - 0:04:00, nó sẽ được tính là noise là nhiễu
+0:04:02 - 0:04:06, thì rõ ràng là với những cái dữ liệu mà
+0:04:04 - 0:04:09, không có dạng tính chất hình
+0:04:06 - 0:04:12, cầu những cái cụm mà không có dạng tính
+0:04:09 - 0:04:13, chất như hình cầu phân bố giống như hình
+0:04:12 - 0:04:18, cầu như thế
+0:04:13 - 0:04:21, này đó thì rõ ràng là DB scan DB scan
+0:04:18 - 0:04:23, thực hiện rất là tốt và camin thì lúc
+0:04:21 - 0:04:27, này nó lại thực hiện không tốt
+0:04:23 - 0:04:29, bằng rồi và thuộc toán này thì nó còn có
+0:04:27 - 0:04:30, một cái ưu điiểm nữa đó là hiệu quả với
+0:04:29 - 0:04:32, những những cái điểm mà có mực độ cao
+0:04:30 - 0:04:35, nha Tức là những cái điểm mà có cái sự
+0:04:32 - 0:04:37, đen xen nè số lượng điểm tập trung khá
+0:04:35 - 0:04:39, là dày đặt nè Ví dụ như khu vực này là
+0:04:37 - 0:04:43, dày đặt khu vực này là vậy đ thì nó là
+0:04:39 - 0:04:45, mậc độ cao thì nó sẽ rất là hiệu quả và
+0:04:43 - 0:04:47, thực tế nào cũng vậy nó cũng sẽ có những
+0:04:45 - 0:04:50, cái điểm Hiếu thì khuyết điểm của DB
+0:04:47 - 0:04:52, scan chính là nó không hiệu quả với
+0:04:50 - 0:04:54, những cái dữ liệu có cái mậc độ biến
+0:04:52 - 0:04:57, động thì ở đây chúng ta sẽ có một cái
+0:04:54 - 0:05:00, hình ảnh minh họa cho cái việc đó là thế
+0:04:57 - 0:05:02, nào gọi là một cái
+0:05:00 - 0:05:04, dữ liệu mà có cái mậc độ biến động Ví dụ
+0:05:02 - 0:05:07, như chúng ta thấy những điểm mà nằm
+0:05:04 - 0:05:09, trong khu vực này đúng không thì đây là
+0:05:07 - 0:05:13, những điểm mà co cụng lại các cái điểm
+0:05:09 - 0:05:18, của mình có cái khoảng cách rất là là
+0:05:13 - 0:05:18, nhỏ thì đây là các cái
+0:05:19 - 0:05:26, điểm khoảng cách rất là nhỏ Tức là rất
+0:05:22 - 0:05:26, gần nhau
+0:05:29 - 0:05:33, còn các cái điểm ở nằm trong cái khu vực
+0:05:31 - 0:05:37, này Chúng ta thấy cái khoảng cách giữa
+0:05:33 - 0:05:37, các cái điểm của mình nó thưa
+0:05:45 - 0:05:49, hơn rồi và những điểm mà nằm trong cái
+0:05:47 - 0:05:51, khu vực này Chúng ta thấy cái khoảng
+0:05:49 - 0:05:54, cách còn lớn hơn nữa nếu so với lại cái
+0:05:51 - 0:05:56, vòng tròn màu đỏ ở đây chúng ta thấy là
+0:05:54 - 0:06:00, trong cái bán kính của cái epsilon này
+0:05:56 - 0:06:01, ha cái bán kính epsilon này
+0:06:00 - 0:06:03, thì chúng ta thấy là không có điểm nào
+0:06:01 - 0:06:05, nằm trong cái bán kính epsilon này thì
+0:06:03 - 0:06:07, đây là một cái minh họa cho cái loại dữ
+0:06:05 - 0:06:10, liệu mà có mậc độ nó biến động nó không
+0:06:07 - 0:06:13, đồng đều khu vực này là những điểm rất
+0:06:10 - 0:06:15, là dày những điểm mà rất là gần xát nhau
+0:06:13 - 0:06:18, khu vực này thì thưa hơn và khu vực này
+0:06:15 - 0:06:20, thì là rất thưa khu vực này thì nó rất
+0:06:18 - 0:06:25, thưa đó thì đây chính là cái sự biến
+0:06:20 - 0:06:29, động của mậc độ dữ liệu và Sở dĩ Tại sao
+0:06:25 - 0:06:30, thuật toán DB scan nó không có làm tốt
+0:06:29 - 0:06:33, trên những cái dữ liệu mà có mực độ nó
+0:06:30 - 0:06:36, biến động là vì các cái tham số epsilon
+0:06:33 - 0:06:38, và minp của mình epsilon đó là những con
+0:06:36 - 0:06:43, số cố
+0:06:38 - 0:06:45, định và vì nó cố định nên khi cái mậc độ
+0:06:43 - 0:06:47, của mình nó có sự biến
+0:06:45 - 0:06:49, động mậc độ của mình nó có biến động thì
+0:06:47 - 0:06:51, cái giá trị epsilon này nó sẽ không có
+0:06:49 - 0:06:55, cập nhật được do đó nếu như chúng ta có
+0:06:51 - 0:06:56, thể chọn lựa được ờ chúng ta có thể thay
+0:06:55 - 0:07:00, đổi được cái thuật toán này thì chúng ta
+0:06:56 - 0:07:01, sẽ tìm cách cập nhật các cái epsilon này
+0:07:00 - 0:07:05, chúng ta sẽ cập nhật các epsilon này có
+0:07:01 - 0:07:06, thể là gia giảm hoặc là nó sẽ thay đổi
+0:07:05 - 0:07:08, một cách linh động Tùy theo cái bước
+0:07:06 - 0:07:11, chạy của cái thực toán của mình tương tự
+0:07:08 - 0:07:13, như vậy cho cái Min Point Nếu như các
+0:07:11 - 0:07:16, cái tham số này nó có cái tính gọi là
+0:07:13 - 0:07:18, adap thích ứng với cái dữ liệu thì khi
+0:07:16 - 0:07:23, đó Cái thuật toán của mình nó sẽ chạy
+0:07:18 - 0:07:26, tốt hơn thì đó là cái điểm yếu cuối cùng
+0:07:23 - 0:07:28, của thật toán DB scan và sau đây thì
+0:07:26 - 0:07:30, chúng ta sẽ cùng so sánh một số cái tình
+0:07:28 - 0:07:32, huống khi chúng ta thực hiện trên các
+0:07:30 - 0:07:35, cái to example Tức là những cái dữ liệu
+0:07:32 - 0:07:38, mẫu mà mang tính chất gọi là thí nghiệm
+0:07:35 - 0:07:41, thì chúng ta xem coi cái hiệu quả của
+0:07:38 - 0:07:43, thuật toán DB scan và thuật toán camin
+0:07:41 - 0:07:46, nh là như thế nào thì như đã đề cập
+0:07:43 - 0:07:48, camin nó phù hợp với những cái dữ liệu
+0:07:46 - 0:07:51, mà phân bố dạng hình cầu do đó đối với
+0:07:48 - 0:07:53, những cái dữ liệu mà có phân bố lạ để
+0:07:51 - 0:07:56, không Ví dụ như đây là hai cái vòng tròn
+0:07:53 - 0:07:58, lòng nhau nè Không phải là dạng hình cầu
+0:07:56 - 0:08:01, dạng hình cầu là sao dạng hình cầu là nó
+0:07:58 - 0:08:02, phải co cục ch nó tỏa đều ra còn ở đây
+0:08:01 - 0:08:05, chúng ta thấy là nó sẽ có một cái khoảng
+0:08:02 - 0:08:07, hở nó không có tỏa đều ra ở khu vực này
+0:08:05 - 0:08:09, nó cũng có một cái khoảng hở nó không
+0:08:07 - 0:08:12, tỏa đều ra nó bị ngắc
+0:08:09 - 0:08:14, quản thì nó sẽ không phải là dạng hình
+0:08:12 - 0:08:15, cầu một số bạn sẽ nghĩ rằng là à hình
+0:08:14 - 0:08:17, cầu có nghĩa là nó phải đi theo dạng
+0:08:15 - 0:08:19, hình trầu phải không thì không nhất
+0:08:17 - 0:08:21, thiết Ừ nó phải là tỏa đều ra nó phải
+0:08:19 - 0:08:23, tỏa đều ra ở đây nó đang có những khoản
+0:08:21 - 0:08:25, không như thế này sẽ khiến cho cái mô
+0:08:23 - 0:08:27, hình của mình đó thực hiện không tốt
+0:08:25 - 0:08:29, trên thuộc tán camin trong khi đó đối
+0:08:27 - 0:08:31, với thộc tán DB scan thì chúng ta thấy
+0:08:29 - 0:08:34, là nó đã tách ra hai cái điểm hai cái
+0:08:31 - 0:08:36, đường nằm trong và nằm ngoài hình tròn
+0:08:34 - 0:08:38, hình vòng tròn nằm bên trong và vòng
+0:08:36 - 0:08:42, tròn nằm bên ngoài rất là tốt rồi tương
+0:08:38 - 0:08:45, tự như vậy hai cái đường ờ hai cái nửa
+0:08:42 - 0:08:48, đường tròn gọi là lồng với nhau đúng
+0:08:45 - 0:08:50, không Thì ở đây là một cụm đối với camin
+0:08:48 - 0:08:52, thì nó sẽ ra xem đây là một cụm và cái
+0:08:50 - 0:08:55, tâm cụm của mình chắc là cái điểm nằm ở
+0:08:52 - 0:08:57, đây còn ở đây là một cụm và cái tâm cụm
+0:08:55 - 0:08:59, thì nó nằm ở đây rõ ràng là cái tâm cụm
+0:08:57 - 0:09:02, của mình nó không nằm trong cái mậc độ
+0:08:59 - 0:09:05, điện điểm dày đạt của mình nên nó sẽ cập
+0:09:02 - 0:09:07, nhật sai nó sẽ cập nhật không có hiệu
+0:09:05 - 0:09:10, quả còn đối với TB scan nó không có cập
+0:09:07 - 0:09:13, nhật dựa trên tâm cộng mà nó dựa trên
+0:09:10 - 0:09:15, cái sự Loan tả lan tỏa ban đầu nó sẽ
+0:09:13 - 0:09:18, khởi tạo tại đây Sau đó nó sẽ lan dần
+0:09:15 - 0:09:21, lan dần lan dần cho đến đây và tại vị
+0:09:18 - 0:09:23, trí này thì cái khoảng cách giữa đây từ
+0:09:21 - 0:09:27, cái điểm màu cam cho đến điểm màu xanh
+0:09:23 - 0:09:30, nó quá xa nó vượt quá Cái Min Point s nó
+0:09:27 - 0:09:32, vượt quá cái ngưỡng epsilon
+0:09:30 - 0:09:36, đó thì dẫn đến là nó sẽ không nhảy qua
+0:09:32 - 0:09:39, được cái vùng bên đây thì khi chúng ta
+0:09:36 - 0:09:41, chọn cái epsilon đủ tốt đủ nhỏ thì nó sẽ
+0:09:39 - 0:09:44, giúp cho chúng ta tách hai cái hai cái
+0:09:41 - 0:09:46, cụm này ra và đối với hai đối với cái
+0:09:44 - 0:09:49, mẫu dữ liệu bên đây thì chúng ta thấy là
+0:09:46 - 0:09:51, DB scan nó cũng đã gom đã gom đống thì
+0:09:49 - 0:09:53, trong trường hợp này những cái điểm này
+0:09:51 - 0:09:55, á nếu như cái Min Point của mình mà đủ
+0:09:53 - 0:09:58, lớn thì nó có thể xem đây là các cái
+0:09:55 - 0:10:01, điểm nhiễu luôn đây sẽ là các cái điểm
+0:09:58 - 0:10:01, nhiễu
+0:10:01 - 0:10:06, nếu như chúng ta chọn các cái Min Point
+0:10:03 - 0:10:09, à đủ lớn rồi Đây là cái tình huống mà ba
+0:10:06 - 0:10:12, cụm rất là rời rạc thì rõ ràng là DB
+0:10:09 - 0:10:15, scan và camin nó đều thực hiện tốt nhưng
+0:10:12 - 0:10:17, mà chúng ta vẫn phải lưu ý là camin mà
+0:10:15 - 0:10:20, có thể tách cái này ra làm ba cng được á
+0:10:17 - 0:10:23, là do ban ban đầu cái điểm khởi tạo của
+0:10:20 - 0:10:25, mình nó rãi ra là năm ở ba cái vị trí
+0:10:23 - 0:10:27, khác nhau chứ còn nếu ban đầu mà khởi
+0:10:25 - 0:10:29, tạo các cái điểm tâm cụng của mình như
+0:10:27 - 0:10:32, thế này thì có khi là những cái điểm bên
+0:10:29 - 0:10:36, đây nó sẽ gom với lại cái điểm màu xanh
+0:10:32 - 0:10:38, lá chứ nó không có không có tách ra làm
+0:10:36 - 0:10:41, ba cụm riêng biệt như thế này đâ thì
+0:10:38 - 0:10:43, camin ở đây là có cái cách để đạt được
+0:10:41 - 0:10:46, cái kết quả này thì chắc là nó đã may
+0:10:43 - 0:10:49, mắn tách ra được các cái Ran điểm random
+0:10:46 - 0:10:52, nằm ở ba cái cụm riêng biệt rồi còn
+0:10:49 - 0:10:55, thuật toán DB scan thì nó không quan tâm
+0:10:52 - 0:10:58, nó sẽ chạy Loan trên từng cụm trước nó
+0:10:55 - 0:11:00, sẽ chạy hết cái cụm ở đây xong rồi nó
+0:10:58 - 0:11:01, tách ra nó lại Tiếp tục chạy hết những
+0:11:00 - 0:11:03, cái điểm bên đây Xong rồi chạy hết những
+0:11:01 - 0:11:06, điểm bên đây nó không có phụ thuộc vào
+0:11:03 - 0:11:10, cái khởi tạo đó Ờ cái tẩm cộn giống như
+0:11:06 - 0:11:12, là camin và cái ví dụ Cuối cùng thì rõ
+0:11:10 - 0:11:14, ràng chúng ta thấy cái DB scan nó sẽ cho
+0:11:12 - 0:11:17, cái kết quả nó phù hợp hơn Tại vì các
+0:11:14 - 0:11:20, cái điểm ở đây nó co cụm dày đặt như vậy
+0:11:17 - 0:11:24, thì nó xứng đáng là tạo ra một cụm thôi
+0:11:20 - 0:11:26, còn vì camin nó đã cố định cái số k là
+0:11:24 - 0:11:30, k+ rồi nên nó buộc nó phải tách cái hình
+0:11:26 - 0:11:31, vuông này ra làm ba phần mặc vu về mặt
+0:11:30 - 0:11:34, hình thức thì chúng ta thấy là cái này
+0:11:31 - 0:11:36, nó xứng đáng là để chung trong một cận
+0:11:34 - 0:11:40, thì trên đây đó là các cái thuật toán
+0:11:36 - 0:11:43, gong cụm kinh điển nổi tiếng nhất đó là
+0:11:40 - 0:11:46, camin và DB scan còn các thộc toán còn
+0:11:43 - 0:11:48, lại thì nó sẽ nằm trong cái phạm vi tìm
+0:11:46 - 0:11:51, hiểu hoặc là sử dụng nó như là một cái
+0:11:48 - 0:11:51, công cụ

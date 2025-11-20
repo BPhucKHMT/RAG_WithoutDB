@@ -1,0 +1,328 @@
+0:00:00 - 0:00:04, bây giờ chúng ta sẽ tiến hành Trend
+0:00:02 - 0:00:08, chúng ta sẽ truyền vào hai tham số đó là
+0:00:04 - 0:00:11, x Trend và e Trend Tuy nhiên y train nó
+0:00:08 - 0:00:11, phải ở dạng là One
+0:00:11 - 0:00:16, h rồi thì cái việc train này đâu đó nó
+0:00:14 - 0:00:20, có thể tốn Ồ ở đây chúng ta quên mất một
+0:00:16 - 0:00:24, cái việc đó là sau này để mà có
+0:00:20 - 0:00:28, thể vẽ được cái hàm loss vẽ được cái giá
+0:00:24 - 0:00:30, trị loss theo cái số chúng ta sẽ phải
+0:00:28 - 0:00:33, gán vào một cái biến là
+0:00:30 - 0:00:36, history rồi sau đó thì ở đây chúng ta
+0:00:33 - 0:00:38, mới có thể thực hiện được cái việc trực
+0:00:36 - 0:00:38, quang hóa
+0:00:41 - 0:00:48, này rồi để trực quang hóa cho cái mô
+0:00:44 - 0:00:50, hình thì chúng ta sẽ phải lấy ra các cái
+0:00:48 - 0:00:54, filter đó thì ở đây chúng ta sẽ lấy ra
+0:00:50 - 0:00:56, filter ở cái nốp đầu tiên đó chính là
+0:00:54 - 0:00:59, CNN
+0:00:56 - 0:01:02, getway getway ở đây chúng ta sẽ để cái
+0:00:59 - 0:01:04, layer số 1 tại vì layer số 0 chính là
+0:01:02 - 0:01:06, cái input rồi layer số 1 chính là cái
+0:01:04 - 0:01:06, phép
+0:01:07 - 0:01:11, contion rồi chúng ta sẽ cùng quan
+0:01:11 - 0:01:16, sát nhưng mà đương nhiên là phải chờ cái
+0:01:13 - 0:01:17, mô hình này nó huấn luyện xong thì chúng
+0:01:16 - 0:01:20, ta mới có thể thấy được cái hàm loss này
+0:01:17 - 0:01:22, nó chạy như thế nào ở đây thì chúng ta
+0:01:20 - 0:01:26, quan sát thấy là cái loss của mình nó đã
+0:01:22 - 0:01:30, giảm từ 0.18 trong cái ipop đầu tiên
+0:01:26 - 0:01:34, giảm xuống còn 0.13 giảm xuống còn 0.10
+0:01:30 - 0:01:35, và đến cái hip thứ 25 26 thì giảm xuống
+0:01:34 - 0:01:40, còn
+0:01:35 - 0:01:41, 0.01 và hy vọng rằng là đến cái số 30
+0:01:40 - 0:01:45, thì cái loss của mình nó đã giảm xuống
+0:01:41 - 0:01:50, còn 0.007 và accuracy cho cái tập dữ
+0:01:45 - 0:01:53, liệu Trend nó đã lên đến 98 99.85
+0:01:50 - 0:01:55, ph rồi và chúng ta quan sát thấy cái
+0:01:53 - 0:01:59, loss giảm rất là tốt chúng ta quan sát
+0:01:55 - 0:02:01, cái tr l này giảm rất là tốt rồi bây giờ
+0:01:59 - 0:02:04, chúng ta sẽ xem xem cái Mai trận w này
+0:02:01 - 0:02:08, có cái giá trị là bao nhiêu thì ở đây
+0:02:04 - 0:02:09, chúng ta sẽ thấy là cái w này nó sẽ là
+0:02:08 - 0:02:12, một cái
+0:02:09 - 0:02:15, array Nó là một cái list bao gồm hai
+0:02:12 - 0:02:18, phần tử Thì cái phần tử đầu tiên chính
+0:02:15 - 0:02:21, là cái số trọng số cái số filter của cái
+0:02:18 - 0:02:23, phép biến độ comon đầu tiên và cái thành
+0:02:21 - 0:02:25, phần thứ hai đó chính là cái b Tại vì
+0:02:23 - 0:02:30, chúng ta có sử dụng
+0:02:25 - 0:02:32, bas w0 chỉn lại cái trọng số của mình đó
+0:02:30 - 0:02:34, rồi Để xem coi cái trọng số này có kích
+0:02:32 - 0:02:37, thước bao
+0:02:34 - 0:02:40, nhiêu thì chúng ta là chấm set thì trong
+0:02:37 - 0:02:43, đó 3 316 thì 33 chính là cái kích thước
+0:02:40 - 0:02:46, của cái canel và 1 chính là cái input
+0:02:43 - 0:02:49, dimension của input của đầu vào của mình
+0:02:46 - 0:02:53, nó chỉ có một Channel thôi nó sẽ là 1 và
+0:02:49 - 0:02:55, output của mình sẽ là 6 sáu cái
+0:02:53 - 0:02:58, filter như vậy thì để trực quan chúng ta
+0:02:55 - 0:03:02, sẽ có số filter là 6 rồi chúng ta sẽ
+0:02:58 - 0:03:07, duyệt qua y từ 0 cho đến 5 để truyền vô
+0:03:02 - 0:03:10, đây rồi Đây là w0 nè w0 chs chính là
+0:03:07 - 0:03:12, 3316 thì chúng ta sẽ lấy cái chỉ số y
+0:03:10 - 0:03:14, chạy ở đây trước rồi sau đó lấy chỉ số J
+0:03:12 - 0:03:17, chạy ở đây thì ở đây một cách tổng quát
+0:03:14 - 0:03:20, trong cái lớp conversion số 2 thì cái số
+0:03:17 - 0:03:23, 1 này nó sẽ K nó chuyển thành là số 16
+0:03:20 - 0:03:25, do đó thì ở đây chúng ta sẽ để là y là
+0:03:23 - 0:03:27, chạy cho một cái rank rank này thì ở đây
+0:03:25 - 0:03:31, là chúng để ta để là 1 Nhưng mà sắp tới
+0:03:27 - 0:03:31, có thể để là 16 rồi
+0:03:32 - 0:03:38, đây chính là sáu cái filter ở cái lớp
+0:03:35 - 0:03:39, đầu tiên thì chúng ta có thể hiểu à Cái
+0:03:38 - 0:03:42, ý nghĩa của cái filter này đó chính là
+0:03:39 - 0:03:44, chúng ta lấy cái sai số cái sự chênh
+0:03:42 - 0:03:48, lệch của cái vùng phía bên phải phía
+0:03:44 - 0:03:52, dưới so với lại cái vùng ở phía trái bên
+0:03:48 - 0:03:54, trên ý nghĩa của filter này đó là lấy
+0:03:52 - 0:03:56, cái sự chên lệch giữa cái hàng ở giữa so
+0:03:54 - 0:03:58, với lại hai cái hàng ở phía trên và phía
+0:03:56 - 0:04:01, dưới thì mỗi một cái filter này nó sẽ
+0:03:58 - 0:04:06, thể hiện một cái đặc trưng vào đó rồi
+0:04:01 - 0:04:08, Tiếp theo là chúng ta sẽ tiến hành à Thử
+0:04:06 - 0:04:09, nghiện với một số cái biến thể khác nhau
+0:04:08 - 0:04:11, Nhưng mà trước khi qua thử nghiệm một số
+0:04:09 - 0:04:14, biến thể khác nhau thì chúng ta sẽ thử
+0:04:11 - 0:04:18, cái hàm predict ha cái hàm predit thì
+0:04:14 - 0:04:18, cln ch
+0:04:18 - 0:04:24, predict rồi thì chúng ta sẽ truyền vào
+0:04:20 - 0:04:25, cái x State và mẫu dữ liệu thứ ví dụ như
+0:04:24 - 0:04:28, là mẫu dữ liệu
+0:04:25 - 0:04:31, thứ
+0:04:28 - 0:04:31, 300 rồi
+0:04:34 - 0:04:40, Ok ở đây thì hàm predict chúng ta sẽ xem
+0:04:37 - 0:04:40, lại cái hàm redit của
+0:04:40 - 0:04:48, mình truyền vào ex s.m. Ok Bây giờ chúng
+0:04:45 - 0:04:52, ta sẽ xem tiếp cái
+0:04:48 - 0:04:59, x x của mình đã được load rồi
+0:04:52 - 0:04:59, và đã được chỗ Hóa rồi đúng không Rồi
+0:05:04 - 0:05:10, Ok Bây giờ chúng ta sẽ thử truyền và như
+0:05:08 - 0:05:13, thế
+0:05:10 - 0:05:15, này rồi chúng ta sẽ xem cái exage của
+0:05:13 - 0:05:15, mình
+0:05:17 - 0:05:28, Thôi rồi à ex của mình nó là cái mãng
+0:05:24 - 0:05:31, kích thước là 28 x 28 do đó thì chúng ta
+0:05:28 - 0:05:33, phải reset chúng ta phải reset nó về cái
+0:05:31 - 0:05:33, dạng là
+0:05:34 - 0:05:42, 28 28 nhân với 1 Rồi sau đó chúng ta mới
+0:05:39 - 0:05:46, đưa vào để cho cái m hình của mình có
+0:05:42 - 0:05:48, thể predict được CNN ch
+0:05:46 - 0:05:50, predict
+0:05:48 - 0:05:53, rồi
+0:05:50 - 0:05:53, ồ cũng chưa được
+0:05:54 - 0:06:03, n rồi à ở đây cái số này sẽ phải phải để
+0:06:00 - 0:06:06, lên trước đúng không cái cái cái này nó
+0:06:03 - 0:06:06, sẽ phải để lên trước vậy là
+0:06:08 - 0:06:17, 1,28 ok được rồi tức là nó sẽ phải để
+0:06:12 - 0:06:21, cái chỉ số của cái Ờ thứ tự
+0:06:17 - 0:06:24, ờ lên trước nó hơi ngược nó hơi ngược
+0:06:21 - 0:06:27, rồi bây giờ chúng ta sẽ thử xem cái nhãn
+0:06:24 - 0:06:29, này nó sẽ ra cái giá trị là bao nhiêu Ừ
+0:06:27 - 0:06:31, tại vì ở đây nó chỉ trả ra một cái vectơ
+0:06:29 - 0:06:32, One h chúng ta sẽ phải có thêm một cái
+0:06:31 - 0:06:39, hàm nữa đó là
+0:06:32 - 0:06:39, argument max là NP ch argument
+0:06:42 - 0:06:51, Max rồi nó sẽ là 4 Và bây giờ chúng ta
+0:06:46 - 0:06:55, sẽ xem coi cái mẫu thứ 300 này x y test
+0:06:51 - 0:06:56, của mình Thứ 300 nó là bằng bao nhiêu nó
+0:06:55 - 0:06:59, là
+0:06:56 - 0:07:01, 4 rồi bây giờ chúng ta sẽ thử những cái
+0:06:59 - 0:07:05, mẫ khác ha chúng ta sẽ thử những cái mẫu
+0:07:01 - 0:07:05, khác ở đây chúng ta sẽ để là
+0:07:13 - 0:07:20, predict nhả dự đoán là
+0:07:21 - 0:07:27, Red rồi còn ở đây sẽ là
+0:07:24 - 0:07:27, nhãn thực
+0:07:27 - 0:07:33, tế và ở đây cái chỉ số này chúng ta sẽ
+0:07:31 - 0:07:35, tham số hóa nó là
+0:07:33 - 0:07:39, idx là
+0:07:35 - 0:07:41, bằng 100 ví dụ vậy và chúng ta sẽ để đây
+0:07:39 - 0:07:41, là
+0:07:43 - 0:07:49, idx rồi đó thì đại đa số chúng ta thấy
+0:07:47 - 0:07:52, là cái độ chính xác rất là cao Chúng ta
+0:07:49 - 0:07:55, thử rất nhiều những cái nhãn khác nhau
+0:07:52 - 0:07:59, ha đó thì nó đều ra là dữ đoán và thực
+0:07:55 - 0:08:01, tế khóc với nhau bây giờ trong cái mạng
+0:07:59 - 0:08:04, x thì chúng ta thấy nó có rất nhiều
+0:08:01 - 0:08:06, những cái module khác nhau và tại thời
+0:08:04 - 0:08:08, điểm hiện tại thì chúng ta sẽ chưa hiểu
+0:08:06 - 0:08:10, rõ cái vai trò của từng module này do đó
+0:08:08 - 0:08:13, thì chúng ta sẽ làm một cái thí nghiệm
+0:08:10 - 0:08:16, nó gọi là application study với các cái
+0:08:13 - 0:08:19, biến thể khác nhau bằng cách đó là chúng
+0:08:16 - 0:08:22, ta sẽ lần lượt thay đổi một số cái cấu
+0:08:19 - 0:08:24, hình của cái cái chương trình của mình
+0:08:22 - 0:08:27, Chúng ta sẽ thay đổi một số cái cấu
+0:08:24 - 0:08:29, hình thì cái phiên bản Cái biến thể đầu
+0:08:27 - 0:08:33, tiên đó là chúng ta sẽ
+0:08:29 - 0:08:36, bỏ đi cái thay cái hàm xmo bằng ru chúng
+0:08:33 - 0:08:38, ta sẽ thay cái xmo bằng ru như vậy thì
+0:08:36 - 0:08:41, chúng ta sẽ copy cái code ở đây đem
+0:08:38 - 0:08:41, xuống
+0:08:43 - 0:08:50, rồi chúng ta sẽ đem cái lên cái hàm này
+0:08:47 - 0:08:51, thay cái sigmo bằng ru Ok như vậy thì
+0:08:50 - 0:08:54, bản chất là
+0:08:51 - 0:08:56, ờ cái biến thể này chúng ta không cần
+0:08:54 - 0:08:58, phải cài đặt lại biến thể này chúng ta
+0:08:56 - 0:09:01, không cần phải cài đặt lại mà chúng ta
+0:08:58 - 0:09:03, chỉ sửa cái cái tham số của mình thôi
+0:09:01 - 0:09:07, chúng ta chỉ sửa cái tham số khi
+0:09:03 - 0:09:07, Ờ Gọi cái hàm Build
+0:09:08 - 0:09:15, thôi rồi Và đây là
+0:09:11 - 0:09:20, value đây là rue rồi sau đó thì chúng ta
+0:09:15 - 0:09:21, sẽ tiến hành là CNN ch Trend và
+0:09:20 - 0:09:27, x
+0:09:21 - 0:09:31, Trend rồi y tr Oh và lưu ý ở đây chúng
+0:09:27 - 0:09:35, ta sẽ để cái history là history số
+0:09:31 - 0:09:37, 2 rồi bây giờ chúng ta sẽ tiến hành
+0:09:35 - 0:09:40, Build cái này
+0:09:37 - 0:09:44, ha và tranh thủ trong thời gian chờ đợi
+0:09:40 - 0:09:46, thì chúng ta sẽ thử ờ viết code trước
+0:09:44 - 0:09:46, cho Cái
+0:09:47 - 0:09:54, phần vẽ cái giá trị loss chúng ta sẽ
+0:09:51 - 0:10:00, thêm một cái đường nữa đó là history số
+0:09:54 - 0:10:02, 2 rồi và ở đây sẽ là train loss
+0:10:00 - 0:10:07, V1
+0:10:02 - 0:10:10, À đây sẽ là train lot V2 trong đó V2 đó
+0:10:07 - 0:10:10, là dùng
+0:10:11 - 0:10:19, value dùng pru rồi tương tự như vậy Bây
+0:10:16 - 0:10:24, giờ chúng ta sẽ chờ đợi chúng ta sẽ
+0:10:19 - 0:10:28, ờ viết trước cái code cho các cái biến
+0:10:24 - 0:10:29, thể tiếp theo biến thể về bỏ hết các cái
+0:10:28 - 0:10:32, lớp ping
+0:10:29 - 0:10:33, thì chúng ta làm cũng rất là nhanh full
+0:10:32 - 0:10:37, link đúng không thì chúng ta sẽ bỏ nè
+0:10:33 - 0:10:38, Xóa đi Xóa đi và lưu ý đó là phải để gối
+0:10:37 - 0:10:42, đầu các
+0:10:38 - 0:10:45, cái các cái miếng Ví dụ như ở đây C1 thì
+0:10:42 - 0:10:47, sẽ được truyền trực tiếp sang đây rồi C3
+0:10:45 - 0:10:49, thì sẽ truyền trực tiếp sang đây như vậy
+0:10:47 - 0:10:53, là chúng ta đã xong cái biến thể số 3
+0:10:49 - 0:10:59, chúng ta sẽ để là C V3 rồi bây giờ chúng
+0:10:53 - 0:11:03, ta sẽ cài cho cái biế thể cuối cùng
+0:10:59 - 0:11:05, Ok ở đây khi bỏ cái ru thì chúng ta thấy
+0:11:03 - 0:11:09, là nó đã chạy Xong rồi ha Nó đã chạy
+0:11:05 - 0:11:12, Xong và chúng ta sẽ quan sát thử
+0:11:09 - 0:11:17, ờ Ok chúng ta sẽ
+0:11:12 - 0:11:21, vẽ thì nhìn vào cái sơ đồ này à Ok ở đây
+0:11:17 - 0:11:23, chúng ta sẽ phải gom nó lại gom hai cái
+0:11:21 - 0:11:28, Legion này
+0:11:23 - 0:11:28, lại rồi Gem lại
+0:11:29 - 0:11:37, rồi chúng ta sẽ thấy là cái
+0:11:32 - 0:11:40, ru Phi mản số 2 nó giảm rất là nhanh
+0:11:37 - 0:11:42, đúng không nó giảm rất là nhanh nó nằm
+0:11:40 - 0:11:46, bên dưới cái đường màu xanh thì điều đó
+0:11:42 - 0:11:50, có nghĩa là gì điều đó Đó là ví dụ Tại
+0:11:46 - 0:11:53, cái ipox số 5 thì cái phương pháp V2 tức
+0:11:50 - 0:11:55, là khi sử dụng Ru nó cho cái l thấp hơn
+0:11:53 - 0:11:58, so với cái phiên bản số 1 Tức là dùng
+0:11:55 - 0:12:01, xmo Tức là nó đã giúp cho mình hồi tụ
+0:11:58 - 0:12:03, nhanh hơn nhưng mà đương nhiên khi mà
+0:12:01 - 0:12:05, cái số ort càng lớn thì cả hai thằng nó
+0:12:03 - 0:12:07, cũng sẽ tiện cận về nhưng mà nó sẽ tốn
+0:12:05 - 0:12:10, thời gian hơn thì tập mnis là một cái
+0:12:07 - 0:12:11, tập rất là tuyến tính rất là dễ rất là
+0:12:10 - 0:12:14, đơn
+0:12:11 - 0:12:18, giản nó sẽ không thể nào thể hiện được
+0:12:14 - 0:12:20, cái sự khuých Đại cái cái cái cái tốc độ
+0:12:18 - 0:12:22, mà Trend của Ru nó nhanh hơn so với
+0:12:20 - 0:12:25, sigmo như thế nào khi mà chúng ta Trend
+0:12:22 - 0:12:27, với tập dữ liệu lớn như là emet thì
+0:12:25 - 0:12:30, chúng ta sẽ thấy rõ là Ru nó hiệu quả
+0:12:27 - 0:12:33, hơn rất là nhiều r sẽ giảm xuống chúng
+0:12:30 - 0:12:35, ta sẽ thấy là cái cái cái cái sự sụp
+0:12:33 - 0:12:38, giảm về loss của nó rất là nhanh thì đó
+0:12:35 - 0:12:41, chính là cái ý nghĩa của cái miếng thể
+0:12:38 - 0:12:43, đầu tiên đó là bỏ cái C mo và thay thế
+0:12:41 - 0:12:46, là bằng value thì tốc độ hội tụ của nó
+0:12:43 - 0:12:48, sẽ nhanh hơn còn về đề chính xác theo
+0:12:46 - 0:12:51, thời gian dài đâu đó nó vẫn sẽ xắp xỉ
+0:12:48 - 0:12:52, với lại x moi nhưng mà với cái thời gian
+0:12:51 - 0:12:57, mà mình có thể chờ đợi được để mà có thể
+0:12:52 - 0:12:59, hững luyện thì việc dùng XM nó sẽ chậm
+0:12:57 - 0:13:02, hơn rất là nhiều rồi tiếp theo đó là
+0:12:59 - 0:13:05, chúng ta sẽ bỏ hết các cái lớp pulling
+0:13:02 - 0:13:06, rồi chúng ta đã cài đặt rồi và bây giờ
+0:13:05 - 0:13:08, chúng ta
+0:13:06 - 0:13:12, sẽ sử
+0:13:08 - 0:13:12, dụng chúng ta sẽ sử dụng
+0:13:12 - 0:13:19, nó rồi Ở đây chúng ta sẽ để là CNN V3 và
+0:13:16 - 0:13:23, history ở đây sẽ là history số
+0:13:19 - 0:13:24, 3 rồi Ở đây chúng ta sẽ khôi phục ngược
+0:13:23 - 0:13:26, trở lại ha chúng ta sẽ khô phục ngược
+0:13:24 - 0:13:31, trở lại là
+0:13:26 - 0:13:31, sigm rồi chạy
+0:13:34 - 0:13:44, rồi bây giờ chúng ta sẽ vẽ cái hàm L khi
+0:13:38 - 0:13:44, có đồng thời cả ba cái history
+0:13:47 - 0:13:53, 123 rồi V3 thì ở đây sẽ là
+0:13:54 - 0:13:58, with P
+0:14:02 - 0:14:08, V fulling rồi chúng ta có thể thung gọn
+0:14:06 - 0:14:08, lại chút
+0:14:14 - 0:14:20, xíu rồi Ờ tranh thủ trong khi chờ đợi
+0:14:18 - 0:14:23, thì chúng ta sẽ cài luôn cái phiên bản
+0:14:20 - 0:14:26, thứ tư cái phiên bản này đó chính là
+0:14:23 - 0:14:30, chúng ta bỏ hết các cái lớ conion một
+0:14:26 - 0:14:32, điều rất là thú vị đó là chúng ta đặt
+0:14:30 - 0:14:35, cái sự nghi ngờ rằng là cái mạng
+0:14:32 - 0:14:37, conclusion thì ờ cái vai trò của conion
+0:14:35 - 0:14:38, rõ ràng rất là lớn nhưng bây giờ chúng
+0:14:37 - 0:14:41, ta sẽ làm một thí nghiệm đó là bỏ hết
+0:14:38 - 0:14:44, cái conclusion thì xem điều gì sẽ xảy ra
+0:14:41 - 0:14:46, đó Thì đó chính là cái ý nghĩa của cái
+0:14:44 - 0:14:49, phiên bản số
+0:14:46 - 0:14:55, 4 rồi bây giờ may quá cái phiên bản số
+0:14:49 - 0:14:55, ba nó đã chạy Xong và chúng ta sẽ xem
+0:14:55 - 0:15:00, thử rồi chúng ta thấy là nếu như không
+0:14:58 - 0:15:02, có
+0:15:00 - 0:15:05, Nếu như không có ping thì cái l của mình
+0:15:02 - 0:15:09, gần như không giảm nó cứ giữ
+0:15:05 - 0:15:09, nguyên l gần như không giảm D
+0:15:10 - 0:15:16, nguy thì rõ ràng là cái vai trò của ping
+0:15:13 - 0:15:19, cũng rất là quan trọng nếu không có
+0:15:16 - 0:15:21, pulling thì cái l của mình gần như là đi
+0:15:19 - 0:15:23, ngang gần như đi ngang nó không giúp cho
+0:15:21 - 0:15:25, mình giảm
+0:15:23 - 0:15:27, xuống
+0:15:25 - 0:15:31, rồi ok Bây giờ chúng ta sẽ quan cái
+0:15:27 - 0:15:34, phiên bản tiếp theo đó là không có cái
+0:15:31 - 0:15:38, lớp confusion rồi Ở đây chúng ta phải sử
+0:15:34 - 0:15:41, dụng cái biến thể đầu tiên để mình code
+0:15:38 - 0:15:44, chứ nếu không là sẽ nhầm lẫn rồi Không
+0:15:41 - 0:15:47, có conion chúng ta sẽ bỏ đi lớp này bỏ
+0:15:44 - 0:15:51, đi lớp này rồi và ở đây chúng ta sẽ
+0:15:47 - 0:15:53, truyền vào input S2 sẽ truyền vô đây tức
+0:15:51 - 0:16:00, là chúng ta sẽ giảm kết thước liên tiếp
+0:15:53 - 0:16:00, hai lần ha rồi ok ở đây sẽ là CNN V
+0:16:03 - 0:16:10, 4 rồi bây giờ chúng ta
+0:16:07 - 0:16:16, sẽ gọi cái hàm
+0:16:10 - 0:16:20, này khởi tạo để là v4 history là
+0:16:16 - 0:16:22, 4ok run và tương tự như vậy chúng ta sẽ
+0:16:20 - 0:16:29, vẽ cái sơ đồ ở
+0:16:22 - 0:16:29, đây rồi chúng ta sẽ có history là 4
+0:16:32 - 0:16:41, train l ở đây sẽ là P4 with C
+0:16:38 - 0:16:41, convolution
+0:16:59 - 0:17:03, rồi chúng ta thấy là cái loss của mình
+0:17:01 - 0:17:07, cũng có giảm Tuy nhiên cái tốc độ giảm
+0:17:03 - 0:17:08, của nó khá là chọng tốc độ giảm khá chận
+0:17:07 - 0:17:11, thì điều này cũng minh chứng cho cái
+0:17:08 - 0:17:13, việc đó là cái conclusion của mình nó đã
+0:17:11 - 0:17:16, giúp cho cái Việc huấn luyện nó nhanh
+0:17:13 - 0:17:18, hơn Mặc dù accuracy thì nó cũng có xu
+0:17:16 - 0:17:20, hướng là nó càng lúc càng tăng đúng
+0:17:18 - 0:17:24, không Nó có xu hướng càng tăng nhưng với
+0:17:20 - 0:17:26, cùng cái số ipx thì không có conion tốc
+0:17:24 - 0:17:29, độ nó sẽ chậm hơn rất là
+0:17:26 - 0:17:32, nhiều v cái đường màu động
+0:17:29 - 0:17:34, là version 4 thì chúng ta thấy là nó nằm
+0:17:32 - 0:17:36, ở phía trên Nếu không có conion nó sẽ
+0:17:34 - 0:17:39, nằm phía trên như vậy cái phiên bản mà
+0:17:36 - 0:17:42, hoàn thiện nhất của chúng ta chính là
+0:17:39 - 0:17:44, cái phiên bản màu cam ở đây là đường nằm
+0:17:42 - 0:17:47, ở dưới cùng là tương ứng phiên bản số
+0:17:44 - 0:17:50, hai là thay cái sigmo bằng renu trong đó
+0:17:47 - 0:17:52, vẫn phải giữ vừa có pulling và vừa có
+0:17:50 - 0:17:57, contion như vậy thì đây chính là
+0:17:52 - 0:18:00, cái cái bài tập cái Tutorial để giúp cho
+0:17:57 - 0:18:02, chúng ta hiểu được cái vai trò của từng
+0:18:00 - 0:18:05, cái phép biến đổi ở bên trong cái mạng
+0:18:02 - 0:18:05, cns

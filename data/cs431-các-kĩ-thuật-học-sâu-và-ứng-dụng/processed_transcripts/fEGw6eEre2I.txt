@@ -27,7 +27,7 @@
 0:02:11 - 0:02:23, Nó mới là những cái thể hiện được ý nghĩa trong yếu tố về mặt vị trí, chứ không phải là cái con số tuyệt đối là 1, 2, 3 cho đến T ở đây.
 0:02:23 - 0:02:34, Và cái bài báo của Shaw và các cộng sự vào năm 2018 cho thấy là cái vai trò của vị trí tương đối trong attention của mình quan trọng như thế nào.
 0:02:34 - 0:02:42, Và nó đã giúp cho cải thiện độ chính xác của hệ thống lên trong một số task rất là đáng kể.
-0:02:42 - 0:02:47, Tiếp theo là vị trí của mình sẽ dựa trên cây cú pháp,
+0:02:42 - 0:02:47, Tiếp theo là vị trí của mình sẽ dựa trên cây cú pháp học,
 0:02:47 - 0:02:54, tức là chúng ta sẽ có chủ ngữ, động từ, tân ngữ v.v.
 0:02:54 - 0:03:00, Tính từ v.v. thì ở đây sẽ là cây cú pháp và tùy theo vị trí trong cây cú pháp này của mình
 0:03:00 - 0:03:04, và mình sẽ có cái...

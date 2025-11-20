@@ -1,0 +1,117 @@
+0:00:01 - 0:00:04, phương pháp tiếp theo mà chúng ta sẽ
+0:00:02 - 0:00:07, cùng tìm hiểu đó chính là phương pháp
+0:00:04 - 0:00:10, random search hay là tìm kiếm ngẫu
+0:00:07 - 0:00:13, nhiên thì ý tưởng của phương pháp này nó
+0:00:10 - 0:00:15, cũng rất là đơn giản tương tự như là cái
+0:00:13 - 0:00:18, phương pháp trước đó thay vì chúng ta quét
+0:00:15 - 0:00:20, cạn trên tất cả các cái không gian tham
+0:00:18 - 0:00:22, số ví dụ như chúng ta thử nghiệm ở đây
+0:00:20 - 0:00:24, sau đó Chúng ta thử ở đây thử ở đây và
+0:00:22 - 0:00:27, thử ở đây thì phương pháp này nó
+0:00:24 - 0:00:31, sẽ ngẫu nhiên nó sẽ chọn ngẫu nhiên các
+0:00:27 - 0:00:33, cái tổ hợp tham số ờ thay vì là lấy mẫu
+0:00:31 - 0:00:34, đều chúng ta duyệt từ trái qua phải từ
+0:00:33 - 0:00:36, trên xuống dưới thì chúng ta không làm
+0:00:34 - 0:00:38, như vậy nữa mà chúng ta sẽ nhảy đến
+0:00:36 - 0:00:42, những cái cấu hình tham
+0:00:38 - 0:00:47, số bất kỳ rồi sau đó chúng ta cũng lần
+0:00:42 - 0:00:49, lượt thử và chọn ra cái tổ hợp mà cho
+0:00:47 - 0:00:51, cái mô hình tốt nhất ví dụ như sau khi
+0:00:49 - 0:00:53, chúng ta thử với rất nhiều những cái lần
+0:00:51 - 0:00:55, random thì chúng ta thấy là tại đây cho
+0:00:53 - 0:00:57, cái độ chính xác của mình là tốt nhất
+0:00:55 - 0:01:00, như vậy thì chúng ta sẽ lấy cái siêu
+0:00:57 - 0:01:03, tham số này để đi huấn luyện lại trên
+0:01:00 - 0:01:07, đầy đủ toàn bộ cái dữ liệu huấn luyện của
+0:01:03 - 0:01:09, mình và để so sánh cái phương pháp
+0:01:07 - 0:01:11, Grid Search với lại cái phương pháp random
+0:01:09 - 0:01:13, Search thì chúng ta sẽ có một cái hình
+0:01:11 - 0:01:16, ảnh minh họa như
+0:01:13 - 0:01:17, sau đối với cái phương pháp Grid Search thì
+0:01:16 - 0:01:21, cái không gian tham số của mình là lấy
+0:01:17 - 0:01:24, mẫu đều và lấy trên tất cả những
+0:01:21 - 0:01:29, cái khả năng mà có thể xảy ra cho từng
+0:01:24 - 0:01:30, cái trục của cái siêu tham số đó thì với
+0:01:29 - 0:01:32, cái phương pháp lấy mẫu đều thì đâu đó
+0:01:30 - 0:01:36, chúng ta vẫn có khả năng là chúng ta bỏ
+0:01:32 - 0:01:37, sót những cái điểm mà cho cái hiệu quả
+0:01:36 - 0:01:41, của mô hình nó cao
+0:01:37 - 0:01:44, nhất còn phương pháp random phương pháp
+0:01:41 - 0:01:47, random thì nó sẽ lấy ngẫu nhiên và nó sẽ
+0:01:44 - 0:01:50, có cái khả năng là nó tìm thấy cái khu
+0:01:47 - 0:01:52, vực mà cho cái độ hiệu quả cao của cái
+0:01:50 - 0:01:54, mô hình của mình tuy nhiên nếu như cái
+0:01:52 - 0:01:58, không gian tham số của mình nó quá
+0:01:54 - 0:02:00, lớn thì rõ ràng là cái việc random này
+0:01:58 - 0:02:02, nó cũng không chắc chắn không có gì đảm
+0:02:00 - 0:02:06, bảo rằng là nó sẽ đến được điểm
+0:02:02 - 0:02:10, tối ưu toàn cục của cái mô hình của
+0:02:06 - 0:02:12, mình và một lần nữa thì chúng ta sẽ cùng
+0:02:10 - 0:02:15, bình luận về những cái ưu điểm và khuyết
+0:02:12 - 0:02:17, điểm của cái mô hình random search này
+0:02:15 - 0:02:19, về ưu điểm thì cũng tương tự như
+0:02:17 - 0:02:23, Grid Search thì phương pháp này rất là đơn
+0:02:19 - 0:02:26, giản dễ cài đặt và nó rất là hiệu quả
+0:02:23 - 0:02:28, đối với cái không gian tìm kiếm lớn nếu
+0:02:26 - 0:02:30, như đối với cái phương pháp Grid Search số
+0:02:28 - 0:02:32, lượng tham số mà nhiều
+0:02:30 - 0:02:35, đồng thời đó là các cái giải giá trị mà
+0:02:32 - 0:02:37, chúng ta lấy rất là dày thì dẫn đến là
+0:02:35 - 0:02:39, số phép thử của mình cực kỳ lớn hay nói
+0:02:37 - 0:02:41, cách khác là số cái không gian tìm kiếm
+0:02:39 - 0:02:43, của mình rất là lớn còn đối với cái
+0:02:41 - 0:02:47, phương pháp random search chúng ta chỉ
+0:02:43 - 0:02:49, cần cho nó biết trước cái số lần thử và
+0:02:47 - 0:02:51, cứ mỗi lần thử thì chúng ta sẽ random
+0:02:49 - 0:02:53, như vậy thì nó không có phụ thuộc vào
+0:02:51 - 0:02:55, cái không gian tìm kiếm của mình không
+0:02:53 - 0:02:57, gian tìm kiếm lớn như thế nào thì nó
+0:02:55 - 0:03:01, cũng chỉ thử với lại cái số lượng tối đa
+0:02:57 - 0:03:02, mà mình chấp nhận để có thể thử cho cái việc
+0:03:01 - 0:03:05, là tìm kiếm cái siêu tham số
+0:03:02 - 0:03:09, này mà thôi và khuyết điểm của mô hình
+0:03:05 - 0:03:11, này đó là nếu như cái không gian tìm
+0:03:09 - 0:03:14, kiếm của mình mà nó lớn thì nó khó tìm
+0:03:11 - 0:03:16, được cái điểm tối ưu toàn cục rõ ràng
+0:03:14 - 0:03:18, rồi chúng ta biết là cái cái cái yếu tố
+0:03:16 - 0:03:20, về mặt xác suất rồi đúng không cái điểm
+0:03:18 - 0:03:22, tối ưu toàn cục thông thường nó rất là ít
+0:03:20 - 0:03:24, trong khi đó nếu không gian tìm kiếm này
+0:03:22 - 0:03:26, mà càng phức tạp thì cái xác suất để mà
+0:03:24 - 0:03:29, chúng ta tìm ra được với cái phương pháp
+0:03:26 - 0:03:31, ngẫu nhiên này đó là gần như là bằng 0
+0:03:29 - 0:03:33, do đó thì cái việc tối ưu này nó sẽ cũng
+0:03:31 - 0:03:36, sẽ không hiệu quả khi cái không gian tìm
+0:03:33 - 0:03:38, kiếm của mình nó quá lớn và nó còn một
+0:03:36 - 0:03:40, cái điểm yếu nữa cũng kế thừa từ cái
+0:03:38 - 0:03:43, Grid Search đó chính là các cái lần thử độc
+0:03:40 - 0:03:46, lập nó độc lập nhau dẫn đến là nó không
+0:03:43 - 0:03:48, kế thừa được thông tin của lần thử trước
+0:03:46 - 0:03:51, với thuật toán Grid Search thì cái lần thử
+0:03:48 - 0:03:54, tại đây nó không hề cung cấp thêm thông
+0:03:51 - 0:03:57, tin bổ ích cho cái lần thử này để mà chúng
+0:03:54 - 0:04:00, ta có thể bỏ qua cái bước này để mà nhảy
+0:03:57 - 0:04:02, xa hơn để tìm những cái khu vực khác nó
+0:04:00 - 0:04:06, hiệu quả hơn và có khả năng tìm được cái
+0:04:02 - 0:04:09, điểm tối ưu hơn và random search cũng
+0:04:06 - 0:04:11, vậy Ví dụ chúng ta tìm ở đây xong sau đó
+0:04:09 - 0:04:13, chúng ta sẽ nhảy qua đây thì cái thông
+0:04:11 - 0:04:15, tin tại đây và thông tin tại đây nó cũng
+0:04:13 - 0:04:18, không có cái sự bổ trợ cho nhau mà nó
+0:04:15 - 0:04:22, hoàn toàn là độc lập nhau đó nếu như mà
+0:04:18 - 0:04:24, chúng ta tìm thấy một cái giá trị nào đó
+0:04:22 - 0:04:27, mà cho cái độ chính xác tăng đột biến
+0:04:24 - 0:04:31, thì lẽ ra là chúng ta nên khoanh vùng nó
+0:04:27 - 0:04:33, lại và tìm nó sát hơn và tìm nó kỹ hơn
+0:04:31 - 0:04:36, trong cái khu vực đó thì biết đâu chúng
+0:04:33 - 0:04:40, ta tìm ra được một cái Ờ mô hình cho cái
+0:04:36 - 0:04:43, độ chính xác tối ưu và do là cái
+0:04:40 - 0:04:46, yếu tố random tức là một cái yếu tố ngẫu
+0:04:43 - 0:04:48, nhiên đó yếu tố ngẫu nhiên Nên có khả
+0:04:46 - 0:04:50, năng là kết quả nó sẽ không nhất quán
+0:04:48 - 0:04:54, khi chúng ta thử nghiệm trên những cái
+0:04:50 - 0:04:57, lần thử khác nhau nếu như chúng ta thử Ờ
+0:04:54 - 0:04:59, ba lần Ờ ở ba cái môi trường khác nhau
+0:04:57 - 0:05:02, thì có khả năng là cái độ chính xác của
+0:04:59 - 0:05:06, mình cho cái sự sai lệch rất là cao
+0:05:02 - 0:05:06, vì cái yếu tố ngẫu nhiên này

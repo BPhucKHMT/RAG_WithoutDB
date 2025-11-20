@@ -1,0 +1,225 @@
+0:00:01 - 0:00:16, [âm nhạc]
+0:00:13 - 0:00:19, tiếp theo một cái thành phần cũng rất là
+0:00:16 - 0:00:21, quan trọng trong lập trình vay Thanh và
+0:00:19 - 0:00:23, nó cũng liên quan đến khá là nhiều đến
+0:00:21 - 0:00:27, môn học này đó chính là Lập trình hướng
+0:00:23 - 0:00:27, đối tượng áp sát audio
+0:00:31 - 0:00:35, thì ở đây chúng ta sẽ có một cái hình
+0:00:33 - 0:00:39, ảnh minh họa đó là một cái thực thể
+0:00:35 - 0:00:42, trong đời sống đúng không Thì nó sẽ biểu
+0:00:39 - 0:00:46, diễn trong máy tính là thông qua các cái
+0:00:42 - 0:00:50, công cụ đó là flash hoặc là object hoặc
+0:00:46 - 0:00:52, là có các cái phương thức có các kỹ
+0:00:50 - 0:00:55, thuật tính protein tức là các thuộc tính
+0:00:52 - 0:01:00, Ví dụ như cái người sinh viên này là có
+0:00:55 - 0:01:02, email và có số điện thoại rồi có các cái
+0:01:00 - 0:01:06, phương thức ví dụ như là gửi email hoặc
+0:01:02 - 0:01:08, là gọi điện thì đây là một cái hình ảnh
+0:01:06 - 0:01:12, minh họa tượng trưng cho cái việc là
+0:01:08 - 0:01:14, chúng ta sẽ mô phỏng một cái thực thể ở
+0:01:12 - 0:01:17, ngoài đời thực bằng các cái lớp đối
+0:01:14 - 0:01:19, tượng ở bên trong ngôn ngữ lập trình thì
+0:01:17 - 0:01:21, các tính chất của một cái hướng lập
+0:01:19 - 0:01:23, trình đối tượng thì nó sẽ bao gồm tính
+0:01:21 - 0:01:26, chất đó là trường Tự Hóa
+0:01:23 - 0:01:29, trừ từ hóa là rồi tính anketsulation tức
+0:01:26 - 0:01:31, là tính đóng gói các cái dữ liệu và
+0:01:29 - 0:01:33, phương thức intelli rất là tính kế thừa
+0:01:31 - 0:01:36, tức là chúng ta có thể tái sử dụng lại
+0:01:33 - 0:01:39, code của lớp cha mà không cần phải cài
+0:01:36 - 0:01:42, đặt lại ở các cái lớp mà kế thừa là nó
+0:01:39 - 0:01:44, còn kế thừa rồi tính đa hình thì đây là
+0:01:42 - 0:01:46, 4 cái tính chất cơ bản của Lập trình
+0:01:44 - 0:01:48, hướng đối tượng thì đầu tiên chúng ta
+0:01:46 - 0:01:52, chỉ nhắc lại về một số cái khái niệm đầu
+0:01:48 - 0:01:54, tiên đó là object là một cái dữ liệu
+0:01:52 - 0:01:55, trừu tượng nó sẽ bao gồm những cái dữ
+0:01:54 - 0:01:58, liệu nội bộ
+0:01:55 - 0:02:01, dữ liệu nội bộ và được truy xuất thông
+0:01:58 - 0:02:03, qua cái thuộc tính của dữ liệu cái thứ
+0:02:01 - 0:02:06, hai đó chính là cái giao diện interface
+0:02:03 - 0:02:08, để tương tác với object thông qua các
+0:02:06 - 0:02:13, cái phương thức
+0:02:08 - 0:02:15, và hay còn gọi là hàm thủ tục thì chút
+0:02:13 - 0:02:17, nữa thì chúng ta sẽ nói chi tiết hơn là
+0:02:15 - 0:02:20, làm sao chúng ta có thể tạo ra một cái
+0:02:17 - 0:02:23, lớp đối tượng thông qua việc là tạo một
+0:02:20 - 0:02:25, cái class với cái tên vest các định
+0:02:23 - 0:02:28, nghĩa các cái thuộc tính và các phương
+0:02:25 - 0:02:30, thức thì hiểu một cách nôm Na tên flash
+0:02:28 - 0:02:32, chính là cái đại diện
+0:02:30 - 0:02:38, cho một nhóm đối tượng
+0:02:32 - 0:02:38, cái tên đại diện cho một nhóm đối tượng
+0:02:41 - 0:02:46, Ví dụ như ở trong trường hợp thì chúng
+0:02:43 - 0:02:48, ta có những cái nhóm đối tượng nào mà
+0:02:46 - 0:02:49, bạn cần phải đại diện ví dụ nhóm đối
+0:02:48 - 0:02:52, tượng là sinh viên nhóm đối tượng là
+0:02:49 - 0:02:55, giảng viên nhóm đối tượng là phòng học
+0:02:52 - 0:02:56, thì đó là một nhóm các đối tượng và
+0:02:55 - 0:02:58, chính với từng cái nhóm đối tượng này
+0:02:56 - 0:03:01, thì chúng ta sẽ đặt cái tên dựa trên cái
+0:02:58 - 0:03:06, nhóm đối tượng đó thuộc tính tức là
+0:03:01 - 0:03:09, những cái thành phần giá trị mà
+0:03:06 - 0:03:11, đặc trưng cho cái đối tượng của mình cho
+0:03:09 - 0:03:13, cái lớp đối tượng của mình và lưu ý là
+0:03:11 - 0:03:16, cái thuộc tính này thì mỗi một cái thực
+0:03:13 - 0:03:18, thể một cái đối tượng sẽ có chứa những
+0:03:16 - 0:03:22, giá trị khác nhau Ví dụ như một bạn sinh
+0:03:18 - 0:03:25, viên tên là Nguyễn Văn A tuổi là 20 tuổi
+0:03:22 - 0:03:26, rồi điểm trung bình là 8.5 thì đó là đại
+0:03:25 - 0:03:28, những cái thông trường thuộc tính để đại
+0:03:26 - 0:03:30, diện cho một cái thực thể sang một cái
+0:03:28 - 0:03:33, thực thể khác đó thì chúng ta sẽ có
+0:03:30 - 0:03:35, những cái thuộc tính khác nhau và tương
+0:03:33 - 0:03:36, ứng thì chúng ta sẽ có các phương thức
+0:03:35 - 0:03:38, phương thức này thì nó giống như là hành
+0:03:36 - 0:03:38, động
+0:03:39 - 0:03:43, đó phương thức này nó giống hành động Ví
+0:03:41 - 0:03:45, dụ như sinh viên thì sẽ có các cái
+0:03:43 - 0:03:48, phương thức ví dụ như là học bài đăng ký
+0:03:45 - 0:03:50, môn học rồi đăng ký tốt nghiệp đó là
+0:03:48 - 0:03:54, những cái phương thức
+0:03:50 - 0:03:56, và việc sử dụng cái class thì nó sẽ bao
+0:03:54 - 0:03:58, gồm các cái công đoạn đó là chúng ta sẽ
+0:03:56 - 0:04:00, tạo một cái instant tức là tạo một cái
+0:03:58 - 0:04:04, thực thể
+0:04:00 - 0:04:07, tạo một cái thực thể mới cho cái class
+0:04:04 - 0:04:09, đó Lưu ý flash nó giống như là một tập
+0:04:07 - 0:04:11, hợp nó giống như là một cái tập hợp đại
+0:04:09 - 0:04:14, diện cho một tập hợp còn thân thể chính
+0:04:11 - 0:04:17, là một cái một cái phần tử trong cái tập
+0:04:14 - 0:04:21, hợp này và để thực hiện được các phép
+0:04:17 - 0:04:22, toán tử và phải các phương thức trên các
+0:04:21 - 0:04:25, instant vừa tạo được ví dụ như chúng ta
+0:04:22 - 0:04:27, có thể truy xuất vào thuộc tính đó chúng
+0:04:25 - 0:04:30, ta có thể truy xuất vào cái phương thức
+0:04:27 - 0:04:33, Gọi cái phương thức để thực hiện
+0:04:30 - 0:04:35, và đây là một cái cách một cái ví dụ
+0:04:33 - 0:04:36, trong cái việc là định nghĩa một cái
+0:04:35 - 0:04:39, Flash mới
+0:04:36 - 0:04:42, ở đây chúng ta DEF chúng ta định nghĩa
+0:04:39 - 0:04:46, là một cái class tên là kore đi đây tức
+0:04:42 - 0:04:48, là tọa độ và ở đây chúng ta nếu như có
+0:04:46 - 0:04:51, sử dụng kế thừa thì chúng ta sẽ để tên
+0:04:48 - 0:04:52, flash ở đây và Thông thường thì trong
+0:04:51 - 0:04:55, lập trình bay thân thì nó có một cái lớp
+0:04:52 - 0:04:58, Cha chung rất là lớn đó chính là
+0:04:55 - 0:05:00, sau đó thì chúng ta sẽ tiến hành nghĩa
+0:04:58 - 0:05:02, các cái thuộc tính cũng như là định
+0:05:00 - 0:05:03, nghĩa các cái phương thức ở bên sau cái
+0:05:02 - 0:05:08, dấu hai chấm này
+0:05:03 - 0:05:10, rồi thì ví dụ như trong trong
+0:05:08 - 0:05:12, hướng đối tượng Lập trình hướng đối
+0:05:10 - 0:05:14, tượng của bài thân thì nó có một cái
+0:05:12 - 0:05:17, phương thức đặc biệt đó chính là innis
+0:05:14 - 0:05:18, lưu ý các bạn ở đây lưu ý đó là ở đây là
+0:05:17 - 0:05:20, hai cái dấu xiết gạch tức là hai cái dấu
+0:05:18 - 0:05:22, gạch dưới nha ở đây nhìn nó viết liền
+0:05:20 - 0:05:26, thôi chứ thực ra nó là hai dấu nếu mà
+0:05:22 - 0:05:26, viết rời ra là sẽ như thế này
+0:05:29 - 0:05:34, cái phương thức inix này nó sẽ giống như
+0:05:32 - 0:05:37, là cái cần shorter trong c++ của mình
+0:05:34 - 0:05:37, vậy đó Nó giống như là một cái
+0:05:40 - 0:05:46, là giúp cho chúng ta khởi tạo các thuộc
+0:05:44 - 0:05:49, tính chúng ta sẽ khởi tạo các cái thuộc
+0:05:46 - 0:05:50, tính của một cái đối tượng Ví dụ như ở
+0:05:49 - 0:05:54, đây là chúng ta sẽ có cái lớp đối tượng
+0:05:50 - 0:05:57, là Cody và chúng ta sẽ tạo ra hai cái
+0:05:54 - 0:06:00, trường thông tin đó là x và y thì save
+0:05:57 - 0:06:02, này nó giống như là cái con trỏ
+0:06:00 - 0:06:03, diseo này thì nó giống như là cái con
+0:06:02 - 0:06:06, trỏ dis của chúng ta
+0:06:03 - 0:06:10, thì sale là cho biết là cái đối tượng
+0:06:06 - 0:06:12, cái thực cái thực thể chứa cái đối tượng
+0:06:10 - 0:06:15, của mình nó sẽ có hai cái thuộc tính là
+0:06:12 - 0:06:18, x và y và nó sẽ được gán bằng các giá
+0:06:15 - 0:06:21, trị x y được truyền vào được truyền vào
+0:06:18 - 0:06:24, từ bên ngoài để truyền vào thông qua các
+0:06:21 - 0:06:24, phương thức là innis này
+0:06:26 - 0:06:31, thì ở đây chúng ta sẽ có cái ghi chú nè
+0:06:28 - 0:06:33, Đó là CEO chính là cái tham số tham
+0:06:31 - 0:06:37, chiếu đến cái thực thể của các flash
+0:06:33 - 0:06:41, tham chiếu đến cho thực thể của best
+0:06:37 - 0:06:43, và để thao tác trên một cái instant thì
+0:06:41 - 0:06:45, như chúng ta đã trình bày trước đây
+0:06:43 - 0:06:47, chúng ta sẽ có cái bước các cái bước
+0:06:45 - 0:06:51, thực hiện đầu tiên đó là khởi tạo
+0:06:47 - 0:06:51, một cái instant
+0:06:53 - 0:06:59, và chúng ta sẽ truyền cái tên của cái
+0:06:56 - 0:07:02, pass vào đây và đây chính là các cái
+0:06:59 - 0:07:04, tham số khởi tạo thì tương ứng ở đây
+0:07:02 - 0:07:05, chúng ta gọi cái lệnh này thì nó sẽ gọi
+0:07:04 - 0:07:10, đến
+0:07:05 - 0:07:13, cái phương thức gọi là English
+0:07:10 - 0:07:15, mà mình đã cài đặt trước đó ở trong
+0:07:13 - 0:07:19, slide này thì cái phương thức ins
+0:07:15 - 0:07:21, này rồi đó là bước số 1 đó là khởi tạo
+0:07:19 - 0:07:24, một cái thực thể
+0:07:21 - 0:07:26, và sau đó thì chúng ta sẽ tạo một cái
+0:07:24 - 0:07:29, thực tại khác rồi chúng ta sẽ in ra
+0:07:26 - 0:07:33, chúng ta sẽ truy xuất đến các cái thuộc
+0:07:29 - 0:07:36, tính của cái cái thực thể này thông qua
+0:07:33 - 0:07:37, cái việc là sử dụng cái dấu chấm dấu
+0:07:36 - 0:07:40, chấm tức là chúng ta sẽ lấy thông tin về
+0:07:37 - 0:07:43, lấy thông tin ra để truy cập đến cái
+0:07:40 - 0:07:43, thuộc tính của một cái instant
+0:07:45 - 0:07:50, của C và origin Audition giữa
+0:07:51 - 0:07:56, tiếp theo đó chính là phương thức phương
+0:07:54 - 0:08:00, thức thì như đã đề cập nó giống như là
+0:07:56 - 0:08:02, những cái của một cái class phương thức
+0:08:00 - 0:08:05, của một cái pass nó là các cái hàm mà
+0:08:02 - 0:08:08, chỉ làm việc trên cái class đó và thường
+0:08:05 - 0:08:12, thì chúng ta sẽ sử dụng cái từ khóa gọi
+0:08:08 - 0:08:15, là sale để tham chiếu để tham chiếu
+0:08:12 - 0:08:18, làm tham số cho đầu mỗi cái phương thức
+0:08:15 - 0:08:22, và sale này thì nó sẽ giống như là cái
+0:08:18 - 0:08:22, con trỏ dis của C công cộng
+0:08:23 - 0:08:29, giống như khi còn troll this và lưu ý là
+0:08:26 - 0:08:31, tất cả các phương thức của mình tất cả
+0:08:29 - 0:08:33, các phương thức mà được sử dụng trong
+0:08:31 - 0:08:37, nội bộ của cái class thì chúng ta đều
+0:08:33 - 0:08:40, phải có cái tham số chúng ta đều phải có
+0:08:37 - 0:08:44, cái tham số đầu tiên tham số đầu tiên là
+0:08:40 - 0:08:47, cái biến sale này và kí tự pha Seo này
+0:08:44 - 0:08:50, và cái toán tử dấu chấm thì được sử dụng
+0:08:47 - 0:08:53, để truy cập đến thuộc tính của dữ liệu
+0:08:50 - 0:08:54, và phương thức của một cái áp suất thì
+0:08:53 - 0:08:57, đây chúng ta sẽ lấy một cái ví dụ ha
+0:08:54 - 0:09:01, chúng ta sẽ lấy một cái ví dụ là chúng
+0:08:57 - 0:09:01, ta khởi tạo một cái class tên là cored
+0:09:02 - 0:09:07, Và đây là một lớp rất là chung cái lớp
+0:09:05 - 0:09:09, này rất là chung và lưu ý là cái này là
+0:09:07 - 0:09:12, mặc định nha Cái này là không ai mặc
+0:09:09 - 0:09:14, định mà là tùy biến chúng ta không có
+0:09:12 - 0:09:16, không không có truyền cái cái lớp cha
+0:09:14 - 0:09:19, này vô cũng được không sao cả rồi Đây là
+0:09:16 - 0:09:23, cái cần streptor thì đã đề cập ở trước
+0:09:19 - 0:09:23, và chúng ta sẽ tạo một cái phương thức
+0:09:23 - 0:09:30, chúng ta sẽ tạo một cái phương thức một
+0:09:27 - 0:09:31, cái metalk tên là distan nó giống như là
+0:09:30 - 0:09:33, một cái hành động vậy đó một cái hành
+0:09:31 - 0:09:37, động tính cái khoảng cách và chúng ta
+0:09:33 - 0:09:39, như để cầu ở đây nè là nó phải là một
+0:09:37 - 0:09:43, cái tham số phải có một cái tham số đầu
+0:09:39 - 0:09:45, tiên đó chính là tham số Excel sử dụng
+0:09:43 - 0:09:48, theo sale để tham chiếu đến các instant
+0:09:45 - 0:09:50, và ngoài ra thì nó phải tính khoảng cách
+0:09:48 - 0:09:53, đến đâu đúng không bản thân cái hệ cái
+0:09:50 - 0:09:56, tọa độ này nó chỉ là một điểm và nó sẽ
+0:09:53 - 0:10:00, tính piston đến đâu nó sẽ distan đến một
+0:09:56 - 0:10:03, cái tham số lên đến một cái tọa độ khác
+0:10:00 - 0:10:03, và ở đây thì bản chất nó chỉ là cái công
+0:10:03 - 0:10:06, thức
+0:10:03 - 0:10:09, độ đo Office của mình đây
+0:10:06 - 0:10:11, -x tất cả bình phương y - y² Rồi lấy hai
+0:10:09 - 0:10:14, thằng này tính tổng và lấy căn thì đây
+0:10:11 - 0:10:16, chính là cái công thức tính khoảng cách
+0:10:14 - 0:10:19, bình thường của mình và lưu ý chúng ta
+0:10:16 - 0:10:21, lưu ý ở đây là để truy cập đến cái dữ
+0:10:19 - 0:10:23, liệu để truy cập đến cái dữ liệu thì
+0:10:21 - 0:10:26, chúng ta sẽ dùng cái toán tử là chấm
+0:10:23 - 0:10:28, chấm chúng ta lấy cái dữ liệu của order
+0:10:26 - 0:10:30, thì là Order cho x chúng ta lấy dữ liệu
+0:10:28 - 0:10:34, của cái lớp của thực thể đối tượng hiện
+0:10:30 - 0:10:38, tại thì chúng ta sẽ để là sale chấm x
+0:10:34 - 0:10:38, trừ order cho biết save.i - Ori

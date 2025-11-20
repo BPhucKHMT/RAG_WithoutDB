@@ -77,7 +77,7 @@
 0:07:06 - 0:07:19, Đó là vì sau khi chúng ta chuẩn hóa nó, thì ở đây trừ vô cùng sẽ biến thành số 0 sau khi thực hiện hàm softmax.
 0:07:19 - 0:07:28, Trừ vô cùng của mình sẽ biến thành số 0. Tức là chúng ta sẽ không tổng hợp thông tin của từ thứ gì với gì nữa.
 0:07:28 - 0:07:32, Những từ nào mà từ nó trở về sau là không được tổng hợp thông tin.
-0:07:32 - 0:07:38, Vậy, giải pháp đó là sử dụng Masked Multi-head Self-Attention sẽ giúp chúng ta có thể song song hóa được quá trình tính toán
+0:07:32 - 0:07:38, Vậy, giải pháp đó là sử dụng Multihead Self-Attention sẽ giúp chúng ta có thể song song hóa được quá trình tính toán
 0:07:38 - 0:07:46, một cách dễ dàng với GPU mà vẫn không vi phạm nguyên tắc là không được phép nhìn những cái từ của tương lai.
 0:07:46 - 0:07:58, Và tương tự như vậy, chúng ta cũng sẽ thực hiện cái decoder hoàn toàn giống với lại encoder.
 0:07:58 - 0:08:00, Đây chính là cái khác lớn nhất của mình.
@@ -137,7 +137,7 @@
 0:11:52 - 0:11:53, Đó là hai cái lớn nhất.
 0:11:53 - 0:11:57, Ngoài ra trong output của decoder
 0:11:57 - 0:11:59, Chúng ta vẫn sử dụng embedding như bình thường,
-0:11:59 - 0:12:01, Và đây là Positional
+0:11:59 - 0:12:01, Và đây là position
 0:12:01 - 0:12:05, Positional embedding
 0:12:05 - 0:12:08, Như bình thường.
 0:12:08 - 0:12:15, Đó là chúng ta sẽ thêm Feedforward và add norm.

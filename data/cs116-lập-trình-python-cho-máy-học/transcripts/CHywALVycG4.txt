@@ -1,0 +1,87 @@
+0:00:00 - 0:00:04, chúng ta
+0:00:00 - 0:00:07, đã cùng đi qua các cái nội dung như sau
+0:00:04 - 0:00:12, cái nội dung đầu tiên đó chính là chúng
+0:00:07 - 0:00:14, ta À tìm hiểu về cái cách để mà chúng ta
+0:00:12 - 0:00:14, triển khai mô
+0:00:18 - 0:00:23, hình trong thực tế như thế
+0:00:25 - 0:00:31, nào và chúng ta sẽ có một số cái loại à
+0:00:29 - 0:00:33, hình thức để mà triển khai mô hình máy
+0:00:31 - 0:00:37, học trong thực tế ví dụ như là dưới dạng
+0:00:33 - 0:00:41, B prediction tức là chúng ta xử lý trước
+0:00:37 - 0:00:44, theo khối dữ liệu chúng ta có thể
+0:00:41 - 0:00:47, Model triển khai với dạng là Model in
+0:00:44 - 0:00:50, service tức là triển khai cái mô hình
+0:00:47 - 0:00:52, chung với lại cái web server của mình
+0:00:50 - 0:00:54, hoặc là Model and service tức là chúng
+0:00:52 - 0:00:57, ta sẽ triển khai cái mô hình trên một
+0:00:54 - 0:01:01, cái máy khác chuyên biệt cho các cái mô
+0:00:57 - 0:01:02, hình máy học đó hoặc là chúng ta có thể
+0:01:01 - 0:01:05, làm trên triển khai mô hình trên add
+0:01:02 - 0:01:07, device trên các cái thiết bị Miên thì đó
+0:01:05 - 0:01:10, là những cái cách thức triển khai mô
+0:01:07 - 0:01:13, hình trong thực tế và chúng ta đã lần
+0:01:10 - 0:01:15, lượt được tìm hiểu hai cái cách thức để
+0:01:13 - 0:01:18, mà triển khai mô hình rất là phổ biến
+0:01:15 - 0:01:20, hiện nay đó là triển khai mô hình dữ
+0:01:18 - 0:01:20, dạng là web
+0:01:21 - 0:01:27, App với cái cách triển khai này thì nó
+0:01:24 - 0:01:29, sẽ giúp cho chúng ta demo nhanh và người
+0:01:27 - 0:01:30, dùng có thể tiếp cộng được đến cái mô
+0:01:29 - 0:01:34, hình máy học của mình mình một cách dễ
+0:01:30 - 0:01:38, dàng và cái kiểu tiếp theo đó chính là
+0:01:34 - 0:01:41, kiểu api hay còn gọi là dịch vụ web thì
+0:01:38 - 0:01:44, cái cách mà dịch vụ web này á nó sẽ có
+0:01:41 - 0:01:47, cái tính linh động cao hơn và nó có thể
+0:01:44 - 0:01:50, giúp cho chúng ta chia sẻ với lại cái
+0:01:47 - 0:01:53, bên thứ ba cần sử dụng cái dịch vụ này
+0:01:50 - 0:01:55, của mình thì đây là hai cái cách sử dụng
+0:01:53 - 0:01:57, triển khai mô hình cũng rất là phổ biến
+0:01:55 - 0:02:00, hiện nay bên cạnh đó thì chúng ta cũng
+0:01:57 - 0:02:02, có thể gọi là triển khai cái m hình ở
+0:02:00 - 0:02:08, trên dịch vụ
+0:02:02 - 0:02:08, cloud dịch vụ đám m toán đám m nó gọi là
+0:02:08 - 0:02:13, serverless tức là các cái mô hình của
+0:02:10 - 0:02:17, mình nó sẽ được triển khai dưới dạng là
+0:02:13 - 0:02:20, lamda tức là dưới dạng các cái hàm chứ
+0:02:17 - 0:02:22, nó không phải là một cái mô hình Vật Lý
+0:02:20 - 0:02:25, à Nó không phải là cái mô hình mà nó sẽ
+0:02:22 - 0:02:27, là một cái hàm ở trên cloud nhng bản
+0:02:25 - 0:02:30, chất bên dưới thì nó vẫn là triển khai
+0:02:27 - 0:02:33, mô hình thôi Nhưng mà mình tiếp cận nó
+0:02:30 - 0:02:37, giống như là một cái hàm và nó sẽ tự
+0:02:33 - 0:02:40, động gọi là điều chỉnh cái tài nguyên
+0:02:37 - 0:02:43, sao cho phù hợp với lại cái số lượng
+0:02:40 - 0:02:44, request của người dùng tại thời điểm
+0:02:43 - 0:02:47, hiện
+0:02:44 - 0:02:50, tại rồi cuối cùng đó là chúng ta tìm
+0:02:47 - 0:02:55, hiểu về cách thức để mà chúng ta giám
+0:02:50 - 0:02:55, sát Giám sát cái mô
+0:02:57 - 0:03:03, hình giám sát mô hình của mình mình để
+0:03:00 - 0:03:06, kiểm tra xem là thứ nhất cái dữ liệu của
+0:03:03 - 0:03:07, mình dữ liệu khi mà triển khai trong
+0:03:06 - 0:03:11, thực
+0:03:07 - 0:03:14, tế có bị biến đổi hay không rồi nếu bị
+0:03:11 - 0:03:15, biến đổi thì nó sẽ thuộc cái loại nào
+0:03:14 - 0:03:17, chứ không phải là dữ liệu nào biến đổi
+0:03:15 - 0:03:19, thì chúng ta cũng sẽ cập nhật cái mô
+0:03:17 - 0:03:22, hình ha dữ liệu nó biến đổi nhưng mà nó
+0:03:19 - 0:03:25, sẽ thuộc cái loại nào ngắn hạn hay dài
+0:03:22 - 0:03:27, hạn đó rồi sau đó thì chúng ta sẽ tiến
+0:03:25 - 0:03:30, hành Cập nhật cái mô hình khi
+0:03:27 - 0:03:32, mà cái tình huống đó đó là bắt buộc
+0:03:30 - 0:03:35, chúng ta phải cập nhật cái mô hình rồi
+0:03:32 - 0:03:39, sau đó thì chúng ta
+0:03:35 - 0:03:41, sẽ sử dụng một số cái độ đo một số cái
+0:03:39 - 0:03:45, thông tin giám sát Ví dụ như chúng ta sử
+0:03:41 - 0:03:45, dụng cái độ đau về độ chính
+0:03:46 - 0:03:52, xác rồi chúng ta có thể sử dụng cái độ
+0:03:49 - 0:03:52, đo về business về kinh
+0:03:53 - 0:03:56, tế rồi Hoặc là chúng ta sử dụng cái dạng
+0:03:55 - 0:04:01, là
+0:03:56 - 0:04:01, input rồi prediction
+0:04:02 - 0:04:06, và cuối cùng đó là các cái system
+0:04:04 - 0:04:11, performance Tức là cái hiệu năng của hệ
+0:04:06 - 0:04:11, thống giám sát cái hiệu năng của hệ
+0:04:13 - 0:04:18, thống thì trên đây đó là toàn bộ những
+0:04:16 - 0:04:21, cái nội dung chính của cái bài học ngày
+0:04:18 - 0:04:21, hôm nay

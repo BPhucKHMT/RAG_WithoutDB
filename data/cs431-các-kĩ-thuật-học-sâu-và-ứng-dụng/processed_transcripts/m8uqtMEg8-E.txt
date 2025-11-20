@@ -23,9 +23,9 @@
 0:02:01 - 0:02:04, Ở đây chúng ta sẽ có x_i và y_i
 0:02:04 - 0:02:08, Rồi, thì chúng ta sẽ có công thức như thế này
 0:02:08 - 0:02:12, Ở đây đó chính là thành phần bias
-0:02:12 - 0:02:21, Thành phần bias này có tác dụng đó là để cho giá trị dự đoán không phải lúc nào nó cũng chỉ phụ thuộc vào biến x
-0:02:21 - 0:02:27, Nó sẽ có những trường hợp mà nó sẽ độc lập với biến x thì nó sẽ biểu diễn bởi bias này
-0:02:27 - 0:02:32, bias sẽ thể hiện cho những thành phần không phụ thuộc vào biến đầu vào
+0:02:12 - 0:02:21, Thành phần BIAS này có tác dụng đó là để cho giá trị dự đoán không phải lúc nào nó cũng chỉ phụ thuộc vào biến x
+0:02:21 - 0:02:27, Nó sẽ có những trường hợp mà nó sẽ độc lập với biến x thì nó sẽ biểu diễn bởi BIAS này
+0:02:27 - 0:02:32, BIAS sẽ thể hiện cho những thành phần không phụ thuộc vào biến đầu vào
 0:02:32 - 0:02:41, Và với cách biểu diễn này, đường thẳng của chúng ta cũng sẽ rất là linh động, không nhất thiết nó phải đi qua góc tọa độ.
 0:02:41 - 0:02:48, Nó có thể đi qua những đường thẳng bất kỳ, nó sẽ đi qua bất kỳ những vị trí nào không nhất thiết phải đi qua góc tọa độ.
 0:02:48 - 0:02:52, Tạo ra sự tự do cho đường thẳng của mình.
@@ -86,7 +86,7 @@
 0:07:48 - 0:07:50, chia ra được cái giá trị lỗi
 0:07:50 - 0:07:56, Lỗi chúng ta biết được cái lỗi này đó là phù hợp hay không, có hợp lý hay không để sử dụng
 0:07:56 - 0:08:02, Ngoài ra ở đây chúng ta sẽ thấy nó có một cái con số 2, tại sao chúng ta lại có cái số 2 ở đây
-0:08:02 - 0:08:09, Để sau này khi chúng ta tiến hành tính đạo hàm cho cái hàm loss này, thì nó sẽ có cái hàm mũ ở đây đúng không
+0:08:02 - 0:08:09, Để sau này khi chúng ta tiến hành tính đạo hàm cho cái hàm Loss này, thì nó sẽ có cái hàm mũ ở đây đúng không
 0:08:09 - 0:08:15, Thì chúng ta tính đạo hàm thì con số 2 này nó sẽ đem xuống và 2 chia 2 nó sẽ triệt tiêu đi
 0:08:15 - 0:08:18, Vì vậy, công thức của mình sau này sẽ đẹp hơn.
 0:08:18 - 0:08:25, Đó là lý do tại sao chúng ta có công thức hàm lỗi như trên.
@@ -101,7 +101,7 @@
 0:09:09 - 0:09:14, Còn y_i ở đây chính là giá trị thực tế
 0:09:14 - 0:09:19, Rồi, chúng ta sẽ tiến hành đi tính đạo hàm này
 0:09:19 - 0:09:26, Tính đạo hàm của L theo theta 0 thì chúng ta sẽ thấy là đạo hàm của cái này:
-0:09:26 - 0:09:38, 1 phần 2n tổng của (theta 1 x_i cộng theta 0 trừ cho y_i) tất cả bình.
+0:09:26 - 0:09:38, 1 phần 2 N tổng của (theta 1 x_i cộng theta 0 trừ cho y_i) tất cả bình.
 0:09:38 - 0:09:41, Với i chạy từ 1 cho đến n.
 0:09:41 - 0:09:44, Thành phần này là hằng số.
 0:09:44 - 0:09:49, Chúng ta sẽ tính đạo hàm của L theo theta 0.

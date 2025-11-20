@@ -1,0 +1,369 @@
+0:00:01 - 0:00:15, [âm nhạc]
+0:00:13 - 0:00:18, trong phần tiếp theo thì chúng ta sẽ cài
+0:00:15 - 0:00:20, đặt một cái mạng cional Network và tập
+0:00:18 - 0:00:22, dữ liệu mà chúng ta sẽ sử dụng ở đây
+0:00:20 - 0:00:24, chính là tập dữ liệu mnis thì đây là một
+0:00:22 - 0:00:26, trong những tập dữ liệu rất là kinh điển
+0:00:24 - 0:00:29, khi làm trong lĩnh vực về thị giác máy
+0:00:26 - 0:00:32, tính ảnh đầu vào của cái tập dữ liệu này
+0:00:29 - 0:00:34, sẽ có cái thức là 28 nhân cho 28 đúng
+0:00:32 - 0:00:37, bằng cái kích thức ở đây và cái kiến
+0:00:34 - 0:00:39, trúc mạng CNN ở đây thì chúng ta sẽ sử
+0:00:37 - 0:00:42, dụng đó là kiến trúc mạng lenet được có
+0:00:39 - 0:00:44, từ những năm 1998 và kiến trúc mạng này
+0:00:42 - 0:00:46, Thực sự mà nó cũng không có sâu nó chỉ
+0:00:44 - 0:00:49, bao gồm hai cái nướ convolution và hai
+0:00:46 - 0:00:52, lớp convolution này thì có sử dụng các
+0:00:49 - 0:00:55, cái futter có kích thước là 3 x 3 và đối
+0:00:52 - 0:00:58, với cái lớp convolution đầu tiên thì chỉ
+0:00:55 - 0:01:01, có sáu cái phép conclusion sáu cái
+0:00:58 - 0:01:05, futter đối V lớp contion thứ hai thì sẽ
+0:01:01 - 0:01:08, có cái kích thước đó là 3 x 3 nhân cho 6
+0:01:05 - 0:01:11, tại vì cái đầu vào của cái lớp conion
+0:01:08 - 0:01:13, này chính là cái feature map này mà
+0:01:11 - 0:01:16, feature map này có cái dep là bằng 6 do
+0:01:13 - 0:01:17, đó ở đây sẽ là là 6 Tuy nhiên thì trong
+0:01:16 - 0:01:19, quá trình mà chúng ta cài đặt thì chúng
+0:01:17 - 0:01:22, ta cũng không cần phải chỉ ra tường minh
+0:01:19 - 0:01:25, là cái số input của mình là bao nhiêu tự
+0:01:22 - 0:01:26, cái chương trình nó sẽ tự cái deeping
+0:01:25 - 0:01:28, Framework nó sẽ tính cho mình cái con số
+0:01:26 - 0:01:30, này chúng ta chỉ cần cho biết cái kích
+0:01:28 - 0:01:33, thước bề ngang bề cao của cái filter và
+0:01:30 - 0:01:35, được và đồng thời chúng ta cũng cho cái
+0:01:33 - 0:01:37, deing Framework biết số filter đầu ra
+0:01:35 - 0:01:40, mong muốn là ở trong cái phép c r
+0:01:37 - 0:01:43, conversion thứ hai chính là
+0:01:40 - 0:01:45, 16 các cái phép biến đổi subs link ở đây
+0:01:43 - 0:01:48, thực chất nó chính là cái phép biến đổi
+0:01:45 - 0:01:53, max pooling đây chính là cái phép biến
+0:01:48 - 0:01:56, đổi Max pooling rồi và ở phần cuối của
+0:01:53 - 0:01:59, mạng CN này đó chính là các cái lớp biến
+0:01:56 - 0:02:03, đổi Fully connected để tạo ra các cái
+0:01:59 - 0:02:05, vector có kích thước là 120 84 và 10
+0:02:03 - 0:02:07, trong đó 10 thì tương ứng với lại cái số
+0:02:05 - 0:02:11, lớp đầu ra của mình đó chính là các cái
+0:02:07 - 0:02:14, con số từ 0 cho đến 9 vậy thì trong phần
+0:02:11 - 0:02:19, tiếp theo chúng ta sẽ tiến hành cài đặt
+0:02:14 - 0:02:19, cái mạng cion neuron Network
+0:02:23 - 0:02:27, này rồi
+0:02:31 - 0:02:37, thì bước đầu tiên thì chúng ta sẽ khởi
+0:02:34 - 0:02:40, tạo các cái tập dataset của mình thì
+0:02:37 - 0:02:44, trong cái keras nó đã có cái phương thức
+0:02:40 - 0:02:47, giúp cho mình Ờ load cái dataset rất là
+0:02:44 - 0:02:50, dễ dàng đó là keras dataset và chúng ta
+0:02:47 - 0:02:52, sẽ import cái tập dữ liệu là mnis à Sau
+0:02:50 - 0:02:54, đó chúng ta chỉ việc gọi là mnis load
+0:02:52 - 0:02:57, data thì tự động nó sẽ lấy từ trên mạng
+0:02:54 - 0:03:01, internet về giải nén và đưa vào các cái
+0:02:57 - 0:03:03, cặp biến là extrain eend và EX et đó thì
+0:03:01 - 0:03:05, ở đây chúng ta sẽ quan sát thử kích
+0:03:03 - 0:03:08, thước của các cái biến này
+0:03:05 - 0:03:12, xend chấm SH thì có kích thước là 60.000
+0:03:08 - 0:03:16, nhân cho 28 x 28 thì 60.000 này tương
+0:03:12 - 0:03:17, ứng là tổng số mẫ còn 28 x 28 đó chính
+0:03:16 - 0:03:20, là cái kích thước bề ngang và bề cao của
+0:03:17 - 0:03:23, cái ảnh chữ số viết tay
+0:03:20 - 0:03:26, ets thì nó sẽ có kích thước là 60.000
+0:03:23 - 0:03:30, thì ứng với từng cái xra nó sẽ có một
+0:03:26 - 0:03:34, cái giá trị label cái nhãn output
+0:03:30 - 0:03:36, của et đó thì ở đây chúng ta sẽ thử quan
+0:03:34 - 0:03:38, sát một số cái mẫu dữ liệu để quan sát
+0:03:36 - 0:03:40, thì chúng ta sẽ sử dụng thư viện đó là
+0:03:38 - 0:03:42, mli
+0:03:40 - 0:03:49, m.
+0:03:42 - 0:03:50, tyel as plp rồi plt ch chúng ta sẽ sử
+0:03:49 - 0:03:56, dụng cái hàm đó là
+0:03:50 - 0:03:59, Imo hàm Ino với cái biến là x và x này á
+0:03:56 - 0:04:03, thì nó có các cái phần thc cái chiều đó
+0:03:59 - 0:04:05, là 60.000 nh 28 x 28 thì ở chiều đầu
+0:04:03 - 0:04:07, tiên chúng ta sẽ lấy ra tại một cái vị
+0:04:05 - 0:04:09, trí nào đó đó là Index và trong trường
+0:04:07 - 0:04:12, hợp này thì chúng ta sẽ cho Index là
+0:04:09 - 0:04:17, bằng 123 cái con số bất kỳ trong khoảng
+0:04:12 - 0:04:19, từ 1 từ 0 cho đến 60.000 rồi à thành
+0:04:17 - 0:04:21, phần còn lại thì sẽ là hai chấm hai chấm
+0:04:19 - 0:04:23, tức là chúng ta sẽ lấy toàn bộ Cái nội
+0:04:21 - 0:04:25, dung của Tấm ảnh ra để chúng ta hiển thị
+0:04:23 - 0:04:28, rồi sau đó chúng ta sẽ thực hiện thì
+0:04:25 - 0:04:30, thấy là cái ảnh này mình đoán đoán đó
+0:04:28 - 0:04:32, hình như là số 7 thì muốn biết chính xác
+0:04:30 - 0:04:35, nó là nhãn bao nhiêu thì chúng ta sẽ in
+0:04:32 - 0:04:37, ra là à
+0:04:35 - 0:04:42, nhãn của dữ
+0:04:37 - 0:04:44, liệu đó rồi Ở đây chúng ta sẽ lấy là y
+0:04:42 - 0:04:45, tr và chúng ta cũng sẽ truyền vào cái
+0:04:44 - 0:04:49, chỉ số là
+0:04:45 - 0:04:51, YX rồi Đúng như dự đoán thì cái nhãn này
+0:04:49 - 0:04:54, chính là nhãn của dữ liệu này chính là
+0:04:51 - 0:04:57, số 7 và chúng ta có thể thay đổi các cái
+0:04:54 - 0:04:58, chỉ số này ví dụ như là
+0:04:57 - 0:05:01, 10.000
+0:04:58 - 0:05:05, rồi đó thì đây là tương ứng nhãn của nó
+0:05:01 - 0:05:07, sẽ là số 3 bước tiếp theo đó là chúng ta
+0:05:05 - 0:05:10, sẽ tền xử lý chúng ta sẽ chuẩn hóa cái
+0:05:07 - 0:05:12, dữ liệu extrain và ext của mình bằng
+0:05:10 - 0:05:14, cách đó là thay vì đưa cái miền giá trị
+0:05:12 - 0:05:17, từ 0 đến 255 thì chúng ta sẽ đưa về cái
+0:05:14 - 0:05:19, miền giá trị là từ 0 cho đến 1 để giúp
+0:05:17 - 0:05:22, cho cái quá trình huấn luyện nó được
+0:05:19 - 0:05:25, nhanh hơn và đồng thời là cái giá trị y
+0:05:22 - 0:05:28, của mình cũng sẽ được à chuyển đổi từ
+0:05:25 - 0:05:31, cái dạng Nhãn là các chỉ số từ 0 cho đến
+0:05:28 - 0:05:35, 9 chúng ta sẽ đưa nó về cái dạng One h
+0:05:31 - 0:05:37, encoding cái dạng One h encoding thì One
+0:05:35 - 0:05:40, h encoding có nghĩa là gì à là ví dụ số
+0:05:37 - 0:05:42, 0 thì chúng ta sẽ đưa một cái vector
+0:05:40 - 0:05:45, trong đó có duy nhất một cái phần tử bật
+0:05:42 - 0:05:46, lên là là 1 và tất cả các cái phần tử
+0:05:45 - 0:05:51, còn lại sẽ để là số
+0:05:46 - 0:05:54, 0 r tương tự như vậy cho số 2 đi thì nó
+0:05:51 - 0:05:56, sẽ bật lên là 0 ở đây là 0 ở đây là 0 và
+0:05:54 - 0:05:59, nó sẽ bật lên Ở Đây Rồi tất cả các cái
+0:05:56 - 0:06:01, phần tử còn lại sẽ để ra số 0 đó thì đây
+0:05:59 - 0:06:04, là cái dạng on Hot and
+0:06:01 - 0:06:07, coding rồi Bước tiếp theo đó là chúng ta
+0:06:04 - 0:06:08, sẽ tiến hành cài đặt cái thực toán huấn
+0:06:07 - 0:06:11, luyện hay cụ thể đó là cài đặt cái mô
+0:06:08 - 0:06:14, hình thì cái mạng CNN ở đây chúng ta sẽ
+0:06:11 - 0:06:19, có các cái phương thức như là Build
+0:06:14 - 0:06:21, rồi train rồi constructor Vân Vân load
+0:06:19 - 0:06:25, getway vân vân thì ở đây có cái phương
+0:06:21 - 0:06:27, thức getway là chúng ta sẽ chưa cài đặt
+0:06:25 - 0:06:30, chúng ta sẽ cài đặt và để đưa lên trên
+0:06:27 - 0:06:32, xong hành cùng với lại cái hàm Trend kẹo
+0:06:30 - 0:06:35, Chúng ta quên à Xin lỗi chúng ta sẽ đưa
+0:06:32 - 0:06:38, lên trên ngang với lại phương thức là
+0:06:35 - 0:06:40, build không l chút nữa chúng ta sẽ quên
+0:06:38 - 0:06:42, cái quá trình train của mạng CNN rất là
+0:06:40 - 0:06:44, lâu nếu mà chúng ta quên thực hiện một
+0:06:42 - 0:06:46, cái gì đấy và chúng ta thực hiện lại thì
+0:06:44 - 0:06:48, nó sẽ tốn thời gian rất là nhiều thì ở
+0:06:46 - 0:06:52, đây chúng ta sẽ phải cho cái model nó
+0:06:48 - 0:06:55, biết đó là input dimension rồi đồng thời
+0:06:52 - 0:06:59, là các cái cấu hình ví dụ như số lượng
+0:06:55 - 0:07:01, futter n là 6 n số lượng futter là 16 nè
+0:06:59 - 0:07:05, rồi số các cái
+0:07:01 - 0:07:08, output của các lớp poly connected là 120
+0:07:05 - 0:07:10, 84 thì chúng ta sẽ phải tham số hóa bốn
+0:07:08 - 0:07:12, cái bộ số này riêng cái con số cuối cùng
+0:07:10 - 0:07:15, đó là 10 đó chính là
+0:07:12 - 0:07:16, ờ số lượng cái nhãn mà mình cần nhận
+0:07:15 - 0:07:19, diện rồi thì nó sẽ cố định là 10 tại vì
+0:07:16 - 0:07:23, mình ý trước tập dữ liệu này là là có 10
+0:07:19 - 0:07:26, mẫu 10 loại 10 10 nhãn 10 class và đồng
+0:07:23 - 0:07:30, thời thì chúng ta cũng sẽ tham số hóa
+0:07:26 - 0:07:32, cái hàm kích hoạt activation function
+0:07:30 - 0:07:35, rồi activation
+0:07:32 - 0:07:37, function rồi chúng ta sẽ có n
+0:07:35 - 0:07:40, convolution số 1
+0:07:37 - 0:07:43, n số 2 rồi
+0:07:40 - 0:07:43, NFC 1
+0:07:44 - 0:07:52, nf2 và mặt nhiên thì hàm activation
+0:07:48 - 0:07:55, chúng ta sẽ để là sigo chúng ta sẽ để là
+0:07:52 - 0:07:57, sigo rồi conion thì mặt nhiên chúng ta
+0:07:55 - 0:07:59, sẽ để là 6 giống như trong cái thiết kế
+0:07:57 - 0:08:02, ở đây
+0:07:59 - 0:08:06, 2 thì mặt nhiên chúng ta sẽ để là 16
+0:08:02 - 0:08:11, FC 1 thì chúng ta sẽ để là
+0:08:06 - 0:08:14, 120 và fc2 thì chúng ta sẽ để là
+0:08:11 - 0:08:16, 84 rồi sau đó thì chúng ta sẽ tiến hành
+0:08:14 - 0:08:20, cài đặt cái
+0:08:16 - 0:08:22, à các cái thành phần của cái mạng này
+0:08:20 - 0:08:24, bằng cách đó là chúng ta sẽ tiến hành
+0:08:22 - 0:08:27, lần lượt qua các
+0:08:24 - 0:08:31, cái lớp đối tượng qua cái lớp biến đổi
+0:08:27 - 0:08:31, lớp đầu tiên chính là cái lớp input
+0:08:32 - 0:08:40, input rồi input thì chúng ta sẽ cho biết
+0:08:35 - 0:08:40, cái Shap cái Shap của nó sẽ là bằng
+0:08:41 - 0:08:46, input
+0:08:43 - 0:08:48, dimension rồi và chúng ta sẽ trả ra một
+0:08:46 - 0:08:51, cái biến tên là
+0:08:48 - 0:08:54, input rồi tương tự như vậy thì chúng ta
+0:08:51 - 0:08:58, sẽ tiến
+0:08:54 - 0:09:02, hành chúng ta sẽ tiến hành thực
+0:08:58 - 0:09:05, hiện cái phép biến đổi conclusion thì ở
+0:09:02 - 0:09:10, đây là conion chúng ta sẽ sử dụng conion
+0:09:05 - 0:09:12, 2D và nó sẽ có các cái các cái tham số
+0:09:10 - 0:09:16, đầu tiên là số lượng futter thì chúng ta
+0:09:12 - 0:09:19, sẽ để là số lượng col số 1 cái tham số
+0:09:16 - 0:09:21, thứ hai là cal siz thì như hồi nãy chúng
+0:09:19 - 0:09:24, ta đề cập đó là kích thước của cái cal
+0:09:21 - 0:09:24, size này chính
+0:09:25 - 0:09:30, là kích thước của này nó sẽ là 3 x 3
+0:09:32 - 0:09:35, 3 x
+0:09:33 - 0:09:39, 3 rồi
+0:09:35 - 0:09:41, Strike thì ở đây chúng ta sẽ để mặc định
+0:09:39 - 0:09:45, là một do đó chúng ta sẽ không
+0:09:41 - 0:09:48, Ờ để cái Strike Ở Đây Rồi
+0:09:45 - 0:09:51, ping thì chúng ta sẽ để là send Tại vì
+0:09:48 - 0:09:53, trong cái sơ đồ này chúng ta thấy trong
+0:09:51 - 0:09:55, sơ đồ này chúng ta thấy là ảnh đầu vào
+0:09:53 - 0:09:57, và ảnh đầu ra có kích thước giống nhau
+0:09:55 - 0:10:01, ảnh đầu vào 28 28 thì ảnh đầu ra là 28
+0:09:57 - 0:10:07, 28 ảnh đầu vào là 14
+0:10:01 - 0:10:10, 14 thì ảnh đầu ra cũng sẽ là 14 x 14 thì
+0:10:07 - 0:10:13, qua cái phép biến đổi conion thì chúng
+0:10:10 - 0:10:16, ta thấy là cái kích thước bề ngang và bề
+0:10:13 - 0:10:18, cao là không thay đổi khi thực hiện cái
+0:10:16 - 0:10:19, phép conion do đó chúng ta sẽ để ping là
+0:10:18 - 0:10:24, bằng
+0:10:19 - 0:10:29, xem rồi đây thì chắc là mình sẽ
+0:10:24 - 0:10:29, phải điền cái cái cái cái
+0:10:33 - 0:10:38, b
+0:10:34 - 0:10:42, nữa b là bằng
+0:10:38 - 0:10:45, tr rồi thì cơ bản đó là nó đã đầy đủ
+0:10:42 - 0:10:46, những cái à Nó còn thiếu một cái nữa đó
+0:10:45 - 0:10:48, là cái
+0:10:46 - 0:10:52, activation
+0:10:48 - 0:10:52, activation activation này sẽ để
+0:10:52 - 0:10:58, trước sẽ ra
+0:10:55 - 0:11:01, bằng
+0:10:58 - 0:11:01, function
+0:11:06 - 0:11:13, Rồi Rồi như vậy thì chúng ta đã cài đặt
+0:11:09 - 0:11:15, à cho cái đối tượng tên là conion 2D và
+0:11:13 - 0:11:18, chúng ta sẽ phải truyền vào cho nó là
+0:11:15 - 0:11:23, cái input và trả ra nó sẽ ra là cái biến
+0:11:18 - 0:11:23, tên là C1 giống như trong cái sơ đồ ở
+0:11:24 - 0:11:31, đây rồi Tiếp theo thì chúng ta sẽ thử
+0:11:29 - 0:11:37, chạy ha Ok nó sẽ báo
+0:11:31 - 0:11:41, lỗi à 3 x 3 Ok nó không hiểu 3 x 3 là gì
+0:11:37 - 0:11:42, 3,3 rồi Hết Lỗi rồi bây giờ chúng ta sẽ
+0:11:41 - 0:11:45, thực hiện cái phép pulling pulling thì
+0:11:42 - 0:11:48, tương ứng đó chính là cái max pulling 2D
+0:11:45 - 0:11:52, ở đây ha và chúng ta sẽ có các cái tham
+0:11:48 - 0:11:56, số là full size thì mặt nhiên thì nó sẽ
+0:11:52 - 0:11:56, sử dụng đó là 2 x
+0:11:56 - 0:12:01, 2 do đó thì một cách tường minh ch chúng
+0:11:59 - 0:12:04, ta sẽ để ở đây là 2 x 2 thì với cái
+0:12:01 - 0:12:05, cooling mà bằng 2 x 2 như thế này thì
+0:12:04 - 0:12:09, cái kích thước của mình nó sẽ được giảm
+0:12:05 - 0:12:15, xuống một nửa Strike ở đây thì chúng ta
+0:12:09 - 0:12:17, sẽ để Strike là bằng bằng 2 để sau khi
+0:12:15 - 0:12:19, thực hiện cái ping này thì cái kích
+0:12:17 - 0:12:24, thước của nó sẽ giảm xuống
+0:12:19 - 0:12:29, nữa rồi ngoài ra thì có
+0:12:24 - 0:12:29, ping thì chúng ta sẽ để là SH
+0:12:30 - 0:12:36, rồi và chúng ta sẽ truyền cái đầu vào
+0:12:32 - 0:12:38, cho nó chính là C1 và đầu ra sẽ là S2
+0:12:36 - 0:12:41, giống như trong cái phên bản trong cái
+0:12:38 - 0:12:43, thiết kế ở đây rồi đối với cái phép biến
+0:12:41 - 0:12:46, đổi conion tiếp theo chúng ta sẽ copy
+0:12:43 - 0:12:50, xuống nhưng mà khi copy thì cần phải lưu
+0:12:46 - 0:12:54, ý là sửa lại thay vì ở đây để là input
+0:12:50 - 0:12:59, thì nó sẽ để là s S2 sẽ để là
+0:12:54 - 0:13:02, S2 rồi và đầu ra sẽ là C C3
+0:12:59 - 0:13:06, và số conclusion ở đây số filter ở đây
+0:13:02 - 0:13:10, nó sẽ là n con 2 kích thước không thay
+0:13:06 - 0:13:12, đổi lưu ý là hồi nãy kích thước là 3 x 3
+0:13:10 - 0:13:15, và nó sẽ tự biết cái input S2 kích thước
+0:13:12 - 0:13:17, cái dep là bao nhiêu thì nó sẽ chọn cái
+0:13:15 - 0:13:20, filter cho phù hợp do đó chúng ta không
+0:13:17 - 0:13:23, cần phải tường minh để chỉ là kích thước
+0:13:20 - 0:13:26, 3 nh 3 nhân bao nhiêu rồi activation thì
+0:13:23 - 0:13:30, chúng ta cũng tái sử dụng lại tiếp theo
+0:13:26 - 0:13:33, nó sẽ chuyển sang cái phép là
+0:13:30 - 0:13:38, pulling rồi thì đầu vào chúng ta sẽ có
+0:13:33 - 0:13:40, là C3 và nó sẽ tạo ra là S4 và cái cấu
+0:13:38 - 0:13:42, hình thì cũng tương tự cấu hình cũng sẽ
+0:13:40 - 0:13:46, tương
+0:13:42 - 0:13:47, tự rồi bây giờ chúng ta sẽ tiếp tục cài
+0:13:46 - 0:13:49, đặt cho cái phép biến đổi Fully
+0:13:47 - 0:13:50, connected thì để thực hiện được cái
+0:13:49 - 0:13:53, Fully connected này chúng ta sẽ phải có
+0:13:50 - 0:13:56, một cái bước là flatten đó thì chúng ta
+0:13:53 - 0:14:00, sẽ gọi cái đối tượng flatten ở đây và
+0:13:56 - 0:14:02, truyền vào cái S4 để trả ra là
+0:14:00 - 0:14:07, F
+0:14:02 - 0:14:10, C ở đây thì nó sẽ đặt tên là fc4 đi ha
+0:14:07 - 0:14:12, rồi Tại vì thực sự mà nói phép plon nó
+0:14:10 - 0:14:14, không có biến đổi gì hết tiếp theo thì
+0:14:12 - 0:14:16, chúng ta sẽ thực hiện cái phép Fully
+0:14:14 - 0:14:21, connected nó chính là
+0:14:16 - 0:14:23, den rồi và tham số đầu tiên là số lượng
+0:14:21 - 0:14:26, unit Tức là số lượng output neuron sẽ
+0:14:23 - 0:14:31, trả ra thì chúng ta sẽ lấy cái tham số
+0:14:26 - 0:14:31, fc1 này đưa vào
+0:14:32 - 0:14:40, rồi
+0:14:35 - 0:14:40, activation thì chúng ta sẽ để là add
+0:14:40 - 0:14:47, function rồi us
+0:14:44 - 0:14:51, by là bằng
+0:14:47 - 0:14:53, true rồi và chúng ta sẽ truyền vào cái
+0:14:51 - 0:14:56, biến đó là
+0:14:53 - 0:14:59, fc4 thì trong cái sơ đồ ở đây nó để là
+0:14:56 - 0:15:03, C5 nhưng mà ờ
+0:14:59 - 0:15:05, để đúng với lại cái cái tên của nó đó là
+0:15:03 - 0:15:08, Fully connected thì chúng ta sẽ đặt tên
+0:15:05 - 0:15:11, lại đó là fc5 fc5 rồi tương tự như vậy
+0:15:08 - 0:15:15, cho cái biến đổi tiếp theo chúng ta sẽ
+0:15:11 - 0:15:17, để đầu vào là fc5 đầu ra sẽ là fc6 và số
+0:15:15 - 0:15:22, neuron độ ra sẽ là
+0:15:17 - 0:15:27, fc2 rồi cuối cùng đó chính
+0:15:22 - 0:15:30, là output đó thì fc6 sẽ được truyền vào
+0:15:27 - 0:15:33, đây và đầu ra sẽ là output
+0:15:30 - 0:15:37, và số neuron của mình sẽ là 10 tại vì
+0:15:33 - 0:15:39, mình biết trước cái đầ ra của mình nó sẽ
+0:15:37 - 0:15:41, là 10 class riêng cái hạm activation
+0:15:39 - 0:15:45, function thì chúng ta sẽ phải để là sop
+0:15:41 - 0:15:46, max Tại vì đây là phân lớp dialog chứ
+0:15:45 - 0:15:48, không phải là phân lớp nhị phân Nếu mà
+0:15:46 - 0:15:50, phân lớp nhị phân thì chúng ta sẽ sử
+0:15:48 - 0:15:54, dụng sigo rồi cuối cùng thì chúng ta sẽ
+0:15:50 - 0:15:57, đóng gói toàn bộ cái input và output
+0:15:54 - 0:15:59, trong cái biến tên là model s. model sẽ
+0:15:57 - 0:16:02, là bằng Model
+0:15:59 - 0:16:05, rồi input và
+0:16:02 - 0:16:09, output rồi Như vậy thì chúng ta đã cài
+0:16:05 - 0:16:11, xong cho cái phần Build cái mô hình đối
+0:16:09 - 0:16:13, với cái hàm Trend thì chúng ta sẽ sử
+0:16:11 - 0:16:16, dụng optimizer là Adam thì đây là một
+0:16:13 - 0:16:18, trong những cái optimizer rất là hiệu
+0:16:16 - 0:16:20, quả nó giúp cho chúng ta thoát ra được
+0:16:18 - 0:16:22, những cái điểm cực tiểu cục bộ hàm loss
+0:16:20 - 0:16:25, thì chúng ta sẽ sử dụng
+0:16:22 - 0:16:28, CR chúng ta sẽ sử dụng là cross entropy
+0:16:25 - 0:16:30, categorical cross entropy tức là ch ta
+0:16:28 - 0:16:32, thực hiện phân l lớp nhiều lớp rồi độ đo
+0:16:30 - 0:16:36, thì chúng ta sẽ sử dụng đo đo để đánh
+0:16:32 - 0:16:39, giá là acacy về quay thì chúng ta
+0:16:36 - 0:16:43, sẽ trả về
+0:16:39 - 0:16:45, c.m. layer và chúng ta sẽ truyền vào cái
+0:16:43 - 0:16:48, chỉ số của cái layer mà mình muốn trả về
+0:16:45 - 0:16:48, xong rồi gọi hàm
+0:16:50 - 0:16:57, getway rồi Như vậy thì chúng ta đã cài
+0:16:53 - 0:17:01, đặt xong cái mạng CNN và bước tiếp theo
+0:16:57 - 0:17:06, thì chúng ta sẽ khởi tạo tạo các cái mô
+0:17:01 - 0:17:09, hình rồi CNN ch
+0:17:06 - 0:17:13, view và ở đây thì chúng ta sẽ copy xuống
+0:17:09 - 0:17:16, các cái tham số để tránh bị sơ
+0:17:13 - 0:17:18, xóa đầu tiên input dimension thì cái ảnh
+0:17:16 - 0:17:24, này của mình á nếu Thông thường chúng ta
+0:17:18 - 0:17:27, sẽ để là 28 r phy 28 Tuy nhiên cái
+0:17:24 - 0:17:30, conclusion cái m đồ mô hình confusion nó
+0:17:27 - 0:17:33, chỉ có thể thực hiện được khi nó phải là
+0:17:30 - 0:17:37, một cái tenser ba chiều do đó ở đây thì
+0:17:33 - 0:17:40, chúng ta sẽ để là 28 ph 28,1 và
+0:17:37 - 0:17:43, activation thì chúng ta sẽ để là sigo
+0:17:40 - 0:17:45, rồi conion số 1 Chúng ta sẽ để là 6
+0:17:43 - 0:17:48, conversion số 2 thì chúng ta sẽ để là 16
+0:17:45 - 0:17:51, và FC ở đây chúng ta sẽ để là một FC lớp
+0:17:48 - 0:17:55, số 1 Chúng ta sẽ để là 120 FC số 2 thì
+0:17:51 - 0:17:57, chúng ta sẽ để là 84 và hàm activation ở
+0:17:55 - 0:18:01, đây thì chúng ta sẽ để là
+0:17:57 - 0:18:03, hàm nữa rồi Bây giờ chúng ta sẽ chạy thử
+0:18:01 - 0:18:06, và chương trình thì chạy được rồi bây
+0:18:03 - 0:18:09, giờ chúng ta sẽ xem coi là cái mạng CNN
+0:18:06 - 0:18:11, này CH Summary xem có thể thực hiện được
+0:18:09 - 0:18:14, hay không để xem cái kích thước cái cái
+0:18:11 - 0:18:16, kiến trúc của cái mạng CN này thì chúng
+0:18:14 - 0:18:19, ta có thể thấy là trong cái mạng CNN này
+0:18:16 - 0:18:22, nó thỏa mãn được đúng như cái kiến trúc
+0:18:19 - 0:18:25, mà chúng ta mong muốn là bao gồm thực
+0:18:22 - 0:18:28, hiện cái phép colion số 1 với s filter
+0:18:25 - 0:18:32, thực hiện conversion số 2 với 16 filter
+0:18:28 - 0:18:36, rồi và cái kích thước của các cái tenser
+0:18:32 - 0:18:38, thì cũng giảm dần đó là từ 28 xuống 14
+0:18:36 - 0:18:43, xuống 7 giống như trong thiết kế ở đây
+0:18:38 - 0:18:46, và số neuron của mình sẽ là xin lỗi số
+0:18:43 - 0:18:50, tham số của mình nó sẽ là 100.000 tham
+0:18:46 - 0:18:50, số 100.000 tham số

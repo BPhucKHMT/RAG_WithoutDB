@@ -1,0 +1,129 @@
+0:00:00 - 0:00:05, Chủ đề, học sâu, machine learning, logistic regression, imageNet.
+0:00:05 - 0:00:10, Chủ đề, học sâu, machine learning, imageNet.
+0:00:30 - 0:00:38, Ví dụ như từ ensemble model này, một số tài liệu cũng có thể gọi là mô hình tổ hợp.
+0:00:45 - 0:00:53, Tuy nhiên, từ này như đã nói, tức là nó chưa thể hiện hết bản chất của cách thức huấn luyện của mô hình này.
+0:00:53 - 0:00:58, của cái mô hình này. Do đó thì ở đây chúng ta sẽ vẫn giữ nguyên cái tên gốc tiếng Anh của mình,
+0:00:58 - 0:01:00, đó chính là Ensemble Model.
+0:01:01 - 0:01:07, Và vị trí của cái bài học ngày hôm nay trong Machine Learning Pipeline đó chính là nó nằm ở đây.
+0:01:08 - 0:01:11, Ensemble Model đó là một cái mô hình để học
+0:01:12 - 0:01:17, và nó có cái sự kết hợp của nhiều cái mô hình con, nhiều cái mô hình thành phần
+0:01:17 - 0:01:24, để tạo thành một mô hình mới cho hiệu năng cao hơn, độ chính xác cao hơn
+0:01:24 - 0:01:28, và nó sẽ nằm trong bước xây dựng và huấn luyện mô hình.
+0:01:28 - 0:01:33, Thì nội dung của ngày hôm nay sẽ bao gồm 3 thành phần chính.
+0:01:33 - 0:01:40, Đầu tiên là chúng ta sẽ cùng tìm hiểu xem tại sao chúng ta cần phải có ensemble model này.
+0:01:40 - 0:01:44, Tiếp theo là các kỹ thuật cơ bản
+0:01:44 - 0:01:54, bao gồm kỹ thuật voting, tức là lấy phiếu bầu, kỹ thuật averaging, tức là chúng ta cộng trung bình
+0:01:54 - 0:02:05, và weighted average, tức là chúng ta sẽ tính trung bình có trọng số, thì cái từ average này là viết tắt của chữ averaging.
+0:02:05 - 0:02:18, Và cuối cùng đó chính là kỹ thuật nâng cao trong Ensemble Learning, ví dụ như Stacking, Blending, Bagging và đặc biệt đó là Boosting.
+0:02:18 - 0:02:32, Đầu tiên đó là Ensemble là gì? Ensemble Learning là gì? Mục tiêu của các mô hình máy học đó chính là chúng ta cần phải xây dựng một mô hình có tính chất tổng quát hóa cao.
+0:02:32 - 0:02:34, Đây chính là mục tiêu tối thượng
+0:02:34 - 0:02:36, Và tính tổng quát hóa cao này
+0:02:36 - 0:02:38, nó chỉ từ dữ liệu
+0:02:38 - 0:02:40, chỉ từ dữ liệu huấn luyện mà thôi
+0:02:40 - 0:02:42, Từ dữ liệu huấn luyện
+0:02:42 - 0:02:44, Tức là chúng ta chỉ với
+0:02:44 - 0:02:48, một tập con
+0:02:48 - 0:02:50, của dữ liệu
+0:02:50 - 0:02:52, trong tất cả những thứ dữ liệu
+0:02:52 - 0:02:54, có khả năng trên đời
+0:02:54 - 0:02:56, mà vẫn có khả năng là tổng quát hóa được
+0:02:56 - 0:02:58, Nếu như mô hình của mình mà
+0:02:58 - 0:03:00, học trên tất cả toàn bộ dữ liệu
+0:03:00 - 0:03:02, Cả toàn bộ dữ liệu thì không nói
+0:03:02 - 0:03:04, Còn ở đây là chúng ta làm sao
+0:03:04 - 0:03:06, Với những bộ dữ liệu ít hơn
+0:03:06 - 0:03:08, Nhưng mà nó vẫn phải đạt được tính tổng quát hóa cao
+0:03:10 - 0:03:12, Và có 2 cách chính
+0:03:12 - 0:03:14, Để cho mình có thể cải thiện được
+0:03:14 - 0:03:16, Tính tổng quát của mô hình của mình
+0:03:16 - 0:03:18, Đó chính là
+0:03:18 - 0:03:20, Cách đầu tiên đó là chúng ta sẽ cải thiện
+0:03:20 - 0:03:22, Hiệu suất của mô hình máy học
+0:03:22 - 0:03:24, Hay nói cách khác đó là chúng ta sẽ tập trung
+0:03:24 - 0:03:26, Để đi thiết kế
+0:03:26 - 0:03:28, Mô hình của mình
+0:03:28 - 0:03:30, sao cho nó đạt được tính tổng quát hóa cao.
+0:03:31 - 0:03:34, Thì ở đây chính là phương pháp kinh điển
+0:03:34 - 0:03:35, mà mình cần phải thực hiện.
+0:03:36 - 0:03:37, Phương pháp thứ 2
+0:03:37 - 0:03:40, đó chính là chúng ta sẽ kết hợp nhiều mô hình.
+0:03:42 - 0:03:44, Từ nhiều mô hình này, nó chính là cái tổ hợp
+0:03:44 - 0:03:46, mà mình có đề cập bước mà giới thiệu.
+0:03:47 - 0:03:49, Chúng ta sẽ kết hợp nhiều mô hình lại với nhau
+0:03:50 - 0:03:54, và tổng hợp các kết quả của nhiều mô hình đó,
+0:03:55 - 0:03:57, tổng hợp các kết quả dự đoán của nhiều mô hình đó
+0:03:58 - 0:04:01, Lúc đó nó gọi là Ensemble Learning.
+0:04:01 - 0:04:06, Vì vậy, bài học ngày hôm nay chúng ta sẽ tập trung vào hướng tiếp cận số 2
+0:04:06 - 0:04:11, trong việc cải thiện tính tổng quát hóa của mô hình máy học.
+0:04:11 - 0:04:17, Hình ở bên dưới đây minh họa cho ý tưởng của Ensemble Learning.
+0:04:17 - 0:04:23, Ở đây chúng ta sẽ thấy có 3 tập điểm là hình vuông, tam giác và hình tròn.
+0:04:23 - 0:04:33, Đường này là đường phân lớp cho tập hình vuông so với những phần tử còn lại.
+0:04:33 - 0:04:40, Vì vậy, để phân loại 3 tập điểm này, tại thời điểm này là khó.
+0:04:40 - 0:04:51, Chúng ta chỉ có thể tìm ra được một weak classifier, tức là một mô hình phân lớp yếu.
+0:04:51 - 0:04:58, Và tương tự như vậy, ở bên đây chúng ta sẽ có một cái mô hình phân lớp yếu, một cái Weak Classifier,
+0:04:58 - 0:05:01, cái từ Weak Classifier thì nó sẽ như thế này.
+0:05:05 - 0:05:17, Nhưng nếu như chúng ta ensemble, chúng ta tổ hợp nó lại, thì nó sẽ tạo ra một cái Strong Classifier.
+0:05:17 - 0:05:24, Tại sao cái này lại có thể trở thành một cái Strong Classifier?
+0:05:24 - 0:05:30, Tại vì chúng ta thấy là với cái đường này nó chỉ có thể giúp cho chúng ta phân biệt được cái điểm hình vuông
+0:05:30 - 0:05:38, với lại những cái điểm còn lại. Đối với cái đường này thì nó chỉ có thể giúp cho chúng ta phân biệt được cái hình tròn với những điểm còn lại.
+0:05:38 - 0:05:43, Nhưng nếu chúng ta kết hợp hai cái Classifier này lại với nhau để tạo thành một cái đường liên tục như thế này
+0:05:43 - 0:05:46, thì nó đã giúp chúng ta tách ra làm 3 phần
+0:05:47 - 0:05:51, và như vậy thì nó sẽ tạo ra 1 strong classifier
+0:05:51 - 0:05:55, Đương nhiên, hình này chỉ mang tính chất, làm minh họa
+0:05:55 - 0:05:57, và ý tưởng của thuật toán
+0:05:57 - 0:06:01, còn chi tiết, phía sau thì chúng ta sẽ còn rất nhiều những phương pháp
+0:06:02 - 0:06:04, ensemble khác, hiệu quả hơn
+0:06:06 - 0:06:09, Thì tại sao chúng ta cần phải Ensemble Learning?
+0:06:09 - 0:06:15, Tại sao Ensemble Learning giúp chúng ta đạt được độ hiệu quả cao?
+0:06:15 - 0:06:22, Đó chính là câu hỏi lớn nhất mà chúng ta cần phải giải thích để tìm câu trả lời trong slide này.
+0:06:22 - 0:06:29, Đầu tiên, Ensemble Learning giúp chúng ta giải quyết vấn đề Variance,
+0:06:29 - 0:06:38, tức là sự biến động của mô hình của mình khi chúng ta thay đổi trên những tập dữ liệu khác nhau.
+0:06:38 - 0:06:49, Với cùng một mô hình, chúng ta thay đổi những tập dữ liệu khác nhau, thì mô hình của mình vẫn phải giữ được sự ổn định, ít có sự biến động.
+0:06:49 - 0:06:57, Đó chính là vấn đề về giảm variance. Tại sao ensemble có thể giúp chúng ta giảm được variance?
+0:06:57 - 0:07:10, Vì chúng ta sử dụng nhiều mô hình để có thể lấy trung bình, chúng ta sẽ tính giá trị trung bình của giá trị dự đoán, thì nó sẽ gần với lại giá trị thực tế hơn.
+0:07:10 - 0:07:19, Sử dụng nhiều mô hình thì giúp cho chúng ta kéo giá trị tổng hợp gần với giá trị thực tế.
+0:07:19 - 0:07:25, Và giá trị thực tế này chính là mô hình cuối cùng của mình cần phải đạt được.
+0:07:25 - 0:07:30, Cái việc này sẽ làm cho chúng ta giảm variance.
+0:07:30 - 0:07:36, Và cái việc giảm variance thì đồng nghĩa là chúng ta đang tránh được hiện tượng overfitting.
+0:07:36 - 0:07:41, Overfitting là gì? Nó chỉ đúng trên tập dữ liệu training.
+0:07:41 - 0:07:56, Nhưng nó lại rất là tệ trên tập dữ liệu test, tức là tập dữ liệu mà mình chưa thấy.
+0:07:56 - 0:08:01, Điều đó có nghĩa là nó đang có sự không ổn định của cái mô hình của mình.
+0:08:01 - 0:08:04, Vì sự dao động của mình quá lớn
+0:08:04 - 0:08:07, Và việc giảm variance giảm sự dao động này
+0:08:07 - 0:08:11, Chính là giúp cho chúng ta giải quyết hiện tượng overfitting này
+0:08:11 - 0:08:13, Và để giảm được variance này
+0:08:13 - 0:08:16, Chúng ta sẽ sử dụng phương pháp cộng trung bình
+0:08:16 - 0:08:21, Cộng trung bình sẽ giúp cho kéo các sai số của mình về nhỏ nhất
+0:08:21 - 0:08:27, Và thuật toán Random Forest là một trong những thuật toán như vậy
+0:08:27 - 0:08:34, Thuật toán Random Forest đã kết hợp nhiều cây quyết định để làm giảm variance
+0:08:35 - 0:08:43, Trong phần mô hình phân lớp, chúng ta đã tìm hiểu về thuật toán Random Forest này rồi
+0:08:43 - 0:08:51, Đây là một trong những thuật toán tiêu biểu, giúp cho chúng ta giải quyết vấn đề variance
+0:08:51 - 0:08:54, và nó cũng thuộc trong nhóm Ensemble Learning
+0:08:54 - 0:09:06, Phía dưới đây là hình ảnh minh họa cho mô hình Ensemble Learning có thể giải quyết được hiệu quả cho vấn đề variance.
+0:09:06 - 0:09:17, Đầu vào chúng ta sẽ có những dữ liệu input và chúng ta sẽ đưa cho mô hình số 1, số 2, số 3 và mô hình thứ n.
+0:09:17 - 0:09:30, và chúng ta sẽ có được một chiến thuật để kết hợp, tổ hợp các kết quả của N mô hình này lại để tạo ra một giá trị output duy nhất.
+0:09:30 - 0:09:39, Ngoài ra, Ensemble Learning còn giúp chúng ta giải quyết được vấn đề Bias.
+0:09:39 - 0:09:47, Vấn đề BIAS có nghĩa là cái mô hình của mình rất khác xa so với mô hình thực tế
+0:09:47 - 0:09:54, Mô hình thực tế là khi chúng ta làm trên một dữ liệu tổng quát khách quan
+0:09:54 - 0:10:05, Còn mô hình của mình chỉ có thể tìm ra được những hàm dự đoán và mang tính chất gọi là cục bộ trên những mẫu dữ liệu cục bộ thôi
+0:10:05 - 0:10:07, Chứ không có tính tổng quát.
+0:10:07 - 0:10:14, Vì vậy thì mỗi một mô hình yếu, một weak classifier thì nó chỉ có thể đoán đúng
+0:10:14 - 0:10:17, cho một số tình huống dữ liệu.
+0:10:17 - 0:10:20, Như chúng ta biết, dữ liệu của mình sẽ rất là lớn.
+0:10:20 - 0:10:28, Và những mô hình yếu thì nó sẽ giúp chúng ta giải quyết được những tình huống cục bộ như thế này thôi.
+0:10:28 - 0:10:33, Chứ nó không giúp chúng ta giải quyết được những tình huống toàn diện.
+0:10:33 - 0:10:40, Nhưng nếu như chúng ta kết hợp nhiều mô hình yếu lại để tận dụng được điểm mạnh của mỗi mô hình,
+0:10:40 - 0:10:43, chúng ta kết hợp mô hình này với mô hình này,
+0:10:50 - 0:10:55, thì nó sẽ khắc phục được những trường hợp mà mô hình đã từng sai.
+0:10:55 - 0:11:00, Nghĩa là với mỗi mô hình yếu, nó sẽ có những tình huống đang sai.
+0:11:00 - 0:11:09, Và chúng ta sẽ dùng nhiều mô hình yếu khác để khắc phục cho những trường hợp mà mô hình yếu này đang sai.
+0:11:09 - 0:11:13, Tức là các mô hình có tính bổ trợ cho nhau.
+0:11:13 - 0:11:23, Các mô hình yếu sẽ phải có tính bổ trợ cho nhau để giúp cho mô hình này khắc phục được những điểm yếu của mô hình kia.
+0:11:23 - 0:11:31, Đó chính là ý tưởng tại sao Ensemble Learning có thể giúp cho mình giải quyết vấn đề Bias.
+0:11:31 - 0:11:41, Cũng tương tự như vậy, vấn đề Bias này cũng dựa trên chiến thuật kết hợp giữa các mô hình
+0:11:41 - 0:11:49, kết hợp giữa các mô hình với nhau như thế nào để mô hình số 1 có thể bổ trợ cho mô hình số 2, khắc phục được cho mô hình số 2.
+0:11:49 - 0:11:55, Mô hình số 2 có thể khắc phục được cho mô hình số 3 thì nó sẽ phụ thuộc rất nhiều vào chiến thuật kết hợp này.
+0:11:55 - 0:12:00, Chiến thuật kết hợp này sẽ làm cho mô hình của mình giảm được tính bias.
+0:12:00 - 0:12:12, Với việc giảm được vấn đề về bias và giảm sự biến động của mô hình,
+0:12:12 - 0:12:30, Các bạn có thể thử nghiệm các loại dữ liệu khác nhau để giải quyết vấn đề về Overfitting.
+0:12:30 - 0:12:38, Đây là 2 lý do chính mà Ensemble Learning đã đem lại sự hiệu quả cho Ensemble Learning.

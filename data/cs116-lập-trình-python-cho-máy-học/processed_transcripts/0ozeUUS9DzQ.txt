@@ -1,0 +1,373 @@
+0:00:01 - 0:00:06, rồi và tương tự như vậy cho cái việc là
+0:00:04 - 0:00:09, chúng ta làm trên cái chỉ mục dạng
+0:00:06 - 0:00:12, boolean. Chỉ mục dạng boolean thì thường
+0:00:09 - 0:00:14, được sử dụng để lọc ra những cái phần tử
+0:00:12 - 0:00:16, thỏa mãn một cái tính chất nào đó, các
+0:00:14 - 0:00:19, cái phần tử thỏa mãn tính chất nào đó. Ví
+0:00:16 - 0:00:24, dụ ở trong đây A
+0:00:19 - 0:00:27, là gồm, là một cái ma trận gồm là
+0:00:24 - 0:00:30, các phần tử là 1 2 3 4 5 6 và chúng ta
+0:00:27 - 0:00:33, sẽ có một cái boolean Index là a lớn hơn 2.
+0:00:30 - 0:00:35, Thì lúc này boolean Index của mình nó sẽ
+0:00:33 - 0:00:38, là gì? False False. Hai cái phần tử đầu
+0:00:35 - 0:00:40, tiên là False False. Tại vì 1 của mình nó
+0:00:38 - 0:00:43, đều nhỏ, nó không có lớn hơn 2 nên nó sẽ
+0:00:40 - 0:00:45, là bằng False. Nhưng mà hai cái hàng tiếp
+0:00:43 - 0:00:48, theo là 3 4 5 6 thì đều là lớn hơn 2. Do đó
+0:00:45 - 0:00:51, nó sẽ trở là True True. Boolean Index của
+0:00:48 - 0:00:54, mình sẽ là cái ma trận như thế này. Và
+0:00:51 - 0:00:57, khi chúng ta truyền `a[boolean Index]` thì
+0:00:54 - 0:00:58, nó cũng tương đương với cái việc là
+0:00:57 - 0:01:02, chúng ta có thể ghi gọn lại là `a[a > 2]`.
+0:00:58 - 0:01:07, Nó sẽ ra cái kết quả như
+0:01:02 - 0:01:10, sau, đó là một cái array là một cái vector
+0:01:07 - 0:01:14, các cái phần tử trong cái ma trận A này
+0:01:10 - 0:01:16, có giá trị lớn hơn 2, đó là 3 4 5 6. Thì
+0:01:14 - 0:01:19, đây là hai cách. Thì mình thích viết cái
+0:01:16 - 0:01:21, cách ở dưới hơn, đó nó gọn hơn. `a > 2`
+0:01:19 - 0:01:24, nó sẽ trả về một cái boolean dạng như là
+0:01:21 - 0:01:26, Index như thế này, và chúng ta đóng thêm
+0:01:24 - 0:01:28, một, đưa nó vào bên trong cái dấu ngoặc
+0:01:26 - 0:01:31, vuông này, thì hàm ý đó là chúng ta sẽ
+0:01:28 - 0:01:33, lấy ra những cái phần tử có giá trị lớn.
+0:01:31 - 0:01:35, Và chúng ta sẽ có các cái phương thức
+0:01:33 - 0:01:38, khác nữa cũng được sử dụng rất là phổ
+0:01:35 - 0:01:41, biến: `argmax` sẽ là trả về phần
+0:01:38 - 0:01:44, tử lớn nhất thì `argmax` sẽ trả về cái
+0:01:41 - 0:01:46, chỉ số của phần tử lớn nhất. `argmin` sẽ
+0:01:44 - 0:01:49, là trả về cái chỉ số của phần tử nhỏ
+0:01:46 - 0:01:51, nhất. `argsort` là chúng ta thay vì
+0:01:49 - 0:01:53, chúng ta `sort` và in ra các giá trị theo
+0:01:51 - 0:01:56, thứ tự giảm dần hoặc tăng dần thì `argsort`
+0:01:53 - 0:02:00, nó sẽ trả về các cái chỉ số của các
+0:01:56 - 0:02:02, phần tử sau khi đã `sort` xong. `where` là để lấy
+0:02:00 - 0:02:04, những chỉ số thỏa mãn một phần tử nào,
+0:02:02 - 0:02:08, thỏa mãn một điều kiện nào
+0:02:04 - 0:02:13, đó. Rồi thì chúng ta thấy cái array ở đây.
+0:02:08 - 0:02:15, `argmax` của A. Thì `np.max(A)` nó là số 9
+0:02:13 - 0:02:19, đúng không? Thì số 9 ở đây nó sẽ có hai
+0:02:15 - 0:02:21, giá trị, số 9 là 9 ở đây và 9 ở đây. Thì `argmax`
+0:02:19 - 0:02:24, nó sẽ trả về cái phần tử đầu tiên,
+0:02:21 - 0:02:30, đó chính là phần tử này. Chỉ số của nó sẽ
+0:02:24 - 0:02:32, là 0 1 2, tức là phần tử 2 ở đây. Rồi `argmin`
+0:02:30 - 0:02:36, thì ở đây giá trị nhỏ nhất của mình
+0:02:32 - 0:02:39, sẽ là -3 và cái chỉ số của mình sẽ là 0
+0:02:36 - 0:02:42, 1 2 3, tức là chỉ số
+0:02:39 - 0:02:44, 3. Như vậy là phần tử thứ ba sẽ cho giá
+0:02:42 - 0:02:46, trị là nhỏ nhất.
+0:02:44 - 0:02:49, `argsort` thì nó sẽ sắp xếp theo
+0:02:46 - 0:02:51, thứ tự giảm dần à, xin lỗi, sắp xếp theo
+0:02:49 - 0:02:53, thứ tự tăng dần, và cái giá trị mà mình
+0:02:51 - 0:02:56, trả về của cái hàm `argsort` này chính là
+0:02:53 - 0:02:57, các chỉ số của các phần tử được sắp xếp
+0:02:56 - 0:03:00, theo thứ tự tăng dần. Tương tự như vậy
+0:02:57 - 0:03:02, ha, cho các cái ví dụ dưới.
+0:03:00 - 0:03:06, `np.where` rồi,
+0:03:02 - 0:03:10, `np.where(a >= np.max(a))` Tức là ở
+0:03:06 - 0:03:13, đây cái ý của cái câu lệnh này đó là hãy
+0:03:10 - 0:03:16, chỉ ra những cái vị trí, những cái chỉ
+0:03:13 - 0:03:18, mục nào mà của các phần tử đạt được cái
+0:03:16 - 0:03:22, giá trị là lớn nhất. Thì ở đây có hai
+0:03:18 - 0:03:26, phần tử là tại vị trí số 2 và số 7. Vị
+0:03:22 - 0:03:31, trí số 2 là đây và vị trí số 7 là
+0:03:26 - 0:03:34, đây. Rồi, cái số 3, cái mục phần thứ ba đó
+0:03:31 - 0:03:35, chính là chúng ta có thể tạo ra được rất
+0:03:34 - 0:03:37, nhiều những cái kiểu dữ liệu khác nhau,
+0:03:35 - 0:03:40, chứ không phải là những số dạng số nguyên
+0:03:37 - 0:03:43, như ở trên đây. Chúng ta có hỗ trợ những
+0:03:40 - 0:03:45, cái số như là số thực nè, rồi thậm chí là
+0:03:43 - 0:03:48, số nguyên nhưng mà có cái số lượng phần
+0:03:45 - 0:03:50, tử, xin lỗi, có cái khả năng biểu diễn lớn,
+0:03:48 - 0:03:54, tức là có kích thước lớn. Ví dụ như là `int64`.
+0:03:50 - 0:03:57, Đó thì ở đây chúng ta chạy thử
+0:03:54 - 0:04:00, ha. Kiểu dữ liệu của mình là kiểu `int64`
+0:03:57 - 0:04:05, nè, `float64` nè, và số thực à số nguyên `int64`.
+0:04:00 - 0:04:08, Rồi array mà, tức là array có hỗ trợ
+0:04:05 - 0:04:11, các cái thao tác tính toán, có hỗ trợ các
+0:04:08 - 0:04:15, thao tác số học. Thì ở đây chúng ta có
+0:04:11 - 0:04:17, một cái lưu ý quan trọng. Nếu như cái NumPy
+0:04:15 - 0:04:19, array của mình nó có các cái hàm nào mà
+0:04:17 - 0:04:22, đã được cài đặt sẵn rồi thì chúng ta ưu
+0:04:19 - 0:04:24, tiên sử dụng những hàm đó thay vì chúng
+0:04:22 - 0:04:27, ta cài đặt lại. Ở đây chúng ta thấy là
+0:04:24 - 0:04:32, cái hàm tính tổng tất cả các phần tử
+0:04:27 - 0:04:34, trong array A có 100 triệu phần tử, có
+0:04:32 - 0:04:36, 100 triệu phần tử thì nếu như chúng ta
+0:04:34 - 0:04:39, thực hiện cái lệnh này nó chỉ tốn của
+0:04:36 - 0:04:43, chúng ta có 76 ms. Trong khi đó nếu như
+0:04:39 - 0:04:45, chúng ta thực hiện với cái vòng lặp for
+0:04:43 - 0:04:48, duyệt các phần tử từ đầu cho đến cuối và
+0:04:45 - 0:04:49, chúng ta cộng dồn thì cái tốc độ nó cực
+0:04:48 - 0:04:51, kỳ
+0:04:49 - 0:04:55, chậm. Thì cái ví dụ này cho chúng ta
+0:04:51 - 0:04:57, thấy đó là thay vì chúng ta cài đặt lại
+0:04:55 - 0:05:00, thì đừng nên như vậy, mà hãy sử dụng tận
+0:04:57 - 0:05:02, dụng tối đa những cái hàm có sẵn của NumPy
+0:05:00 - 0:05:04, thì tốc độ nó sẽ nhanh hơn rất nhiều.
+0:05:02 - 0:05:06, Thì ở đây chúng ta thấy nè, cũng là hàm
+0:05:04 - 0:05:08, tính tổng nhưng mà ở đây nó sẽ tốn hết
+0:05:06 - 0:05:12, 20 giây, trong khi ở đây chưa tới 1 giây,
+0:05:08 - 0:05:14, chưa tới 0.1 giây. Tốc độ rất là nhanh.
+0:05:12 - 0:05:16, Thì chúng ta sẽ cố gắng đó là sử dụng
+0:05:14 - 0:05:18, những cái hàm có sẵn ha. Ngoài ra thì
+0:05:16 - 0:05:20, chúng ta cũng cố gắng sử dụng những cái
+0:05:18 - 0:05:24, phương pháp dạng vector hóa. Ví dụ ở đây
+0:05:20 - 0:05:27, chúng ta cộng hai cái vector này là `[1, 2]`
+0:05:24 - 0:05:30, cộng với 1 thì thay vì chúng ta viết
+0:05:27 - 0:05:31, vòng for cộng 1 với 1 cộng 2 với 1 thì
+0:05:30 - 0:05:34, chúng ta có thể dùng trực tiếp là `data`
+0:05:31 - 0:05:37, cộng 1, tức là chúng ta sẽ lấy hai cái
+0:05:34 - 0:05:39, vector cộng trực tiếp với nhau thì tốc độ
+0:05:37 - 0:05:42, nó sẽ nhanh hơn rất nhiều so với việc
+0:05:39 - 0:05:44, chúng ta viết vòng for. Thì toán tử cộng này
+0:05:42 - 0:05:47, nó cũng tương đương với lại cái hàm là
+0:05:44 - 0:05:49, hàm `np.add`.
+0:05:47 - 0:05:53,
+0:05:49 - 0:05:57, Rồi, tương tự như vậy cho phép
+0:05:53 - 0:06:01, trừ. Và đối với phép nhân thì chúng ta sẽ
+0:05:57 - 0:06:04, có cái phép là `x * y`, tức là đây là nhân
+0:06:01 - 0:06:07, theo từng phần tử hay còn gọi là Element-
+0:06:04 - 0:06:07, wise.
+0:06:07 - 0:06:14, Đó, thì cái cách là `x * y` với lại `np.multiply(x, y)`
+0:06:12 - 0:06:17, nó cũng tương đương nhau và
+0:06:14 - 0:06:19, cho kết quả giống nhau. Thì đây là nhân
+0:06:17 - 0:06:21, Element-wise, tức là nhân Element-wise. Tức là nhân
+0:06:19 - 0:06:25, theo từng phần tử. Thì số phần tử của X
+0:06:21 - 0:06:30, và số phần tử của Y nó phải giống nhau.
+0:06:25 - 0:06:31, Tương tự như vậy cho phép chia, tính căn.
+0:06:30 - 0:06:34, Để mà chúng ta muốn thực hiện cái phép
+0:06:31 - 0:06:36, nhân mà nhân dạng nhân ma trận trong đại
+0:06:34 - 0:06:38, số tuyến tính. Trong đại số tuyến tính
+0:06:36 - 0:06:41, thì hai ma trận A và B nhân nhau (A nhân
+0:06:38 - 0:06:43, với B) thì số cột của A phải
+0:06:41 - 0:06:46, trùng với số dòng của
+0:06:43 - 0:06:47, B. Thì ở đây chúng ta thấy có ba cột và ở
+0:06:46 - 0:06:49, đây phải có ba dòng thì mới có thể nhân
+0:06:47 - 0:06:52, được với
+0:06:49 - 0:06:54, nhau. Thì để thực hiện được cái phép nhân
+0:06:52 - 0:06:56, ma trận này, chúng ta sẽ phải sử dụng cái hàm đó
+0:06:54 - 0:06:59, là hàm `dot`. Hàm
+0:06:56 - 0:07:03, `dot` là
+0:06:59 - 0:07:06, `v.dot(w)` và `np.dot(v, w)`. Thì hai cái cách này
+0:07:03 - 0:07:09, hoàn toàn tương tự nhau ha, `v.dot(w)` hoặc là
+0:07:06 - 0:07:11, `np.dot(v, w)`. Chúng ta sẽ truyền V và W. Còn một
+0:07:09 - 0:07:15, cái toán tử khác đó chính là toán tử
+0:07:11 - 0:07:15, `@` nó cũng là nhân ma
+0:07:17 - 0:07:24, trận. Đó thì cái kết quả của mình
+0:07:21 - 0:07:30, nó ra giống nhau.
+0:07:24 - 0:07:30, Rồi đây ba cách.
+0:07:33 - 0:07:37, Rồi ngoài các cái hàm `argmin`,
+0:07:35 - 0:07:40, `argmax` thì ở đây chúng ta thấy là
+0:07:37 - 0:07:44, NumPy có hỗ trợ rất nhiều những cái hàm phổ
+0:07:40 - 0:07:46, thông. Ví dụ như hàm `max`, hàm `min`, hàm `sum`
+0:07:44 - 0:07:49, và thậm chí là hàm tính trung bình.
+0:07:46 - 0:07:49, Rồi hàm tính trung bình tất cả các phần
+0:07:50 - 0:07:56, tử. Rồi ở đây chúng ta sẽ thêm một cái
+0:07:54 - 0:07:58, một cái cách thức nữa, đó là nếu như
+0:07:56 - 0:08:01, chúng ta không muốn tìm giá trị lớn nhất
+0:07:58 - 0:08:04, cho tất cả các phần tử của X,
+0:08:01 - 0:08:06, hoặc là tìm giá trị nhỏ nhất trên tất
+0:08:04 - 0:08:08, cả phần tử của X, mà chúng ta đang muốn
+0:08:06 - 0:08:10, tìm theo những cái phần tử lớn nhất theo
+0:08:08 - 0:08:12, từng dòng hoặc là phần tử lớn nhất theo
+0:08:10 - 0:08:16, từng cột, thì chúng ta sẽ truyền vào cái
+0:08:12 - 0:08:19, `axis` của mình đây. `axis` bằng 0 tức là
+0:08:16 - 0:08:21, chúng ta đang làm trên cột. `axis` bằng 0
+0:08:19 - 0:08:25, chúng ta làm trên cột. Ví dụ ở đây chúng
+0:08:21 - 0:08:28, ta có `data` là ma trận [[1, 2], [5, 3], [4, 6]].
+0:08:25 - 0:08:30, Theo cột đầu tiên giá trị lớn nhất
+0:08:28 - 0:08:31, sẽ là 5. Theo cột tiếp theo giá trị lớn
+0:08:30 - 0:08:35, nhất sẽ là
+0:08:31 - 0:08:39, 6. Thì cái hàm này nó sẽ trả về hai phần
+0:08:35 - 0:08:41, tử là 5 và 6. Nếu chúng ta cho `axis` là
+0:08:39 - 0:08:44, bằng 1 thì chúng ta sẽ đang làm theo
+0:08:41 - 0:08:47, từng hàng. Thì hàng đầu tiên giá trị lớn
+0:08:44 - 0:08:50, nhất của mình sẽ là 2. Hàng tiếp theo giá
+0:08:47 - 0:08:52, trị lớn nhất sẽ là 5. Hàng tiếp theo giá
+0:08:50 - 0:08:54, trị lớn nhất sẽ là 6. Như vậy chúng ta sẽ
+0:08:52 - 0:09:00, có 2, 5,
+0:08:54 - 0:09:02, 6. Còn `axis` bằng 0 tức là 5 và 6 thôi.
+0:09:00 - 0:09:04, Thì chi tiết các cái hàm khác chúng ta
+0:09:02 - 0:09:07, có thể tham khảo thêm trong cái nguồn
+0:09:04 - 0:09:11, tài liệu ở
+0:09:07 - 0:09:13, đây. Mathematical
+0:09:11 - 0:09:17, functions.
+0:09:13 - 0:09:20, Rồi ngoài ra thì trong NumPy sẽ có hỗ trợ
+0:09:17 - 0:09:22, thao tác `transpose` (hay còn gọi là chuyển vị) là
+0:09:20 - 0:09:25, chuyển một cái ma trận từ dạng như thế
+0:09:22 - 0:09:30, này [[1, 2, 3], [4, 5, 6]] lật ngược nó lại thành
+0:09:25 - 0:09:32, [[1, 4], [2, 5], [3, 6]]. Và thì đây cũng là
+0:09:30 - 0:09:34, một trong những thao tác dùng rất là phổ
+0:09:32 - 0:09:41, biến trong đại số tuyến
+0:09:34 - 0:09:43, tính. Rồi, ví dụ array 1D [1,2,3] thì transpose vẫn là [1,2,3]. Rồi hàm
+0:09:41 - 0:09:47, `reshape` tức là hàm này giúp cho chúng ta
+0:09:43 - 0:09:49, định hình lại cái
+0:09:47 - 0:09:51, kích thước của dữ liệu của mình. Ví dụ ở
+0:09:49 - 0:09:54, bên trái chúng ta có cái data là 1 2 3 4
+0:09:51 - 0:10:03, 5 6, tức là một cái vector. Chúng ta muốn
+0:09:54 - 0:10:03, biến nó thành một cái ma trận kích thước
+0:09:56 - 0:10:03, là 2 x 3 thì chúng ta sẽ dùng hàm là
+00:09:58 - 0:10:07, `data.reshape(2,3)`. Nó sẽ tạo ra là [[1, 2, 3]], số dòng [[4,
+00:10:03 - 0:10:09, 5, 6]]. Tương tự như vậy cho `data.reshape(3,2)`.
+00:10:07 - 0:10:12, Thì ở đây nó sẽ tạo ra một cái ma
+00:10:09 - 0:10:17, trận kích thước là ba dòng và hai cột là
+00:10:12 - 0:10:17, [[1,2]], xuống dòng [[3,4]], rồi
+00:10:18 - 0:10:26, [[5,6]]. Rồi thì khi chúng ta `reshape` thì nếu
+00:10:23 - 0:10:30, như chúng ta truyền vào một cái giá trị
+00:10:26 - 0:10:32, đó là -1 thì hàm ý đó là thư viện NumPy
+0:10:30 - 0:10:37, của mình sẽ tính xem cái số phần tử
+00:10:32 - 0:10:42, của mình nó sẽ là bao nhiêu. Đó ví dụ ở
+0:10:37 - 0:10:44, đây `w` ban đầu của mình á là gồm có các
+0:10:42 - 0:10:47, cái là một array (hoặc vector) gồm ba
+0:10:44 - 0:10:51, phần tử, ví dụ như [1, 2, 3]. Thì khi chúng ta `reshape(-1)`
+010:47 - 0:10:54, thì nó đang biến cái array này thành một cái dạng
+0:10:51 - 0:10:57, vector và nó không cần phải chỉ ra cái
+0:10:54 - 0:10:59, số phần tử của mình là bao nhiêu. Chúng
+0:10:57 - 0:11:02, ta chỉ cần truyền vào -1 thì NumPy nó sẽ
+0:11:02 - 0:11:06, tự biết là à, ở đây có ba phần tử nên kết
+0:11:05 - 0:11:11, quả của mình nó sẽ là
+0:11:06 - 0:11:11, 3. Tương tự như vậy cho hàm
+0:11:12 - 0:11:19, `squeeze`. Rồi nếu như chúng ta muốn
+0:11:15 - 0:11:21, chuyển cái hàm này về trở lại cái ma
+0:11:19 - 0:11:23, trận đúng không, thì chúng ta sẽ truyền
+0:11:21 - 0:11:25, vào một cái `tuple` và chúng ta cho nó biết
+0:11:23 - 0:11:28, là à cái số cột của mình là 1,
+0:11:25 - 0:11:32, số cột của mình nó sẽ là 1, còn số hàng của mình
+0:11:28 - 0:11:34, là bao nhiêu thì tự NumPy nó sẽ tính. Tự NumPy nó
+0:11:32 - 0:11:36, sẽ tính là bao nhiêu. Thì ở đây `y` của
+0:11:34 - 0:11:39, mình nó có ba phần tử,
+0:11:36 - 0:11:42, nên nếu chỉ có một cột thì số
+011:39 - 0:11:45, hàng của mình nó sẽ là ba
+0:11:42 - 0:11:46, hàng. Và cuối cùng đó chính là cơ chế
+0:11:45 - 0:11:49, `broadcasting`.
+0:11:46 - 0:11:50, Đây là một trong những cơ
+0:11:49 - 0:11:52, chế rất là hiệu
+0:11:50 - 0:11:55, quả giúp cho chúng ta đơn giản hóa cái
+0:11:52 - 0:11:58, công thức của mình. Thì ở đây chúng ta sẽ
+0:11:55 - 0:12:00, có các cái ví dụ nếu như cái array của
+0:11:58 - 0:12:01, mình,
+0:12:00 - 0:12:03, khi chúng ta thực hiện cái phép cộng
+0:12:01 - 0:12:05, hoặc là phép nhân hoặc các cái phép tính
+0:12:03 - 0:12:07, mà kích thước của các cái phần tử nó
+0:12:05 - 0:12:10, không giống nhau. Ví dụ bên trái
+0:12:07 - 0:12:13, là một cái vector ba phần tử.
+0:12:10 - 0:12:16, Nhưng B bên phải nó là
+0:12:13 - 0:12:17, một giá trị `scalar` thì tự động nó sẽ
+0:12:16 - 0:12:21, chuyển cái giá trị `scalar` này thành một
+0:12:17 - 0:12:22, cái vector là `[1,1,1]`. Và khi đó chúng ta sẽ
+0:12:21 - 0:12:25, cộng
+0:12:22 - 0:12:28, lại. Ở đây thì chúng ta sẽ thấy
+0:12:25 - 0:12:31, là array của mình bên trái sẽ là một cái
+0:12:28 - 0:12:35, array hai chiều, trong đó thì có hai hàng
+012:31 - 0:12:39, và ba cột. Còn bên phải á là một cái
+012:35 - 0:12:42, vector chỉ có ba phần tử thôi, ví dụ `[1, 2, 3]`. Thì
+012:39 - 0:12:45, tự động nó sẽ tạo ra thành, biến cái
+012:42 - 0:12:47, vector này thành cái ma trận, biến cái
+012:45 - 0:12:49, vector này thành một cái ma trận và ma
+012:47 - 0:12:51, trận này có kích thước bằng với lại cái
+012:49 - 0:12:53, ma trận bên tay trái. Sau đó nó sẽ cộng
+012:51 - 0:12:56, lại thì ra cái giá trị ở đây. Thì ở đây
+012:53 - 0:13:01, chúng ta sẽ có một số cái quy tắc `broadcasting`. Quy
+012:56 - 0:13:01, tắc đầu tiên đó đó là:
+0:13:02 - 0:13:09, Nếu hai array có số chiều khác
+0:13:06 - 0:13:12, nhau. Ví dụ ở đây ha, array A có `shape` là (3,) (tức là một chiều),
+0:13:09 - 0:13:16, khác số chiều so với array B (có hai chiều).
+0:13:12 - 0:13:20, Thì kích thước của array
+0:13:16 - 0:13:23, với số chiều ít hơn sẽ được chèn thêm
+0:13:20 - 0:13:26, một về phía đầu bên tay trái. Tức là
+0:13:23 - 0:13:29, `shape` (3,) đúng không? `Tuple`
+0:13:26 - 0:13:32, ở đây chỉ có một phần
+0:13:29 - 0:13:35, tử là 3 thì nó sẽ chèn thêm số 1 ở trước
+0:13:32 - 0:13:37, số 3 này, tức là nó sẽ chuyển về cái `shape`
+0:13:35 - 0:13:39, là (1,3). Như vậy số chiều của array A lúc này
+013:37 - 0:13:41, là hai chiều, đúng bằng cái số chiều ở
+013:39 - 0:13:44, đây, đúng bằng cái số chiều ở đây. Để chi
+013:41 - 0:13:46, để sau này chúng ta có thể áp dụng những
+013:44 - 0:13:48, cái quy tắc số 2, số 3 có thể giúp cho
+013:46 - 0:13:50, chúng ta tính toán tiếp. Thì cái cơ chế
+013:48 - 0:13:55, đầu tiên đó là nó sẽ tự mở rộng từ một chiều
+013:50 - 0:14:00, lên thành hai chiều. Rồi,
+013:55 - 0:14:00, ở đây thì cái thao tác C là bằng a + b
+014:00 - 0:14:05, thì chúng ta thấy là nó đã áp dụng thêm
+014:04 - 0:14:07, một số cái quy tắc ở phía sau nữa để có
+014:05 - 0:14:09, thể thực hiện được ha, chứ còn nếu mà chỉ
+014:07 - 0:14:13, là `shape` là (1,3) mà cộng với lại cái (3,1) thì
+014:09 - 0:14:15, nó chưa thể thực hiện được đâu. Nó sẽ
+014:13 - 0:14:18, phải `convert` thêm để biến cái kết quả
+014:15 - 0:14:21, của mình, biến cái `shape` của mình là từ (1,3)
+014:18 - 0:14:24, hoặc là (3,1) về thành cái `shape` đó là (3,3).
+014:21 - 0:14:26, Thì nó phải vận dụng thêm các cái quy
+014:24 - 0:14:29, tắc số 2 và số 3. Nhưng để ý ở đây đó là
+014:26 - 0:14:32, hai cái
+014:29 - 0:14:35, ờ, hai cái toán, hai cái phần tử là A và B
+014:32 - 0:14:38, thì A số chiều ít hơn nó đã được chuyển
+014:35 - 0:14:42, về cái số chiều lớn hơn. Đó là cái ý
+014:38 - 0:14:44, chính nhất trong cái ví dụ này. Còn tại
+014:42 - 0:14:47, sao `c = a + b` được thì chúng ta phải chờ
+014:44 - 0:14:51, xem các cái quy tắc số 2, số 3.
+014:47 - 0:14:55, Rồi nếu `shape` của hai cái array không
+014:51 - 0:14:57, khớp nhau, tức là nó đã có cùng số chiều
+014:55 - 0:14:59, rồi nhưng mà cái cái `shape` nó không giống
+014:57 - 0:15:03, nhau thì ở một cái chiều nào đó thì
+014:59 - 0:15:06, array nào có kích thước bằng 1 à, có kích
+015:03 - 0:15:08, thước chiều bằng 1 sẽ được kéo dài
+015:06 - 0:15:12, ra theo cái chiều đó để cho nó khớp với
+015:08 - 0:15:13, lại cái array còn lại. Thì ở đây chúng ta
+015:12 - 0:15:16, sẽ lấy ví dụ là dễ hiểu nhất. A của mình
+015:13 - 0:15:22, nó đang có cái `shape` là (3,1),
+015:16 - 0:15:27, và B của mình á nó có cái `shape` là (3,2).
+015:22 - 0:15:29, Thì ở đây chúng ta thấy là hai cái `shape` này
+015:27 - 0:15:31, có số chiều giống nhau (cùng hai chiều), nhưng mà cái số phần tử theo
+015:29 - 0:15:33, từng chiều thì nó khác nhau. Ví dụ 3 ở
+015:31 - 0:15:35, đây là giống với 3 ở đây, 1 ở đây thì nó
+015:33 - 0:15:37, khác với lại 2 ở đây. Do đó nó sẽ ngầm
+015:35 - 0:15:41, biến cái (3,1) này thành cái (3,2). Nó sẽ ngầm
+015:37 - 0:15:45, biến cái (3,1) này thành (3,2) để cho cái số chiều
+015:41 - 0:15:48, của nó trùng với cái thằng này. Thì
+015:45 - 0:15:51, 1 là ít hơn 2 nên nó sẽ `clone` (mở rộng) ra từ (3,1)
+015:48 - 0:15:55, để tạo ra thành cái (3,2)
+015:51 - 0:15:56, và số kích thước của nó để khớp với
+015:55 - 0:15:59, lại cái kích thước với B này. Khi
+015:56 - 0:16:01, đó kết quả của mình nó sẽ là gì? Kết quả
+015:59 - 0:16:05, sẽ là: A ban đầu là [[1],[2],[3]] thì sau khi clone sẽ thành [[1,1],[2,2],[3,3]].
+016:01 - 0:16:08,
+016:05 - 0:16:13,
+016:08 - 0:16:15,
+016:13 - 0:16:15,
+016:22 - 0:16:29, là [[1,1]] nè, rồi xuống dòng
+016:29 - 0:16:33, [[2,2]] nè, clone ra theo
+016:35 - 0:16:42, hàng [[3,3]].
+016:38 - 0:16:47, Đó. Còn B này của mình thì nó đang là (3,2)
+016:42 - 0:16:49, sẵn rồi đó, tức là [[4,5]], xuống dòng [[6,7]],
+016:47 - 0:16:53, xuống dòng [[8,9]]. Thế thì khi cộng lại thì
+016:49 - 0:16:57, nó sẽ là (4 + 1), (5 + 1) đúng không? (4 + 1) là
+016:53 - 0:17:01, 5, (5 + 1) là 6. Rồi tương tự như vậy, (6 + 2), (7 + 2)
+016:57 - 0:17:01, thì sẽ thành là
+017:02 - 0:17:12, ờ (6 + 2) đúng không, sẽ là thành 8. (7
+017:07 - 0:17:17, + 2) sẽ là thành 9. Rồi (8 + 3) sẽ thành
+017:12 - 0:17:19, 11. (9 + 3) sẽ là 12. Như vậy thì ở đây ý
+017:17 - 0:17:23, lớn nhất của nó đó là nó đã ngầm biến
+017:19 - 0:17:26, cái (3,1) thành (3,2) bằng cách đó là các phần tử
+017:23 - 0:17:28, của vector (hoặc cột) đó sẽ được nhân bản (clone)
+017:26 - 0:17:32, để tăng cái số phần tử (theo chiều đó).
+017:28 - 0:17:35, Và quy tắc số ba đó chính
+017:32 - 0:17:37, là nếu như hai cái array không có cái
+017:35 - 0:17:40, chiều nào bằng nhau, hoặc không có chiều
+017:37 - 0:17:44, nào bằng 1,
+017:40 - 0:17:46, thì nó báo
+017:44 - 0:17:48, lỗi đó.
+017:46 - 0:17:50,
+017:48 - 0:17:53,
+017:50 - 0:17:56,
+017:53 - 0:18:01,
+017:56 - 0:18:03, Thì, ví dụ array A có `shape` (3,4) và array B có `shape` (2,3) thì
+018:01 - 0:18:05, không có cái chiều nào bằng nhau (tức là 4 khác 3, và 3 khác 2)
+018:03 - 0:18:07, và cũng không có chiều nào bằng 1, do đó nó sẽ báo
+018:05 - 0:18:09, lỗi.
+018:07 - 0:18:14, Rồi, và trên đây thì đó là toàn bộ
+018:09 - 0:18:14, những cái nội dung
+018:16 - 0:18:23, về những cái phần chính nhất trong cái
+018:21 - 0:18:25, thư viện NumPy và chúng ta sẽ sử dụng xuyên
+018:23 - 0:18:28, suốt trong cái môn học này.
+018:25 - 0:18:32,
+018:28 - 0:18:32,

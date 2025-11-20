@@ -9,7 +9,7 @@
 0:00:46 - 0:00:50, Cách đầu tiên đó là chúng ta sẽ sử dụng trực tiếp
 0:00:50 - 0:00:53, Chúng ta sẽ sử dụng trực tiếp, nghĩa là sao?
 0:00:53 - 0:00:58, Nếu như tập data set của mình, đây là tập data set của mình
-0:00:58 - 0:01:06, Nó có các cái nhãn, ví dụ như là máy bay, xe, mèo, con ngựa, con chó
+0:00:58 - 0:01:06, Nó có các cái nhãn, ví dụ như là máy bay, xe, mèo, con ngựa, con quân
 0:01:06 - 0:01:14, Và đối tượng cho bài toán mà mình đang quan tâm, đó là cat, dog, horse, tức là mèo, chó, và ngựa
 0:01:14 - 0:01:22, Vô tình 3 đối tượng này trùng với lại các đối tượng trong tập dataset mà chúng ta đã huấn luyện trước đó
 0:01:22 - 0:01:27, Nó đã trùng thì chúng ta sẽ sử dụng trực tiếp luôn
@@ -31,20 +31,20 @@
 0:03:11 - 0:03:17, và ở đây, đúng không, kết thúc bước feature extraction này chúng ta sẽ ra một feature
 0:03:17 - 0:03:19, Chúng ta sẽ ra feature
 0:03:19 - 0:03:24, và chúng ta sẽ sử dụng feature này để đi kết hợp với một bộ phân lớp khác
-0:03:24 - 0:03:28, ví dụ ở đây chúng ta có thể sử dụng bộ phân lớp là k-nearest neighbors
+0:03:24 - 0:03:28, ví dụ ở đây chúng ta có thể sử dụng bộ phân lớp là K-Nearest Neighbor
 0:03:28 - 0:03:31, chúng ta có thể sử dụng bộ phân lớp là SVM
 0:03:31 - 0:03:34, thì feature này nếu mà chiếu trong không gian
 0:03:34 - 0:03:38, chúng ta sẽ có các feature như thế này
 0:03:38 - 0:03:51, và khi có một cái feature mới cần phải phân loại
 0:03:51 - 0:03:53, ví dụ ở đây chúng ta sẽ có một cái feature mới
-0:03:53 - 0:03:56, thì chúng ta sẽ chạy cái thuật toán k-nearest neighbors
+0:03:53 - 0:03:56, thì chúng ta sẽ chạy cái thuật toán k-nearest-neighbor
 0:03:56 - 0:03:59, ví dụ trong trường hợp này k là bằng 3
 0:03:59 - 0:04:03, chúng ta sẽ lấy ra 3 cái feature gần với lại cái điểm
 0:04:03 - 0:04:05, mà mình cần phân loại này nhất
 0:04:05 - 0:04:09, sau đó chúng ta sẽ xem xem cái nhãn của 3 cái feature này
 0:04:09 - 0:04:16, đó là gì? Ví dụ như nếu đây là Dog, đây là Dog, đây là Cat
 0:04:16 - 0:04:21, như vậy chúng ta sẽ kết luận cái nhãn của cái điểm này, đó chính là Dog
-0:04:21 - 0:04:28, Đây chính là ý tưởng của thuật toán k láng giềng gần nhất, k-nearest neighbors
+0:04:21 - 0:04:28, Đây chính là ý tưởng của thuật toán k láng giềng gần nhất, k nearest neighbor
 0:04:28 - 0:04:31, tương tự như vậy cho thuật toán SVM là thuật toán phân lớp nhị phân
 0:04:31 - 0:04:39, thì chúng ta sẽ có hai tập, ví dụ feature ở đây, tương ứng là cái điểm này
 0:04:39 - 0:04:42, và chúng ta sẽ có hai tập là tròn và cộng

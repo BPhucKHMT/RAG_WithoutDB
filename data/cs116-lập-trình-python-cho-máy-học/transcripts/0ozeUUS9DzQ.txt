@@ -1,0 +1,374 @@
+0:00:01 - 0:00:06, rồi và tương tự như vậy cho cái việc là
+0:00:04 - 0:00:09, chúng ta làm trên cái chỉ mục dạng
+0:00:06 - 0:00:12, bullin chỉ mục dạng bulin thì thường
+0:00:09 - 0:00:14, được sử dụng để lọc ra những cái phần tử
+0:00:12 - 0:00:16, thỏa mãn một cái tính chất nào đó các
+0:00:14 - 0:00:19, cái phần tử Thoa mãn tính chất nào đó ví
+0:00:16 - 0:00:24, dụ ở trong đây A
+0:00:19 - 0:00:27, là gồm cái cái là một cái ma trận gồm là
+0:00:24 - 0:00:30, các phần tử là 1 2 3 4 5 6 và chúng ta
+0:00:27 - 0:00:33, sẽ có một cái mulin Index là a lớn hơn 2
+0:00:30 - 0:00:35, thì lúc này bulling Index của mình nó sẽ
+0:00:33 - 0:00:38, là gì phone phone hai cái phần tử đầu
+0:00:35 - 0:00:40, tiên là phone phone Tại vì 1 của mình nó
+0:00:38 - 0:00:43, đều nhỏ nó không có lớn hơn 2 nên nó sẽ
+0:00:40 - 0:00:45, là bằng phone Nhưng mà hai cái hàng tiếp
+0:00:43 - 0:00:48, theo là 34 56 thì đều là lớn hơn 2 do đó
+0:00:45 - 0:00:51, nó sẽ trẽ là tru tr bulling Index của
+0:00:48 - 0:00:54, mình sẽ là cái ma trận như thế này và
+0:00:51 - 0:00:57, khi chúng ta truyền a bulling Index thì
+0:00:54 - 0:00:58, nó cũng tương đương với cái việc là
+0:00:57 - 0:01:02, chúng ta có thể ghi Gọn lại là a Mở ngặc
+0:00:58 - 0:01:07, a lớn hơn 2 ha nó sẽ ra cái C ả như
+0:01:02 - 0:01:10, sau đó là các là array là một cái vector
+0:01:07 - 0:01:14, các cái phần tử trong cái Ma trận a này
+0:01:10 - 0:01:16, có giá trị lớn hơn 2 đó là 3 4 5 6 thì
+0:01:14 - 0:01:19, đây là hai cách thì mình thích viết cái
+0:01:16 - 0:01:21, cách ở dưới hơn đó nó gọn hơn a lớn hơn
+0:01:19 - 0:01:24, 2 nó sẽ trả về một cái mulin dạng như là
+0:01:21 - 0:01:26, Index như thế này và chúng ta đóng thêm
+0:01:24 - 0:01:28, một đưa nó vào bên trong cái dấu mẫ ngặc
+0:01:26 - 0:01:31, vuông này thì hàm ý đó là chúng ta sẽ
+0:01:28 - 0:01:33, lấy ra những cái phần tử có giá trị Nứ
+0:01:31 - 0:01:35, và chúng ta sẽ có các cái phương thức
+0:01:33 - 0:01:38, khác nữa cũng được sử dụng rất là phổ
+0:01:35 - 0:01:41, biến à Woman max max sẽ là trả về phần
+0:01:38 - 0:01:44, tử lớn nhất thì argum max sẽ trả về cái
+0:01:41 - 0:01:46, chỉ số của phần tử lớn nhất argum Min sẽ
+0:01:44 - 0:01:49, là trả về cái chỉ số của phần tử nhỏ
+0:01:46 - 0:01:51, nhất argum sort là chúng ta thay vì
+0:01:49 - 0:01:53, chúng ta sort và In ra các giá trị theo
+0:01:51 - 0:01:56, thứ tự giảm dần hoặc tăng dần thì argum
+0:01:53 - 0:02:00, s nó sẽ trả về các cái chỉ số của các
+0:01:56 - 0:02:02, phần tử sau khi đã s xong We là để lấy
+0:02:00 - 0:02:04, những chỉ số thỏa mãn một phần tử nào
+0:02:02 - 0:02:08, một thỏa mãn một điều kiện nào
+0:02:04 - 0:02:13, đó rồi thì chúng ta thấy cái array ở đây
+0:02:08 - 0:02:15, à max của A thì max của A nó là số 9
+0:02:13 - 0:02:19, đúng không Thì số 9 ở đây nó sẽ có hai
+0:02:15 - 0:02:21, giá trị số 9 là 9 ở đây và 9 ở đây thì à
+0:02:19 - 0:02:24, max nó sẽ trả về cái phần tưng đầu tiên
+0:02:21 - 0:02:30, đó chính là phần tử này chỉ số của nó sẽ
+0:02:24 - 0:02:32, là 0 1 2 tức là phần tử 2 ở đây rồi à g
+0:02:30 - 0:02:36, Min thì ở đây giá trị nhỏ nhất của mình
+0:02:32 - 0:02:39, sẽ là -3 và cái chỉ số của mình sẽ là 0
+0:02:36 - 0:02:42, 1 2 3 Tức là chỉ số
+0:02:39 - 0:02:44, 3 như vậy là phần tử thứ ba sẽ cho giá
+0:02:42 - 0:02:46, trị là nhỏ nhất
+0:02:44 - 0:02:49, argument source thì nó sẽ sắp xếp theo
+0:02:46 - 0:02:51, thứ tự giảm dần à Xin lỗi sắp xếp theo
+0:02:49 - 0:02:53, thứ tự tăng dần và cái giá trị mà mình
+0:02:51 - 0:02:56, trả về của cái hàm arum s này chính là
+0:02:53 - 0:02:57, các chỉ số của các phần tử được sắp xếp
+0:02:56 - 0:03:00, theo thứ tượng tăng dật tương tự như vậy
+0:02:57 - 0:03:02, ha cho các cái ví dụ dưới
+0:03:00 - 0:03:06, npw rồi
+0:03:02 - 0:03:10, npw rồi a lớn hơn hoặc bằng max Tức là ở
+0:03:06 - 0:03:13, đây Cái ý của cái câu lệnh này đó là Hãy
+0:03:10 - 0:03:16, chỉ ra những cái vị trí những cái chỉ
+0:03:13 - 0:03:18, mục nào mà của các phần tử đạt được cái
+0:03:16 - 0:03:22, giá trị là lớn nhất thì ở đây có hai
+0:03:18 - 0:03:26, phần tử là tại vị trí số 2 và số 7 vị
+0:03:22 - 0:03:31, trí số 2 là đây và vị trí số 7 là
+0:03:26 - 0:03:34, đây rồi cái số 3 cái mục phần thứ ba đó
+0:03:31 - 0:03:35, chính là chúng ta có thể tạo ra được rất
+0:03:34 - 0:03:37, nhiều những cái kiểu dữ liệu khác nhau
+0:03:35 - 0:03:40, chứ không phải là những số dạng số ngyên
+0:03:37 - 0:03:43, như ở trên đây chúng ta có hỗ trợ những
+0:03:40 - 0:03:45, cái số như là số thực nè rồi Thậm chí là
+0:03:43 - 0:03:48, số nguyên Nhưng mà có cái số lượng phần
+0:03:45 - 0:03:50, tử xin lỗi có cái khả năng biểu diện lớn
+0:03:48 - 0:03:54, tức là có kích thức lớn ví dụ như là in
+0:03:50 - 0:03:57, 64 đó thì ở đây Chúng ta chạy thử
+0:03:54 - 0:04:00, ha kiểu dữ liệu của mình là kiểu in 64
+0:03:57 - 0:04:05, nè flash 64 nè và số thực à số nguyên số
+0:04:00 - 0:04:08, tư rồi array ma tức là array có hỗ trợ
+0:04:05 - 0:04:11, các cái thao tác tính toán có hỗ trợ các
+0:04:08 - 0:04:15, thao tác số học thì ở đây Chúng ta có
+0:04:11 - 0:04:17, một cái lưu ý quan trọng nếu như cái num
+0:04:15 - 0:04:19, array của mình nó có các cái hàm nào mà
+0:04:17 - 0:04:22, đã được cài đặt sẵn rồi thì chúng ta ưu
+0:04:19 - 0:04:24, tiên sử dụng những hàm đó thay vì chúng
+0:04:22 - 0:04:27, ta cài đặt lại ở đây chúng ta thấy là
+0:04:24 - 0:04:32, cái hàm tính tổng tất cả các phần tử
+0:04:27 - 0:04:34, trong array A có 100 triệu phần tử có
+0:04:32 - 0:04:36, 100 triệu phần tử thì nếu như chúng ta
+0:04:34 - 0:04:39, thực hiện cái lệnh này nó chỉ tốn của
+0:04:36 - 0:04:43, chúng ta có 76 MJ trong khi đó nếu như
+0:04:39 - 0:04:45, chúng ta thực hiện với cái vòng lập for
+0:04:43 - 0:04:48, duyệt các phần tử từ đầu cho đến cuối và
+0:04:45 - 0:04:49, chúng ta cộng dồn thì cái tốc độ nó cực
+0:04:48 - 0:04:51, kỳ
+0:04:49 - 0:04:55, chọng thì cái ví dụ này cho chúng ta
+0:04:51 - 0:04:57, thấy đó là thay vì chúng ta cài đặt lại
+0:04:55 - 0:05:00, thì đừng nên như vậy mà hãy sử dụng tận
+0:04:57 - 0:05:02, dụng tối đa những cái hàm có sẵn của n
+0:05:00 - 0:05:04, pi thì tốc độ nó sẽ nhanh hơn rất nhiều
+0:05:02 - 0:05:06, thì ở đây chúng ta thấy nè cũng là hàm
+0:05:04 - 0:05:08, tính tổng nhưng mà ở đây nó sẽ tốn hết
+0:05:06 - 0:05:12, 20 giây trong khi ở đây chưa tới 1 giây
+0:05:08 - 0:05:14, chưa tới 0.1 giây tốc độ rất là nhanh
+0:05:12 - 0:05:16, thì chúng ta sẽ cố gắng đó là sử dụng
+0:05:14 - 0:05:18, những cái hàm có sẵn ha Ngoài ra thì
+0:05:16 - 0:05:20, chúng ta cũng cố gắng sử dụng những cái
+0:05:18 - 0:05:24, phương pháp dạng vectơ hóa Ví dụ ở đây
+0:05:20 - 0:05:27, chúng ta cộng hai cái vectơ này là 1 2
+0:05:24 - 0:05:30, cộng với 1 thì thay vì chúng ta lấy viết
+0:05:27 - 0:05:31, vòng For cộng 1 với 1 cộ 2 với 1 thì
+0:05:30 - 0:05:34, chúng ta có thể dùng trực tiếp là data
+0:05:31 - 0:05:37, cộng on tức là chúng ta sẽ lấy hai cái
+0:05:34 - 0:05:39, vectơ cộng trực tiếp với nhau thì tốc độ
+0:05:37 - 0:05:42, nó sẽ nhanh hơn rất nhiều so với việc
+0:05:39 - 0:05:44, chúng ta viết m for thì toán tử cộng này
+0:05:42 - 0:05:47, nó cũng tương đương với lại cái hàm là
+0:05:44 - 0:05:49, hàm NP
+0:05:47 - 0:05:53, chs
+0:05:49 - 0:05:57, rồi tương tự như vậy cho phép
+0:05:53 - 0:06:01, trừ và đối với phép nhân thì chúng ta sẽ
+0:05:57 - 0:06:04, có cái phép là y sa y tức là đây là nhân
+0:06:01 - 0:06:07, theo từng phần tử hay còn gọi là Element
+0:06:04 - 0:06:07, wise r
+0:06:07 - 0:06:14, đó thì cái cách là x nh y với lại NP ch
+0:06:12 - 0:06:17, multiply xy nó cũng tương đương nhau và
+0:06:14 - 0:06:19, cho kết quả giống nhau thì đây là nhân
+0:06:17 - 0:06:21, Element y và nhân Element y Tức là nhân
+0:06:19 - 0:06:25, theo từng phần tử thì số phần tử của X
+0:06:21 - 0:06:30, và số phần tử của y nó phải giống nhau
+0:06:25 - 0:06:31, tương tự như vậy cho phép chia tính căn
+0:06:30 - 0:06:34, để mà chúng ta muốn thực hiện cái phép
+0:06:31 - 0:06:36, nhân mà nhân dạng nhân ma trận trong đại
+0:06:34 - 0:06:38, số tuyến tính trong đại số tuyến tính
+0:06:36 - 0:06:41, thì hai Ma trận a và b nhân nhau a nhân
+0:06:38 - 0:06:43, với b thì số cột của A số cột của A phải
+0:06:41 - 0:06:46, trùng với số dòng của
+0:06:43 - 0:06:47, b thì ở đây chúng ta thấy có ba cột và ở
+0:06:46 - 0:06:49, đây phải có ba dòng thì mới có thể nhân
+0:06:47 - 0:06:52, được với
+0:06:49 - 0:06:54, nhau thì để thực hiện được cái phép nhân
+0:06:52 - 0:06:56, này chúng ta sẽ phải sử dụng cái hàm Đó
+0:06:54 - 0:06:59, là hàm dot hàm
+0:06:56 - 0:07:03, dot là
+0:06:59 - 0:07:06, v. dot và np.dot thì hai cái cách này
+0:07:03 - 0:07:09, hoàn toàn tương tự nhau ha vw hoặc là
+0:07:06 - 0:07:11, np.dot chúng ta sẽ truyền V và w còn một
+0:07:09 - 0:07:15, cái toán tượ khác đó chính là toán tượ
+0:07:11 - 0:07:15, Am nó cũng là nhân ma
+0:07:17 - 0:07:24, trận đó thì cái số liệu của mình cái kết
+0:07:21 - 0:07:30, quả của mình nó ra giống nhau
+0:07:24 - 0:07:30, rồi đây ba cách
+0:07:33 - 0:07:37, rồi ngoài các cái hàm argument me
+0:07:35 - 0:07:40, argument max thì ở đây chúng ta thấy là
+0:07:37 - 0:07:44, l có hỗ trợ rất nhiều những cái hàm phổ
+0:07:40 - 0:07:46, thông Ví dụ như hàm Max hàm Min hàm Sum
+0:07:44 - 0:07:49, Và thậm chí là hàm tính trung bình là
+0:07:46 - 0:07:49, hàm tính trung bình tất cả các phần
+0:07:50 - 0:07:56, tử rồi Ở đây chúng ta sẽ thêm một cái
+0:07:54 - 0:07:58, một cái cách thức nữa đó là nếu như
+0:07:56 - 0:08:01, chúng ta không muốn tìm giá trị lớn nhất
+0:07:58 - 0:08:04, cho tất cả các phần tử của x
+0:08:01 - 0:08:06, à hoặc là tìm giá trị nhỏ nhất trên tất
+0:08:04 - 0:08:08, cả phần tử của X mà chúng ta đang muốn
+0:08:06 - 0:08:10, tìm theo những cái phần tử lớn nhất theo
+0:08:08 - 0:08:12, từng dòng hoặc là phần tử lớn nhất theo
+0:08:10 - 0:08:16, từng cột thì chúng ta sẽ truyền vào cái
+0:08:12 - 0:08:19, assist của mình đây assist bằng 0 tức là
+0:08:16 - 0:08:21, chúng ta đang làm trên cột asit bằng 0
+0:08:19 - 0:08:25, chúng ta làm trên cột Ví dụ ở đây chúng
+0:08:21 - 0:08:28, ta có data là 1 2 5 3 4 6 rồi 1 2 3 3 4
+0:08:25 - 0:08:30, 6 và theo cột đầu tiên giá trị lớn nhất
+0:08:28 - 0:08:31, sẽ là 5 theo Cột tiếp theo giá trị lớn
+0:08:30 - 0:08:35, nhất sẽ là
+0:08:31 - 0:08:39, 6 thì cái hàm này nó sẽ trả về hai phần
+0:08:35 - 0:08:41, tử là 5 và 6 Nếu ch chúng ta cho AIS là
+0:08:39 - 0:08:44, bằng 1 thì chúng ta sẽ đang làm theo
+0:08:41 - 0:08:47, từng hàng thì hàng đầu tiên giá trị lớn
+0:08:44 - 0:08:50, nhất của mình sẽ là 2 hàng tiếp theo giá
+0:08:47 - 0:08:52, trị lớn nhất sẽ là 5 hàng tiếp theo giá
+0:08:50 - 0:08:54, trị đến nhất sẽ là 6 như vậy chúng ta sẽ
+0:08:52 - 0:09:00, có 2 5
+0:08:54 - 0:09:02, 6 256 còn asis bằng 0 tức là 5 và 6 Thôi
+0:09:00 - 0:09:04, thì chi tiết các cái hàm khác chúng ta
+0:09:02 - 0:09:07, có thể tham khảo thêm trong cái nguồn
+0:09:04 - 0:09:11, tài liệu ở
+0:09:07 - 0:09:13, đây mathematical
+0:09:11 - 0:09:17, function
+0:09:13 - 0:09:20, rồi ngoài ra thì trong lpi sẽ có hỗ trợ
+0:09:17 - 0:09:22, thao tác là CHT CHT tức là transpose là
+0:09:20 - 0:09:25, chuyển một cái ma trận từ dạng như thế
+0:09:22 - 0:09:30, này 1 2 3 4 5 6 lật ngược nó lại thành
+0:09:25 - 0:09:32, là 1 2 1 3 5 2 4 6 đ và thì đây cũng là
+0:09:30 - 0:09:34, một trong những thao tác dùng rất là phổ
+0:09:32 - 0:09:41, biến trong đại số tiến
+0:09:34 - 0:09:43, tính rồi 1 2 3 thành là 1 2 3 rồi hàm
+0:09:41 - 0:09:47, reset tức là hàm này giúp cho chúng ta
+0:09:43 - 0:09:49, định hị định vị lại định hình lại cái
+0:09:47 - 0:09:51, kích thước của dữ liệu của mình Ví dụ ở
+0:09:49 - 0:09:54, bên trái chúng ta có cái data là 1 2 3 4
+0:09:51 - 0:09:56, 5 6 tức là một cái vectơ chúng ta muốn
+0:09:54 - 0:09:58, biến nó thành một cái ma trận kích thước
+0:09:56 - 0:10:03, là 2 x 3 thì chúng ta sẽ dùng hàm là
+0:09:58 - 0:10:07, data RES nó sẽ tạo ra là 1 2 3 số dầu 4
+0:10:03 - 0:10:09, 5 6 tương tự như vậy cho data ch reset
+0:10:07 - 0:10:12, 32 thì ở đây nó sẽ tạo ra một cái ma
+0:10:09 - 0:10:17, trận kích thước là ba dòng và hai cột là
+0:10:12 - 0:10:17, 12 xuống dòng là 34 rồi
+0:10:18 - 0:10:26, 56 rồi thì khi chúng ta reset thì nếu
+0:10:23 - 0:10:30, như chúng ta truyền vô một cái giá trị
+0:10:26 - 0:10:32, đó là -1 thì hàm ý đó là cái n thư viện
+0:10:30 - 0:10:37, n của mình sẽ tính xem cái số phần tử
+0:10:32 - 0:10:42, của mình nó sẽ là bao nhiêu đó ví dụ ở
+0:10:37 - 0:10:44, đây w ban đầu của mình á là gồm có các
+0:10:42 - 0:10:47, cái là một cái ma trận kích thước là ba
+0:10:44 - 0:10:51, dòng và hai cột và giá trị mình là 1 23
+0:10:47 - 0:10:54, thì khi chúng ta reset là -1 thì nó đang
+0:10:51 - 0:10:57, biến cái Ma Trận này thành một cái dạng
+0:10:54 - 0:10:59, vector và nó không cần phải chỉ ra cái
+0:10:57 - 0:11:02, số phần tử của mình là bao nhiêu chúng
+0:10:59 - 0:11:05, ta chỉ cần truyền vào -1 thì num nó sẽ
+0:11:02 - 0:11:06, tự biết là à Ở đây có ba phần tử nên kết
+0:11:05 - 0:11:11, quả của mình nó sẽ là
+0:11:06 - 0:11:11, 3 tương tự như vậy cho hàm
+0:11:12 - 0:11:19, squeezy rồi nếu như chúng ta muốn
+0:11:15 - 0:11:21, convert cái hàm này về trở lại cái ma
+0:11:19 - 0:11:23, trận đúng không thì chúng ta sẽ truyền
+0:11:21 - 0:11:25, vào một cái tle và chúng ta cho nó biết
+0:11:23 - 0:11:28, là à cái số cột của mình là 2i số cột
+0:11:25 - 0:11:32, của mình nó sẽ là 1 còn số Hàn của mình
+0:11:28 - 0:11:34, là bao nhiêu thì tự n nó sẽ tính tự n nó
+0:11:32 - 0:11:36, sẽ tính là bao nhiêu thì ở đây y của
+0:11:34 - 0:11:39, mình nó có sáu xin lỗi y của mình nó có
+0:11:36 - 0:11:42, ba phần tử nên nếu chỉ có một cột thì số
+0:11:39 - 0:11:45, hàng của mình nó sẽ là ba
+0:11:42 - 0:11:46, hàng và cuối cùng đó chính là cơ chế
+0:11:45 - 0:11:49, ross
+0:11:46 - 0:11:50, cutting Đây là một trong những cái cơ
+0:11:49 - 0:11:52, chế rất là hiệu
+0:11:50 - 0:11:55, quả giúp cho chúng ta đơn giản hóa cái
+0:11:52 - 0:11:58, công thức của mình thì ở đây chúng ta sẽ
+0:11:55 - 0:12:00, có các cái ví dụ nếu như cái array của
+0:11:58 - 0:12:01, mình
+0:12:00 - 0:12:03, khi chúng ta thực hiện cái phép cộng
+0:12:01 - 0:12:05, hoặc là phép nhân hoặc các cái phép tính
+0:12:03 - 0:12:07, mà kích thước của các cái bần tử nó
+0:12:05 - 0:12:10, không giống nhau ví dụ bên đây bên trái
+0:12:07 - 0:12:13, là một cái vectơ ba chiều à Xin lỗi là
+0:12:10 - 0:12:16, vectơ ba phần tử nhưng B bên phải nó là
+0:12:13 - 0:12:17, một giá trị scala thì tự động nó sẽ
+0:12:16 - 0:12:21, chuyển cái giá trị scalar này thành một
+0:12:17 - 0:12:22, cái vector là 111 Và khi đó chúng ta sẽ
+0:12:21 - 0:12:25, cộng
+0:12:22 - 0:12:28, lại ở đây thì chúng ta sẽ thấy
+0:12:25 - 0:12:31, là array của mình bên trái sẽ là một cái
+0:12:28 - 0:12:35, array hai chiều trong đó thì có hai hàng
+0:12:31 - 0:12:39, và ba cột còn bên phải á là một cái
+0:12:35 - 0:12:42, vectơ chỉ có ba phần tử thôi 1 2 3 thì
+0:12:39 - 0:12:45, tự động nó sẽ tạo ra thành biến cái
+0:12:42 - 0:12:47, vectơ này thành cái ma trận biến cái
+0:12:45 - 0:12:49, vectơ này thành một cái ma trận và Ma
+0:12:47 - 0:12:51, Trận này có kích thước bằng với lại cái
+0:12:49 - 0:12:53, ma trận bên tay trái sau đó nó sẽ cộng
+0:12:51 - 0:12:56, lại thì ra cái giá trị ở đây thì ở đây
+0:12:53 - 0:13:01, chúng ta sẽ có một số cái quy tắc quy
+0:12:56 - 0:13:01, tắc đầu tiên đó đó là
+0:13:02 - 0:13:09, nếu hai cái array khác cái số chiều
+0:13:06 - 0:13:12, nhau có hai array có số chiều nó khác
+0:13:09 - 0:13:16, nhau Ví dụ ở đây ha array A là set của
+0:13:12 - 0:13:20, mình là 31 Tức là chỉ có một chiều khác
+0:13:16 - 0:13:23, số chiều nha B của mình là hai chiều 1
+0:13:20 - 0:13:26, nó khác 2 nè Thì kích thước của array
+0:13:23 - 0:13:29, với số chiều xít hơn sẽ được chèn thêm
+0:13:26 - 0:13:32, một về phía đầu bên tay trái tức là
+0:13:29 - 0:13:35, 3 đúng không Tole Ở đây chỉ có một phần
+0:13:32 - 0:13:37, tử là 3 thì nó sẽ chèn thêm số 1 ở trước
+0:13:35 - 0:13:39, số 3 này tức là nó sẽ chuyển về cái SH
+0:13:37 - 0:13:41, là 13 như vậy số chiều của mình lúc này
+0:13:39 - 0:13:44, là hai chiều đúng bằng cái số chiều ở
+0:13:41 - 0:13:46, đây đúng bằng cái số chiều ở đây để chi
+0:13:44 - 0:13:48, để sau này chúng ta có thể áp dụng những
+0:13:46 - 0:13:50, cái quy tắc số 2 số 3 có thể giúp cho
+0:13:48 - 0:13:55, chúng ta tính toán tiếp thì cái cơ chế
+0:13:50 - 0:14:00, đầu tiên đó là nó sẽ tự f từ một chiều
+0:13:55 - 0:14:00, lên thành hai chiều rồi
+0:14:00 - 0:14:05, ở đây thì cái thao tác C là bằng a + b
+0:14:04 - 0:14:07, thì chúng ta thấy là nó đã áp dụng thêm
+0:14:05 - 0:14:09, một số cái quy tắc ở phía sau nữa để có
+0:14:07 - 0:14:13, thể thực hiện được ha chứ còn nếu mà chỉ
+0:14:09 - 0:14:15, là set là 13 mà cộng với lại cái 31 thì
+0:14:13 - 0:14:18, nó chưa thể thực hiện được đâu Nó sẽ
+0:14:15 - 0:14:21, phải convert thêm để biến cái kết quả
+0:14:18 - 0:14:24, của mình biến cái SH của mình là từ 13
+0:14:21 - 0:14:26, hoặc là 31 về thành cái shf đó là 3 x 3
+0:14:24 - 0:14:29, thì nó phải vận dụng thêm các cái quy
+0:14:26 - 0:14:32, tắc số 2 và số 3 nhưng đẩ ý ở đây đó là
+0:14:29 - 0:14:35, hai cái
+0:14:32 - 0:14:38, Ờ hai cái toán hai cái phần tử là a và b
+0:14:35 - 0:14:42, thì a số chiều ít hơn nó đã được chuyển
+0:14:38 - 0:14:44, về cái số chiều lớn hơn đó là cái ý
+0:14:42 - 0:14:47, chính nhất trong cái ví dụ này còn Tại
+0:14:44 - 0:14:51, sao c = a+ b được thì chúng ta phải chờ
+0:14:47 - 0:14:55, xem các cái quy tắc số 2 số 3
+0:14:51 - 0:14:57, rồi nếu shave của hai cái array không
+0:14:55 - 0:14:59, cướp nhau Tức là nó đã có cùng số chiều
+0:14:57 - 0:15:03, rồi nhưng mà cái cái sá nó không giống
+0:14:59 - 0:15:06, nhau thì ở một cái chiều nào đó thì
+0:15:03 - 0:15:08, array nào có kích thước bằng 1 à có kch
+0:15:06 - 0:15:12, kích thước chiều bằng 1 sẽ được kéo dài
+0:15:08 - 0:15:13, ra theo cái chiều đó để cho nó khớp với
+0:15:12 - 0:15:16, lại cái array còn lại thì ở đây chúng ta
+0:15:13 - 0:15:22, sẽ lấy ví dụ là dễ hiểu nhất a của mình
+0:15:16 - 0:15:27, nó đang có cái set là 3 x 1 à là 3 x
+0:15:22 - 0:15:29, 1 và B của mình á Nó có cái set là 3 x 2
+0:15:27 - 0:15:31, thì ở đây chúng ta thấy là hai cái s này
+0:15:29 - 0:15:33, có số chiều khác nhau à số chiều thì
+0:15:31 - 0:15:35, giống nhau nhưng mà cái số phần tử theo
+0:15:33 - 0:15:37, từng chiều thì nó khác nhau ví dụ 3 ở
+0:15:35 - 0:15:41, đây là giống với 3 ở đây 1 ở đây thì nó
+0:15:37 - 0:15:45, khác với lại 2 ở đây do đó nó sẽ ngầm
+0:15:41 - 0:15:48, biến cái 31 này thành cái 32 nó sẽ ngầm
+0:15:45 - 0:15:51, biến cái 31 này Thành 32 để cho cái số
+0:15:48 - 0:15:55, chiều của nó trùng với cái thằng này thì
+0:15:51 - 0:15:56, 1 là ít hơn 2 nên nó sẽ côn ra là 31
+0:15:55 - 0:15:59, trồng với lại cái 31 để tạo ra thành cái
+0:15:56 - 0:16:01, 32 và số kích thước của nó để khớp với
+0:15:59 - 0:16:05, lại cái kích thước v b này khi
+0:16:01 - 0:16:08, đó kết quả của mình nó sẽ là gì kết quả
+0:16:05 - 0:16:13, sẽ là
+0:16:08 - 0:16:15, ờ 1 2 3 đúng không 1 2 3 nó sẽ biến
+0:16:13 - 0:16:15, thành
+0:16:22 - 0:16:29, là 11 nè rồi xuống dòng
+0:16:29 - 0:16:33, 22 nè Clone ra theo
+0:16:35 - 0:16:42, hàng 3
+0:16:38 - 0:16:47, 3 đó còn b này của mình thì nó đang là 3
+0:16:42 - 0:16:49, x 2 sẵn rồi đó tức là 45 xuống dòng 67
+0:16:47 - 0:16:53, xuống dòng 78 Thế thì khi cộng lại thì
+0:16:49 - 0:16:57, nó sẽ là 4 + 1 5 + 1 đúng không 4 + 1 là
+0:16:53 - 0:17:01, 5 5 + 1 là 6 rồi tương tự như vậy 67 cộ
+0:16:57 - 0:17:01, cho 2 + 2 thì là sẽ thành là
+0:17:02 - 0:17:12, ờ 6 cng 2 đúng không sẽ là thành 8 7
+0:17:07 - 0:17:17, cộng 2 sẽ là thành 9 rồi 8 + 3 sẽ thành
+0:17:12 - 0:17:19, 11 9 + 3 sẽ là 12 như vậy thì ở đây Ý
+0:17:17 - 0:17:23, lớn nhất của nó đó là nó đã ngầm biến
+0:17:19 - 0:17:26, cái 3 1 thành 3 x 2 bằng cách đó là 1 2
+0:17:23 - 0:17:28, 3 này nó sẽ nối tiếp với lại thành một
+0:17:26 - 0:17:32, cái 1 23 khác để tăng cái số chiều theo
+0:17:28 - 0:17:35, chiều r chiều này chiều mà có cái số
+0:17:32 - 0:17:37, phần tử là 1 và quy tắc số ba đó chính
+0:17:35 - 0:17:40, là nếu như hai cái array không có cái
+0:17:37 - 0:17:44, chiều nào bằng nhau à Không có cái chiều
+0:17:40 - 0:17:46, nào bằng nhau và không có cái
+0:17:44 - 0:17:48, Ờ không có cái chiều nào mà có kích
+0:17:46 - 0:17:50, thước bằng 1 tức là vừa không bằng nhau
+0:17:48 - 0:17:53, và vừa không có cái chiều nào có kích
+0:17:50 - 0:17:56, thước bằng 1 thì nó báo
+0:17:53 - 0:18:01, lỗi đó
+0:17:56 - 0:18:03, Thy thì ở đây là 3 3 1 hoặc là 32 nó
+0:18:01 - 0:18:05, không có cái chiều nào bằng nhau Ví dụ
+0:18:03 - 0:18:07, như 3 và 3 4 và 3 ở đây nó không bằng
+0:18:05 - 0:18:09, nhau hoặc là 1 và 2 đây nó không bằng
+0:18:07 - 0:18:14, nhau Tức là không có cái chiều nào có
+0:18:09 - 0:18:14, cái số phần tử bằng nhau thì nó sẽ báo
+0:18:16 - 0:18:23, đổi rồi và trên đây thì đó là toàn bộ
+0:18:21 - 0:18:25, những cái nội dung
+0:18:23 - 0:18:28, về những cái phần chính nhất trong cái
+0:18:25 - 0:18:32, thư vị NP và chúng ta sẽ sử dụng xuyên
+0:18:28 - 0:18:32, suốt chong cái môn học này

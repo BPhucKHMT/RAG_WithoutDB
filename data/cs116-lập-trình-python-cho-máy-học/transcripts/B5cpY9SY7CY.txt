@@ -1,0 +1,224 @@
+0:00:01 - 0:00:07, Cuối cùng thì chúng ta sẽ cùng đến tìm
+0:00:03 - 0:00:08, hiểu một số cái mô hình mà dữ liệu của
+0:00:07 - 0:00:10, mình nó có cái mối quan hệ Phi tuyến
+0:00:08 - 0:00:14, tính thì chúng ta sẽ sử dụng những cái m
+0:00:10 - 0:00:16, nào chúng ta sẽ xét cái ví dụ sau đây
+0:00:14 - 0:00:20, chúng ta có các cái điểm dữ liệu và cái
+0:00:16 - 0:00:21, đường đi của cái hàm dự đoán của mình á
+0:00:20 - 0:00:24, là nó sẽ không phải là một đường thẳng
+0:00:21 - 0:00:26, mà nó sẽ là ở một cái dạng Đường Cong Và
+0:00:24 - 0:00:28, ở đây chúng ta phỏng đoán chúng ta phỏng
+0:00:26 - 0:00:30, đoán rằng là ở đây nó có hai cái điểm
+0:00:28 - 0:00:32, cực tiểu một một điểm cực một điểm cực
+0:00:30 - 0:00:36, đại thì chúng ta đoán Đây là một cái hàm
+0:00:32 - 0:00:38, mậc ba đúng không Thì đối với cái dữ
+0:00:36 - 0:00:41, liệu của mình mà có cái mối quan hệ Phi
+0:00:38 - 0:00:43, tuyến tính và chúng ta biết được cái
+0:00:41 - 0:00:47, dạng thức của cái hàm số của mình rồi
+0:00:43 - 0:00:50, cái hàm số phụ thuộc của y và x rồi đó
+0:00:47 - 0:00:53, thì khi đó chúng ta sẽ dùng một cái
+0:00:50 - 0:00:57, phương pháp nó gọi là feature Engineer
+0:00:53 - 0:01:00, tức là thay vì chúng ta chỉ đưa vào cái
+0:00:57 - 0:01:02, miếng dữ liệu thô Ban đầu cái đặt trưng
+0:01:00 - 0:01:06, thô ban đầu của mình là x thì bây giờ
+0:01:02 - 0:01:08, chúng ta sẽ đưa thêm các cái đại lượng X
+0:01:06 - 0:01:11, khác để tương ứng nó có thể hình thành
+0:01:08 - 0:01:14, ra được cái form của cái dạng À cái hàm
+0:01:11 - 0:01:18, Phi tuyến đó ví dụ đối với cái mô hình
+0:01:14 - 0:01:22, bậc ba giống như ở đây thì chúng ta
+0:01:18 - 0:01:25, sẽ Ờ trước đây á thì chúng ta sử dụng X
+0:01:22 - 0:01:28, của mình là thành phần 3 và x nguyên
+0:01:25 - 0:01:30, thủy bây giờ chúng ta sẽ tạo ra một cái
+0:01:28 - 0:01:32, đặc trưng mới chúng ta sẽ sẽ tạo ra thêm
+0:01:30 - 0:01:35, các cái đặc trưng mới thì các cái đặc
+0:01:32 - 0:01:38, trưng này nó sẽ bao gồm là x mũ 2 và x m
+0:01:35 - 0:01:41, 3 tại vì sao tại vì chúng ta đoán được
+0:01:38 - 0:01:44, cái hàm mô hình của mình là một cái dạng
+0:01:41 - 0:01:47, bậc ba thì chúng ta sẽ bổ sung thêm hai
+0:01:44 - 0:01:49, thành phần nữa để giúp cho À cái mô hình
+0:01:47 - 0:01:53, của mình nó có thể thích ứng được với
+0:01:49 - 0:01:55, cái dạng phụ thuộc bậc ba và tương ứng
+0:01:53 - 0:02:00, như vậy thì cái beta của mình nó cũng sẽ
+0:01:55 - 0:02:04, có thêm tham số đó là beta Zero beta 1
+0:02:00 - 0:02:04, beta 2 và beta
+0:02:07 - 0:02:13, 3 thì như vậy Cuối cùng chúng ta lại đưa
+0:02:10 - 0:02:15, về một cái mô hình hồi quy Tiến tính
+0:02:13 - 0:02:17, chúng ta vẫn sử dụng cái mô hình hồi quy
+0:02:15 - 0:02:19, Tiến tính nhưng chúng ta làm thêm một
+0:02:17 - 0:02:21, cái thao tác gọi là feature Engineering
+0:02:19 - 0:02:25, thì cái feature Engineering này nó cũng
+0:02:21 - 0:02:28, đã được nhắc đến trong những bài đầu
+0:02:25 - 0:02:32, tiên và một cái mô hình khác nó có khả
+0:02:28 - 0:02:35, năng học được trên những cái dữ liệu mà
+0:02:32 - 0:02:39, ở dạng Phi tuyến đó chính là mô hình kis
+0:02:35 - 0:02:42, neighbor knn regressor thì Cái chữ k là
+0:02:39 - 0:02:44, số Cái láng diện gần nhất trong cái
+0:02:42 - 0:02:46, trường hợp này K của mình là bằng 3 mình
+0:02:44 - 0:02:48, đang lấy ra ba cái láng diện gần nhất
+0:02:46 - 0:02:48, rồi
+0:02:49 - 0:02:52, nearest
+0:02:54 - 0:03:00, neighbor thì đây là viết tắc của chữ
+0:02:56 - 0:03:03, caris neighbor và ý tưởng của nó nó đó
+0:03:00 - 0:03:05, là gì chúng ta sẽ lấy trung bình cộng à
+0:03:03 - 0:03:08, cách đầu tiên cách đầu tiên đó là với
+0:03:05 - 0:03:11, cái điểm đặc trưng đầu vào khi chúng ta
+0:03:08 - 0:03:14, dự đoán chúng ta sẽ đi so sánh với lại
+0:03:11 - 0:03:17, các cái điểm đặc trưng đã có trước đây
+0:03:14 - 0:03:19, và chúng ta sẽ xem coi Đặc trưng nào ba
+0:03:17 - 0:03:22, cái Đặc trưng nào xin lỗi k cái Đặc
+0:03:19 - 0:03:25, trưng nào gần với lại cái điểm đầu vào
+0:03:22 - 0:03:27, này nhất thì chúng ta sẽ lấy ra và tương
+0:03:25 - 0:03:30, ứng với lại các cái điểm đặc trưng này
+0:03:27 - 0:03:32, ví dụ như ở đây là chúng ta sẽ có các
+0:03:30 - 0:03:37, cái nhãn chúng ta sẽ có các cái nhãn của
+0:03:32 - 0:03:39, nó đó là 35 45 và 50 thì cách số 1 đó là
+0:03:37 - 0:03:42, chúng ta sẽ lấy trung bình cộng của cái
+0:03:39 - 0:03:45, nhãn của ba cái đặc trưng gần với lại
+0:03:42 - 0:03:49, cái đặc trưng đầu bào này nhất thì 35 +
+0:03:45 - 0:03:51, 45 + 50 chia 3 nó sẽ ra là
+0:03:49 - 0:03:53, 43.3 như vậy cái giá trị Dự đoán ở đây
+0:03:51 - 0:03:56, nó sẽ là
+0:03:53 - 0:04:00, 43.3 Nhưng cái cách này thì nó đã bỏ qua
+0:03:56 - 0:04:01, cái khoảng cách xa gần giữa cái điểm đặt
+0:04:00 - 0:04:04, với các
+0:04:01 - 0:04:06, cái k cái láng diền gần nhất này rồi do
+0:04:04 - 0:04:08, đó cái cách số hai đó là chúng ta có thể
+0:04:06 - 0:04:10, sử dụng một cái Công thức trung bình
+0:04:08 - 0:04:13, trọng số theo khoảng cách nghĩa là
+0:04:10 - 0:04:15, khoảng cách nào mà càng nhỏ thì trọng số
+0:04:13 - 0:04:17, sẽ càng lớn và khoảng cách nào càng lớn
+0:04:15 - 0:04:20, thì trọng số sẽ càng nhỏ như vậy là đây
+0:04:17 - 0:04:23, là hai cách để tính trung bình và ước
+0:04:20 - 0:04:26, đưa ra được cái ước lượng cái giá trị
+0:04:23 - 0:04:30, output cho cái đặc trưng đầu vào là tại
+0:04:26 - 0:04:36, đây thì cái mô hình K neighbor Đó là một
+0:04:30 - 0:04:36, cái mô hình mà nó gọi là học lời lazy
+0:04:38 - 0:04:44, learning Tại sao nó gọi là lazy learning
+0:04:42 - 0:04:46, tại vì cái mô hình này nó không Thật sự
+0:04:44 - 0:04:50, mà nói nó không có học gì hết Nó không
+0:04:46 - 0:04:52, có tạo ra những cái tham số của mô hình
+0:04:50 - 0:04:54, ở đây nó chỉ có duy nhất một cái siêu
+0:04:52 - 0:04:56, tham số là k láng nhền gần nhất này thôi
+0:04:54 - 0:04:58, còn nó không có cái tham số của mô hình
+0:04:56 - 0:05:02, và nó sẽ trông chạy hoàn toàn vô các cái
+0:04:58 - 0:05:04, mẫ dữ liệu của mình do đó Cái cis
+0:05:02 - 0:05:06, neighbor này nó sẽ rất là tốn tài nguyên
+0:05:04 - 0:05:09, khi chúng ta triển khai Tại vì sao chúng
+0:05:06 - 0:05:10, ta sẽ phải lưu trữ chúng ta sẽ phải lưu
+0:05:09 - 0:05:13, lại hết tất cả các cái dữ liệu trong cái
+0:05:10 - 0:05:16, dataset của mình để khi có một cái mẫu
+0:05:13 - 0:05:19, dữ liệu mới chúng ta sẽ làm theo tác lút
+0:05:16 - 0:05:21, cấp tra cứu cái điểm đặc trưng này so
+0:05:19 - 0:05:23, với lại các cái điểm đặc trưng trong cái
+0:05:21 - 0:05:26, tập dữ liệu huấn luyện xem cái Đặc trưng
+0:05:23 - 0:05:31, nào là gần nhất thì chúng ta sẽ lấy ra
+0:05:26 - 0:05:33, và đó chính là cái điểm yếu của toán cis
+0:05:31 - 0:05:35, neigh ý tưởng thì rất là đơn giản nhưng
+0:05:33 - 0:05:38, mà khi chúng ta triển khai thì chúng ta
+0:05:35 - 0:05:43, sẽ tốn rất nhiều bộ nhớ để mà nuu
+0:05:38 - 0:05:46, thử và để giải quyết cho cái dữ liệu mà
+0:05:43 - 0:05:48, có cái dạng phức tạp khi tiến tính thì
+0:05:46 - 0:05:50, một trong những cái giải pháp cũng rất
+0:05:48 - 0:05:53, là nổi tiếng đó chính là sử dụng mẹ
+0:05:50 - 0:05:58, neural Network hay còn gọi là multi
+0:05:53 - 0:06:02, layer và trong thì trong s kit lên nó sẽ
+0:05:58 - 0:06:04, có cái module tương ứng đó là mlp Và nếu
+0:06:02 - 0:06:06, như chúng ta làm cho bài toán regression
+0:06:04 - 0:06:06, thì nó sẽ là
+0:06:06 - 0:06:12, mlp pressure Còn nếu như chúng ta làm
+0:06:10 - 0:06:16, cho bài toán phân loại thì đó là
+0:06:12 - 0:06:19, mlp classifier thì ý tưởng của multi
+0:06:16 - 0:06:23, layer process trong á Tức là ngoài cái
+0:06:19 - 0:06:28, input feature tức là toàn bộ
+0:06:23 - 0:06:30, cái dữ kiện đầu vào ở đây và cái output
+0:06:28 - 0:06:32, layer ở đây thì chúng ta ta sẽ có thêm
+0:06:30 - 0:06:34, cái thành phần nó gọi là
+0:06:32 - 0:06:38, hidden
+0:06:34 - 0:06:43, layer và cái dữ liệu đầu ra của mình mà
+0:06:38 - 0:06:45, nó càng phức tạp của cái đầu ra này của
+0:06:43 - 0:06:48, mình mà càng phức tạp Tức là nó rất là
+0:06:45 - 0:06:51, phi tuyến so với lại cái đồ vào thì
+0:06:48 - 0:06:54, chúng ta sẽ phải tăng cái số Pon layer
+0:06:51 - 0:06:56, này lên nó có thể tăng lên là hai lớp ba
+0:06:54 - 0:06:59, lớp Và thậm chí trong một số bài toán đó
+0:06:56 - 0:07:01, là nó có thể lên đến hàng trăm lớp và
+0:06:59 - 0:07:04, đối với cái bài toán regression thì cái
+0:07:01 - 0:07:07, đầu ra của mình do là cái miền giá trị
+0:07:04 - 0:07:09, của mình Nó thuộc cái đoạn từ trừ vô
+0:07:07 - 0:07:11, cùng cho đến cộng vô cùng do đó ở đây
+0:07:09 - 0:07:13, chúng ta sẽ không có cái hàm kích hoạt ở
+0:07:11 - 0:07:16, cuối Tại vì nếu như chúng ta sử dụng cái
+0:07:13 - 0:07:17, hàm X vo hàm kích hoạt thì nó sẽ ép cái
+0:07:16 - 0:07:20, giá trị đầu vào xin lỗi Nó ép cái giá
+0:07:17 - 0:07:24, trị output của mình về cái đoạn là từ 0
+0:07:20 - 0:07:26, cho đến 1 đó thì cái điều này là sẽ giúp
+0:07:24 - 0:07:28, cho sẽ làm cho cái m của mình nó không
+0:07:26 - 0:07:30, thể học được thì cái mạng neuro Network
+0:07:28 - 0:07:33, này là một trong trong những cái mạng có
+0:07:30 - 0:07:35, tính chất rất là tổng quát nó vừa có thể
+0:07:33 - 0:07:37, dùng cho bài toán hồi quy nó vừa có thể
+0:07:35 - 0:07:40, dùng cho bài toán phân
+0:07:37 - 0:07:43, lớp và nó cũng rất là cơ động nó cho
+0:07:40 - 0:07:46, phép mình có thể thêm số hidden layer số
+0:07:43 - 0:07:48, lớp ẩ hoặc là giảm bớt để tùy vô cái dữ
+0:07:46 - 0:07:50, liệu tính chất của dữ liệu của mình nếu
+0:07:48 - 0:07:52, như dữ liệu của mình mà phức tạp thì
+0:07:50 - 0:07:54, chúng ta sẽ tăng cái số layer lên còn
+0:07:52 - 0:07:56, nếu mà dữ liệu của mình nó đơn giản hơn
+0:07:54 - 0:07:57, thì chúng ta có thể giảm cái số layer
+0:07:56 - 0:08:02, này
+0:07:57 - 0:08:06, xuống và ngoài cái mô hình K near
+0:08:02 - 0:08:09, neighbor rồi multilayer percep Hoặc là
+0:08:06 - 0:08:11, neuro Network thì chúng ta sẽ còn rất
+0:08:09 - 0:08:14, nhiều những cái Thục toán khác để phục
+0:08:11 - 0:08:17, vụ cho bài toán hồi quy đó ví dụ như là
+0:08:14 - 0:08:20, chúng ta có support pter
+0:08:17 - 0:08:24, redresser cái phiên bản góc của support
+0:08:20 - 0:08:27, pter đó là support pter machine
+0:08:24 - 0:08:31, spm sau này thì người ta có cái biến thể
+0:08:27 - 0:08:34, là sử dụng cái mô hình sport để cho cái
+0:08:31 - 0:08:38, bài toán hồi quy r decision tree
+0:08:34 - 0:08:42, regressor random Forest regressor và
+0:08:38 - 0:08:44, radiant Boost exot l gbm c boot rer thì
+0:08:42 - 0:08:46, đây là những cái mô hình rất là nổi
+0:08:44 - 0:08:49, tiếng thường được sử dụng cho các cái
+0:08:46 - 0:08:52, bài toán hồi quy và đạt được những cái
+0:08:49 - 0:08:55, độ chính xác cao Đặc biệt là các cái
+0:08:52 - 0:08:57, thuật toán nằm ở hai cái nhóm cuối này
+0:08:55 - 0:09:00, và như vậy thì trong cái bài học ngày
+0:08:57 - 0:09:03, hôm nay thì chúng ta đã tìm hiểu qua
+0:09:00 - 0:09:07, khái niệm về mô hình hồi quy Tiến tính
+0:09:03 - 0:09:10, mô hình hồi quy rồi mô hình phân lớp rồi
+0:09:07 - 0:09:12, mô hình học có giám sát rồi chúng ta
+0:09:10 - 0:09:16, cũng tìm hiểu qua các cái mô hình hộ quy
+0:09:12 - 0:09:16, tuyến tính như là mô hình linear
+0:09:17 - 0:09:22, ression rồi mô hình các cái biến thể của
+0:09:21 - 0:09:24, nó ví dụ như là
+0:09:22 - 0:09:29, l
+0:09:24 - 0:09:29, r và elastic
+0:09:30 - 0:09:36, elastic n thì đây là để giải quyết cho
+0:09:33 - 0:09:36, cái cái trường hợp
+0:09:36 - 0:09:44, mà dữ liệu y của mình nó có mối quan hệ
+0:09:40 - 0:09:46, tuyến tính cái mối quan hệ tuến tính còn
+0:09:44 - 0:09:49, trong trường hợp mà nonlinear tức là phi
+0:09:46 - 0:09:49, tuến
+0:09:50 - 0:09:54, tính thì chúng ta sẽ có các cái mô hình
+0:09:53 - 0:09:56, ví dụ như
+0:09:54 - 0:09:59, là bản chất là chúng ta vẫn có thể dùng
+0:09:56 - 0:10:03, mô hình linear r được nhưng mà chúng ta
+0:09:59 - 0:10:03, phải kết hợp với cái bước gọi là feature
+0:10:05 - 0:10:10, Engineer chúng ta sẽ phải tạo thêm đặc
+0:10:08 - 0:10:13, trưng rồi chúng ta sẽ có các cái mô hình
+0:10:10 - 0:10:15, học lười lazy learning như là k nearest
+0:10:13 - 0:10:19, neighbor hoặc là một cái mô hình rất là
+0:10:15 - 0:10:22, tổng quát đó là multi layer perceptron
+0:10:19 - 0:10:22, hay là mạng neuro
+0:10:22 - 0:10:29, Network rồi chúng ta sẽ có các cái thuật
+0:10:24 - 0:10:32, toán khác nữa svc à SV
+0:10:29 - 0:10:36, là support vector rer rồi chúng ta sẽ có
+0:10:32 - 0:10:39, decision tree resser rồi chúng ta sẽ có
+0:10:36 - 0:10:43, random Forest reeser và các cái thuật
+0:10:39 - 0:10:45, toán về boosting ví dụ như là exib l gbm
+0:10:43 - 0:10:47, thì tất cả cái những cái thuật toán đó
+0:10:45 - 0:10:50, nó đều có cái phiên bản cho bài toán hồi
+0:10:47 - 0:10:50, quy

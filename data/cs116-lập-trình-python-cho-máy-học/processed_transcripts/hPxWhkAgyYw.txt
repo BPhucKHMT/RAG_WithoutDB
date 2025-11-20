@@ -1,0 +1,231 @@
+0:00:00 - 0:00:06, cuối cùng đó là sau khi chúng ta đã tạo
+0:00:03 - 0:00:07, ra rất nhiều đặc trưng rồi biến đổi các
+0:00:06 - 0:00:10, cái đặc
+0:00:07 - 0:00:12, trưng từ dạng này sang dạng khác thì
+0:00:10 - 0:00:14, chúng ta sẽ phải thực hiện một trong
+0:00:12 - 0:00:16, những cái bước rất là quan trọng đó
+0:00:14 - 0:00:18, chính là feature Selection hay còn gọi
+0:00:16 - 0:00:21, là lựa chọn đặc trưng. Tại vì không phải
+0:00:18 - 0:00:22, cái đặc trưng nào chúng ta tạo ra hoặc
+0:00:21 - 0:00:26, là không phải cái đặc trưng nào chúng ta
+0:00:22 - 0:00:29, biến đổi thì đều giúp cho cái mô hình
+0:00:26 - 0:00:31, huấn luyện tốt hơn. Nó sẽ có những cái
+0:00:29 - 0:00:33, đặc trưng thừa không quan trọng thì chúng
+0:00:31 - 0:00:36, ta cần phải loại bỏ đi và những cái đặc
+0:00:33 - 0:00:37, trưng nào mà đóng vai trò giúp ích cho
+0:00:36 - 0:00:40, cái mô hình của mình huấn luyện thì
+0:00:37 - 0:00:43, chúng ta sẽ đưa vào thì đó là ý nghĩa
+0:00:40 - 0:00:46, của cái việc chọn lựa đặc trưng ở đây.
+0:00:43 - 0:00:49, thì có một số
+0:00:46 - 0:00:51, cái lý do tại sao chúng ta phải chọn lựa
+0:00:49 - 0:00:54, đặc trưng đó là về vấn đề độ chính xác
+0:00:51 - 0:00:55, của mô hình thì các cái đặc trưng mà
+00:00:54 - 0:00:58, không liên quan Hoặc là các cái đặc
+0:00:55 - 0:01:01, trưng dư thừa nó sẽ làm cho mô hình của
+0:00:58 - 0:01:03, mình bị nhiễu
+0:01:01 - 0:01:05, hay nói cách khác đó là làm giảm cái độ
+0:01:03 - 0:01:07, chính xác của mô hình của mình đi. Và cái
+0:01:05 - 0:01:08, việc chọn lựa đặc trưng phù hợp nó sẽ
+0:01:07 - 0:01:10, giúp cho mình giảm nhiễu và đồng nghĩa
+0:01:08 - 0:01:15, là sẽ làm tăng cái độ chính xác của mình
+0:01:10 - 0:01:17, lên. Cái vấn đề thứ hai đó là vấn đề về
+0:01:15 - 0:01:22, overfitting nếu như cái mô hình của mình
+0:01:17 - 0:01:24, quá phức tạp và nó sẽ tìm cách là hấp
+0:01:22 - 0:01:26, thụ các cái đặc trưng nhiễu của mình, nó
+0:01:24 - 0:01:27, sẽ tìm cách hấp thụ cái đặc trưng nhiễu
+0:01:26 - 0:01:29, của
+0:01:27 - 0:01:31, mình nhiều hơn so với lại cái mô hình
+0:01:29 - 0:01:34, đơn giản, tức là mô hình đơn giản nó sẽ
+0:01:31 - 0:01:36, loại bỏ đi những cái đặc trưng nhiễu, nó sẽ
+0:01:34 - 0:01:38, lờ đi những cái đặc trưng nhiễu. Còn những
+0:01:36 - 0:01:40, cái mô hình phức tạp thì nó tìm cách là
+0:01:38 - 0:01:42, hấp thụ cái thông tin của đặc trưng nhiễu
+0:01:40 - 0:01:44, như vậy thì góp phần là làm giảm cái
+0:01:42 - 0:01:46, accuracy, làm giảm cái độ chính xác của
+0:01:44 - 0:01:49, mình xuống. Như vậy thì cái việc loại bỏ
+0:01:46 - 0:01:52, cái đặc trưng nhiễu nó sẽ giúp cho mô
+0:01:49 - 0:01:53, hình của mình nó đơn giản hơn và cái mô
+0:01:52 - 0:01:55, hình của mình nó đơn giản hơn nó sẽ
+0:01:53 - 0:01:57, không có hấp thụ những cái đặc trưng
+00:01:55 - 0:02:01, nhiễu này nhiều thì dẫn đến là tránh
+00:01:57 - 0:02:01, được cái hiện tượng overfitting.
+00:02:01 - 0:02:08, Rồi à vấn đề về thời
+00:02:04 - 0:02:10, gian thì và chi phí huấn luyện thì khi
+00:02:08 - 0:02:12, mà chúng ta sử dụng quá nhiều đặc trưng
+00:02:10 - 0:02:14, thì mô hình của mình nó sẽ phức tạp và
+00:02:12 - 0:02:16, như vậy thì chi phí tính toán cũng như
+00:02:14 - 0:02:19, là cái thời gian huấn luyện cũng như là
+00:02:16 - 0:02:21, thời gian inference, thời gian thử nghiệm
+00:02:19 - 0:02:23, dự đoán của mình nó cũng sẽ lâu. Do đó
+00:02:21 - 0:02:24, cái việc chọn lựa đặc trưng quan trọng
+00:02:23 - 0:02:28, nhất Nó sẽ giúp cho mình giảm được cái
+00:02:24 - 0:02:31, chi phí và thời gian tính toán. Rồi vấn
+00:02:28 - 0:02:33, đề về giải thích của mô hình. Mô hình nếu
+00:02:31 - 0:02:36, mà có quá nhiều đặc trưng thì nó sẽ khó
+00:02:33 - 0:02:38, giải thích do mình bị rối. Tại vì khách
+00:02:36 - 0:02:40, hàng của mình sẽ nhìn thấy một rừng cái
+00:02:38 - 0:02:41, đặc trưng như vậy thì họ sẽ bị rối và
+00:02:40 - 0:02:44, khi chúng ta chọn ra những cái đặc trưng
+00:02:41 - 0:02:46, quan trọng nhất để cho mô hình huấn
+00:02:44 - 0:02:48, luyện thì đồng thời khi chúng ta giải
+00:02:46 - 0:02:50, thích cho khách hàng là tại sao chúng ta
+00:02:48 - 0:02:52, chọn lựa cái mô hình của chúng ta chọn
+00:02:50 - 0:02:55, lựa những cái đặc trưng đó thì họ sẽ dễ
+00:02:52 - 0:02:57, giải thích hơn và họ sẽ dễ hiểu lý do
+00:02:55 - 0:03:00, tại sao chúng ta
+00:02:57 - 0:03:03, ờ lý do ra quyết định của cái mô hình
+00:03:00 - 0:03:06, hơn thì họ sẽ dễ cảm nhận được cái cái
+00:03:03 - 0:03:10, cách thức mà mô hình nó vận hành
+00:03:06 - 0:03:13, hơn. Và ở đây thì chúng ta sẽ có một số
+00:03:10 - 0:03:16, cái phương pháp chọn lựa đặc trưng.
+00:03:13 - 0:03:18, Phương pháp đầu tiên đó chính là phương
+00:03:16 - 0:03:20, pháp lọc, phương pháp filter. Phương pháp
+00:03:18 - 0:03:22, thứ hai đó là phương pháp wrapper. Phương
+00:03:20 - 0:03:25, pháp thứ ba đó là phương pháp embedded
+00:03:22 - 0:03:27, tức là nhúng và phương pháp thứ tư đó là
+00:03:25 - 0:03:29, phương pháp giảm số chiều. Thì đối với
+00:03:27 - 0:03:32, cái phương pháp lọc chúng ta sẽ có các
+00:03:29 - 0:03:34, cái tiếp cận đó là lọc dựa trên các cái
+00:03:32 - 0:03:37, đặc trưng thỏa mãn một số cái tiêu chí
+00:03:34 - 0:03:42, nào đó ví dụ tiêu chí về độ tương quan
+00:03:37 - 0:03:46, Pearson, sử dụng độ đo là à Pearson hoặc là
+00:03:42 - 0:03:48, phương pháp mà có cái phương sai lớn
+00:03:46 - 0:03:51, hơn một cái ngưỡng nào đó hoặc là cái tỷ
+00:03:48 - 0:03:55, lệ các cái giá trị bị thiếu là bao nhiêu
+00:03:51 - 0:03:57, đó. Rồi đối với phương pháp wrapper thì
+00:03:55 - 0:03:59, chúng ta sẽ có thể có các phương pháp đó
+00:03:57 - 0:04:03, là forward selection, backward
+00:03:59 - 0:04:06, elimination, Recursive Feature
+00:04:03 - 0:04:08, Elimination. Rồi đối với phương pháp mà
+00:04:06 - 0:04:12, embedded thì chúng ta sẽ có phương pháp
+00:04:08 - 0:04:14, Lasso regression, Ridge regression, Elastic Net và các cái
+00:04:12 - 0:04:18, phương pháp mà dựa trên cấu trúc cây ví
+00:04:14 - 0:04:20, dụ như là Random Forest và GBM. Còn đối
+00:04:18 - 0:04:22, với phương pháp giảm chiều thì chúng ta
+00:04:20 - 0:04:25, sẽ có những cái phương pháp giảm chiều
+00:04:22 - 0:04:27, kinh điển như là PCA hoặc là phương pháp
+00:04:25 - 0:04:31, t-SNE. Thì sau đây chúng ta sẽ lần lượt đến
+00:04:27 - 0:04:34, với từng cái phương pháp.
+00:04:31 - 0:04:37, Đó thì chọn lựa đặc trưng tức là đầu vào
+00:04:34 - 0:04:41, của chúng ta có rất nhiều cái đặc trưng
+00:04:37 - 0:04:42, ví dụ như là X1, X2 cho đến XN và sau khi
+00:04:41 - 0:04:46, chúng ta chọn lựa xong thì chúng ta chỉ
+00:04:42 - 0:04:48, còn đặc trưng X2 và XN -1 thôi ví dụ vậy.
+00:04:46 - 0:04:52, Và chúng ta sẽ loại bỏ đi các cái đặc
+00:04:48 - 0:04:56, trưng này. Và tập đặc trưng đầu
+00:04:52 - 0:04:58, vào thì chúng ta sẽ có ba cái, khi chúng
+00:04:56 - 0:05:00, ta loại bỏ các cái đặc trưng mà một cách
+00:04:58 - 0:05:01, trực tiếp thì chúng ta sẽ có ba hướng
+0:05:00 - 0:05:04, tiếp
+0:05:01 - 0:05:06, cận. Hướng tiếp cận đầu tiên đó là filter,
+0:05:04 - 0:05:09, hướng tiếp cận thứ hai là wrapper và
+0:05:06 - 0:05:11, hướng tiếp cận thứ ba đó là embedded kết hợp
+00:05:09 - 0:05:14, hoặc là phương pháp giảm chiều dữ liệu.
+00:05:11 - 0:05:16, Thì đối với cái tiếp cận filter,
+00:05:14 - 0:05:19, chúng ta sẽ chọn ra tập con của các cái
+00:05:16 - 0:05:22, đặc trưng của mình, tức là chúng ta sẽ
+00:05:19 - 0:05:24, thực hiện ngay ở cái bước đầu tiên dựa
+00:05:22 - 0:05:27, trên một số cái tiêu chí lọc ra đặc
+00:05:24 - 0:05:30, trưng. Rồi sau đó chúng ta, sau khi chúng
+00:05:27 - 0:05:32, ta lọc xong thì chúng ta mới đưa vào cái
+00:05:30 - 0:05:34, mô hình máy học và sau khi máy đã học
+00:05:32 - 0:05:36, xong thì chúng ta sẽ đánh giá cái hiệu
+00:05:34 - 0:05:40, quả của mô hình. Thì đây là phương pháp
+00:05:36 - 0:05:43, filter. Còn phương pháp wrapper đó là
+00:05:40 - 0:05:48, chúng ta cũng sẽ lọc ra một cái tập con
+00:05:43 - 0:05:51, à các cái đặc trưng, sau đó chúng ta sẽ
+00:05:48 - 0:05:53, đưa vào một cái mô hình máy học và dựa
+00:05:51 - 0:05:56, trên cái hiệu quả của cái mô hình máy
+00:05:53 - 0:05:58, học chúng ta sẽ quay trở lại chúng ta sẽ
+00:05:56 - 0:06:00, chọn lại cái tập đặc trưng mới và chúng
+00:05:58 - 0:06:03, ta lặp đi lặp lại cái quá trình này, sau
+00:06:00 - 0:06:04, đó thì kết thúc và chúng ta vẫn sẽ có
+00:06:03 - 0:06:06, một cái bước đánh giá hiệu quả của mô
+00:06:04 - 0:06:09, hình. Còn phương pháp
+00:06:06 - 0:06:12, embedded hoặc là giảm chiều dữ liệu thì
+00:06:09 - 0:06:13, chúng ta đã nhúng cái từ embedded này nó hàm
+00:06:12 - 0:06:16, ý đó là
+00:06:13 - 0:06:19, nhúng, tức là trong cái mô hình máy học
+00:06:16 - 0:06:21, của mình nó đã ngầm thực hiện cái việc
+00:06:19 - 0:06:25, chọn lựa đặc trưng luôn thông qua cái
+00:06:21 - 0:06:28, việc là huấn luyện trên các cái hệ số
+00:06:25 - 0:06:30, của cái mô hình của mình và nó thực hiện
+00:06:28 - 0:06:31, đánh giá hiệu quả luôn. Như vậy là chọn
+00:06:30 - 0:06:33, lựa đặc trưng nó đã được ngầm thực hiện
+00:06:31 - 0:06:37, bên trong cái mô hình máy
+00:06:33 - 0:06:39, học. Đầu tiên đó là phương pháp về filter
+00:06:37 - 0:06:42, thì chúng ta sẽ áp dụng một số cái loại
+00:06:39 - 0:06:44, chỉ số để loại bỏ những đặc trưng không
+00:06:42 - 0:06:47, liên quan Hoặc là các cái đặc trưng dư
+00:06:44 - 0:06:50, thừa ví dụ như là đặc trưng về hệ số
+00:06:47 - 0:06:54, tương quan. Nếu như hai cái đặc trưng mà
+00:06:50 - 0:06:56, có cái hệ số tương quan mà cao X Y và X J
+00:06:54 - 0:07:00, của mình mà có hệ số tương quan cao thì
+0006:56 - 0:07:02, lúc đó chúng ta có thể loại bỏ một trong hai.
+00:07:00 - 0:07:06, Hoặc là những cái đặc trưng
+00:07:02 - 0:07:09, X Y mà có cái ngưỡng phương sai tức là có
+00:07:06 - 0:07:12, cái sự dao động của mình nó quá thấp thì
+00:07:09 - 0:07:15, chúng ta cũng sẽ loại bỏ đi. Đó, cái sự cái
+00:07:12 - 0:07:17, cái cái phương sai của cái đặc trưng X Y
+00:07:15 - 0:07:19, này quá thấp chúng ta sẽ loại bỏ đi. Hoặc
+00:07:17 - 0:07:22, với những cái đặc trưng mà có cái tỷ lệ
+0007:19 - 0:07:25, dữ liệu bị thiếu quá nhiều. Có một cái
+0007:22 - 0:07:29, cột dữ liệu nào đó mà đại đa số ví dụ
+0007:25 - 0:07:33, như là trên 80% cái giá trị của đặc trưng
+0007:29 - 0:07:35, của cái cột X I đó là dữ liệu thiếu
+0007:33 - 0:07:39, thì chúng ta sẽ loại bỏ nó đi. Hoặc chúng
+0007:35 - 0:07:43, ta có thể sử dụng những cái thông tin để
+0007:39 - 0:07:45, tương hỗ đó là độ đo MI. Thì nếu như cái
+0007:43 - 0:07:48, độ à nếu như
+0007:45 - 0:07:51, cái chỉ báo về MI này mà vượt qua một
+0007:48 - 0:07:54, cái ngưỡng nào đó thì chúng ta sẽ thực
+0007:51 - 0:07:56, hiện cái thao tác là loại bỏ hoặc là giữ
+0007:54 - 0:07:58, lại cái đặc trưng của mình. Thì đây là
+0007:56 - 0:08:01, các cái loại chỉ số thường dùng để mà
+0007:58 - 0:08:01, lọc đặc trưng.
+0008:01 - 0:08:06, Thì ưu điểm của cái phương pháp filter
+0008:04 - 0:08:08, này đó là nhanh do chúng ta chỉ chọn ra
+0008:06 - 0:08:11, cái đặc trưng không cần huấn luyện ngay
+0008:08 - 0:08:12, từ đầu. Chúng ta chọn ra những đặc trưng
+0008:11 - 0:08:14, mà không cần huấn luyện ngay từ đầu thì
+0008:12 - 0:08:16, khi đó chúng ta huấn luyện xong mô hình
+0008:14 - 0:08:20, của mình nó được thực hiện trên những
+0008:16 - 0:08:22, cái đặc trưng đã được lọc bớt rồi nên nó
+0008:20 - 0:08:24, huấn luyện cũng sẽ nhanh hơn. Và cái
+0008:22 - 0:08:26, phương pháp filter này nó sẽ không cần
+0008:24 - 0:08:29, phải thực hiện lặp đi lặp lại cái quá
+0008:26 - 0:08:30, trình huấn luyện nhiều lần. Và phương
+0008:29 - 0:08:33, pháp này thì nó khá là dễ hiểu và dễ
+0008:30 - 0:08:35, thực hiện. Tuy nhiên cái điểm yếu của cái
+0008:33 - 0:08:36, phương pháp này đó chính là nó thiếu cái
+0008:35 - 0:08:38, sự tương tác giữa các đặc trưng. Tại vì
+0008:36 - 0:08:41, trong cái quá trình phân tích các cái
+0008:38 - 0:08:42, đặc trưng X Y và X J nó được thực hiện một
+0008:41 - 0:08:46, cách độc lập, nó không có cái sự tương
+0008:42 - 0:08:49, tác qua lại. Tại nhiều khi các cái đặc
+0008:46 - 0:08:51, trưng X Y và X J này nó phải bổ trợ cho
+0008:49 - 0:08:53, nhau thông qua một cái công thức, cái hàm
+0008:51 - 0:08:56, số nào đó. Còn nếu như chúng ta tính toán
+0008:53 - 0:08:58, trên các cái giá trị X Y và X J này một
+0008:56 - 0:09:01, cách độc lập nhau thì nó không khai thác
+0008:58 - 0:09:03, được cái sự tương tác giữa X Y và X J với
+0009:01 - 0:09:06, nhau. Do đó thì đây chính là một cái điểm
+0009:03 - 0:09:08, yếu của cái phương pháp filter. Và chính
+0009:06 - 0:09:12, cái điểm yếu này nó có khả năng dẫn đến
+0009:08 - 0:09:14, đó là có thể bỏ sót hoặc là bỏ lỡ những
+0009:12 - 0:09:16, cái đặc trưng tối ưu. Tại vì đặc trưng
+0009:14 - 0:09:19, tối ưu này nó phải đi theo một cái combo,
+0009:16 - 0:09:23, đi theo một cái bộ với nhau. Và như vậy
+0009:19 - 0:09:25, thì nó có thể khả năng là loại bỏ nhầm dữ
+0009:23 - 0:09:27, liệu. Chúng ta sẽ đến với cái phương pháp
+0009:25 - 0:09:30, thứ hai đó là phương pháp
+0009:27 - 0:09:34, wrapper. Phương pháp wrapper nó sẽ sử
+0009:30 - 0:09:37, dụng cái mô hình à dự đoán à nó sẽ kết
+0009:34 - 0:09:39, hợp với cái mô hình dự đoán và đồng thời
+0009:37 - 0:09:41, để đánh giá cái hiệu quả của các cái tập
+0009:39 - 0:09:44, con này thì chúng ta sẽ có các hướng
+0009:41 - 0:09:46, tiếp cận như là forward selection,
+0009:44 - 0:09:50, backward elimination tức là lựa chọn tiến,
+0009:46 - 0:09:53, lựa chọn lùi, rồi lựa chọn lặp lại và lựa
+0009:50 - 0:09:56, chọn lặp lại kèm theo cái kiểm định chéo.
+0009:53 - 0:09:56, T

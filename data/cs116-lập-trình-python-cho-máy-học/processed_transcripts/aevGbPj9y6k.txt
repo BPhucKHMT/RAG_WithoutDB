@@ -1,0 +1,162 @@
+0:00:00 - 0:00:08, và cuối cùng đó chính là Edge
+0:00:04 - 0:00:09, prediction nếu như trước đây mô hình tính
+0:00:08 - 0:00:11, toán
+0:00:09 - 0:00:15, sẵn rồi
+0:00:11 - 0:00:19, mô hình đặt ở trong cái
+0:00:15 - 0:00:21, server và mô hình đặt riêng ở một cái con
+0:00:19 - 0:00:21, server
+0:00:23 - 0:00:27, khác đúng không thì bây giờ mô hình của mình
+0:00:25 - 0:00:29, sẽ được đặt trên chính cái máy của người
+0:00:27 - 0:00:33, dùng cuối đặt trên chính cái máy của
+0:00:29 - 0:00:35, client đó thì cái Edge này á Nó có thể được
+0:00:33 - 0:00:37, hiểu đó là cái thiết bị
+0:00:35 - 0:00:39, biên cái tên tiếng Việt của mình đó
+0:00:37 - 0:00:45, chính là thiết bị
+0:00:39 - 0:00:45, biên hoặc là cái thiết bị của người dùng
+0:00:48 - 0:00:52, thì làm sao chúng ta có thể đưa cái mô
+0:00:51 - 0:00:56, hình của mình chạy được trên các cái
+0:00:52 - 0:00:59, thiết bị này thì ở đây chúng ta sẽ gửi
+0:00:56 - 0:01:00, cái trọng số của mô hình chúng ta sẽ gửi
+0:00:59 - 0:01:03, cái trọng số của mình và đương nhiên đây
+0:01:00 - 0:01:07, là trọng số này là đã
+0:01:03 - 0:01:09, được huấn
+0:01:07 - 0:01:14, luyện cái trọng số này là đã được huấn
+0:01:09 - 0:01:16, luyện và chúng ta sẽ copy cái mô hình
+0:01:14 - 0:01:20, cái trọng số này lên trên các cái thiết
+0:01:16 - 0:01:22, bị Edge device rồi sau đó chúng ta load
+0:01:20 - 0:01:24, cái mô hình
+0:01:22 - 0:01:27, này lên và thực thi cái việc dự
+0:01:24 - 0:01:31, đoán trực tiếp ở trên cái máy trạm client
+0:01:27 - 0:01:33, này thì đây chính là cái Edge
+0:01:31 - 0:01:36, và với cái cách làm này thì gần như
+0:01:33 - 0:01:38, không có độ trễ tức là chúng ta sẽ khi
+0:01:36 - 0:01:42, chúng ta có cái nhu
+0:01:38 - 0:01:44, cầu cần phải dự đoán đúng không cần phải
+0:01:42 - 0:01:48, gọi cái mô hình để dự đoán thì nó sẽ lập
+0:01:44 - 0:01:50, tức nó sẽ phản hồi ngay lưu ý là ở cái
+0:01:48 - 0:01:53, khái niệm độ trễ Ở đây nó không phải là
+0:01:50 - 0:01:55, cái tốc độ của mô hình nó không phải là
+0:01:53 - 0:01:58, cái tốc độ của mô hình mà cái độ trễ ở
+0:01:55 - 0:02:02, đây là cái thời gian kể từ khi chúng ta
+0:01:58 - 0:02:06, có cái yêu cầu mô hình thực thi
+0:02:02 - 0:02:09, và sau khi mô hình thực thi xong thì
+0:02:06 - 0:02:11, chúng ta sẽ trả cái kết quả về thì cái
+0:02:09 - 0:02:13, độ trễ ở đây là cái thời gian không liên
+0:02:11 - 0:02:15, quan đến cái quá trình mà mô hình nó dự
+0:02:13 - 0:02:18, đoán nó chỉ liên quan đến cái thời gian
+0:02:15 - 0:02:22, trung chuyển dữ liệu từ lúc mà người
+0:02:18 - 0:02:23, dùng có yêu cầu đưa đến cho mô hình để
+0:02:22 - 0:02:27, mô hình biết là chúng ta đang có nhu cầu
+0:02:23 - 0:02:30, à cần phải thực thi dự đoán rồi sau khi
+0:02:27 - 0:02:32, có kết quả xong chúng ta trả cái kết quả
+0:02:30 - 0:02:34, đó về cho người dùng thì đó là cái
+0:02:32 - 0:02:37, khoảng thời gian độ trễ nó không liên
+0:02:34 - 0:02:40, quan đến cái thời gian mà mô hình của
+0:02:37 - 0:02:42, mình nó chạy bên dưới cái thuật toán hơn
+0:02:40 - 0:02:45, và với cái cách làm này thì độ trễ nó
+0:02:42 - 0:02:46, rất là thấp Edge prediction độ trễ thấp
+0:02:45 - 0:02:49, gần như là tức
+0:02:46 - 0:02:51, thì và nó cũng có xuất phát từ cái
+0:02:49 - 0:02:53, nguyên nhân đó là chúng ta không cần có
+0:02:51 - 0:02:54, cái mạng internet tại vì khi mô hình
+0:02:53 - 0:02:57, của mình được đặt trên chính cái
+0:02:54 - 0:02:58, thiết bị biên thì nó sẽ thực thi ngay
+0:02:57 - 0:03:00, trên chính mô hình đó nó không cần phải
+0:02:58 - 0:03:02, trung chuyển qua internet để nhờ một
+0:03:00 - 0:03:06, cái bên thứ ba tính
+0:03:02 - 0:03:08, toán thì không cần phải có Internet và
+0:03:06 - 0:03:10, như vậy thì nó đã tiết giảm được một cái
+0:03:08 - 0:03:12, yêu cầu một trong những cái yêu cầu rất
+0:03:10 - 0:03:14, là quan trọng đó là cái tính kết nối của
+0:03:12 - 0:03:17, cái máy trạm với lại cái môi trường
+0:03:14 - 0:03:18, internet không phải lúc nào máy trạm của
+0:03:17 - 0:03:22, mình cũng có khả năng kết nối
+0:03:18 - 0:03:24, được với Internet và một cái ưu điểm
+0:03:22 - 0:03:27, nữa của cái phương pháp Edge prediction
+0:03:24 - 0:03:29, này chính là bảo mật dữ liệu tại vì cái
+0:03:27 - 0:03:34, máy client của mình
+0:03:29 - 0:03:38, nó sẽ không có chuyển qua cái
+0:03:34 - 0:03:41, internet đúng để đưa về một cái con
+0:03:38 - 0:03:43, server thì nếu như chúng ta đưa cái dữ
+0:03:41 - 0:03:47, liệu đưa cái dữ liệu qua mạng internet
+0:03:43 - 0:03:52, thì ở đây nó có thể bị đúng không
+0:03:47 - 0:03:52, là bị tấn
+0:03:52 - 0:03:59, công để cái dữ liệu mà chúng ta đưa lên
+0:03:57 - 0:04:01, mạng internet Nó sẽ bị trong cái quá
+0:03:59 - 0:04:05, trình trung chuyển nó sẽ bị bên thứ ba
+0:04:01 - 0:04:07, có thể khai thác có thể là lấy cắp cái
+0:04:05 - 0:04:09, dữ liệu đó chúng ta không đang nói về
+0:04:07 - 0:04:11, cái lỗi tại server nha Tức là trong cái
+0:04:09 - 0:04:13, quá trình Cái đường truyền đến được cái
+0:04:11 - 0:04:16, server này thì sẽ có một cái bên thứ ba
+0:04:13 - 0:04:19, có thể lấy cắp được đó thì chúng ta đang
+0:04:16 - 0:04:21, thực hiện cái dữ liệu của mình gọi là
+0:04:19 - 0:04:24, trực tiếp trên chính cái thiết bị
+0:04:21 - 0:04:26, biên thì không thể chúng ta bị mất cái dữ
+0:04:24 - 0:04:28, liệu đó được đó thì dữ liệu nó không đưa
+0:04:26 - 0:04:29, ra khỏi cái máy trạm nên chúng ta cái
+0:04:28 - 0:04:33, khả năng mà chúng ta mất dữ liệu nó
+0:04:29 - 0:04:36, sẽ thấp hơn nhiều và cái khuyết điểm của
+0:04:33 - 0:04:39, cái phương pháp này đó chính là cái tài
+0:04:36 - 0:04:42, nguyên tính toán của máy trạm thì thường
+0:04:39 - 0:04:44, là nó sẽ yếu hơn so với các
+0:04:42 - 0:04:47, cái con server đúng không Tại vì các cái
+0:04:44 - 0:04:49, máy trạm nó được sinh ra là để phục vụ
+0:04:47 - 0:04:52, đa chức năng lấy ví dụ như cái điện
+0:04:49 - 0:04:55, thoại của mình đúng không hoặc là cái
+0:04:52 - 0:04:57, Laptop của mình thì nó được sinh ra là
+0:04:55 - 0:05:00, phục vụ cho đa chức năng chứ không phải
+0:04:57 - 0:05:02, là thực
+0:05:00 - 0:05:05, gọi là tối ưu cho các cái mô hình máy
+0:05:02 - 0:05:07, học nó thực hiện cái việc là lưu trữ
+0:05:05 - 0:05:10, tính toán hiển thị hình ảnh tính toán
+0:05:07 - 0:05:13, những cái phép toán cơ bản xử lý những
+0:05:10 - 0:05:16, cái lưu trữ rồi hiển thị cơ bản chứ nó
+0:05:13 - 0:05:19, không có thực hiện các cái tính toán số
+0:05:16 - 0:05:22, học trên các cái mô hình máy học do đó
+0:05:19 - 0:05:25, thì cái việc tối ưu của nó cho cái
+0:05:22 - 0:05:27, mô hình máy học là nó không hiệu quả đó
+0:05:25 - 0:05:29, thì yếu tố đầu tiên đó là cái tài
+0:05:27 - 0:05:32, nguyên máy trạm nó sẽ có hạn ở
+0:05:29 - 0:05:34, đây hiểu ý đó là nó sẽ không có phù hợp với
+0:05:32 - 0:05:37, các cái mô hình máy học và các cái thư
+0:05:34 - 0:05:39, viện và framework của máy trạm thì thường
+0:05:37 - 0:05:43, không có đủ cái tính
+0:05:39 - 0:05:46, năng tại vì các cái máy trạm của mình
+0:05:43 - 0:05:48, thường là những cái máy mà phục vụ đa năng
+0:05:46 - 0:05:51, nên nó sẽ không được cài sẵn trước
+0:05:48 - 0:05:53, những cái phần mềm hoặc là cài trước
+0:05:51 - 0:05:55, những cái thư viện để cho cái mô
+0:05:53 - 0:05:57, hình máy học của mình có thể thực thi
+0:05:55 - 0:06:00, được rồi nó sẽ khó có thể cập nhật được
+0:05:57 - 0:06:04, mô hình bây giờ Nếu không có mạng
+0:06:00 - 0:06:06, internet thì làm sao chúng ta có thể đưa
+0:06:04 - 0:06:08, làm sao chúng ta có thể đưa cái mô hình
+0:06:06 - 0:06:12, của mình về trên cái máy trạm này
+0:06:08 - 0:06:15, đúng không Thì nó khó cập nhật rồi nó sẽ
+0:06:12 - 0:06:17, khó theo dõi và debug Ví dụ như khi
+0:06:15 - 0:06:20, người dùng người ta sử dụng và người ta
+0:06:17 - 0:06:23, báo là Ừ tôi đang dùng cái tính năng này
+0:06:20 - 0:06:25, nhưng mà nó bị lỗi Và bây giờ chúng ta
+0:06:23 - 0:06:27, cũng không biết là làm sao để kiểm soát
+0:06:25 - 0:06:30, được tại vì chúng ta không được phép can
+0:06:27 - 0:06:32, thiệp vào bên trong cái log
+0:06:30 - 0:06:35, của các cái máy tính máy
+0:06:32 - 0:06:38, trạm Ví dụ nếu chúng ta đang thực hiện ở
+0:06:35 - 0:06:39, trên server của mình đúng không Thì
+0:06:38 - 0:06:42, chúng ta hoàn toàn có thể can thiệp vô
+0:06:39 - 0:06:44, cái log của cái server của mình để mà
+0:06:42 - 0:06:47, mình xem coi nguyên nhân ở đâu lỗi của
+0:06:44 - 0:06:50, nó là cái gì thì từ đó là mình sẽ biết
+0:06:47 - 0:06:53, được cái cách để mà debug cái cách để mà
+0:06:50 - 0:06:55, khắc phục đó còn ở đây là khi thực hiện
+0:06:53 - 0:06:58, trên máy trạm Chúng ta không có quyền để
+0:06:55 - 0:07:00, truy xuất vô các cái file trong máy của
+0:06:58 - 0:07:02, người dùng hoặc là can thiệp vào bên
+0:07:00 - 0:07:04, trong các cái chỉ số hoặc là can thiệp
+0:07:02 - 0:07:06, vào bên trong các cái thông tin lưu trữ
+0:07:04 - 0:07:08, của người dùng nên chúng ta rất khó
+0:07:06 - 0:07:11, trong cái việc theo dõi và chẩn đoán lỗi
+0:07:08 - 0:07:15, thì đó chính là những cái ưu và khuyết
+0:07:11 - 0:07:21, điểm cho cái phương pháp tiếp cận đó là
+0:07:15 - 0:07:21, Edge prediction hay là dự đoán trên máy trạm

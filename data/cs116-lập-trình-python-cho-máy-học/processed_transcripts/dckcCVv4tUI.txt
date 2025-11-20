@@ -1,0 +1,246 @@
+0:00:01 - 0:00:05, tiếp theo đó là chúng ta sẽ tổng hợp đặc
+0:00:03 - 0:00:07, trưng một cái kỹ thuật nữa đó là kỹ
+0:00:05 - 0:00:08, thuật tổng hợp đặc
+0:00:07 - 0:00:12, trưng
+0:00:08 - 0:00:14, thì nó sẽ là cái phần ngược của cái kỹ
+0:00:12 - 0:00:16, thuật ở phía trên đó là phân rã đặc
+0:00:14 - 0:00:18, trưng ha tức là chúng ta từ một cái
+0:00:16 - 0:00:20, chuỗi chúng ta sẽ tách nó làm hai đặc
+0:00:18 - 0:00:23, trưng còn ở đây chúng ta làm cái thao
+0:00:20 - 0:00:25, tác ngược lại đó là chúng ta từ hai cái
+0:00:23 - 0:00:28, chuỗi chúng ta sẽ trộn nó lại để thành
+0:00:25 - 0:00:31, một cái đặc trưng mới ví dụ ở đây chúng
+0:00:28 - 0:00:31, ta
+0:00:33 - 0:00:39, rồi Ở đây thì chúng ta chưa có cái mẫu
+0:00:36 - 0:00:42, dữ liệu đúng không Ờ đây cái mẫ d liện
+0:00:39 - 0:00:42, của mình nó nằm bên
+0:00:44 - 0:00:52, đây rồi thì chúng ta sẽ có ma là giống
+0:00:48 - 0:00:56, như nhà sản xuất và hãng ATT Tức là cái
+0:00:52 - 0:00:59, dòng xe sedan crossover dướ SUV rồi thì
+0:00:56 - 0:01:01, ở đây chúng ta sẽ trộn Chúng ta sẽ kết
+0:00:59 - 0:01:03, hợp ma và type này để tạo ra thành một
+0:01:01 - 0:01:06, cái đặc trưng mới
+0:01:03 - 0:01:10, đó thì với cái ma type này thì nó sẽ có
+0:01:06 - 0:01:12, là Toyota sedan Audi sedan Honda sedan
+0:01:10 - 0:01:14, thì đây sẽ là một cái đặc trưng mới được
+0:01:12 - 0:01:16, tổng hợp từ hai cái đặc trưng cũ theo
+0:01:14 - 0:01:21, cái kiểu là nối
+0:01:16 - 0:01:23, chuỗi tiếp theo đó là kỹ thuật gom
+0:01:21 - 0:01:26, nhóm tổng hợp đặc trưng theo kiểu theo
+0:01:23 - 0:01:28, theo nhóm thì chúng ta sẽ xét một cái dữ
+0:01:26 - 0:01:32, liệu như
+0:01:28 - 0:01:35, sau Đà Nẵng đúng không ở đây là cái cột
+0:01:32 - 0:01:37, thành phố và cột mức lương đó thì Đà
+0:01:35 - 0:01:38, Nẵng mức lương 10 triệu Hồ Chí Minh mức
+0:01:37 - 0:01:41, lương 20 triệu Hà Nội mất lôn 15 triệu
+0:01:38 - 0:01:43, Hồ Chí Minh mất lươn 8 triệu vân vân thì
+0:01:41 - 0:01:46, chúng ta đang muốn chia cái này ra thành
+0:01:43 - 0:01:49, các cái phân khúc chúng ta đang muốn gom
+0:01:46 - 0:01:52, nhóm nhóm nó thành các cái mức lương
+0:01:49 - 0:01:54, trung bình ví dụ Đà Nẵng thì cái người
+0:01:52 - 0:01:57, này có cái mức lương là 10 nhưng nó sẽ
+0:01:54 - 0:02:00, muốn tạo ra thêm một cái cột nữa trong
+0:01:57 - 0:02:02, cái cột này á thì nó sẽ có mức Lưu Trung
+0:02:00 - 0:02:05, bình của cái thành phố Đà
+0:02:02 - 0:02:07, Nẵng rồi Hà Nội đúng không Thì nó sẽ
+0:02:05 - 0:02:09, ngoài cái lương của cái cái cái dòng dữ
+0:02:07 - 0:02:11, liệu quan sát được là 15 nó sẽ có thêm
+0:02:09 - 0:02:13, một cái giá trị nữa đó là trung bình mức
+0:02:11 - 0:02:15, lương của Hà Nội để sau này ví dụ như
+0:02:13 - 0:02:17, chúng ta có thể đối chiếu được cái
+0:02:15 - 0:02:20, salary với lại cái lương trung bình của
+0:02:17 - 0:02:23, Hà Nội thì để làm được cái việc này
+0:02:20 - 0:02:26, chúng ta sẽ dùng cái lệnh Là rou Bu
+0:02:23 - 0:02:28, chúng ta sẽ r by City tức là thành phố
+0:02:26 - 0:02:30, thì ở đây là chúng ta sẽ gom nhóm theo
+0:02:28 - 0:02:32, từng cái thành phố khác nhau ví dụ Hà
+0:02:30 - 0:02:34, Nội sẽ đi một nhóm Hà Nội Hồ Chí Minh sẽ
+0:02:32 - 0:02:37, đi một nhóm Hồ Chí Minh rồi sau đó chúng
+0:02:34 - 0:02:40, ta sẽ lấy ra cái cột
+0:02:37 - 0:02:43, salary sau khi đã gom nhóm xong chúng ta
+0:02:40 - 0:02:46, sẽ lấy cái thông tin của cộp salary và
+0:02:43 - 0:02:47, agg tổng hợp lại thông qua cái phương
+0:02:46 - 0:02:51, thức đó là trung bình tức là lấy trung
+0:02:47 - 0:02:53, bình theo từng thành phố trung bình mức
+0:02:51 - 0:02:55, lương theo từng thành phố
+0:02:53 - 0:02:58, rồi
+0:02:55 - 0:03:01, rồi Cách thứ hai đó là chúng ta có thể
+0:02:58 - 0:03:01, dùng cái lệnh là transform
+0:03:02 - 0:03:09, đó rồi thì cả hai cách Và bây giờ chúng
+0:03:06 - 0:03:10, ta đã tạo ra thêm chúng ta sẽ tạo ra
+0:03:09 - 0:03:15, thêm một cái cột mới đó là lương trung
+0:03:10 - 0:03:16, bình average salary thì nó sẽ được gán
+0:03:15 - 0:03:20, bằng là rú by theo
+0:03:16 - 0:03:23, City salary transform me
+0:03:20 - 0:03:28, này rồi sau đó chúng ta sẽ lấy cái cột
+0:03:23 - 0:03:30, này để gắn vào cái cột mới đó là average
+0:03:28 - 0:03:33, salary thì hai cái cách làm này nó khác
+0:03:30 - 0:03:37, vì nhau với cái cách làm aggregation đầu
+0:03:33 - 0:03:39, tiên á là nó sẽ đi theo nhóm Đà Nẵng
+0:03:37 - 0:03:40, đương Trung bình 12 Hà Hồ Chí Minh lương
+0:03:39 - 0:03:42, trung bình 13 Hà Nội lương trung bình 15
+0:03:40 - 0:03:44, ví dụ vậy đây Các cái con số ở đây là
+0:03:42 - 0:03:47, các cái con số mình fake
+0:03:44 - 0:03:51, mình generate ra ngẫu nhiên chứ không có
+0:03:47 - 0:03:54, ý nghĩa về mặt thực tiễn Nha và với cái
+0:03:51 - 0:03:57, cách làm arig này thì chúng ta sẽ rap sẽ
+0:03:54 - 0:04:00, không thể nối cái cột này vào bên trong
+0:03:57 - 0:04:03, cái bản dữ liệu này Tại vì nó bị trên về
+0:04:00 - 0:04:05, à cái số lượng đúng không Thì thì mình
+0:04:03 - 0:04:07, sẽ dùng cái phương pháp là transform
+0:04:05 - 0:04:10, mình sẽ transform thì với cái cách
+0:04:07 - 0:04:11, transform này thì số dòng dữ liệu của
+0:04:10 - 0:04:14, mình nó sẽ trùng với cái số dòng dữ liệu
+0:04:11 - 0:04:18, ở đây khi đó chúng ta r vào nó sẽ dễ hơn
+0:04:14 - 0:04:20, đó thì cái 12 12 13.3 thì đây là những
+0:04:18 - 0:04:23, cái con số bản chất là những con số ở
+0:04:20 - 0:04:26, trên thôi nhưng nó khác ở chỗ đó là nó
+0:04:23 - 0:04:28, đã được trải ra cho từng dòng dữ liệu Và
+0:04:26 - 0:04:30, khi đó thì cái việc chúng ta gắn thêm
+0:04:28 - 0:04:33, vào cái cột
+0:04:30 - 0:04:36, lương trung bình ở đây thì nó rất là dễ
+0:04:33 - 0:04:39, dàng một cái kỹ thuật khác nữa đó chính
+0:04:36 - 0:04:43, là kỹ thuật về gom cụng phân
+0:04:39 - 0:04:47, khúc ở phía trên á là chúng ta sẽ gom
+0:04:43 - 0:04:48, nhóm gom nhóm theo từng cái giá trị từng
+0:04:47 - 0:04:50, giá trị và sau đó chúng ta sẽ thực hiện
+0:04:48 - 0:04:52, một cái thao tác thống kê Ví dụ như
+0:04:50 - 0:04:53, chúng ta có thể thực hiện là tính giá
+0:04:52 - 0:04:55, trị lớn nhất giá trị nhỏ nhất giá trị
+0:04:53 - 0:04:57, trung bình trong ví dụ này chúng ta sẽ
+0:04:55 - 0:05:00, làm cái thao tác là tính giá trị trung
+0:04:57 - 0:05:03, bình sau khi Đạ C nhóm xong còn ở đây là
+0:05:00 - 0:05:06, chúng ta sẽ gom nhóm dựa trên chín cái
+0:05:03 - 0:05:09, giá trị à của mình để phân nó ra thành
+0:05:06 - 0:05:11, các cái phân khúc khác nhau đó thì ở đây
+0:05:09 - 0:05:13, chúng ta sẽ xét một cái ví dụ ha Cũng là
+0:05:11 - 0:05:18, cái dataframe ở phía
+0:05:13 - 0:05:21, trên nhưng à giá trị lương của một người
+0:05:18 - 0:05:24, ở Đà Nẵng vậy thì trong trường hợp này à
+0:05:21 - 0:05:27, CT chúng ta sẽ không còn xem xét nữa mà
+0:05:24 - 0:05:30, chúng ta sẽ xem xét trực tiếp dựa trên
+0:05:27 - 0:05:33, cái giá trị ở đây và chúng ta ta sẽ xem
+0:05:30 - 0:05:35, cái 10 này nè Nó sẽ có cái mối tương
+0:05:33 - 0:05:36, quan như thế nào so với các cái giải
+0:05:35 - 0:05:38, lương còn
+0:05:36 - 0:05:40, lại thì trong cái phần lý thuyết chúng
+0:05:38 - 0:05:43, ta thấy rồi có một cái ví dụ rồi một
+0:05:40 - 0:05:45, người là 8,8 điểm mình sẽ không biết
+0:05:43 - 0:05:48, người đó là cao hay thấp khi mình không
+0:05:45 - 0:05:51, đặt nó trong cái bối cảnh là một cái
+0:05:48 - 0:05:53, phân bố thế thì ở đây cũng vậy 10 mình
+0:05:51 - 0:05:55, sẽ không biết Cái người này là phân phúc
+0:05:53 - 0:05:57, nào do đó mình sẽ dùng cái Thục toán gom
+0:05:55 - 0:06:00, nhóm trên tất cả các cái dữ liệu của
+0:05:57 - 0:06:02, Lương ở đây thì ở đây chúng ta sẽ phải
+0:06:00 - 0:06:05, sử dụng một cái mô hình học không giám
+0:06:02 - 0:06:08, sát ờ và trong những cái bài tiếp theo
+0:06:05 - 0:06:10, chúng ta sẽ học đến cái chi tiết về cái
+0:06:08 - 0:06:12, lý thuyết của nó nhưng ở đây chúng ta sẽ
+0:06:10 - 0:06:15, sử dụng cái thực toán C cụng như là một
+0:06:12 - 0:06:18, cái công cụ để giúp cho mình có thể là
+0:06:15 - 0:06:22, tạo mới đặc trưng ha thì chúng ta sẽ
+0:06:18 - 0:06:24, khai báo là ờ cit l. cluster và thụ toán
+0:06:22 - 0:06:26, ở đây mình dùng là camin và số cụng ở
+0:06:24 - 0:06:28, đây mình đang muốn tức là tương ứng là
+0:06:26 - 0:06:30, cái số phân Cúc tức là các cái giải
+0:06:28 - 0:06:32, lương ở đây mình đang muốn chia nó ra
+0:06:30 - 0:06:34, làm ba phân khúc do đó mình sẽ để là n
+0:06:32 - 0:06:36, cluster là bằng
+0:06:34 - 0:06:40, 3 và nó sẽ được khởi tạo một cách tự
+0:06:36 - 0:06:44, động rồi và camin chúng ta sẽ fit
+0:06:40 - 0:06:47, predict cái cột Gallery salary để chúng
+0:06:44 - 0:06:49, ta sẽ xem coi là ừ với từng cái giá trị
+0:06:47 - 0:06:53, lương ở đây là sẽ được xếp vào cái phân
+0:06:49 - 0:06:56, khúc nào Ờ 10 sẽ xếp phân khúc nào 20 sẽ
+0:06:53 - 0:07:00, xếp ph phúc trào rồi sau đó thì chúng ta
+0:06:56 - 0:07:02, sẽ é cái kiểu giá trị này chúng ta sẽ é
+0:07:00 - 0:07:04, cái kiểu này về cái kiểu category rồi
+0:07:02 - 0:07:06, Tức là bình thường đây là con số nhưng
+0:07:04 - 0:07:08, mà mình hiểu đó là con số theo kiểu
+0:07:06 - 0:07:11, category chứ nó không phải là một cái
+0:07:08 - 0:07:14, con số dạng hồi quy Tức là cái giá trị
+0:07:11 - 0:07:17, liên tục và ở đây chúng ta sẽ có ba giá
+0:07:14 - 0:07:19, trị thì chúng ta thấy là salary thì mức
+0:07:17 - 0:07:25, lương của mình là phân khúc số
+0:07:19 - 0:07:29, 1 8 Xin lỗi 10 là phân khúc Số 1 12 là
+0:07:25 - 0:07:30, phân húc số 1 8 là phân húc số 1 nhưng
+0:07:29 - 0:07:34, chúng chúng ta sẽ có một số cái phân
+0:07:30 - 0:07:37, khúc rất là cao Ví dụ như 35 30 thì đây
+0:07:34 - 0:07:40, là hai cái phân Cúc là nằm trong nhóm số
+0:07:37 - 0:07:45, hai rồi hai cái nhóm phương Cúc khác đó
+0:07:40 - 0:07:47, là 10 xin lỗi 20 và 15 đúng không Thì nó
+0:07:45 - 0:07:51, sẽ nằm trong cùng một cái nhóm là ở giữa
+0:07:47 - 0:07:53, m số 0 và chúng ta lưu ý là do cái
+0:07:51 - 0:07:55, salary coaster này nó là ở dạng catery
+0:07:53 - 0:07:58, nên các cái giá trị này không có cái
+0:07:55 - 0:08:00, tính so sánh được Tức là không có cái sự
+0:07:58 - 0:08:02, so sánh lớn bé phân khúc này lớn hơn
+0:08:00 - 0:08:04, phân khúc kia các cái phân khúc này độc
+0:08:02 - 0:08:08, lập nhau chứ nếu không chúng ta sẽ hiểu
+0:08:04 - 0:08:10, là ờ 20 15 Mà tại sao nó lại là phân
+0:08:08 - 0:08:14, khúc số 0 nó nhỏ hơn cái phân khúc là 10
+0:08:10 - 0:08:17, là phân khúc số 1 tức là lương ở đây thì
+0:08:14 - 0:08:19, lớn hơn là salary là 10 nhưng mà cái giá
+0:08:17 - 0:08:21, trị phân khúc nó lại thấp hơn thì một
+0:08:19 - 0:08:23, lần nữa khẳng định đó là các cái giá trị
+0:08:21 - 0:08:26, cluster ở đây không mang tính chất so
+0:08:23 - 0:08:29, sánh chỉ mang tính chất đại
+0:08:26 - 0:08:32, diện cuối cùng đó là chúng ta sử dụng K
+0:08:29 - 0:08:34, thuật giảm chiều với thuật toán không
+0:08:32 - 0:08:36, giám sát đó là pca thì cũng tương tự như
+0:08:34 - 0:08:39, vậy cái lý thuyết của pca chúng ta sẽ
+0:08:36 - 0:08:41, thảo luận ở trong cái phần các cái mô
+0:08:39 - 0:08:43, hình học không giám sát Còn trong trường
+0:08:41 - 0:08:46, hợp này chúng ta sẽ sử dụng PC như là
+0:08:43 - 0:08:48, một cái công cụ thì để chạy được cái
+0:08:46 - 0:08:51, Thục toán pca này chúng ta sẽ load
+0:08:48 - 0:08:52, dataset Lan rồi cũng sử dụng các cái
+0:08:51 - 0:08:55, phương
+0:08:52 - 0:08:58, pháp scale dữ liệu scale dữ liệu tức là
+0:08:55 - 0:09:00, các cái Thục toán pca mà muốn hoạt động
+0:08:58 - 0:09:02, tốt thì trước khi
+0:09:00 - 0:09:05, làm chúng ta sẽ phải scale cái dữ liệu
+0:09:02 - 0:09:07, đó về cái dạng phân bố chuẩn dùng là
+0:09:05 - 0:09:10, scaler scaler sẽ fit transform cái đặc
+0:09:07 - 0:09:14, trưng X này vào và chúng ta sẽ gán trực
+0:09:10 - 0:09:17, tiếp vào cái miếng x Ở Đây Rồi sau đó
+0:09:14 - 0:09:19, thì chúng ta convert cái X này về dạng
+0:09:17 - 0:09:20, dataframe và chúng ta sẽ gọi cái tập
+0:09:19 - 0:09:23, toán
+0:09:20 - 0:09:26, pci với cái số lượng component mình muốn
+0:09:23 - 0:09:29, giảm xuống là còn 2 mặc định ban đầu là
+0:09:26 - 0:09:31, mình có B BN đặc trưng nhưng mà ở đây
+0:09:29 - 0:09:34, mình đang muốn giảm nó xuống còn hai
+0:09:31 - 0:09:37, chiều đó thì PC sẽ là bằng 2 và chúng ta
+0:09:34 - 0:09:41, sẽ fit transform chúng ta sẽ tạo ra cái
+0:09:37 - 0:09:44, x new x new này sẽ là hai cái cột cuối
+0:09:41 - 0:09:49, là pc1 và
+0:09:44 - 0:09:51, pc2 nếu chúng ta chỉ dùng pci 1 pci để
+0:09:49 - 0:09:53, mà đi phân lớp thì chúng ta có thể sử
+0:09:51 - 0:09:56, dụng trực tiếp Còn khi chúng ta không
+0:09:53 - 0:09:58, chắc chắn là các cái đặc trưng này nó có
+0:09:56 - 0:10:01, tốt hay không tốt thì chúng ta hãy
+0:09:58 - 0:10:03, combine Chúng ta sẽ kết hợp nó với lại
+0:10:01 - 0:10:05, cái đặc trưng gốc là các cái đặc trưng
+0:10:03 - 0:10:09, mà chúng ta đã tô màu ở đây Đây là hai
+0:10:05 - 0:10:11, đặc trưng mới được nén được giảm chiều
+0:10:09 - 0:10:13, từ bốn cái đặc trưng này hay nói cách
+0:10:11 - 0:10:17, khác là hai cái đặc trưng này nó có chứa
+0:10:13 - 0:10:18, cái thông tin phân loại tốt Ồ có chứa
+0:10:17 - 0:10:21, nhiều thông tin để giúp cho chúng ta có
+0:10:18 - 0:10:25, thể phân loại và chúng ta sẽ tích hợp
+0:10:21 - 0:10:27, với lại các cái đặt trưng góc như vậy
+0:10:25 - 0:10:29, thì chúng ta từ bốn đặc trưng chúng ta
+0:10:27 - 0:10:33, đã tạo ra thêm hai đặc trưng nữa
+0:10:29 - 0:10:36, hai đặc trưng này bản chất là cái Ờ phái
+0:10:33 - 0:10:39, sinh từ bốn cái đặc trưng đầu vào ở
+0:10:36 - 0:10:43, đây
+0:10:39 - 0:10:46, rồi và trên đây đó là những cái phương
+0:10:43 - 0:10:50, pháp à một số cái phương pháp mà chúng
+0:10:46 - 0:10:54, ta có thể tạo mới thêm cái đặc trưng
+0:10:50 - 0:10:56, đấy để cho cái các cái mô hình máy học
+0:10:54 - 0:10:59, về sau có đủ cái thông tin để giúp cho
+0:10:56 - 0:10:59, chúng ta có thể đưa vào các cái máy phân
+0:10:59 - 0:11:03, lớp
+0:10:59 - 0:11:03, một cách hiệu quả

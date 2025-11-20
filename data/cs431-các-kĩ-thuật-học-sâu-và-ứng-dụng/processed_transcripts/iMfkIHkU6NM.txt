@@ -25,7 +25,7 @@
 0:01:49 - 0:01:51, hay Apple ở đây là tên của một công ty
 0:01:51 - 0:01:53, của một công ty, chúng ta phải có những cái từ xung quanh chúng ta mới biết được.
 0:01:53 - 0:01:58, Thế thì đó chính là công dụng của contextual embedding,
-0:01:58 - 0:02:01, đó là biểu diễn từ khi có yếu tố về mặt ngữ cảnh.
+0:01:58 - 0:02:01, đó là biểu diễn từ khi có yếu tố bề mặt ngữ cảnh.
 0:02:01 - 0:02:06, Rồi, cả hai BERT và GPT đều sử dụng transformer như đã đề cập.
 0:02:06 - 0:02:12, Và nó đều có sử dụng, có thể sử dụng để làm cho các cái downstream task.
 0:02:12 - 0:02:14, Downstream task có nghĩa là gì?
@@ -86,10 +86,10 @@
 0:07:26 - 0:07:33, Đối với phương pháp Fine-tuning với đầu ra của mô hình tức là Readout Head,
 0:07:33 - 0:07:39, chúng ta sẽ thêm đầu ra và hàm kích hoạt phù hợp để giải quyết một bài toán.
 0:07:39 - 0:07:48, Ví dụ, tại đầu ra của mô hình BERT, chúng ta sẽ đưa thêm qua một linear
-0:07:48 - 0:08:04, Kết hợp với lại một softmax để tính toán được class dự đoán.
+0:07:48 - 0:08:04, Kết hợp với lại một softmax để tính toán được class của nhãn đầu vào.
 0:08:04 - 0:08:07, Ví dụ ở đây là nhãn chẳng hạn.
 0:08:07 - 0:08:16, Còn cho bài toán phân loại văn bản, ở đây chúng ta sẽ có một linear module
-0:08:16 - 0:08:21, và cộng với lại. Nếu ở đây là phân loại đa lớp, thì ở đây chúng ta chỉ cần là softmax.
+0:08:16 - 0:08:21, và cộng với lại, thay vì ở đây là phân loại đa lớp thì ở đây chúng ta chỉ cần là softmax.
 0:08:21 - 0:08:26, Nếu như ở đây chúng ta phân lớp ra là positive và negative thôi,
 0:08:26 - 0:08:28, thì ở đây chúng ta sẽ là hàm sigmoid thôi.
 0:08:28 - 0:08:34, Còn nếu như ở đây là phân loại văn bản nhưng mà cho nhiều lớp thì chúng ta có thể là softmax.
@@ -133,7 +133,7 @@
 0:12:23 - 0:12:28, Thì ở đây chúng ta sẽ có cái output của mình là negative. Ở đây chúng ta sẽ có neutral.
 0:12:28 - 0:12:36, Và ở đây chúng ta sẽ để thêm là the company anticipated its operating profit to improve.
 0:12:36 - 0:12:40, Thì chúng ta sẽ để dấu gạch chéo để trống.
-0:12:40 - 0:12:49, Mô hình sẽ tự biết là ở trên đây là positive, ở đây là neutral, ở đây là negative thì tự điền vào chỗ trống này là positive hay negative hay neutral
+0:12:40 - 0:12:49, Mô hình sẽ tự biết là ở trên đây là positive, ở đây là neutral, ở đây là negative thì tự điền vô chỗ trống này là positive hay negative hay neutral
 0:02:49 - 0:12:53, và nó sẽ tự biết mối quan hệ giữa cặp input output này
 0:12:53 - 0:12:55, Mô hình sẽ tự học theo ngữ cảnh
 0:12:55 - 0:13:02, Đây là 3 cái context để giúp cho mình đưa ra cái phán đoán tại vị trí output cho cái sample mới này
@@ -163,7 +163,7 @@
 0:14:53 - 0:15:08, Và cái template cho mình đó sẽ bao gồm là premise, tức là cái nội dung ngữ cảnh mình đưa vào, hypothesis và các cái option output của mình là gì?
 0:15:08 - 0:15:11, thì đây chúng ta sẽ có 4 cái template,
 0:15:11 - 0:15:16, ví dụ cho các task để mà chúng ta fine-tune mô hình.
-0:15:16 - 0:15:19, Chúng ta đưa vào, chúng ta fine-tune xong,
+0:15:16 - 0:15:19, Chúng ta đưa vô, chúng ta fine-tune xong,
 0:15:19 - 0:15:23, thì cái mô hình đã được chỉnh sửa, đã được tinh chỉnh tham số,
 0:15:23 - 0:15:28, thì nó sẽ có thể, khả năng là giải quyết được cho cái task mới, task A.
 0:15:28 - 0:15:34, Và Transformer nó không chỉ làm cho dữ liệu văn bản,

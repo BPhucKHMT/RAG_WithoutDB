@@ -1,0 +1,196 @@
+0:00:00 - 0:00:06, tiếp theo thì chúng ta sẽ tiến hành
+0:00:02 - 0:00:08, triển khai cái ứng dụng của mình dưới
+0:00:06 - 0:00:08, dạng là một cái dịch vụ hay còn gọi là
+0:00:08 - 0:00:11, cái
+0:00:08 - 0:00:13, api và cái tình huống sử dụng của mình
+0:00:11 - 0:00:17, trong trường hợp này đó là chúng ta đang
+0:00:13 - 0:00:19, muốn tạo ra một cái dịch vụ web cho bên
+0:00:17 - 0:00:21, thứ ba có thể khai thác được và bên thứ
+0:00:19 - 0:00:23, ba này thì có thể là đối tác của mình
+0:00:21 - 0:00:26, hoặc là cho cái team nội bộ về phát
+0:00:23 - 0:00:28, triển phần mềm của bên mình thì mô hình
+0:00:26 - 0:00:32, của mình cái cái cái dịch vụ web này của
+0:00:28 - 0:00:33, mình sẽ tải được nhiều có thể tái sử
+0:00:32 - 0:00:36, dụng được cho nhiều cái ứng dụng khác
+0:00:33 - 0:00:38, nhau tức là có thể dùng cho nội bộ có
+0:00:36 - 0:00:41, thể dùng cho các cái đối tác rồi Thậm
+0:00:38 - 0:00:45, chí là cũng có thể sử dụng được cho cả
+0:00:41 - 0:00:48, cái thậm chí là có thể sử dụng được cho
+0:00:45 - 0:00:50, chính cái người dùng cũi của mình thì
+0:00:48 - 0:00:53, nhắc lại ha thì đây chính là cái sơ đồ
+0:00:50 - 0:00:56, triển khai của mình và chúng ta sẽ phải
+0:00:53 - 0:01:00, viết Cái api chúng ta sẽ phải viết Cái
+0:00:56 - 0:01:02, api này và có rất nhiều cái công cụ
+0:01:00 - 0:01:05, nhưng mà có hai cái công cụ được sử dụng
+0:01:02 - 0:01:09, phổ biến cành đây nổi tiếng nhất và kinh
+0:01:05 - 0:01:12, điện nhất chính là flash nhưng mà gần
+0:01:09 - 0:01:17, đây thì sẽ có fast api thì như cái tên
+0:01:12 - 0:01:19, gọi fast api thì đây là một cái thư viện
+0:01:17 - 0:01:22, Giúp cho chúng ta tạo ra các cái dịch vụ
+0:01:19 - 0:01:25, với cái tốc độ thực thi rất là cao có
+0:01:22 - 0:01:28, thể đồng bộ hóa và phục vụ được rất
+0:01:25 - 0:01:32, nhiều những cái lược truy cập trong cùng
+0:01:28 - 0:01:35, một cái thời điểm thì sau đây chúng ta
+0:01:32 - 0:01:38, sẽ sử dụng cái công cụ chat gpt như đã
+0:01:35 - 0:01:40, đề cập ở trong phần trước để mà nhờ nó
+0:01:38 - 0:01:48, viết dùng một cái fast
+0:01:40 - 0:01:50, api thì viết cái api sử dụng fast Tức là
+0:01:48 - 0:01:52, mình sẽ cung mình nói cho nó biết mình
+0:01:50 - 0:01:54, muốn cái gì đó là mình muốn viết một cái
+0:01:52 - 0:01:57, api Nhưng mà phải viết bằng công cụ gì
+0:01:54 - 0:02:01, thì đó là fast
+0:01:57 - 0:02:06, api trong đó
+0:02:01 - 0:02:08, dữ liệu đầu vào trong đó input của cái
+0:02:06 - 0:02:15, dịch vụ của cái
+0:02:08 - 0:02:19, service sẽ là thông tin về
+0:02:15 - 0:02:19, size và
+0:02:19 - 0:02:32, quay và giá trị trả ra là
+0:02:25 - 0:02:35, Price sẽ được tính toán từ một mô hình à
+0:02:32 - 0:02:37, huấn
+0:02:35 - 0:02:42, [âm nhạc]
+0:02:37 - 0:02:47, luyện huấn luyện trước đó và lưu ý đó là
+0:02:42 - 0:02:51, mô hình này đã được
+0:02:47 - 0:02:53, lưu ở dạng file có tên
+0:02:51 - 0:02:55, là
+0:02:53 - 0:02:59, best
+0:02:55 - 0:02:59, Tre chp
+0:03:06 - 0:03:11, rồi đầu tiên thì nó cũng sẽ yêu cầu
+0:03:09 - 0:03:13, chúng ta cài đặt các cái thư viện này
+0:03:11 - 0:03:16, đúng không
+0:03:13 - 0:03:18, thử và chúng ta lưu ý là chúng ta sẽ
+0:03:16 - 0:03:20, chừa cái ccet lên ra để có thể cài được
+0:03:18 - 0:03:25, cái ccet lên theo đúng cái phiên bản của
+0:03:20 - 0:03:29, mình rồi sau đó Ờ để tạo ra cái file này
+0:03:25 - 0:03:31, thì ở đây là best picle này thì người ta
+0:03:29 - 0:03:33, đang hướng dẫn cái cách mình tạo ra một
+0:03:31 - 0:03:35, cái mẫu dữ liệu rồi huấn luyện Tuy nhiên
+0:03:33 - 0:03:37, cái công việc này chúng ta đã thực hiện
+0:03:35 - 0:03:39, ở trong cái file colap này rồi do đó cái
+0:03:37 - 0:03:41, bước số hai này chúng ta không cần thiết
+0:03:39 - 0:03:43, phải thực hiện nữa và ở bước số ba thì
+0:03:41 - 0:03:47, chúng ta sẽ tiến
+0:03:43 - 0:03:52, hành tạo cái cái api cho
+0:03:47 - 0:03:54, mình rồi Thế thì chúng ta sẽ tiến hành
+0:03:52 - 0:03:57, đầu tiên đó là cài đặt các cái thư biệt
+0:03:54 - 0:03:58, đúng không Thì là p install cái này do
+0:03:57 - 0:04:02, đó thì chúng ta
+0:03:58 - 0:04:02, sẽ tư tự như trong cái bài
+0:04:03 - 0:04:11, trước rồi chúng ta sẽ tạo một cái môi
+0:04:06 - 0:04:15, trường mới đó là cona create thì ở đây
+0:04:11 - 0:04:17, chúng ta sẽ dùng là first sẽ đặt tên cho
+0:04:15 - 0:04:21, cái environment này đó là
+0:04:17 - 0:04:24, api và thư viện Python ngôn ngữ Python
+0:04:21 - 0:04:26, 3.9
+0:04:24 - 0:04:29, và ở đây chúng ta sẽ không dùng stream
+0:04:26 - 0:04:34, list mà chúng ta sẽ cài là fast api và
+0:04:29 - 0:04:36, uvic rồi chop list thì mình không rõ cái
+0:04:34 - 0:04:38, chop list này nó dùng để à chop list này
+0:04:36 - 0:04:39, thì nó cũng giống giống như là picle do
+0:04:38 - 0:04:41, đó ở đây thì chúng ta sẽ không cần thiết
+0:04:39 - 0:04:45, phải cài cái này
+0:04:41 - 0:04:48, nữa fast api và
+0:04:45 - 0:04:48, uvic
+0:04:55 - 0:05:01, rồi sau khi chúng ta đã cài xong thì
+0:04:57 - 0:05:04, chúng ta sẽ cona activate
+0:05:01 - 0:05:07, api đó thì ở đây chúng ta đã tạo ra một
+0:05:04 - 0:05:10, cái environment có tên là api và chúng
+0:05:07 - 0:05:12, ta sẽ tiếp tục cài cái
+0:05:10 - 0:05:17, escal là p
+0:05:12 - 0:05:19, inst escal bằng bằng
+0:05:17 - 0:05:23, 1.3.2 thì đây chính là cái phiên bản để
+0:05:19 - 0:05:28, mà cái mô hình của mình có thể thực thi
+0:05:23 - 0:05:28, được đúng như cái kết quả ở đây
+0:05:41 - 0:05:46, rồi sau khi chúng ta cài đặt xong thì
+0:05:44 - 0:05:51, chúng ta sẽ tiến
+0:05:46 - 0:05:51, hành triển khai cái file api
+0:05:51 - 0:05:58, này chúng ta sẽ tạo ra một cái file
+0:05:55 - 0:06:01, mới pyon
+0:05:58 - 0:06:03, file chúng ta sẽ sẽ tiến hành lưu cái
+0:06:01 - 0:06:07, file này lại
+0:06:03 - 0:06:07, thì mình sẽ để là
+0:06:08 - 0:06:17, Python và tên file sẽ là Model
+0:06:12 - 0:06:19, api Model as api thì chúng ta lưu ý là ở
+0:06:17 - 0:06:21, đây chúng ta sử dụng cái thư viện trong
+0:06:19 - 0:06:24, cái code mà chat gpt nó tạo ra là dùng
+0:06:21 - 0:06:26, chli Nhưng mà mình đang sử dụng cái thư
+0:06:24 - 0:06:29, viện là Pixel do đó ở đây mình sẽ phải
+0:06:26 - 0:06:32, sửa lại
+0:06:29 - 0:06:35, chúng ta sẽ copy cái đoạn code clad cái
+0:06:32 - 0:06:35, model lên từ file của
+0:06:35 - 0:06:41, Pixel rồi và chúng ta sẽ thay thế cái
+0:06:38 - 0:06:43, đoạn code đó ở đây tiếp theo đó là chúng
+0:06:41 - 0:06:46, ta
+0:06:43 - 0:06:49, sẽ activate cái môi trường mà chúng ta
+0:06:46 - 0:06:51, đã cài đặt ha con
+0:06:49 - 0:06:54, activate
+0:06:51 - 0:06:56, api rồi thì như vậy chúng ta đã tiến
+0:06:54 - 0:07:01, hành cài xong
+0:06:56 - 0:07:05, và CD chúng ta sẽ vào thư mục là doc
+0:07:01 - 0:07:10, pro rồi thì để run cái này chúng ta sẽ
+0:07:05 - 0:07:10, chạy cái lệnh đó là uvic Script name app
+0:07:10 - 0:07:14, Tức
+0:07:10 - 0:07:18, là trong đó Script name chính là cái
+0:07:14 - 0:07:19, đường dẫn đến cái file Python của mình
+0:07:18 - 0:07:23, thì cái đường dẫn của mình đó chính là
+0:07:19 - 0:07:29, Model as api là
+0:07:23 - 0:07:32, Model as api và app chính là cái tên
+0:07:29 - 0:07:36, biến của mình cái đối tượng mà mình đã
+0:07:32 - 0:07:38, tạo ra với fast api ở đây đó là F rồi
+0:07:36 - 0:07:43, giờ mình sẽ run cái này
+0:07:38 - 0:07:48, ha rồi thì nó báo là nó đã run với cái
+0:07:43 - 0:07:51, port là 12 27 port là 8000 và để test
+0:07:48 - 0:07:53, thử cái này thì chúng ta sẽ phải dùng
+0:07:51 - 0:07:56, cái giao thức là giao thức post Tuy
+0:07:53 - 0:07:59, nhiên để test với giao thức post thì nó
+0:07:56 - 0:08:02, sẽ hơi phức tạp hơn một chút đó là chúng
+0:07:59 - 0:08:05, ta sẽ phải cài một
+0:08:02 - 0:08:08, cái phần mềm đó
+0:08:05 - 0:08:12, là postman
+0:08:08 - 0:08:15, đó thì nó sẽ hơi mất thời gian do đó thì
+0:08:12 - 0:08:19, chúng ta có thể sửa cái này một chút xíu
+0:08:15 - 0:08:22, đó là chúng ta sẽ dùng giao tích là
+0:08:19 - 0:08:23, get rồi và ở đây thay vì chúng ta truyền
+0:08:22 - 0:08:26, cái đối tượng là
+0:08:23 - 0:08:30, item base Model thì ở đây chúng ta sẽ
+0:08:26 - 0:08:36, truyền vào trực tiếp hai cái tham số
+0:08:30 - 0:08:39, đó là size kiểu float và way kiểu float
+0:08:36 - 0:08:39, thì ở đây chúng ta sẽ truyền vô là
+0:08:40 - 0:08:45, siz và way rồi phương thức ở đây sẽ là
+0:08:44 - 0:08:48, phương thức
+0:08:45 - 0:08:53, get sau khi lưu xong thì ở bên đây nó sẽ
+0:08:48 - 0:08:57, tự động reload lại cái file Model as api
+0:08:53 - 0:09:00, cho mình và để test thì chúng ta sẽ Ờ
+0:08:57 - 0:09:04, vào cái cửa sổ chat xin lỗi vào cái cửa
+0:09:00 - 0:09:07, sổ của của Browser và để là local host 2
+0:09:04 - 0:09:07, ch port là
+0:09:07 - 0:09:12, 8000 rồi not file đúng không thì chúng
+0:09:10 - 0:09:16, ta sẽ truyền vào là
+0:09:12 - 0:09:17, ừ chúng ta sẽ xem lại cái đường dẫn của
+0:09:16 - 0:09:20, mình là
+0:09:17 - 0:09:20, predict
+0:09:21 - 0:09:28, predict rồi tham số thì chúng ta sẽ để
+0:09:25 - 0:09:30, size là bằng ví dụ như hồi nãy chúng ta
+0:09:28 - 0:09:31, để là 110
+0:09:30 - 0:09:34, rồi
+0:09:31 - 0:09:38, and
+0:09:34 - 0:09:40, w thì sẽ là bằng
+0:09:38 - 0:09:43, [âm nhạc]
+0:09:40 - 0:09:45, 120 đó thì khi chúng ta truyền cái tham
+0:09:43 - 0:09:48, số này vào thì chúng ta sẽ thấy là nó
+0:09:45 - 0:09:54, trả ra một cái đình dạng là jas trong đó
+0:09:48 - 0:09:54, có cái trường là Price dự đoán là 500
+0:09:54 - 0:10:01, 9.90 tức là khớp với cái con số hồi nãy
+0:09:57 - 0:10:04, n lịch khoảng 9000 so với lại cái tập
+0:10:01 - 0:10:08, dataset huấn luyện của mình thì đây là
+0:10:04 - 0:10:09, cái cách thức để mà chúng ta tạo ra một
+0:10:08 - 0:10:15, cái
+0:10:09 - 0:10:17, api với cái dịch vụ web của Fast api và
+0:10:15 - 0:10:20, một cách tương tự nếu như chúng ta muốn
+0:10:17 - 0:10:23, sửa cái local host 8000 này thành cái
+0:10:20 - 0:10:26, đường dẫn cái domain của mình thì chúng
+0:10:23 - 0:10:30, ta sẽ phải Cấu hình lại cái mzx để cho
+0:10:26 - 0:10:34, nó nhận cái p 8000 nhận cái port 8000
+0:10:30 - 0:10:36, này tương ứng với lại cái dịch vụ là su
+0:10:34 - 0:10:38, predit thì chúng ta sẽ phải cấu hình
+0:10:36 - 0:10:42, tương tự như trong cái phần tạo một cái
+0:10:38 - 0:10:42, dịch vụ web

@@ -9,8 +9,10 @@ thực thi bm25:
  BM25_search = BM25KeywordSearch(documents)
 '''
 class BM25KeywordSearch:
-    def __init__(self, documents: List[Document]):
-        self.retriever = BM25Retriever.from_documents(documents)
+    def __init__(self, documents: List[Document], k: int = 40):
+        self.retriever = BM25Retriever.from_documents(documents, k=k)
 
     def get_retriever(self):
         return self.retriever
+
+

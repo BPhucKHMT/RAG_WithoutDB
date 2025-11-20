@@ -9,17 +9,19 @@ reranker = CrossEncoderReranker()
 
 --> TARGET: reranked_docs = reranker.rerank(docs, query, top_k=10) 
 '''
+
+
 class CrossEncoderReranker:
-    def __init__(self, model_name: str = "BAAI/bge-reranker-base", device: str = None):
+    def __init__(self, model_name: str = "BAAI/bge-reranker-base", device: str = "cuda"):
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name )
         self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
         self.model.to(self.device)
         self.model.eval()
         self.BAD_HINTS = ("Cảm ơn các bạn đã xem", "đăng ký kênh", "subscribe", "like và share")
 
     @torch.no_grad()
-    def batch_scores(self, query: str, texts: List[str], batch_size: int = 16, max_len: int = 512) -> List[float]:
+    def batch_scores(self, query: str, texts: List[str], batch_size: int = 128, max_len: int = 512) -> List[float]:
         scores = []
         for i in range(0, len(texts), batch_size):
             batch = texts[i : i + batch_size]

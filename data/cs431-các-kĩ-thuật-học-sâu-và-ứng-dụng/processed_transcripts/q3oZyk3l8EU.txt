@@ -10,7 +10,7 @@
 0:01:07 - 0:01:11, Và cái giá trị này thì thông thường sẽ biểu diễn bởi một con số.
 0:01:11 - 0:01:14, Từ 0 cho đến 255.
 0:01:14 - 0:01:18, Ví dụ như với ảnh Lena ở bên tay trái,
-0:01:18 - 0:01:21, thì cái dạng biểu diễn ở đây là mang tính chất minh họa thôi,
+0:01:18 - 0:01:21, thì cái dạng biểu diễn ở đây là mang tính chất minh hoạ thôi,
 0:01:21 - 0:01:26, thì nó sẽ mô tả bởi một cái ma trận,
 0:01:26 - 0:01:29, trong đó từng cái phần tử của ma trận nó sẽ nhận các cái giá trị
 0:01:29 - 0:01:31, từ 0 cho đến 255.
@@ -113,6 +113,15 @@
 0:09:42 - 0:09:45, Thì chúng ta cũng hiểu là 4 triệu tham số,
 0:09:45 - 0:09:47, thì chúng ta sẽ cần đâu đó xấp xỉ khoảng
 0:09:47 - 0:09:49, 4 triệu mẫu đi.
+0:09:49 - 0:09:52, Thì cái 4 triệu này nó tương đương quy mô của một
+0:09:52 - 0:09:53, dân số của một thành phố.
+0:09:53 - 0:09:55, Ví dụ dân số thành phố Hồ Chí Minh,
+0:09:55 - 0:09:57, có thể là khoảng 4 triệu.
+0:09:57 - 0:09:59, Thì tính ra ra ngoài đường,
+0:09:59 - 0:10:00, chúng ta sẽ cứ mỗi người đi ngang qua,
+0:10:00 - 0:10:02, chúng ta sẽ nhờ họ làm một mẫu dữ liệu.
+0:10:02 - 0:10:05, Thì rõ ràng là 4 triệu nó vẫn còn là một con số
+0:10:05 - 0:10:06, rất là lớn.
 0:10:06 - 0:10:09, Nhưng tuy nhiên nó cũng đã giảm một cách đáng kể,
 0:10:09 - 0:10:11, so với lại cái phiên bản là fully connected rồi.
 0:10:11 - 0:10:17, Vậy thì bây giờ làm thế nào để có thể giảm thêm được số lượng tham số này?

@@ -1,0 +1,289 @@
+0:00:00 - 0:00:04, trong phần tiếp theo thì chúng ta sẽ
+0:00:01 - 0:00:06, cùng tìm hiểu thư viện pandas và đây là
+0:00:04 - 0:00:08, một trong những cái thư viện rất là phổ
+0:00:06 - 0:00:11, biến và nổi tiếng trong cái xử lý dữ
+0:00:08 - 0:00:14, liệu dạng bản thì một số cái chủ đề
+0:00:11 - 0:00:16, chính trong thư viện pandas đó là chúng
+0:00:14 - 0:00:19, ta sẽ khởi tạo một cái bản dữ liệu như
+0:00:16 - 0:00:22, thế nào rồi chúng ta sẽ gom nhóm dữ liệu
+0:00:19 - 0:00:24, theo từng cột như thế nào rồi nếu như
+0:00:22 - 0:00:27, chúng ta muốn nối các cái bảng dữ liệu
+0:00:24 - 0:00:29, với nhau thì chúng ta sẽ nối như thế nào
+0:00:27 - 0:00:31, và ngoài ra thì thư viện pandas còn hỗ
+0:00:29 - 0:00:34, trợ các cái thao tác để giúp cho chúng
+0:00:31 - 0:00:36, ta can thiệp và thay đổi cái giá trị bên
+0:00:34 - 0:00:38, trong cái diễn liệu bản của mình chỉnh
+0:00:36 - 0:00:41, sửa cái diễn liệu bản của mình chỉnh sửa
+0:00:38 - 0:00:43, các cái giá lệ giá trị trong bản dữ liệu
+0:00:41 - 0:00:46, của mình rồi chúng ta có thể trích xuất
+0:00:43 - 0:00:49, cái bản con ở bên trong
+0:00:46 - 0:00:51, cái cái dữ liệu của mình như thế nào rồi
+0:00:49 - 0:00:53, chúng ta có thể tạo ra thêm các cái cột
+0:00:51 - 0:00:55, mới hoặc là tạo thêm các cái hàng mới
+0:00:53 - 0:00:57, như thế nào trong thươ viện pandas và
+0:00:55 - 0:01:00, cuối cùng đó là chúng ta có thể vẽ biểu
+0:00:57 - 0:01:02, đồ cơ bản và chúng ta lưu ý
+0:01:00 - 0:01:05, cái hàm vẽ biểu đồ ở đâyy đó chính là
+0:01:02 - 0:01:07, các cái hàm được thiết kế và cài đặt bởi
+0:01:05 - 0:01:11, thư viện pandas chứ không phải là các
+0:01:07 - 0:01:14, cái hàm mà được cài đặt bởi thư viện bên
+0:01:11 - 0:01:18, ngoài pandas như là thư viện
+0:01:14 - 0:01:19, m thì đầu tiên đó là chúng ta sẽ tạo một
+0:01:18 - 0:01:22, cái dữ liệu mới như thế nào thì trong
+0:01:19 - 0:01:24, pandas có một cái cấu trúc đó là
+0:01:22 - 0:01:25, dataframe thì đây chính là cái dữ liệu
+0:01:24 - 0:01:29, dạng bản của
+0:01:25 - 0:01:31, mình và để tạo dữ liệu thì chúng ta có
+0:01:29 - 0:01:33, thể khai báo theo cái kiểu là cột hoặc
+0:01:31 - 0:01:35, là theo kiểu dòng thì ví dụ ở đây là
+0:01:33 - 0:01:39, chúng ta đang khai báo tạo ra một cái
+0:01:35 - 0:01:42, data frame mà M với cái với cái kiểu là
+0:01:39 - 0:01:44, theo cột đó thì chúng ta sẽ phải truyền
+0:01:42 - 0:01:47, vào cái tham số đầu tiên đó là một cái
+0:01:44 - 0:01:47, kiểu
+0:01:47 - 0:01:54, dictionary rồi trong cái dictionary này
+0:01:51 - 0:01:57, thì các cái key À cái khóa của mình nó
+0:01:54 - 0:02:01, sẽ là các cái biến
+0:01:57 - 0:02:01, xyzt tương ứng là x yzt ở đây
+0:02:02 - 0:02:08, và ứng với từng cái khóa X yzt chúng ta
+0:02:05 - 0:02:10, sẽ có các cái value tương ứng đó thì ở
+0:02:08 - 0:02:14, đây chúng ta sẽ thấy là value của trường
+0:02:10 - 0:02:17, x đó chính là 13 30 và A thì tương ứng
+0:02:14 - 0:02:21, đó là 13 30 và A và ở đây thì nó sẽ được
+0:02:17 - 0:02:23, lưu trong cái dạng là list nên các cái
+0:02:21 - 0:02:24, giá trị này nó có thể là những cái giá
+0:02:23 - 0:02:27, trị thuộc những cái kiểu dữ liệu khác
+0:02:24 - 0:02:29, nhau nên các cái cột ở đây các cái giá
+0:02:27 - 0:02:30, trị trong cột ở đây nó có thể là những
+0:02:29 - 0:02:33, cái giá trị khác nhau
+0:02:30 - 0:02:38, và cái tham số thứ hai cho
+0:02:33 - 0:02:40, cái hàm PD chdf frame đó chính là Index
+0:02:38 - 0:02:44, cái Index này nó sẽ giúp cho các cái
+0:02:40 - 0:02:47, thao tác truy xất rồi tìm kiếm ở bên
+0:02:44 - 0:02:49, trong dataframe được thực hiện nhanh hơn
+0:02:47 - 0:02:52, thì ở đây là Index chúng ta sẽ đánh chỉ
+0:02:49 - 0:02:56, mục đó là 1 2 3 tương ứng đó là các giá
+0:02:52 - 0:02:56, trị ở bên đây đây chính là cái cột
+0:02:57 - 0:03:04, Index rồi the tác tiếp theo đó là chúng
+0:03:01 - 0:03:06, ta có thể load cái dữ liệu dataframe và
+0:03:04 - 0:03:09, chúng ta load lên từng file và một trong
+0:03:06 - 0:03:12, những cái file rất là nổi tiếng và đơn
+0:03:09 - 0:03:16, giản đó chính là CSV chúng ta sẽ dùng
+0:03:12 - 0:03:19, hàm pdr CSV và chúng ta sẽ truyền vào
+0:03:16 - 0:03:21, cái đường dẫn đến cái nơi chứa của cái
+0:03:19 - 0:03:26, file này chúng ta sẽ truyền cái đường
+0:03:21 - 0:03:27, dẫn này vào và khi chúng ta load cái dữ
+0:03:26 - 0:03:30, liệu từ cái file csp này lên thì chúng
+0:03:27 - 0:03:33, ta sẽ được một cái file có cái cấu trúc
+0:03:30 - 0:03:35, là data frame Và khi chúng ta thực hiện
+0:03:33 - 0:03:38, cái việc là vẽ cái data frame này lên
+0:03:35 - 0:03:40, trên cái màn hình thì nó sẽ ra cái bảng
+0:03:38 - 0:03:44, dữ liệu như thế này và các cái trường
+0:03:40 - 0:03:47, thông tin như là day simple rồi Open
+0:03:44 - 0:03:51, high low close volume vân vân Thì đó
+0:03:47 - 0:03:55, chính là các cái cột mà được lưu ở bên
+0:03:51 - 0:03:58, trong cái file stock.csv và các cái giá
+0:03:55 - 0:04:00, trị như thế này thì là cũng đưa ở các
+0:03:58 - 0:04:05, cái hàng trong file CSV
+0:04:00 - 0:04:09, này và một số cái quy ước đầu tiên đó
+0:04:05 - 0:04:13, là ở hàng trên cùng thì chúng ta đặt tên
+0:04:09 - 0:04:15, cho nó đó là cột hay còn gọi là colum và
+0:04:13 - 0:04:19, các cái giá trị trên một cái dòng này
+0:04:15 - 0:04:24, thì nó gọi là một cái cột dữ liệu hay
+0:04:19 - 0:04:27, còn gọi là variable kế biến và mỗi một
+0:04:24 - 0:04:30, hàng này thì nó gọi là một cái mẫu quan
+0:04:27 - 0:04:32, sát hay còn gọi là một cái observation
+0:04:30 - 0:04:35, và ở cột bên trái ngoài cùng vàở đây đó
+0:04:32 - 0:04:36, chính là chỉ mục chỉ mục là những cái
+0:04:35 - 0:04:39, con số để giúp cho chúng ta sau này thực
+0:04:36 - 0:04:41, hiện các cái thao tác tìm kiếm
+0:04:39 - 0:04:44, à cho nó được nhanh hoặc là trích xuất
+0:04:41 - 0:04:47, các cái dữ liệu nó được
+0:04:44 - 0:04:49, nhanh rồi chúng ta có thể thực hiện các
+0:04:47 - 0:04:51, cái thao tác comom nhóm dữ liệu Ví dụ
+0:04:49 - 0:04:54, như chúng ta có cái hàm
+0:04:51 - 0:04:55, pivot thì ở đây chúng ta sẽ gọi là ví dụ
+0:04:54 - 0:04:59, như đây là cái biến dataframe của mình
+0:04:55 - 0:05:01, thôi là stocks ch pivot chúng ta sẽ
+0:04:59 - 0:05:04, truyền vào các cái tham số là Index là
+0:05:01 - 0:05:06, bằng day column là bằng symbol và value
+0:05:04 - 0:05:10, bằng close thì ở đây nó sẽ tạo ra cái
+0:05:06 - 0:05:13, kết quả như sau thì nó sẽ gom nhóm các
+0:05:10 - 0:05:16, cái dữ liệu theo Trường là Trường day
+0:05:13 - 0:05:19, trường symbol và trường close thì đối
+0:05:16 - 0:05:21, với simpol thì nó sẽ tách ra là có các
+0:05:19 - 0:05:24, cái mã cổ phiếu như là apple amazon
+0:05:21 - 0:05:27, Google và ứng với lại các cái mã này thì
+0:05:24 - 0:05:30, chúng ta sẽ có cái trường D đây sẽ là
+0:05:27 - 0:05:35, theo hàng và từng mã nó sẽ có các cái
+0:05:30 - 0:05:37, giá trị là giá trị đóng cửa giá trị đóng
+0:05:35 - 0:05:41, cửa thì đây là phương pháp à Đây là cái
+0:05:37 - 0:05:44, cách thức để chúng ta có thể gom nhóm dữ
+0:05:41 - 0:05:46, liệu rồi Đây là một cái cách thức sử
+0:05:44 - 0:05:49, dụng khác nếu như chúng ta gom nhóm với
+0:05:46 - 0:05:51, nhiều hơn hai giá trị trong slide trước
+0:05:49 - 0:05:54, là value của mình nó chỉ có một giá trị
+0:05:51 - 0:05:56, là close thì trong cái slide tiếp theo
+0:05:54 - 0:05:58, đó chính là bao gồm cả cột close và
+0:05:56 - 0:06:00, volume như vậy thì ở đây chúng ta thấy
+0:05:58 - 0:06:01, là nó sẽ tạo ra thêm hai cái cột con ở
+0:06:00 - 0:06:06, trên
+0:06:01 - 0:06:08, đây là close và volume thì đây là các
+0:06:06 - 0:06:10, cái giá đóng cửa của lần lượt ba cái mã
+0:06:08 - 0:06:12, cổ phiếu và đây sẽ là các cái khối lượng
+0:06:10 - 0:06:16, giao dịch của ba cái mã cổ phiếu thì đây
+0:06:12 - 0:06:18, là gom nhóm dữ liệu rồi chúng ta có thể
+0:06:16 - 0:06:21, thực hiện với gom nhóm dữ liệu với cái
+0:06:18 - 0:06:23, phương thức đó là pivot table thì cũng
+0:06:21 - 0:06:24, tương tự như vậy ha tương tự như là
+0:06:23 - 0:06:28, phương thức là
+0:06:24 - 0:06:30, payot và ở đây sau khi chúng ta gom nhóm
+0:06:28 - 0:06:32, dữ liệu xong thì chúng ta có thể thực
+0:06:30 - 0:06:34, hiện cái thao tác là aggregation
+0:06:32 - 0:06:36, function tức là chúng ta tổng hợp dữ
+0:06:34 - 0:06:41, liệu bằng các cái phương thức ví dụ như
+0:06:36 - 0:06:43, là np.min chúng ta sẽ tính trung bình
+0:06:41 - 0:06:46, cho các cái giá trị đóng cửa hoặc là
+0:06:43 - 0:06:48, trung bình cho các cái giá trị khối
+0:06:46 - 0:06:50, lượng giao dịch
+0:06:48 - 0:06:52, theo từng cái nhóm đối tượng của mình là
+0:06:50 - 0:06:55, Apple và giá đóng cửa tính giá trị trung
+0:06:52 - 0:06:57, bình theo các cái ngày rồi tính trung
+0:06:55 - 0:07:00, bình khối lượng của mã cổ phiếu Apple
+0:06:57 - 0:07:02, theo tất cả các cái ngày
+0:07:00 - 0:07:06, rồi chúng ta có thể thực hiện nối dữ
+0:07:02 - 0:07:07, liệu à với cái hàm là concat nối dữ liệu
+0:07:06 - 0:07:09, với cái hàm concat và chúng ta có thể
+0:07:07 - 0:07:13, nối theo chiều dọc Ví dụ như chúng ta có
+0:07:09 - 0:07:14, cái dataframe 1 và dataframe 2 như sau
+0:07:13 - 0:07:17, và khi chúng ta nối theo chiều dọc
+0:07:14 - 0:07:20, concat thì nó sẽ tạo ra một cái bảng
+0:07:17 - 0:07:22, tổng hợp như thế này chúng ta có thể nối
+0:07:20 - 0:07:25, theo chiều ngang đó ví dụ như ở đây là x
+0:07:22 - 0:07:27, yz và chúng ta sẽ có thêm hai cái cột
+0:07:25 - 0:07:29, nữa là UV thì chúng ta có thể nối theo
+0:07:27 - 0:07:33, chiều ngang trong trường hợp mà nó nó
+0:07:29 - 0:07:34, không khớp với nhau về cái số lượng phần
+0:07:33 - 0:07:38, tử đúng không Ví dụ ở đây chúng ta thấy
+0:07:34 - 0:07:41, là nó có ba à có bốn hàng dữ liệu là A O
+0:07:38 - 0:07:47, và AB nhưng mà cái dataframe 2 thì nó
+0:07:41 - 0:07:50, chỉ có ba chỉ có ba hàng là 0 1 hoặc là
+0:07:47 - 0:07:51, 20116 thì khi đó nó sẽ tự động chèn các
+0:07:50 - 0:07:55, cái giá trị
+0:07:51 - 0:07:57, N không xác định vào bên trong cái bảng
+0:07:55 - 0:07:57, tổng hợp của
+0:07:58 - 0:08:04, mình Và Nó có h thể hỗ trợ pandas có hỗ
+0:08:01 - 0:08:06, trợ cho chúng ta điền khuyết giá trị Ví
+0:08:04 - 0:08:08, dụ như là field N và chúng ta sẽ truyền
+0:08:06 - 0:08:12, cái tham số là cái giá trị mà mình mong
+0:08:08 - 0:08:14, muốn điện quyết thì ở bảng bên trái data
+0:08:12 - 0:08:17, ở cái bảng bên trái thì chúng ta sẽ thấy
+0:08:14 - 0:08:20, là có các cái giá trị bị bị rỗng bị
+0:08:17 - 0:08:23, thiếu thì khi chúng ta Điền Phi -1 tức
+0:08:20 - 0:08:26, là các cái giá trị này đã được thay bằng
+0:08:23 - 0:08:29, giá trị là
+0:08:26 - 0:08:32, -1 rồi chúng ta có thể lấy ra cái các
+0:08:29 - 0:08:34, cái tập con theo dòng theo cột ví dụ
+0:08:32 - 0:08:38, trong trường hợp này chúng ta lấy ra tập
+0:08:34 - 0:08:42, con theo dòng thì data frame 1 thì đây
+0:08:38 - 0:08:44, là cái dataframe đầu vào và điều kiện
+0:08:42 - 0:08:46, điều kiện để chúng ta trích xuất ra thì
+0:08:44 - 0:08:50, chúng ta sẽ đưa cái điều kiện vào đó là
+0:08:46 - 0:08:53, dataframe 1.i tức là cái cột y mà có giá
+0:08:50 - 0:08:56, trị lớn hơn 10 đó thì những cái cái giá
+0:08:53 - 0:08:58, trị nào những cái giá trị y nào mà lớn
+0:08:56 - 0:09:01, hơn 10 ví dụ như là 15
+0:08:58 - 0:09:04, 12 12 thì chúng ta sẽ lấy ra còn cái cột
+0:09:01 - 0:09:06, này chúng ta sẽ loại bỏ đi thì ở đây là
+0:09:04 - 0:09:06, lấy theo
+0:09:06 - 0:09:13, dòng rồi chúng ta có thể gọi cái hàm là
+0:09:09 - 0:09:17, x data frame 1 chx Tức là cái cột dữ
+0:09:13 - 0:09:20, liệu X và thực hiện cái hàm kiểm tra là
+0:09:17 - 0:09:23, is in tức là có nằm bên trong một cái
+0:09:20 - 0:09:25, tập hợp cho trước hay không is in có nằm
+0:09:23 - 0:09:29, trong Tạng vào cho CH the Tức là cái giá
+0:09:25 - 0:09:33, trị trên cái cột X này nè nếu như nó là
+0:09:29 - 0:09:36, A hoặc là AB thì chúng ta sẽ giữ cái
+0:09:33 - 0:09:39, hàng đó đó thì A và AB thì như vậy là
+0:09:36 - 0:09:41, chúng ta sẽ bỏ ra hai cái hàng này chúng
+0:09:39 - 0:09:44, ta sẽ bỏ hai hàng này Tại vì B và O nó
+0:09:41 - 0:09:47, không nằm trong cái tập hợp này rồi
+0:09:44 - 0:09:50, chúng ta có thể lấy theo cột ví dụ
+0:09:47 - 0:09:53, dataframe 1 đúng không Chúng ta sẽ
+0:09:50 - 0:09:55, truyền vô là danh sách các cái cột mà
+0:09:53 - 0:09:59, chúng ta muốn lấy thì chúng ta sẽ truyền
+0:09:55 - 0:10:02, vào cái tên của cột là x và Z chúng ta
+0:09:59 - 0:10:05, sẽ bỏ đi cái cột y này do Y không nằm
+0:10:02 - 0:10:05, trong cái danh sách
+0:10:06 - 0:10:13, này rồi Đây là một cái thí nghiệm khác
+0:10:10 - 0:10:15, chúng ta sẽ lấy tập con trên một cái cột
+0:10:13 - 0:10:18, ví dụ như là chúng ta lấy column x rồi
+0:10:15 - 0:10:22, dataframe chx Hoặc là chúng ta có thể
+0:10:18 - 0:10:25, gọi là dataframe mở ngặc vuông X thì cả
+0:10:22 - 0:10:28, hai cái cứ pháp này đều có thể giúp cho
+0:10:25 - 0:10:30, chúng ta lấy một cột trong cái dataframe
+0:10:28 - 0:10:33, của mình ra
+0:10:30 - 0:10:35, rồi chúng ta có thể thêm vô một cái cột
+0:10:33 - 0:10:37, dữ liệu mới ví dụ như trong cái giá trị
+0:10:35 - 0:10:39, stock trong cái bảng stock ban đầu của
+0:10:37 - 0:10:41, chúng ta không có cái trường value này
+0:10:39 - 0:10:45, chúng ta có thể chèn thêm vô một cái cột
+0:10:41 - 0:10:47, value bằng cách đó là stock value đã tự
+0:10:45 - 0:10:50, động chèn thêm một cái cột nữa có tên là
+0:10:47 - 0:10:53, value và cái giá trị cho cái cột này nó
+0:10:50 - 0:10:55, sẽ được tính bằng các cái cột trước đó
+0:10:53 - 0:10:57, thực hiện các cái thao tác số học ví dụ
+0:10:55 - 0:10:59, như là stock ch close Tức là nó đang lấy
+0:10:57 - 0:11:03, cái cột close
+0:10:59 - 0:11:05, thực hiện nhân với lại stock ch value à
+0:11:03 - 0:11:08, x stock
+0:11:05 - 0:11:10, chv thì nó sẽ lấy giá trị này nhân với
+0:11:08 - 0:11:13, giá trị này để ra cái giá trị này nó sẽ
+0:11:10 - 0:11:16, nhân theo từng
+0:11:13 - 0:11:19, hàng và cuối cùng đó chính là một số cái
+0:11:16 - 0:11:22, hàm vẽ cơ bản
+0:11:19 - 0:11:25, trong thư viện của pandas ví dụ
+0:11:22 - 0:11:29, dataframe chpl chúng ta sẽ vẽ nó dưới
+0:11:25 - 0:11:32, dạng là histogram hoặc là dataframe chpl
+0:11:29 - 0:11:35, chúng ta chấm scatter chúng ta sẽ truyền
+0:11:32 - 0:11:38, các cái biến x y vào thì ở đây nó sẽ lấy
+0:11:35 - 0:11:40, ra các cái cột à Xin lỗi chúng ta sẽ lấy
+0:11:38 - 0:11:43, ra các cái cột là i như là cái Biến theo
+0:11:40 - 0:11:43, trục trục
+0:11:43 - 0:11:53, hoành và Z là theo Thục
+0:11:48 - 0:11:54, tung đó thì dataframe plot scatter thì
+0:11:53 - 0:11:58, nó sẽ lấy ra các cái điểm dữ liệu của
+0:11:54 - 0:12:00, mình để vẽ lên trên tiểu đồ như thế này
+0:11:58 - 0:12:02, như vậy vậ thì trong bài học ngày hôm
+0:12:00 - 0:12:05, nay thì chúng ta đã cùng tìm hiểu qua
+0:12:02 - 0:12:07, một số cái thư viện nổi tiếng trong thư
+0:12:05 - 0:12:09, viện trong Python đó chính là thư viện
+0:12:07 - 0:12:12, nump thư viện nump sẽ giúp cho chúng ta
+0:12:09 - 0:12:16, thực hiện các cái thao tác số học trên
+0:12:12 - 0:12:17, các cái loại dữ liệu như là scaler hoặc
+0:12:16 - 0:12:22, là
+0:12:17 - 0:12:24, vector rồi ma
+0:12:22 - 0:12:27, trận hoặ là
+0:12:24 - 0:12:30, tenser và chúng ta tìm hiểu về thư viện
+0:12:27 - 0:12:34, để trực Quang Hóa đ là m lot
+0:12:30 - 0:12:36, lip trong thư viện m LP hỗ trợ rất là
+0:12:34 - 0:12:38, nhiều các cái loại biểu đồ Ờ rất là
+0:12:36 - 0:12:41, nhiều Cái loại biểu đồ và cái cách thức
+0:12:38 - 0:12:43, vẽ khác nhau thậm chí là chúng ta có thể
+0:12:41 - 0:12:45, thực hiện thao tác lên trên các cái dữ
+0:12:43 - 0:12:46, liệu như là dữ liệu dàn ảnh rồi trong
+0:12:45 - 0:12:49, không gian biểu diễn có thể là không
+0:12:46 - 0:12:52, gian hai chiều ba chiều và cuối cùng đó
+0:12:49 - 0:12:53, là thư viện pandas thì đây là một trong
+0:12:52 - 0:12:56, những cái thư
+0:12:53 - 0:12:59, viện nổi tiếng trong cái xử lý các cái
+0:12:56 - 0:13:01, dữ liệu dạng Bản
+0:12:59 - 0:13:04, chữ liệu
+0:13:01 - 0:13:08, bản và các cái thao tác trên bảng như là
+0:13:04 - 0:13:11, khởi tạo bảng rồi tìm kiếm hoặc là thao
+0:13:08 - 0:13:14, tác trích xuất một cái bảng con hoặc là
+0:13:11 - 0:13:17, nối các cái bản lại với nhau là vẽ vẽ
+0:13:14 - 0:13:20, cái cái biểu đồ cho các cái dữ liệu bên
+0:13:17 - 0:13:22, trong bảng thì đó là những cái thao tác
+0:13:20 - 0:13:25, những cái phương thức mà pandas có hỗ
+0:13:22 - 0:13:25, trợ

@@ -1,0 +1,156 @@
+0:00:00 - 0:00:06, và kỹ thuật tiếp theo mà chúng ta sẽ
+0:00:03 - 0:00:09, được tìm hiểu đó chính là t-SNE t-SNE là
+0:00:06 - 0:00:14, viết tắt của chữ t-distributed
+0:00:09 - 0:00:17, Stochastic Neighbor Embedding thì t-SNE là
+0:00:14 - 0:00:20, một cái kỹ thuật giảm chiều mà phi tuyến.
+0:00:17 - 0:00:23, Nếu như PCA nó dựa trên các cái công cụ
+0:00:20 - 0:00:28, của Đại Số tuyến tính, các cái phép biến
+0:00:23 - 0:00:31, đổi tuyến tính thì t-SNE là cái thuật toán,
+0:00:28 - 0:00:33, là cái kỹ thuật mà khi mà chúng ta làm
+0:00:31 - 0:00:36, việc trên cái loại dữ liệu có tính chất
+0:00:33 - 0:00:39, là phi tuyến, nó không có một cái sự gọi
+0:00:36 - 0:00:41, là thể hiện cái mối quan hệ tuyến tính
+0:00:39 - 0:00:44, nào hết đó, thì thì đó là cái mối quan hệ
+0:00:41 - 0:00:47, phi tuyến. Và mục tiêu của nó đó là để
+0:00:44 - 0:00:49, trực quan hóa cái dữ liệu của mình. Đây
+0:00:47 - 0:00:52, chính là cái nhiệm vụ chính của mình để
+0:00:49 - 0:00:52, trực quan hóa dữ liệu của
+00:00:52 - 0:00:57, mình cho cái dữ liệu đa chiều. Tức là cái
+00:00:55 - 0:00:59, dữ liệu của mình ban đầu là một cái dữ
+00:00:57 - 0:01:02, liệu đa chiều thì chúng ta sẽ đưa nó về
+00:00:59 - 0:01:04, cái số chiều thấp hơn, số chiều thấp hơn.
+00:01:02 - 0:01:06, Và thông thường để mà có thể trực quan
+00:01:04 - 0:01:09, với các cái công cụ vẽ hiện nay thì
+00:01:06 - 0:01:12, chúng ta sẽ sử dụng là à không gian hai
+00:01:09 - 0:01:14, chiều hoặc là không gian ba chiều. Và ý
+00:01:12 - 0:01:17, tưởng của nó đó là nó sẽ tạo ra một cái
+00:01:14 - 0:01:19, phân bố xác suất à nó sẽ tạo ra một cái
+00:01:17 - 0:01:22, phân bố xác suất mới nó tương tự nó
+00:01:19 - 0:01:24, tương tự trong cái không gian có cái số
+00:01:22 - 0:01:27, chiều thấp hơn. Tức là thay vì không gian
+00:01:24 - 0:01:30, là 10
+00:01:27 - 0:01:32, chiều thì nó tạo ra một cái phân bố
+00:01:30 - 0:01:35, trong cái không gian hai chiều
+00:01:32 - 0:01:37, trong cái không gian hai chiều. Và các
+00:01:35 - 0:01:41, cái tính chất về phân bố của mình nó sẽ
+00:01:37 - 0:01:42, được bảo toàn. Ví dụ các cái điểm nào mà
+00:01:41 - 0:01:45, gần nhau ở trong không gian nhiều chiều
+00:01:42 - 0:01:46, thì khi chiếu xuống trong không gian nhiều
+00:01:45 - 0:01:49, chiều, Khi chiếu xuống không gian hai
+00:01:46 - 0:01:51, chiều thì các cái điểm đó các cái đặc
+00:01:49 - 0:01:54, trưng đó nó vẫn phải gần nhau. Đó chính
+00:01:51 - 0:01:56, là cái tính chất và ràng buộc khi chúng
+00:01:54 - 0:01:59, ta dùng
+00:01:56 - 0:02:02, t-SNE. Và đây là một cái minh họa cho cái ý
+0:01:59 - 0:02:06, tưởng đó đó. Ví dụ như các cái điểm ở đây
+00:02:02 - 0:02:08, là những cái ảnh của cái tập dữ liệu là
+00:02:06 - 0:02:10, MNIST. Và cái tập dữ liệu MNIST này thì các
+00:02:08 - 0:02:14, bạn biết rồi đó là những cái ảnh có kích
+0:02:10 - 0:02:16, thước là 28 x 28. Tức là nếu như chúng ta
+0:02:14 - 0:02:18, trải nó ra thành cái vector thì đây là
+00:02:16 - 0:02:24, các cái vector
+00:02:18 - 0:02:26, 784 chiều, tức là 28 x 28 là 784 chiều.
+00:02:24 - 0:02:28, Đây là một cái không gian rất là lớn và
+00:02:26 - 0:02:32, rất khó để có thể trực quan hóa được.
+00:02:28 - 0:02:36, Nhưng nhờ cái thuật toán, cái kỹ thuật t-SNE,
+00:02:32 - 0:02:39, chúng ta chiếu nó về cái không gian hai
+00:02:36 - 0:02:42, chiều là các cái điểm ở đây thì chúng ta
+00:02:39 - 0:02:44, vẽ lên và chúng ta thấy nó vẫn giữ được
+00:02:42 - 0:02:48, những cái tính chất nhất định. Ví dụ
+00:02:44 - 0:02:50, những cái điểm màu xanh ở đây chúng ta
+00:02:48 - 0:02:54, thấy những cái điểm co cụm ở đây nó đều
+00:02:50 - 0:02:55, là những cái điểm mà tạo bởi cái ảnh của
+00:02:54 - 0:02:59, con số
+00:02:55 - 0:03:01, 1. Rồi những cái cụm điểm ở đây chúng ta
+00:02:59 - 0:03:04, thấy là khi chúng ta giảm chiều dữ liệu
+00:03:01 - 0:03:08, xong thì những cái điểm là số 0 nó sẽ
+00:03:04 - 0:03:13, nằm ở gần đây. Rồi những cái ảnh mà tạo
+00:03:08 - 0:03:16, những cái ảnh của cái chữ số 6 thì nó
+00:03:13 - 0:03:19, cũng sẽ nằm co cụm ở đây, nó sẽ nằm phân
+00:03:16 - 0:03:21, bố như như trên đây đó. Đây là những cái
+00:03:19 - 0:03:23, vùng điểm số 7. Và đương nhiên đâu đó
+00:03:21 - 0:03:25, chúng ta sẽ thấy có những cái điểm nhiễu,
+00:03:23 - 0:03:28, có những cái điểm nhiễu do cái thao tác
+00:03:25 - 0:03:30, à chiếu từ không gian nhiều chiều xuống
+00:03:28 - 0:03:31, không gian thấp chiều lấy ví dụ như ở
+00:03:30 - 0:03:34, đây chúng ta thấy là những cái điểm
+00:03:31 - 0:03:36, thuộc cái chữ số 4 đúng không, là màu
+00:03:34 - 0:03:38, xanh ngọc ở đây nè là số 4. Nhưng đâu đó
+00:03:36 - 0:03:41, nó lại lọt những cái điểm màu xanh dương,
+0:03:38 - 0:03:44, tức là tương ứng cái con số 1 ở đây thì
+0:03:41 - 0:03:44, đó là những cái điểm
+00:03:45 - 0:03:52, nhiễu. Rồi, và như vậy thì chúng ta sẽ
+00:03:48 - 0:03:55, tiến hành so sánh các cái thuật toán PCA
+00:03:52 - 0:03:59, và thuật toán t-SNE. Thì ưu về ưu điểm, thuật
+0:03:55 - 0:04:03, toán PCA nó nhanh và nó hiệu rất là hiệu
+00:03:59 - 0:04:05, quả với lại những cái dữ liệu lớn. Và do
+00:04:03 - 0:04:08, là nó phải nó chỉ thực hiện với các cái
+00:04:05 - 0:04:09, phép biến đổi tuyến tính. Ở đây là mình
+00:04:08 - 0:04:12, ghi nhầm ha, đây là những cái phép biến
+00:04:09 - 0:04:15, đổi là tuyến
+00:04:12 - 0:04:16, tính. Các cái thao tác biến đổi của PCA
+00:04:15 - 0:04:19, thì tất cả đều thực hiện các cái phép
+00:04:16 - 0:04:22, biến đổi tuyến tính nên cái tốc độ của nó
+00:04:19 - 0:04:25, nó rất là nhanh, nó rất là hiệu
+00:04:22 - 0:04:26, quả. Và nó giữ lại được các cái thành
+00:04:25 - 0:04:29, phần chính với những cái phương sai lớn,
+00:04:26 - 0:04:34, phương sai lớn hay là cái độ biến động,
+00:04:29 - 0:04:34, độ lệch hoặc là biến
+00:04:35 - 0:04:41, động lớn. Tại sao? Tại vì những cái điểm
+00:04:39 - 0:04:43, mà có cái độ lệch độ biến động lớn thì
+00:04:41 - 0:04:45, nó sẽ chứa nhiều thông tin. Còn những cái
+00:04:43 - 0:04:48, thành phần nào mà có độ lệch độ biến
+00:04:45 - 0:04:50, động ít á, tức là nó ít có thông tin. Và
+00:04:48 - 0:04:53, ưu điểm cho t-SNE đó chính là nó có khả
+00:04:50 - 0:04:57, năng nắm bắt được cái cấu trúc phi tuyến
+00:04:53 - 0:04:59, của dữ liệu. PCA thì rất là phù hợp cho
+00:04:57 - 0:05:03, những cái dữ liệu nào mà dạng tuyến tính,
+00:04:59 - 0:05:06, còn t-SNE thì nó sẽ giúp cho mình nắm bắt
+00:05:03 - 0:05:08, được những cái cấu trúc phi tuyến tính,
+00:05:06 - 0:05:10, và thường được sử dụng trong cái việc là
+00:05:08 - 0:05:12, trực quan hóa dữ liệu thôi.
+00:05:10 - 0:05:15, PCA thì thường được sử dụng cho cái việc
+00:05:12 - 0:05:18, là giảm chiều dữ liệu và lấy cái dữ liệu
+00:05:15 - 0:05:20, đó như là một cái vector đặc trưng, đó như
+00:05:18 - 0:05:23, là một cái vector đặc trưng để mà phục vụ
+00:05:20 - 0:05:26, cho cái công đoạn phía sau, ví dụ như là
+00:05:23 - 0:05:28, dự đoán cái kết quả cho bài toán hồi quy
+00:05:26 - 0:05:30, hoặc là phân lớp. Còn t-SNE thì thông
+00:05:28 - 0:05:33, thường được sử dụng cho cái vấn đề
+00:05:30 - 0:05:35, là trực quan hóa dữ liệu gốc ban đầu là
+00:05:33 - 0:05:37, cái dữ liệu đa chiều thì chúng ta sẽ
+00:05:35 - 0:05:40, giảm nó xuống còn hai cho đến ba chiều
+00:05:37 - 0:05:44, để vẽ được trong cái không gian đó. Và
+00:05:40 - 0:05:47, khuyết điểm của PCA đó chính là nó có
+00:05:44 - 0:05:49, khả năng à nó không có cái khả năng à
+00:05:47 - 0:05:52, bắt được những cái cấu trúc phi tuyến,
+00:05:49 - 0:05:55, hay nói cách khác đó là khả năng mà bắt
+00:05:52 - 0:05:57, cái cấu trúc phi tuyến của nó là
+00:05:55 - 0:06:00, kém. Thì đó chính là cái sự đối ngẫu với
+00:05:57 - 0:06:04, t-SNE. t-SNE có khả năng bắt được cấu trúc phi
+00:06:00 - 0:06:06, tuyến thì PCA nó cái cái việc mà bắt được
+00:06:04 - 0:06:08, cấu trúc phi tuyến của nó rất là kém. Và
+00:06:06 - 0:06:10, nó dễ bị ảnh hưởng bởi cái nhiễu hay là
+00:06:08 - 0:06:13, các cái outlier. Tức là trong mẫu dữ
+00:06:10 - 0:06:15, liệu của mình nếu có những cái đặc trưng
+00:06:13 - 0:06:19, nào mà là đặc trưng nhiễu thì nó sẽ gây
+00:06:15 - 0:06:23, ảnh hưởng lớn đến cái kết quả phân tích
+00:06:19 - 0:06:25, của mình. Và t-SNE thì nó sẽ không ổn định
+00:06:23 - 0:06:28, do có cái yếu tố ngẫu nhiên. Trong
+00:06:25 - 0:06:30, cái thuật toán của t-SNE thì nó sẽ có cái yếu
+00:06:28 - 0:06:32, tố là đưa về cái phân bố ngẫu nhiên thì
+00:06:30 - 0:06:34, có cái yếu tố ngẫu nhiên nên cái tính
+00:06:32 - 0:06:36, không ổn định của t-SNE. Và nó có cái độ
+00:06:34 - 0:06:38, phức tạp cao do nó phải thực hiện các
+00:06:36 - 0:06:42, cái thao tác biến đổi trong cái không
+00:06:38 - 0:06:43, gian phi tuyến. Rồi, và nó sẽ khó có cái
+00:06:42 - 0:06:45, tính giải thích. Tức là cái tính giải
+00:06:43 - 0:06:48, thích của nó nó sẽ không cao so với lại
+00:06:45 - 0:06:50, PCA. Tại vì PCA chúng ta thực hiện trên cái
+00:06:48 - 0:06:54, thao tác là tuyến tính mà tuyến tính thì
+00:06:50 - 0:06:56, chúng ta sẽ dễ hình dung dễ hiểu hơn. Còn
+00:06:54 - 0:06:58, phi tuyến thì nó sẽ khó hiểu khó giải
+00:06:56 - 0:07:01, thích hơn. Thì trên đây đó chính là chúng
+00:06:58 - 0:07:04, ta đã so sánh các
+00:07:01 - 0:07:10, cái phương pháp về giảm chiều dữ liệu
+00:07:04 - 0:07:10, nổi tiếng nhất đó chính là PCA và t-SNE.

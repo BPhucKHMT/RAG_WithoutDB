@@ -1,0 +1,156 @@
+0:00:00 - 0:00:06, và kỹ thuật tiếp theo mà chúng ta sẽ
+0:00:03 - 0:00:09, được tìm hiểu đó chính là tsn tsi là
+0:00:06 - 0:00:14, viết tắc của chữ t distributed
+0:00:09 - 0:00:17, stochastic neighbor ting thì T tsne là
+0:00:14 - 0:00:20, một cái kỹ thuật giảm chiều mà Phi tuyến
+0:00:17 - 0:00:23, nếu như pci nó dựa trên các cái công cụ
+0:00:20 - 0:00:28, của Đại Số tuến tính các cái phép biến
+0:00:23 - 0:00:31, đổi tiến tính thì tsne là cái thuật toán
+0:00:28 - 0:00:33, là cái kỹ thuật mà khi mà chúng ta làm
+0:00:31 - 0:00:36, việc trên cái loại dữ liệu có tính chất
+0:00:33 - 0:00:39, là phi tuyến nó không có một cái sự gọi
+0:00:36 - 0:00:41, là thể hiện cái mối quan hệ tuyến tính
+0:00:39 - 0:00:44, nào hết đó thì thì đó là cái mối quan hệ
+0:00:41 - 0:00:47, Phi tuyến và mục tiêu của nó đó là để
+0:00:44 - 0:00:49, Trực Quan Hóa cái dữ liệu của mình Đây
+0:00:47 - 0:00:52, chính là cái nhiệm vụ chính của mình để
+0:00:49 - 0:00:52, Trực Quan Hóa dữ liệu của
+0:00:52 - 0:00:57, mình cho cái dữ liệu đa chiều Tức là cái
+0:00:55 - 0:00:59, dữ liệu của mình ban đầu là một cái dữ
+0:00:57 - 0:01:02, liệu đa chiều thì chúng ta sẽ đưa nó về
+0:00:59 - 0:01:04, cái số chiều thấp hơn số chiều thấp hơn
+0:01:02 - 0:01:06, và thông thường để mà có thể trực quan
+0:01:04 - 0:01:09, với các cái công cụ vẽ hiện nay thì
+0:01:06 - 0:01:12, chúng ta sẽ sử dụng là à Không Gian hai
+0:01:09 - 0:01:14, chiều hoặc là không gian ba chiều và ý
+0:01:12 - 0:01:17, tưởng của nó đó là nó sẽ tạo ra một cái
+0:01:14 - 0:01:19, phân bố xác suất à nó sẽ tạo ra một cái
+0:01:17 - 0:01:22, phân bố xác suất mới nó tương tự nó
+0:01:19 - 0:01:24, tương tự trong cái không gian có cái số
+0:01:22 - 0:01:27, chiều thấp hơn tức là thay vì không gian
+0:01:24 - 0:01:30, là 10
+0:01:27 - 0:01:32, chiều thì nó tạo ra một cái phân bố
+0:01:30 - 0:01:35, Trong cái không gian xác suất hai chiều
+0:01:32 - 0:01:37, trong cái không gian hai chiều và các
+0:01:35 - 0:01:41, cái tính chất về phân bố của mình nó sẽ
+0:01:37 - 0:01:42, được bảo toàn ví dụ các cái điểm nào mà
+0:01:41 - 0:01:45, gần nhau ở trong không gian hai chiều
+0:01:42 - 0:01:46, thì khi chiếu xuống trong không gian 10
+0:01:45 - 0:01:49, chiều Khi chiếu xuống Không Gian hai
+0:01:46 - 0:01:51, chiều thì các cái điểm đó các cái đặc
+0:01:49 - 0:01:54, trưng đó nó vẫn phải gần nhau đó chính
+0:01:51 - 0:01:56, là cái tính chất và rang buộc khi chúng
+0:01:54 - 0:01:59, ta dùng
+0:01:56 - 0:02:02, tni và đây là một cái minh họa cho cái ý
+0:01:59 - 0:02:06, tượng đó đó ví dụ như các cái điểm ở đây
+0:02:02 - 0:02:08, là những cái ảnh của cái tập dữ liệu là
+0:02:06 - 0:02:10, mnis và cái tập dữ liệu mnis này thì các
+0:02:08 - 0:02:14, bạn biết rồi đó là những cái ảnh có kích
+0:02:10 - 0:02:16, thước là 28 x 28 tức là nếu như chúng ta
+0:02:14 - 0:02:18, trải nó ra thành cái vector thì đây là
+0:02:16 - 0:02:24, các cái vectơ
+0:02:18 - 0:02:26, 784 chiều tất qu 28 x 28 là 784 chiều
+0:02:24 - 0:02:28, Đây là một cái không gian rất là lớn và
+0:02:26 - 0:02:32, rất khó để có thể trực quan hóa được
+0:02:28 - 0:02:36, nhưng nhờ cái thậ toán cái kỹ thuật tni
+0:02:32 - 0:02:39, chúng ta chiếu nó về cái không gian hai
+0:02:36 - 0:02:42, chiều là các cái điểm ở đây thì chúng ta
+0:02:39 - 0:02:44, vẽ lên và chúng ta thấy nó vẫn giữ được
+0:02:42 - 0:02:48, những cái tính chất nhất định ví dụ
+0:02:44 - 0:02:50, những cái điểm màu xanh ở đây chúng ta
+0:02:48 - 0:02:54, thấy những cái điểm co cụm ở đây nó đều
+0:02:50 - 0:02:55, là những cái điểm mà tạo bởi cái ảnh của
+0:02:54 - 0:02:59, con Số
+0:02:55 - 0:03:01, 1 Rồi những cái cộng điểm ở đây chúng ta
+0:02:59 - 0:03:04, thấy là khi chúng ta giảm chiều dữ liệu
+0:03:01 - 0:03:08, xong thì những cái điểm là số 0 nó sẽ
+0:03:04 - 0:03:13, nằm ở gần đây rồi những cái ảnh mà tạo
+0:03:08 - 0:03:16, những cái ảnh của cái chữ số sáu thì nó
+0:03:13 - 0:03:19, cũng sẽ nằm co cụng ở đây nó sẽ nằm phân
+0:03:16 - 0:03:21, bố như như trên đây đó đây là những cái
+0:03:19 - 0:03:23, vùng điểm số bảy và đương nhiên đâu đó
+0:03:21 - 0:03:25, chúng ta sẽ thấy có những cái điểm nhiễu
+0:03:23 - 0:03:28, có những cái điểm nhiễu do cái thao tác
+0:03:25 - 0:03:30, à chiếu từ không gian nhiều chiều xuống
+0:03:28 - 0:03:31, Không Gian thấp chiều lấy ví dụ như ở
+0:03:30 - 0:03:34, đây chúng ta thấy là những cái điểm
+0:03:31 - 0:03:36, thuộc cái chưng số B đúng không là màu
+0:03:34 - 0:03:38, xanh ngọc ở đây nè là số 4 Nhưng đâu đó
+0:03:36 - 0:03:41, nó lại lọt những cái điểm màu xanh dương
+0:03:38 - 0:03:44, tức là tương ứng cái con số 1 ở đây thì
+0:03:41 - 0:03:44, đó là những cái điểm
+0:03:45 - 0:03:52, nhiễu rồi và như vậy thì chúng ta sẽ
+0:03:48 - 0:03:55, tiến hành so sánh các cái thuật toán pca
+0:03:52 - 0:03:59, và thuật toán TS thì ưu về ưu điểm thuật
+0:03:55 - 0:04:03, tán PC nó nhanh và nó hiu rất là hiệu
+0:03:59 - 0:04:05, quả với lại những cái dữ liệu lớn và do
+0:04:03 - 0:04:08, là nó phải nó chỉ thực hiện với các cái
+0:04:05 - 0:04:09, phép biến đổi tuyến tính ở đây là mình
+0:04:08 - 0:04:12, ghi nhầm ha Đây là những cái phép biến
+0:04:09 - 0:04:15, đổi là tuyến
+0:04:12 - 0:04:16, tính các cái thao tác biến đổi của PC
+0:04:15 - 0:04:19, thì tất cả đều thực hiện các cái phép
+0:04:16 - 0:04:22, biến đổi tiến tính nên cái tốc độ của nó
+0:04:19 - 0:04:25, nó rất là nhanh nó rất là hiệu
+0:04:22 - 0:04:26, quả và nó giữ lại được các cái thành
+0:04:25 - 0:04:29, phần chính với những cái Phương size lớn
+0:04:26 - 0:04:34, Phương size lớn hay là cái độ biến động
+0:04:29 - 0:04:34, độ lệch hoặc là biến
+0:04:35 - 0:04:41, động lớn tại sao tại vì những cái điểm
+0:04:39 - 0:04:43, mà có cái độ lệch độ biến động lớn thì
+0:04:41 - 0:04:45, nó sẽ chứa nhiều thông tin còn những cái
+0:04:43 - 0:04:48, thành phần nào mà có độ lệch độ biến
+0:04:45 - 0:04:50, động ít á Tức là nó ít có thông tin và
+0:04:48 - 0:04:53, ưu điểm cho tni đó chính là nó có khả
+0:04:50 - 0:04:57, năng nắm bắt được cái cấu trúc Phi tuyến
+0:04:53 - 0:04:59, của dữ liệu PC thì rất là phù hợp cho
+0:04:57 - 0:05:03, những cái dữ liệu nào mà dạng tuyến tính
+0:04:59 - 0:05:06, còn tsi thì nó sẽ giúp cho mình nắm bắt
+0:05:03 - 0:05:08, được những cái cấu trúc Phi tuyến tính
+0:05:06 - 0:05:10, và thường được sử dụng trong cái việc là
+0:05:08 - 0:05:12, Trực Quan Hóa dữ liệu thôi
+0:05:10 - 0:05:15, PC thì thường được sử dụng cho cái việc
+0:05:12 - 0:05:18, là giảm chiều dữ liệu và lấy cái dữ liệu
+0:05:15 - 0:05:20, đó như là một cái vectơ đặc trưng đó như
+0:05:18 - 0:05:23, là một cái vectơ đặc trưng để mà phục vụ
+0:05:20 - 0:05:26, cho cái công đoạn phía sau Ví dụ như là
+0:05:23 - 0:05:28, dự đoán cái kết quả cho bài toán hồi qy
+0:05:26 - 0:05:30, hoặc là phân lớ còn tsne thì thông
+0:05:28 - 0:05:33, thường được sử dụng cộng cho cái vấn đề
+0:05:30 - 0:05:35, là Trực Quan Hóa dữ liệu góc ban đầu là
+0:05:33 - 0:05:37, cái dữ liệu đa chiều thì chúng ta sẽ
+0:05:35 - 0:05:40, giảm nó xuống còn hai cho đến ba chiều
+0:05:37 - 0:05:44, để vẽ được trong cái không gian đó và
+0:05:40 - 0:05:47, khuyết điểm của pci đó chính là nó có
+0:05:44 - 0:05:49, khả năng à nó không có cái khả năng à
+0:05:47 - 0:05:52, bắt được những cái cấu trúc Phi tuyến
+0:05:49 - 0:05:55, hay nói cách khác đó là khả năng mà bắt
+0:05:52 - 0:05:57, cái cấu trúc Phi tuyến của nó là
+0:05:55 - 0:06:00, kém thì đó chính là cái sự đối ngẫu với
+0:05:57 - 0:06:04, tsn TS có khả năng bắt được cấu trúc Phi
+0:06:00 - 0:06:06, tuyến thì PC nó cái cái việc mà bắt được
+0:06:04 - 0:06:08, cấu trúc Phi tuyến của nó rất là kém và
+0:06:06 - 0:06:10, nó dễ bị ảnh hưởng bởi cái nhiễu hay là
+0:06:08 - 0:06:13, các cái out layer Tức là trong mẫu dữ
+0:06:10 - 0:06:15, liệu của mình nếu có những cái Đặc trưng
+0:06:13 - 0:06:19, nào mà là đặc trưng nhiễu thì nó sẽ gây
+0:06:15 - 0:06:23, ảnh hưởng lớn đến cái kết quả phân tích
+0:06:19 - 0:06:25, của mình và tsn thì nó sẽ không ổ ổn
+0:06:23 - 0:06:28, định do có cái yếu tố ngẫu nhiên trong
+0:06:25 - 0:06:30, cái tực toán của TS thì nó sẽ có cái yếu
+0:06:28 - 0:06:32, tố là đưa về cái phân bố ngẫu nhiên thì
+0:06:30 - 0:06:34, có cái yếu tố ngẫu nhiên nên cái tính
+0:06:32 - 0:06:36, không ổn định của tsn Và nó có cái độ
+0:06:34 - 0:06:38, phức tạp cao do nó phải thực hiện các
+0:06:36 - 0:06:42, cái thao tác biến đổi trong cái không
+0:06:38 - 0:06:43, gian Phi tuyến rồi và nó sẽ khó có cái
+0:06:42 - 0:06:45, tính giải thích Tức là cái tính giải
+0:06:43 - 0:06:48, thích của nó nó sẽ không cao sau với lại
+0:06:45 - 0:06:50, PC Tại vì PC chúng ta thực hiện trên cái
+0:06:48 - 0:06:54, thao tác là tuyến tính mà tuyến tính thì
+0:06:50 - 0:06:56, chúng ta sẽ dễ hình dung dễ hiểu hơn còn
+0:06:54 - 0:06:58, Phi tuyến thì nó sẽ khó hiểu khó giải
+0:06:56 - 0:07:01, thích hơn thì trên đây đó chính là chúng
+0:06:58 - 0:07:04, ta đã so sánh các
+0:07:01 - 0:07:10, cái phương pháp về giảm chiều dữ liệu
+0:07:04 - 0:07:10, nổi tiếng nhất đó chính là P và TS

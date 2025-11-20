@@ -1,0 +1,238 @@
+0:00:00 - 0:00:04, trong phần tiếp theo thì chúng ta sẽ
+0:00:02 - 0:00:06, cùng tìm hiểu về cách thức triển khai
+0:00:04 - 0:00:09, một cái mô hình máy học ở dưới dạng ứng
+0:00:06 - 0:00:12, dụng web tức là chúng ta sẽ xây dựng một
+0:00:09 - 0:00:16, cái web interface để cho phép người dùng
+0:00:12 - 0:00:19, có thể nhập vào các cái input và sau đó
+0:00:16 - 0:00:23, thì chúng ta sẽ gọi cái request lên trên
+0:00:19 - 0:00:26, server để server có thể load mô hình và
+0:00:23 - 0:00:29, dự đoán cái giá trị đầu ra dựa trên các
+0:00:26 - 0:00:31, cái input đầu vào của người dùng Thế thì
+0:00:29 - 0:00:35, tình huống sử dụng cho cái việc là sử
+0:00:31 - 0:00:36, dụng ứng dụng web triển khai cái mô hình
+0:00:35 - 0:00:39, má học đó chính là chúng ta muốn demo
+0:00:36 - 0:00:42, những cái tính năng chính của mô hình
+0:00:39 - 0:00:45, máy học đối với khách hàng trong thực tế
+0:00:42 - 0:00:48, thì thông thường các cái tính năng
+0:00:45 - 0:00:51, của mô hình máy học á là chỉ một phần
+0:00:48 - 0:00:53, nhỏ trong cái hệ thống của mình tức là
+0:00:51 - 0:00:55, khi chúng ta đưa ra được các cái dự đoán
+0:00:53 - 0:00:58, thì chúng ta sẽ dựa trên các cái giá trị
+0:00:55 - 0:01:00, dự đoán của mô hình máy học chúng ta sẽ
+0:00:58 - 0:01:04, đi làm tiếp các cái tính năng về mặt
+0:01:00 - 0:01:05, phần mềm khác đó Tuy nhiên thì nếu mà
+0:01:04 - 0:01:07, tích hợp cái tính năng đó vào bên trong
+0:01:05 - 0:01:09, một cái phần mềm khác thì nó sẽ tốn rất
+0:01:07 - 0:01:11, là nhiều thời gian trong khi đó cái mục
+0:01:09 - 0:01:14, tiêu chính của mình là mình muốn xem mô
+0:01:11 - 0:01:16, hình của mình dự đoán như thế nào với
+0:01:14 - 0:01:18, những cái yêu cầu đầu vào của người dùng
+0:01:16 - 0:01:20, do đó web sẽ là một trong những cái
+0:01:18 - 0:01:22, phương thức để giúp cho mình demo cái
+0:01:20 - 0:01:25, tính năng chính của cái việc dựa bán đó
+0:01:22 - 0:01:27, một cách nhanh nhất và đây là một cái
+0:01:25 - 0:01:30, cách tiếp cận nó sẽ giúp cho mô hình của
+0:01:27 - 0:01:32, mình có thể đến được với cái số Đông
+0:01:30 - 0:01:34, người dùng một cách rất là dễ dàng thông
+0:01:32 - 0:01:36, qua cái môi trường web thì chúng ta chỉ
+0:01:34 - 0:01:38, cần có mạng internet và chúng ta không
+0:01:36 - 0:01:41, cần phải cài đặt gì trên máy của khách
+0:01:38 - 0:01:43, hàng hết khách hàng chỉ cần sử dụng một
+0:01:41 - 0:01:47, cái trình duyệt phổ biến như là Google
+0:01:43 - 0:01:48, Chrome Safari hoặc là ffo là đã có thể
+0:01:47 - 0:01:50, sử dụng được cái mô hình máy học của
+0:01:48 - 0:01:53, mình rồi họ không cần phải cài đặt các
+0:01:50 - 0:01:55, cái thư viện rất là phức tạp Ví dụ như
+0:01:53 - 0:01:57, không cần phải cài đặt ngôn ngữ lập
+0:01:55 - 0:02:02, trình Python không cần cài đặt thư viện
+0:01:57 - 0:02:04, là escaler s kit l rồi tens flow hay đập
+0:02:02 - 0:02:06, high t vân
+0:02:04 - 0:02:10, vân thì đây là những cái
+0:02:06 - 0:02:12, Ờ thư viện nó cài cũng là phức tạp đối
+0:02:10 - 0:02:14, với những cái người dùng mà không chuyên
+0:02:12 - 0:02:17, về lập trình đúng không Thì cách tiếp
+0:02:14 - 0:02:20, cận mà làm ra một cái giao diện web này
+0:02:17 - 0:02:22, sẽ giúp cho rất nhiều người không có
+0:02:20 - 0:02:24, chuyên môn về lập trình có thể sử dụng
+0:02:22 - 0:02:27, được cái mô hình máy học một cách dễ
+0:02:24 - 0:02:30, dàng và ở đây chúng ta sẽ nhắc lại cái
+0:02:27 - 0:02:33, mô hình cái sơ đồ à cho cái việc triển
+0:02:30 - 0:02:35, khai ứng dụng web mô hình sẽ được cài
+0:02:33 - 0:02:37, đặt ở một cái server
+0:02:35 - 0:02:42, riing mô hình sẽ được triển khai ở một
+0:02:37 - 0:02:45, cái server và cái server này sẽ tạo ra
+0:02:42 - 0:02:49, các cái api để cho phép các cái ứng dụng
+0:02:45 - 0:02:51, nội bộ cũng như là máy trạm có thể tiếp
+0:02:49 - 0:02:54, cộn được đến cái ứng dụng của mình một
+0:02:51 - 0:02:56, cách dễ dàng đó rồi sau đó thì chúng ta
+0:02:54 - 0:03:00, sẽ viết một cái ứng dụng web ứng dụng
+0:02:56 - 0:03:03, web này nó sẽ gọi cái api của cái model
+0:03:00 - 0:03:06, để mà thực thi thì đây là cái cách làm
+0:03:03 - 0:03:07, rất là bình thường của mình Thế thì nếu
+0:03:06 - 0:03:10, như muốn làm một cái ứng dụng Web Bình
+0:03:07 - 0:03:13, thường chúng ta sẽ phải có hai mãng mãng
+0:03:10 - 0:03:13, đầu tiên đó là
+0:03:13 - 0:03:20, frontend mãng thứ hai đó là
+0:03:16 - 0:03:22, backend đối với fend thì chúng ta sẽ cần
+0:03:20 - 0:03:25, phải học các cái ngôn ngữ lập trình để
+0:03:22 - 0:03:27, có thể làm được các cái giao diện ví dụ
+0:03:25 - 0:03:30, chúng ta sẽ phải học về
+0:03:27 - 0:03:33, HTML à CSS
+0:03:30 - 0:03:33, rồi
+0:03:33 - 0:03:37, JavaScript rất là phức tạp rất là nhiều
+0:03:35 - 0:03:38, ngôn ngữ lập trình đúng không về
+0:03:37 - 0:03:41, feedback end thì chúng ta sẽ phải sử
+0:03:38 - 0:03:44, dụng các cái ngôn ngữ Ví dụ như là
+0:03:41 - 0:03:48, not GS hoặc là
+0:03:44 - 0:03:50, Java hoặc là php thì đây là những cái
+0:03:48 - 0:03:52, ngôn ngữ Đạt trình cho phía backend và
+0:03:50 - 0:03:55, để làm một cái ứng dụng web chúng ta sẽ
+0:03:52 - 0:03:57, phải học hết tất cả thảy đó Cái bộ các
+0:03:55 - 0:03:59, cái ngôn ngữ này cũng như là một trong
+0:03:57 - 0:04:03, các cái ngôn ngữ backen như là Note GS
+0:03:59 - 0:04:06, Java và PSP thì nó sẽ tốn rất là ít thời
+0:04:03 - 0:04:09, gian thế thì làm sa làm sao mà chúng ta
+0:04:06 - 0:04:11, có thể sử dụng được à Cái ngôn ngữ lập
+0:04:09 - 0:04:14, trình
+0:04:11 - 0:04:16, Python Đây là một cái ngôn ngữ lập trình
+0:04:14 - 0:04:18, mà những cái người chuyên về mô hình họ
+0:04:16 - 0:04:20, rất là thuần thuật đúng không Mà chúng
+0:04:18 - 0:04:22, ta có thể sử dụng Python để có thể lập
+0:04:20 - 0:04:26, trình web được thì đó là một cái điều
+0:04:22 - 0:04:29, tuyệt vời thì rất may mắn đó là chúng ta
+0:04:26 - 0:04:30, đã có hai cái thư viện để giúp cho chúng
+0:04:29 - 0:04:32, ta làm được cái việc này đó chính là
+0:04:30 - 0:04:36, stream
+0:04:32 - 0:04:39, list và
+0:04:36 - 0:04:41, radio thì đây là hai cái hai cái thư
+0:04:39 - 0:04:43, viện giúp cho chúng ta có thể tạo ra một
+0:04:41 - 0:04:47, cái ứng dụng web để thử nghiệm các cái
+0:04:43 - 0:04:49, mô hình máy học của mình với ngôn ngữ
+0:04:47 - 0:04:53, lập trình Python như vậy chúng ta sẽ sử
+0:04:49 - 0:04:56, dụng Python để lập trình web mà không hề
+0:04:53 - 0:04:58, biết và không cần thết phải sử dụng HTML
+0:04:56 - 0:05:02, CSS JavaScript Hoặc là các cái ngôn ngữ
+0:04:58 - 0:05:03, để lập trình B như trên đây như vậy thì
+0:05:02 - 0:05:06, với cái cách sử dụng stream list và
+0:05:03 - 0:05:09, radio á thì chúng ta cũng sẽ không cần
+0:05:06 - 0:05:11, hiểu lắm các cái khái niệm về api Tại vì
+0:05:09 - 0:05:13, bên dưới ngầm bên dưới nó đã tạo ra các
+0:05:11 - 0:05:15, cái api để sử dụng cái mô hình của mình
+0:05:13 - 0:05:18, luôn rồi đó thì đây chính là một cái
+0:05:15 - 0:05:20, điểm mạnh đó là giúp cho cái người không
+0:05:18 - 0:05:21, chuyên về phần mềm không chuyên về lập
+0:05:20 - 0:05:23, trình web vẫn có thể tạo ra được một
+0:05:21 - 0:05:25, trang web một cách nhanh chóng với cái
+0:05:23 - 0:05:28, ngôn ngữ Python tức là chúng ta chỉ
+0:05:25 - 0:05:30, chuyên môn về mô hình thôi biết sử dụng
+0:05:28 - 0:05:32, Python với các cái thư viện machine
+0:05:30 - 0:05:34, learning Thôi thì vẫn có thể tạo ra được
+0:05:32 - 0:05:37, nhứng dật web một cách dễ dàng và nhanh
+0:05:34 - 0:05:39, chóng thì trên đây là hai cái thư viện
+0:05:37 - 0:05:42, Rất là nổi tiếng và phổ biến trong cái
+0:05:39 - 0:05:45, việc xây dựng những cái ứng dụng web
+0:05:42 - 0:05:47, nhằm thử nghiệm các cái mô hình máy học
+0:05:45 - 0:05:48, đầu tiên đó chính là stream list stream
+0:05:47 - 0:05:51, lft rất là phù hợp để cho những cái
+0:05:48 - 0:05:53, người làm về data s về khoa học dữ liệu
+0:05:51 - 0:05:55, khi chúng ta đã huấn luyện xong cái mô
+0:05:53 - 0:05:57, hình chúng ta có thể sử dụng cái thư
+0:05:55 - 0:05:59, viện này để Custom để có thể tạo ra
+0:05:57 - 0:06:01, những cái giao diện tùy biến để cho ch
+0:05:59 - 0:06:04, người dùng có thể nhập vào các cái điều
+0:06:01 - 0:06:07, kiện đầu vào cấu hình chọn lựa các cái
+0:06:04 - 0:06:10, cái tham số và có thể trực qua hóa vẽ
+0:06:07 - 0:06:12, các cái biểu đồ rất là đẹp còn radio thì
+0:06:10 - 0:06:14, nó sẽ chuyên hơn cho lĩnh vực về machine
+0:06:12 - 0:06:16, learning tức là người dùng chỉ cần tập
+0:06:14 - 0:06:19, trung vào cái phần machine learning Còn
+0:06:16 - 0:06:20, cái việc thiết kế các cái ứng dụng các
+0:06:19 - 0:06:21, cái giao diện web để mà có thể thử
+0:06:20 - 0:06:23, nghiệm các cái mô hình máy học này thì
+0:06:21 - 0:06:26, radio nó đã có sẵn Nhữ cái mẫu cho chúng
+0:06:23 - 0:06:29, ta có thể sử dụng rất là dễ dàng thì
+0:06:26 - 0:06:31, trong phạm vi của bài học này thì chúng
+0:06:29 - 0:06:33, ta sẽ tập trung vào cái thư viện đó là
+0:06:31 - 0:06:36, stream
+0:06:33 - 0:06:38, list Và đây là cái video quảng cáo của
+0:06:36 - 0:06:40, stream list đó là chúng ta sẽ code hoàn
+0:06:38 - 0:06:43, toàn bằng ngôn ngữ
+0:06:40 - 0:06:46, Python đó chúng ta sẽ import thư viện là
+0:06:43 - 0:06:49, stream list và in ra màn hình là s. như
+0:06:46 - 0:06:51, vậy chúng ta thấy là chúng ta sẽ viết
+0:06:49 - 0:06:54, lập trình web tạo ra một cái trang web
+0:06:51 - 0:06:57, bằng cái phong cách lập trình rất là
+0:06:54 - 0:07:01, Python sau khi chúng ta thử thay đổi các
+0:06:57 - 0:07:03, cái control thêm cá control cấu bình cái
+0:07:01 - 0:07:04, giao diện xong chúng ta sẽ deploy cái
+0:07:03 - 0:07:07, ứng dụng này thông qua cái dịch vụ
+0:07:04 - 0:07:09, hosting của stream thông qua những cái
+0:07:07 - 0:07:10, cú click chuột nó có thể th Giúp cho
+0:07:09 - 0:07:12, chúng ta tạo ra được một cái trang web
+0:07:10 - 0:07:15, một cách dễ dàng thì đây là cái video
+0:07:12 - 0:07:17, quảng cáo của stream list trong phạm vi
+0:07:15 - 0:07:20, của bài này thì chúng ta sẽ sử dụng
+0:07:17 - 0:07:24, stream để làm một cái dụ
+0:07:20 - 0:07:26, web thì để học trong cái lĩnh vực về lập
+0:07:24 - 0:07:28, trình web nó sẽ có rất nhiều những cái
+0:07:26 - 0:07:31, control để cho chúng ta có thể Custom
+0:07:28 - 0:07:33, chúng ta có thể tạo ra cái giao diện
+0:07:31 - 0:07:34, ngoài cái label để giúp cho chúng ta
+0:07:33 - 0:07:38, hiển
+0:07:34 - 0:07:41, thị cái nhãn hoặc là cái đoạn
+0:07:38 - 0:07:43, text mà mình muốn người dùng người ta
+0:07:41 - 0:07:46, đọc đúng không text bx là hiển thị những
+0:07:43 - 0:07:51, cái ô để cho người
+0:07:46 - 0:07:51, dùng Gọi là nhập các cái
+0:07:52 - 0:07:59, input rồi button tức là để kích hoạt cái
+0:07:56 - 0:07:59, sự kiện
+0:08:00 - 0:08:05, khi người dùng người ta Click vào một
+0:08:03 - 0:08:07, cái button nó sẽ tạo ra một cái sự kiện
+0:08:05 - 0:08:10, để mà thực thi một cái công việc nào đấy
+0:08:07 - 0:08:12, thì đó là kích hoạt một cái sự kiện thì
+0:08:10 - 0:08:13, ngoài ba cái control chính này á mà
+0:08:12 - 0:08:15, chúng ta sẽ sử dụng trong cái bài này
+0:08:13 - 0:08:19, thì nó sẽ còn rất nhiều những cái
+0:08:15 - 0:08:20, control khác lấy ví dụ như là sẽ có các
+0:08:19 - 0:08:23, cái control liên quan đến cái việc là
+0:08:20 - 0:08:26, Hiển thị hình ảnh rồi có các cái control
+0:08:23 - 0:08:30, liên quan đến chọn lựa những cái nó gọi
+0:08:26 - 0:08:31, là drop down button
+0:08:30 - 0:08:33, rồi
+0:08:31 - 0:08:37, radio
+0:08:33 - 0:08:38, button đó thì đây sẽ là những cái giao
+0:08:37 - 0:08:43, diện để giúp cho chúng
+0:08:38 - 0:08:45, ta cấu hình và đưa ra các cái chọn lựa
+0:08:43 - 0:08:48, các cái option rồi
+0:08:45 - 0:08:49, checkbox checkbox là chúng ta sẽ có
+0:08:48 - 0:08:52, những cái ô như thế này
+0:08:49 - 0:08:54, option đó rồi chúng ta sẽ tích chọn hay
+0:08:52 - 0:08:56, không tích Chọn radio button thì nó sẽ
+0:08:54 - 0:08:59, có là những cái ô như thế
+0:08:56 - 0:09:01, này đó thì chúng radio button thì chỉ
+0:08:59 - 0:09:04, được phép Chọn một thôi Đây là option a
+0:09:01 - 0:09:06, option B option C option D chúng ta chỉ
+0:09:04 - 0:09:09, được phép chọn một option thôi drop down
+0:09:06 - 0:09:12, thì nó sẽ tạo ra một cái cửa sổ để hiển
+0:09:09 - 0:09:14, thị rất nhiều cái option a option B
+0:09:12 - 0:09:17, option C rồi
+0:09:14 - 0:09:21, D hình ảnh thì là để hiển thị các cái
+0:09:17 - 0:09:24, biểu đồ Hoặc là các cái ảnh đồ vào thì
+0:09:21 - 0:09:26, nếu như bình thường Chúng ta muốn học
+0:09:24 - 0:09:28, nhanh một cái ngôn ngữ hoặc một cái thư
+0:09:26 - 0:09:30, viện nào thì chúng ta sẽ sử dụng công cụ
+0:09:28 - 0:09:32, Google search Sau đó chúng ta sẽ tìm
+0:09:30 - 0:09:34, hiểu về các cái bài hướng dẫn đúng không
+0:09:32 - 0:09:38, Nhưng mà gần đây thì nó đã có một cái
+0:09:34 - 0:09:42, công cụ rất là hiệu quả đó là chatbot
+0:09:38 - 0:09:44, chatbot ai Nó sẽ giúp cho chúng ta đạt
+0:09:42 - 0:09:47, được những cái mục tiêu một cách rất là
+0:09:44 - 0:09:49, nhanh chóng đó ví dụ như nổi tiếng nhất
+0:09:47 - 0:09:52, mà chúng ta biết đó chính là chat
+0:09:49 - 0:09:55, gpt sau đó thì có cái công cụ là copilot
+0:09:52 - 0:09:57, của Microsoft đó thì chúng ta trong cái
+0:09:55 - 0:10:00, phần này chúng ta sẽ dùng Chat gpt và
+0:09:57 - 0:10:03, copilot để tiến hành proming chúng ta sẽ
+0:10:00 - 0:10:04, nhờ các cái công cụ ai này tạo ra ké bạn
+0:10:03 - 0:10:10, mã nguồn và sau đó chúng ta sẽ triển
+0:10:04 - 0:10:10, khai nó lên trên cái ứng dụng web

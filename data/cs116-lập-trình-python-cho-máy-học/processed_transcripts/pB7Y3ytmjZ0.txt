@@ -1,0 +1,77 @@
+0:00:01 - 0:00:05, rồi sau khi chúng ta đã cài đặt xong thì
+0:00:04 - 0:00:10, chúng ta sẽ
+0:00:05 - 0:00:12, activate cái Streamlit environment và
+0:00:10 - 0:00:15, chúng ta sẽ cài
+0:00:12 - 0:00:18, đặt scikit
+0:00:15 - 0:00:18, learn
+0:00:25 - 0:00:31, 1.3.2 scikit-learn
+0:00:33 - 0:00:39, rồi thư viện của mình là scikit
+0:00:42 - 0:00:49, learn
+0:00:45 - 0:00:49, [âm nhạc]
+0:00:54 - 0:01:00, install rồi sau khi cài đặt
+0:00:57 - 0:01:01, cái thư viện này thì chúng ta đã hoàn
+0:01:00 - 0:01:05, toàn có thể chạy
+0:01:01 - 0:01:08, được và để cài đặt cái này thì nó sẽ tốn
+0:01:05 - 0:01:08, khoảng 1 cho đến 2
+0:01:14 - 0:01:21, phút rồi Ok như vậy chúng ta sẽ vào cái
+0:01:18 - 0:01:24, thư mục là document CD vào thư mục
+0:01:21 - 0:01:27, Project và Streamlit để chạy thì chúng
+0:01:24 - 0:01:31, ta sẽ chạy là streamlit run và tên của
+0:01:27 - 0:01:33, cái file của mình nó sẽ là Model App Web
+0:01:31 - 0:01:35, rồi sau khi chạy Xong thì tự động nó sẽ
+0:01:33 - 0:01:37, tạo ra một cái nó sẽ tự động mở cái
+0:01:35 - 0:01:39, đường dẫn của trang web của mình và
+0:01:37 - 0:01:43, chúng ta sẽ lấy cái port là
+0:01:39 - 0:01:44, 8501 và ở đây thì chúng ta sẽ nhập các
+0:01:43 - 0:01:48, con số ví dụ
+0:01:44 - 0:01:51, như chúng ta sẽ điền vào là
+0:01:48 - 0:01:55, 120 và trọng lượng đó
+0:01:51 - 0:01:55, là như đây là chúng ta sẽ mở cái
+0:01:57 - 0:02:06, file mở một cái file mẫu ha Ví dụ như
+0:02:01 - 0:02:08, 110 kích thước là 110 cm và Trọng lượng
+0:02:06 - 0:02:10, là 120 kg thì giá của mình là khoảng
+0:02:08 - 0:02:12, 500.000đ Thế thì ở đây chúng ta sẽ nhập
+0:02:10 - 0:02:16, thử ha
+0:02:12 - 0:02:19, 110 giá là một à trọng lượng là
+0:02:16 - 0:02:21, 120 và predict Price thì nó sẽ ra là
+0:02:19 - 0:02:24, khoảng 509.000 như vậy chúng ta thấy cái
+0:02:21 - 0:02:28, con số này nó sai lệch là khoảng 9000
+0:02:24 - 0:02:30, 090 đồng so với lại cái giá trị thực đó thì có
+0:02:28 - 0:02:32, thể thấy là mô hình của mình nó cũng đã
+0:02:30 - 0:02:33, vận hành khá là hiệu quả cuối cùng thì
+0:02:32 - 0:02:38, chúng ta
+0:02:33 - 0:02:39, sẽ triển khai cái ứng dụng này trên cái
+0:02:38 - 0:02:42, trang web thật thì cái trang web thật nó
+0:02:39 - 0:02:45, sẽ phải có cái domain và để tạo được cái
+0:02:42 - 0:02:47, domain thì nó sẽ có một cái gọi là DNS
+0:02:45 - 0:02:51, server chúng ta sẽ cấu hình cái DNS
+0:02:47 - 0:02:53, server để có thể trỏ cái đường dẫn đến
+0:02:51 - 0:02:55, trỏ cái domain đến cái web server Ví dụ
+0:02:53 - 0:02:59, như ở đây có một cái địa chỉ IP là
+0:02:55 - 0:03:02, 10.11.12.13 thì chúng ta sẽ sử dụng
+0:02:59 - 0:03:06, một cái Nginx web
+0:03:02 - 0:03:07, server ở đây là Nginx web server chúng ta
+0:03:06 - 0:03:10, sẽ vào cái đường dẫn chứa cái sites
+0:03:07 - 0:03:11, available Sau đó chúng ta sẽ chỉnh sửa
+0:03:10 - 0:03:14, bằng cái lệnh
+0:03:11 - 0:03:19, vim chỉnh sửa cái file default cái file
+0:03:14 - 0:03:19, cấu hình này và nếu chúng ta muốn để là
+0:03:20 - 0:03:25, domain.com ví dụ vậy đây sẽ là cái
+0:03:22 - 0:03:29, domain name của các bạn SUT
+0:03:25 - 0:03:29, demo SUT
+0:03:32 - 0:03:37, estimate đó thì chúng ta sẽ cấu hình như
+0:03:35 - 0:03:39, sau chúng ta sẽ tạo một cái record tên
+0:03:37 - 0:03:44, là
+0:03:39 - 0:03:49, location đó rồi và ở đây thì nó sẽ trỏ
+0:03:44 - 0:03:52, Nó sẽ trỏ một cái địa chỉ IP thì đây là
+0:03:49 - 0:03:56, 20.45 thì đây là cái server để host cái
+0:03:52 - 0:03:58, model của mình và port là 8501 thì đây
+0:03:56 - 0:04:00, là cái port mặc định của Streamlit thì
+0:03:58 - 0:04:03, trên cái con Server này trên cái con
+0:04:00 - 0:04:05, server này thì chúng ta sẽ phải cài cái
+0:04:03 - 0:04:09, thư viện Streamlit và chúng ta sẽ host
+0:04:05 - 0:04:11, cái dịch vụ web với cái port là 8501 thì
+0:04:09 - 0:04:13, với cái cách làm này thì nó sẽ giúp cho
+0:04:11 - 0:04:16, chúng ta tạo ra được một cái đường dẫn
+0:04:13 - 0:04:21, là SUT demo SUT estimate và nó sẽ ra cái
+0:04:16 - 0:04:21, giao diện trang web giống như ở dưới đây

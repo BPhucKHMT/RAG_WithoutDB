@@ -21,12 +21,19 @@ def build_rag_chain():
     hybrid_search = HybridSearch(vector_retriever, bm25_search).get_retriever()
 
     # reranker
-    reranker = CrossEncoderReranker()
+    print("Loading reranker model...")
+    reranker = CrossEncoderReranker(device="cuda")
+    print("Reranker model loaded.")
     #chain 
+
     rag_chain = Offline_RAG(llm, hybrid_search, reranker)
     return rag_chain.get_chain()
 
 if __name__ == "__main__":
     rag_chain = build_rag_chain()
-    response = rag_chain.invoke("diffusion bị gì để có lantent diffusion")
+    import time
+    start_time = time.time()
+    response = rag_chain.invoke("naive bayes là gì?")
+    end_time = time.time()
+    print(f"Time taken: {end_time - start_time} seconds")
     print(response)

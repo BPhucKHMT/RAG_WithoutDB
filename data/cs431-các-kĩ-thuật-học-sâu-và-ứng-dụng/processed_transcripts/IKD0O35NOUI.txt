@@ -18,7 +18,7 @@
 0:01:08 - 0:01:15, Nó không có cơ chế nào để ý thức được những từ ở đằng xa, đúng không?
 0:01:15 - 0:01:17, Ví dụ từ France.
 0:01:17 - 0:01:22, Nó sẽ có khoảng cách xa đến chỗ chúng ta cần dự đoán hơn rất nhiều.
-0:01:22 - 0:01:25, so với những từ như là từ some, từ of, từ the.
+0:01:22 - 0:01:25, so với những từ như là từ sum, từ of, từ the.
 0:01:26 - 0:01:28, thì nó không có cơ chế đó.
 0:01:29 - 0:01:32, và trong khi cái từ mà chúng ta cần dự đoán.
 0:01:32 - 0:01:35, thì nó lại phụ thuộc vào những cái từ đó.

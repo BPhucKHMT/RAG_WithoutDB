@@ -1,0 +1,203 @@
+0:00:00 - 0:00:06, đầu tiên đó là chúng ta sẽ đến với mô
+0:00:03 - 0:00:08, hình hồi quy tuyến tính và sau đó thì
+0:00:06 - 0:00:11, chúng ta sẽ tìm hiểu về một số cái khái
+0:00:08 - 0:00:13, niệm như là bias và variance. Đây là hai
+0:00:11 - 0:00:15, cái khái niệm khá là quan trọng trong
+0:00:13 - 0:00:17, cái mô hình máy học để chúng ta có thể
+0:00:15 - 0:00:19, hiểu được về cái tính chất của cái mô
+0:00:17 - 0:00:22, hình máy học sau khi đã huấn luyện cũng
+0:00:19 - 0:00:23, như là hiểu được các cái hiện tượng
+0:00:22 - 0:00:26, có khả năng xảy ra trong cái quá trình
+0:00:23 - 0:00:28, huấn luyện như là hiện tượng overfitting
+0:00:26 - 0:00:30, quá khớp hoặc là underfitting chưa khớp
+0:00:28 - 0:00:33, với lại cái dữ liệu của mình.
+0:00:30 - 0:00:35, Và sau đó thì chúng ta sẽ tìm hiểu đến
+0:00:33 - 0:00:37, các cái biến thể của mô hình hồi quy
+0:00:35 - 0:00:41, tuyến tính như là mô hình Lasso, mô hình
+0:00:37 - 0:00:43, Ridge và mô hình Elastic Net. Và cuối cùng
+0:00:41 - 0:00:46, đó là chúng ta sẽ tìm hiểu về một số cái
+0:00:43 - 0:00:48, mô hình giúp giải quyết các cái bài toán
+0:00:46 - 0:00:51, trong đó cái dữ liệu đầu ra y nó có mối
+0:00:48 - 0:00:53, quan hệ phi tuyến tính với lại cái dữ
+0:00:51 - 0:00:55, liệu X thì cái phi tuyến tính nó thể hiện
+0:00:53 - 0:00:58, ở cái hàm f.
+0:00:55 - 0:01:00, này thì mô hình hồi quy tuyến tính, tên
+0:00:58 - 0:01:02, tiếng Anh đó là Linear Regression.
+0:01:00 - 0:01:07, Thì giả sử như chúng ta có một cái mô
+0:01:02 - 0:01:09, hình trong thực tế là y = beta_0 cộng beta_1 x và
+0:01:07 - 0:01:13, ở đây chúng ta sẽ cộng thêm một cái đại
+0:01:09 - 0:01:17, lượng epsilon nữa thì đây chính là cái
+0:01:13 - 0:01:19, nhiễu. Cái nhiễu này nó sẽ gây ra là do
+0:01:17 - 0:01:21, đâu? Nhiễu này có thể là gây ra do quá
+0:01:19 - 0:01:24, trình chúng ta lấy mẫu, do sai số trong
+0:01:21 - 0:01:28, quá trình chúng ta tính toán các cái giá
+0:01:24 - 0:01:31, trị x và giá trị y. Và thông thường thì
+0:01:28 - 0:01:37, cái nhiễu epsilon này nó sẽ tuân theo
+0:01:31 - 0:01:40, cái phân bố đó là phân bố chuẩn.
+0:01:37 - 0:01:42, Đó, rồi thì đây là cái mô hình thực tế và
+0:01:40 - 0:01:46, chúng ta luôn luôn mong muốn sẽ phải tìm
+0:01:42 - 0:01:49, cho ra được cái giá trị cái beta này. Một
+0:01:46 - 0:01:51, số bạn sẽ nói rằng là cái mô hình tuyến
+0:01:49 - 0:01:54, tính mà hồi xưa các bạn học được á nó
+0:01:51 - 0:01:58, không phải là công thức này và công thức
+0:01:54 - 0:02:00, của nó là y = ax cộng b đó, đúng không?
+0:01:58 - 0:02:01, Thì trong đó b là cái thành phần nó gọi
+0:02:00 - 0:02:03, là
+0:02:01 - 0:02:07, bias. Thì trong trường hợp này chúng ta
+0:02:03 - 0:02:10, phải hiểu là x của mình á đó chính là
+0:02:07 - 0:02:13, một cái vector bao gồm cái thành phần
+0:02:10 - 0:02:16, một là thành phần bias và x ở đây chính
+0:02:13 - 0:02:20, là cái giá trị của mình, cái giá trị mà
+0:02:16 - 0:02:23, biến số đầu vào của mình. Rồi, beta tương
+0:02:20 - 0:02:27, tự như vậy, beta nó sẽ là một cặp các cái
+0:02:23 - 0:02:30, giá trị bao gồm là beta 0 và beta 1. Thì
+0:02:27 - 0:02:33, đây là hai cái tham số của cái cái mô
+0:02:30 - 0:02:36, hình hồi quy tuyến tính trong thực tế. Và
+0:02:33 - 0:02:38, khi chúng ta tiến hành dự đoán thì chúng
+0:02:36 - 0:02:41, ta sẽ phải ước lượng, chúng ta sẽ phải
+0:02:38 - 0:02:46, ước lượng cái hàm mô hình là y mũ là
+0:02:41 - 0:02:49, bằng beta mũ nhân với x. Đó, thì giả sử
+0:02:46 - 0:02:52, như cái trục này chúng ta sẽ có là x và
+0:02:49 - 0:02:55, trục này là y. x là cái biến số đầu vào
+0:02:52 - 0:02:57, và y chính là cái biến số đầu ra. Và từng
+0:02:55 - 0:03:01, cái điểm dữ liệu ở đây chính là các cái
+0:02:57 - 0:03:04, giá trị thực tế từ cái mô hình thực tế và
+0:03:01 - 0:03:07, đây sẽ là ký hiệu là y_i, trong đó y_i
+0:03:04 - 0:03:10, chính là cái chỉ số, chính là cái chỉ số
+0:03:07 - 0:03:10, của mẫu dữ
+0:03:10 - 0:03:16, liệu. Và hàm mô hình dự đoán của mình thì
+0:03:14 - 0:03:18, nó sẽ chính là cái đường thẳng này. Đó
+0:03:16 - 0:03:22, chính là cái đường thẳng này. Và mình
+0:03:18 - 0:03:25, luôn mong muốn tìm cái mô hình dự đoán
+0:03:22 - 0:03:30, làm sao đó để cho cái giá trị dự đoán y_i
+0:03:25 - 0:03:33, mũ nó xấp xỉ với lại cái giá trị y_i
+0:03:30 - 0:03:37, này. Thì ở đây là y mũ và tại cái vị trí
+0:03:33 - 0:03:40, x_i ở đây ha, thì chúng ta giống nó
+0:03:37 - 0:03:41, lên chạm vào cái hàm mô hình dự đoán,
+0:03:40 - 0:03:43, chạm vào cái đường mô hình dự đoán thì
+0:03:41 - 0:03:48, cái giá trị ở đây sẽ là cái giá trị dự
+0:03:43 - 0:03:50, đoán y mũ. Và khi dự đoán thì ai cũng
+0:03:48 - 0:03:52, mong muốn là giá trị dự đoán xấp xỉ với
+0:03:50 - 0:03:55, lại giá trị thực tế. Thì khi đó chúng ta
+0:03:52 - 0:03:58, sẽ có một cái độ đo về mặt khoảng cách
+0:03:55 - 0:04:00, và độ đo ở đây chúng ta sẽ sử dụng đó là
+0:03:58 - 0:04:03, độ đo Mean Squared Error (MSE).
+0:04:00 - 0:04:06, Và MSE là bằng L(beta). Thì beta của mình
+0:04:03 - 0:04:08, chính là cái hàm mô hình của mình ở đây.
+0:04:06 - 0:04:12, Và nó sẽ là bằng tổng các cái sai số
+0:04:08 - 0:04:15, bình phương là y_i trừ cho y_i mũ tất cả
+0:04:12 - 0:04:18, bình. Và khi triển khai cái y mũ này ra
+0:04:15 - 0:04:21, thì nó chính là beta
+0:04:18 - 0:04:24, x_i. Và khi chúng ta viết gọn nó lại thì
+0:04:21 - 0:04:28, nó sẽ có cái dạng công thức là y trừ cho
+0:04:24 - 0:04:31, beta X. Trong đó X của mình sẽ là bao gồm
+0:04:28 - 0:04:37, một tập hợp các cái mẫu dữ liệu huấn
+0:04:31 - 0:04:40, luyện của mình là 1 x_1, 1 x_2 vân vân cho
+0:04:37 - 0:04:43, đến 1 x_n
+0:04:40 - 0:04:46, với N là số mẫu dữ liệu huấn luyện của
+0:04:43 - 0:04:50, mình. Và y trong trường hợp này chính là
+0:04:46 - 0:04:53, tập hợp các cái giá trị là y_1, y_2 cho đến
+0:04:50 - 0:04:56, y_n. Thì đây là chuỗi các cái giá trị dự
+0:04:53 - 0:04:59, đoán. Và cái công thức cho cái hàm độ lỗi
+0:04:56 - 0:05:00, của mình lúc này, MSE của mình á đó chính
+0:04:59 - 0:05:02, là
+0:05:00 - 0:05:06, bình phương, tức là trị tuyệt đối bình
+0:05:02 - 0:05:09, phương của y trừ cho beta X, trong đó mỗi
+0:05:06 - 0:05:13, beta X của mình nó chính
+0:05:09 - 0:05:15, là giá trị dự đoán và y của mình chính
+0:05:13 - 0:05:18, là cái giá trị mong muốn mình đạt được.
+0:05:15 - 0:05:20, Thì để huấn luyện cái mô hình hồi quy
+0:05:18 - 0:05:22, tuyến tính này thì chúng ta sẽ có hai
+0:05:20 - 0:05:25, giải pháp. Giải pháp đầu tiên đó là chúng
+0:05:22 - 0:05:28, ta dùng cái công thức normal equation đó
+0:05:25 - 0:05:30, là cái phương trình chuẩn và ước lượng
+0:05:28 - 0:05:34, được cái tham số của mình.
+0:05:30 - 0:05:38, Thì điều kiện để cho cái MSE hoặc là cái
+0:05:34 - 0:05:41, L(beta) này mà nhỏ
+0:05:38 - 0:05:44, nhất thì cái nghiệm của nó đó chính là
+0:05:41 - 0:05:47, công thức như sau: đó là beta mũ là bằng
+0:05:44 - 0:05:49, X chuyển vị nhân X rồi nghịch đảo nhân
+0:05:47 - 0:05:53, với lại X chuyển vị nhân y. Thì chúng ta
+0:05:49 - 0:05:55, lưu ý là cái thao tác này đâu
+0:05:53 - 0:05:57, đó nó sẽ không phải lúc nào chúng ta
+0:05:55 - 0:05:59, cũng có thể thực hiện được thao tác
+0:05:57 - 0:06:02, nghịch đảo này. X của mình nó phải thỏa
+0:06:01 - 0:06:06, mãn một số cái tính chất thì khi đó thì nó mới có thể tính được cái nghịch đảo.
+0:06:04 - 0:06:08, Tuy nhiên, đại đa số trong các cái
+0:06:06 - 0:06:10, trường hợp thì chúng ta đều có thể thực
+0:06:08 - 0:06:13, hiện được cái thao tác này. Và trong
+0:06:10 - 0:06:17, trường hợp mà X của mình nó là một cái
+0:06:13 - 0:06:19, ma trận lớn. Ma trận này lớn có thể là
+0:06:17 - 0:06:22, theo bề ngang và bề
+0:06:19 - 0:06:26, dọc. Lớn theo bề ngang có nghĩa là chúng
+0:06:22 - 0:06:29, ta sẽ có N lớn, tức là cái số mẫu dữ liệu
+0:06:26 - 0:06:32, của mình nó quá lớn. Còn theo bề dọc có
+0:06:29 - 0:06:35, nghĩa là cái số feature của mình, cái x_i
+0:06:32 - 0:06:39, này của mình là nó thuộc R^D. Ví dụ như ở
+0:06:35 - 0:06:42, đây là R^D với D là một con số
+0:06:39 - 0:06:45, lớn. Đầu vào của mình nó sẽ là một vector
+0:06:42 - 0:06:48, 1000 chiều, ví dụ vậy. Thì khi đó là cái
+0:06:45 - 0:06:50, ma trận X sẽ rất là lớn. Và khi đó thì
+0:06:48 - 0:06:53, cái thao tác mà tính toán này nó sẽ rất
+0:06:50 - 0:06:55, là tốn chi phí, rất là tốn chi phí. Do đó
+0:06:53 - 0:06:58, thì chúng ta có thể
+0:06:55 - 0:07:02, thực hiện bằng cách đó là chúng ta sẽ
+0:06:58 - 0:07:04, dùng thuật toán gradient để cập nhật. Và
+0:07:02 - 0:07:07, cái công thức cập nhật của mình đó là
+0:07:04 - 0:07:10, beta mũ bằng beta mũ trừ cho alpha nhân
+0:07:07 - 0:07:13, cho đạo hàm hay ký hiệu bằng nabla. Nabla
+0:07:10 - 0:07:18, chính là đạo hàm mà cho vector của cái
+0:07:13 - 0:07:20, hàm L(beta mũ). Và đương nhiên để
+0:07:18 - 0:07:22, cập nhật này thì ban đầu beta của mình
+0:07:20 - 0:07:24, nó sẽ là bằng một cái vector ngẫu nhiên, một cái
+0:07:22 - 0:07:26, vector
+0:07:24 - 0:07:29, ngẫu nhiên. Và chúng ta sẽ thực hiện lặp đi
+0:07:26 - 0:07:35, lặp lại cái cập nhật này cho đến khi nào
+0:07:29 - 0:07:37, mà nabla của L(beta mũ) và cái giá
+0:07:35 - 0:07:38, trị này thì nó bé hơn một cái ngưỡng
+0:07:37 - 0:07:41, epsilon thì khi đó thuật toán của chúng
+0:07:38 - 0:07:44, ta sẽ kết thúc. Và toàn bộ cái quá trình
+0:07:41 - 0:07:47, huấn luyện mô hình máy học này thì đều
+0:07:44 - 0:07:49, được cài đặt ở trong cái thư viện Scikit-learn
+0:07:47 - 0:07:51, với cái module nó có tên là Linear
+0:07:49 - 0:07:54, Regression. Thì trong cái mô hình Linear
+0:07:51 - 0:07:56, Regression này thì chúng ta đã được cung
+0:07:54 - 0:08:00, cấp các cái phương thức ví dụ như là
+0:07:56 - 0:08:02, phương thức về phương thức `fit` là để huấn luyện
+0:08:00 - 0:08:05, và phương
+0:08:02 - 0:08:05, thức
+0:08:05 - 0:08:10, `predict` để phục vụ cho quá trình chúng ta
+0:08:08 - 0:08:14, inference, thực hiện cho cái quá trình là
+0:08:10 - 0:08:16, test với một cái mẫu riêng biệt mới. Đó, thì
+0:08:14 - 0:08:19, đã được cài đặt, cái module này đã được
+0:08:16 - 0:08:21, cài đặt trong Scikit-learn. Và mô hình hồi quy
+0:08:19 - 0:08:24, tuyến tính thì nó sẽ có những cái ưu điểm
+0:08:21 - 0:08:28, nhất định. Ví dụ: thuật toán đơn giản, dễ
+0:08:24 - 0:08:29, hiểu và dễ cài đặt, và phù hợp với lại
+0:08:28 - 0:08:32, những cái dữ liệu có cái mối quan hệ
+0:08:29 - 0:08:33, tuyến tính đúng như cái tên gọi của nó.
+0:08:32 - 0:08:36, Thì cái tính tuyến tính này nó thể hiện
+0:08:33 - 0:08:36, ở chỗ đó là
+0:08:37 - 0:08:44, đồng biến hoặc là nghịch biến. Nghĩa là
+0:08:40 - 0:08:46, sao? Nếu x của mình tăng, y cùng tăng, à, x
+0:08:44 - 0:08:48, của mình mà tăng thì y của mình nó cũng
+0:08:46 - 0:08:49, sẽ cùng tăng theo. Hoặc là nghịch biến,
+0:08:48 - 0:08:51, tức là x của mình nó giảm thì y của mình
+0:08:49 - 0:08:54, nó sẽ cùng giảm. Thì đó là cái mối quan
+0:08:51 - 0:08:56, hệ tuyến tính. Nhược điểm thì mô hình
+0:08:54 - 0:08:58, này nó sẽ không hiệu quả đối với lại
+0:08:56 - 0:09:00, những cái dữ liệu mà có mối quan hệ phức
+0:08:58 - 0:09:02, tạp. Thì cái khái niệm phức tạp ở đây
+0:09:00 - 0:09:05, đó chính là khái niệm về phi tuyến, tức
+0:09:02 - 0:09:06, là biến y của mình nó sẽ phụ thuộc một
+0:09:05 - 0:09:10, cách phi tuyến tính với lại cái biến x
+0:09:06 - 0:09:13, đầu vào. Và nó rất dễ bị ảnh hưởng bởi dữ
+0:09:10 - 0:09:15, liệu nhiễu. Nghĩa là sao? Nếu như chúng ta
+0:09:13 - 0:09:18, có các cái điểm dữ liệu ở
+0:09:15 - 0:09:21, đây rồi và cái đường của mình lẽ ra là
+0:09:18 - 0:09:24, như thế này, thì khi có cái sự xuất hiện
+0:09:21 - 0:09:27, của một cái điểm nhiễu ở đây thì nó sẽ
+0:09:24 - 0:09:29, kéo cái mô hình của mình bị lật về hướng
+0:09:27 - 0:09:32, này. Nó sẽ kéo cái mô hình của mình nó bị
+0:09:29 - 0:09:34, lệch về hướng này. Thì đây chính là cái ảnh hưởng
+0:09:32 - 0:09:37, của cái điểm nhiễu hay còn gọi là outlier.

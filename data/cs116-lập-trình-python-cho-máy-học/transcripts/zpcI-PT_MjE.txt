@@ -1,0 +1,412 @@
+0:00:01 - 0:00:07, và cái cách triển khai tiếp theo đó
+0:00:03 - 0:00:10, chính là Model in service Model in
+0:00:07 - 0:00:15, service tức là gì Tức là cái mô hình của
+0:00:10 - 0:00:17, mình nó sẽ được đặt ngay trong cái
+0:00:15 - 0:00:19, server để triển khai cái dịch vụ của
+0:00:17 - 0:00:23, mình đặt ngay trong cái server để triển
+0:00:19 - 0:00:26, khai dịch vụ đó vì khí Ví dụ như ở đây
+0:00:23 - 0:00:30, client đúng không người dùng cuối họ gọi
+0:00:26 - 0:00:32, một cái api lên trên server và server
+0:00:30 - 0:00:36, của mình sẽ ngay trong cái con Server
+0:00:32 - 0:00:39, này chúng ta thực thi cái mô hình của
+0:00:36 - 0:00:41, mình để đưa ra cái kết quả dự đoán ngay
+0:00:39 - 0:00:44, trên chính cái server cung cấp cái api
+0:00:41 - 0:00:47, này đó thì nó gọi là Model in
+0:00:44 - 0:00:50, service chúng ta sẽ đóng gói với cái
+0:00:47 - 0:00:54, cách thức triển khai này thì mô hình sẽ
+0:00:50 - 0:00:56, được đóng gói nè và sẽ cài đặt chung sẽ
+0:00:54 - 0:00:59, được đặt chung vào bên trong cái web
+0:00:56 - 0:01:01, server của mình thì đây chính là cái sự
+0:00:59 - 0:01:04, khác biệt lớn nhất Nếu như trong cái b
+0:01:01 - 0:01:09, prediction thì Model của mình sẽ được
+0:01:04 - 0:01:11, chạy trước chạy sẵn trước và đổ cái kết
+0:01:09 - 0:01:16, quả dự đoán vào bên trong database thì ở
+0:01:11 - 0:01:19, đây m của mình sẽ được gọi ngay khi có
+0:01:16 - 0:01:21, cái request của người dùng và cái mô
+0:01:19 - 0:01:25, hình của mình thì nó cũng sẽ được đặt
+0:01:21 - 0:01:27, chung với lại cái server cái web server
+0:01:25 - 0:01:30, cung cấp api cho người
+0:01:27 - 0:01:32, dùng và như vậy thì cái web server của
+0:01:30 - 0:01:36, mình nó sẽ tiến hành Tải hay C gọi là
+0:01:32 - 0:01:39, lad load cái mô hình này lên rồi gọi cái
+0:01:36 - 0:01:42, mô hình để thực hiện cái việc dự đoán
+0:01:39 - 0:01:44, khi có yêu cầu từ người dùng đó thì đây
+0:01:42 - 0:01:48, là cái cách thức triển khai model in
+0:01:44 - 0:01:50, service và cái với cái cách thức triển
+0:01:48 - 0:01:55, khai này thì chúng ta có thể
+0:01:50 - 0:01:57, thấy rằng là có ít ưu điểm nhưng mà rất
+0:01:55 - 0:01:59, nhiều khuyết điểm đúng không Ví dụ như
+0:01:57 - 0:02:02, là ưu điểm duy nhất của nó đó là nó sẽ
+0:01:59 - 0:02:05, tận dụng được cái hạ tầng của cái server
+0:02:02 - 0:02:10, hiện có Tức là cái Server này vốn nó
+0:02:05 - 0:02:10, được tạo ra để
+0:02:11 - 0:02:20, mà cung cấp cho cái api Ừ hoặc là cái
+0:02:17 - 0:02:22, web cho người dùng thì chúng ta sẽ dùng
+0:02:20 - 0:02:24, luôn Chính cái Server này để triển khai
+0:02:22 - 0:02:26, m lên trên đây luôn đó thì chúng ta sẽ
+0:02:24 - 0:02:29, tận dụng được cái hạ tầu không phải tốn
+0:02:26 - 0:02:32, không phải phát sinh thêm cái
+0:02:29 - 0:02:33, chi phí cho cái hạ tầng mới nhưng mà
+0:02:32 - 0:02:36, quyết điểm của nó thì chúng ta thấy rất
+0:02:33 - 0:02:38, là nhiều ở đây quyết điểm đầu tiên đó là
+0:02:36 - 0:02:40, cái server mình có thể được viết bằng
+0:02:38 - 0:02:42, cái ngôn ngữ khác
+0:02:40 - 0:02:44, à cái web server của mình có thể viết
+0:02:42 - 0:02:47, được ngôn ngữ khác Tại vì chúng ta biết
+0:02:44 - 0:02:50, rằng là các cái cái công nghệ mà về lập
+0:02:47 - 0:02:55, trình web nó rất là đa dạng à Nó có thể
+0:02:50 - 0:02:57, viết bằng PSP nè rồi nó có thể viết
+0:02:55 - 0:03:00, bằng Java nè
+0:02:57 - 0:03:04, đó rồi Thậm chí nó nó có thể viết bằng
+0:03:00 - 0:03:06, csap thì công nghệ rất là nhiều nhưng mà
+0:03:04 - 0:03:09, các cái công nghệ này á mà phục vụ cho
+0:03:06 - 0:03:13, lập trình web á thì thường là không có
+0:03:09 - 0:03:15, phù hợp cho các cái mô hình máy học
+0:03:13 - 0:03:17, chúng ta biết rằng là mỗi một cái ngôn
+0:03:15 - 0:03:19, ngữ đạp trình sinh ra thì nó sẽ phục vụ
+0:03:17 - 0:03:23, tối ưu cho một số cái tác vụ nào đấy
+0:03:19 - 0:03:26, thôi đó thì khi chúng ta làm các ứng
+0:03:23 - 0:03:30, dụng dạng web thì nó sẽ dùng những cái
+0:03:26 - 0:03:33, ngôn ngữ phù hợp để làm web mà những cái
+0:03:30 - 0:03:36, ngôn ngữ này thì nó lại không có đáp ứng
+0:03:33 - 0:03:39, được cái mức độ của một cái mô hình máy
+0:03:36 - 0:03:40, học đó là phải tính toán cao có cái hiệu
+0:03:39 - 0:03:43, năng tính toán cao trên các cái phép
+0:03:40 - 0:03:46, toán trên số học hoặc là có khả năng xử
+0:03:43 - 0:03:49, lý được cái dữ nệu lớn vân vân thì đây
+0:03:46 - 0:03:52, là những cái điểm yếu của các cái ngôn
+0:03:49 - 0:03:55, ngữ lập trình khi làm cái web server như
+0:03:52 - 0:03:56, vậy thì web server nó sẽ không nó sẽ
+0:03:55 - 0:03:58, viết bằng nhiều ngôn ngữ khác nhau nhưng
+0:03:56 - 0:04:00, mà những cái ngôn ngữ đó nó lại không
+0:03:58 - 0:04:04, phù hợp cho cácem mình ha máy học của
+0:04:00 - 0:04:07, mình và mô hình của mình thì nó có thể
+0:04:04 - 0:04:08, cập nhật thường xuyên hơn cái code cái
+0:04:07 - 0:04:11, code
+0:04:08 - 0:04:13, web điều này có nghĩa là gì ở đây chúng
+0:04:11 - 0:04:16, ta sẽ có hai trong cái server này của
+0:04:13 - 0:04:21, chúng ta nó sẽ có chứa hai thứ một đó là
+0:04:16 - 0:04:25, cái code của cái model máy học và hai á
+0:04:21 - 0:04:27, đó chính là cái code của cái code web
+0:04:25 - 0:04:30, mình thì chúng ta biết rằng là cái code
+0:04:27 - 0:04:31, web của mình thông thường nó sẽ có cái
+0:04:30 - 0:04:33, tính ổn định rất là cao khi chúng ta
+0:04:31 - 0:04:36, triển khai một cái ứng dụng web đó rồi
+0:04:33 - 0:04:38, thì phải rất là lâu sau chúng ta mới cập
+0:04:36 - 0:04:40, nhật lại một cái phiên bản mới cho cái
+0:04:38 - 0:04:43, ứng dụng web của mình trong khi đó cái
+0:04:40 - 0:04:46, mô hình của mình thì nó sẽ có cái tính
+0:04:43 - 0:04:48, chất cập nhật rất thường xuyên nó sẽ có
+0:04:46 - 0:04:50, thể cập nhật lại các cái trọng số của mô
+0:04:48 - 0:04:52, hình tại vì dữ liệu cái mô hình của mình
+0:04:50 - 0:04:55, Nó có thể là thậm chí là học theo thời
+0:04:52 - 0:05:01, gian mà nó sẽ học
+0:04:55 - 0:05:08, ờ học xin lỗi ở đây là học hoặc là huấn
+0:05:01 - 0:05:08, luyện học hoặc huấn luyện theo thời
+0:05:13 - 0:05:18, gian có những cái mô hình mà nó sẽ học
+0:05:16 - 0:05:22, Real Time luôn học theo Real Time theo
+0:05:18 - 0:05:25, thời gian thực tức là cứ vài vài giờ vài
+0:05:22 - 0:05:27, ngày vài tiếng là nó sẽ được học luôn đó
+0:05:25 - 0:05:29, thì cái tính cập nhật của cái mô hình
+0:05:27 - 0:05:32, của mình nó sẽ rất là cao trong khi đó
+0:05:29 - 0:05:35, cái We này thì chậm dẫn đến là nó sẽ
+0:05:32 - 0:05:38, không có cái sự đồng bộ trong cái việc
+0:05:35 - 0:05:41, là chúng ta Cập nhật cái cái cái cái cái
+0:05:38 - 0:05:44, cái server của mình tiến hành quản lý và
+0:05:41 - 0:05:46, cập nhật Cái server của mình rồi cái mô
+0:05:44 - 0:05:49, hình của mình lớn á thì thậm chí là nó
+0:05:46 - 0:05:51, có thể tiêu tốn rất là nhiều cái tài
+0:05:49 - 0:05:56, nguyên của cái web server ví dụ những
+0:05:51 - 0:05:56, cái mô hình mà học sâu de learning
+0:06:01 - 0:06:08, nó sẽ sử dụng rất nhiều tài nguyên tính
+0:06:04 - 0:06:11, toán về ram về bộ nhớ về CPU Và thậm chí
+0:06:08 - 0:06:13, là gpo thì nó sẽ làm cho cái con server
+0:06:11 - 0:06:15, của mình nó chậm mà server của mình C
+0:06:13 - 0:06:18, chận thì nó sẽ không có thể thực hiện
+0:06:15 - 0:06:21, được những cái tác vụ chính của cái ứng
+0:06:18 - 0:06:23, dụng web đó nó sẽ làm ảnh hưởng đến cái
+0:06:21 - 0:06:25, hiệu quả của cái phần các cái ứng dục
+0:06:23 - 0:06:29, khác của nh web của
+0:06:25 - 0:06:31, mình và cái phần cứng của của cái web
+0:06:29 - 0:06:33, server thì có thể là nó không tối ưu cho
+0:06:31 - 0:06:36, mô hình của mình tức là khi chúng ta
+0:06:33 - 0:06:39, muốn triển khai một cái mô hình triển
+0:06:36 - 0:06:41, khai trên cái server mà đã có phục vụ
+0:06:39 - 0:06:45, cho cái một cái ứng dụng web nào đó thì
+0:06:41 - 0:06:48, thường người ta sẽ thiết kế cái phần
+0:06:45 - 0:06:51, cứng cho cái con Server
+0:06:48 - 0:06:55, này đáp ứng được những cái nhu cầu của
+0:06:51 - 0:06:58, cái web App ví dụ nó cần đáp ứng là bộ
+0:06:55 - 0:07:01, nhớ nhiều cái bộ HDD Tức là cái ổ cứng
+0:06:58 - 0:07:01, nhiều
+0:07:02 - 0:07:07, rồi
+0:07:03 - 0:07:07, CPU cũng
+0:07:07 - 0:07:10, nhiều
+0:07:10 - 0:07:17, ram nhiều nhưng mà khi chúng ta thực
+0:07:15 - 0:07:19, hiện trên các cái mô hình máy học đúng
+0:07:17 - 0:07:22, không Thì chúng ta không có cần cái ổ
+0:07:19 - 0:07:24, cứng nhiều đó cái mô hình của mình nhiều
+0:07:22 - 0:07:26, khi nó rất là ít nó chỉ cần có vài ghb
+0:07:24 - 0:07:30, thôi là đủ rồi và CPU này nó cũng không
+0:07:26 - 0:07:32, cần nhiều mà nó lại cần có cái GPU à Nó
+0:07:30 - 0:07:35, cần phải có cái bộ tính toán vi xử lý
+0:07:32 - 0:07:38, song song thì lúc đó là nó sẽ có cái sự
+0:07:35 - 0:07:40, chênh lệch có cái sự mâu thuẫn giữa hai
+0:07:38 - 0:07:42, cái model cái code Model và code web
+0:07:40 - 0:07:46, trong cái việc là tiêu tốn cái tài
+0:07:42 - 0:07:49, nguyên phần cứng của mình cái tài nguyên
+0:07:46 - 0:07:51, để phục vụ cho cái phần code web này nè
+0:07:49 - 0:07:55, cho cái phần web App nà thì nó lại không
+0:07:51 - 0:07:58, có phục vụ tốt cho cái mô hình máy học
+0:07:55 - 0:08:00, và nó sẽ có một cái vấn đề đó là cái mô
+0:07:58 - 0:08:02, hình
+0:08:00 - 0:08:04, vấn đề này cũng rất là nan giải Đó là mô
+0:08:02 - 0:08:07, hình máy học và cái web server của mình
+0:08:04 - 0:08:11, nó sẽ có thể scale khác
+0:08:07 - 0:08:13, nhau ý của cái câu này đó chính là gì Ví
+0:08:11 - 0:08:16, dụ khi chúng ta triển khai một cái code
+0:08:13 - 0:08:20, code web lên trên một cái con server thì
+0:08:16 - 0:08:23, nếu chỉ có cái ứng dụng web c thì một
+0:08:20 - 0:08:26, một máy
+0:08:23 - 0:08:29, tính có thể phục vụ được cho khoảng
+0:08:26 - 0:08:32, 100.000 người
+0:08:29 - 0:08:36, đó nhưng cũng với cái cấu hình phần cứn
+0:08:32 - 0:08:40, đó mà cho cái phần mà máy học thì một
+0:08:36 - 0:08:41, máy của mình á Đây là cho cái phần mà
+0:08:40 - 0:08:45, đây là cho cái phần mà web
+0:08:41 - 0:08:48, ha còn cho cái phần mà mô hình máy học
+0:08:45 - 0:08:50, thì một máy này của mình với cái một cái
+0:08:48 - 0:08:51, mô hình thì nó chỉ có thể phục vụ được
+0:08:50 - 0:08:54, cho khoảng 10.000 người thôi mình lấy ví
+0:08:51 - 0:08:56, dụ vậy và nó sẽ có cái sự chên lệch ở
+0:08:54 - 0:08:59, đây thì khi cái số lượng người dùng
+0:08:56 - 0:09:01, người ta tăng lên giả sử như Hiện giờ
+0:08:59 - 0:09:04, mình đang đang có 10.000 người thì mọi
+0:09:01 - 0:09:09, thứ vẫn ổn nhưng mà khi nó bước sang cái
+0:09:04 - 0:09:11, con số thứ 20.000 người thì một máy
+0:09:09 - 0:09:14, này không đủ để cho chúng ta triển khai
+0:09:11 - 0:09:16, cái mô hình nhưng nó vẫn đủ một máy nó
+0:09:14 - 0:09:18, vẫn đủ tại vì 10.000 người thì với cái
+0:09:16 - 0:09:20, dụ web nó vẫn còn nằm trong cái khả năng
+0:09:18 - 0:09:22, của nó nhưng mà đến cái phần này mô hình
+0:09:20 - 0:09:24, máy học nó đã không chịu được nữa tại vì
+0:09:22 - 0:09:26, cái khối lượng tính toán của nó quá lớn
+0:09:24 - 0:09:28, khi mà cái số lượng người dùng lên đến
+0:09:26 - 0:09:31, 20.000 người đó thì buộc chúng ta sẽ
+0:09:28 - 0:09:33, phải cái mua cái cái server nên chúng ta
+0:09:31 - 0:09:36, sẽ phải cấp phát thêm một cái con server
+0:09:33 - 0:09:38, mới đó nhưng mà khi chúng ta cấp phát
+0:09:36 - 0:09:41, một con server mới thì vô hình chung cái
+0:09:38 - 0:09:44, phần web server này cái phần web này nó
+0:09:41 - 0:09:47, lại thừa đó thì đó là cái sự không có
+0:09:44 - 0:09:49, đồng bộ trong cái việc mà chúng ta scale
+0:09:47 - 0:09:53, cái mô hình của mình lên khi
+0:09:49 - 0:09:55, à chúng ta sẽ sử dụng chung một con
+0:09:53 - 0:10:00, server cho hai cái tính
+0:09:55 - 0:10:03, năng và tiếp theo đó chính là cái model
+0:10:00 - 0:10:06, as service tức là chúng ta triển khai
+0:10:03 - 0:10:08, cái mô hình dưới dạng là các cái dịch vụ
+0:10:06 - 0:10:11, web đó thì ở trong đây chúng ta thấy
+0:10:08 - 0:10:14, rằng là thay vì chúng ta để model chung
+0:10:11 - 0:10:16, với cái con server của một cái web
+0:10:14 - 0:10:20, server ở đây thì chúng ta sẽ tách nó ra
+0:10:16 - 0:10:20, thành một cái máy riêng một cái server
+0:10:23 - 0:10:28, riê tách ra thành một cái con server ri
+0:10:26 - 0:10:30, và cái con cái cái cái server r này nó
+0:10:28 - 0:10:33, sẽ cung cấp cái
+0:10:30 - 0:10:36, api cho cái dịch vụ web của mình ở phía
+0:10:33 - 0:10:39, backend nhưng đồng thời nó cũng có thể
+0:10:36 - 0:10:42, kết nối trực tiếp với cái người dùng
+0:10:39 - 0:10:45, cuối à Nó có thể kết nối trực tiếp với
+0:10:42 - 0:10:47, cái người dùng cuối thông qua cái api
+0:10:45 - 0:10:49, luôn như vậy thì cái tính uyển chuyển
+0:10:47 - 0:10:52, của nó rất là cao đúng không Tức là khi
+0:10:49 - 0:10:55, chúng ta triển khai một cái mua đồ riêng
+0:10:52 - 0:10:59, và một cái servering thì cái dịch vụ về
+0:10:55 - 0:11:01, dự đoán kết quả của máy học của mình có
+0:10:59 - 0:11:03, thể được cung cấp cho trực tiếp đến cái
+0:11:01 - 0:11:04, người dùng cuối nó cũng có thể cung cấp
+0:11:03 - 0:11:06, cho
+0:11:04 - 0:11:10, cái con server backend của phía mình Và
+0:11:06 - 0:11:12, thậm chí là nó có thể cung cấp cho các
+0:11:10 - 0:11:15, cái bên thứ ba có nhu cầu cho các cái
+0:11:12 - 0:11:20, đơn vị bên thứ ba có nhu
+0:11:15 - 0:11:21, cầu thì ở đây Model service tức là chúng
+0:11:20 - 0:11:24, ta sẽ thực thi cái mô hình máy học của
+0:11:21 - 0:11:27, mình trên một cái con server r trên một
+0:11:24 - 0:11:30, cái con serv viên thay vì chúng ta sẽ
+0:11:27 - 0:11:30, không có dùng
+0:11:31 - 0:11:38, chung với cái server cái cái web
+0:11:36 - 0:11:43, server
+0:11:38 - 0:11:45, đó và web backend thì nó sẽ tương tác
+0:11:43 - 0:11:47, với cái mô hình của mình bằng cách gọi
+0:11:45 - 0:11:50, cái dịch vụ web hay còn gọi là
+0:11:47 - 0:11:54, api và nhận được cái phản ngồi ngược lại
+0:11:50 - 0:11:56, từ cái server đó có server mà có chứu mu
+0:11:54 - 0:11:58, hình đó của mình thì với cái cách làm
+0:11:56 - 0:12:00, này chúng ta sẽ thấy có những cái ưu
+0:11:58 - 0:12:02, điểm rất là nhiều
+0:12:00 - 0:12:04, nó sẽ có rất nhiều ưu điểm ưu điểm đầu
+0:12:02 - 0:12:07, tiên về cái tính dependency tức là cái
+0:12:04 - 0:12:10, tính phụ thuộc á thì mô hình của mình mà
+0:12:07 - 0:12:12, có lỗi đúng không Nếu cái mu hình của
+0:12:10 - 0:12:15, mình có bất thì nó cũng sẽ không ảnh
+0:12:12 - 0:12:16, hưởng không ảnh hưởng không ảnh Hưng
+0:12:15 - 0:12:18, nhiều nha không ảnh hưởng đến cái ứng
+0:12:16 - 0:12:21, dụng web của mình tức là nếu như cái
+0:12:18 - 0:12:21, server
+0:12:21 - 0:12:31, của Đây là cái web server
+0:12:25 - 0:12:31, nè Còn đây là cái mod nè
+0:12:34 - 0:12:39, đ thì nếu như cái model này chết đúng
+0:12:37 - 0:12:41, không Thì cái web này nó vẫn còn hoạt
+0:12:39 - 0:12:43, động được ý của cái nó là cái tính phụ
+0:12:41 - 0:12:46, thuộc của nó nó không có bị ảnh hưởng
+0:12:43 - 0:12:49, nhiều và cái tính mở rộng là khi chúng
+0:12:46 - 0:12:53, ta tách Cái m cái cái server của mình ra
+0:12:49 - 0:12:55, riêng á thì cái Server này về mặt phần
+0:12:53 - 0:12:58, cứng nó sẽ được chọn lựa những cái phần
+0:12:55 - 0:13:01, cứng phù hợp cho cái mô hình này hơn à
+0:12:58 - 0:13:03, tối ưu cho cái mô hình của chúng ta thay
+0:13:01 - 0:13:05, vì chúng ta phải bị phụ thuộc vào cái
+0:13:03 - 0:13:07, phần cứng cho cái phần web server thì ở
+0:13:05 - 0:13:11, đây chúng ta có thể tùy chọn những cái
+0:13:07 - 0:13:11, phần cứng tối ưu cho cái mô hình của
+0:13:12 - 0:13:20, mình và khi chúng ta mở rộng thì cái
+0:13:16 - 0:13:22, tính mở rộng của nó cũng sẽ
+0:13:20 - 0:13:25, được phù hợp hơn Ví dụ như hồi nãy chúng
+0:13:22 - 0:13:28, ta nói một cái web server có thể phục vụ
+0:13:25 - 0:13:29, được 100.000 người còn cái model server
+0:13:28 - 0:13:33, thì nó chỉ chỉ có thể phục vụ được
+0:13:29 - 0:13:36, khoảng 10 10.000 người thôi thì khi cái
+0:13:33 - 0:13:40, con số người dùng mà lên 20.000 người
+0:13:36 - 0:13:42, thì chúng ta chỉ cần tăng cái số server
+0:13:40 - 0:13:44, của cái phần model này lên gấp đôi còn
+0:13:42 - 0:13:47, cái web server vẫn giữ
+0:13:44 - 0:13:50, nguyên và dẫn đến là cái phần web server
+0:13:47 - 0:13:52, của chúng ta nó sẽ không có bị thừa đúng
+0:13:50 - 0:13:55, không nó không có bị dư cái khả năng
+0:13:52 - 0:13:57, cung cấp dịch vụ cho người dùng của mình
+0:13:55 - 0:13:59, thì đó chính là cái tính mở rộng hay còn
+0:13:57 - 0:14:02, gọi là scalability
+0:13:59 - 0:14:06, và cuối cùng đó chính là cái tính linh
+0:14:02 - 0:14:09, động đó là cái dịch vụ của cái mô hình
+0:14:06 - 0:14:09, của mình
+0:14:09 - 0:14:14, á có thể được tái sử dụng cho các ứng
+0:14:12 - 0:14:16, dụng khác tức là ví dụ như chúng ta đang
+0:14:14 - 0:14:17, làm một cái dịch vụ là nhận diệt gương
+0:14:16 - 0:14:19, mặt đúng không Chúng ta đang muốn làm
+0:14:17 - 0:14:22, một cái dịch vụ là nhận diệt gương mặt
+0:14:19 - 0:14:25, và có những cái bên thứ ba như là ngân
+0:14:22 - 0:14:28, hàng như là các cái công
+0:14:25 - 0:14:29, ty cung cấp các dịch vụ công ví dụ vậy
+0:14:28 - 0:14:32, như các cái đơn vị mà cung cấp dị vụ
+0:14:29 - 0:14:34, công họ cần cái tính xác thực bằng gương
+0:14:32 - 0:14:36, mặt thì chúng ta sẽ cung cấp cái api đó
+0:14:34 - 0:14:39, cho các cái bên đơn vị khác có thể cùng
+0:14:36 - 0:14:43, sử dụng chung thì một công đôi
+0:14:39 - 0:14:46, Việt và khuyết điểm của cái cách là
+0:14:43 - 0:14:48, Model ex service đó là nó có thể có cái
+0:14:46 - 0:14:51, độ trễ
+0:14:48 - 0:14:55, latency Tại sao Tại vì khi cái model của
+0:14:51 - 0:14:58, mình gọi lên trên cái web đúng không cái
+0:14:55 - 0:15:00, web này giả sử như phía sau nó gọi
+0:14:58 - 0:15:02, backend là backend phía sau nó sẽ gọi
+0:15:00 - 0:15:05, cái model của mình thì ở đây nó sẽ có
+0:15:02 - 0:15:08, một cái độ trễ và từ đây trả về đây nó
+0:15:05 - 0:15:10, sẽ có độ trễ Tại vì Model của mình mà
+0:15:08 - 0:15:11, thông qua api thì lúc nào nó cũng sẽ có
+0:15:10 - 0:15:16, cái độ
+0:15:11 - 0:15:19, trẻ vì truyền qua cái môi trường à gọi
+0:15:16 - 0:15:22, là môi trường internet rồi nó sẽ phức
+0:15:19 - 0:15:25, tạp hơn về mặt hạ tầng thì đúng rồi Tại
+0:15:22 - 0:15:28, vì bình thường á cái cách là mod
+0:15:25 - 0:15:31, Ờ cái cách mà chúng ta đưa cái mod vào
+0:15:28 - 0:15:33, riêng một cái con server khác thì chúng
+0:15:31 - 0:15:36, ta sẽ phải quản lý hai con server trong
+0:15:33 - 0:15:36, khi
+0:15:36 - 0:15:42, đó với cái cách Model inice thì chúng ta
+0:15:40 - 0:15:45, chỉ việc có quản lý có một server thôi
+0:15:42 - 0:15:47, nó sẽ đơn giản hơn đúng không Thì còn
+0:15:45 - 0:15:49, Model a service thì chúng ta sẽ phải
+0:15:47 - 0:15:51, quản lý cái khối lượng quản lý chúng ta
+0:15:49 - 0:15:56, sẽ nhiều hơn do chúng ta có đến hai cái
+0:15:51 - 0:16:01, loại server do đó phức tạp về mặt khả
+0:15:56 - 0:16:04, từ và để để triển khai cái mô hình ở
+0:16:01 - 0:16:07, dạng dịch vụ thì chúng ta sẽ có một số
+0:16:04 - 0:16:10, cái khái niệm mà chúng ta cần phải tìm
+0:16:07 - 0:16:13, hiểu đầu tiên đó là rest api thì đây
+0:16:10 - 0:16:15, chính là một cái khái niệm về cái việc
+0:16:13 - 0:16:18, là cung cấp một cái dịch vụ web theo cái
+0:16:15 - 0:16:21, công thức là rest chúng ta sẽ có những
+0:16:18 - 0:16:24, cái quy tắc quy chuẩn về giữ Kiệt đầu
+0:16:21 - 0:16:27, vào và giữ kiện đầu ra cái input của cái
+0:16:24 - 0:16:29, api của mình nó sẽ có những cái chuẩn gì
+0:16:27 - 0:16:32, đúng không Nếu là số nguyên Nếu là số
+0:16:29 - 0:16:35, thực nếu là hình ảnh nếu là một cái file
+0:16:32 - 0:16:38, dữ liệu đó thì nó sẽ đóng gói với dạng
+0:16:35 - 0:16:41, là cấu trúc như thế nào là Jon hay là
+0:16:38 - 0:16:44, xml Vân Vân thì đó là những cái quy
+0:16:41 - 0:16:45, chuẩn của rest api rồi cái kết quả trả
+0:16:44 - 0:16:49, về của mình nó sẽ có cái format như thế
+0:16:45 - 0:16:52, nà thì đó là liên quan đến cái rest api
+0:16:49 - 0:16:55, rồi chúng ta sẽ phải có cái cái khái
+0:16:52 - 0:16:56, niệm liên quan đến cái quản lý cái tính
+0:16:55 - 0:16:58, phụ
+0:16:56 - 0:17:02, thuộc thì trong cái tính phụ thuộc ở đây
+0:16:58 - 0:17:05, chúng ch ta đã đề cập đó là mô hình của
+0:17:02 - 0:17:08, mình đúng không Thì nó sẽ có lỗi
+0:17:05 - 0:17:11, Ờ nếu mà cái mô hình của mình nó có lỗi
+0:17:08 - 0:17:13, thì nó sẽ ảnh hưởng đến cái ứng dụng web
+0:17:11 - 0:17:16, nó như thế nào thì ở đây chúng ta cũng
+0:17:13 - 0:17:20, sẽ tương tự như vậy khi cái mô hình của
+0:17:16 - 0:17:22, mình mà nó đang trục chặt nó có vấn đề
+0:17:20 - 0:17:24, thì cái ứng dụng web của mình nó sẽ phản
+0:17:22 - 0:17:27, ứng ra sao để tránh cái việc là phụ
+0:17:24 - 0:17:29, thuộc giữa cái ứng dụng web giữa cái ứng
+0:17:27 - 0:17:33, dụng web và cái m
+0:17:29 - 0:17:35, đồ để giúp cho mình là không có bị gây
+0:17:33 - 0:17:38, ra cái thiệt Hải cái yếu tố tiếp theo đó
+0:17:35 - 0:17:41, chính là cái tối ưu về mặt hiệu
+0:17:38 - 0:17:43, năng tối ưu về mặt hiệu năng khi chúng
+0:17:41 - 0:17:47, ta triển khai cái mô hình của mình
+0:17:43 - 0:17:49, Ờ đến cái người dùng cuối thì rõ ràng là
+0:17:47 - 0:17:52, cái việc chúng ta tối ưu về hiệu năng
+0:17:49 - 0:17:53, cũng rất là quan trọng Làm sao để cho
+0:17:52 - 0:17:56, cái mô hình của
+0:17:53 - 0:17:59, mình có thể chạy được nhẹ
+0:17:56 - 0:18:03, nè rồi làm sao công mình có mình có thể
+0:17:59 - 0:18:03, là nhanh nhẹ ở đây tức là í tốn tài
+0:18:04 - 0:18:11, nguyên tài nguyên này thì có thể bao gồm
+0:18:07 - 0:18:16, là về bộ
+0:18:11 - 0:18:16, nhớ đúng không và tài nguyên về tính
+0:18:17 - 0:18:25, toán rồi nhanh tức là làm sao để cho kể
+0:18:22 - 0:18:27, từ khi người ta cái người dùng người ta
+0:18:25 - 0:18:29, request cái mô hình của mình nó thực thi
+0:18:27 - 0:18:31, một cái gì đấy thì chúng ta sẽ phải thực
+0:18:29 - 0:18:33, thi với thời gian thực đó là cái mà mong
+0:18:31 - 0:18:35, muốn lớn nhất Tuy nhiên nếu mà trong
+0:18:33 - 0:18:37, trường hợp có đội Trễ thì làm sao cái
+0:18:35 - 0:18:40, đội trẻ của mình là thấp nhất có thể thì
+0:18:37 - 0:18:45, ở đây chúng ta đang nói về yếu tố về tốc
+0:18:40 - 0:18:48, độ thì đây chính là yếu tố về hiệu năng
+0:18:45 - 0:18:51, rồi cái yếu tố về mở rộng theo chiều dọc
+0:18:48 - 0:18:53, hay còn gọi là horizontal scale tức là
+0:18:51 - 0:18:57, khi cái lượng người dùng của mình tăng
+0:18:53 - 0:18:59, lên đúng không vượt quá Cái khả năng của
+0:18:57 - 0:19:00, một cái mô hình của mình nó có thể đáp
+0:18:59 - 0:19:03, ứng một cái con server của mình có thể
+0:19:00 - 0:19:06, đáp ứng thì chúng ta
+0:19:03 - 0:19:09, sẽ cấu hình và chúng ta có thể nâng cốc
+0:19:06 - 0:19:10, cái hạ tầng như thế nào để đáp ứng khi
+0:19:09 - 0:19:13, cái số lượng người dụng của mình thay
+0:19:10 - 0:19:17, đổi và cuối cùng đó là triển khai làm
+0:19:13 - 0:19:18, sao tích hợp hết mọi thứ có thể chạy một
+0:19:17 - 0:19:23, cách trơn tru trong một cái hệ thống
+0:19:18 - 0:19:25, tổng thể từ cái khâu là lấy cái dữ liệu
+0:19:23 - 0:19:29, thu thập dữ liệu rồi huấn luyện cập nhật
+0:19:25 - 0:19:33, huấn luyện mô hình theo thời gian rồi có
+0:19:29 - 0:19:35, thể gọi cái hàm dự đoán đến cái mô hình
+0:19:33 - 0:19:38, trên cái số lượng người dùng Lớn rồi Làm
+0:19:35 - 0:19:41, sao có thể là đo lường các cái hiệu quả
+0:19:38 - 0:19:45, của cái việc dự đoán này như thế nào thì
+0:19:41 - 0:19:45, đó là cái vấn đề về triển khai

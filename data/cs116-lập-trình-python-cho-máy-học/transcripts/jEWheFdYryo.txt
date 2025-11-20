@@ -1,0 +1,225 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:17, trong bài hướng dẫn thực hành ngày hôm
+0:00:16 - 0:00:21, nay thì chúng
+0:00:17 - 0:00:23, ta sẽ đến với cái phần là tạo mới đặc
+0:00:21 - 0:00:27, trưng hay còn gọi là feature
+0:00:23 - 0:00:30, instruction thì đây Có lẽ nói có thể nói
+0:00:27 - 0:00:33, là một trong những bài rất là quan trọng
+0:00:30 - 0:00:36, trong cái lĩnh vực về khoa học dữ liệu
+0:00:33 - 0:00:37, hoặc là trong lĩnh vực về máy học trên
+0:00:36 - 0:00:41, cái dữ liệu có cấu
+0:00:37 - 0:00:43, trúc feature instruction thì ở đây là
+0:00:41 - 0:00:47, chúng ta sẽ dựa trên một số cái kinh
+0:00:43 - 0:00:50, nghiệm trong cái lĩnh vực của cái miền
+0:00:47 - 0:00:53, dữ liệu của mình đang làm để mình có thể
+0:00:50 - 0:00:57, tạo ra thêm những cái đặc trưng mới nhằm
+0:00:53 - 0:01:01, giúp cho việc dự đoán cái giá trị output
+0:00:57 - 0:01:03, nó tốt hơn và feature instruction này đã
+0:01:01 - 0:01:04, được chứng minh trong rất nhiều những
+0:01:03 - 0:01:07, cái cuộc thi trên car
+0:01:04 - 0:01:10, carle đối với những loại dữ liệu dạng
+0:01:07 - 0:01:12, bản đó là một trong những cái bước quan
+0:01:10 - 0:01:16, trọng để giúp cho cái mô hình của mình
+0:01:12 - 0:01:19, tăng cái độ chính xác lên tăng lên độ
+0:01:16 - 0:01:22, sát lên một cách đáng kể và là cái
+0:01:19 - 0:01:24, sự khác biệt giữa các cái team với nhau
+0:01:22 - 0:01:26, bên cạnh những cái kỹ thuật sử dụng mô
+0:01:24 - 0:01:29, hình truyền thống như là sử dụng các cái
+0:01:26 - 0:01:32, mô hình phân loại mô hình hồi quy rồi
+0:01:29 - 0:01:34, kết hợp nhều mô hình thì tạo mới đặc
+0:01:32 - 0:01:37, trưng ha còn gọi là feature Engineering
+0:01:34 - 0:01:38, hoặc là feature instruction thì lưu ý là
+0:01:37 - 0:01:41, feature instruction là một phần của
+0:01:38 - 0:01:42, feature Engineering feature Engineering
+0:01:41 - 0:01:46, thì có thể bao gồm feature instruction
+0:01:42 - 0:01:48, nè feature transformation tức là biến
+0:01:46 - 0:01:51, đổi hoặc là chuẩn hóa khi đặc trưng nè
+0:01:48 - 0:01:53, rồi feature Selection là chọn lựa đặc
+0:01:51 - 0:01:56, trưng nè thì đây là có thể nói là một
+0:01:53 - 0:02:00, trong những cái bước rất là quan trọng
+0:01:56 - 0:02:04, thì à đầu tiên đó là cái Thục đầu tiên
+0:02:00 - 0:02:05, đó là chúng ta sẽ biến đổi toán học à Ví
+0:02:04 - 0:02:06, dụ như chúng ta có một cái bản dư liệu
+0:02:05 - 0:02:10, như
+0:02:06 - 0:02:13, sau à chúng ta sẽ có cái thông tin là
+0:02:10 - 0:02:15, vận tốc và thời gian đúng không thì đây
+0:02:13 - 0:02:18, là lượt là các giá trị vận tốc Còn Đây
+0:02:15 - 0:02:22, là lần lượt là giá trị thời gian thì khi
+0:02:18 - 0:02:24, đó chúng ta sẽ tạo ra thêm một cái đặc
+0:02:22 - 0:02:28, trưng nữa dựa trên hai cái cột cho trước
+0:02:24 - 0:02:30, này đó là khoảng cách Thì Khoảng cách sẽ
+0:02:28 - 0:02:32, là bằng vận tốc Nhân Thời Gian đó thì
+0:02:30 - 0:02:34, chúng ta sẽ có công thức biến đổi Toán
+0:02:32 - 0:02:38, Học là công thức nhân ở đây như vậy thì
+0:02:34 - 0:02:42, chúng ta truyền vào là tạo mới một cái
+0:02:38 - 0:02:44, đặc trưng nữa có tên là distance và đặc
+0:02:42 - 0:02:47, trưng này thì bằng hai cái cột tương ứng
+0:02:44 - 0:02:49, là cột velocity tức là vận tốc nhân với
+0:02:47 - 0:02:50, lại cái cột là thời gian và lưu ý là
+0:02:49 - 0:02:53, chúng ta thực hiện cái phép nhân này là
+0:02:50 - 0:02:55, nhân từng phần tử ví dụ cái kết quả ở
+0:02:53 - 0:02:59, đây chúng ta thấy là
+0:02:55 - 0:03:01, ờ 7 8 đúng không Thì 7 x 8 là bằng 56
+0:02:59 - 0:03:03, như vậy là chúng ta đang nhanh theo từng
+0:03:01 - 0:03:05, hàng khái niệm nhanh từng hàng chứ nó
+0:03:03 - 0:03:08, không phải là tích vô hướng hay cái gì
+0:03:05 - 0:03:11, hết nhanh từng hàng rồi cái kỹ thuật thứ
+0:03:08 - 0:03:13, hai đó là chúng ta có thể đếm cái tầm số
+0:03:11 - 0:03:15, xuất hiện trong nhiều trường hợp thì số
+0:03:13 - 0:03:18, lần xuất hiện hoặc là tầm số xuất hiện
+0:03:15 - 0:03:20, của một cái thuộc tính nào đó nó cũng là
+0:03:18 - 0:03:25, một cái loại đặc trưng
+0:03:20 - 0:03:27, Ờ Ví dụ như một người à thường xuyên
+0:03:25 - 0:03:29, mà mua một cái món hàng nào đấy đúng
+0:03:27 - 0:03:31, không Thì cái số l mua một cái món hàng
+0:03:29 - 0:03:33, nào Đấy tức là là người đó có nhu cầu
+0:03:31 - 0:03:35, cho món hàng này nhiều thì sau đó chúng
+0:03:33 - 0:03:38, ta có thể đưa ra được những cái dự đoán
+0:03:35 - 0:03:41, mua hàng cho những lần tiếp theo thì ở
+0:03:38 - 0:03:42, đây chúng ta sẽ có một cái bảng ví dụ là
+0:03:41 - 0:03:46, value và
+0:03:42 - 0:03:48, color thì tương ứng là hai cái giá trị
+0:03:46 - 0:03:50, và chúng ta sẽ dùng cái lệnh là chúng ta
+0:03:48 - 0:03:54, muốn đếm ở đây chúng ta muốn đếm xem là
+0:03:50 - 0:03:57, cái trường color này ha cái Red này nè
+0:03:54 - 0:04:00, Nó xuất hiện bao nhiêu lần đó trong toàn
+0:03:57 - 0:04:01, bộ cái mẫu dữ liệu của mình trong và bộ
+0:04:00 - 0:04:05, mẫ dữ liệu của mình thì mình sẽ tạo ra
+0:04:01 - 0:04:05, thêm một cái cột nữa
+0:04:05 - 0:04:12, là color C ở đây rồi Nhưng mà trước khi
+0:04:10 - 0:04:14, mà chúng ta tạo ra một cái cột mới là
+0:04:12 - 0:04:19, color c thì chúng ta sẽ phải chạy một
+0:04:14 - 0:04:22, cái dòng lệnh đó là cái cột color chúng
+0:04:19 - 0:04:26, ta gọi cái phương thức đó là value C đếm
+0:04:22 - 0:04:28, theo value thì kết thúc à và chúng ta sẽ
+0:04:26 - 0:04:31, đưa cái chuyển đổi nó về cái dạng
+0:04:28 - 0:04:33, dictionary ha thì khi chúng ta gọi cái
+0:04:31 - 0:04:37, hàm này xong thì chúng ta sẽ tạo ra được
+0:04:33 - 0:04:40, một cái dictionary trong đó là cái khi
+0:04:37 - 0:04:42, của mình nó chính là các cái giá trị
+0:04:40 - 0:04:46, Ờ là các cái giá trị trên cái cột color
+0:04:42 - 0:04:52, ở đây là bao gồm Red Blue và Green thì
+0:04:46 - 0:04:55, Red sẽ đếm là 3 và Blue thì sẽ Đếm là 2
+0:04:52 - 0:04:57, và Green thì sẽ đếm là 1 và đây chính là
+0:04:55 - 0:05:00, những cái giá trị đặc trưng mà mình sẽ
+0:04:57 - 0:05:05, thêm vào cho cái cột mới và cái cột này
+0:05:00 - 0:05:06, đó chính là cột ca color ca thì color ca
+0:05:05 - 0:05:10, lúc này nó sẽ là
+0:05:06 - 0:05:13, bằng cái cột color mà chúng ta sẽ map
+0:05:10 - 0:05:14, vào cái VC Tức là cái color ca của mình
+0:05:13 - 0:05:18, ở
+0:05:14 - 0:05:20, đây nó sẽ map quo đây tức là cái giá trị
+0:05:18 - 0:05:22, color ở đây mình sẽ tra trong cái bảng
+0:05:20 - 0:05:24, tra xem tương ứng nó giá trị đếm là bao
+0:05:22 - 0:05:27, nhiêu để mình lấy giá trị đó Điền do
+0:05:24 - 0:05:29, color C Ví dụ ở đây đang là Red đúng
+0:05:27 - 0:05:32, không ở đây đang là cái dòng này là Red
+0:05:29 - 0:05:36, chúng ta sẽ tra vô bảng này là 3 lấy cái
+0:05:32 - 0:05:39, giá trị 3 đó điền vô đây thì đây là cái
+0:05:36 - 0:05:41, kỹ thuật gọi là đếm số lần hoặc là tần
+0:05:39 - 0:05:43, số xuất hiện của các cái giá trị trong
+0:05:41 - 0:05:48, một cái cột nó đã tạo ra được một cái
+0:05:43 - 0:05:51, cột mới là color coun kỹ Thục thứ ba đó
+0:05:48 - 0:05:53, là chúng ta có thể đếm số lượng nhiều
+0:05:51 - 0:05:55, cột chúng ta sẽ đếm số lượng theo nhiều
+0:05:53 - 0:05:57, Cột bình thường chúng ta đếm trên Một
+0:05:55 - 0:05:59, Cột bây giờ chúng ta sẽ đếm trên nhiều
+0:05:57 - 0:06:02, cột ha Thì ở đây chúng ta sẽ có một cái
+0:05:59 - 0:06:04, cái bảng là các cái loại phương tiện mà
+0:06:02 - 0:06:06, mình thường xuyên sử dụng của một người
+0:06:04 - 0:06:09, nào đấy đúng không Thì cái người đầu
+0:06:06 - 0:06:13, tiên họ không có sử dụng phương tiện xe
+0:06:09 - 0:06:15, buýt xe hơi hoặc là xe máy nhưng cái
+0:06:13 - 0:06:18, người thứ ba này nè có cái chỉ số là ba
+0:06:15 - 0:06:20, nè Thì họ dùng cit là thường xuyên Thế
+0:06:18 - 0:06:24, thì bây giờ chúng ta
+0:06:20 - 0:06:25, sẽ lấy ra danh sách các cái V2 tức là
+0:06:24 - 0:06:29, danh sách các cái phương tiện giao thông
+0:06:25 - 0:06:30, dựa trên ba cái giá trị này thì thực ra
+0:06:29 - 0:06:33, chúng ta cũng cũng có thể dùng một cái
+0:06:30 - 0:06:34, lệnh khác là lệnh column để lấy ra cái
+0:06:33 - 0:06:37, danh sách này mà trong trường hợp này
+0:06:34 - 0:06:40, chúng ta đang làm ví dụ thôi thì chúng
+0:06:37 - 0:06:44, ta sẽ để viic là xét tỉnh luôn là bằng k
+0:06:40 - 0:06:48, Motobike và bus rồi
+0:06:44 - 0:06:52, và chúng ta sẽ tạo ra thêm một cái cột
+0:06:48 - 0:06:54, nữa đó là có sử dụng V2 cle đúng không
+0:06:52 - 0:06:57, hay không có sử dụng V2 C hay không Tức
+0:06:54 - 0:07:02, là chỉ là yes no thôi 01
+0:06:57 - 0:07:06, thôi rồi thì Chúng ta sẽ chạy và cái cột
+0:07:02 - 0:07:08, mới này nó sẽ được cái data frame đúng
+0:07:06 - 0:07:10, không truyền cái V2 C vô đây tức là
+0:07:08 - 0:07:14, chúng ta sẽ lấy ra từng cột sau đó chúng
+0:07:10 - 0:07:17, ta thực hiện cái lệnh là đếm xem ờ đếm
+0:07:14 - 0:07:21, xem giá trị lớn nhất của mình là bao
+0:07:17 - 0:07:23, nhiêu Nếu như trên cái hàng đó mà giá
+0:07:21 - 0:07:26, trị lớn nhất của mình bằng 0 Ví dụ ở đây
+0:07:23 - 0:07:30, nè Thì cái giá trị mà mình sẽ điền vô us
+0:07:26 - 0:07:33, vle sẽ là bằng 0
+0:07:30 - 0:07:35, còn trên cái dòng này chúng ta thấy là
+0:07:33 - 0:07:36, giá trị lớn ở đây có đến hai phương tiện
+0:07:35 - 0:07:38, đúng không là vừa K vừa motor bik nhưng
+0:07:36 - 0:07:40, chúng ta chỉ lấy giá trị lớn nhất thôi
+0:07:38 - 0:07:43, như vậy max của nó sẽ là bằng 1 và chúng
+0:07:40 - 0:07:47, ta sẽ điền nó vô đây đó thì đây là một
+0:07:43 - 0:07:49, cái kỹ thuật mà tương tác trên nhiều cột
+0:07:47 - 0:07:51, và để định nghĩa những cái cột nào mà
+0:07:49 - 0:07:53, mình sẽ tương tác thì mình sẽ có thêm
+0:07:51 - 0:07:56, một cái biến list chứa danh sách các cái
+0:07:53 - 0:07:57, cột mà mình tương tác với các cái cột đó
+0:07:56 - 0:08:00, chúng ta sẽ thực hiện các cái phương
+0:07:57 - 0:08:03, thức ở đây là chúng ta sử dụng phông
+0:08:00 - 0:08:06, thức là tìm giá trị lớn nhất
+0:08:03 - 0:08:08, rồi Tiếp theo kỹ thuật thứ tư đó là
+0:08:06 - 0:08:12, chúng ta có thể phân rã cái đặc trưng từ
+0:08:08 - 0:08:15, chuỗi có cấu trúc thì trong cái cấu trúc
+0:08:12 - 0:08:18, dataframe có nhiều cái tình huống đó
+0:08:15 - 0:08:22, là dữ liệu của mình nó đã được format
+0:08:18 - 0:08:24, theo một cái định dạng nhất định lấy ví
+0:08:22 - 0:08:27, dụ ở đây Chúng ta có một cái data frame
+0:08:24 - 0:08:30, là thông tin về hiệu đềa hành ha là
+0:08:27 - 0:08:32, operating system info
+0:08:30 - 0:08:34, thì ở đây cái chuỗi của mình nó là cái
+0:08:32 - 0:08:37, dạng như thế
+0:08:34 - 0:08:40, này đó thì ở đây chúng ta thấy là nó đi
+0:08:37 - 0:08:43, theo một cái quy luật đầu tiên đó là tên
+0:08:40 - 0:08:47, của cái hãng tên của cái hãng cái thứ
+0:08:43 - 0:08:50, hai đó là cái hệ điều hành đúng không
+0:08:47 - 0:08:54, cái hệ điều hành của mình đó ví dụ ở đây
+0:08:50 - 0:09:00, Microsoft Windows 11
+0:08:54 - 0:09:04, rồi Ở đây là thiếu ha Microsoft Windows
+0:09:00 - 0:09:07, Apple Mac OS macos X
+0:09:04 - 0:09:09, 10.5 thì ở đây chúng ta có thể split cái
+0:09:07 - 0:09:11, dòng đầu tiên cái cái ký tự khoảng trắng
+0:09:09 - 0:09:14, đầu tiên để tách nó ra làm hai là lấy
+0:09:11 - 0:09:18, tên của nhà sản xuất và cái model của hệ
+0:09:14 - 0:09:22, điều hành của mình rồi Ở đây nếu mà mình
+0:09:18 - 0:09:28, viết sai mình có thể sửa là Microsoft
+0:09:22 - 0:09:28, ha rồi đây cũng vậy Microsoft
+0:09:32 - 0:09:37, và chúng ta sẽ split nó ra chúng ta sẽ
+0:09:34 - 0:09:40, ép về cái kiểu chuỗi và split nó ra Sau
+0:09:37 - 0:09:43, đó chúng ta sẽ lấy cái phần tử đầu tiên
+0:09:40 - 0:09:43, tách nó
+0:09:44 - 0:09:51, ra rồi và chúng ta sẽ dùng cái thông số
+0:09:48 - 0:09:53, expan là bằng true ha Thì khi đó chúng
+0:09:51 - 0:09:56, ta đã tách nó ra thêm được hai cột tức
+0:09:53 - 0:10:00, là từ một cái cột này chúng ta tách nó
+0:09:56 - 0:10:04, ra làm hai cột là cột không và cột
+0:10:00 - 0:10:08, 1 thì không là tương ứng là cái hãng và
+0:10:04 - 0:10:11, 1 tương ứng là cái model của mình một
+0:10:08 - 0:10:14, tướng là cái model của mình rồi sau khi
+0:10:11 - 0:10:19, chúng ta đã wap xong đã tách ra xong thì
+0:10:14 - 0:10:22, chúng ta sẽ truyền vô đó thay đổi cái
+0:10:19 - 0:10:25, tên rename cái tên thì cái cột không của
+0:10:22 - 0:10:27, mình nó sẽ được rename không sẽ được
+0:10:25 - 0:10:31, rename thành
+0:10:27 - 0:10:33, Company và 1 thì tương ứng đó sẽ là cái
+0:10:31 - 0:10:35, hệ điều hành của mình cái mã số của hệ
+0:10:33 - 0:10:40, điều hành của mình rồi sau đó chúng ta
+0:10:35 - 0:10:44, sẽ MT nó lại đúng không MT nó lại là d.
+0:10:40 - 0:10:47, Zone nó sẽ MT cái dataframe cũ với lại
+0:10:44 - 0:10:49, cái dataframe mới được tách ra từ hai
+0:10:47 - 0:10:52, cái thông số này như vậy từ một cái
+0:10:49 - 0:10:55, thông số là OS info nó đã cho chúng ta
+0:10:52 - 0:10:59, thêm hai cái feature nữa tương ứng là
+0:10:55 - 0:10:59, hai cái tên của hạng

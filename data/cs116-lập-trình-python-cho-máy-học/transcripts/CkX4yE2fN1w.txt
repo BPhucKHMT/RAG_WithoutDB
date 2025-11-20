@@ -1,0 +1,115 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:19, tiếp theo thì chúng ta sẽ cùng tìm hiểu
+0:00:17 - 0:00:22, về hàm thì trong quá trình lập trình
+0:00:19 - 0:00:23, chúng ta sẽ có cái nhu cầu đó là tái sử
+0:00:22 - 0:00:26, dụng
+0:00:23 - 0:00:26, mã nguồn
+0:00:27 - 0:00:31, tức là sẽ có những cái đoạn mã nguồn mà
+0:00:30 - 0:00:34, chúng ta sẽ dùng đi dùng lại nhiều lần
+0:00:31 - 0:00:36, trong quá trình mà làm việc của mình thì
+0:00:34 - 0:00:39, mình sẽ đóng gói nó lại thành một cái
+0:00:36 - 0:00:40, cái hàm và để thực hiện được cái việc
+0:00:39 - 0:00:43, đóng gói này thì chúng ta sẽ sử dụng cái
+0:00:40 - 0:00:47, cú pháp sau deat chính là cái cây quạt
+0:00:43 - 0:00:47, và phun sơn Nam này sẽ do chúng ta đặt
+0:00:51 - 0:00:56, và đây sẽ là các cái tham số số 1 tham
+0:00:54 - 0:00:58, số số 2 để đưa vào để có thể thực hiện
+0:00:56 - 0:01:01, được với cái hẻm này và đây sẽ là những
+0:00:58 - 0:01:04, cái câu lệnh logic là đây là những câu
+0:01:01 - 0:01:07, lệnh và đối hèm mà có trả kết quả về thì
+0:01:04 - 0:01:11, chúng ta sẽ dùng cái từ khóa là reston
+0:01:07 - 0:01:13, rồi thì ưu điểm đó là sẽ giúp cho tái sử
+0:01:11 - 0:01:14, dụng được mã nguồn và dễ dàng quản lý
+0:01:13 - 0:01:18, được cái mã nguồn thì sau đây chúng ta
+0:01:14 - 0:01:22, sẽ làm một cái ví dụ đó là cái hàm đếm
+0:01:18 - 0:01:25, số lượng điểm trung bình của lớp học
+0:01:22 - 0:01:28, trong đó thì có bao nhiêu điểm là lớn
+0:01:25 - 0:01:30, hơn 5 và có bao nhiêu điểm là nhóm 5 lưu
+0:01:28 - 0:01:31, ý lớn hơn ở đây chúng ta hiểu là lớn hơn
+0:01:30 - 0:01:34, hoặc bằng
+0:01:31 - 0:01:36, thì chúng ta sẽ qua cái phần lập trình
+0:01:34 - 0:01:39, tương ứng ở đây ha đầu tiên đó là khởi
+0:01:36 - 0:01:42, tạo cái điểm trung bình
+0:01:39 - 0:01:45, CVA là điểm trung bình của s sẽ là số
+0:01:42 - 0:01:50, nhiều chúng ta sẽ có một list các cái
+0:01:45 - 0:01:50, điểm trung bình ví dụ như là 4.5 7.5
+0:01:50 - 0:01:54, Việt Nam năm
+0:01:55 - 0:02:02, nhiêu vậy rồi 8.0 và bây giờ chúng ta sẽ
+0:02:00 - 0:02:05, viết một cái hàm
+0:02:02 - 0:02:08, để kiểm tra theo
+0:02:05 - 0:02:10, và chúng ta sẽ truyền vào cái CEA chú ý
+0:02:08 - 0:02:11, là chúng ta không nhất thiết phải đặt
+0:02:10 - 0:02:14, cái tên biến trùng với cái tên biến ở
+0:02:11 - 0:02:16, đây chúng ta có thể để tên làm
+0:02:14 - 0:02:19, list
+0:02:16 - 0:02:19, CPA
+0:02:21 - 0:02:26, ở đây nếu như chúng ta thực hiện đương
+0:02:24 - 0:02:30, nhiên chúng ta hoàn toàn có thể dùng cái
+0:02:26 - 0:02:33, vòng lặp for để để đếm một cách gọi là
+0:02:30 - 0:02:34, theo cái phong cách sử dụng ngôn ngữ lập
+0:02:33 - 0:02:38, trình giống như c++ chúng ta sẽ dùng
+0:02:34 - 0:02:38, Ford đó là Ford
+0:02:39 - 0:02:42, gpa
+0:02:43 - 0:02:48, têna
+0:02:46 - 0:02:51, list
+0:02:48 - 0:02:53, CPA Đây là cái công ty phong cách của si
+0:02:51 - 0:02:54, Nha và đương nhiên khi lập trình webiton
+0:02:53 - 0:02:57, thì chúng ta hoàn toàn không có khuyến
+0:02:54 - 0:02:59, khích sử dụng cái vòng lò xo nhưng mà để
+0:02:57 - 0:03:01, đơn giản chúng ta chỉ đang minh họa cho
+0:02:59 - 0:03:02, cái việc lập trình một cái hàm do đó
+0:03:01 - 0:03:05, Mình cũng muốn là làm phức tạp hay này
+0:03:02 - 0:03:08, một chút đó là viết cho vòng vòng thì
+0:03:05 - 0:03:11, Ford English
+0:03:08 - 0:03:14, Xem cpi
+0:03:11 - 0:03:17, lớn hơn hoặc bằng 5 mol thì mình sẽ có
+0:03:14 - 0:03:17, một cái biến đếm là
+0:03:19 - 0:03:24, [âm nhạc]
+0:03:22 - 0:03:27, bằng Zero
+0:03:24 - 0:03:29, và ở đây thì chúng ta sẽ có tăng cái
+0:03:27 - 0:03:31, biến đếm theo
+0:03:29 - 0:03:34, as này là
+0:03:31 - 0:03:36, tăng lên 1 đơn vị
+0:03:34 - 0:03:39, và ngược lại thì sao thì chúng ta sẽ cao
+0:03:36 - 0:03:39, fail
+0:03:54 - 0:03:59, thì chúng ta sẽ tăng hay là lên một đơn
+0:03:57 - 0:04:01, vị
+0:03:59 - 0:04:04, và kết thúc cái phần sau này thì chúng
+0:04:01 - 0:04:06, ta sẽ reset đó là
+0:04:04 - 0:04:09, cao
+0:04:06 - 0:04:12, các bạn lưu ý đó là cái hàm này mình
+0:04:09 - 0:04:13, đang cố tình viết nó phức tạp và nó sẽ
+0:04:12 - 0:04:16, không thực sự tối ưu các bạn hoàn toàn
+0:04:13 - 0:04:18, có thể viết cái hàm này mà không có sử
+0:04:16 - 0:04:21, dụng vòng Ford được
+0:04:18 - 0:04:23, thì đây là minh họa cho cái việc là dùng
+0:04:21 - 0:04:28, một cái tour
+0:04:23 - 0:04:28, chúng ta sẽ đóng gói cái dữ liệu cao
+0:04:29 - 0:04:33, thì bây giờ chúng ta sẽ tiến hành Gọi
+0:04:32 - 0:04:36, cái hàm
+0:04:33 - 0:04:37, cao này ha chúng ta sẽ tiến hành Gọi cái
+0:04:36 - 0:04:40, hàng cao
+0:04:37 - 0:04:42, và truyền vào cái tham số trong trường
+0:04:40 - 0:04:45, hợp này thì chúng ta sẽ sử dụng một hàm
+0:04:42 - 0:04:45, số thôi đó là
+0:04:46 - 0:04:53, cpas và kết quả sẽ trả về ví dụ như là
+0:04:51 - 0:04:58, pass
+0:04:53 - 0:04:58, nss là N P theo
+0:04:58 - 0:05:04, [âm nhạc]
+0:05:00 - 0:05:04, đó thì mình sẽ in ra
+0:05:04 - 0:05:10, số
+0:05:07 - 0:05:12, lượng sinh viên rớt
+0:05:10 - 0:05:17, nguyên cái này là mình không mong muốn
+0:05:12 - 0:05:17, ha rồi N P
+0:05:24 - 0:05:28, rồi số lượng ta
+0:05:30 - 0:05:33, [âm nhạc]
+0:05:33 - 0:05:38, đó thì với cái ví dụ ở trên chúng ta
+0:05:35 - 0:05:42, thấy là số sinh viên lớn sẽ là 1 2 và số
+0:05:38 - 0:05:44, sinh viên đậu sẽ là 1 2 3 4 rồi thì đây
+0:05:42 - 0:05:47, là một cái minh họa cho cái việc là
+0:05:44 - 0:05:49, chúng ta biết một cái hàm số viết một
+0:05:47 - 0:05:53, cái hàm cao và có truyền tham số cũng
+0:05:49 - 0:05:54, như là có cái trả về kết quả và hạt này
+0:05:53 - 0:05:55, nhắc lại một lần nữa hàm này chúng ta
+0:05:54 - 0:05:58, hoàn toàn có thể viết mà không sử dụng
+0:05:55 - 0:05:58, một

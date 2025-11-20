@@ -1,0 +1,176 @@
+0:00:02 - 0:00:09, rồi trong phần tiếp theo thì chúng ta
+0:00:05 - 0:00:12, sẽ tiếp cận một số cái cách triển khai
+0:00:09 - 0:00:18, mô hình trong thực tế thì ở đây chúng ta
+0:00:12 - 0:00:21, sẽ xét đến hai cái yếu tố đó là local và
+0:00:18 - 0:00:24, remote local tức là tại cái máy của
+0:00:21 - 0:00:27, người dùng cuối hay còn gọi là client và
+0:00:24 - 0:00:31, remote Tức là cái server của mình được
+0:00:27 - 0:00:33, phục vụ tức là từ xa để mà cho chúng ta
+0:00:31 - 0:00:35, có thể cung cấp các cái dịch vụ đến với
+0:00:33 - 0:00:37, cái người dùng cuối thì thì ở đây chúng
+0:00:35 - 0:00:40, ta sẽ có hai cái khái niệm là local và
+0:00:37 - 0:00:44, remote và ở đây chúng ta sẽ có hai cái
+0:00:40 - 0:00:47, mũi tên nét liền và nét đứt thì nét liền á
+0:00:44 - 0:00:49, chính là chúng ta sẽ gọi cái request Gọi
+0:00:47 - 0:00:51, cái yêu cầu và nét đứt chính là cái phản
+0:00:49 - 0:00:54, hồi
+0:00:51 - 0:00:58, thì ba cái khái niệm đó chính là client
+0:00:54 - 0:01:01, server và database thì đối với cái cách
+0:00:58 - 0:01:05, triển khai đầu tiên á đó là gọi là batch
+0:01:01 - 0:01:07, prediction tức là chúng ta sẽ dự đoán
+0:01:05 - 0:01:10, chúng ta sẽ sử dụng cái mô hình của mình
+0:01:07 - 0:01:15, dự đoán trên toàn bộ cái khối dữ liệu
+0:01:10 - 0:01:20, ờ của người dùng và chúng ta sẽ tương
+0:01:15 - 0:01:22, tác và trực tiếp đưa cái kết quả dự đoán
+0:01:20 - 0:01:25, của mình vào bên trong database để lưu
+0:01:22 - 0:01:28, trữ đó thì đây là cái cách tiếp cận đầu
+0:01:25 - 0:01:30, tiên và cách tiếp cận này thì nó sẽ định
+0:01:28 - 0:01:33, kỳ à nó sẽ định kỳ chạy cái mô hình
+0:01:30 - 0:01:36, của mình trên những cái dữ liệu mới và
+0:01:33 - 0:01:40, lưu vào vùng đệm cache Ờ cái kết quả dự
+0:01:36 - 0:01:42, đoán vào trong database này và khi chúng
+0:01:40 - 0:01:44, ta đưa nó vào bên trong database thì khi
+0:01:42 - 0:01:46, người dùng người ta request người ta gọi
+0:01:44 - 0:01:50, cái request thì nó sẽ lấy từ trong
+0:01:46 - 0:01:53, database nó trả ra chứ nó không có đưa
+0:01:50 - 0:01:57, cái mô hình chạy lại cái việc dự đoán
+0:01:53 - 0:01:59, nên mô hình của mình nó thường sẽ không
+0:01:57 - 0:02:01, có bị độ trễ ở chỗ này tức là nó trực
+0:01:59 - 0:02:04, tiếp vấn vào trong database với những
+0:02:01 - 0:02:07, cái kết quả đã được xử lý sẵn đã được xử
+0:02:04 - 0:02:11, lý trước đó và cái việc xử lý này thì nó
+0:02:07 - 0:02:13, được thực hiện một cách là định kỳ định
+0:02:11 - 0:02:16, kỳ chứ nó không phải là khi có cái
+0:02:13 - 0:02:19, request của người dùng thì nó mới
+0:02:16 - 0:02:22, chạy do đó thì cái cách làm mà batch
+0:02:19 - 0:02:25, prediction này á thì nó chỉ khả thi khi
+0:02:22 - 0:02:27, chúng ta cái toàn bộ cái dữ liệu mà
+0:02:25 - 0:02:30, chúng ta cần phải chạy á thì nó đủ nhỏ
+0:02:27 - 0:02:33, nó vừa đủ nhỏ thôi chứ còn Nếu mà cái
+0:02:30 - 0:02:35, việc mà thực thi này mà cái bộ dữ liệu
+0:02:33 - 0:02:37, mà chúng ta cần phải chạy nó quá lớn thì
+0:02:35 - 0:02:39, cái việc này nó cũng không có phù hợp
+0:02:37 - 0:02:43, lắm thì ở đây thế nào được gọi là một
+0:02:39 - 0:02:45, cái bộ dữ liệu nhỏ thì ở đây ví dụ như
+0:02:43 - 0:02:49, chúng ta sẽ có một dự đoán cho một user
+0:02:45 - 0:02:51, lấy ví dụ khi người dùng đăng ký một cái
+0:02:49 - 0:02:53, tài khoản lên trên cái mạng xã hội của
+0:02:51 - 0:02:56, mình dựa trên các cái thông tin mà họ
+0:02:53 - 0:02:58, khai báo thì chúng ta có thể dự đoán
+0:02:56 - 0:03:00, được cái độ tuổi hoặc là chúng ta có thể
+0:03:00 - 0:03:03, dự đoán được cái sở thích của người
+0:03:03 - 0:03:04, này ngay cái lần đăng ký đầu tiên đó và
+0:03:04 - 0:03:08, cái việc này thì chúng ta chỉ thực hiện
+0:03:08 - 0:03:10, cái việc dự đoán một lần và một lần duy
+0:03:10 - 0:03:14, nhất thì khi đó cái cái dữ liệu mà chúng
+0:03:14 - 0:03:17, ta cần chạy nó sẽ là đủ nhỏ nó sẽ không
+0:03:17 - 0:03:19, phù hợp nếu như cái cái cái sở thích của
+0:03:19 - 0:03:22, người dùng này thay đổi liên tục thay
+0:03:22 - 0:03:25, đổi theo ngày thì dẫn đến là cứ vài vài
+0:03:25 - 0:03:27, giờ vài ngày là chúng ta lại phải đi
+0:03:27 - 0:03:29, thực hiện cái dự đoán cái sở thích này
+0:03:29 - 0:03:32, trên người dùng một lần nữa thì cái việc
+0:03:32 - 0:03:34, này nó không phù hợp nếu như chúng ta
+0:03:34 - 0:03:37, giả định rằng là cái sở thích của
+0:03:37 - 0:03:39, người dùng là cố định trong một khoảng
+0:03:39 - 0:03:41, thời gian đủ lớn thì chúng ta mới thực
+0:03:41 - 0:03:44, thi cái phương pháp là batch prediction này
+0:03:44 - 0:03:47, đó thì đây là một cái
+0:03:47 - 0:03:50, Ờ cái giới thiệu cho cái ý nghĩa của cái
+0:03:50 - 0:03:52, batch prediction Khi nào thì chúng ta cần
+0:03:52 - 0:03:55, phải thực hiện cái batch
+0:03:55 - 0:03:58, prediction thì batch prediction á là nó sẽ
+0:03:58 - 0:04:01, có một cái ưu điểm và khuyết
+0:04:01 - 0:04:03, điểm đầu tiên á đó là dễ thực hiện tại
+0:04:03 - 0:04:06, sao tại vì chúng ta chỉ cần lấy cái mô
+0:04:06 - 0:04:10, hình này của mình đóng gói nó lại và
+0:04:10 - 0:04:13, thực thi theo một cái chu kỳ thời gian
+0:04:13 - 0:04:14, ví dụ mỗi tháng chúng ta sẽ chạy một lần
+0:04:14 - 0:04:18, hoặc là mỗi ngày chúng ta chạy một lần
+0:04:18 - 0:04:19, ví dụ vậy thì nó rất là dễ thực hiện và
+0:04:19 - 0:04:21, nó sẽ không cần phải quan tâm nhiều
+0:04:21 - 0:04:24, những cái yếu tố khác liên quan đến cái
+0:04:24 - 0:04:26, việc là scale của hệ thống khi mà cái
+0:04:26 - 0:04:28, lượng người dùng mà tại một thời điểm mà
+0:04:28 - 0:04:30, nhiều lên thì chúng ta sẽ phải chạy nhiều
+0:04:30 - 0:04:35, nhưng mà thời điểm mà cái lượng người dùng
+0:04:32 - 0:04:38, mà ít thì chúng ta sẽ chạy chúng ta sẽ không bị
+0:04:35 - 0:04:40, cái vấn đề scale cái vấn đề mở rộng của mô hình mà
+0:04:38 - 0:04:42, ở đây là chúng ta cứ thực hiện theo một
+0:04:40 - 0:04:44, cái chu kỳ thời gian do đó thì cái cách
+0:04:42 - 0:04:47, thực hiện của chúng ta nó dễ thực hiện
+0:04:44 - 0:04:49, và nó độ trễ thấp đối với người dùng tại
+0:04:47 - 0:04:52, sao nó lại có độ trễ thấp đối với người
+0:04:49 - 0:04:55, dùng tại khi cái người dùng của mình á
+0:04:56 - 0:05:03, họ gọi cái
+0:05:01 - 0:05:06, request lên trên cái server
+0:05:03 - 0:05:09, thì cái server của mình lúc này nó sẽ
+0:05:06 - 0:05:11, không có gọi cái mô hình máy học để mà
+0:05:09 - 0:05:13, nó dự đoán mà nó sẽ gọi trực tiếp vào
+0:05:11 - 0:05:16, bên trong cái
+0:05:13 - 0:05:18, database trong cái database này nó đã
+0:05:16 - 0:05:20, chứa sẵn cái kết quả dự đoán rồi do đó
+0:05:18 - 0:05:22, thì nó sẽ trả kết quả về ngay lập tức
+0:05:20 - 0:05:24, tại vì cái chúng ta biết rằng là cái
+0:05:22 - 0:05:27, việc truy vấn trong cái database nó thực
+0:05:24 - 0:05:30, hiện rất là nhanh nó thực hiện gần như
+0:05:27 - 0:05:34, tức thì chưa kể là các cái cơ chế về
+0:05:30 - 0:05:37, vùng đệm caching thì nó nó sẽ còn nhanh
+0:05:34 - 0:05:39, hơn nữa và khuyết điểm của mô hình này
+0:05:37 - 0:05:41, đó là cái dữ liệu mà phức tạp á thì có
+0:05:39 - 0:05:43, thể khiến cho cái mô hình của mình nó
+0:05:41 - 0:05:45, tăng cái quy mô tính toán lên lấy ví dụ
+0:05:43 - 0:05:48, nếu cái thuật toán của mình nó chỉ đơn
+0:05:45 - 0:05:50, giản là những cái mô
+0:05:48 - 0:05:53, hình gọi là các cái mô hình như linear regression
+0:05:50 - 0:05:57, Logistic regression những cái
+0:05:53 - 0:05:59, mô hình mà tốc độ tính toán rất là nhanh
+0:05:57 - 0:06:01, với những cái dữ liệu rất là gọn gàng
+0:05:59 - 0:06:04, như là các cái vectơ biểu diễn của một
+0:06:01 - 0:06:07, cái người dùng thì lúc đó vấn đề nó sẽ
+0:06:04 - 0:06:10, không nảy sinh nhưng nếu như cái dữ liệu
+0:06:07 - 0:06:13, của mình nó phức tạp Ví dụ như chúng ta
+0:06:10 - 0:06:15, sẽ cần phải Ờ thực thi cái mô hình của
+0:06:13 - 0:06:19, mình trên một cái kho dữ liệu video của
+0:06:15 - 0:06:22, người dùng và kho dữ liệu video của
+0:06:19 - 0:06:25, người dùng nó có thể từ vài GB cho đến vài
+0:06:22 - 0:06:27, trăm GB thì lúc đó là cái mô hình của mình nó
+0:06:25 - 0:06:30, rất là nặng chạy rất là lâu và nó phải
+0:06:27 - 0:06:32, chạy cho hết tất cả các cái user trong cái
+0:06:30 - 0:06:34, ứng dụng của mình đó thì rõ ràng là cái
+0:06:32 - 0:06:36, việc này nó sẽ không phù hợp do đó thì cái
+0:06:34 - 0:06:38, phương pháp này nó nó đối với những cái
+0:06:36 - 0:06:43, dữ liệu phức tạp thì nó sẽ không có phù hợp
+0:06:38 - 0:06:47, lắm và dữ liệu dự đoán thì nó sẽ không
+0:06:43 - 0:06:49, có cái yếu tố cập nhật nó sẽ không có
+0:06:47 - 0:06:52, yếu tố cập nhật tại vì cái việc chúng ta
+0:06:49 - 0:06:57, chạy là chúng ta phải chạy định kỳ nên
+0:06:52 - 0:07:00, cái mô hình cái model của mình nó sẽ
+0:06:57 - 0:07:02, được thực thi trên cái dữ liệu
+0:07:00 - 0:07:05, của người dùng nhưng mà cái dữ liệu đó
+0:07:02 - 0:07:07, là cách đây một vài ngày Đúng không Nó
+0:07:05 - 0:07:09, không phải là cái thời điểm last update
+0:07:07 - 0:07:11, cái thời điểm mới nhất của người dùng
+0:07:09 - 0:07:14, tại cái thời điểm mà người ta đang
+0:07:11 - 0:07:16, request mà cái cái cái kết quả dự đoán
+0:07:14 - 0:07:19, của mình nó được thực thi trên cái dữ
+0:07:16 - 0:07:22, liệu của người dùng đã có từ cách đây
+0:07:19 - 0:07:24, Ờ khá là lâu rồi do đó thì cái dữ liệu
+0:07:22 - 0:07:27, dự đoán của mình nó sẽ không có yếu tố
+0:07:24 - 0:07:29, cập nhật đó và yếu tố thứ ba cái khuyết
+0:07:27 - 0:07:32, điểm thứ ba đó là mô hình của mình nó
+0:07:29 - 0:07:35, thường sẽ dần trở nên lỗi thời thì cũng
+0:07:32 - 0:07:37, đúng thôi tại vì cái mô hình của mình
+0:07:35 - 0:07:40, thì nó sẽ được huấn luyện trên dữ liệu
+0:07:37 - 0:07:42, mà cái dữ liệu của mình thì nó lại được
+0:07:40 - 0:07:45, thực hiện ở trong một cái dữ liệu của
+0:07:42 - 0:07:47, quá khứ rất là lâu rồi do đó thì cái mô
+0:07:45 - 0:07:49, hình của mình nó sẽ không có cái yếu tố
+0:07:47 - 0:07:51, để cập nhật trên cái dữ liệu mới do đó
+0:07:49 - 0:07:54, thì nó sẽ có cái hiện tượng là Model của
+0:07:51 - 0:07:58, mình bị lỗi thời thì trên đây đó là
+0:07:54 - 0:08:02, những cái khuyết điểm của cái cách
+0:07:58 - 0:08:03, tiếp cận mô hình batch prediction tức là
+0:08:02 - 0:08:07, dự đoán nó chạy cái việc thực thi
+0:08:03 - 0:08:10, mô hình theo khối
+0:08:07 - 0:08:14, trên toàn bộ cái dữ liệu của mình

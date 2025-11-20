@@ -1,0 +1,317 @@
+0:00:00 - 0:00:06, cuối cùng đó là kỹ thuật boosting thì
+0:00:03 - 0:00:10, đây là một trong những cái kỹ thuật rất
+0:00:06 - 0:00:13, là quan trọng của enal Model à boosting
+0:00:10 - 0:00:17, nó sẽ huấn luyện một cách tuần tự nếu
+0:00:13 - 0:00:20, như cái toán backing á là các cái Model
+0:00:17 - 0:00:22, được thực hiện một cách là song song và
+0:00:20 - 0:00:27, độc lập với nhau thì boosting nó sẽ thực
+0:00:22 - 0:00:30, hiện một cách Tuân Tự và mô hình sau mô
+0:00:27 - 0:00:33, hình sau sẽ được Trend dựa theo cái kết
+0:00:30 - 0:00:37, quả của cái mô hình trước và nhiệm vụ
+0:00:33 - 0:00:39, của nó đó là cố gắng đi Sửa sai đi đi
+0:00:37 - 0:00:42, sửa sii nhưng mà cái size này là những
+0:00:39 - 0:00:45, cái size Còn lại thôi cái size của các
+0:00:42 - 0:00:48, cái mô hình trước đó nó đã nó đã đã hình
+0:00:45 - 0:00:50, thành và càng lúc về sau nó sẽ càng giảm
+0:00:48 - 0:00:53, xuống và cứ thêm một cái mô hình mới thì
+0:00:50 - 0:00:57, cái sai số của mình nó sẽ càng ngức càng
+0:00:53 - 0:01:00, giảm thì cái hình bên phải minh họa cái
+0:00:57 - 0:01:02, ý tưởng của thuộc tán boosting đầu tiên
+0:01:00 - 0:01:05, đó là chúng ta sẽ có một cái tập dữ liệu
+0:01:02 - 0:01:10, à gốc và tập dữ liệu này thì cũng tương
+0:01:05 - 0:01:12, tự nó sẽ chia ra làm các cái data 1 2 3
+0:01:10 - 0:01:15, cho đến data thứ n Ta sẽ thực hiện cái
+0:01:12 - 0:01:18, thao tác là chia ra và chúng ta sẽ tiến
+0:01:15 - 0:01:22, hành huấn luyện trên cái model số 1
+0:01:18 - 0:01:25, trước rồi sau đó Cái model số 1 này
+0:01:22 - 0:01:27, chúng ta sẽ thực hiện trên cái data
+0:01:25 - 0:01:30, chúng ta sẽ tiến hành đi predict trên
+0:01:27 - 0:01:34, cái data số 2 và chúng ta sẽ ra ra được
+0:01:30 - 0:01:39, cái size số với cái sii số này thì chúng
+0:01:34 - 0:01:42, ta sẽ tiếp tục khai thác cái xi số đó để
+0:01:39 - 0:01:45, mà đi Trend trên cái model số 2 Model số
+0:01:42 - 0:01:48, 2 sau khi đã được train xong sẽ đi
+0:01:45 - 0:01:50, predict trên cái dữ liệu số 3 và chúng
+0:01:48 - 0:01:53, ta sẽ ra được cái sii số và dựa trên cái
+0:01:50 - 0:01:57, sii số của mồn số 3 chúng ta sẽ tiếp tục
+0:01:53 - 0:01:59, đi train cho cái mod đồ số 3 rồi lại
+0:01:57 - 0:02:03, tiếp tục cứ như vậy cho đến data thứ N
+0:01:59 - 0:02:07, và chúng ta sẽ train cái model thứ N và
+0:02:03 - 0:02:09, N cái model này sẽ được tổng hợp lại với
+0:02:07 - 0:02:11, một cái kỹ thuật example thì example này
+0:02:09 - 0:02:15, có thể là những kỹ thuật cơ bản như là
+0:02:11 - 0:02:18, voting averaging hoặc bản thân cái
+0:02:15 - 0:02:20, phương pháp ex này nó được xuất phát từ
+0:02:18 - 0:02:22, cái thuật toán của mình tức là cái thuật
+0:02:20 - 0:02:25, toán kết hợp giữa Model số 1 Model số 2
+0:02:22 - 0:02:27, Model số 3 với những cái trọng số mà mô
+0:02:25 - 0:02:29, hình của mình nó đã được học trong cái
+0:02:27 - 0:02:32, quá trình boosting
+0:02:29 - 0:02:35, thì để hiểu rõ hơn về kỹ thuật Boing thì
+0:02:32 - 0:02:37, chúng ta sẽ lấy một cái thuộc toán đại
+0:02:35 - 0:02:40, diện đó chính là thuộc toán radiant
+0:02:37 - 0:02:43, Boost và radiance boot ý tưởng của nó đó
+0:02:40 - 0:02:46, là nó sẽ xây dựng một cái chuỗi một cái
+0:02:43 - 0:02:49, chuỗi các cái cây quyết định liên tiếp
+0:02:46 - 0:02:51, với nhau thì nếu như backing nó chỉ nói
+0:02:49 - 0:02:53, chung chung là một cái mô hình thì trong
+0:02:51 - 0:02:56, trường hợp này chúng ta sẽ sử dụng là
+0:02:53 - 0:02:58, cây quyết định là một cái mô hình cụ thể
+0:02:56 - 0:03:01, và kế thừa cái ý tưởng của backing trong
+0:02:58 - 0:03:03, cái thuộc toán backing thì nó sẽ có cái
+0:03:01 - 0:03:05, random Forest và random Forest thì cái
+0:03:03 - 0:03:08, model thành phần của mình là họ cũng sử
+0:03:05 - 0:03:10, dụng cây quyết định decision tre thì
+0:03:08 - 0:03:13, boosting nó cũng sẽ sử dụng cái mô hình
+0:03:10 - 0:03:17, thành phần là decision tre kên quyết
+0:03:13 - 0:03:20, định và nhiệm vụ đó là cái cây sau sẽ cố
+0:03:17 - 0:03:23, gắng làm giảm cái sai số dự đoán của các
+0:03:20 - 0:03:26, cái cây trước đó ví dụ như chúng ta thấy
+0:03:23 - 0:03:30, ở đây là có cái cột là residual tức là
+0:03:26 - 0:03:32, cái sai số dự đoán nếu như với với cái
+0:03:30 - 0:03:33, kết quả khởi tạo cái cây đầu tiên là
+0:03:32 - 0:03:36, thật ra nó cũng không phải là cây đó là
+0:03:33 - 0:03:39, cái giá trị trung bình của cái cột giá
+0:03:36 - 0:03:41, trị dự đoán thì sai số nếu như chúng ta
+0:03:39 - 0:03:43, sử dụng cái giá trị trung bình này như
+0:03:41 - 0:03:45, là một cái giá trị dự đoán thì sai số
+0:03:43 - 0:03:48, của mình sẽ là cái cái giá trị ở trên
+0:03:45 - 0:03:51, cái cột thứ nhất nhưng nếu như chúng ta
+0:03:48 - 0:03:55, kết hợp với lại cái cây thứ
+0:03:51 - 0:03:58, hai và với một cái hệ số kết hợp thì cái
+0:03:55 - 0:04:03, size số của mình nó giảm từ 16.8 xuống
+0:03:58 - 0:04:06, còn 15.1 từ 4.8 xuống còn 4.3 từ - 155.2
+0:04:03 - 0:04:10, xuống còn - 13.7 Và khi chúng ta kết hợp
+0:04:06 - 0:04:14, thêm với cái cây thứ ba
+0:04:10 - 0:04:19, thì cái cái sai số mình nó đã giảm từ 15
+0:04:14 - 0:04:23, xuống C 13 từ 4.3 xuống còn 3.9 từ -
+0:04:19 - 0:04:26, 13.7 xuống còn - 122.1 12.4 thì cái hình
+0:04:23 - 0:04:29, này nó lấy từ cái nguồn video với cái
+0:04:26 - 0:04:31, đường Dận như sau và bên phải đó là một
+0:04:29 - 0:04:34, cái hình hình ảnh minh họa khác sử dụng
+0:04:31 - 0:04:37, animation đó thì cái đường màu xanh
+0:04:34 - 0:04:40, chính là cái hàm đúng của mình còn cái
+0:04:37 - 0:04:43, đường màu đỏ chính là
+0:04:40 - 0:04:48, cái đường mà do thuật toán boosting tạo
+0:04:43 - 0:04:51, lập ra thì chúng ta thấy đó là tại những
+0:04:48 - 0:04:53, cái bước đầu tiên thì cái đường màu đỏ
+0:04:51 - 0:04:55, nó sẽ rất là cách xa nhưng mà sau khi hú
+0:04:53 - 0:04:59, điện xong thì cái đường màu đỏ nó đã xắp
+0:04:55 - 0:05:02, xỉ với cái đường màu màu xanh đó thì đây
+0:04:59 - 0:05:03, chính là cái hình ảnh à minh họa cho cái
+0:05:02 - 0:05:07, thực toán đó V như chúng ta thấy ở đây
+0:05:03 - 0:05:10, mới phòng lập đầu tiên thì cái đường của
+0:05:07 - 0:05:12, mình nó rất là thô và nó sẽ đi ra không
+0:05:10 - 0:05:14, có giống lắm Nó sẽ không có môn minh họa
+0:05:12 - 0:05:17, giống lắm cái đường mà xanh nhưng mà
+0:05:14 - 0:05:19, càng chạy thì cái đường Zig giắc này sẽ
+0:05:17 - 0:05:22, càng lúc nó càng mịn hơn và nó sẽ càng
+0:05:19 - 0:05:27, tiến xác hơn đến cái đường màu xanh của
+0:05:22 - 0:05:30, mình thì để có thể hiểu rõ hơn và trực
+0:05:27 - 0:05:33, quan hơn cho cái thực toán radian Bo thì
+0:05:30 - 0:05:35, chúng ta sẽ cùng theo dõi cái video ở
+0:05:33 - 0:05:38, YouTube như
+0:05:35 - 0:05:43, sau chúng ta sẽ có một cái bản D liệu ba
+0:05:38 - 0:05:46, cái cột đầu tiên sẽ là ba cái cột đặc
+0:05:43 - 0:05:48, trưng đầu vào và cái cột quay cái cột
+0:05:46 - 0:05:51, khối lượng cuối cùng chính là cái cột mà
+0:05:48 - 0:05:54, mình cần phải dự đoán thì thuộc toán
+0:05:51 - 0:05:58, radian Boost sẽ chạy
+0:05:54 - 0:06:00, lên cái cộ này để giá trị của cái cột
+0:05:58 - 0:06:02, quay này thì bước đầ đầu tiên đó là
+0:06:00 - 0:06:04, chúng ta sẽ đoán cái giá trị trung bình
+0:06:02 - 0:06:06, à chúng ta sẽ đoán bằng cách đó là lấy
+0:06:04 - 0:06:08, một cái giá trị trung bình thì tất cả
+0:06:06 - 0:06:11, những cái mẫu nào mà đưa vào chúng ta
+0:06:08 - 0:06:15, cũng sẽ đưa ra cái Phán đoán là cái giá
+0:06:11 - 0:06:18, trị mà quay trung bình này đó là 71.2 và
+0:06:15 - 0:06:20, đương nhiên là cái việc sử dụng giá trị
+0:06:18 - 0:06:23, trung bình này nó sẽ dẫn đến là cái sai
+0:06:20 - 0:06:27, số nó sẽ dẫn đến cái size số
+0:06:23 - 0:06:30, thì với cái sii số này á thì chúng ta sẽ
+0:06:27 - 0:06:33, tiếp tục chỉnh sửa lại
+0:06:30 - 0:06:35, à Ví dụ như ở đây chúng ta có cái mẫu dữ
+0:06:33 - 0:06:37, liệu đầu tiên ha mẫu cái cái dòng đầu
+0:06:35 - 0:06:40, tiên cái dòng dữ liệu đầu tiên khi chúng
+0:06:37 - 0:06:43, ta lấy cái
+0:06:40 - 0:06:47, Ờ giá trị Dự đoán mà sử dụng cái giá trị
+0:06:43 - 0:06:50, trung bình là 71.2 này thì khi chúng ta
+0:06:47 - 0:06:54, Trừ lấy cái giá trị thực là y là ở đây
+0:06:50 - 0:06:57, là 88 trừ cho cái giá trị trung bình mà
+0:06:54 - 0:07:01, mình dự đoán là 71.2 thì chúng ta sẽ ra
+0:06:57 - 0:07:01, được cái sai số là 16
+0:07:02 - 0:07:07, 8 và cứ tương tự như vậy thì chúng ta sẽ
+0:07:06 - 0:07:11, ra được
+0:07:07 - 0:07:16, cái nguyên cái sai số này đó
+0:07:11 - 0:07:20, là 4.8 76 trừ cho giá trị là 71.2 lãy
+0:07:16 - 0:07:22, chúng ta sẽ ra là 4.8 rồi sai số là -152
+0:07:20 - 0:07:24, vân vân và bây giờ chúng ta sẽ không còn
+0:07:22 - 0:07:26, quan tâm chúng ta sẽ không còn quan tâm
+0:07:24 - 0:07:29, đến
+0:07:26 - 0:07:31, cái cái cột quay ban đầu này nữa mà cái
+0:07:29 - 0:07:34, cột mà chúng ta cần phải dự đoán tiếp
+0:07:31 - 0:07:36, theo đó chính là cái cột size số này và
+0:07:34 - 0:07:38, với input feature nó vẫn là ba cái cột
+0:07:36 - 0:07:43, đầu
+0:07:38 - 0:07:45, tiên và sau khi xây dựng cái thuật toán
+0:07:43 - 0:07:48, decision tre trên cái cột dữ liệu mới
+0:07:45 - 0:07:50, này thì chúng ta sẽ ra được một cái cây
+0:07:48 - 0:07:51, quyết định chúng ta sẽ ra một cái cây
+0:07:50 - 0:07:55, quyết
+0:07:51 - 0:07:59, định và chúng ta sẽ không sử dụng cái
+0:07:55 - 0:08:01, cây quyết định này một cách trọn vẹn 100
+0:07:59 - 0:08:04, mà chúng ta sẽ phải sử dụng kết hợp có
+0:08:01 - 0:08:04, tham
+0:08:04 - 0:08:12, số đó nó gọi là hệ số learning rate bình
+0:08:09 - 0:08:15, thường cái hệ số này là 1 nhưng mà cứ
+0:08:12 - 0:08:19, mỗi một cái vòng lặp thì cái cái cái cái
+0:08:15 - 0:08:22, cái mức độ mà chúng ta khai thác cái cây
+0:08:19 - 0:08:25, mới nó chỉ là một cái hệ số dưới một thô
+0:08:22 - 0:08:27, tức là chúng ta sẽ à cộng với lại một
+0:08:25 - 0:08:29, cái hệ số tương đối nhỏ để cho cái quá
+0:08:27 - 0:08:31, trình này của mình nó sẽ cập nhật dân
+0:08:29 - 0:08:33, dân và đương nhiên cái hệ số learning
+0:08:31 - 0:08:37, rate càng nhỏ thì cái số cây mà mình tạo
+0:08:33 - 0:08:40, ra nó cũng sẽ càng dài cũng sẽ càng lớn
+0:08:37 - 0:08:41, để khắc phục cái sai sót do cái quá
+0:08:40 - 0:08:44, trình Dạ
+0:08:41 - 0:08:48, đoán thì trong trường hợp này chúng ta
+0:08:44 - 0:08:52, sẽ sử dụng à Đó là cái trọng số là 0.1
+0:08:48 - 0:08:55, như vậy thì với một cái mẫu dữ liệu là
+0:08:52 - 0:08:58, đầu tiên là cái hàng đầu tiên thì cái
+0:08:55 - 0:09:02, giá trị dự đoán của mình nó sẽ là
+0:08:58 - 0:09:06, bằng 71.2 Tức là cái giá trị trung bình
+0:09:02 - 0:09:11, đầu tiên ở cái bước đầu tiên cộng cho
+0:09:06 - 0:09:14, cộng cho giả sử như với cái đặc trưng là
+0:09:11 - 0:09:17, hay color và gender này nó đi theo cái
+0:09:14 - 0:09:21, con đường này nó ra cái giá trị dự đoán
+0:09:17 - 0:09:24, của cái sii số là 16.8 nhưng 16.8 này nó
+0:09:21 - 0:09:28, phải nhân với hệ số l ray là 0.1 Tức là
+0:09:24 - 0:09:30, nó chỉ cộng với một cái tỉ lệ là 10 ph
+0:09:28 - 0:09:32, cái thông tin từ cái cây quyết định này
+0:09:30 - 0:09:36, ra thôi như vậy thì
+0:09:32 - 0:09:39, 71.2 cộng cho 0.1 nhân cho 16.8 nó ra là
+0:09:36 - 0:09:39, 71
+0:09:39 - 0:09:46, 72.9 chúng ta sẽ lấy cái tính cái sai số
+0:09:43 - 0:09:48, tiếp theo chúng ta sẽ tính cái xi số
+0:09:46 - 0:09:48, tiếp
+0:09:52 - 0:09:58, theo rồi cái sii số tiếp theo nó sẽ được
+0:09:55 - 0:10:01, tính bằng cách đó là nó vẫn sẽ lấy cái
+0:09:58 - 0:10:05, giá trị trọng khối lượng gốc ban đầu là
+0:10:01 - 0:10:08, 88 trừ cho cái giá trị Dự đoán khi đã có
+0:10:05 - 0:10:12, sự kết hợp của giá trị trung bình ở đây
+0:10:08 - 0:10:15, với lại cái cây mà chúng ta đã tạo ra ở
+0:10:12 - 0:10:19, cái lớp trước đó Cái biế đổi trước đó
+0:10:15 - 0:10:23, thì 88 trừ cho cái giá trị Dự đoán mới
+0:10:19 - 0:10:26, này thì nó sẽ ra cái sai số của mình là
+0:10:23 - 0:10:28, 15.1 và chúng ta thực hiện tương tự như
+0:10:26 - 0:10:31, vậy cho tất cả các cái dòng dễn liệu còn
+0:10:28 - 0:10:31, lại
+0:10:42 - 0:10:49, rồi và sau khi chúng ta đã thực hiện thì
+0:10:46 - 0:10:51, chúng ta đã có một cái giá trị độ lỗi
+0:10:49 - 0:10:53, mới nó khác so với lại cái độ lỗi ở cái
+0:10:51 - 0:10:55, Mước tính là chỉ có mỗi cái giá trị
+0:10:53 - 0:10:57, trung bình thôi thì với cái cây mới này
+0:10:55 - 0:11:00, chúng ta có một cái giá trị độ lỗi mới
+0:10:57 - 0:11:03, và lặp lại À cái việc cái cái cái quá
+0:11:00 - 0:11:06, trình thực hiện này chúng ta lại đi tiếp
+0:11:03 - 0:11:07, tục huấn luyện à chúng ta sẽ tiếp tục đi
+0:11:06 - 0:11:11, huấn
+0:11:07 - 0:11:14, luyện cho cái residual mới này và chúng
+0:11:11 - 0:11:16, ta tạo ra được một cái cây mới Cứ lập đi
+0:11:14 - 0:11:19, lặp lại như vậy chúng ta sẽ tạo ra được
+0:11:16 - 0:11:22, một cái cây mới Và cái cây mới này sẽ
+0:11:19 - 0:11:25, được kết hợp nó sẽ được kết hợp với lại
+0:11:22 - 0:11:28, hai cái cây trước đó đó là cái cây ở đây
+0:11:25 - 0:11:31, và cái giá trị trung bình ở đây và cách
+0:11:28 - 0:11:33, mà chúng ta cái hợp là chúng ta vẫn phải
+0:11:31 - 0:11:36, phải nhân với một cái hệ số running rate
+0:11:33 - 0:11:41, là 0.1 tức là chúng ta chỉ lấy khoảng 10
+0:11:36 - 0:11:41, 10 ph cái giá trị Dự đoán mà
+0:11:42 - 0:11:52, thôi rồi và ở đây thì chúng ta sẽ có cái
+0:11:48 - 0:11:54, ba cái residual tương ứng cho ba cái lần
+0:11:52 - 0:11:57, mà chúng ta học cái mô hình của mình ở
+0:11:54 - 0:12:01, cái lần đầu tiên với chỉ có duy nhất một
+0:11:57 - 0:12:03, cái giá trị trung bình là 71.2 thì chúng
+0:12:01 - 0:12:09, ta thấy là cái độ lỗi của mình nó là
+0:12:03 - 0:12:12, 16.8 nhưng khi có cái sự kết hợp 0.1 tức
+0:12:09 - 0:12:16, là 10 pH của cái cây thứ hai thì độ lỗi
+0:12:12 - 0:12:20, của mình là nó rớt xuống còn 15.1 và khi
+0:12:16 - 0:12:22, kết hợp với lại cái cây thứ ba thì cái
+0:12:20 - 0:12:25, độ lỗi của mình nó sẽ giảm xuống Khoảng
+0:12:22 - 0:12:28, 13.6 Và cứ như vậy chúng ta cứ tạo ra
+0:12:25 - 0:12:30, thêm nhiều cái cây và khi tạo ra một cái
+0:12:28 - 0:12:33, cây mới thì chúng ta lại tạo ra một cái
+0:12:30 - 0:12:36, residual mới một cái size số mới cái cột
+0:12:33 - 0:12:39, sii số mới Và cái cây huấn luyện nó sẽ
+0:12:36 - 0:12:42, được huấn luyện trên cái cột sai số mới
+0:12:39 - 0:12:44, chứ không phải là dựa trên cái À cái cái
+0:12:42 - 0:12:47, cái cột mà Wave Tức là cái cột khối
+0:12:44 - 0:12:49, lượng ban đầu đó thì cứ như vậy thì tục
+0:12:47 - 0:12:52, toán của mình nó sẽ chạy thì đây chính
+0:12:49 - 0:12:55, là cái ý tưởng của
+0:12:52 - 0:13:01, ờ thuộc toán radient
+0:12:55 - 0:13:04, Boost và quay trở lại cái
+0:13:01 - 0:13:07, kỹ thuật boosting thì bên cạnh thuật
+0:13:04 - 0:13:09, toán gradient Boost thì chúng ta sẽ có
+0:13:07 - 0:13:13, rất nhiều những cái thực toán boosting
+0:13:09 - 0:13:16, nổi tiếng khác đó chính là adaboost rồi
+0:13:13 - 0:13:20, exib light gbm và
+0:13:16 - 0:13:22, cbot và tất cả những cái thật toán này
+0:13:20 - 0:13:24, đều là những cái thuật toán mà rất là
+0:13:22 - 0:13:28, nổi tiếng và đạt được những cái dải cao
+0:13:24 - 0:13:30, trong cuộc thi c trong đó nổi tiếng nhất
+0:13:28 - 0:13:33, đó chính là ba cái cái thực toán này L
+0:13:30 - 0:13:35, gpm acot và cbot đây là ba cái thực toán
+0:13:33 - 0:13:37, mà được sử dụng rất là nhiều trong các
+0:13:35 - 0:13:40, cái cuộc thi carle và đạt được thứng
+0:13:37 - 0:13:43, hạng rất là cao trong đó ex boot là một
+0:13:40 - 0:13:47, cái cải tiến của radiant boot cbot cũng
+0:13:43 - 0:13:49, là cải tiến lbm Thì nghe cái từ live
+0:13:47 - 0:13:51, thôi là chúng ta đã biết là mục tiêu của
+0:13:49 - 0:13:54, nó là làm g là làm gì rồi đúng không Tức
+0:13:51 - 0:13:56, là chúng ta đang tăng cái tốc
+0:13:54 - 0:13:59, độ liên quan đến cái yếu tố về mặt tốc
+0:13:56 - 0:14:01, độ đó thì trong cái thuật toán rent
+0:13:59 - 0:14:02, Boost chúng ta thấy là có cái hệ số gọi
+0:14:01 - 0:14:05, là learning
+0:14:02 - 0:14:08, rate thì nếu như cái hệ số learning rate
+0:14:05 - 0:14:12, này mà càng nhỏ thì dẫn đến là cái số
+0:14:08 - 0:14:14, lượng cây của mình sẽ càng tan và như
+0:14:12 - 0:14:16, vậy thì cái chi phí tính toán của mình
+0:14:14 - 0:14:19, rồi khi chúng ta huấn luyện cũng như là
+0:14:16 - 0:14:21, chi phí khi chúng ta inference tức là
+0:14:19 - 0:14:23, khi chúng ta dự đoán nó cũng rất là cao
+0:14:21 - 0:14:27, thì l gbm nó sẽ giúp cho chúng ta giải
+0:14:23 - 0:14:29, quyết vấn đề này như vậy Tóm lại ample
+0:14:27 - 0:14:33, learning Đó là một cái kỹ thuật quan
+0:14:29 - 0:14:35, trọng để cho mình có thể Mô hình để mô
+0:14:33 - 0:14:38, hình của mình nó có thể tổng quá hóa
+0:14:35 - 0:14:40, được thì mô hình của mình là nó sẽ được
+0:14:38 - 0:14:43, học trên rất nhiều những cái loại dữ
+0:14:40 - 0:14:46, liệu khác nhau cũng như là khai thác
+0:14:43 - 0:14:48, được những cái điểm mạnh của từng cái mô
+0:14:46 - 0:14:50, hình thành phần và bổ trợ cho nhau để
+0:14:48 - 0:14:52, giải quyết những cái điểm yếu của từng
+0:14:50 - 0:14:55, cái mô hình đó thì mô hình của mình nó
+0:14:52 - 0:14:57, sẽ nhiều cái mô hình yếu nó tạo ra thành
+0:14:55 - 0:14:59, một cái mô hình mạnh hay nói cách khác
+0:14:57 - 0:15:02, đó là mô hình của mình nó càng tổng quát
+0:14:59 - 0:15:04, và trong số những cái kỹ thuật về
+0:15:02 - 0:15:07, example learning thì backing và Boing là
+0:15:04 - 0:15:10, hai cái kỹ thuật cho cái tính hiện quả
+0:15:07 - 0:15:14, rất là cao và nó là những cái hai cái
+0:15:10 - 0:15:18, hng tiếp cận mà được các cái cuộc thi
+0:15:14 - 0:15:20, trên carle là họ sử dụng rất là nhiều và
+0:15:18 - 0:15:23, lưu ý đó là trong cái quá trình mà sử
+0:15:20 - 0:15:26, dụng thì tất cả cái m hình này nó đều có
+0:15:23 - 0:15:28, những cái siêu tham số và chúng ta sẽ
+0:15:26 - 0:15:30, phải chọn các cái siêu tham số làm sao
+0:15:28 - 0:15:32, cho nó phù hợp bằng cái phương pháp gọi
+0:15:30 - 0:15:34, là phương pháp tin chỉnh tham số là cái
+0:15:32 - 0:15:37, này nó nằm trong cái bài gọi là
+0:15:34 - 0:15:40, parameter à này là nằm trong cái bài là
+0:15:37 - 0:15:40, parameter
+0:15:42 - 0:15:50, tuning đó là sẽ tìm xem cái bộ siêu tham
+0:15:47 - 0:15:53, số nào mà tối ưu cho các cái Thục toán
+0:15:50 - 0:15:53, của mình

@@ -33,14 +33,14 @@
 0:02:12 - 0:02:20, Các phần tử của PE, các phần tử trong vector PE này tuân theo phân bố chuẩn
 0:02:20 - 0:02:21, Ừ
 0:02:21 - 0:02:31, Ở đây là ưu điểm là hàm tuần hoàn cho thấy vị trí tương đối không quan trọng
-0:02:31 - 0:02:38, Tức là chúng ta hoàn toàn có thể thay hàm tuần hoàn này bằng một hàm khác, ý nghĩa của nó vẫn đúng.
+0:02:31 - 0:02:38, Tức là chúng ta hoàn toàn có thể thay hàm tuần hoàn này bằng một hàm khác, hàm ý của nó vẫn đúng.
 0:02:38 - 0:02:44, Chúng ta có thể sử dụng giá trị của mình sẽ là thay đổi lên xuống, lên xuống, lên xuống
 0:02:44 - 0:02:47, Như vậy thì thông tin về mặt vị trí tương đối không quan trọng
-0:02:47 - 0:02:53, Tức là thông tin về mặt chỉ số y, y cộng 1, y cộng 2, v.v.
+0:02:47 - 0:02:53, Thế là thông tin về mặt chỉ số y, y cộng 1, y cộng 2, v.v.
 0:02:53 - 0:03:00, Thì lẽ ra nó phải tăng, nếu mà xét về mặt vị trí tương đối thì nó phải tăng
 0:03:00 - 0:03:03, Nhưng mà hàm tuần hoàn thì nó lại là lên xuống, lên xuống
-0:03:03 - 0:03:13, Thì như vậy là nó khẳng định cái việc đó là khi chúng ta chọn hàm tuần hoàn thì độ chính xác của hệ thống này nó vẫn tốt.
-0:03:13 - 0:03:22, Tức là cái vị trí tương đối, sự tăng dần của cái chỉ số này cho cái positional embedding là không cần thiết.
+0:03:03 - 0:03:13, Thì như vậy là nó khẳng định cái việc đó là khi chúng ta chọn với hàm tuần hoàn mà độ chính xác của hệ thống này nó vẫn tốt.
+0:03:13 - 0:03:22, Tức là cái vị trí tương đối, sự tăng dần của cái chỉ số này cho cái Positional Embedding là không cần thiết.
 0:03:22 - 0:03:26, Tức là PE của mình nó phải là một cái hàm tăng là không cần thiết.
 0:03:26 - 0:03:31, ưu điểm thứ 2 là nó có thể biểu diễn được chuỗi rất dài
 0:03:31 - 0:03:34, thì thay đổi qua 10.000
@@ -50,11 +50,11 @@
 0:03:51 - 0:03:53, nó không có trùng nhau
 0:03:53 - 0:03:59, Tại vì để trùng thì nó sẽ phải có thêm một cái đại lượng là pi nữa
 0:03:59 - 0:04:01, Nó phải có thêm một cái đại lượng là pi
-0:04:01 - 0:04:05, Còn ở đây là không có pi vào nên cái khả năng nó trùng rất là thấp
+0:04:01 - 0:04:05, Còn ở đây là không có pi vô nên cái khả năng nó trùng rất là thấp
 0:04:05 - 0:04:09, Rồi
 0:04:09 - 0:04:13, Và đương nhiên nó cũng sẽ có một số khuyết điểm như chúng ta thấy ở đây
 0:04:13 - 0:04:20, Và cái vector positional embedding này là một cái vector cố định
-0:04:20 - 0:04:24, Với một cái y cố định thì chúng ta sẽ có một cái PE cố định
+0:04:20 - 0:04:24, Với một cái Y cố định thì chúng ta sẽ có một cái PE cố định
 0:04:24 - 0:04:31, Và cái này nó là một cái hàm do chúng ta thiết kế, tổ hợp của các hàm tuần hoàn
 0:04:31 - 0:04:35, Nó không phải học từ dữ liệu, nó không học được từ dữ liệu
 0:04:35 - 0:04:43, Thì đây chính là cái điểm yếu của cái cách biểu diễn vị trí dưới dạng các hàm sin
@@ -62,14 +62,14 @@
 0:04:52 - 0:04:57, Trước đây thì là self-attention, còn bây giờ chúng ta sẽ làm multi-head self-attention.
 0:04:57 - 0:05:06, Thì ở đây nó xuất phát từ một cái góc nhìn, đó là một từ nó sẽ có thể có nhiều cái mối quan hệ trong câu.
 0:05:06 - 0:05:11, và chúng ta sẽ thực hiện cái self-attention này nhiều lần
-0:05:11 - 0:05:16, ứng với một lần, nó sẽ thể hiện một mối quan hệ của một từ trong câu
+0:05:11 - 0:05:16, ứng với một lần, nó sẽ thể hiện trong một mối quan hệ của một từ trong câu
 0:05:16 - 0:05:20, và chúng ta sẽ kết hợp các kết quả này lại với nhau
 0:05:20 - 0:05:25, lấy ví dụ, tôi có hẹn với Bảo nhưng anh ấy nhắn đến muộn
 0:05:25 - 0:05:27, thì chúng ta thấy cái từ anh ấy
 0:05:27 - 0:05:30, nó sẽ có hai mối quan hệ
 0:05:30 - 0:05:38, Mối quan hệ đầu tiên sẽ là tham chiếu đến từ là Bảo
 0:05:38 - 0:05:44, Đồng thời, anh ấy sẽ là chủ thể cho hành động nhắn tin
-0:05:44 - 0:05:51, Với một từ này, nó có đến hai mối quan hệ
+0:05:44 - 0:05:51, Với một từ này, nó có đến những hai mối quan hệ
 0:05:51 - 0:05:57, Một cách tổng quát, một từ có rất nhiều mối quan hệ trong câu
 0:05:57 - 0:06:02, do đó chúng ta sẽ không sử dụng single head attention
 0:06:02 - 0:06:06, mà chúng ta sẽ sử dụng multi head
@@ -77,7 +77,7 @@
 0:06:11 - 0:06:14, tương ứng là Value, Key và Query
 0:06:14 - 0:06:21, chúng ta đưa qua linear, linear này bản chất chính là phép nhân tuyến tính
 0:06:21 - 0:06:26, sau khi chúng ta nhân tuyến tính xong, chúng ta thực hiện scaled dot-product
-0:06:26 - 0:06:38, Chúng ta thực hiện scaled dot-product để mà cuối cùng là chúng ta sẽ thực hiện một phép biến đổi tuyến tính để tính ra giá trị vector tổng hợp
+0:06:26 - 0:06:38, Chúng ta thực hiện Scaled Dot-Product để mà cuối cùng là chúng ta sẽ nhân với lại tuyến tính để tính ra giá trị vector tổng hợp
 0:06:38 - 0:06:43, Đây chính là Attention output
 0:06:43 - 0:07:03, Bên này là multi-head self-attention, đây là một cái lát cắt, chúng ta sẽ thực hiện trên một cái khía cạnh của một cái từ trong câu của mình
 0:07:03 - 0:07:06, và chúng ta sẽ thực hiện nhiều khía cạnh khác nhau
@@ -88,7 +88,7 @@
 0:07:18 - 0:07:21, thì nó gọi là multi-head self-attention
 0:07:22 - 0:07:27, và multi-head self-attention thì nó sẽ có công thức như sau
 0:07:27 - 0:07:35, trong self-attention bình thường chỉ có ma trận Q, K và V
-0:07:35 - 0:07:43, bây giờ có nhiều đầu, ở đây sẽ có thêm chỉ số l ở phía dưới
+0:07:35 - 0:07:43, bây giờ có nhiều đầu, ở đây sẽ có thêm chỉ số L ở phía dưới
 0:07:43 - 0:07:49, các ma trận này đều có kích thước đó là
 0:07:49 - 0:07:52, d nhân cho d chia h
 0:07:52 - 0:07:55, trong đó h là số đầu attention của mình
@@ -100,12 +100,12 @@
 0:08:15 - 0:08:20, Bộ tham số cho phép biến đổi tuyến tính ở đây
 0:08:20 - 0:08:22, Ở đây có bao nhiêu heads?
 0:08:22 - 0:08:23, Ở đây có 3 heads
-0:08:23 - 0:08:26, Trong trường hợp này, h của mình là bằng 3
-0:08:26 - 0:08:29, Và l của mình sẽ là một cái chỉ số chạy
-0:08:29 - 0:08:31, l trong trường hợp này là bằng 1
-0:08:31 - 0:08:33, l trong trường hợp này là bằng 2
-0:08:33 - 0:08:36, l trong trường hợp này là bằng 3
-0:08:36 - 0:08:38, l là cái chỉ số chạy
+0:08:23 - 0:08:26, Trong trường hợp này, H của mình là bằng 3
+0:08:26 - 0:08:29, Và L của mình sẽ là một cái chỉ số chạy
+0:08:29 - 0:08:31, L trong trường hợp này là bằng 1
+0:08:31 - 0:08:33, L trong trường hợp này là bằng 2
+0:08:33 - 0:08:36, L trong trường hợp này là bằng 3
+0:08:36 - 0:08:38, L là cái chỉ số chạy
 0:08:38 - 0:08:44, Mỗi một cái lát cắt như vậy, chúng ta sẽ có một cái bộ trọng số
 0:08:44 - 0:08:46, bộ tham số trong hình cần phải huấn luyện
 0:08:46 - 0:08:52, và output lúc này theo từng head của mình
@@ -120,9 +120,9 @@
 0:09:25 - 0:09:30, thì đây sẽ là cái thông tin tổng hợp cuối cùng của multi-head
 0:09:32 - 0:09:34, của nhiều đầu
 0:09:34 - 0:09:44, Vì vậy, mỗi đầu sẽ có một góc nhìn của ngữ cảnh như đã giải thích ở trên.
-0:09:44 - 0:09:52, Và như vậy thì đến đây, kiến trúc encoder của chúng ta đã tương đối hoàn chỉnh,
+0:09:44 - 0:09:52, Và như vậy thì đến đây, kiến trúc encoder của chúng ta đã tương đối là một phần hoàn chỉnh,
 0:09:52 - 0:09:58, và chúng ta đã tìm được một khối hoàn chỉnh.
 0:09:58 - 0:10:08, Và như vậy thì đến đây, kiến trúc encoder của chúng ta đã đầy đủ rồi. Vậy thì decoder của mình sẽ là sao?
-0:10:08 - 0:10:26, Decoder sẽ tiến hành truy vấn trên đặc trưng được lấy từ encoder
+0:10:08 - 0:10:26, Decoder sẽ được tiến hành truy vấn trên đặc trưng được lấy từ encoder
 0:10:26 - 0:10:30, Encoder tổng hợp thông tin, tính toán xong
-0:10:30 - 0:10:42, Đến tầng thứ 6, chúng ta sẽ tính toán và bắt đầu quá trình giải mã cho Decoder
+0:10:30 - 0:10:42, Đến tầng thứ 6, chúng ta sẽ tính toán và bắt đầu quá trình giải mã cho Encoder

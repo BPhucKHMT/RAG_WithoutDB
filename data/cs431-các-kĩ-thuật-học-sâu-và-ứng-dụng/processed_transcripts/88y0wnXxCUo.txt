@@ -70,8 +70,8 @@
 0:06:28 - 0:06:31, thì nó sẽ giữ nguyên cái giá trị là các phần tử ở đây
 0:06:31 - 0:06:35, do đó thì tại vì 1 nhân với bao nhiêu thì cũng chính là bằng số đó
 0:06:35 - 0:06:41, như vậy tương ứng cái vùng màu trắng sẽ là nguyên giá trị
-0:06:41 - 0:06:51, mà riêng cái vùng của cái dây ở đây thì nhân cho cái vùng màu đen tức là giá trị bằng 0
-0:06:51 - 0:06:55, thì 0 nhân với bao nhiêu cũng bằng 0 do nó sẽ triệt tiêu đi
+0:06:41 - 0:06:51, mà riêng cái vùng của cái dây ở đây thì nhân cho cái vùng màu đen tức là giá trị bằng không
+0:06:51 - 0:06:55, thì không nhân với bao nhiêu cũng bằng không do nó sẽ triệt tiêu đi
 0:06:55 - 0:06:58, và dẫn đến là cái vùng này, nó sẽ có màu là màu đen
 0:06:58 - 0:07:03, màu đen nó sẽ trùng với màu nền ở vùng này để tạo ra cái hiệu ứng
 0:07:03 - 0:07:06, đó là chúng ta đang muốn xóa bỏ dây giày ở đây đi
@@ -99,6 +99,7 @@
 0:09:30 - 0:09:43, Nếu như chúng ta có cái dữ liệu các thành phần vitamin A, vitamin C và chất xơ của các loại rau củ đó là cà rốt, bắp cải và dưa leo
 0:09:43 - 0:09:55, Ví dụ như 35, 0.5 và 0.5 ở đây tương ứng là vector biểu diễn cho vitamin A
 0:09:55 - 0:09:59, có trong các loại cà rốt, bắp cải và dưa leo
+0:09:59 - 0:10:09, Nếu chúng ta gọi x, y, z là số kg cà rốt, bắp cải và dưa leo
 0:10:09 - 0:10:11, chúng ta mua được trong lần đi chợ đó
 0:10:11 - 0:10:27, thì khi đó lượng vitamin A mà chúng ta có bổ sung cho cái bữa ăn ngày hôm đó sẽ là 35, 0.5, 0.5 nhân theo hàng và cột
 0:10:27 - 0:10:34, thì đây chính là lượng vitamin A mà chúng ta sẽ cung cấp cho cái bữa ăn ngày hôm đó

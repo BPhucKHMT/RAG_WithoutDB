@@ -1,0 +1,175 @@
+0:00:00 - 0:00:06, tiếp theo thì chúng ta sẽ cùng
+0:00:03 - 0:00:09, à Tìm hiểu về các cái phương pháp để
+0:00:06 - 0:00:11, phát hiện và xử lý dữ liệu ngoại lệ thì
+0:00:09 - 0:00:14, để phát hiện dữ liệu ngoại lệ thì chúng
+0:00:11 - 0:00:16, ta sẽ có hai cái cách tiếp cận cách tiếp
+0:00:14 - 0:00:19, cận đầu tiên đó là dựa trên cái phương
+0:00:16 - 0:00:21, pháp thống kê và cách tiếp cận thứ hai
+0:00:19 - 0:00:23, đó là chúng ta sẽ tự động phát hiện các
+0:00:21 - 0:00:25, cái giá trị ngoại lệ dựa trên một số cái
+0:00:23 - 0:00:27, phương pháp và ở đây chúng ta có để một
+0:00:25 - 0:00:30, số cái đường link và các cái phương pháp
+0:00:27 - 0:00:33, này thì cũng đều được cài đặt bởi s kit
+0:00:30 - 0:00:35, lên và ngoài ra à Ngoài bốn cái phương
+0:00:33 - 0:00:37, pháp mà phát hiện tự động này thì chúng
+0:00:35 - 0:00:40, ta còn có những cái công cụ tự động khác
+0:00:37 - 0:00:44, mà không được phát triển bởi s kit l ví
+0:00:40 - 0:00:49, dụ như là clean LB rồi
+0:00:44 - 0:00:51, odod rồi phát hiện các cái vấn đề của dữ
+0:00:49 - 0:00:53, liệu Tức là bên cạnh những cái dữ liệu
+0:00:51 - 0:00:54, ngoại lệ thì chúng ta còn phát hiện rất
+0:00:53 - 0:00:56, nhiều những cái vấn đề khác nữa chứ
+0:00:54 - 0:01:00, không phải là vấn đề về
+0:00:56 - 0:01:02, Ờ về về về chứ không phải là chỉ vấn đề
+0:01:00 - 0:01:05, về bị thiếu dữ liệu hoặc là vấn đề dữ
+0:01:02 - 0:01:07, liệu bị ngoài cái phân bố out of
+0:01:05 - 0:01:11, distribution Ví dụ như dữ liệu nó không
+0:01:07 - 0:01:13, có cái sự đồng nhất giá trị của mình Nó
+0:01:11 - 0:01:16, có thể là nằm trong cái distribution
+0:01:13 - 0:01:19, nhưng mà nó sẽ tiền hậu bất nhất ví dụ
+0:01:16 - 0:01:21, như cũng cái record đó nhưng mà ở trước
+0:01:19 - 0:01:24, thì nó lại là giá trị là a Nhưng mà ở
+0:01:21 - 0:01:26, sau đó thì giá trị của mình lại là b thì
+0:01:24 - 0:01:29, đó là cái sự bất nhất trong cái dữ liệu
+0:01:26 - 0:01:31, à Ở hiếng tiết cận đầu tiên thì chúng ta
+0:01:29 - 0:01:35, nh nhắc lại cái phương pháp thống kê với
+0:01:31 - 0:01:37, edi ở đây thì chúng ta có thể là sử dụng
+0:01:35 - 0:01:39, phương pháp để tính trung bình và độ
+0:01:37 - 0:01:41, lịch chuẩn để xác định Xem các cái giá
+0:01:39 - 0:01:43, trị ngoại lệ của mình Ví dụ như trong
+0:01:41 - 0:01:46, cái sơ đồ ở đây chúng ta có được cái giá
+0:01:43 - 0:01:49, trị là trung bình là ở đây và với cái độ
+0:01:46 - 0:01:54, lệch chuẩn thì chúng ta sẽ có là mi trừ
+0:01:49 - 0:01:56, Sigma rồi mi -2 Sigma và Mi - 3 Sigma
+0:01:54 - 0:01:58, thì chúng ta thấy là với cái khoảng giá
+0:01:56 - 0:02:02, trị là mi trừ Sigma -3 Sigma trở về
+0:01:58 - 0:02:04, trước và ng c 3 Sigma trở về sau thì nó
+0:02:02 - 0:02:07, chỉ chiếm cái tỉ lệ rất là thấp và chúng
+0:02:04 - 0:02:09, ta Giả định rằng là tại đây đó chính là
+0:02:07 - 0:02:12, những cái dữ liệu out
+0:02:09 - 0:02:15, layer thì khi đó nếu như cái giá trị của
+0:02:12 - 0:02:17, mình mà nằm ngoài cái khoảng là từ mu
+0:02:15 - 0:02:20, trừ 2 Sigma cho đến mi c 2 Sigma thì
+0:02:17 - 0:02:23, chúng ta xem đó chính là những cái giá
+0:02:20 - 0:02:27, trị ngoại lệ một cái phương pháp khác đó
+0:02:23 - 0:02:31, chính là phương pháp inter Range
+0:02:27 - 0:02:33, IQ để xác định các giá trị ngoại lệ với
+0:02:31 - 0:02:36, cái dữ liệu phân bối không với lại cái
+0:02:33 - 0:02:39, phân phối không phải là g CN thì ở đây
+0:02:36 - 0:02:42, nó cũng tương tự như vậy chúng ta sẽ xét
+0:02:39 - 0:02:46, đến các cái ngưỡng thì cái ngưỡng tại
+0:02:42 - 0:02:51, đây đó là ngưỡng Q1 trừ cho 1,5 iqa thì
+0:02:46 - 0:02:55, iqa nó sẽ là cái khoảng giá trị từ Q1
+0:02:51 - 0:03:01, cho đến q3 trong đó Q1 tương ứng là cái
+0:02:55 - 0:03:03, vị trí Mà nó có 25 cái dữ liệu của mình
+0:03:01 - 0:03:06, tức là nếu từ đây đến đây
+0:03:03 - 0:03:09, đó thì tất cả những cái số lượng các cái
+0:03:06 - 0:03:12, giá trị mà từ đây đến cái ngưỡng q3 Q1
+0:03:09 - 0:03:16, Thì đó sẽ là 25 ph số lượng phần tử và
+0:03:12 - 0:03:19, q3 là tương ứng là 75 ph số phần tử tức
+0:03:16 - 0:03:23, là từ q3 trở về sau thì nó sẽ chiếm là
+0:03:19 - 0:03:26, 25 ph số phần tử và từ đây đến đây là 25
+0:03:23 - 0:03:29, ph số phươ tử như vậy thì cái chúng ta
+0:03:26 - 0:03:33, sẽ có hai cái ngưỡng Q1 và q3 Thì nguyên
+0:03:29 - 0:03:37, cái khoảng từ Q1 cho đến q3 nó gọi là
+0:03:33 - 0:03:39, iqr và với cái giá trị iqr này thì à
+0:03:37 - 0:03:42, chúng ta sẽ có các cái ngưỡng để tính
+0:03:39 - 0:03:45, giá trị ngoại lệ Đó là tại đây thì cái
+0:03:42 - 0:03:48, ngưỡng này nó sẽ có công thức tính là Q1
+0:03:45 - 0:03:51, tức là tại đây trừ cho 1,5 cái khoảng
+0:03:48 - 0:03:55, iqa này và tương tự như vậy cái chặn
+0:03:51 - 0:03:58, trên cho cái ngưỡng ngoại lệ đó chính là
+0:03:55 - 0:04:01, maximum ha Nó sẽ là bằng q3 à nó sẽ là
+0:03:58 - 0:04:03, bằng q3 cộng cho 1,5 lần cái ia Tức là
+0:04:01 - 0:04:05, cái khoảng này thì nếu như cái giá trị
+0:04:03 - 0:04:08, nào mà nằm ngoài cái khoảng minimum và
+0:04:05 - 0:04:12, maximum này thì chúng ta sẽ xem đó là
+0:04:08 - 0:04:14, điểm ngoại lệ thì đây là cái phương pháp
+0:04:12 - 0:04:16, để xác định km điểm ngoại lệ đối với
+0:04:14 - 0:04:19, những cái phân bố mà nó không có cái
+0:04:16 - 0:04:23, dạng là gaan còn phương pháp bên đây là
+0:04:19 - 0:04:25, mu cộng trừ 2 Sigma đó là cho cái phương
+0:04:23 - 0:04:27, pháp mà đối với cái dữ liệu nó tuân theo
+0:04:25 - 0:04:31, phân bố
+0:04:27 - 0:04:34, g và để xử lý những cái dữ liệu ngoại lệ
+0:04:31 - 0:04:36, này thì chúng ta cũng làm tương tự như
+0:04:34 - 0:04:38, dữ liệu bị thiếu đó là chúng ta có cái
+0:04:36 - 0:04:40, phương pháp là loại bỏ phương pháp thay
+0:04:38 - 0:04:42, thế đơn giản Ví dụ thay thế bằng các cái
+0:04:40 - 0:04:45, giá trị Hào
+0:04:42 - 0:04:50, số hoặc là thay thế bởi các cái giá trị
+0:04:45 - 0:04:52, thống kê đơn biến ví dụ như là Min rồi
+0:04:50 - 0:04:55, median
+0:04:52 - 0:04:57, Mode hoặc là cái giá trị mà có cái tầng
+0:04:55 - 0:04:59, suất xuất hiện nhiều nhất rồi chúng ta
+0:04:57 - 0:05:01, có thể sử dụng các cái mô hình dự đoán
+0:04:59 - 0:05:05, đó là các cái mô hình máy
+0:05:01 - 0:05:11, học Ví dụ như các cái thực toán về K
+0:05:05 - 0:05:11, near neighbor rồi thực toán về linear
+0:05:11 - 0:05:16, regression Tức là phương pháp hồn ngy
+0:05:14 - 0:05:17, hoặc là sử dụng các cái mô hình phi
+0:05:16 - 0:05:21, tuyến tính
+0:05:17 - 0:05:25, khác đó thì đây chính là cái hướng tiếp
+0:05:21 - 0:05:27, cận cho xử lý ngoại lệ Ngoài ra thì
+0:05:25 - 0:05:30, chúng ta còn có thể thực hiện một số cái
+0:05:27 - 0:05:32, thao tác làm sạch khác cho cái dữ liệu
+0:05:30 - 0:05:34, của mình lưu ý chúng ta dùng cái từ khóa
+0:05:32 - 0:05:38, đó là dữ liệu nghĩa là chúng ta chưa đến
+0:05:34 - 0:05:40, cái giai đoạn rút trích đặc trưng thì
+0:05:38 - 0:05:43, một số cái thao tác để làm sạch dữ liệu
+0:05:40 - 0:05:46, khác ví dụ như là chúng ta sẽ reindexing
+0:05:43 - 0:05:48, thực rất phương pháp này cái cái cái
+0:05:46 - 0:05:51, thao tác này là nó không làm thay đổi
+0:05:48 - 0:05:53, cái giá trị của mình mà nó chỉ làm đánh
+0:05:51 - 0:05:56, lại cái chỉ mục đánh lại cái chỉ mục cho
+0:05:53 - 0:05:59, các cái cột dữ liệu thì cái cái việc này
+0:05:56 - 0:06:01, nó sẽ giúp cho cái việc truy cập về sau
+0:05:59 - 0:06:05, truy cập dữ
+0:06:01 - 0:06:05, liệu được nhanh
+0:06:08 - 0:06:12, hơn
+0:06:09 - 0:06:15, đấy thì nó sẽ hỗ trợ cho cái thao tác
+0:06:12 - 0:06:17, tính toán về sau reformatting trước đây
+0:06:15 - 0:06:18, Nếu như các cái dữ liệu của mình nó ở
+0:06:17 - 0:06:22, dạng
+0:06:18 - 0:06:25, nan thì nó có thể là ở những cái dạng là
+0:06:22 - 0:06:28, không phải số học không phải dạng số thì
+0:06:25 - 0:06:30, chúng ta có thể là phải reformat nó để
+0:06:28 - 0:06:34, từ một cái dạng không nó là dạng số về
+0:06:30 - 0:06:36, cái dạng là số nguyên hoặc là số thực để
+0:06:34 - 0:06:38, mà có thể xử lý tính toán được như vậy
+0:06:36 - 0:06:42, chúng ta sẽ phải đổi kiểu dữ liệu rồi
+0:06:38 - 0:06:43, ngoài ra chúng ta có thể thay đổi bằng
+0:06:42 - 0:06:46, cách đó
+0:06:43 - 0:06:49, là thay những cái giá trị mà nó không có
+0:06:46 - 0:06:51, cái tính gọi là nhất quán chúng ta sẽ
+0:06:49 - 0:06:53, thay những cái giá trị cũ bằng một cái
+0:06:51 - 0:06:56, giá trị mới nếu như cái giá trị cũ này
+0:06:53 - 0:07:00, là nó vi phạm những cái tính chất nhất
+0:06:56 - 0:07:02, quán của dữ liệu rồi chúng ta có thể à
+0:07:00 - 0:07:04, thay đi gọi là loại bỏ những cái dữ liệu
+0:07:02 - 0:07:06, bị trùng lắp tức là nếu như dữ liệu của
+0:07:04 - 0:07:08, mình trùng lắp quá nhiều thì nó cũng ảnh
+0:07:06 - 0:07:10, hưởng đến cái hiệu năng của à cái mô
+0:07:08 - 0:07:12, hình học máy và chúng ta sẽ drop
+0:07:10 - 0:07:16, duplicate chúng ta sẽ loại bỏ đi những
+0:07:12 - 0:07:18, cái dữ liệu à Để trùng r đó rồi thay bỏ
+0:07:16 - 0:07:20, loại bỏ những cái cột dữ liệu không cần
+0:07:18 - 0:07:24, thiết chúng ta lấy ví dụ như có những
+0:07:20 - 0:07:27, cái cột dữ liệu mà chúng ta biết trước
+0:07:24 - 0:07:30, là nó sẽ không liên quan đến cái việc mà
+0:07:27 - 0:07:33, đưa ra cái dự đoán ờ output cuối cùng Ví
+0:07:30 - 0:07:35, dụ như cái cột số thứ tự hoặc là cái cột
+0:07:33 - 0:07:38, mã nhân
+0:07:35 - 0:07:42, viên thì đây là thường là những cái giá
+0:07:38 - 0:07:43, trị ngỗ nhiên nó không có đóng góp nhiều
+0:07:42 - 0:07:46, cho cái việc mà huấn luyện nên chúng ta
+0:07:43 - 0:07:49, có thể lại bỏ đi các cái cột này rồi
+0:07:46 - 0:07:51, ngoài ra thì chúng ta cũng có thể là lại
+0:07:49 - 0:07:53, bỏ đi những cái dòng dữ liệu mà nó thoi
+0:07:51 - 0:07:57, mãn một số cái tính chất nào đó thì
+0:07:53 - 0:08:00, chúng ta có thể dùng cái lệnh để mà lọc
+0:07:57 - 0:08:02, lại những cái dòng dữ liệu thì đây là
+0:08:00 - 0:08:05, những cái phương pháp làm sạch dữ liệu
+0:08:02 - 0:08:07, khác bên cạnh hai cái phương pháp chính
+0:08:05 - 0:08:12, đó là loại bỏ những cái dữ liệu bị thiếu
+0:08:07 - 0:08:12, hoặc là lại bỏ những cái dữ liệu nhiễu

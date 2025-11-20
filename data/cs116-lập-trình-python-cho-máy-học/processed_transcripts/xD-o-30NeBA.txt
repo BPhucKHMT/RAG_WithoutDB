@@ -1,0 +1,120 @@
+0:00:01 - 0:00:16, [âm nhạc]
+0:00:13 - 0:00:18, trong các bài tuần trước thì chúng ta
+0:00:16 - 0:00:22, được tìm hiểu về các cái mô hình học có
+0:00:18 - 0:00:24, giám sát trên dữ liệu dạng bảng. Thì trong
+0:00:22 - 0:00:26, thời gian gần đây chúng ta được nghe nói
+0:00:24 - 0:00:30, rất nhiều về những cái loại dữ liệu như
+0:00:26 - 0:00:33, là hình ảnh, văn bản và âm thanh. Và những
+0:00:30 - 0:00:35, cái loại dữ liệu này để có thể giải
+0:00:33 - 0:00:37, quyết và xử lý được, chúng ta sẽ phải
+0:00:35 - 0:00:39, cần những cái mô hình đặc biệt hơn, đó
+0:00:37 - 0:00:42, chính là các cái mô hình học sâu hay còn
+0:00:39 - 0:00:44, gọi là Deep Learning. Thì trong phạm vi của
+0:00:42 - 0:00:46, bài học ngày hôm nay, chúng ta sẽ cùng
+0:00:44 - 0:00:49, tìm hiểu về một trong những kiến trúc
+0:00:46 - 0:00:52, mạng rất là nổi tiếng đó chính là mạng
+0:00:49 - 0:00:55, CNN. Thì sau đây là những cái nội dung mà
+0:00:52 - 0:00:58, chúng ta sẽ cùng tìm hiểu. Đầu tiên đó là
+0:00:55 - 0:01:01, chúng ta sẽ tìm hiểu về bài toán phân
+0:00:58 - 0:01:04, loại ảnh với mạng Neural Network. Đây sẽ là cái
+0:01:01 - 0:01:09, tiền đề để dẫn dắt
+0:01:04 - 0:01:12, ờ cho cái mạng CNN về sau. Đầu tiên đó là
+0:01:09 - 0:01:14, chúng ta sẽ cùng hiểu khái niệm hình ảnh.
+0:01:12 - 0:01:19, thì nếu như dữ liệu dạng bảng của chúng
+0:01:14 - 0:01:21, ta biểu diễn dưới dạng là các cái cột
+0:01:19 - 0:01:21, và các cái
+0:01:25 - 0:01:31, dòng. Thì các cái cột này nó sẽ phải là
+0:01:29 - 0:01:34, số lượng cố định và kiểu dữ liệu cũng
+0:01:31 - 0:01:36, phải là thống nhất. Thì đối với dữ liệu
+0:01:34 - 0:01:39, dạng ảnh, chúng ta cũng sẽ biểu diễn
+0:01:36 - 0:01:41, dưới dạng là một ma trận. Tuy nhiên, cái
+0:01:39 - 0:01:43, bề ngang và bề cao của ảnh nó sẽ có kích
+0:01:41 - 0:01:45, thước thay đổi. Thì trong cái hình ảnh ở
+0:01:43 - 0:01:48, đây chúng ta minh họa nó là một cái ảnh
+0:01:45 - 0:01:50, xám, tức là ảnh không có màu sắc. Thì nó
+0:01:48 - 0:01:53, biểu diễn bởi một cái ma trận
+0:01:50 - 0:01:56, như bên tay phải. Và đối với trường hợp
+0:01:53 - 0:01:58, ảnh màu, chúng ta sẽ có ba kênh màu là
+0:01:56 - 0:02:00, màu Red,
+0:01:58 - 0:02:03, Green và
+0:02:00 - 0:02:05, Blue, tương ứng là ba kênh màu: màu đỏ, màu xanh
+0:02:03 - 0:02:07, lá và màu xanh dương. Thì chúng ta sẽ có
+0:02:05 - 0:02:11, thêm một chiều nữa đó là chiều độ
+0:02:07 - 0:02:15, sâu (chiều depth). Và tương ứng, nó sẽ là ba
+0:02:11 - 0:02:18, cái ma trận chồng lên nhau. Thì bây giờ
+0:02:15 - 0:02:21, chúng ta sẽ giả sử chúng ta sử dụng một
+0:02:18 - 0:02:23, cái mạng đã được biết trước đó, đó chính
+0:02:21 - 0:02:25, là mạng Neural Network để giải quyết cái
+0:02:23 - 0:02:26, bài toán đó là phân loại hình ảnh. Bài
+0:02:25 - 0:02:29, toán phân loại hình ảnh này thì đầu vào
+0:02:26 - 0:02:30, của mình sẽ là một ảnh và đầu ra sẽ là
+0:02:29 - 0:02:32, phân
+0:02:30 - 0:02:34, vào các cái loại, ví dụ như ở đây là xe
+0:02:32 - 0:02:38, cộ, nhà cửa và con người. Thì đây là một
+0:02:34 - 0:02:41, cái bài toán phân loại đa lớp. Và chúng
+0:02:38 - 0:02:44, ta sẽ xét một cái mạng có cái kiến trúc
+0:02:41 - 0:02:46, rất là đơn giản với kiến trúc gọi là
+0:02:44 - 0:02:48, Fully Connected. Thì giả sử như cái ảnh
+0:02:46 - 0:02:50, đầu vào cũng rất là nhỏ. Ảnh thực sự
+0:02:48 - 0:02:53, mà nói là rất là nhỏ so với lại những
+0:02:50 - 0:02:56, cái ảnh, cái độ phân giải ảnh hiện nay có
+0:02:53 - 0:02:59, thể lên đến là hàng trăm, thậm chí là
+0:02:56 - 0:03:01, hàng ngàn pixel nhân với một hàng ngàn
+0:02:59 - 0:03:04, pixel. Thì ở đây chúng ta lấy là cái ảnh
+0:03:01 - 0:03:07, có kích thước là 200x200. Và giả sử như
+0:03:04 - 0:03:08, cái mạng Neural Network này cũng rất
+0:03:07 - 0:03:10, là đơn giản, đó là chỉ có duy nhất một
+0:03:10 - 0:03:15, hidden layer, tức là một cái lớp ẩn mà
+0:03:12 - 0:03:19, thôi. Và số neuron của lớp ẩn này đúng
+0:03:15 - 0:03:21, bằng với lại cái số pixel. Thì ở đây tổng
+0:03:19 - 0:03:25, số lượng tham số của mình nó sẽ là 200
+0:03:21 - 0:03:27, x 200 nhân cho 40.000, tức là 1,6 tỷ. Thì
+0:03:25 - 0:03:29, với cái kiến trúc mạng rất là đơn giản
+0:03:27 - 0:03:32, và với cái ảnh rất là nhỏ này, nó sẽ
+0:03:29 - 0:03:34, dẫn đến một cái vấn đề đó là
+0:03:32 - 0:03:36, nó có quá nhiều tham số. Và việc quá
+0:03:34 - 0:03:38, nhiều tham số này sẽ dẫn đến cái
+0:03:36 - 0:03:40, hiện tượng đó là overfitting, tức là cái
+0:03:38 - 0:03:42, mô hình của mình nó quá phức tạp để có
+0:03:40 - 0:03:45, thể học được.
+0:03:42 - 0:03:48, overfitting. Và để giải quyết vấn đề này thì
+0:03:45 - 0:03:51, chúng ta sẽ sử dụng một cái mạng neuron
+0:03:48 - 0:03:54, với cái cơ chế chia sẻ trọng số và kết
+0:03:51 - 0:03:56, nối cục bộ. Thì kết nối đầu tiên đó là
+0:03:54 - 0:03:59, kết nối cục bộ, tức là các cái neuron này
+0:03:56 - 0:04:02, sẽ thay vì kết nối với tất cả toàn bộ
+0:03:59 - 0:04:06, các neuron ở trong ảnh đầu vào, thì chúng ta sẽ
+0:04:02 - 0:04:07, chỉ kết nối với một cái vùng cục bộ đó.
+0:04:06 - 0:04:11, Thì giả sử như cái vùng cục bộ này có
+0:04:07 - 0:04:14, kích thước là 10x10. Và các cái neuron
+0:04:11 - 0:04:16, này nó đều chia sẻ trọng số với nhau, nó
+0:04:14 - 0:04:20, đều sử dụng chung một cái bộ trọng số.
+0:04:16 - 0:04:22, Như vậy thì bản chất của cái phép biến
+0:04:20 - 0:04:24, đổi này tức là chúng ta sử dụng một cái
+0:04:22 - 0:04:27, bộ trọng số chúng ta duyệt lên trên toàn
+0:04:24 - 0:04:29, bộ cái tấm hình đó. Thì đây chính là cái
+0:04:27 - 0:04:31, phép biến đổi Convolution của mình. Và cái số
+0:04:29 - 0:04:35, tham số của mình lúc này nó chỉ còn là
+0:04:31 - 0:04:37, 10x10, tức là bằng 100 tham số. Nó ít
+0:04:35 - 0:04:41, hơn rất
+0:04:37 - 0:04:46, nhiều so với lại cái con số đó là khoảng
+0:04:41 - 0:04:49, hơn 1 tỷ tham số. Thì đây chính là
+0:04:46 - 0:04:51, cái mở đầu cho kiến trúc mạng CNN với
+0:04:49 - 0:04:53, cái phép biến đổi thay vì là Fully
+0:04:51 - 0:04:58, Connected thì chúng ta sẽ thay thế
+0:04:53 - 0:05:01, bằng cái phép biến đổi là
+0:04:58 - 0:05:05, Convolution. Và ý nghĩa của cái phép biến đổi
+0:05:01 - 0:05:08, Convolution này đó là chúng ta sẽ lọc ra được
+0:05:05 - 0:05:12, một cái đặc trưng. Đây là một cái đặc
+0:05:08 - 0:05:14, trưng sau khi thực hiện được với cái bộ
+0:05:12 - 0:05:18, lọc như đây. Và cái bộ lọc này thì được
+0:05:14 - 0:05:20, thiết kế, nó được thiết kế bởi một cái
+0:05:18 - 0:05:20, nhà khoa
+0:05:23 - 0:05:30, học. Thì trong cái kiến trúc mạng học sâu
+0:05:26 - 0:05:34, Deep Learning và cụ thể ở đây là mạng CNN,
+0:05:30 - 0:05:36, thì cái bộ trọng số cho cái filter này
+0:05:34 - 0:05:40, sau này nó sẽ không được thiết kế bởi
+0:05:36 - 0:05:42, nhà khoa học nữa mà nó sẽ được học từ
+0:05:40 - 0:05:42, dữ
+0:05:43 - 0:05:50, liệu. Thì đó chính là cái ý tưởng lớn
+0:05:46 - 0:05:50, nhất của mạng CNN.

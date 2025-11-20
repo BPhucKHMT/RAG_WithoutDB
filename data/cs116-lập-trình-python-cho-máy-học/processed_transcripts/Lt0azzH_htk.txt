@@ -1,0 +1,121 @@
+0:00:00 - 0:00:08, Phương pháp Bayesian Optimization
+0:00:30 - 0:00:34, cũng là tìm tuần tự để tìm các điểm tối ưu cục bộ,
+0:00:34 - 0:00:39, thì phương pháp của Bayesian Optimization là nó có sự kế thừa,
+0:00:39 - 0:00:44, nó có sự kế thừa giữa các lần tìm kiếm.
+0:00:44 - 0:00:47, Sự tuần tự này không phải là tuần tự độc lập,
+0:00:47 - 0:00:51, mà nó sẽ là sự tuần tự có tính kế thừa.
+0:00:51 - 0:01:03, Chúng ta sẽ cùng tìm hiểu trong sơ đồ của ý tưởng của giải thuật ở phần phía bên dưới.
+0:01:03 - 0:01:10, Mô hình này cực kỳ phù hợp và rất thích hợp cho mô hình ở dạng blackbox.
+0:01:10 - 0:01:17, Chúng ta chỉ cho thông tin đầu vào, cấu hình của mô hình của mình cho nó dữ liệu
+0:01:17 - 0:01:22, Rồi mô hình này sẽ tự động học và trả ra được hiệu năng, độ chính xác
+0:01:22 - 0:01:27, Và chúng ta không có quá nhiều, thậm chí là chúng ta không biết gì về trong mô hình
+0:01:27 - 0:01:32, Cấu tạo của nó ra sao, ưu khuyết điểm của nó là gì, chi tiết hoạt động như thế nào
+0:01:32 - 0:01:38, Chúng ta sẽ không cần quan tâm, chúng ta nhìn mô hình này như một hộp đen
+0:01:38 - 0:01:47, Ví dụ tại thời điểm T, T trong trường hợp này là bằng 2, thì chúng ta có được 1 quan sát X.
+0:01:47 - 0:01:49, Chúng ta sẽ có 1 quan sát X.
+0:01:49 - 0:01:55, Cái quan sát X này chính là 1 siêu tham số của mình.
+0:01:55 - 0:02:03, Cái đường màu gạch ngang chính là hàm mục tiêu của mình.
+0:02:03 - 0:02:13, Và đặc biệt ở đây, đó chính là cái đường ở bên dưới, đó là Acquisition Function.
+0:02:15 - 0:02:21, Thì cái hàm này sẽ là khai thác cái hàm hữu dụng.
+0:02:21 - 0:02:27, Thì cái hàm hữu dụng này là một cái sự cân đối giữa cái yếu tố exploitation,
+0:02:27 - 0:02:32, Đó là khai phá, khai thác thông tin của những lần trước đó
+0:02:32 - 0:02:45, Với exploration, chúng ta sẽ khám phá ra một bước ngẫu nhiên
+0:02:45 - 0:02:48, Tức là những lần thử của mình tiếp theo
+0:02:48 - 0:02:52, Nó sẽ có hai yếu tố là exploitation và exploration
+0:02:52 - 0:03:02, Exploitation, tức là chúng ta sẽ đi trong sự chừng mực và chúng ta có sử dụng thông tin của lần quá khứ.
+0:03:03 - 0:03:07, Thì trong trường hợp này, đây chính là quá khứ thử nghiệm.
+0:03:10 - 0:03:19, Chúng ta đã quan sát được siêu tham số tại vị trí này của hàm mục tiêu.
+0:03:19 - 0:03:20, Là cái đường này.
+0:03:20 - 0:03:30, Sau đó, với quan sát này, chúng ta sẽ cập nhật lại hàm Acquisition Function này, đó là cái hàm đường màu xanh.
+0:03:30 - 0:03:39, Và với cái đường màu xanh này, chúng ta sẽ thấy là nó sẽ có những cái vị trí để cho cái mức độ hữu dụng cao nhất, chính là tại cái vị trí này.
+0:03:39 - 0:03:43, Vị trí này là cho cái acquisition của mình là cao nhất
+0:03:43 - 0:03:51, Và ứng với cái vị trí này thì chúng ta sẽ chiếu lên trong cái không gian tham số
+0:03:51 - 0:03:57, Thì đây chính là cái vị trí mà chúng ta sẽ thử tiếp theo là quan sát mới
+0:03:57 - 0:04:02, Như vậy là cái quan sát mới, tức là cái bộ siêu tham số thử nghiệm tiếp theo của mình
+0:04:02 - 0:04:07, Nó sẽ khác so với phương pháp Grid Search và Random Search ở chỗ đó là
+0:04:07 - 0:04:13, và nó không hề độc lập so với lại cái lần thử trước đó, cái quan sát trước đó
+0:04:13 - 0:04:17, mà nó dựa trên cái hàm Acquisition Function này
+0:04:17 - 0:04:23, và cái hàm Acquisition Function này là có sự tham gia của những cái lần thử nghiệm trước đó
+0:04:23 - 0:04:27, tức là cái lần quan sát trước đó, chứ không phải đó là một cái hàm cố định
+0:04:27 - 0:04:32, thì khi chúng ta thử nghiệm cái quan sát mới
+0:04:32 - 0:04:46, Thì chúng ta sẽ thấy là cái hàm mục tiêu của mình sẽ giới hạn phạm vi ảnh hưởng của một siêu tham số đã bị thu hẹp.
+0:04:46 - 0:04:50, Ví dụ ở đây chúng ta thấy là nó là một cái dải rất là rộng.
+0:04:50 - 0:04:58, Thì khi chúng ta thử cái vùng mới, chúng ta thấy là cái khả năng và cái hàm dự đoán, đây chính là cái hàm ước lượng của mình.
+0:04:58 - 0:05:02, Đây là hàm ước lượng, đây là hàm thực tế
+0:05:04 - 0:05:09, Đây là hàm mà đường liền là đường ước lượng
+0:05:12 - 0:05:18, Và nó là không chính xác, nhưng chúng ta sẽ cố gắng làm sao cho đường ước lượng về sát với đường thực tế nhất
+0:05:18 - 0:05:24, Thế thì, khi chúng ta thử nghiệm với 2 mẫu ở đây thôi, ví dụ như mẫu ở đây và mẫu ở đây
+0:05:24 - 0:05:30, và mẫu ở đây thì phạm vi của vùng màu tím, tức là nó sẽ cho biết rằng là cái xác suất
+0:05:31 - 0:05:35, cái hàm mục tiêu thực sự của mình nó nằm trong khu vực này.
+0:05:37 - 0:05:39, Tức là chúng ta đang giới hạn lại, nó sẽ không nằm ở đây, đúng không?
+0:05:39 - 0:05:44, Nó sẽ không nằm ở đây, và, nó sẽ không nằm ở trên đây, mà khả năng cao là nó sẽ nằm trong cái khu vực này.
+0:05:45 - 0:05:49, Và khi chúng ta thử một cái quan sát mới thì chúng ta thấy là cái quan sát mới
+0:05:49 - 0:05:57, Và cái quan sát cũ của mình, cái quan sát cũ của mình, nó đã góp phần kéo,
+0:05:57 - 0:06:04, nó sẽ kéo cái hàm ước lượng, cái đường ước lượng của mình với lại cái hàm thực tế của mình nó về sát với nhau hơn.
+0:06:04 - 0:06:10, Vì vậy trong cái dải phạm vi từ đây đến đây là chúng ta gần như là không có sự biến động nhiều.
+0:06:10 - 0:06:13, Cái biến động của mình nó sẽ chủ yếu nằm ở trong cái khu vực đây.
+0:06:13 - 0:06:27, Khi chúng ta cập nhật phép thử mới, chúng ta cũng cập nhật hàm Acquisition Function này.
+0:06:27 - 0:06:35, Chúng ta thấy ở ban đầu chỉ có hai quan sát này thì nó ra đường này, nhưng khi chúng ta có thêm điểm mới thì nó đã cập nhật lại theo đường này.
+0:06:35 - 0:06:43, Và cái đường này thì giá trị Max Acquisition của mình là cái vị trí này thì tương ứng
+0:06:43 - 0:06:51, Chúng ta chiếu thẳng xuống thì đây chính là cái quan sát mới của mình
+0:06:51 - 0:06:53, Đây chính là cái quan sát mới
+0:06:53 - 0:06:59, Và chúng ta sẽ một lần nữa chúng ta thấy là khi có cái quan sát mới thì cái đường của mình nó bắt đầu
+0:06:59 - 0:07:02, Cái phạm vi của mình nó sẽ bắt đầu bớt bị biến động hơn
+0:07:02 - 0:07:11, nó sẽ càng lúc càng khớp giữa cái hàm phân bố hậu nghiệm với lại cái hàm mục tiêu thực tế.
+0:07:13 - 0:07:21, Thì cái khu vực không chắc chắn của mình bây giờ nó chỉ còn là càng lúc càng về sau, nó sẽ càng lúc càng giảm lại.
+0:07:21 - 0:07:23, Cái khu vực mà không chắc chắn nó sẽ càng lúc càng giảm lại.
+0:07:23 - 0:07:28, Ví dụ như những cái lần thử nghiệm đầu tiên chúng ta thấy là cái không chắc chắn của mình rất là rộng.
+0:07:28 - 0:07:40, Các lần thử tiếp theo sẽ mau chóng tiến đến khu vực có khả năng có được nghiệm tối ưu nhất.
+0:07:40 - 0:07:48, Tóm lại là phương pháp này đã có một điểm mạnh sau khi chúng ta đã bắt đầu,
+0:07:48 - 0:07:53, nó sẽ mau chóng tiến đến cái khu vực có khả năng có được cái nghiệm tối ưu nhất.
+0:07:53 - 0:07:56, Như vậy thì tóm lại là cái phương pháp này,
+0:07:56 - 0:07:59, nó đã có một cái điểm mạnh so với lại hai phương pháp trước đây,
+0:07:59 - 0:08:01, đó chính là cái Acquisition Function.
+0:08:01 - 0:08:06, Nó sẽ chỉ điểm cho chúng ta biết là chúng ta nên thử chỗ nào mà có khả năng,
+0:08:06 - 0:08:12, có khả năng hướng đến được cái giá trị tối ưu hoặc là hướng đến cái việc là cái hàm ước lượng
+0:08:12 - 0:08:16, nó sẽ khớp với lại cái hàm thực tế, cái hàm mục tiêu thực tế nhất.
+0:08:16 - 0:08:25, Chúng ta sẽ phân tích đến cái ưu khuyết điểm của phương pháp Bayesian Optimization này.
+0:08:25 - 0:08:38, Đó là tính hiệu quả. Đó là nó đã kế thừa được những thông tin của những lần thử trước để cho việc tìm kiếm của mình hiệu quả hơn.
+0:08:38 - 0:08:52, Thay vì các lần tìm kiếm độc lập nhau, thì bây giờ giữa các lần thử nghiệm nó đã có sự liên kết với nhau để khoanh vùng và hướng đến xác suất tìm ra khu vực tốt hơn.
+0:08:52 - 0:09:00, Thứ 2 là nó đã giúp chúng ta giảm bớt được số lần thử nghiệm.
+0:09:00 - 0:09:05, Trước đây thì chúng ta tìm kiếm quét cạn không gian thử nghiệm cực kỳ lớn
+0:09:05 - 0:09:08, chúng ta đã giải quyết bằng cách đó là Random Search
+0:09:08 - 0:09:11, Với Random Search thì chúng ta cũng sẽ phải thử rất là nhiều
+0:09:11 - 0:09:15, chúng ta cũng phải thử rất nhiều nếu như không gian tìm kiếm của mình nó lớn
+0:09:15 - 0:09:22, Và với phương pháp Bayesian Optimization thì chúng ta chỉ cần với rất ít lần thử nghiệm
+0:09:22 - 0:09:27, Ví dụ như trong cái ví dụ này chúng ta chỉ cần có thể thử từ 4 cho đến 5 lần thôi
+0:09:27 - 0:09:36, thì kết quả của mình càng về sau sẽ càng hướng đến khu vực có khả năng đạt được cái nghiệm toàn cục.
+0:09:36 - 0:09:42, Và cái phương pháp này thì rất phù hợp với những mô hình mà có không gian tham số lớn.
+0:09:42 - 0:09:47, Thì như đã nói trước đây, nếu không gian tham số lớn, số lượng siêu tham số nhiều,
+0:09:47 - 0:09:54, rồi khoảng giá trị lớn, thì rõ ràng Bayesian sẽ hiệu quả hơn với số lần thử nghiệm ít hơn.
+0:09:54 - 0:10:02, Và khuyết điểm của phương pháp này là tính phức tạp. Nó sẽ phức tạp hơn so với Random Search và Grid Search.
+0:10:02 - 0:10:11, Và việc chọn lựa hàm Acquisition này cũng có rất nhiều cách chọn lựa khác nhau.
+0:10:11 - 0:10:19, Và việc chọn lựa hàm Acquisition này cũng ảnh hưởng rất lớn đến tính hiệu quả của phương pháp này.
+0:10:19 - 0:10:24, Đó chính là điểm yếu của phương pháp Bayesian Optimization.
+0:10:24 - 0:10:32, Sau đây, chúng ta sẽ tiến hành so sánh các phương pháp ưu khuyết điểm của từng phương pháp.
+0:10:32 - 0:10:36, Đối với phương pháp Grid Search, đây là một phương pháp rất đơn giản, dễ cài đặt.
+0:10:36 - 0:10:41, Và tương tự như vậy cho Random Search, đây cũng là phương pháp đơn giản, dễ cài đặt.
+0:10:41 - 0:10:45, Tuy nhiên, phương pháp Bayesian sẽ phức tạp hơn.
+0:10:45 - 0:10:49, sử dụng lý thuyết về xác suất và do đó nó sẽ khó cài đặt hơn.
+0:10:49 - 0:10:52, Thì đó chính là cái tính đơn giản và dễ cài đặt.
+0:10:52 - 0:10:55, Xét về cái yếu tố toàn diện,
+0:10:55 - 0:11:00, tức là cái khả năng mà chúng ta quét hết những khu vực mà có tham số,
+0:11:00 - 0:11:03, cái tính toàn diện của cái việc mà tìm kiếm không gian siêu tham số,
+0:11:03 - 0:11:07, thì rõ ràng phương pháp Grid Search nó sẽ có cái lợi thế tốt hơn
+0:11:07 - 0:11:12, trong cái việc đó là quét những cái khả năng có khả năng xảy ra của cái siêu tham số của mình.
+0:11:12 - 0:11:15, Vì vậy là cái không gian tìm kiếm của mình nó sẽ toàn diện hơn.
+0:11:15 - 0:11:24, Trong khi đó, Random Search thì không gian tìm kiếm không có toàn diện.
+0:11:24 - 0:11:31, Tức là nó sẽ không có tìm kiếm một cách toàn diện do yếu tố ngẫu nhiên.
+0:11:33 - 0:11:36, Tiếp theo, đó là ưu điểm của phương pháp Random Search.
+0:11:36 - 0:11:39, Đó là nó sẽ hiệu quả cho không gian tìm kiếm lớn.
+0:11:40 - 0:11:45, Vì chính vì sự tìm kiếm toàn diện này của Grid Search dẫn đến là nó chậm.
+0:11:45 - 0:11:56, và nó không hiệu quả thì phương pháp Random Search nó đã hiệu quả hơn do nó đã tiết kiệm được số lần thử nghiệm của mình nhiều hơn
+0:11:56 - 0:12:06, Và đối với phương pháp Bayesian Optimization thì tính hiệu quả của nó cao hơn so với lại hai phương pháp trước đó do tính kế thừa
+0:12:06 - 0:12:09, Nó kế thừa được giữa các lần thử với nhau.
+0:12:09 - 0:12:20, Lần thử sau nó dựa trên thông tin của lần thử trước để mà nó hướng đến, tìm đến những khu vực mà nó khả nghi là có cái nghiệm toàn cục của mình.
+0:12:20 - 0:12:29, Và chính sự hiệu quả này, chính sự hiệu quả của việc kế thừa này nó dẫn đến việc hiệu quả cho cái không gian tham số lớn.
+0:12:29 - 0:12:39, Tức là nếu như những mô hình của mình có nhiều siêu tham số và với mỗi siêu tham số có nhiều khoảng giá trị thì Bayesian là một phương pháp phù hợp.
+0:12:39 - 0:12:49, Và khuyết điểm của phương pháp Grid Search chính là không gian tìm kiếm của mình quá lớn dẫn đến chi phí tính toán lớn và không hiệu quả do không kế thừa các lần thử nghiệm.
+0:12:49 - 0:12:58, Thì cái này đã được giải quyết ở cái điểm này của Bayesian Optimization. Cái điểm yếu này cũng chính là điểm yếu của phương pháp Random Search.
+0:12:58 - 0:13:07, Bayesian Optimization có yếu tố phức tạp và nó bị phụ thuộc vào việc chọn lựa hàm Acquisition Function.
+0:13:07 - 0:13:18, Trên đây là một bảng tóm tắt đánh giá ưu khuyết điểm của ba phương pháp tinh chỉnh tham số phổ biến nhất hiện nay.

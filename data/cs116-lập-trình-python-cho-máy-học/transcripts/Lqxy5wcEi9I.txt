@@ -1,0 +1,267 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:19, như vậy thì trong bài học ngày hôm nay
+0:00:16 - 0:00:21, chúng ta sẽ cùng đến với hai cái thành
+0:00:19 - 0:00:24, phần cuối cùng của một cái machine
+0:00:21 - 0:00:27, learning pipeline đó chính là triển khai
+0:00:24 - 0:00:30, và giám sát mô hình trong đó thì cái
+0:00:27 - 0:00:33, giai đoạn triển khai chúng ta làm sao có
+0:00:30 - 0:00:37, thể đưa cái mô hình của mình đến với
+0:00:33 - 0:00:39, được với cái người dùng cuối và sau khi
+0:00:37 - 0:00:41, chúng ta đã đưa cái mô hình của mình đã
+0:00:39 - 0:00:43, huấn luyện đến người dùng cuối rồi thì
+0:00:41 - 0:00:46, chúng ta sẽ phải giám sát nó thì cái
+0:00:43 - 0:00:48, việc giám sát này á đảm bảo rằng là cái
+0:00:46 - 0:00:51, mô hình của mình vẫn được hoạt động một
+0:00:48 - 0:00:54, cách Chơn Chu và đúng như những gì chúng
+0:00:51 - 0:00:56, ta kỳ vọng và kể cả trong trường hợp mà
+0:00:54 - 0:00:59, cái dữ liệu của mình
+0:00:56 - 0:01:01, Ờ không đạt được như kỳ vọng thì chúng
+0:00:59 - 0:01:04, ta sẽ có những cái điều chỉnh cho kịp
+0:01:01 - 0:01:07, thời thế thì chúng ta sẽ đến với những
+0:01:04 - 0:01:09, cái nội dung sau đây đầu tiên đó là
+0:01:07 - 0:01:12, chúng ta sẽ giới thiệu về triển khai một
+0:01:09 - 0:01:14, cái mô hình máy học nó là cái gì sau đó
+0:01:12 - 0:01:17, thì chúng ta sẽ tiếp cận một số cái
+0:01:14 - 0:01:22, phương pháp triển khai cái mô hình máy
+0:01:17 - 0:01:24, học và chúng ta sẽ có hai phần tiếp theo
+0:01:22 - 0:01:26, đó chính là triển khai ứng dụng dưới
+0:01:24 - 0:01:29, dạng qub và triển khai ứng dụng dưới
+0:01:26 - 0:01:32, dạng dịch vụ Đây là hai cái hình thức
+0:01:29 - 0:01:34, được s sử dụng rất là phổ biến và nó
+0:01:32 - 0:01:36, cũng nằm trong cái phạm vi của môn học
+0:01:34 - 0:01:39, này chúng ta có thể thực hiện được một
+0:01:36 - 0:01:41, cách dễ dàng và cuối cùng đó là chúng ta
+0:01:39 - 0:01:44, sẽ tiến hành Giám sát cái mô hình máy
+0:01:41 - 0:01:47, học khi triển khai nó sẽ như thế nào thì
+0:01:44 - 0:01:50, đầu tiên chúng ta sẽ cùng đến với phần
+0:01:47 - 0:01:52, giới thiệu à triển khai mô hình mới học
+0:01:50 - 0:01:55, thì như chúng ta cũng đã biết triển khai
+0:01:52 - 0:01:58, mô hình mới học đó là chúng ta làm sao
+0:01:55 - 0:02:01, để cho mô hình dự đoán có thể tiếp cận
+0:01:58 - 0:02:04, được đến cái người dùng cuối đến người
+0:02:01 - 0:02:06, dùng cuối và cái người dùng cuối này thì
+0:02:04 - 0:02:09, nó có thể là những người dùng trên mạng
+0:02:06 - 0:02:11, xã hội Nó có thể là những cái khách hàng
+0:02:09 - 0:02:13, sử dụng trên smartphone thì trên cái
+0:02:11 - 0:02:16, hình vẽ ở đây chúng ta thấy người dùng
+0:02:13 - 0:02:18, cuối sẽ tiếp cận cái mô hình của mình
+0:02:16 - 0:02:21, thông qua hai cái công cụ rất là phổ
+0:02:18 - 0:02:24, biến một đó là ứng dụng di động và hai
+0:02:21 - 0:02:27, đó là cái ứng dụng dạng web đây là có
+0:02:24 - 0:02:30, thể nói là hai cái nền tảng giúp cho
+0:02:27 - 0:02:32, người dùng tiếp cận đến các các cái
+0:02:30 - 0:02:37, thành tựu của công nghệ một cách gọi là
+0:02:32 - 0:02:38, nhanh chóng và phổ biến nhất và cái việc
+0:02:37 - 0:02:42, mà triển khai bồ máy Học nó cũng không
+0:02:38 - 0:02:45, chỉ dừng lại ở người dùng cuối mà nó có
+0:02:42 - 0:02:48, thể là ở mức độ tương tác với hệ thống
+0:02:45 - 0:02:50, khác ví dụ như chúng ta nhiệm vụ của
+0:02:48 - 0:02:53, chúng ta đó là chúng ta sẽ phải bàn giao
+0:02:50 - 0:02:56, một cái thuật toán cho một cái bên thứ
+0:02:53 - 0:02:57, ba thì chúng ta làm sao để có thể bàn
+0:02:56 - 0:03:00, giao được cái mô hình này cho cái bên
+0:02:57 - 0:03:03, thứ ba thì đó chính là cái ý nghĩa của
+0:03:00 - 0:03:06, cái hệ thống khác ví dụ Chúng ta đang
+0:03:03 - 0:03:09, muốn làm một cái dịch vụ chứng thực về
+0:03:06 - 0:03:12, mặt gương mặt tức là nhận diện Xem cái
+0:03:09 - 0:03:14, Gương Mặt Của Người này là ai đúng không
+0:03:12 - 0:03:16, định danh của nó là gì thì chúng ta sẽ
+0:03:14 - 0:03:18, cung cấp cái dịch vụ chứng thực gương
+0:03:16 - 0:03:21, mặt này cho rất nhiều những cái đơn vị
+0:03:18 - 0:03:25, ví dụ như là ngân hàng Ví dụ như là các
+0:03:21 - 0:03:28, cái trạm ATM ví dụ như là các cái đơn vị
+0:03:25 - 0:03:31, phát triển về dịch vụ công rồi ví dụ như
+0:03:28 - 0:03:34, là các cái đối tác mà có sử dụng cái
+0:03:31 - 0:03:36, việcc xác thực gương mặt để làm những
+0:03:34 - 0:03:37, cái công việc tiếp theo đó như vậy thì
+0:03:36 - 0:03:39, các cái hệ thống khác nó cũng đóng vai
+0:03:37 - 0:03:43, trò như là một cái khách hàng một cái
+0:03:39 - 0:03:46, cái người dùng trong qu ké của mình và
+0:03:43 - 0:03:49, sau khi chúng ta triển khai cái mô hình
+0:03:46 - 0:03:52, ờ máy học này xong thì chúng ta sẽ tiến
+0:03:49 - 0:03:56, hành Ờ feedback tức là chúng ta lấy cái
+0:03:52 - 0:03:59, phảo ngồi của mob thì cái việc mà chúng
+0:03:56 - 0:04:01, ta lấy phản ngồi của m á nó sẽ có hai
+0:03:59 - 0:04:03, hình thức hình thức đầu tiên á đó là
+0:04:01 - 0:04:06, trực tiếp và hình thức thứ hai đó là
+0:04:03 - 0:04:10, gián tiếp thì đối với cái hình thức trực
+0:04:06 - 0:04:13, tiếp á thì người dùng sẽ chủ động đưa ra
+0:04:10 - 0:04:15, những cái ph ngồi chủ động sẽ đưa ra
+0:04:13 - 0:04:17, những cái pha
+0:04:15 - 0:04:19, ngồi cho các cái mô hình máy học mà
+0:04:17 - 0:04:22, chúng ta đã triển khai thì chủ động ở
+0:04:19 - 0:04:25, đây họ sẽ th hiện qua việc là họ sẽ đánh
+0:04:22 - 0:04:28, giá rating họ sẽ thả like vào các cái
+0:04:25 - 0:04:32, tính năng Hoặc là họ thậm chí họ có thể
+0:04:28 - 0:04:34, comment comment vào các cái ứng dụng để
+0:04:32 - 0:04:37, cho biết cái cảm nghĩ của họ về cái tính
+0:04:34 - 0:04:39, năng của một cái thực toán máy học nó
+0:04:37 - 0:04:42, như thế nào nếu như cái thực toán của
+0:04:39 - 0:04:44, mình vận thành tốt và đáp ứng được những
+0:04:42 - 0:04:47, cái Yêu cầu những cái nguyện vọng của họ
+0:04:44 - 0:04:50, thì họ sẽ thả những cái điểm số rating
+0:04:47 - 0:04:53, hoặc là thả l rất là tốt nhưng mà trong
+0:04:50 - 0:04:55, trường hợp mà cái độ chính xác hoặc là
+0:04:53 - 0:04:59, cái tính hiệu quả của mô hình nó không
+0:04:55 - 0:05:02, cao thì họ có thể góp ý nhận xét về cái
+0:04:59 - 0:05:04, tính năng này là chưa tốt hay không tốt
+0:05:02 - 0:05:07, chưa tốt thì Nếu tốt thì tốt chỗ nào mà
+0:05:04 - 0:05:11, chưa tốt thì tốt ở chỗ nào và cái hình
+0:05:07 - 0:05:14, thức nữa thì đó chính là gián tiếp tức
+0:05:11 - 0:05:17, là có những thứ mô hình của mình nó
+0:05:14 - 0:05:19, không có biểu hiện được thế nào gọi là
+0:05:17 - 0:05:23, chính xác thế nào gọi là không chính xác
+0:05:19 - 0:05:26, mình lấy ví dụ như là hệ thống
+0:05:23 - 0:05:28, recommend hệ thống Khuyến nghị cho người
+0:05:26 - 0:05:31, dùng sẽ mua tiếp những cái sản phẩm nào
+0:05:28 - 0:05:34, khi họ đang tìm kiếm một cái sản phẩm
+0:05:31 - 0:05:36, trên các cái trang thương mại điện tử
+0:05:34 - 0:05:39, thì các cái sản phẩm mà mình gợi ý cho
+0:05:36 - 0:05:40, họ đôi khi nó không có liên quan một
+0:05:39 - 0:05:44, cách trực tiếp nhưng có liên quan một
+0:05:40 - 0:05:47, cách gián tiếp ví dụ như là chúng ta
+0:05:44 - 0:05:51, thấy người dùng đang ờ tìm một cái chiếc
+0:05:47 - 0:05:54, điện thoại trên mạng xã hội thì chúng ta
+0:05:51 - 0:05:57, có thể biết là cái nhu cầu tiếp theo đó
+0:05:54 - 0:05:59, của cái người dùng này có thể họ sẽ là
+0:05:57 - 0:06:01, mua những cái ốp Lư hoặc là mua mua
+0:05:59 - 0:06:05, những cái sticker để dán kèm theo thì
+0:06:01 - 0:06:07, đây là những cái gợi ý nhưng mà nó không
+0:06:05 - 0:06:10, liên quan trực tiếp đến cái món đồ mà họ
+0:06:07 - 0:06:12, đang muốn tìm kiếm mà nó lại liên quan
+0:06:10 - 0:06:15, một cách gián tiếp như vậy thì cái việc
+0:06:12 - 0:06:17, mà chúng ta gợi ý cho khách hàng á thì
+0:06:15 - 0:06:20, nó sẽ không thể có cái tính gọi là đúng
+0:06:17 - 0:06:22, hay sai à nó không thể dùng các yếu tố
+0:06:20 - 0:06:25, gọi là nhận diện đúng nhận diện sai mà
+0:06:22 - 0:06:27, nó sẽ phải dựa trên những cái yếu tố
+0:06:25 - 0:06:30, gián tiếp để đánh giá xem là cái việc
+0:06:27 - 0:06:32, gợi ý này là chính xác hay không thông
+0:06:30 - 0:06:35, qua việc chúng ta xem cái doanh thu của
+0:06:32 - 0:06:37, cái hãng này có tăng hay không rồi cái
+0:06:35 - 0:06:41, lợi nhuận của cái hãng này có tăng hay
+0:06:37 - 0:06:44, không khi chúng ta triển khai một cái mô
+0:06:41 - 0:06:46, hình vào bên trong cái điều kiện thực tế
+0:06:44 - 0:06:49, thì trên đây là một số
+0:06:46 - 0:06:51, cái giới thiệu về cái việc triển khai
+0:06:49 - 0:06:54, một cái mô hình máy học bao gồm là các
+0:06:51 - 0:06:56, cái phương thức mà triển khai đến người
+0:06:54 - 0:07:01, dùng cuối hoặc là các cái phương thức
+0:06:56 - 0:07:01, tương tác lên các cái hệ thống khác
+0:07:03 - 0:07:09, thì với cái hệ thống khác này á là chúng
+0:07:05 - 0:07:11, ta có phải có thể đưa cái mô hình của
+0:07:09 - 0:07:14, mình cho nhiều bên có thể sử dụng hoặc
+0:07:11 - 0:07:17, kể cả cho chính cái đơn vị của mình sử
+0:07:14 - 0:07:19, dụng luôn tức là một cái việc triển khai
+0:07:17 - 0:07:21, có thể dùng cho nhiều mục đích khác nhau
+0:07:19 - 0:07:24, và sau khi chúng ta triển khai xong thì
+0:07:21 - 0:07:26, chúng ta sẽ nhận những cái feedback của
+0:07:24 - 0:07:28, mô hình thông qua hai cái hình thức là
+0:07:26 - 0:07:32, trực tiếp là gián tiếp đối với hình thức
+0:07:28 - 0:07:35, trực tiếp thì người dùng sẽ chủ động họ
+0:07:32 - 0:07:35, sẽ chủ
+0:07:36 - 0:07:41, động đánh giá cái mô hình của mình là
+0:07:39 - 0:07:43, thiệt quả hay không là tốt hay không
+0:07:41 - 0:07:44, nhưng nó sẽ có một cái hình thức khác đó
+0:07:43 - 0:07:47, là bị
+0:07:44 - 0:07:50, động tức là chúng ta sẽ dựa trên những
+0:07:47 - 0:07:53, cái hành vi những cái số liệu một cách
+0:07:50 - 0:07:55, gián tiếp để xem xem là ví dụ như kể từ
+0:07:53 - 0:07:58, khi chúng ta triển khai cái mô hình máy
+0:07:55 - 0:08:00, học này lên thì cái doanh thu của một
+0:07:58 - 0:08:03, cái công ty nào đó mà có sử dụng cái
+0:08:00 - 0:08:07, tính năng mới về máy học này nó tăng lên
+0:08:03 - 0:08:11, lấy ví dụ như là các cái hãng
+0:08:07 - 0:08:14, về bán lẻ đó họ dự báo xem là trong cái
+0:08:11 - 0:08:16, ngày hôm nay thì cái số lượng sản phẩm
+0:08:14 - 0:08:18, Hoặc là những cái sản phẩm nào mà người
+0:08:16 - 0:08:20, ta quan tâm nhiều thì họ sẽ trưng bày
+0:08:18 - 0:08:22, các cái sản phẩm đó ra nhiều hơn còn
+0:08:20 - 0:08:24, những cái sản phẩm mà họ nhắm là trong
+0:08:22 - 0:08:26, Nhữ cái ngày hôm nay nó không có cái
+0:08:24 - 0:08:30, tính hiệu quả thì họ sẽ không có trưng
+0:08:26 - 0:08:33, bày ra nhiều ví dụ như là đến những cái
+0:08:30 - 0:08:36, dịp lễ hội chẳng hạn thì chúng ta sẽ dự
+0:08:33 - 0:08:39, đoán rằng là à các cái sản phẩm như là
+0:08:36 - 0:08:41, đồ ăn nhanh thức ăn nhanh thì tiêu thụ
+0:08:39 - 0:08:42, rất là nhanh chúng ta sẽ phải đóng gói
+0:08:41 - 0:08:45, chúng ta sẽ phải sản xuất những cái đồ
+0:08:42 - 0:08:47, ăn nhanh nhiều hơn hoặc là trong mùa mưa
+0:08:45 - 0:08:50, chẳng hạn chúng ta thấy là trời mưa thì
+0:08:47 - 0:08:51, cái nhu cầu sử dụng các cái dù hoặc là
+0:08:50 - 0:08:53, áo mưa nó tăng lên thì chúng ta phải
+0:08:51 - 0:08:57, trưng ra những cái sản phẩm đó nhiều hơn
+0:08:53 - 0:08:59, và gất đi những cái sản phẩm mà không
+0:08:57 - 0:09:01, phù hợp lắm với cái thời tiết của mình
+0:08:59 - 0:09:04, mình như
+0:09:01 - 0:09:06, vậy và chúng ta thấy rằng là những cái
+0:09:04 - 0:09:09, ứng dụng má học hiện nay á Nó đang xuất
+0:09:06 - 0:09:12, hiện ngày càng trở nên phổ biến nó phổ
+0:09:09 - 0:09:14, biến đến mức mà có thể là chúng ta còn
+0:09:12 - 0:09:16, không biết cái sự tồn tại của nó cái sự
+0:09:14 - 0:09:19, tồn tại của nó trong mắt của người dùng
+0:09:16 - 0:09:20, thì trong mắt người dùng có khi là Họ sẽ
+0:09:19 - 0:09:22, nhận thức được nhưng mà cũng có khi là
+0:09:20 - 0:09:24, họ không nhận thức được lấy ví dụ như là
+0:09:22 - 0:09:27, các cái hệ thống Quyến nghị Thì thực tế
+0:09:24 - 0:09:29, họ cũng không biết rằng đằng sau nó đang
+0:09:27 - 0:09:32, có một cái thực toán máy học đang được
+0:09:29 - 0:09:34, thực thi để mà gợi ý những cái sản phẩm
+0:09:32 - 0:09:36, cho họ đúng không Nhưng cũng có những
+0:09:34 - 0:09:39, cái ứng
+0:09:36 - 0:09:43, dụng mà họ có thể nhận thích được lấy ví
+0:09:39 - 0:09:45, dụ như là các cái hệ thống về nhận diệt
+0:09:43 - 0:09:47, giọng nói nè chúng ta có thể sử dụng
+0:09:45 - 0:09:49, nhận diện giọng nói để điều khiển một
+0:09:47 - 0:09:52, cái thiết bị di động hoặc là sử dụng
+0:09:49 - 0:09:54, nhận diện giọng nói để mở một cái chương
+0:09:52 - 0:09:58, trình đúng không thay vì chúng ta ngồi
+0:09:54 - 0:10:00, gõ bàn phím thì chúng ta có thể sử dụng
+0:09:58 - 0:10:05, tay à xi chúng ta có thể sử dụng giọng
+0:10:00 - 0:10:07, nói để mà ra lệnh và gõ các cái nội dung
+0:10:05 - 0:10:10, mà chúng ta muốn tìm kiếm vào bên trong
+0:10:07 - 0:10:13, máy tính một cách dễ dàng hơn
+0:10:10 - 0:10:15, rồi Ví dụ như cái hệ thống xếp hạng tín
+0:10:13 - 0:10:17, dụng ở đây thì cái người sử dụng chính
+0:10:15 - 0:10:19, là các cái nhân viên của các cái ngân
+0:10:17 - 0:10:22, hàng hoặc là các cái tổ chức tín dụng
+0:10:19 - 0:10:26, thì họ biết rằng là để ra được một cái
+0:10:22 - 0:10:29, mức tín dụng tín nhiệm của một cái người
+0:10:26 - 0:10:32, đánh bay á thì bên dưới nó sẽ là có một
+0:10:29 - 0:10:34, cái thực toán để xác định xem cái xếp
+0:10:32 - 0:10:37, hạng của người này là bao nhiêu thì hai
+0:10:34 - 0:10:39, cái ứng dụng này là người dùng sẽ nhận
+0:10:37 - 0:10:41, thức được nhưng nó sẽ có những cái ứng
+0:10:39 - 0:10:44, dụng mà không nhận thức được người dùng
+0:10:41 - 0:10:47, Đôi khi họ sẽ không biết là
+0:10:44 - 0:10:50, ờ tại sao nó lại có thể thực thi được
+0:10:47 - 0:10:53, lấy ví dụ như là ứng dụng new speit của
+0:10:50 - 0:10:56, Facebook là trên cái giao diện ứng dụng
+0:10:53 - 0:11:00, của mình thì âm thầm nó đã có một cái
+0:10:56 - 0:11:02, thuật toán đã chạy cho từng người và nó
+0:11:00 - 0:11:05, sẽ đưa những cái tin tức nào mà người ta
+0:11:02 - 0:11:07, mà cái thực toán đó nó nghĩ rằng là
+0:11:05 - 0:11:09, người dùng mạng xã hội họ sẽ quan tâm
+0:11:07 - 0:11:12, thì họ sẽ đưa những cái tin tức đó lên
+0:11:09 - 0:11:14, trên trên đầu tiên còn những cái tin tức
+0:11:12 - 0:11:17, nào mà họ nhắm rằng là người dùng người
+0:11:14 - 0:11:21, ta sẽ không quan tâm bằng thì nó sẽ để ở
+0:11:17 - 0:11:25, xuống dưới cùng và ở trên đây thì là một
+0:11:21 - 0:11:27, cái ứng dụng về hồi quy tức là chúng ta
+0:11:25 - 0:11:30, đo xem là thời gian để di chuyển từ một
+0:11:27 - 0:11:33, nơi từ một để điểm đến một địa điểm trên
+0:11:30 - 0:11:36, bản đồ Google m thì nó tốn cái thời gian
+0:11:33 - 0:11:38, là bao nhiêu thì có khi là người dùng Họ
+0:11:36 - 0:11:40, sẽ không biết được là tại sao nó ra được
+0:11:38 - 0:11:43, cái con số này thì đó chính
+0:11:40 - 0:11:45, là cái sự tồn tại của các cái môn hình
+0:11:43 - 0:11:48, máy học trong mắt của người dùng nó rất
+0:11:45 - 0:11:50, là đa dạng có thể họ nhận thức được hoặc
+0:11:48 - 0:11:52, là không nhận thức được nhưng mà nhìn
+0:11:50 - 0:11:54, chung chúng ta thấy là trong 5 năm 10
+0:11:52 - 0:11:56, năm trở lại đây thì các cái ứng dụng máy
+0:11:54 - 0:11:59, học nó đang ngày càng trở nên phổ biến
+0:11:56 - 0:12:01, hơn và người dùng đang ngày càng qu tâm
+0:11:59 - 0:12:04, hơn và họ đang ngày càng nhận thức được
+0:12:01 - 0:12:09, các cái ứng dụng này nó đang hiển hiện
+0:12:04 - 0:12:09, cho chúng ta ngày càng nhiều hơn

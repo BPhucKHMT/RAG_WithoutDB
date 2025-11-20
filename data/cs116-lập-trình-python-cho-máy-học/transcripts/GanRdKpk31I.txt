@@ -1,0 +1,273 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:13 - 0:00:19, Hôm nay thì chúng ta sẽ đến với bài số 5
+0:00:16 - 0:00:22, đó là bài đánh giá cái mô hình máy học
+0:00:19 - 0:00:26, như thế nào thì tại sao chúng ta lại tìm
+0:00:22 - 0:00:29, hiểu về cách đánh giá mô hình trước khi
+0:00:26 - 0:00:32, chúng ta học về một số cái mô hình máy
+0:00:29 - 0:00:34, học có rất nhiều cái lý do cái lý do đầu
+0:00:32 - 0:00:36, tiên đó là để mà có thể chọn lựa được
+0:00:34 - 0:00:38, một cái mô hình tốt Một cái mô hình phù
+0:00:36 - 0:00:41, hợp á thì chúng ta phải hiểu được cái
+0:00:38 - 0:00:44, bản chất của cái bài toán Mình đang muốn
+0:00:41 - 0:00:46, giải đó là gì và đồng thời chúng ta phải
+0:00:44 - 0:00:49, biết cái cách để mà đánh giá được xem
+0:00:46 - 0:00:51, cái kết quả này tốt hơn cái kết quả kia
+0:00:49 - 0:00:53, như thế nào như vậy thì chúng ta phải
+0:00:51 - 0:00:56, biết cái cách đánh giá bài toán trước
+0:00:53 - 0:00:58, khi chúng ta chọn lựa cái mô hình để
+0:00:56 - 0:01:00, giải quyết cái bài toán đó đó là lý do
+0:00:58 - 0:01:02, tại sao chúng ta đưa cái bài số đánh giá
+0:01:00 - 0:01:05, mô hình lên trước cái bài xây dựng một
+0:01:02 - 0:01:07, cái mô hình máy học thì nội dung của
+0:01:05 - 0:01:10, ngày hôm nay bao gồm các cái thành phần
+0:01:07 - 0:01:12, đó là tại sao chúng ta lại phải đánh giá
+0:01:10 - 0:01:15, một cái mô hình rồi các cái độ đo đánh
+0:01:12 - 0:01:17, giá cho bài toán hồi quy rồi độ đo đánh
+0:01:15 - 0:01:20, giá cho bài toán phân lớp thì đây là hai
+0:01:17 - 0:01:22, cái loại bài toán mà rất là phổ biến
+0:01:20 - 0:01:25, hiện nay khi mà chúng ta xây dựng một
+0:01:22 - 0:01:27, cái mô hình máy học rồi quy trình đánh
+0:01:25 - 0:01:29, giá khách quan là gì đó thì ở đây chúng
+0:01:27 - 0:01:33, ta sẽ có cái khái niệm là quy trình hoặc
+0:01:29 - 0:01:33, là và tên tiếng Anh nó gọi là
+0:01:34 - 0:01:41, protocol rồi thì tại sao chúng ta cần
+0:01:38 - 0:01:43, phải đánh giá một cái mô hình đó là để
+0:01:41 - 0:01:46, chúng ta xác thực được cái mô hình của
+0:01:43 - 0:01:49, mình có thật sự Hiệu quả hay không đó mô
+0:01:46 - 0:01:53, hình của mình nó đoán chính xác hay là
+0:01:49 - 0:01:56, nó chỉ nhớ dữ liệu huấn luyện tức là có
+0:01:53 - 0:01:58, rất nhiều cái tình huống là mô hình của
+0:01:56 - 0:02:00, mình nó cho kết quả tốt đưa ra được cái
+0:01:58 - 0:02:02, phán đoán đúng như là cái chúng ta mong
+0:02:00 - 0:02:05, muốn nhưng đó chỉ là thực hiện trên cái
+0:02:02 - 0:02:07, dữ liệu huấn luyện thôi Còn khi chúng ta
+0:02:05 - 0:02:11, thực hiện trên những cái tập dữ liệu mới
+0:02:07 - 0:02:13, hoàn toàn nó chưa bao giờ thấy đó thì nó
+0:02:11 - 0:02:15, không có thực hiện được chính xác nữa
+0:02:13 - 0:02:18, thì đó cũng chính là cái hiện tượng ta
+0:02:15 - 0:02:20, gọi là overfitting và overfitting là một
+0:02:18 - 0:02:22, trong những cái vấn đề lớn mà các cái mô
+0:02:20 - 0:02:26, hình máy học cần phải giải
+0:02:22 - 0:02:28, quyết tiếp theo đó là cái việc đánh giá
+0:02:26 - 0:02:31, mô hình sẽ giúp cho chúng ta có thể chọn
+0:02:28 - 0:02:32, lựa ra được cái mô hình tốt nhất Nó sẽ
+0:02:31 - 0:02:34, giúp cho chúng ta chọn lựa được cái mô
+0:02:32 - 0:02:36, hình tốt nhất tại vì nó cho phép chúng
+0:02:34 - 0:02:38, ta có thể so sánh được rất nhiều các cái
+0:02:36 - 0:02:41, mô hình với nhau đúng không Ví dụ mô
+0:02:38 - 0:02:43, hình decision tre với mô hình caris
+0:02:41 - 0:02:47, neighbor với mô hình random Forest thì
+0:02:43 - 0:02:48, cái mô hình nào cho cái kết quả nó tốt
+0:02:47 - 0:02:51, hơn một cách định lượng thì chúng ta sẽ
+0:02:48 - 0:02:54, chọn cái mô hình đó như vậy thì đó chính
+0:02:51 - 0:02:57, là một cái tiêu chí để mà chúng ta lựa
+0:02:54 - 0:02:59, Hóa đánh giá được cái sự cao thấp giữa
+0:02:57 - 0:03:02, cái sự cao thấp về mặt độ chính xác giữa
+0:02:59 - 0:03:04, các cái mô hình với nhau à tức là nó thể
+0:03:02 - 0:03:06, thực hiện một cái việc so sánh một cách
+0:03:04 - 0:03:09, định lượng so sánh một cách định lượng
+0:03:06 - 0:03:10, thay vì chúng ta chỉ là làm một cái so
+0:03:09 - 0:03:13, sách định tính bằng cách là chúng ta đưa
+0:03:10 - 0:03:15, vào một vài mẫu và chúng ta cảm giác là
+0:03:13 - 0:03:18, mô hình a tốt hơn mô hình B nhưng mà cái
+0:03:15 - 0:03:20, cách đó thì nó sẽ không có hiệu quả Còn
+0:03:18 - 0:03:22, cái việc mà sử dụng các cái độ đo à
+0:03:20 - 0:03:24, những cái phép so sánh và định lượng á
+0:03:22 - 0:03:26, thì giúp cho chúng ta có cái số liệu
+0:03:24 - 0:03:28, tinh cậy khách quan để mà biết được là
+0:03:26 - 0:03:30, mô hình nào tốt hơn mô hình nào để từ đó
+0:03:28 - 0:03:33, chúng ta có thể chọn được cái mô hình
+0:03:30 - 0:03:36, tốt nhất cho mình và việc đánh giá mô
+0:03:33 - 0:03:39, hình thì sẽ tạo ra cái sự tin cậy cái sự
+0:03:36 - 0:03:42, tin cậy này á nó sẽ đến trong chính cái
+0:03:39 - 0:03:45, nội bộ cái team phát triển cái hệ thống
+0:03:42 - 0:03:47, hoặc cũng là cái sự tin cậy đối với
+0:03:45 - 0:03:49, khách hàng nếu như chúng ta đưa cho
+0:03:47 - 0:03:51, khách hàng chúng ta chứng minh với khách
+0:03:49 - 0:03:54, hàng rằng là cái mô hình của mình đã
+0:03:51 - 0:03:57, được triển khai có cái độ chính xác là
+0:03:54 - 0:03:59, 80 ph trên các cái dữ liệu với một cái
+0:03:57 - 0:04:01, quy trình rất là khách quan như thế này
+0:03:59 - 0:04:03, thế kia thì khách hàng họ sẽ cảm thác
+0:04:01 - 0:04:06, cảm giác là chúng ta thực hiện một cách
+0:04:03 - 0:04:08, khoa học và có cái sự tin tưởng trong
+0:04:06 - 0:04:11, cái việc mà triển khai ứng dụng lên trên
+0:04:08 - 0:04:13, thực tế đó như vậy thì cái sự tin kệ này
+0:04:11 - 0:04:16, nó còn thể hiện được cái sự ổn định của
+0:04:13 - 0:04:18, mô hình cái sự đáng tin của mô hình khi
+0:04:16 - 0:04:21, triển khai trong thực tế hay không đó
+0:04:18 - 0:04:24, chính là cái sự tin cậy và tiếp theo đó
+0:04:21 - 0:04:26, chính là nó sẽ giúp cho chúng ta định
+0:04:24 - 0:04:29, hướng được cái cách thức để cải thiện mô
+0:04:26 - 0:04:31, hình cái việc mà chúng ta thử nghiệm với
+0:04:29 - 0:04:33, rất nhiều những cái độ đo khác nhau đúng
+0:04:31 - 0:04:35, không có rất nhiều những cái độ đo đánh
+0:04:33 - 0:04:38, giá khác nhau Ví dụ như chúng ta có cái
+0:04:35 - 0:04:42, độ đo là
+0:04:38 - 0:04:42, rec hoặc là
+0:04:43 - 0:04:48, precision chúng ta thấy là resis rất cao
+0:04:46 - 0:04:50, nhưng mà cái record rất thấp thì chúng
+0:04:48 - 0:04:52, ta biết là à Như vậy là cái bước tiếp
+0:04:50 - 0:04:55, theo để mà cải tiến cái mô hình này là
+0:04:52 - 0:04:58, chúng ta phải đi cải thiện cái rec Tức
+0:04:55 - 0:05:00, là cái độ Phủ kết quả của mình thì cái
+0:04:58 - 0:05:03, việc mà biết được là mô hình của mình nó
+0:05:00 - 0:05:05, đang mạnh chỗ nào yếu chỗ nào thì nó sẽ
+0:05:03 - 0:05:07, giúp cho chúng ta đề ra được cái phương
+0:05:05 - 0:05:10, hướng nó đề ra được cái phương hướng là
+0:05:07 - 0:05:11, sẽ cải tiến cái mô hình tiếp theo trong
+0:05:10 - 0:05:16, tương lai như thế
+0:05:11 - 0:05:19, nào và đến đây thì chúng ta sẽ bắt đầu
+0:05:16 - 0:05:22, đi đến phân biệt hai cái bài toán mà
+0:05:19 - 0:05:25, kinh điển cũng như là được đề cập rất là
+0:05:22 - 0:05:28, nhiều trong các cái mô hình máy học hiện
+0:05:25 - 0:05:31, đại hiện nay đó chính là mô hình hồi quy
+0:05:28 - 0:05:34, regression là phân lớp classification
+0:05:31 - 0:05:37, Thế thì đối với một số người thì chúng
+0:05:34 - 0:05:40, ta hiểu cái cách rất là đơn giản đó là
+0:05:37 - 0:05:43, hồi quy chính là cái bài toán mà cái đầu
+0:05:40 - 0:05:44, ra của cái dữ liệu của mình đầu ra của
+0:05:43 - 0:05:47, cái dữ liệu của mình đó là những cái giá
+0:05:44 - 0:05:49, trị liên tục còn đối với cái bài toán
+0:05:47 - 0:05:52, phân lớp thì cái đầu ra của mình đó là
+0:05:49 - 0:05:55, chính là những cái giá trị rời đạt thì
+0:05:52 - 0:06:02, đây là một cái cách hiểu rất là nô na
+0:05:55 - 0:06:04, rất là nó ngắn gọi là dễ hiểu và nhanh
+0:06:02 - 0:06:06, thì là chúng ta dùng hai cái khái niệm
+0:06:04 - 0:06:09, liên tục và rạt cho cái giá trị giữ la
+0:06:06 - 0:06:12, cho cái giá trị đầu ra của cái mô hình
+0:06:09 - 0:06:13, Tuy nhiên thì với cái định nghĩa này với
+0:06:12 - 0:06:16, cái cách phân biệt này thì chúng ta hãy
+0:06:13 - 0:06:18, thử trả lời cái câu hỏi đó là bài toán
+0:06:16 - 0:06:21, dự đoán tuổi là bài toán hồi quy hay
+0:06:18 - 0:06:24, phân lớp đây là bài toán hồi quy hay
+0:06:21 - 0:06:28, phân lớp ví dụ Chúng ta có ảnh đầu vào
+0:06:24 - 0:06:31, của một người nào đó và chúng ta sẽ đoán
+0:06:28 - 0:06:33, xem là với cái gương mặt này thì cái
+0:06:31 - 0:06:36, tuổi của mình sẽ là bao nhiêu tuổi đó ví
+0:06:33 - 0:06:38, dụ như cái cô gái n bên trái tuổi là 25
+0:06:36 - 0:06:40, cô gái bên phải tuổi là
+0:06:38 - 0:06:44, 23 thì rõ ràng
+0:06:40 - 0:06:46, à một số người sẽ nói đó là bài toán hồi
+0:06:44 - 0:06:49, quy nhưng mà một số người sẽ nói đó là
+0:06:46 - 0:06:50, bài toán full lớ đó như vậy là chúng ta
+0:06:49 - 0:06:53, sẽ có hai cái luồng ý kiến trái chiều
+0:06:50 - 0:06:57, nhau những người nói đây là bài toán hồi
+0:06:53 - 0:06:59, quy là vì các cái giá trị của mình nó là
+0:06:57 - 0:07:02, những cái giá trị liên tục đúng không ví
+0:06:59 - 0:07:05, dụ như là từ 0 cho đến cái người mà có
+0:07:02 - 0:07:07, thể là cao tuổi nhất mà mình biết là 150
+0:07:05 - 0:07:09, tuổi đi Chẳng hạn có người sẽ nhận xét
+0:07:07 - 0:07:13, là ừ tuổi nó là các cái giá trị nó liên
+0:07:09 - 0:07:16, tục từ 0 cho đến 150 nhưng cũng có một
+0:07:13 - 0:07:18, số người thì nói rằng đây là một đại
+0:07:16 - 0:07:20, toán ph lớ tại vì cái tuổi của mình á Nó
+0:07:18 - 0:07:21, nằm trong một cái tập hợp chứ nó không
+0:07:20 - 0:07:25, phải là nằm trong cái giải giá trị liên
+0:07:21 - 0:07:29, tục nó nằm trong tập hợp là 0 1 2 cho
+0:07:25 - 0:07:31, đến 150 mà đây là những cái giá trị rời
+0:07:29 - 0:07:31, rạt
+0:07:32 - 0:07:38, Tại vì nó là số nguyên nó là số
+0:07:35 - 0:07:42, nguyên còn giá trị liên tục thì người ta
+0:07:38 - 0:07:44, sẽ phải hiểu đó là số thực đó thì nó sẽ
+0:07:42 - 0:07:47, có hai cái luồng ý kiến như vậy Vậy thì
+0:07:44 - 0:07:51, ý kiến nào đúng thì chúng ta sẽ có một
+0:07:47 - 0:07:55, cái cách phân biệt rõ ràng hơn à đầu
+0:07:51 - 0:07:58, tiên đó là hồi quy là bài toán mà với
+0:07:55 - 0:08:02, hai cái giá trị output bất kỳ Ví dụ như
+0:07:58 - 0:08:04, chúng ta có hai cái giá trị là i1 và I2
+0:08:02 - 0:08:07, mất kỳ
+0:08:04 - 0:08:10, ha thì chúng ta có thể thực hiện được
+0:08:07 - 0:08:13, cái phép so sánh đó là so sánh lớn bé
+0:08:10 - 0:08:16, bằng và khác như vậy thì nếu như hai cái
+0:08:13 - 0:08:19, giá trị output bất kỳ của cái bài toán
+0:08:16 - 0:08:21, đó mà chúng ta có thể thực hiện được có
+0:08:19 - 0:08:24, thể thực hiện được tất cả thực hiện được
+0:08:21 - 0:08:27, tất cả các cái phép so sánh lớn bé bằng
+0:08:24 - 0:08:29, khác thì đó chính là bài toán hội quy
+0:08:27 - 0:08:32, còn đối với cái bài toán phân lớp thì
+0:08:29 - 0:08:35, hai cái giá trị output bất kỳ chỉ có thể
+0:08:32 - 0:08:38, chỉ có thể thực hiện được cái phép so
+0:08:35 - 0:08:40, sánh bằng hoặc là khác thì nó sẽ là bài
+0:08:38 - 0:08:44, toán ph up
+0:08:40 - 0:08:45, vậy vậy đáp án của cái bài toán dự đoán
+0:08:44 - 0:08:49, tuổi của mình đó chính là bài toán hồi
+0:08:45 - 0:08:51, quy tại sao tại vì ví dụ ở trên hình này
+0:08:49 - 0:08:53, chúng ta thấy là hai cái người này một
+0:08:51 - 0:08:56, người là 25 tuổi và một người là 23 tuổi
+0:08:53 - 0:08:59, thì đây chính là hai cái giá trị i1 và
+0:08:56 - 0:09:02, I2 mà chúng ta đã đề cập ở trên ha
+0:08:59 - 0:09:04, thì cái thao tác chúng ta có thể thực
+0:09:02 - 0:09:07, hiện được cái theo tác So sánh lớn so
+0:09:04 - 0:09:10, sánh bé đúng không Ví dụ như 25 là lớn
+0:09:07 - 0:09:12, hơn 23 tuổi thì đây là một cái thao tác
+0:09:10 - 0:09:14, So sánh lớn bé được nó cũng đồng thời
+0:09:12 - 0:09:18, cũng có thể so sánh là 25
+0:09:14 - 0:09:20, Ờ Bằng hoặc là khác so với lại 23 như
+0:09:18 - 0:09:22, vậy có thể thực hiện sao thao tắc Bằng
+0:09:20 - 0:09:24, và theo tắc khác được như vậy thì đây sẽ
+0:09:22 - 0:09:27, là bài toán hồi Q Vì nó có thể thực hiện
+0:09:24 - 0:09:29, được các cái phép so sánh là lớn hơn bé
+0:09:27 - 0:09:31, hơn bằng khá
+0:09:29 - 0:09:32, còn tương tự như vậy thì chúng ta sẽ có
+0:09:31 - 0:09:35, cái bài
+0:09:32 - 0:09:38, toán đoán cái đối tượng đoán cái đối
+0:09:35 - 0:09:41, tượng là chó hay mèo ví dụ đầu vào của
+0:09:38 - 0:09:42, mình sẽ có một cái tấm hình đó là hình
+0:09:41 - 0:09:45, của một con vật và chúng ta sẽ đoán xem
+0:09:42 - 0:09:47, đó là chó hay mèo thì ra rng hai cái đối
+0:09:45 - 0:09:50, tượng chó mèo đó là bài toán phân loại
+0:09:47 - 0:09:52, đúng không Tại sao lại như vậy Tại vì
+0:09:50 - 0:09:55, chúng ta chỉ có thể thực hiện được thao
+0:09:52 - 0:09:56, tác là bằng và khác thôi chứ chúng ta
+0:09:55 - 0:10:00, không thể thực hiện được cái thao tác là
+0:09:56 - 0:10:03, lớn bé chúng ta không thể nào nói là chó
+0:10:00 - 0:10:05, thì lớn hơn mèo đúng không có người sẽ
+0:10:03 - 0:10:07, nói ừ chó lớn hơn mèo không có những con
+0:10:05 - 0:10:09, chó nó vẫn bé hơn con mèo mà về K xét K
+0:10:07 - 0:10:11, thước đó chúng ta không thể nói là chó
+0:10:09 - 0:10:14, bé hơn mèo chó lớn hơn mèo chúng ta chỉ
+0:10:11 - 0:10:16, có thể nói là chó à cái này là không
+0:10:14 - 0:10:22, được ha chúng ta chỉ có thể nói là chó
+0:10:16 - 0:10:24, là bằng chó rồi chó khác mèo như vậy là
+0:10:22 - 0:10:26, ở đây chúng ta chỉ thực hiện được sa
+0:10:24 - 0:10:28, thao tác là bằng và khác thôi Thì đó
+0:10:26 - 0:10:31, chính là bài toán phân loại đối tượng
+0:10:28 - 0:10:35, hay là là bài toán phân
+0:10:31 - 0:10:37, lớp rồi Vậy thì ờ Tại sao chúng ta cần
+0:10:35 - 0:10:40, phải thực hiện cái công việc là phân
+0:10:37 - 0:10:42, biệt bài toán cho đúng à chúng ta cần
+0:10:40 - 0:10:44, phải thực hiện cái việc phân biệt cái
+0:10:42 - 0:10:46, bài toán cho đúng là vì để chọn được cái
+0:10:44 - 0:10:49, hàm mục tiêu huấn luyện cái hàm huấn
+0:10:46 - 0:10:51, luyện cho nó phù hợp Chúng ta sẽ chọn
+0:10:49 - 0:10:55, được cái hàm mục tiêu huấn luyện phù hợp
+0:10:51 - 0:11:00, hay còn gọi là các cái hàm loss các cái
+0:10:55 - 0:11:05, hàm loss hay là hàm độ lỗi hàm mất mát
+0:11:00 - 0:11:05, hàm lỗi hoặc là hàm mất
+0:11:07 - 0:11:13, mát thì cái việc mà chúng ta chọn lượ
+0:11:10 - 0:11:15, chúng ta phân biệt được bài toán là phân
+0:11:13 - 0:11:18, lớp thì chúng ta sẽ chọn được những cái
+0:11:15 - 0:11:20, hàm loss hàm lỗi hàm mất m là tương ứng
+0:11:18 - 0:11:24, với lại bài toán phân
+0:11:20 - 0:11:26, lớp rồi chúng ta biết được bài toán đó
+0:11:24 - 0:11:29, là bài toán hồi quy thì nó sẽ giúp cho
+0:11:26 - 0:11:31, chúng ta chọn lựa được cái hàm mất mát
+0:11:29 - 0:11:34, hoặc là cái hàm mục tiêu phù hợp với lại
+0:11:31 - 0:11:38, cái bài toán hồi quy đó thì đó là cái ý
+0:11:34 - 0:11:40, thứ nhất ý thứ hai đó là khi chúng ta đã
+0:11:38 - 0:11:44, xây dựng được một cái mô hình máy học
+0:11:40 - 0:11:46, rồi thì tùy vào cái bài toán là bài toán
+0:11:44 - 0:11:49, phân loại hay là bài toán phân lớp mà
+0:11:46 - 0:11:52, chúng ta sẽ chọn lựa cái độ đo đánh giá
+0:11:49 - 0:11:54, nó phù hợp đó độ đo lưu ý độ đo đánh giá
+0:11:52 - 0:11:56, nó khác với cái hàm mục tiêu hàm mục
+0:11:54 - 0:11:59, tiêu thì liên quan trực tiếp đến cái
+0:11:56 - 0:12:01, việc là huấn luyện mô hình còn ở đây là
+0:11:59 - 0:12:05, độ đau đánh giá là chỉ đơn giản là để
+0:12:01 - 0:12:08, đánh giá xem cái mô hình của mình là mô
+0:12:05 - 0:12:10, hình nào tốt hơn mô hình nào thì như vậy
+0:12:08 - 0:12:13, thì nó sẽ giúp cho chúng ta đánh giá nó
+0:12:10 - 0:12:16, khách quan hơn phù hợp hơn đó thì mỗi
+0:12:13 - 0:12:19, một cái bài toán nó sẽ có một cái độ đo
+0:12:16 - 0:12:19, đánh giá khác nhau

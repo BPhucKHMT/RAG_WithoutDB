@@ -1,0 +1,298 @@
+0:00:00 - 0:00:06, và chúng ta sẽ có bốn cái loại thông tin
+0:00:04 - 0:00:10, khi chúng ta Giám sát cái mô hình để
+0:00:06 - 0:00:12, kiểm tra xem là có cái sự biến động của
+0:00:10 - 0:00:14, cái mô hình của mình hay không á hoặc là
+0:00:12 - 0:00:17, của cái dữ liệu của mình hay không thì
+0:00:14 - 0:00:20, chúng ta sẽ có Ờ có thể giám sát mô hình
+0:00:17 - 0:00:22, với bốn cái loại thông tin sau cái thông
+0:00:20 - 0:00:26, tin từ trên xuống dưới thì chúng ta sẽ
+0:00:22 - 0:00:28, thấy là cái mức độ thông tin mức độ
+0:00:26 - 0:00:31, thông tin informative của mình nó sẽ
+0:00:28 - 0:00:35, càng lúc càng giảm giờ
+0:00:31 - 0:00:39, nhưng đồng thời là từ trên xuống thì cái
+0:00:35 - 0:00:41, cách mà chúng ta đo lường á là nó cái độ
+0:00:39 - 0:00:44, khó của nó nó sẽ càng lúc nó càng tăng
+0:00:41 - 0:00:48, lên càng xuống dưới thì cái xin lỗi càng
+0:00:44 - 0:00:50, xuống dưới thì cái cách mà chúng ta đo
+0:00:48 - 0:00:52, lường nó sẽ càng dễ và càng lên trên thì
+0:00:50 - 0:00:56, cái cách đo lường của chúng ta sẽ càng
+0:00:52 - 0:00:58, khó và về yếu tố thông tin thì càng lên
+0:00:56 - 0:01:02, trên thì cái lượng thông tin của chúng
+0:00:58 - 0:01:04, ta đó có có nhiều thông tin hơn còn càng
+0:01:02 - 0:01:06, phía dưới thì cái lượng thông tin của
+0:01:04 - 0:01:08, chúng ta nó sẽ càng ít hơn thì điều này
+0:01:06 - 0:01:11, nó cũng là một cái yếu tố cân nh cân
+0:01:08 - 0:01:13, bằng cái gì mà khó đo lường thì nó sẽ có
+0:01:11 - 0:01:15, cái thông tin nó nhiều hơn và cái gì mà
+0:01:13 - 0:01:18, nó dễ đo lường thì cái lượng thông tin
+0:01:15 - 0:01:22, của nó ít hơn thì đầu tiên đó đó chính
+0:01:18 - 0:01:27, là các cái mod matric tức là các cái độ
+0:01:22 - 0:01:30, đo để đánh giá hiệu năng à mô hình của
+0:01:27 - 0:01:34, mô hình ví dụ như độ đ đo về độ chính
+0:01:30 - 0:01:36, xác hoặc là cái độ đo về sai số cho cái
+0:01:34 - 0:01:43, việc chữ đoán trên các cái bài toán hồi
+0:01:36 - 0:01:43, quy ví dụ độ Đo mse độ Đo về khoảng
+0:01:48 - 0:01:55, cách thì đây là các cái độ đo mà dùng
+0:01:53 - 0:01:57, phổ biến để đánh giá cái mô hình của
+0:01:55 - 0:02:01, mình do đó thì ở đây chúng ta sẽ không
+0:01:57 - 0:02:05, có thảng luận lại TH cách mà chúng
+0:02:01 - 0:02:08, ta Giám sát cái mô hình dựa trên các cái
+0:02:05 - 0:02:10, độ đo này nó cũng hoàn toàn tương tự như
+0:02:08 - 0:02:11, cái cách mà chúng ta giám sát mô hình
+0:02:10 - 0:02:15, chúng ta đánh giá mô hình trong cái quá
+0:02:11 - 0:02:18, trình mà huấn luyện cũng như là tìm ra
+0:02:15 - 0:02:22, những cái bộ tham số tốt nhất cho cái mô
+0:02:18 - 0:02:25, hình của mình và cái loại matric tiếp
+0:02:22 - 0:02:27, theo cũng khá là thú vị đó chính là
+0:02:25 - 0:02:30, business matric bình thường á thì mình
+0:02:27 - 0:02:32, sử dụng các cái độ đo mang tính chất gọi
+0:02:30 - 0:02:35, là độ đo khoa
+0:02:32 - 0:02:40, học độ đo về chính xác độ đo về khoảng
+0:02:35 - 0:02:42, cách đúng không độ phủ vân vân thì đó là
+0:02:40 - 0:02:46, những cái độ đo khoa hợp và đó là những
+0:02:42 - 0:02:49, độ đo Chuẩn nhưng mà có nhiều tình huống
+0:02:46 - 0:02:51, chúng ta sẽ rất khó để có thể đánh giá
+0:02:49 - 0:02:54, được cái độ chính xác của cái mô hình
+0:02:51 - 0:02:57, lấy ví dụ như cho cái bài toán
+0:02:54 - 0:03:01, về gợi ý cái sản phẩm recommendation
+0:02:57 - 0:03:03, system thì không biết là một cái gợi ý
+0:03:01 - 0:03:05, là đúng hay sai chúng ta sẽ rất khó để
+0:03:03 - 0:03:10, có thể xác định rất khó để mà có thể gán
+0:03:05 - 0:03:13, nhãn được v thì ở đây chúng ta sẽ phải
+0:03:10 - 0:03:15, sử dụng những cái yếu tố về kinh doanh
+0:03:13 - 0:03:19, Ví dụ như khi từ khi chúng ta vận hành
+0:03:15 - 0:03:22, cái hệ thống gợi ý sản phẩm thì chúng ta
+0:03:19 - 0:03:25, thấy là cái doanh thu của mình giảm
+0:03:22 - 0:03:28, xuống Tức là cái việc gợi ý này nó không
+0:03:25 - 0:03:30, hiệu quả Nhưng mà đồng thời Ngược lại
+0:03:28 - 0:03:33, nếu như cái doanh thu của mình nó tăng
+0:03:30 - 0:03:35, lên kể từ khi mình áp dụng cái mô hình
+0:03:33 - 0:03:38, gởi sản phẩm này thì điều đó chứng tỏ
+0:03:35 - 0:03:41, cho thấy là mô hình của mình nó đã có
+0:03:38 - 0:03:44, những cái sự phản hồi tích cực đối với
+0:03:41 - 0:03:47, cái thuật bán mà mình đã triển khai đó
+0:03:44 - 0:03:51, thì đây là một cái loại độ đo khá là thú
+0:03:47 - 0:03:53, vị nó liên quan đến yếu tố về hiệu quả
+0:03:51 - 0:03:58, của mô hình về mặt kinh
+0:03:53 - 0:04:00, tế và một cái kiểu nữa đó Cái loại thông
+0:03:58 - 0:04:03, tin nữa để chúng ta có thể giám sát đó
+0:04:00 - 0:04:05, chính là Model input và
+0:04:03 - 0:04:09, prediction cái này thì nó giống như là
+0:04:05 - 0:04:12, chúng ta sẽ giám sát xem với những cái
+0:04:09 - 0:04:15, đầu vào và những cái đầu ra dự đoán của
+0:04:12 - 0:04:18, mô hình nó có đáp ứng được với lại
+0:04:15 - 0:04:21, cái cái định dạng của cái hệ thống hay
+0:04:18 - 0:04:23, không Tức là chúng ta sẽ kiểm tra xem
+0:04:21 - 0:04:26, khi mô hình vận hành thì cái dữ liệu đầu
+0:04:23 - 0:04:29, vào của mình đưa vào nó có đúng hay
+0:04:26 - 0:04:31, không rồi cái dữ liệu đầu ra cái dữ điệu
+0:04:29 - 0:04:34, phán đoán của mình nó ra đúng cái định
+0:04:31 - 0:04:37, dạng hay không đồng thời đó là
+0:04:34 - 0:04:39, cái kết quả của mình nó có phù hợp hay
+0:04:37 - 0:04:42, không thì đó gọi
+0:04:39 - 0:04:44, là đánh giá về cái input và cái
+0:04:42 - 0:04:47, prediction Tức là cái input và cái
+0:04:44 - 0:04:50, output của mình Cuối cùng đó chính là
+0:04:47 - 0:04:52, cái system performance Tức là cái hiệu
+0:04:50 - 0:04:56, năng của hệ thống thì cái hiệu năng của
+0:04:52 - 0:04:57, hệ thống này nó có thể là cái tốc độ
+0:04:56 - 0:05:00, thực
+0:04:57 - 0:05:05, thi hoặc là cái T
+0:05:00 - 0:05:07, Nguyên mà mình sử dụng của hệ thống Ví
+0:05:05 - 0:05:10, dụ như kể từ khi chúng ta triển khai cái
+0:05:07 - 0:05:12, mô hình thì chúng ta thấy là cái mô hình
+0:05:10 - 0:05:15, của mình à Xin lỗi cái hệ thống của mình
+0:05:12 - 0:05:18, nó bị quá tải nhiều hơn cái quá tải này
+0:05:15 - 0:05:22, nó thể hiện ở việc là cái Lượng tài
+0:05:18 - 0:05:26, nguyên tính toán nó tăng lên hoặc là cái
+0:05:22 - 0:05:29, tốc độ thực thi nó chậm hơn hoặc là cái
+0:05:26 - 0:05:32, số lượng GPU nó được sử dụng tại một
+0:05:29 - 0:05:35, thời điểm nhiều hơn cái tỷ lệ phần trăm
+0:05:32 - 0:05:38, của cái lượng CPU sử dụng là cái lượng
+0:05:35 - 0:05:41, ram mà chúng ta sử dụng nó nhiều hơn dẫn
+0:05:38 - 0:05:44, đến là cái mô hình của mình à Nó gây hại
+0:05:41 - 0:05:46, cho cái hệ thống của mình về mặt hiệu n
+0:05:44 - 0:05:51, thì bây giờ chúng ta sẽ nhìn từ trên
+0:05:46 - 0:05:55, xuống dưới ha hai cái nhóm đầu tiên á đó
+0:05:51 - 0:05:58, chính là m Model Matrix và business
+0:05:55 - 0:06:01, matric thì để làm được hai để mà có thể
+0:05:58 - 0:06:03, đánh giá được
+0:06:01 - 0:06:04, hai cái thông tin này thể giám sát được
+0:06:03 - 0:06:06, hai cái thông tin này thì chúng ta cần
+0:06:04 - 0:06:10, phải xây dựng một cái bộ
+0:06:06 - 0:06:12, rot đây sẽ là một cái bộ dữ liệu rất là
+0:06:10 - 0:06:14, quan trọng để giúp cho chúng ta có thể
+0:06:12 - 0:06:17, đánh giá một cách khách
+0:06:14 - 0:06:19, quan muốn mà có được đánh giá tính toán
+0:06:17 - 0:06:21, ra được những cái Matrix này thì chúng
+0:06:19 - 0:06:25, ta phải có cái dữ liệu
+0:06:21 - 0:06:27, r rồi đối với hai cái loại matric này
+0:06:25 - 0:06:30, business matric và Model input và
+0:06:27 - 0:06:33, prediction thì ở đây nó chỉ mang tính
+0:06:30 - 0:06:33, chất là tương
+0:06:33 - 0:06:39, đối Dạ và đối với hai cái hình thức cuối
+0:06:37 - 0:06:43, cùng thì chúng ta thấy đó là cái hàm
+0:06:39 - 0:06:46, lượng thông tin của mình nó sẽ ít hơn
+0:06:43 - 0:06:50, cái l hàm lượng thông tin của mình nó sẽ
+0:06:46 - 0:06:53, sẽ ít hơn hai cái phần đầu tiên hai cái
+0:06:50 - 0:06:55, cái thông tin đầu tiên thì nó sẽ cho cái
+0:06:53 - 0:06:58, Ờ cái thông tin của mình nó nhiều hơn
+0:06:55 - 0:07:00, như bù lại để mà có thể đo được hai cái
+0:06:58 - 0:07:03, này thì nó nó sẽ khó hơn cái khó nó nằm
+0:07:00 - 0:07:06, ở chỗ đó là làm sao chúng ta có được một
+0:07:03 - 0:07:08, cái bộ r tr chuẩn làm sao chúng ta có
+0:07:06 - 0:07:11, thể đánh giá được cái mô hình cái hiệu
+0:07:08 - 0:07:14, quả kinh tế của mô hình của mình là tốt
+0:07:11 - 0:07:18, hay xấu thì đây chính là những cái yếu
+0:07:14 - 0:07:21, tố gây ra ờ trở ngại cho cái quá trình
+0:07:18 - 0:07:24, mà đánh giá mô hình của mình có nhiều
+0:07:21 - 0:07:27, khi cái độ đo này Công thức tính thì rất
+0:07:24 - 0:07:30, là rõ ràng nhưng mà cái gán giảng này nè
+0:07:27 - 0:07:34, thì không hẳn Lúc nào nó cũng đúng nó bị
+0:07:30 - 0:07:36, yếu tối chủ quan bởi cái người gá nhãn
+0:07:34 - 0:07:39, đó thì đó là một số cái loại thông tin
+0:07:36 - 0:07:43, được sử dụng để khảo sát cho cái mô
+0:07:39 - 0:07:46, hình và làm sao để có thể giám sát cái
+0:07:43 - 0:07:49, mô hình một cách gọi là hiệu quả thì
+0:07:46 - 0:07:51, chúng ta sẽ chia cái trục thời gian của
+0:07:49 - 0:07:54, mình ra chia cái trục thời gian của mình
+0:07:51 - 0:07:57, ra vào cái thời điểm đầu á thì chúng ta
+0:07:54 - 0:07:59, sẽ thực hiện cái bước số một đó là chúng
+0:07:57 - 0:08:02, ta sẽ chọn một cái phạm vi hay là một
+0:07:59 - 0:08:04, cái cửa sổ một cái Window của cái dữ
+0:08:02 - 0:08:08, liệu mà chúng ta được cho đó là
+0:08:04 - 0:08:12, tốt tức là chúng ta cho rằng cái dữ liệu
+0:08:08 - 0:08:14, này là tốt tổng quát và phù hợp đó thì
+0:08:12 - 0:08:16, cái dữ liệu này sẽ được sử dụng để làm
+0:08:14 - 0:08:16, tham
+0:08:17 - 0:08:24, chiếu sau đó thì sang bước số hai chúng
+0:08:21 - 0:08:27, ta sẽ chọn một cái phạm vi mới một cái
+0:08:24 - 0:08:27, phạm vi mới
+0:08:31 - 0:08:37, của dữ liệu và chúng ta sẽ tiến hành lấy
+0:08:35 - 0:08:42, cái dữ liệu của cái phạm vi mới này để
+0:08:37 - 0:08:45, so sánh và đối chiếu với lại cái dữ liệu
+0:08:42 - 0:08:48, mà chúng ta đã chọn ở cái mức số 1 trước
+0:08:45 - 0:08:51, đó Thế thì làm sao để xác định Xem hai
+0:08:48 - 0:08:54, cái dữ liệu này có cái sự biến động hay
+0:08:51 - 0:08:57, không thì chúng ta sẽ phải sử dụng những
+0:08:54 - 0:08:59, cái metric Tại sao Tại vì nếu như chúng
+0:08:57 - 0:09:03, ta nhìn bằng mắt thường á thì chúng ta
+0:08:59 - 0:09:08, sẽ dễ Nếu mà dù trực giác á thì nó rất
+0:09:03 - 0:09:12, dễ bị gọi là chủ quan bởi cái yếu tố con
+0:09:08 - 0:09:14, người mọi đánh giá thì nó chỉ nên dựa
+0:09:12 - 0:09:17, trên những cái số liệu gọi là tính toán
+0:09:14 - 0:09:19, được những cái con số đó thì chúng ta sẽ
+0:09:17 - 0:09:21, phải sử dụng những cái metric và để so
+0:09:19 - 0:09:24, sánh hai cái metric này thì chúng ta có
+0:09:21 - 0:09:26, rất nhiều cách khác nhau Ví dụ như chúng
+0:09:24 - 0:09:29, ta có thể sử dụng các cái độ đo về
+0:09:26 - 0:09:29, khoảng cách
+0:09:29 - 0:09:36, của dữ liệu hoặc là chúng ta có thể sử
+0:09:33 - 0:09:38, dụng các cái đoạn đo về phân bố so nó
+0:09:36 - 0:09:41, cũng là khoảng cách nhưng mà thay vì là
+0:09:38 - 0:09:44, khoảng cách giữa từng phần tử với nhau
+0:09:41 - 0:09:47, Ví dụ như phần tử này với phần tử này
+0:09:44 - 0:09:50, phần tử này với phần tử này đó thì nó
+0:09:47 - 0:09:50, gọi là Element
+0:09:52 - 0:09:55, wise
+0:09:56 - 0:10:01, distance thì chúng ta sẽ sử dụng những
+0:09:59 - 0:10:04, cái độ đo liên quan đến phân bố ví dụ
+0:10:01 - 0:10:04, như là
+0:10:04 - 0:10:07, KL
+0:10:08 - 0:10:14, diversion thì đây là một cái độ đo về
+0:10:11 - 0:10:16, khoảng cách giữa hai cái phân bố thế thì
+0:10:14 - 0:10:19, dựa trên những cái độ đ khoảng cách này
+0:10:16 - 0:10:19, chúng ta sẽ phải set những cái
+0:10:20 - 0:10:25, ngưỡng và chúng ta sẽ phải chọn những
+0:10:22 - 0:10:26, cái ngưỡng nào sao cho cái độ tin cậy
+0:10:25 - 0:10:30, của mình cao nhất thế thì ở đây nó thuộc
+0:10:26 - 0:10:30, cái phạm trù của thống kê
+0:10:31 - 0:10:35, thuộc cái phạm trụ thống kê do đó thì
+0:10:33 - 0:10:37, trong phạm vi của cái bài học này thì
+0:10:35 - 0:10:40, chúng ta chỉ nêu cái lý thuyết để làm
+0:10:37 - 0:10:42, sao chúng ta có thể giám sát được cái mô
+0:10:40 - 0:10:44, hình đó là chúng ta chọn hai cái thời
+0:10:42 - 0:10:46, điểm cái thời điểm đầu tiên là cái thời
+0:10:44 - 0:10:50, điểm mà mình nghĩ rằng nhữn liệu của
+0:10:46 - 0:10:54, mình tốt và đây sẽ là cái Tham chiếu và
+0:10:50 - 0:10:57, sau đó thì chúng ta sẽ theo dõi giám sát
+0:10:54 - 0:11:00, cái dữ liệu của mình tại một cái thời
+0:10:57 - 0:11:02, điểm khác nó mới hơ hơn so với cái thời
+0:11:00 - 0:11:04, điểm mình tham chiếu Sau đó chúng ta sẽ
+0:11:02 - 0:11:06, phải sử dụng những chế độ đo để đánh giá
+0:11:04 - 0:11:08, một cách định
+0:11:06 - 0:11:11, lượng cái sự phân bố của dữ liệu của
+0:11:08 - 0:11:13, mình tại hai cái thời điểm này thì khi
+0:11:11 - 0:11:16, đó chúng ta mới biết r dữ liệu của mình
+0:11:13 - 0:11:20, nó có bị biến động hay không Thế thì
+0:11:16 - 0:11:20, trong trường hợp nếu chúng ta kết
+0:11:22 - 0:11:31, luận Nếu chúng ta kết luận là mô hình
+0:11:26 - 0:11:31, của mình nó đã có cái sự dịch chuyển
+0:11:34 - 0:11:39, thì chúng ta sẽ làm gì mà nếu như không
+0:11:36 - 0:11:39, có sự dịch
+0:11:42 - 0:11:49, chuyển thì chúng ta sẽ làm
+0:11:45 - 0:11:51, gì đối với trường hợp mà mô hình của
+0:11:49 - 0:11:54, mình có cái sự dịch chuyển thì chúng ta
+0:11:51 - 0:11:57, sẽ đánh giá xem cái sự dịch chuyển này
+0:11:54 - 0:12:00, nguyên nhân của nó là gì và cái phạm vi
+0:11:57 - 0:12:03, của nó ra sao ví dụ nguyên nhân của mình
+0:12:00 - 0:12:07, đó là do có những cái người người dùng
+0:12:03 - 0:12:09, mà xấu Họ tạo ra những cái mộ dữ liệu
+0:12:07 - 0:12:10, giả hoặc là tạo ra những cái mẫ diễn
+0:12:09 - 0:12:12, liệu không
+0:12:10 - 0:12:14, thật nhưng mà nó chỉ có tác dụng trong
+0:12:12 - 0:12:14, ngắn
+0:12:15 - 0:12:21, hạn thì khi đó chúng ta sẽ không cần
+0:12:18 - 0:12:21, phải thay đổi mô
+0:12:23 - 0:12:28, hình đúng không Chúng ta không cần thay
+0:12:26 - 0:12:30, đổi mình Tại vì chúng ta sẽ không phục
+0:12:28 - 0:12:32, vụ cho một nhóm đối tượng như vậy chúng
+0:12:30 - 0:12:33, ta chỉ phục vụ cho những cái nhóm đối
+0:12:32 - 0:12:37, tượng đà
+0:12:33 - 0:12:40, chúng trường hợp có cái sự dịch chuyển
+0:12:37 - 0:12:42, nhưng mà đây là một cái sự dịch chuyển
+0:12:40 - 0:12:45, theo chu kỳ đúng không thì chúng ta sẽ
+0:12:42 - 0:12:48, phải xây dựng cái mô hình làm sao đó nó
+0:12:45 - 0:12:51, có thể hành xử tốt trên cái loại dữ liệu
+0:12:48 - 0:12:54, có yếu tố về chu kỳ này thì hiện nay nó
+0:12:51 - 0:12:57, vẫn có những cái mô hình máy học chuyên
+0:12:54 - 0:13:00, biệt cho cái loại dữ liệu có chu kỳ do
+0:12:57 - 0:13:02, đó chúng ta sẽ chọn cái mô hình phù hợp
+0:13:00 - 0:13:06, cho cái loại dữ liệu có chu kỳ Còn trong
+0:13:02 - 0:13:08, trường hợp dữ liệu của mình gọi là biến
+0:13:06 - 0:13:12, động đột ngột Ví dụ như khi đại dịch
+0:13:08 - 0:13:16, covid diễn ra và chúng ta đánh ra đánh
+0:13:12 - 0:13:19, giá rằng là nó sẽ không thực hiện nó sẽ
+0:13:16 - 0:13:22, không thay đổi trong ngán hạn mà nó đã
+0:13:19 - 0:13:24, thay đổi Ờ trong thời điểm hiện tại cho
+0:13:22 - 0:13:26, đến tương lai luôn Tức là cái sự thay
+0:13:24 - 0:13:29, đổi này là già hạn và gần như không thể
+0:13:26 - 0:13:31, quay trở lại cái phân bố chuẩn hoặc là
+0:13:29 - 0:13:34, về cái phân bố mà tham chiếu trước đây
+0:13:31 - 0:13:37, thì khi đó chúng ta sẽ buộc phải thay
+0:13:34 - 0:13:39, đổi cái mô hình của mình Chúng ta sẽ
+0:13:37 - 0:13:41, phải thay đổi mô mô hình của mình bằng
+0:13:39 - 0:13:43, cách đó là chúng ta sẽ lấy mẫu lại dữ
+0:13:41 - 0:13:46, liệu và chúng ta huấn luyện lại cái mô
+0:13:43 - 0:13:50, hình thì trên đây đã là một số cái tình
+0:13:46 - 0:13:52, huống là khi cái dữ liệu trong cái thời
+0:13:50 - 0:13:55, điểm cái phạm vi mới nó có cái sự dịch
+0:13:52 - 0:14:00, chuyển nhưng mà À Sự dịch chuyển này thì
+0:13:55 - 0:14:02, ngáo hạn hay là sự thay đổi gọi là dài
+0:14:00 - 0:14:04, hàng thì chúng ta sẽ có những cái hành
+0:14:02 - 0:14:07, vi khác nhau lên trên cái mô hình của
+0:14:04 - 0:14:09, mình tùy ha nếu mà ngấn hạn chúng ta sẽ
+0:14:07 - 0:14:13, không cần Còn nếu mà Sự dịch chuyển này
+0:14:09 - 0:14:16, là dài hạn và thay đổi mang tính chất là
+0:14:13 - 0:14:18, bản chất của cái sự việc thì chúng ta sẽ
+0:14:16 - 0:14:20, phải cập nhật lại cái mô hình của mình
+0:14:18 - 0:14:23, bằng cách là chúng ta sẽ lấy mẫu lại dữ
+0:14:20 - 0:14:25, liệu và huấn luyện lại còn trường hợp
+0:14:23 - 0:14:27, cái phân bố dữ liệu của mình nó không có
+0:14:25 - 0:14:29, cái sự dịch chuyển này không có cái sự
+0:14:27 - 0:14:31, dịch chuyển thì chúng ta sẽ dữ Nguyên mô
+0:14:29 - 0:14:35, hình nhưng đồng thời chúng ta cũng sẽ
+0:14:31 - 0:14:37, phải kiểm tra và giám sát cái sự dịch
+0:14:35 - 0:14:40, chuyển này tiếp tục cái sự giám sát cái
+0:14:37 - 0:14:44, sự dịch chuyển này thì trong cái bài học
+0:14:40 - 0:14:44, ngày hôm nay thì chú

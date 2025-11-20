@@ -1,0 +1,219 @@
+0:00:07 - 0:00:12, kh cái người đàn ông này lùi ra xa đúng
+0:00:11 - 0:00:16, không Thì chúng ta thấy cái Đốm sáng này
+0:00:12 - 0:00:18, nó cũng lùi ra xa theo nghĩa đó là khi
+0:00:16 - 0:00:20, cái gương mặt này lùi ra xa thì rõ ràng
+0:00:18 - 0:00:22, cái kích thước của cái Đốm sáng này nó
+0:00:20 - 0:00:25, sẽ nhỏ hơn kích thước của cái Đốm sáng
+0:00:22 - 0:00:27, này và đồng thời cái Đốm sáng này nó
+0:00:25 - 0:00:29, tiến về phía trên góc phía trên của cái
+0:00:27 - 0:00:32, khung hình thì cái Đốm sáng này nó cũng
+0:00:29 - 0:00:35, sẽ tiến về phía trên của cái feature
+0:00:32 - 0:00:38, Map rồi chúng ta cũng để ý thêm là cái
+0:00:35 - 0:00:40, tỉ lệ của cái vùng gương mặt này nó bằng
+0:00:38 - 0:00:42, một nửa nó khoảng một nửa so với lại cái
+0:00:40 - 0:00:44, gương mặt này thì cái đốn sáng này nó
+0:00:42 - 0:00:47, cũng bằng một nửa như vậy thì điều này
+0:00:44 - 0:00:50, nó thể hiện cái tính chất gì nó thể hiện
+0:00:47 - 0:00:53, cái tính chất đó là fature Map của mình
+0:00:50 - 0:00:56, nó sẽ bất biến về cái trình tự không
+0:00:53 - 0:01:00, gian nó sẽ bất biến về trình tượ không
+0:00:56 - 0:01:01, gian nghĩa là khi gương mặt bên tay trái
+0:01:00 - 0:01:03, đúng không Nó nằm bên tay trái cái gương
+0:01:01 - 0:01:05, mặt bên tay phải thì cái Đốm sáng tương
+0:01:03 - 0:01:07, ứng nó cũng nằm bên tay trái cái Đốm
+0:01:05 - 0:01:10, sáng này cái gương mặt này nó nằm ở phía
+0:01:07 - 0:01:12, trên so với gương mặt này thì cái Đốm
+0:01:10 - 0:01:15, sáng tương ứng của nó cũng nằm phía trên
+0:01:12 - 0:01:17, so với lại cái Đốm sáng này và cái tỷ lệ
+0:01:15 - 0:01:20, nó sẽ bất biến về phép tỉ lệ bất biến
+0:01:17 - 0:01:22, đối với cái yếu tố về mặt tỉ lệ gương
+0:01:20 - 0:01:25, mặt này bằng khoảng một nửa so với gương
+0:01:22 - 0:01:27, mặt này thì cái Đốm sáng này cũng sẽ
+0:01:25 - 0:01:30, bằng một nửa so với Đốm sáng này và dựa
+0:01:27 - 0:01:32, trên cái tính chất này chúng ta ch ta có
+0:01:30 - 0:01:34, thể dùng nó để cho cái bài toán đó là
+0:01:32 - 0:01:36, bài toán object detection hoặc là bài
+0:01:34 - 0:01:38, toán segmentation bài toán phát hiện đối
+0:01:36 - 0:01:40, tượng hoặc là bài toán phân đoạn Ngữ
+0:01:38 - 0:01:42, nghĩa đối tượng ví dụ đối với cái bài
+0:01:40 - 0:01:44, toán phát hiện gương mặt thì chúng ta có
+0:01:42 - 0:01:46, cái feature map này rồi đúng không Chúng
+0:01:44 - 0:01:49, ta sẽ dùng cái phương pháp đó là phân
+0:01:46 - 0:01:52, ngưỡng để lấy ra những cái khu vực Đốm
+0:01:49 - 0:01:54, sáng hai cái Đốm sáng này mà sáng hơn
+0:01:52 - 0:01:57, một cái ngưng cho trước chúng ta sẽ có
+0:01:54 - 0:01:59, cái tọa độ của cái hai cái đống sáng này
+0:01:57 - 0:02:00, sau đó chúng ta sẽ lấy ra được cái bing
+0:01:59 - 0:02:02, Box
+0:02:00 - 0:02:05, cái baing box Tức là cái hình hình chữ
+0:02:02 - 0:02:06, nhật bao xung quanh hai cái Đốm sáng này
+0:02:05 - 0:02:09, từ cái tọa độ của cái hình chữ nhật hai
+0:02:06 - 0:02:12, cái Đốm sáng này chúng ta sẽ Nội xuy lên
+0:02:09 - 0:02:14, trên cái tọa độ nồi xy cái tọa độ ở phía
+0:02:12 - 0:02:16, trên ảnh góc và Như vậy chúng ta sẽ có
+0:02:14 - 0:02:18, hai cái bing box hai cái hình hộp chữ
+0:02:16 - 0:02:20, nhật bao xung quanh hai cái gương mặt
+0:02:18 - 0:02:22, này thì đó chính là cái ý tưởng của việc
+0:02:20 - 0:02:25, ứng dụng mạng CNN cho giải quyết bài
+0:02:22 - 0:02:26, toán object detection Và thậm chí nó có
+0:02:25 - 0:02:29, thể giải quyết luôn cả bài toán
+0:02:26 - 0:02:29, segmentation
+0:02:32 - 0:02:38, rồi bây giờ chúng ta sẽ mở rộng thêm cái
+0:02:35 - 0:02:38, thí nghiệm
+0:02:40 - 0:02:44, này bằng cách đó là cũng với cái fature
+0:02:42 - 0:02:48, map hồi nãy chúng ta sẽ đưa vô một cái
+0:02:44 - 0:02:50, ảnh con mèo thì với cái feature map mà
+0:02:48 - 0:02:54, thể hiện là gương mặt như hồi nãy đúng
+0:02:50 - 0:02:57, không Chúng ta thấy cái cái feature map
+0:02:54 - 0:03:00, này nó có tính chất gì tính chất đầu
+0:02:57 - 0:03:02, tiên đó là nó vẫn phát sáng nhưng mà cái
+0:03:00 - 0:03:05, tính chất thứ hai đó là nó phát sáng yếu
+0:03:02 - 0:03:07, hơn hẳn so với lại trước đây đúng không
+0:03:05 - 0:03:11, đối hai mặt người á thì chúng ta thấy là
+0:03:07 - 0:03:14, nó phát sáng rất là rõ nhưng mà với con
+0:03:11 - 0:03:16, mèo với con mèo thì chúng ta thấy là nó
+0:03:14 - 0:03:19, có phát sáng nhưng mà nó không có rực rỡ
+0:03:16 - 0:03:21, nó không có sáng như cái mặt của con
+0:03:19 - 0:03:23, người như vậy thì cái ý nghĩa của cái
+0:03:21 - 0:03:27, concept này nó phải thêm một cái nữa đó
+0:03:23 - 0:03:28, là nó phải là gương mặt của con người
+0:03:27 - 0:03:30, nhưng mà Câu hỏi đặt ra là tại sao gương
+0:03:28 - 0:03:34, mặt con mèo thì nó vẫn sáng nhưng mà nó
+0:03:30 - 0:03:37, hơi hơi sáng thì có thể giải thích đó là
+0:03:34 - 0:03:40, cái gương mặt của con mèo thì nó cũng sẽ
+0:03:37 - 0:03:43, có một số cái tính chất giống như con
+0:03:40 - 0:03:46, người ví dụ mặt con mèo nó cũng sẽ có
+0:03:43 - 0:03:49, mắt đúng không có lỗ
+0:03:46 - 0:03:51, mũi Tuy nhiên cái phần mặt của con cái
+0:03:49 - 0:03:52, phần miệng của con mèo Các bạn thấy là
+0:03:51 - 0:03:55, cái phần miệng của con mèo nó rất là bé
+0:03:52 - 0:03:57, nó chúm chím nó rất là bé ở đây trong
+0:03:55 - 0:04:00, khi đó Cái miệng của con người Các bạn
+0:03:57 - 0:04:02, thấy rồi nó to hơn nhiều Và Nó dài hơn
+0:04:00 - 0:04:05, nhiều so với cái miệng của con mèo và
+0:04:02 - 0:04:08, Chính vì chỉ có hai trên ba cái đặc điểm
+0:04:05 - 0:04:10, trên nên cái feature map ở đây nó chỉ
+0:04:08 - 0:04:14, hơi sáng tức là hàm ý Nó chỉ có đôi đó
+0:04:10 - 0:04:16, nó có cái đặc trưng về về mắt và về mũi
+0:04:14 - 0:04:18, thôi còn cái phần về miệng nó hơi yếu
+0:04:16 - 0:04:20, nên đâm ra là cái feature map này nó sá
+0:04:18 - 0:04:23, yếu thì cái ý nghĩa của cái feature map
+0:04:20 - 0:04:27, này đó là nó sẽ dựa trên cái yếu tố về M
+0:04:23 - 0:04:29, hình học đó nó sẽ coi có có cái dáng của
+0:04:27 - 0:04:33, cái ánh mắt hay không nó có cái dáng của
+0:04:29 - 0:04:34, cái lỗ mũi hay không đó Nếu có thì nó sẽ
+0:04:33 - 0:04:37, tăng cái trọng số lên cho cái feature
+0:04:34 - 0:04:39, map đó nhưng mà cái phần miệng thì cái
+0:04:37 - 0:04:41, tỉ lệ của nó cái dáng của nó nó ít xuất
+0:04:39 - 0:04:44, hiện nên cái tỉ lệ của cái feature map
+0:04:41 - 0:04:45, này nó cũng sẽ sáng ít hơn so với lại
+0:04:44 - 0:04:47, mặt của con
+0:04:45 - 0:04:51, người
+0:04:47 - 0:04:52, rồi và bây giờ chúng ta sẽ cùng qua một
+0:04:51 - 0:04:55, số cái ví dụ
+0:04:52 - 0:04:58, khác ví dụ như ở đây chúng ta quan sát
+0:04:55 - 0:05:01, thấy có một cái feature map khá là sáng
+0:04:58 - 0:05:05, và nó tương ứng là hai cái này hai cái
+0:05:01 - 0:05:08, Đốm này thì các bạn đoán xem ý nghĩa của
+0:05:05 - 0:05:10, chín cái tấm ảnh của chín cái tấm ảnh mà
+0:05:08 - 0:05:14, làm cho cái feature map này nó sáng nhất
+0:05:10 - 0:05:14, ý nghĩa của chính tấm ảnh này đó là
+0:05:15 - 0:05:22, gì có bạn sẽ đoán đó chính là có sự xuất
+0:05:19 - 0:05:24, hiện của quần áo đúng không ạ có sự xuất
+0:05:22 - 0:05:26, hiện của quần áo nhưng mà cái ý nghĩa
+0:05:24 - 0:05:30, của cái concept này nó không phải là như
+0:05:26 - 0:05:32, vậy Ý nghĩa của đó là cái náp nhân
+0:05:30 - 0:05:34, cái nếp nhă của quần áo ví dụ Vậy thì
+0:05:32 - 0:05:38, khi nào mà trên cái tấm hình nó có cái
+0:05:34 - 0:05:42, nếp nhă thì nó sẽ phát sáng đó thì ở đây
+0:05:38 - 0:05:44, cái nhân vật làm demo Ở đây họ sẽ tiến
+0:05:42 - 0:05:44, hành một thí nghiệp đó
+0:05:47 - 0:05:53, là anh này mới tìm cách đó là phủi cho
+0:05:51 - 0:05:57, cái tay áo bên tay phải đúng không phủi
+0:05:53 - 0:05:59, Cái áo làm cho nó nhẵn hơn và không còn
+0:05:57 - 0:06:01, cái nếp nhăn nữa thì các bạn nế nếu như
+0:05:59 - 0:06:05, bạn nào nói là ý nghĩa của cái concept
+0:06:01 - 0:06:07, này mà là cầng áo thì thì vô lý Tại vì ở
+0:06:05 - 0:06:09, đây Anh này ảnh vẫn đang mặc cái cái áo
+0:06:07 - 0:06:11, này mà đúng không bỗi nay mặc cái áo này
+0:06:09 - 0:06:13, nhưng mà cái chỗ này nó không còn phát
+0:06:11 - 0:06:17, sáng nữa nó không còn phát sáng nhiều
+0:06:13 - 0:06:19, nữa đó khi anh này ảnh làm cho cái áo Nó
+0:06:17 - 0:06:22, nhẵn hơn đúng không thì tương ứng chỗ
+0:06:19 - 0:06:25, này nó sẽ đốn sáng nó biến mất nó nhạt
+0:06:22 - 0:06:29, dần đi đó còn bên tay trái thì các bạn
+0:06:25 - 0:06:30, thấy nè là cái Đốm sáng của mình nó vẫn
+0:06:29 - 0:06:32, còn
+0:06:30 - 0:06:34, cái Đốm sáng của mình nó vẫn còn rõ hơn
+0:06:32 - 0:06:37, là do nó còn nhiều cái nép nhă ở bên cái
+0:06:34 - 0:06:40, áo bên tay trái đó thì ý nghĩa của cái
+0:06:37 - 0:06:40, feature map này chính là cái nếp
+0:06:46 - 0:06:51, nhân rồi bây giờ chúng ta sẽ đến với một
+0:06:48 - 0:06:53, cái feature map cuối đó chính là cái
+0:06:51 - 0:06:55, fature map này thì hiện tại trên cái
+0:06:53 - 0:06:59, khung hành này chúng ta thấy là nó tối
+0:06:55 - 0:07:03, thui Tức là nó không có phát sáng đó thì
+0:06:59 - 0:07:04, cái tấm ảnh mà làm cho cái tấm làm cho
+0:07:03 - 0:07:06, cái feature map này nó khác sáng đó
+0:07:04 - 0:07:09, chính là chính cái tấm ảnh này và các
+0:07:06 - 0:07:11, bạn cũng đoán xem ý nghĩa điểm chung của
+0:07:09 - 0:07:16, chính tâm ảnh này là đó là
+0:07:11 - 0:07:18, gì Các bạn sẽ đoán đó chính là điểm
+0:07:16 - 0:07:20, chung của chính tấm ảnh này đó là nó đều
+0:07:18 - 0:07:23, có hình tròn đúng không ạ hoặc các bạn
+0:07:20 - 0:07:25, sẽ nói là nó sẽ có cái chữ Canon ở nằm
+0:07:23 - 0:07:27, bên trong hình tròn đó Nó có cái chữ nằm
+0:07:25 - 0:07:30, bên trong hình tròn vậy thì chúng ta sẽ
+0:07:27 - 0:07:34, cùng giải đáp Xem ha
+0:07:30 - 0:07:36, rồi khi anh này ảnh đưa vào một cái bìa
+0:07:34 - 0:07:39, của một cái cuốn sách đó thì chúng ta
+0:07:36 - 0:07:40, thấy là cái khu vực này nó phát sáng và
+0:07:39 - 0:07:42, cái này nó không hề có cái hình tròn nào
+0:07:40 - 0:07:45, hết đúng không nó không hề có cái hình
+0:07:42 - 0:07:47, tròn nào hết như vậy cái ý nghĩa của cái
+0:07:45 - 0:07:52, cần s của cái feature B này á đó chính
+0:07:47 - 0:07:55, là phải có cái chữ phải có cái chữ
+0:07:52 - 0:07:57, viết và khi có cái chữ thì nó sẽ phát
+0:07:55 - 0:07:59, sáng do đó điểm chung của tất cả chín
+0:07:57 - 0:08:02, cái tấm hình này đó chính là concept về
+0:07:59 - 0:08:02, chữ
+0:08:04 - 0:08:10, viết rồi khi anh này anh đưa thêm một
+0:08:07 - 0:08:12, cái bìa của một cái cuốn tập hay là một
+0:08:10 - 0:08:13, cái sổ khác đúng không Thì chúng ta cũng
+0:08:12 - 0:08:16, thể thấy cái khu vực này nó lại tiếp tục
+0:08:13 - 0:08:19, phát sáng và nó tách ra làm hai cái đốn
+0:08:16 - 0:08:21, sáng riêng biệt đó thì điều này một lần
+0:08:19 - 0:08:24, nữa khẳng định đó là cái concept của cái
+0:08:21 - 0:08:27, feature map này đó chính là có cái sự
+0:08:24 - 0:08:29, xuất hiện của của các cái dòng chữ chữ
+0:08:27 - 0:08:31, viết
+0:08:29 - 0:08:33, Và nếu như dựa trên cái ý tưởng của cái
+0:08:31 - 0:08:35, feature map này các bạn đoán xem chúng
+0:08:33 - 0:08:38, ta có thể ứng dụng cái feature map này
+0:08:35 - 0:08:41, để làm gì đó là dùng cho bài toán ocea
+0:08:38 - 0:08:45, optical character recognition tức là
+0:08:41 - 0:08:48, chúng ta sẽ ờ Phát biện xem vị trí khu
+0:08:45 - 0:08:50, vực nào có sự xuất hiện của chữ viết rồi
+0:08:48 - 0:08:51, khi chúng ta sẽ detect ra được cái vị
+0:08:50 - 0:08:53, trí có chữ viết rồi chúng ta sẽ trích
+0:08:51 - 0:08:56, xuất ra và dùng các cái thực toán nhận
+0:08:53 - 0:09:00, diện để xem coi cái mặt chữ của nó là gì
+0:08:56 - 0:09:03, thì đó là toàn bộ Cái nội dung của của
+0:09:00 - 0:09:07, cái bài de visualization toolbox và H
+0:09:03 - 0:09:10, vọng R là qua cái một cái demo ngắn gọn
+0:09:07 - 0:09:12, này Trực Quan Hóa cái các cái feature
+0:09:10 - 0:09:15, map cũng như là trực quan hóa các cái
+0:09:12 - 0:09:18, filter thì sẽ giúp cho các bạn hiểu rõ
+0:09:15 - 0:09:20, hơn cái concept của cái các cái feature
+0:09:18 - 0:09:23, map ý nghĩa của nó là gì thông qua v cái
+0:09:20 - 0:09:25, việc là thống kê tt chính cái tấm hình
+0:09:23 - 0:09:28, mà làm cho cái feature map này nó sáng
+0:09:25 - 0:09:30, nhất thì hi vọng rằng là nếu như các bạn
+0:09:28 - 0:09:32, có thể hiểu rõ được hơn cái mạng CNN này
+0:09:30 - 0:09:34, rồi thì sau này chúng ta có thể sử dụng
+0:09:32 - 0:09:36, được cái mạng CNN này cho các cái bài
+0:09:34 - 0:09:39, toán bên lĩnh vực thị giác máy tính rất
+0:09:36 - 0:09:42, là hiệu quả là vì cái bộ đặc trưng
+0:09:39 - 0:09:43, feature map này nó cực kỳ phong phú và
+0:09:42 - 0:09:48, nó cực kỳ tổng quát khi chúng ta huấn
+0:09:43 - 0:09:48, luyện trên một cái tập dữ liệu đủ lớn

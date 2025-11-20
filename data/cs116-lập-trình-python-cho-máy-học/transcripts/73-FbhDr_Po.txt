@@ -1,0 +1,266 @@
+0:00:00 - 0:00:07, tiếp theo thì chúng ta sẽ cùng đến với
+0:00:02 - 0:00:08, hai cái khái niệm đó là bias Và variant
+0:00:07 - 0:00:10, đây là hai cái khái niệm để giúp cho
+0:00:08 - 0:00:12, chúng ta hiểu về cái tính chất của cái
+0:00:10 - 0:00:14, mô hình của mình sau khi đã huấn luyện
+0:00:12 - 0:00:18, xong nó liên quan đến các cái khái niệm
+0:00:14 - 0:00:18, ví dụ như là
+0:00:18 - 0:00:24, overfitting tức là quá khớp với dữ liệu
+0:00:22 - 0:00:24, hoặc là
+0:00:27 - 0:00:32, underfitting tức là chưa có khó với cái
+0:00:30 - 0:00:35, dữ liệu của mình nó bị dưới cái mức có
+0:00:32 - 0:00:38, thể khớp với dữ liệu của mình thì BS Đó
+0:00:35 - 0:00:40, là một cái sai số là một cái sai số sai
+0:00:38 - 0:00:44, số có thể hiểu đó là cái hiệu số ha hiệu
+0:00:40 - 0:00:46, số Thiện B chứng trừ ở đây nè giữa cái
+0:00:44 - 0:00:50, trung bình hay cái kỳ vọng của mô hình
+0:00:46 - 0:00:52, dự đoán nếu như với cái dữ liệu với một
+0:00:50 - 0:00:53, cái mẫu dữ liệu chúng ta ước lượng ra
+0:00:52 - 0:00:57, được một
+0:00:53 - 0:00:58, cái tham số Beta là cái tham số cho cái
+0:00:57 - 0:01:00, mô hình của
+0:00:58 - 0:01:03, mình
+0:01:00 - 0:01:06, thì chúng ta sẽ có rất nhiều những cái
+0:01:03 - 0:01:08, mẫu dữ liệu khác nhau đúng không Tại vì
+0:01:06 - 0:01:10, dữ liệu huấn luyện bản chất nó chỉ là
+0:01:08 - 0:01:12, cái quá trình chúng ta lấy mẫu và với
+0:01:10 - 0:01:14, những cái lần lấy mẫu khác nhau thì
+0:01:12 - 0:01:16, chúng ta sẽ có một cái bộ tham số beta
+0:01:14 - 0:01:18, khác nhau và khi chúng ta lấy mẫu nhiều
+0:01:16 - 0:01:21, lần hay lấy mẫu hấn luyện nhiều lần thì
+0:01:18 - 0:01:24, kỳ vọng của các cái giá trị beta này hay
+0:01:21 - 0:01:29, là trung bình của các beta này thì chúng
+0:01:24 - 0:01:31, ta sẽ ký hiệu là bằng E của beta mũ thì
+0:01:29 - 0:01:34, đây chính là cái đại lượng trung bình
+0:01:31 - 0:01:38, hoặc là kỳ vọng của mô hình mình dự đoán
+0:01:34 - 0:01:41, so với so với cái mô hình thực tế thì
+0:01:38 - 0:01:43, trong cái slide trước trong slide trước
+0:01:41 - 0:01:45, chúng ta đã tìm hiểu về cái khái niệm
+0:01:43 - 0:01:48, gọi là mô hình thực tế và mô hình thực
+0:01:45 - 0:01:52, tế ở đây thì được biểu hiện bởi cái tham
+0:01:48 - 0:01:55, số là beta beta không có mũ và chúng ta
+0:01:52 - 0:01:58, luôn mong muốn là cái mô hình dự đoán
+0:01:55 - 0:02:03, của mình cái kỳ vọng của nó nó phải Khớp
+0:01:58 - 0:02:06, nó phải chính xác với lại cái mô thực tế
+0:02:03 - 0:02:10, nhất thì cái bias nó sẽ thể hiện cái sii
+0:02:06 - 0:02:13, số này đó là E beta mũ trừ cho
+0:02:10 - 0:02:16, Beta và bios thấ thì điều đó thể hiện
+0:02:13 - 0:02:18, kiện gì bios thấ thể hiện là mô hình đã
+0:02:16 - 0:02:21, học được đã thực sự học được cái mối
+0:02:18 - 0:02:23, quan hệ của cái dữ liệu huấn luyện Tức
+0:02:21 - 0:02:28, là cái sai số giữa trung bình beta mũ và
+0:02:23 - 0:02:30, Beta là nhỏ Tức là hàm của mình đã tìm
+0:02:28 - 0:02:33, ra được cái mối quan hệ đã tìm ra được
+0:02:30 - 0:02:37, cái mối quan hệ giữa dự kiện đầu bào và
+0:02:33 - 0:02:39, cái giá trị dự đoán đầu ra và trong
+0:02:37 - 0:02:41, trường hợp mà bias mà cao thì thể hiện
+0:02:39 - 0:02:44, là mô hình nó không học được mối quan hệ
+0:02:41 - 0:02:46, của cái dữ liệu hấn
+0:02:44 - 0:02:49, Luyện sau đây thì chúng ta sẽ qua cái
+0:02:46 - 0:02:53, khái niệm về variance
+0:02:49 - 0:02:56, variance nó thể hiện cái sai số trung
+0:02:53 - 0:02:58, bình của mô hình dự đoán sai số trung
+0:02:56 - 0:03:01, bình của mô hình dự đoán so với cái kỳ
+0:02:58 - 0:03:06, vọng trung bình của mô hình được huấn
+0:03:01 - 0:03:06, luyện trên toàn bộ cái di thuật nghĩa là
+0:03:07 - 0:03:14, sao tại một cái mẫu dữ liệu một cái
+0:03:10 - 0:03:16, dataset i đúng không Thì chúng ta huấn
+0:03:14 - 0:03:18, luyện mô hình D là cái hiệu của chữ
+0:03:16 - 0:03:21, dataset ha
+0:03:18 - 0:03:24, dataset chúng ta huấn luyện ra được một
+0:03:21 - 0:03:26, cái mô hình là beta mũ và chúng ta kỳ
+0:03:24 - 0:03:30, vọng chề gì chúng ta kỳ vọng là cái Meta
+0:03:26 - 0:03:31, mũ này nó sắp xỉ với lại cái beta Tức là
+0:03:30 - 0:03:35, cái mô hình thực
+0:03:31 - 0:03:38, tế nhưng điều gì xảy ra nếu như cái sự
+0:03:35 - 0:03:41, thay đổi của cái dataset này nó cũng làm
+0:03:38 - 0:03:43, cho cái beta mũ này dao động à Nó dao
+0:03:41 - 0:03:46, động có thể là nhỏ xuống Hoặc là lên
+0:03:43 - 0:03:49, tăng lên thì khi cái dao động này nó quá
+0:03:46 - 0:03:53, lớn nó thể hiện cái sự không ổn
+0:03:49 - 0:03:56, định không ổn định của mô
+0:03:53 - 0:04:00, hình thì cái kỳ vọng
+0:03:56 - 0:04:03, của beta mũ đó chính là cái cái giá trị
+0:04:00 - 0:04:05, trung bình của các cái beta mũ ha và trừ
+0:04:03 - 0:04:07, cho beta Sau đó chúng ta bình phương thì
+0:04:05 - 0:04:10, đây chính là cái phương sai đây chính là
+0:04:07 - 0:04:10, cái Phương
+0:04:11 - 0:04:18, sii đây chính là phương sai của các cái
+0:04:16 - 0:04:21, mô hình của mình khi dự đoán trên những
+0:04:18 - 0:04:24, cái bộ dữ liệu khác nhau và trung bình
+0:04:21 - 0:04:28, của nó thì nó sẽ là cái sai số trên toàn
+0:04:24 - 0:04:30, bộ cái dữ điệu thực của mình thì nếu
+0:04:28 - 0:04:33, varian thấp nó thể hiện cái gì Cái
+0:04:30 - 0:04:35, varian thấp Tức là cái sii số này là
+0:04:33 - 0:04:38, thấp tức là mô hình của mình nó có cái
+0:04:35 - 0:04:41, tính tổng quáa cao tại sao nó gọi là
+0:04:38 - 0:04:44, tổng quá cao tại vì khi chúng ta huấn
+0:04:41 - 0:04:47, luyện trên cái tập dữ liệu thứ y Chúng
+0:04:44 - 0:04:48, ta ra được một cái giá trị là B Khi
+0:04:47 - 0:04:53, chúng ta huấn luyện trên cái tập dữ liệu
+0:04:48 - 0:04:57, là thứ ch ch khác y ha thì chúng ta tạo
+0:04:53 - 0:05:00, ra được một cái tham số là Bet ch và hai
+0:04:57 - 0:05:02, cái Bet và Bet CH này không có sự thay
+0:05:00 - 0:05:04, đổi nhiều không có sự thay đổi nhiều tức
+0:05:02 - 0:05:07, là khi chúng ta thay đổi cái tập dữ liệu
+0:05:04 - 0:05:10, cái dataset thì Bet và Bet J này nó xem
+0:05:07 - 0:05:12, xem nhau Nó nó có thay đổi nhưng mà rất
+0:05:10 - 0:05:14, ít tức là mô hình của mình nó tổng quát
+0:05:12 - 0:05:17, hay nói cách khác đó là nó không có cái
+0:05:14 - 0:05:20, sự dao động như vậy là cái varian thấp
+0:05:17 - 0:05:22, nó sẽ thể hiện cái tính tổng quát của mô
+0:05:20 - 0:05:25, hình cái tính tổng quát của mình nó rất
+0:05:22 - 0:05:28, là cao dù có huấn luyện trên cái một cái
+0:05:25 - 0:05:30, tập con thì nó vẫn đúng trên những cái
+0:05:28 - 0:05:34, dữ liệu mà nó chưa thấy Tức là trên cái
+0:05:30 - 0:05:36, tập test và ngược lại nếu variant mà
+0:05:34 - 0:05:40, thấp Xin lỗi Ngược lại nếu variant mà
+0:05:36 - 0:05:43, cao tức là mô hình của mình nó sẽ không
+0:05:40 - 0:05:46, có đoán tốt trên những cái dữ liệu chưa
+0:05:43 - 0:05:48, gặp hay nó Cái khác đó là nó chưa có đủ
+0:05:46 - 0:05:48, tổng
+0:05:50 - 0:05:56, quát nghĩa là khi chúng ta với cái mẫ
+0:05:54 - 0:05:58, dataset thứ y chúng ta tạo ra được cái
+0:05:56 - 0:06:01, tham số là beta mũ y nhưng khi chúng ta
+0:05:58 - 0:06:03, đổi một cái dataset khác thì tự nhiên
+0:06:01 - 0:06:06, cái beta của mình nó lại ra một cái giá
+0:06:03 - 0:06:09, trị beta ch rất khác so với lại giá trị
+0:06:06 - 0:06:11, beta I này tức là có cái sự dao động có
+0:06:09 - 0:06:13, cái sự thay đổi rất là đột ngột khi thay
+0:06:11 - 0:06:16, đổi dữ liệu đó thì chứng tỏ là mô hình
+0:06:13 - 0:06:20, của mình không Có ổn định hoặc là không
+0:06:16 - 0:06:21, tới tổng quát và gần gũi hơn đó chính là
+0:06:20 - 0:06:24, nó không có đoán tốt trên những cái dữ
+0:06:21 - 0:06:26, liệu mà nó chưa từng thấy Tại vì khi
+0:06:24 - 0:06:27, chúng ta huấn luyện trên cái tập di thì
+0:06:26 - 0:06:31, lúc
+0:06:27 - 0:06:34, đó d của mình nó chính là cái Ờ dữ liệu
+0:06:31 - 0:06:37, mà chúng ta chưa thấy hay hay gọi là dữ
+0:06:34 - 0:06:41, liệu trong tập test và dưới đây là một
+0:06:37 - 0:06:44, cái sự so sánh về cái sự cân bằng của
+0:06:41 - 0:06:47, bias và varian khi xây dựng cái mô hình
+0:06:44 - 0:06:49, huấn luyện và huấn luyện trên cái tập dữ
+0:06:47 - 0:06:53, liệu thì chúng ta cần phải lưu ý đó là
+0:06:49 - 0:06:56, đảm bảo cho cả bias và varian nó đều
+0:06:53 - 0:06:59, thấp thì ở trong trường hợp đầu tiên đó
+0:06:56 - 0:07:02, là bias thấp và varian thấp tức là mô
+0:06:59 - 0:07:04, hình của mình nó rất hớp với cái dữ liệu
+0:07:02 - 0:07:07, cái varian của nó cái Hồng Tâm này chính
+0:07:04 - 0:07:10, là thể hiện cái sự cái bias của mình còn
+0:07:07 - 0:07:12, cái độ giao đoạn giữa cái vòng tròn này
+0:07:10 - 0:07:15, với cái vòng tròn kia đó chính là thể
+0:07:12 - 0:07:18, hiện cái bias thể hiện cái varian cái
+0:07:15 - 0:07:22, mức độ dao động của cái dựng đoán của
+0:07:18 - 0:07:25, mình cái bên m của mình và bias mà thấp
+0:07:22 - 0:07:28, mà varian cao đúng không thì tương ứng
+0:07:25 - 0:07:30, đó là trường hợp overfitting overfitting
+0:07:28 - 0:07:33, Tức là nó đã quá hớ
+0:07:30 - 0:07:35, nó quá khớp so với lại một cái tập dữ
+0:07:33 - 0:07:36, liệu nào đó nhưng mà đôi khi chúng ta
+0:07:35 - 0:07:39, thay đổi trên một cái tập dữ liệu khác
+0:07:36 - 0:07:42, thì nó có cái sự dao động thì đó là
+0:07:39 - 0:07:45, overfitting và tương tự như vậy nó sẽ có
+0:07:42 - 0:07:48, cái tình huống gọi là underfitting khi
+0:07:45 - 0:07:51, cái bias của mình nó
+0:07:48 - 0:07:54, cao bias của mình nó cao và Cho dù cái
+0:07:51 - 0:07:55, varian của mình nó thấp hay cao thì nó
+0:07:54 - 0:07:57, cũng đều là cái tình huống nó gọi là
+0:07:55 - 0:07:59, underfitting tức là chưa khớp với cái dữ
+0:07:57 - 0:08:03, đệ như vậy thì khi huấn luyện chúng ta
+0:07:59 - 0:08:04, luôn mong muốn tiến đến cái tình huống
+0:08:03 - 0:08:06, này chúng ta luôn mong muốn tiến đến cái
+0:08:04 - 0:08:08, tình huống này còn cái tình huống này
+0:08:06 - 0:08:11, thì nó sẽ thể hiện cái mô hình của mình
+0:08:08 - 0:08:14, không có cái sự tổng quát hoặc là có cái
+0:08:11 - 0:08:15, sự bất ổn định nó quá phụ thuộc vô cái
+0:08:14 - 0:08:20, dữ liệu
+0:08:15 - 0:08:22, Trend và khi test thì nó tạo ra một cái
+0:08:20 - 0:08:26, khác hoàn toàn cái dữ tiệ dự đoán có cái
+0:08:22 - 0:08:30, sii số có cái sự sai lệch rất là
+0:08:26 - 0:08:34, lớn và để thực quen hơn với cái ví dụ
+0:08:30 - 0:08:36, mẫu của hiện tượng bias
+0:08:34 - 0:08:39, varian và các cái hiện tượng liên quan
+0:08:36 - 0:08:41, đến overfitting và underfitting thì
+0:08:39 - 0:08:42, chúng ta sẽ lấy cái ví dụ cho bài toán
+0:08:41 - 0:08:44, song lớp mặc dù chúng ta đang làm với
+0:08:42 - 0:08:46, bài toán hồi quy ha Nhưng mà chúng ta
+0:08:44 - 0:08:50, lấy cái tình huống là là bài toán phân
+0:08:46 - 0:08:52, lớp để hiểu nó rõ hơn thì giả sử như
+0:08:50 - 0:08:56, chúng ta đang phân hai cái tập này ra
+0:08:52 - 0:09:00, làm hai cái phần là hình tròn và dấu X
+0:08:56 - 0:09:02, thì cái hiện tượng overfitting đó chính
+0:09:00 - 0:09:05, là cái nện tượng này nghĩa là sao cái
+0:09:02 - 0:09:08, đường mà phân chia của mình nó sẽ đi z
+0:09:05 - 0:09:10, sắ đi z sắ và đi xuyên qua các cái điểm
+0:09:08 - 0:09:12, nhiễu các cái dấu X này chính là các
+0:09:10 - 0:09:14, điểm nhiễu Tại vì nó nằm nằm bên trong
+0:09:12 - 0:09:17, hoàn toàn cái đường hình tròn nhưng mà
+0:09:14 - 0:09:21, nó vẫn bị gọi
+0:09:17 - 0:09:24, là đánh gá nhãn đó là là
+0:09:21 - 0:09:27, x thì cái đường mô hình của mình nó sẽ
+0:09:24 - 0:09:30, tìm cách để cố học những cái điểm dữ
+0:09:27 - 0:09:33, liệu mà bị nhiễu này Và khi đó thì chúng
+0:09:30 - 0:09:35, ta thấy là cái hiệu quả khi trên cái mô
+0:09:33 - 0:09:38, hình này thì nó vẫn rất là tốt cho cái
+0:09:35 - 0:09:40, trường hợp là tập trên nhưng mà sau này
+0:09:38 - 0:09:43, khi chúng ta tiến hành trên những cái
+0:09:40 - 0:09:44, tập dữ liệu test thì rõ ràng là cái mô
+0:09:43 - 0:09:47, hình phức tạp này nó sẽ khiến cho chúng
+0:09:44 - 0:09:50, ta không đạt được cái mức độ gọi là độ
+0:09:47 - 0:09:52, tinh cậy cao và để tránh cái hiện tượng
+0:09:50 - 0:09:54, overfitting thì chúng ta sẽ có hai cái
+0:09:52 - 0:09:56, giải pháp giải pháp đầu tiên đó chính là
+0:09:54 - 0:09:58, chúng ta giảm bớt cái sự phức tạp của mô
+0:09:56 - 0:10:00, hình đi chúng ta thấy là cái mô hình này
+0:09:58 - 0:10:02, nó có cái đường đi rất là phức tạp do đó
+0:10:00 - 0:10:06, để tránh cái hiện tượng nó cố học những
+0:10:02 - 0:10:07, cái điểm nhiễu này thì chúng ta sẽ giảm
+0:10:06 - 0:10:11, bớt cái tham số của môn hình hay là giảm
+0:10:07 - 0:10:14, bớt cái sự phức tạp của m đi và chúng ta
+0:10:11 - 0:10:17, sẽ lấy mẫu thêm chúng ta sẽ lấy mẫu thêm
+0:10:14 - 0:10:19, hay là lấy thêm cái dữ liệu hay g gọi là
+0:10:17 - 0:10:21, tăng cường dữ liệu á thì khi chúng ta
+0:10:19 - 0:10:23, tăng cường thêm dữ liệu thì cái mô hình
+0:10:21 - 0:10:25, của mình nó sẽ giảm bớt được cái hiện
+0:10:23 - 0:10:25, tượng
+0:10:26 - 0:10:30, overfitting và trường hợp underfitting
+0:10:28 - 0:10:32, thì thì nguyên nhân đó là xảy ra khi cái
+0:10:30 - 0:10:34, mô hình của mình nó quá đơn giản Nó
+0:10:32 - 0:10:39, thuộc cái tin hố
+0:10:34 - 0:10:41, này tức là lẽ ra cái đường mà tối ưu tốt
+0:10:39 - 0:10:45, Nó phải là ra một cái đường cong như thế
+0:10:41 - 0:10:47, này thì cái hàm mô hình của mình nó lại
+0:10:45 - 0:10:50, quá đơn giản Nó chỉ là một cái đường
+0:10:47 - 0:10:52, thẳng như thế này thôi và so với cái
+0:10:50 - 0:10:55, tính chất phức tạp của dữ liệu
+0:10:52 - 0:10:57, đó thì lúc đó là hoặc là dữ liệu của
+0:10:55 - 0:10:59, mình nó không đủ khái quát thì khi đó là
+0:10:57 - 0:11:02, nguyên nhân gây ra cái hiện tượng
+0:10:59 - 0:11:05, underfitting này và để chống cái hiện
+0:11:02 - 0:11:07, tượng underfitting này thì chúng ta có
+0:11:05 - 0:11:10, hai cách luôn cách đầu tiên đó là chúng
+0:11:07 - 0:11:13, ta sẽ chuyển từ một cái mô hình đơn giản
+0:11:10 - 0:11:16, sang một cái mô hình phức tạp hơn chúng
+0:11:13 - 0:11:19, ta sẽ thay cái hàm mô hình của mình và
+0:11:16 - 0:11:20, cách thứ hai cách này thì luôn luôn là
+0:11:19 - 0:11:22, luôn luôn đúng tức là trong trường hợp
+0:11:20 - 0:11:24, mà underfitting hay overfitting chúng ta
+0:11:22 - 0:11:27, đều có thể làm được đó là tăng cường cái
+0:11:24 - 0:11:30, tập dữ liệu hn luyện lên thì khi tăng
+0:11:27 - 0:11:32, cường cái tập dữ liệu lên thì lúc đó Cái
+0:11:30 - 0:11:35, dữ liệu của mình cái dữ liệu di của mình
+0:11:32 - 0:11:38, nó sẽ tiệm cộn với lại cái tập dữ liệu D
+0:11:35 - 0:11:41, Tức là cái dữ liệu trong thực tế đây là
+0:11:38 - 0:11:43, cái dữ liệu thực thì khi chúng ta tăng
+0:11:41 - 0:11:45, cái số lượng mẫu dữ liệu của di Tức là
+0:11:43 - 0:11:47, cái quá trình Trend của mình lên trong
+0:11:45 - 0:11:49, cái quá trình Trend mà Trend nhiều lần
+0:11:47 - 0:11:51, thì cái d này nó sẽ tiệm cộng về cái d
+0:11:49 - 0:11:53, này tức là nó sẽ tiệm cộng đến cái dữ
+0:11:51 - 0:11:55, liệu thực tế đó thì khi chúng ta tiệm
+0:11:53 - 0:11:58, cận được dữ liệu thực tế tức là dữ liệu
+0:11:55 - 0:12:00, của mình nó đã đạt được cái độ khái quá
+0:11:58 - 0:12:03, cao khi dữ liệu khá có cao thì lúc đó
+0:12:00 - 0:12:05, cái mô hình của mình nó học được những
+0:12:03 - 0:12:08, cái tình huống đó thì nó cũng sẽ tránh
+0:12:05 - 0:12:08, được cái hiện tượng underfitting

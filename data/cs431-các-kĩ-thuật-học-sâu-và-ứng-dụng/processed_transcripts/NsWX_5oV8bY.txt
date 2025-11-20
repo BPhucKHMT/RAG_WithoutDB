@@ -9,7 +9,7 @@
 0:00:52 - 0:00:54, còn đây là quá trình là decoder.
 0:00:54 - 0:01:00, Khi đó, nó gọi là attention,
 0:01:00 - 0:01:04, tức là sự truy vấn của một query ở bước decoder,
-0:01:04 - 0:01:10, Truy xuất vào và tổng hợp thông tin từ các giá trị ở encoder.
+0:01:04 - 0:01:10, Truy xuất vào và tổng hợp từ thông tin của các giá trị ở encoder.
 0:01:10 - 0:01:14, Từ decoder mình sẽ truy xuất vào encoder.
 0:01:16 - 0:01:25, Ở đây chúng ta thấy là điểm mạnh của self-attention chính là khả năng song song.
 0:01:25 - 0:01:28, Trong sơ đồ trước đây chúng ta thấy là tại cái vị trí này

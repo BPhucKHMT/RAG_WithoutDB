@@ -1,0 +1,484 @@
+{
+  "playlist_id": "PLb62OySGqC9yGRvUaSe-iWFuXYuM8X6_n",
+  "title": "CS116 - Lập trình Python cho Máy học",
+  "description": "",
+  "published_at": "2023-06-18T06:08:19.179344Z",
+  "channel_title": "Trường Đại học Công nghệ Thông tin - UIT",
+  "total_videos": 79,
+  "videos": [
+    {
+      "video_id": "eY--6WX1hAQ",
+      "title": "[CS116 - Lập trình Python cho Máy học] Video 1.1: Giới thiệu môn học",
+      "url": "https://www.youtube.com/watch?v=eY--6WX1hAQ",
+      "published_at": "2023-06-18T06:10:44Z"
+    },
+    {
+      "video_id": "_BGaEHA1U6s",
+      "title": "[CS116 -  Lập trình Python cho Máy học] Video 1.2.1: Lập trình Python - Biến và kiểu dữ liệu (P1)",
+      "url": "https://www.youtube.com/watch?v=_BGaEHA1U6s",
+      "published_at": "2023-06-18T06:11:27Z"
+    },
+    {
+      "video_id": "xaUMWpT1mUI",
+      "title": "[CS116 -  Lập trình Python cho Máy học] Video 1.3&1.4: Lập trình Python - Lệnh rẽ nhánh và vòng lặp",
+      "url": "https://www.youtube.com/watch?v=xaUMWpT1mUI",
+      "published_at": "2023-06-18T06:12:31Z"
+    },
+    {
+      "video_id": "CkX4yE2fN1w",
+      "title": "[CS116 -  Lập trình Python cho Máy học] Video 1.5: Lập trình Python -  Hàm",
+      "url": "https://www.youtube.com/watch?v=CkX4yE2fN1w",
+      "published_at": "2023-06-18T06:12:48Z"
+    },
+    {
+      "video_id": "TqORZBSitQU",
+      "title": "[CS116 -  Lập trình Python cho Máy học] Video 1.2.3: Lập trình Python - Biến và kiểu dữ liệu (P3)",
+      "url": "https://www.youtube.com/watch?v=TqORZBSitQU",
+      "published_at": "2023-06-18T06:13:01Z"
+    },
+    {
+      "video_id": "Khz_kSZ-91M",
+      "title": "[CS116 -  Lập trình Python cho Máy học] Video 1.6.2: Lập trình Python - Hướng đối tượng (P2)",
+      "url": "https://www.youtube.com/watch?v=Khz_kSZ-91M",
+      "published_at": "2023-06-18T06:13:57Z"
+    },
+    {
+      "video_id": "0ycFt1_Ph58",
+      "title": "[CS116 -  Lập trình Python cho Máy học] Video 1.6.1: Lập trình Python - Hướng đối tượng (P1)",
+      "url": "https://www.youtube.com/watch?v=0ycFt1_Ph58",
+      "published_at": "2023-06-18T06:14:00Z"
+    },
+    {
+      "video_id": "1a7AxTRLrlQ",
+      "title": "[CS116 -  Lập trình Python cho Máy học] Video 1.2.2: Lập trình Python - Biến và kiểu dữ liệu (P2)",
+      "url": "https://www.youtube.com/watch?v=1a7AxTRLrlQ",
+      "published_at": "2023-06-26T09:48:05Z"
+    },
+    {
+      "video_id": "oXy25Wt6rdE",
+      "title": "[CS116 - Buổi 2] Part 1",
+      "url": "https://www.youtube.com/watch?v=oXy25Wt6rdE",
+      "published_at": "2024-07-23T09:53:20Z"
+    },
+    {
+      "video_id": "Apb2REK9UqA",
+      "title": "[CS116 - Buổi 2] Part 2",
+      "url": "https://www.youtube.com/watch?v=Apb2REK9UqA",
+      "published_at": "2024-07-23T09:53:58Z"
+    },
+    {
+      "video_id": "g8uw5jp2pi0",
+      "title": "[CS116 - Buổi 2] Part 3",
+      "url": "https://www.youtube.com/watch?v=g8uw5jp2pi0",
+      "published_at": "2024-07-23T09:54:12Z"
+    },
+    {
+      "video_id": "B1LCA6nxyCs",
+      "title": "[CS116 - Buổi 2] Part 4",
+      "url": "https://www.youtube.com/watch?v=B1LCA6nxyCs",
+      "published_at": "2024-07-23T09:54:31Z"
+    },
+    {
+      "video_id": "0ozeUUS9DzQ",
+      "title": "[CS116 - Buổi 2] Part 4 (tt)",
+      "url": "https://www.youtube.com/watch?v=0ozeUUS9DzQ",
+      "published_at": "2024-07-23T09:54:51Z"
+    },
+    {
+      "video_id": "pBrGDARCTE8",
+      "title": "[CS116 - Buổi 2] Part 5",
+      "url": "https://www.youtube.com/watch?v=pBrGDARCTE8",
+      "published_at": "2024-07-23T09:55:07Z"
+    },
+    {
+      "video_id": "dDjSutHDckw",
+      "title": "[CS116 - Buổi 2] Part 6",
+      "url": "https://www.youtube.com/watch?v=dDjSutHDckw",
+      "published_at": "2024-07-23T09:55:23Z"
+    },
+    {
+      "video_id": "kuDPIIsl2_8",
+      "title": "[CS116 - Buổi 3] Part 1",
+      "url": "https://www.youtube.com/watch?v=kuDPIIsl2_8",
+      "published_at": "2024-07-23T10:00:04Z"
+    },
+    {
+      "video_id": "lG95Eg3Hv7c",
+      "title": "[CS116 - Buổi 3] Part 2",
+      "url": "https://www.youtube.com/watch?v=lG95Eg3Hv7c",
+      "published_at": "2024-07-23T10:00:23Z"
+    },
+    {
+      "video_id": "7bb6IFBgtfw",
+      "title": "[CS116 - Buổi 3] Part 3",
+      "url": "https://www.youtube.com/watch?v=7bb6IFBgtfw",
+      "published_at": "2024-07-23T10:00:41Z"
+    },
+    {
+      "video_id": "oZa-m3pb1SQ",
+      "title": "[CS116 - Buổi 3] Part 3 (tt)",
+      "url": "https://www.youtube.com/watch?v=oZa-m3pb1SQ",
+      "published_at": "2024-07-23T10:01:02Z"
+    },
+    {
+      "video_id": "lIePeARVnH0",
+      "title": "[CS116 - Buổi 4] Part 1",
+      "url": "https://www.youtube.com/watch?v=lIePeARVnH0",
+      "published_at": "2024-07-23T10:11:30Z"
+    },
+    {
+      "video_id": "KgNMHIB8Aoc",
+      "title": "[CS116 - Buổi 4] Part 2",
+      "url": "https://www.youtube.com/watch?v=KgNMHIB8Aoc",
+      "published_at": "2024-07-23T10:11:51Z"
+    },
+    {
+      "video_id": "GA7IpvwIQTQ",
+      "title": "[CS116 - Buổi 4] Part 3",
+      "url": "https://www.youtube.com/watch?v=GA7IpvwIQTQ",
+      "published_at": "2024-07-23T10:12:08Z"
+    },
+    {
+      "video_id": "pIuM6XnJjD4",
+      "title": "[CS116 - Buổi 4] Part 4",
+      "url": "https://www.youtube.com/watch?v=pIuM6XnJjD4",
+      "published_at": "2024-07-23T10:12:23Z"
+    },
+    {
+      "video_id": "jEWheFdYryo",
+      "title": "[CS116 - Buổi 4] Part 6",
+      "url": "https://www.youtube.com/watch?v=jEWheFdYryo",
+      "published_at": "2024-07-23T10:12:53Z"
+    },
+    {
+      "video_id": "dckcCVv4tUI",
+      "title": "[CS116 - Buổi 4] Part 6 (tt)",
+      "url": "https://www.youtube.com/watch?v=dckcCVv4tUI",
+      "published_at": "2024-07-23T10:13:15Z"
+    },
+    {
+      "video_id": "GanRdKpk31I",
+      "title": "[CS116 - Buổi 5] Part 1",
+      "url": "https://www.youtube.com/watch?v=GanRdKpk31I",
+      "published_at": "2024-07-23T14:05:27Z"
+    },
+    {
+      "video_id": "HJleMrK28qc",
+      "title": "[CS116 - Buổi 5] Part 2",
+      "url": "https://www.youtube.com/watch?v=HJleMrK28qc",
+      "published_at": "2024-07-23T14:05:45Z"
+    },
+    {
+      "video_id": "QUIZn8fpTpI",
+      "title": "[CS116 - Buổi 5] Part 3",
+      "url": "https://www.youtube.com/watch?v=QUIZn8fpTpI",
+      "published_at": "2024-07-23T14:06:07Z"
+    },
+    {
+      "video_id": "tEV-Ie0kCsc",
+      "title": "[CS116 - Buổi 5] Part 3 (tt)",
+      "url": "https://www.youtube.com/watch?v=tEV-Ie0kCsc",
+      "published_at": "2024-07-23T14:06:53Z"
+    },
+    {
+      "video_id": "ZO3SVFww3ZQ",
+      "title": "[CS116 - Buổi 5] Part 4",
+      "url": "https://www.youtube.com/watch?v=ZO3SVFww3ZQ",
+      "published_at": "2024-07-23T14:07:12Z"
+    },
+    {
+      "video_id": "ANx3DPwHEGI",
+      "title": "[CS116 - Buổi 6] Part 1",
+      "url": "https://www.youtube.com/watch?v=ANx3DPwHEGI",
+      "published_at": "2024-07-23T14:33:31Z"
+    },
+    {
+      "video_id": "KBu_8C3KULg",
+      "title": "[CS116 - Buổi 6] Part 2",
+      "url": "https://www.youtube.com/watch?v=KBu_8C3KULg",
+      "published_at": "2024-07-23T14:33:54Z"
+    },
+    {
+      "video_id": "NJ0rjEK0L78",
+      "title": "[CS116 - Buổi 6] Part 2 (tt)",
+      "url": "https://www.youtube.com/watch?v=NJ0rjEK0L78",
+      "published_at": "2024-07-23T14:34:18Z"
+    },
+    {
+      "video_id": "5Hr7WDN8QKI",
+      "title": "[CS116 - Buổi 6] Part 3",
+      "url": "https://www.youtube.com/watch?v=5Hr7WDN8QKI",
+      "published_at": "2024-07-23T14:34:36Z"
+    },
+    {
+      "video_id": "Oc2dKYMWUx0",
+      "title": "[CS116 - Buổi 6] Part  3 (tt)",
+      "url": "https://www.youtube.com/watch?v=Oc2dKYMWUx0",
+      "published_at": "2024-07-23T14:34:58Z"
+    },
+    {
+      "video_id": "kJnJszwQlz8",
+      "title": "[CS116 - Buổi 7] Part 0",
+      "url": "https://www.youtube.com/watch?v=kJnJszwQlz8",
+      "published_at": "2024-07-23T15:40:04Z"
+    },
+    {
+      "video_id": "A6vU3I4CK6U",
+      "title": "[CS116 - Buổi 7] Part 1",
+      "url": "https://www.youtube.com/watch?v=A6vU3I4CK6U",
+      "published_at": "2024-07-23T15:40:29Z"
+    },
+    {
+      "video_id": "73-FbhDr_Po",
+      "title": "[CS116 - Buổi 7] Part 2",
+      "url": "https://www.youtube.com/watch?v=73-FbhDr_Po",
+      "published_at": "2024-07-23T15:40:47Z"
+    },
+    {
+      "video_id": "CYj_-IiXSIg",
+      "title": "[CS116 - Buổi 7] Part 3",
+      "url": "https://www.youtube.com/watch?v=CYj_-IiXSIg",
+      "published_at": "2024-07-23T15:41:36Z"
+    },
+    {
+      "video_id": "B5cpY9SY7CY",
+      "title": "[CS116 - Buổi 7] Part 4",
+      "url": "https://www.youtube.com/watch?v=B5cpY9SY7CY",
+      "published_at": "2024-07-23T15:41:55Z"
+    },
+    {
+      "video_id": "UCmTraNX7QA",
+      "title": "[CS116 - Buổi 8] Part 5",
+      "url": "https://www.youtube.com/watch?v=UCmTraNX7QA",
+      "published_at": "2024-07-23T15:42:28Z"
+    },
+    {
+      "video_id": "zTEi9Q92mdg",
+      "title": "[CS116 - Buổi 8] Part 6",
+      "url": "https://www.youtube.com/watch?v=zTEi9Q92mdg",
+      "published_at": "2024-07-23T15:42:53Z"
+    },
+    {
+      "video_id": "gSbV7SypJa4",
+      "title": "[CS116 - Buổi 8] Part 6 (tt)",
+      "url": "https://www.youtube.com/watch?v=gSbV7SypJa4",
+      "published_at": "2024-07-23T15:43:14Z"
+    },
+    {
+      "video_id": "X--mLc-PW-o",
+      "title": "[CS116 - Buổi 8] Part 8",
+      "url": "https://www.youtube.com/watch?v=X--mLc-PW-o",
+      "published_at": "2024-07-23T15:44:15Z"
+    },
+    {
+      "video_id": "7w5EiDHtIII",
+      "title": "[CS116 - Buổi 8] Part 9",
+      "url": "https://www.youtube.com/watch?v=7w5EiDHtIII",
+      "published_at": "2024-07-23T15:44:37Z"
+    },
+    {
+      "video_id": "ccgq3dzD0A4",
+      "title": "[CS116 - Buổi 8] Part 10",
+      "url": "https://www.youtube.com/watch?v=ccgq3dzD0A4",
+      "published_at": "2024-07-23T15:44:55Z"
+    },
+    {
+      "video_id": "xD-o-30NeBA",
+      "title": "[CS116 - Buổi 9] Part 1",
+      "url": "https://www.youtube.com/watch?v=xD-o-30NeBA",
+      "published_at": "2024-07-24T08:45:12Z"
+    },
+    {
+      "video_id": "uhwita1uhlA",
+      "title": "[CS116 - Buổi 9] Part 2_0",
+      "url": "https://www.youtube.com/watch?v=uhwita1uhlA",
+      "published_at": "2024-07-24T08:45:33Z"
+    },
+    {
+      "video_id": "CN9KChN5skw",
+      "title": "[CS116 - Buổi 9] Part 2_1",
+      "url": "https://www.youtube.com/watch?v=CN9KChN5skw",
+      "published_at": "2024-07-24T08:46:01Z"
+    },
+    {
+      "video_id": "YyTbZa-WmHY",
+      "title": "[CS116 - Buổi 10] Part 3_0",
+      "url": "https://www.youtube.com/watch?v=YyTbZa-WmHY",
+      "published_at": "2024-07-24T08:46:37Z"
+    },
+    {
+      "video_id": "usMgo0mKV3A",
+      "title": "[CS116 - Buổi 10] Part 3_1",
+      "url": "https://www.youtube.com/watch?v=usMgo0mKV3A",
+      "published_at": "2024-07-24T08:46:53Z"
+    },
+    {
+      "video_id": "MrCfY40azyU",
+      "title": "[CS116 - Buổi 10] Part 4_0",
+      "url": "https://www.youtube.com/watch?v=MrCfY40azyU",
+      "published_at": "2024-07-24T08:47:12Z"
+    },
+    {
+      "video_id": "P_og-OmyL44",
+      "title": "[CS116 - Buổi 10] Part 4_1",
+      "url": "https://www.youtube.com/watch?v=P_og-OmyL44",
+      "published_at": "2024-07-24T08:47:32Z"
+    },
+    {
+      "video_id": "oyZngWDeRb4",
+      "title": "[CS116 - Buổi 11] Part 1",
+      "url": "https://www.youtube.com/watch?v=oyZngWDeRb4",
+      "published_at": "2024-07-24T09:10:50Z"
+    },
+    {
+      "video_id": "zk9bnirI-cs",
+      "title": "[CS116 - Buổi 11] Part 2",
+      "url": "https://www.youtube.com/watch?v=zk9bnirI-cs",
+      "published_at": "2024-07-24T09:11:09Z"
+    },
+    {
+      "video_id": "piHxNCYpMLk",
+      "title": "[CS116 - Buổi 11] Part 3",
+      "url": "https://www.youtube.com/watch?v=piHxNCYpMLk",
+      "published_at": "2024-07-24T09:11:28Z"
+    },
+    {
+      "video_id": "Lt0azzH_htk",
+      "title": "[CS116 - Buổi 11] Part 4",
+      "url": "https://www.youtube.com/watch?v=Lt0azzH_htk",
+      "published_at": "2024-07-24T09:11:52Z"
+    },
+    {
+      "video_id": "NW8fWHdiAME",
+      "title": "[CS116 - Buổi 11] Part 5",
+      "url": "https://www.youtube.com/watch?v=NW8fWHdiAME",
+      "published_at": "2024-07-24T09:12:08Z"
+    },
+    {
+      "video_id": "yPGYgh-J3uY",
+      "title": "[CS116 - Buổi 13] Part 1",
+      "url": "https://www.youtube.com/watch?v=yPGYgh-J3uY",
+      "published_at": "2024-07-24T09:41:26Z"
+    },
+    {
+      "video_id": "7yfomH4cNXI",
+      "title": "[CS116 - Buổi 13] Part 2",
+      "url": "https://www.youtube.com/watch?v=7yfomH4cNXI",
+      "published_at": "2024-07-24T09:41:41Z"
+    },
+    {
+      "video_id": "1XtVmBf5vGA",
+      "title": "[CS116 - Buổi 13] Part 3_0",
+      "url": "https://www.youtube.com/watch?v=1XtVmBf5vGA",
+      "published_at": "2024-07-24T09:41:58Z"
+    },
+    {
+      "video_id": "gnpctQm2TkI",
+      "title": "[CS116 - Buổi 13] Part 3_1",
+      "url": "https://www.youtube.com/watch?v=gnpctQm2TkI",
+      "published_at": "2024-07-24T09:42:17Z"
+    },
+    {
+      "video_id": "K9YoXQq0TjI",
+      "title": "[CS116 - Buổi 13] Part 4",
+      "url": "https://www.youtube.com/watch?v=K9YoXQq0TjI",
+      "published_at": "2024-07-24T09:42:37Z"
+    },
+    {
+      "video_id": "hPxWhkAgyYw",
+      "title": "[CS116 - Buổi 4] Part 5_1",
+      "url": "https://www.youtube.com/watch?v=hPxWhkAgyYw",
+      "published_at": "2024-07-31T09:51:58Z"
+    },
+    {
+      "video_id": "f_rMY30-bRQ",
+      "title": "[CS116 - Buổi 4] Part 5_2",
+      "url": "https://www.youtube.com/watch?v=f_rMY30-bRQ",
+      "published_at": "2024-07-31T09:52:20Z"
+    },
+    {
+      "video_id": "sDmzaaAv3Pc",
+      "title": "[CS116 - Buổi 8] Part 7_1",
+      "url": "https://www.youtube.com/watch?v=sDmzaaAv3Pc",
+      "published_at": "2024-07-31T09:52:54Z"
+    },
+    {
+      "video_id": "Gnb5JI9ynU4",
+      "title": "[CS116 - Buổi 8] Part 7_2",
+      "url": "https://www.youtube.com/watch?v=Gnb5JI9ynU4",
+      "published_at": "2024-07-31T09:53:14Z"
+    },
+    {
+      "video_id": "Lqxy5wcEi9I",
+      "title": "[CS116 - Buổi 14] Part 1_1",
+      "url": "https://www.youtube.com/watch?v=Lqxy5wcEi9I",
+      "published_at": "2024-08-05T03:09:27Z"
+    },
+    {
+      "video_id": "kylIGUKrEsA",
+      "title": "[CS116 - Buổi 14] Part 1_2",
+      "url": "https://www.youtube.com/watch?v=kylIGUKrEsA",
+      "published_at": "2024-08-05T03:09:52Z"
+    },
+    {
+      "video_id": "WSGSbmgzO3M",
+      "title": "[CS116 - Buổi 14] Part 2_1",
+      "url": "https://www.youtube.com/watch?v=WSGSbmgzO3M",
+      "published_at": "2024-08-05T03:10:38Z"
+    },
+    {
+      "video_id": "zpcI-PT_MjE",
+      "title": "[CS116 - Buổi 14] Part 2_2",
+      "url": "https://www.youtube.com/watch?v=zpcI-PT_MjE",
+      "published_at": "2024-08-05T03:10:55Z"
+    },
+    {
+      "video_id": "aevGbPj9y6k",
+      "title": "[CS116 - Buổi 14] Part 2_3",
+      "url": "https://www.youtube.com/watch?v=aevGbPj9y6k",
+      "published_at": "2024-08-05T03:11:09Z"
+    },
+    {
+      "video_id": "fHQuBYhg_pA",
+      "title": "[CS116 - Buổi 14] Part 3_1",
+      "url": "https://www.youtube.com/watch?v=fHQuBYhg_pA",
+      "published_at": "2024-08-05T03:11:27Z"
+    },
+    {
+      "video_id": "pWrRBwgKqPQ",
+      "title": "[CS116 - Buổi 14] Part 3_2",
+      "url": "https://www.youtube.com/watch?v=pWrRBwgKqPQ",
+      "published_at": "2024-08-05T03:11:41Z"
+    },
+    {
+      "video_id": "pB7Y3ytmjZ0",
+      "title": "[CS116 - Buổi 14] Part 3_3",
+      "url": "https://www.youtube.com/watch?v=pB7Y3ytmjZ0",
+      "published_at": "2024-08-05T03:11:57Z"
+    },
+    {
+      "video_id": "2AfXTKxyUd8",
+      "title": "[CS116 - Buổi 14] Part 4",
+      "url": "https://www.youtube.com/watch?v=2AfXTKxyUd8",
+      "published_at": "2024-08-05T03:12:14Z"
+    },
+    {
+      "video_id": "WWRZF5x7Hqo",
+      "title": "[CS116 - Buổi 14] Part 5_1",
+      "url": "https://www.youtube.com/watch?v=WWRZF5x7Hqo",
+      "published_at": "2024-08-05T03:12:37Z"
+    },
+    {
+      "video_id": "dJaFUvTRrTw",
+      "title": "[CS116 - Buổi 14] Part 5_2",
+      "url": "https://www.youtube.com/watch?v=dJaFUvTRrTw",
+      "published_at": "2024-08-05T03:12:53Z"
+    },
+    {
+      "video_id": "CHywALVycG4",
+      "title": "[CS116 - Buổi 14] Part 5_3",
+      "url": "https://www.youtube.com/watch?v=CHywALVycG4",
+      "published_at": "2024-08-05T03:13:12Z"
+    }
+  ]
+}

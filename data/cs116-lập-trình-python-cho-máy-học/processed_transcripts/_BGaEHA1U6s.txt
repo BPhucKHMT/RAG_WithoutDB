@@ -1,0 +1,144 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:17 - 0:00:23, trong phạm vi của môn này thì chúng ta
+0:00:19 - 0:00:26, sẽ ôn tập cái ngôn ngữ lập trình Python
+0:00:23 - 0:00:28, Tại vì như đã đề cập thì các bạn chắc là
+0:00:26 - 0:00:30, đã học Python trong một số cái môn
+0:00:28 - 0:00:32, học trước đây hoặc là sử dụng Python
+0:00:30 - 0:00:34, như là một trong những cái ngôn ngữ lập
+0:00:32 - 0:00:37, trình để làm đồ án của các cái môn học
+0:00:34 - 0:00:40, trước đây do đó thì trong môn học này
+0:00:37 - 0:00:44, thì chúng ta chỉ ôn tập
+0:00:40 - 0:00:47, đầu tiên thì chúng ta sẽ nói sơ qua một
+0:00:44 - 0:00:49, vài cái tính chất của Python đó là một
+0:00:47 - 0:00:52, cái ngôn ngữ bậc cao high level
+0:00:49 - 0:00:54, programming language. Nó là một cái trình
+0:00:52 - 0:00:57, thông dịch hay còn gọi là một cái
+0:00:54 - 0:00:59, interpreter Và nó có cái tính đa năng
+0:00:57 - 0:01:00, thì như đã đề cập
+0:00:59 - 0:01:02, Python có thể lập trình ứng dụng
+0:01:00 - 0:01:05, hoàn toàn có thể lập trình máy học và
+0:01:02 - 0:01:08, Trí tuệ nhân tạo. Python có thể làm trong
+0:01:05 - 0:01:11, lĩnh vực về dữ liệu lớn
+0:01:08 - 0:01:13, thì nó rất là đa năng và một cái điều
+0:01:11 - 0:01:14, quan trọng nữa đó là Python hỗ trợ Lập
+0:01:13 - 0:01:16, trình hướng đối tượng. Đây là một trong
+0:01:14 - 0:01:18, những cái phong cách lập trình phổ biến
+0:01:16 - 0:01:21, được các lập trình viên trên thế
+0:01:18 - 0:01:23, giới sử dụng và cái tư tưởng Lập trình
+0:01:21 - 0:01:25, hướng đối tượng sẽ giúp cho lập trình
+0:01:23 - 0:01:27, viên có thể tiếp cận đến các ngôn ngữ
+0:01:25 - 0:01:31, này một cách dễ dàng.
+0:01:27 - 0:01:34, Đó là những cái lý do tại sao chúng ta
+0:01:31 - 0:01:38, nên học Python thì thứ nhất Đây là một
+0:01:34 - 0:01:41, ngôn ngữ rất là đơn giản thứ hai đó là
+0:01:38 - 0:01:45, rõ ràng, dễ đọc và cái thứ ba đó là
+0:01:41 - 0:01:47, một ngôn ngữ dễ học và cái thứ tư rất là
+0:01:45 - 0:01:49, quan trọng đó là Python có cộng đồng rất
+0:01:47 - 0:01:52, là lớn thì như chúng ta đã nói trong slide
+0:01:49 - 0:01:55, trước Python có từ không phải từ gần đây
+0:01:52 - 0:01:57, mà nó đã có từ hàng chục năm về trước Do
+0:01:55 - 0:01:59, đó thì Cộng đồng phát triển cái cộng
+0:01:57 - 0:02:01, đồng sử dụng ngôn ngữ Python cũng
+0:01:59 - 0:02:02, rất là nhiều do đó thì những cái mẹo
+0:02:01 - 0:02:05, những cái lỗi trong quá trình sử dụng
+0:02:02 - 0:02:08, Python sẽ được cộng đồng chia sẻ để
+0:02:05 - 0:02:11, cho chúng ta có thể kế thừa.
+0:02:08 - 0:02:11, Thì
+0:02:11 - 0:02:16, thư viện Python cũng chính vì cái lịch
+0:02:13 - 0:02:18, sử phát triển rất là lâu đời như vậy thì
+0:02:16 - 0:02:21, Python nó cũng có rất nhiều những cái thư
+0:02:18 - 0:02:24, viện đi kèm hỗ trợ. Ví dụ như SciPy, nó sẽ có scikit-learn
+0:02:21 - 0:02:26, scikit-learn sẽ là cái
+0:02:24 - 0:02:29, thư viện chính trong cái môn này.
+0:02:26 - 0:02:32, Ngoài ra thì nó cũng có thư viện như là
+0:02:29 - 0:02:35, xử lý tính toán số học NumPy rồi
+0:02:32 - 0:02:38, thư viện Matplotlib để Trực Quan Hóa thì
+0:02:35 - 0:02:40, đây là các cái thư viện rất là kinh điển
+0:02:38 - 0:02:43, trong Python.
+0:02:40 - 0:02:47, Và những gã khổng lồ nào đang sử dụng
+0:02:43 - 0:02:50, Python thì chúng ta thấy các cái ngôn
+0:02:47 - 0:02:51, ngữ và các gã khổng lồ có sử
+0:02:50 - 0:02:58, dụng Python có thể nhắc đến ví dụ như là
+0:02:51 - 0:03:01, Instagram rồi Google rồi Facebook
+0:02:58 - 0:03:02, thì đây là những cái gã khổng lồ có sử
+0:03:01 - 0:03:05, dụng ngôn ngữ Python trong các quá trình
+0:03:02 - 0:03:05, phát triển các sản phẩm của họ.
+0:03:05 - 0:03:12, Và ở đây chúng ta
+0:03:08 - 0:03:15, đưa ra một cái ví dụ cực kỳ nhỏ, cực kỳ
+0:03:12 - 0:03:16, đơn giản để minh họa tại sao Python được
+0:03:15 - 0:03:19, ưa thích.
+0:03:16 - 0:03:23, Ở đây chúng ta thấy ngôn ngữ C
+0:03:19 - 0:03:26, C++ và Java đây là ba cái ngôn
+0:03:23 - 0:03:28, ngữ rất là phổ biến hiện nay thì để có
+0:03:26 - 0:03:32, thể thực hiện được một cái câu lệnh là
+0:03:28 - 0:03:34, Hello world thì các cái ngôn ngữ này sẽ
+0:03:32 - 0:03:36, phải làm rất là dài dòng trong khi đó
+0:03:34 - 0:03:38, Python chỉ cần thực hiện đúng một
+0:03:36 - 0:03:41, dòng code là chúng ta có thể thực hiện
+0:03:38 - 0:03:43, được rồi. Thì đây là một cái ví dụ nhỏ để
+0:03:41 - 0:03:46, minh họa cho cái việc Python rất là
+0:03:43 - 0:03:46, gọn gàng, dễ học.
+0:03:50 - 0:03:55, Về môi trường lập trình thì Python
+0:03:53 - 0:03:59, có rất nhiều những cái môi trường lập
+0:03:55 - 0:04:02, trình hỗ trợ thì nổi tiếng nhất chính là
+0:03:59 - 0:04:05, PyCharm. Bên cạnh đó thì Python cũng
+0:04:02 - 0:04:07, được hỗ trợ trong Visual Studio Code.
+0:04:05 - 0:04:10, [âm nhạc]
+0:04:07 - 0:04:12, thì trong phạm vi của môn học này thì
+0:04:10 - 0:04:16, tôi khuyến khích là các bạn có thể sử
+0:04:12 - 0:04:20, dụng Visual Studio Code. Tại vì đây là một
+0:04:16 - 0:04:21, cái IDE, một cái môi trường lập trình có
+0:04:20 - 0:04:24, tích hợp với rất nhiều những cái ngôn
+0:04:21 - 0:04:26, ngữ khác nhau. Nếu như các bạn có học
+0:04:24 - 0:04:29, thêm với các cái ngôn ngữ khác như là
+0:04:26 - 0:04:34, C++, Java vân vân thì có thể sử
+0:04:29 - 0:04:37, dụng cái IDE này dùng chung luôn để chia
+0:04:34 - 0:04:39, sẻ đỡ nặng máy. Ngoài ra thì một cái tính
+0:04:37 - 0:04:42, chất Nữa của Visual Studio Code chính là
+0:04:39 - 0:04:44, rất là nhẹ.
+0:04:42 - 0:04:46, Bên cạnh đó thì chúng ta sẽ sử dụng một
+0:04:44 - 0:04:48, cái môi trường
+0:04:46 - 0:04:49, cũng rất là nổi tiếng gần đây đó là
+0:04:48 - 0:04:51, Jupyter.
+0:04:49 - 0:04:53, Đây là một cái web interface để cho phép
+0:04:51 - 0:04:56, chúng ta có thể lập trình Python
+0:04:53 - 0:04:57, và nhờ cái web interface thì chúng ta
+0:04:56 - 0:05:00, có thể
+0:05:00 - 0:05:06, tương tác nó thuận tiện hơn, trực quan hơn
+0:05:02 - 0:05:08, và cũng như chúng ta có thể chia sẻ cái
+0:05:06 - 0:05:09, file mã nguồn một cách dễ dàng để cho
+0:05:08 - 0:05:11, những cái người khác có thể theo dõi cái
+0:05:09 - 0:05:16, số liệu trong quá trình mà mình xử lý
+0:05:11 - 0:05:20, tính toán.
+0:05:16 - 0:05:21, rất là phổ biến hiện nay nữa đó chính là
+0:05:20 - 0:05:24, Colab.
+0:05:21 - 0:05:27, Colab là một cái môi trường lập trình
+0:05:24 - 0:05:29, được tài trợ bởi Google. Thì chỉ cần
+0:05:27 - 0:05:32, chúng ta có tài khoản Gmail thì đều có
+0:05:29 - 0:05:34, thể sử dụng và cái giao diện của nó thì
+0:05:32 - 0:05:36, cũng tương tự như là Jupyter Notebook
+0:05:34 - 0:05:38, tức là các cái file mà chúng ta tương
+0:05:36 - 0:05:42, tác nó sẽ giống như là file notebook.
+0:05:38 - 0:05:45, Có điều là nó sẽ được lưu trữ online và
+0:05:42 - 0:05:46, hoàn toàn miễn phí ở Google. Các cái file
+0:05:45 - 0:05:49, notebook này sẽ được lưu trên Google
+0:05:46 - 0:05:53, Drive và dễ dàng chia sẻ với nhau.
+0:05:49 - 0:05:54, Vậy thì để có thể sử dụng được cái
+0:05:53 - 0:05:56, Colab thì chúng ta có thể truy cập vào
+0:05:54 - 0:05:59, địa chỉ là colab
+0:05:56 - 0:06:03, chấm research.google.com.
+0:05:59 - 0:06:06, Và đây sẽ là cái giao diện
+0:06:03 - 0:06:08, và đính kèm với cái bài giảng ngày hôm
+0:06:06 - 0:06:11, nay thì chúng ta sẽ có hai cái bài tập
+0:06:08 - 0:06:14, luyện tập. Ở đây thì chúng ta sẽ được
+0:06:11 - 0:06:18, thực hiện vào cuối buổi.
+0:06:14 - 0:06:20, Rồi về tài liệu tham khảo thì như đã đề
+0:06:18 - 0:06:23, cập ha, chúng ta sẽ có cái trang chủ của
+0:06:20 - 0:06:26, Colab và hai cái bài tập
+0:06:23 - 0:06:28, luyện tập sử dụng Colab. Ngoài ra thì
+0:06:26 - 0:06:31, chúng ta sẽ có các cái cuốn sách như đã
+0:06:28 - 0:06:36, liệt kê ở trong cái bìa sách ở đây: Python
+0:06:31 - 0:06:39, 101 và Python 201 tương ứng với
+0:06:36 - 0:06:41, lại hai cái mức độ, hai cái trình độ khác
+0:06:39 - 0:06:44, nhau. Đây là mức độ cơ bản và Đây là mức
+0:06:41 - 0:06:44, độ nâng cao hơn.

@@ -1,0 +1,143 @@
+0:00:01 - 0:00:06, trong phần tiếp theo thì chúng ta sẽ
+0:00:02 - 0:00:08, cùng tìm hiểu về cái thư viện mop list
+0:00:06 - 0:00:10, thì đây là một trong những cái thư viện
+0:00:08 - 0:00:12, dùng để trực quang hóa rất là nổi tiếng
+0:00:10 - 0:00:16, và cái cách khai báo của chúng ta đó là
+0:00:12 - 0:00:17, chúng ta sẽ import m.pay blot Đây là cái
+0:00:16 - 0:00:21, module mà được sử dụng nhiều nhất trong
+0:00:17 - 0:00:24, cái Tutorial ngày hôm nay
+0:00:21 - 0:00:26, và chúng ta sẽ viết tắt nó là bằng chữ
+0:00:24 - 0:00:29, plt thì đây là cái quy tắc chung được
+0:00:26 - 0:00:32, cộng đồng sử dụng rất là nhiều ha thao
+0:00:29 - 0:00:35, tác đầu tiên đó là vẽ thì ở đây chúng ta
+0:00:32 - 0:00:38, đang khởi tạo ra một cái mãng X gồm có
+0:00:35 - 0:00:40, các cái giá trị nè NP arange thì trong
+0:00:38 - 0:00:45, cái bài về nump á chúng ta biết rồi NP
+0:00:40 - 0:00:48, arrange là từ 0 cho đến 3 pi bước nhảy
+0:00:45 - 0:00:51, của mình là 0.1 và chúng ta sẽ lấy cái X
+0:00:48 - 0:00:54, này chúng ta sẽ truyền vào np.sin thì
+0:00:51 - 0:00:57, np.sin á nó thực hiện cái thao tác tính
+0:00:54 - 0:01:01, giá trị sin trên một cái array đó thì y
+0:00:57 - 0:01:04, của mình sẽ là các cái giá trị Sin của
+0:01:01 - 0:01:07, x rồi và chúng ta sẽ dùng cái hàm là plt
+0:01:04 - 0:01:11, plot xy thì để hiển thị kết quả chúng ta
+0:01:07 - 0:01:11, sẽ dùng là là plt.style.use
+0:01:29 - 0:01:33, rồi chúng
+0:01:31 - 0:01:36, ta có thể vẽ thay vì chúng ta vẽ một
+0:01:33 - 0:01:38, đường như thế này thì trong MP chúng ta
+0:01:36 - 0:01:41, cũng có thể vẽ nhiều đường Ví dụ ở đây
+0:01:38 - 0:01:45, chúng ta sẽ có iin và I cos đúng không
+0:01:41 - 0:01:47, Rồi chúng ta sẽ gán nhãn label gán label
+0:01:45 - 0:01:50, cho các cái đường này ví dụ như đối với
+0:01:47 - 0:01:53, x Yin thì chúng ta sẽ gán label cho nó
+0:01:50 - 0:01:57, là đường sin và I cos thì chúng ta sẽ
+0:01:53 - 0:02:01, gán giãn cho nó là cosin và chúng ta có
+0:01:57 - 0:02:05, thể chú thích trên các cái trục là trục
+0:02:01 - 0:02:07, ngang trục hoành và trục tung là x label
+0:02:05 - 0:02:10, và ebel thì trên trục hoành chúng ta sẽ
+0:02:07 - 0:02:14, ghi là x assist label và trên trục tung
+0:02:10 - 0:02:17, là y label và chúng ta có thể đặt tên
+0:02:14 - 0:02:20, cho cái biểu đồ của
+0:02:17 - 0:02:22, mình thì chúng ta thấy nè cái lệnh
+0:02:20 - 0:02:24, Legend này nè đó thì nó sẽ lấy cái label
+0:02:22 - 0:02:29, là Sin và COD ra đây nó sẽ điền qua đây
+0:02:24 - 0:02:32, sin cosin rồi cái tiêu đề là Sin và
+0:02:29 - 0:02:34, cosin Đây là cái tiêu đề của tấm hình và
+0:02:32 - 0:02:37, chú thích theo trục đó tức là x label và
+0:02:34 - 0:02:39, e label thì nó tương ống là đây Chú
+0:02:37 - 0:02:40, thích theo trục ý nghĩa của trục tung và
+0:02:39 - 0:02:44, ý nghĩa của trục
+0:02:40 - 0:02:47, hoành rồi đây là chúng ta vẽ dới dạng là
+0:02:44 - 0:02:49, đường liên tục nối tiếp nhau chúng ta sẽ
+0:02:47 - 0:02:51, có một cái kiểu vẽ đó là scatter scatter
+0:02:49 - 0:02:54, là chúng ta sẽ vẽ dưới dạng những cái
+0:02:51 - 0:02:55, điểm rời đầy đ chúng ta sẽ vẽ những cái
+0:02:54 - 0:02:57, điểm r ràng và không có điểm nào nối với
+0:02:55 - 0:03:00, điểm nào tức là các cái điểm nó sẽ độc
+0:02:57 - 0:03:04, lập nhau thì x y ở đây là các cái giá
+0:03:00 - 0:03:06, trị random gồm 50 các phần tử random thì
+0:03:04 - 0:03:10, giá trị random ở đây là từ 0 cho đến 1
+0:03:06 - 0:03:11, ha và cứ mỗi giá trị x và một cặp một
+0:03:10 - 0:03:13, cặp giá trị x và y thì chúng ta sẽ có
+0:03:11 - 0:03:15, một cái tọa độ trong không gian hai
+0:03:13 - 0:03:18, chiều này rồi chúng ta sẽ chọn các màu
+0:03:15 - 0:03:23, của mình cũng random luôn màu random từ
+0:03:18 - 0:03:26, 0 cho đến ờ 2 đ không và số lượng cái
+0:03:23 - 0:03:30, màu mà mình lấy ra để random đó là 50
+0:03:26 - 0:03:33, cái màu thì là ở đây chúng ta chỉ là từ
+0:03:30 - 0:03:38, 0 2 tới lại hàm ý là chỉ có hai màu thôi
+0:03:33 - 0:03:41, tức là 0 hoặc 1 rồi thì color r chúng ta
+0:03:38 - 0:03:43, sẽ là plt scatter xy tức là các cái giá
+0:03:41 - 0:03:44, trị theo trục X và giá trị trục y vẽ rồi
+0:03:43 - 0:03:49, rạt
+0:03:44 - 0:03:50, nhau rồi thì đây là kiểu vẽ r rạt trong
+0:03:49 - 0:03:53, trường hợp nếu như chúng ta muốn minh
+0:03:50 - 0:03:58, họa cái hình ảnh mà dưới dạng nhiều cái
+0:03:53 - 0:04:01, phần hoặc là nhiều cái ô khác nhau thì
+0:03:58 - 0:04:03, chúng ta có thể dùng slot slot ở đây
+0:04:01 - 0:04:06, chúng ta sẽ có một cái ví dụ ha là
+0:04:03 - 0:04:09, x là một cái giá trị chúng ta lấy từ 0
+0:04:06 - 0:04:12, cho đến 3 pi và chúng ta sẽ có hai cái
+0:04:09 - 0:04:14, đường là xin và Yin Thế thì chúng ta
+0:04:12 - 0:04:16, muốn vẽ hai cái đường xin và Yin này
+0:04:14 - 0:04:20, trên cái ô đầu tiên thì chúng ta sẽ dùng
+0:04:16 - 0:04:24, cái lệnh là slot 211 thì 211 này hàm ý
+0:04:20 - 0:04:29, là gì 211 này là chúng ta sẽ có hai hàng
+0:04:24 - 0:04:31, và một cột trong đó trong đó cái việc vẽ
+0:04:29 - 0:04:35, nữa tiếp theo chúng ta sẽ chuẩn bị vẽ n
+0:04:31 - 0:04:41, là chúng ta sẽ làm chúng ta sẽ thực
+0:04:35 - 0:04:44, hiện vẽ trên cái ô đầu tiên tức là ô số
+0:04:41 - 0:04:48, 1 Rồi sau đó th chúng ta sẽ có cái lệnh
+0:04:44 - 0:04:53, là splot và chúng ta sẽ có cái cái ký
+0:04:48 - 0:04:56, hiệu là splot 212 tức là hai hàng hai
+0:04:53 - 0:05:01, hàng và một cột Tuy nhiên chúng ta sẽ vẽ
+0:04:56 - 0:05:01, lên chiếc ô thứ hai ô thứ hai
+0:05:03 - 0:05:09, rồi và chúng ta mỗi cái hình sin và hình
+0:05:06 - 0:05:13, cos sẽ được vẽ trên một cái ô khác
+0:05:09 - 0:05:17, nhau đó thì ở hàng ở đây chúng ta có hai
+0:05:13 - 0:05:20, hàng nè Một Cột nè Đây là hàng số 1 đây
+0:05:17 - 0:05:22, là hàng số hai và có một cột Thôi thì
+0:05:20 - 0:05:24, cái cột đầu tiên cái ô đầu tiên chúng ta
+0:05:22 - 0:05:27, sẽ vẽ đường sin ô Thứ hai chúng ta sẽ về
+0:05:24 - 0:05:29, hình cốt thì chi tiết cho cái phần này
+0:05:27 - 0:05:34, chúng ta có thể tham khảo thêm trong cái
+0:05:29 - 0:05:34, tài liệu ở đây đó là splot m
+0:05:36 - 0:05:39, suppot
+0:05:39 - 0:05:45, rồi về các cái loại biểu đồ thì chúng ta
+0:05:42 - 0:05:49, có những cái loại biểu đồ rất là phổ
+0:05:45 - 0:05:50, biến đó chính là scatter là vẽ dạng ri
+0:05:49 - 0:05:54, rạt giống như hồi nãy Line
+0:05:50 - 0:05:56, là chấm plot thì nó sẽ vẽ ra các cái
+0:05:54 - 0:06:00, điểm và nối tiếp nhau bằng các cái đường
+0:05:56 - 0:06:03, Đặng thẳng ba ch là vẽ dưới dạng là biểu
+0:06:00 - 0:06:05, đồ cột và p ch tức là vẽ như dạng biểu
+0:06:03 - 0:06:05, đồ
+0:06:07 - 0:06:13, tròn ở đây chúng ta sẽ thấy là có bốn
+0:06:11 - 0:06:16, cái loại biểu đồ khác nhau tương ứng với
+0:06:13 - 0:06:21, lại từng cái ô trong cái plot của
+0:06:16 - 0:06:25, mình cái blot spot đầu tiên đó là 221
+0:06:21 - 0:06:30, tức là hai hàng hai cột và ô đầu tiên
+0:06:25 - 0:06:33, tức là đây ô tiếp theo đó là
+0:06:30 - 0:06:38, 2 2 2 tức là hai hàng hai cột và cái ô
+0:06:33 - 0:06:42, thứ hai là cái Đạ và hai hàng ba cột tức
+0:06:38 - 0:06:46, là hai hàng và hai cột và ô thứ ba tức
+0:06:42 - 0:06:49, là Cái ô này rồi 2 24 tức là chúng ta sẽ
+0:06:46 - 0:06:51, vẽ lên đây thì đây là cái đoạn cốt minh
+0:06:49 - 0:06:54, họa cho cái việc vẽ với rất nhiều những
+0:06:51 - 0:06:56, cái ô khác nhau với những nhiều những
+0:06:54 - 0:07:00, loại biểu đồ khác nhau
+0:06:56 - 0:07:03, r một cái thao tác nữa đó chính là là
+0:07:00 - 0:07:06, cho phép chúng ta có thể vẽ và đọc và
+0:07:03 - 0:07:08, hiển thị hình ảnh thì ở đây chúng ta sẽ
+0:07:06 - 0:07:09, có một cái ví dụ là chúng ta sẽ đọc một
+0:07:08 - 0:07:11, cái ảnh từ
+0:07:09 - 0:07:13, file chúng ta sẽ truyền cái đường dõng
+0:07:11 - 0:07:17, của cái file ảnh của mình lên và chúng
+0:07:13 - 0:07:20, ta sẽ dùng là plt ch inre
+0:07:17 - 0:07:22, và hiển thị cái cái cái ảnh của mình đã
+0:07:20 - 0:07:25, load lên từ file lên như thế này rồi sau
+0:07:22 - 0:07:29, đó là ins show sau khi chúng ta đọc xong
+0:07:25 - 0:07:32, là chúng ta sẽ ins show thì trên đây là
+0:07:29 - 0:07:35, một số cái hàm phổ biến trong thư viện
+0:07:32 - 0:07:38, map mà chúng ta sẽ dùng trong phạm vi
+0:07:35 - 0:07:38, của một học đề

@@ -74,7 +74,7 @@
 0:05:58 - 0:06:08, Rồi, đối với phép deconvolution, thì nó tổng hợp thông tin từ một vùng giả sử như đây là kích thước 3x3.
 0:06:08 - 0:06:14, Nó sẽ tổng hợp thông tin về một cái ô. Thì deconvolution là cái công việc ngược lại.
 0:06:14 - 0:06:25, Tức là từ một cái ô có kích thước là 1x1, nó sẽ lan truyền cái thông tin này đến cái vùng có kích thước là 3x3 ở feature map output.
-0:06:25 - 0:06:33, và nó cũng sẽ có các bộ filter để thực hiện phép **deconvolution**, tương tự như phép convolution.
+0:06:25 - 0:06:33, và nó cũng sẽ có các bộ filter để thực hiện phép convolution, tương tự như phép deconvolution.
 0:06:33 - 0:06:39, Một kiến trúc khác cũng rất là nổi tiếng và đó chính là DeepLab V3.
 0:06:39 - 0:06:50, Ý tưởng của DeepLab V3 sẽ dựa trên phép tính toán, đó là atrous convolution hoặc là tên khác, đó là dilated convolution.
 0:06:50 - 0:07:00, Nếu như phép biến đổi Convolution là, nếu như đây là Input, đây là Output,
@@ -92,7 +92,7 @@
 0:08:04 - 0:08:07, thì ở trong cái ví dụ này thì cái rate
 0:08:07 - 0:08:10, rate nó thể hiện là cái skip của mình là bằng 2.
 0:08:10 - 0:08:14, trong cái ví dụ này thì cái rate của mình
-0:08:14 - 0:08:16, rate bằng 1,
+0:08:14 - 0:08:16, rate là bằng 1,
 0:08:16 - 0:08:18, tức là nó chỉ nhảy cóc 1 đơn vị,
 0:08:18 - 0:08:23, còn cái này là nhảy cóc 2 đơn vị để lấy cái giá trị để tổng hợp thông tin lên đây.
 0:08:23 - 0:08:26, và cái phép atrous convolution
@@ -101,9 +101,9 @@
 0:08:42 - 0:08:46, Thực ra cái 1 x 1 convolution này nếu như mình nhìn một cái góc độ nào đó
 0:08:46 - 0:08:50, Nó chính là rate bằng 0.
 0:08:50 - 0:08:58, Tức là các giá trị của mình không có nhảy ra để tổng hợp thông tin mà nó cứ đứng yên vậy đó.
-0:08:58 - 0:09:06, Rate bằng 0. Còn convolution, 3x3 convolution với rate bằng 6,
+0:08:58 - 0:09:06, Rate là không. Còn convolution, 3x3 convolution với rate là bằng 6,
 0:09:06 - 0:09:14, tức là khoảng cách giữa các điểm mà mình lấy mẫu để tổng hợp thông tin, thì khoảng cách này là 6.
-0:09:14 - 0:09:30, Rate bằng 12, Rate bằng 18, thì khoảng cách giữa 2 điểm ảnh trên feature map để tổng hợp thông tin là 18.
+0:09:14 - 0:09:30, Rate là 12, Rate là 18, thì khoảng cách giữa 2 điểm ảnh trên feature map để tổng hợp thông tin là 18.
 0:09:30 - 0:09:34, thì nhắc lại lần nữa là cái 1x1 convolution này hiểu một cách
 0:09:34 - 0:09:39, là extreme case thì nó chính là 3x3
 0:09:39 - 0:09:47, nhưng mà rate bằng không là cái điểm mà mình lấy mẫu không có nhảy ra ngoài mà cứ đứng yên một chỗ,
@@ -112,21 +112,21 @@
 0:09:55 - 0:10:03, Như vậy thì cả 5 feature maps này sẽ concat lại với nhau, tức là nó sẽ trồng lại lên nhau,
 0:10:03 - 0:10:11, và đồng thời nó sẽ thực hiện phép 1x1 convolution để tổng hợp thông tin về 1 feature map.
 0:10:11 - 0:10:18, Tức là ban đầu các phép tính 1x1 convolution sẽ tạo ra 1 feature map như thế này,
-0:10:18 - 0:10:43, Phép 3x3 convolution với rate bằng 6, nó sẽ tạo ra một cái feature map mới, rồi với rate bằng 12, với rate bằng 18.
+0:10:18 - 0:10:43, Phép 3x3 convolution với rate là bằng 6, nó sẽ tạo ra một cái feature map mới, rồi với rate là 12, với rate là 18.
 0:10:43 - 0:10:48, Thở
 0:10:48 - 0:10:52, Thở
 0:10:52 - 0:10:58, Rồi, thì sau khi chúng ta thực hiện phép 1x1 convolution thì nó sẽ tổng hợp lại thành duy nhất
 0:10:58 - 0:11:03, ờ, nó sẽ tổng hợp lại thành duy nhất một cái feature map mà thôi.
 0:11:03 - 0:11:22, Rồi, sau đó nó sẽ thực hiện phép upsampling, Bilinear upsampling,
-0:11:22 - 0:11:30, tức là không có tham số để tái tạo ra một cái ảnh kết quả mà có cái độ phân giải cao.
+0:11:22 - 0:11:30, chứ là không có tham số để tái tạo ra một cái ảnh kết quả mà có cái độ phân giải cao.
 0:11:30 - 0:11:33, Đây là ý tưởng DeepLabV3.
 0:11:33 - 0:11:38, Ý chính của DeepLabV3 chính là phép Atrous Convolution hay Dilated Convolution.
 0:11:38 - 0:11:43, Nằm trong Atrous Spatial Pyramid Pooling.
 0:11:43 - 0:11:48, Nó sẽ concat thông tin khi thực hiện Atrous Convolution
 0:11:48 - 0:11:51, với rất nhiều rate khác nhau.
 0:11:51 - 0:11:56, Sau đó chúng ta tổng hợp lại thông qua phép concat kết hợp với 1x1 Convolution.
-0:11:56 - 0:12:06, Rồi, như vậy thì trên đây, đó là chúng ta đã **tóm tắt** rất nhiều những cái ứng dụng kinh điển, điển hình của mạng CNN,
-0:12:06 - 0:12:17, từ các cái ứng dụng liên quan đến bài toán phân loại đối tượng trên những cái loại đối tượng mà có cái **cấp độ** rất là mịn.
+0:11:56 - 0:12:06, Rồi, như vậy thì trên đây, đó là chúng ta đã tóm tắt rất nhiều những cái ứng dụng kinh điển, điển hình của mạng CNN,
+0:12:06 - 0:12:17, từ các cái ứng dụng liên quan đến bài toán phân loại đối tượng trên những cái loại đối tượng mà có cái ý rất là mịn.
 0:12:17 - 0:12:27, Tức là, thay vì chúng ta nhận diện hoa so với lại các đối tượng khác như là cây cối, thì ở đây hoa, chúng ta sẽ phân ra rất nhiều loài hoa.
 0:12:28 - 0:12:36, Tương tự như vậy, đối với xe hơi, chúng ta cũng sẽ có rất nhiều loại xe hơi, các dòng xe hơi, các niên đại của nó.
 0:12:37 - 0:12:43, Rồi, đối với bài toán nhận diện gương mặt, chúng ta sẽ phải phân biệt được định danh của người này với người kia.

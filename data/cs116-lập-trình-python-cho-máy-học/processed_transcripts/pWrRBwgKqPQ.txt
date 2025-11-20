@@ -1,0 +1,236 @@
+0:00:00 - 0:00:06, rồi và bây giờ thì chúng ta sẽ qua cái
+0:00:03 - 0:00:09, giao diện của cái
+0:00:06 - 0:00:11, **Colab**. Đây chính là cái mô hình mà giả sử
+0:00:09 - 0:00:14, chúng ta đã huấn luyện xong đúng không.
+0:00:11 - 0:00:17, Thì ở đây chúng ta sẽ nói qua cái đoạn
+0:00:14 - 0:00:19, code **Colab** này là gì và chúng ta mong
+0:00:17 - 0:00:22, muốn đó là chúng ta sẽ đưa cái mô hình
+0:00:19 - 0:00:25, mà đã được huấn luyện với cái Google
+0:00:22 - 0:00:27, **Colab** để tạo thành một cái **ứng dụng web**. Thì
+0:00:25 - 0:00:30, rõ ràng với cái **Colab** này, những người
+0:00:27 - 0:00:32, dùng người ta sẽ rất khó để có thể **thiết lập**
+0:00:30 - 0:00:34, được những cái đoạn code này khi họ
+0:00:32 - 0:00:35, không biết về lập trình máy học. Đó, người
+0:00:34 - 0:00:37, ta sẽ nhìn vô các cái đoạn code này,
+0:00:35 - 0:00:40, người ta sẽ không hiểu là phải nhập vô
+0:00:37 - 0:00:42, cái chỗ nào, nhập input, nhập input
+0:00:40 - 0:00:46, như thế nào và xem cái output như thế
+0:00:42 - 0:00:50, nào. Đó thì ở đây chúng ta sẽ chạy thử
+0:00:46 - 0:00:54, ha. Rồi, chúng ta sẽ **load** dữ liệu lên từ
+0:00:50 - 0:00:56, file. Thì ở đây cái dữ liệu của mình nó
+0:00:54 - 0:01:00, sẽ là bao gồm thuộc tính **đầu vào** là kích
+0:00:56 - 0:01:02, thước và khối lượng của một cái món hàng,
+0:01:00 - 0:01:03, và output mà mình cần phải dự đoán đó
+0:01:02 - 0:01:07, chính là
+0:01:03 - 0:01:09, giá, cái giá mà để vận chuyển cái món
+0:01:07 - 0:01:10, hàng đó sẽ là bao nhiêu tiền và đơn vị
+0:01:09 - 0:01:14, sẽ là Việt Nam
+0:01:10 - 0:01:17, đồng. Rồi, chúng ta **load dữ liệu** lên, sau
+0:01:14 - 0:01:19, đó là đưa nó vào các cái biến X là **input**
+0:01:17 - 0:01:22, **feature** và Y là giá trị dự đoán là
+0:01:19 - 0:01:24, **Price**. Sau đó chúng ta sẽ tiến hành chia
+0:01:22 - 0:01:28, ra làm hai tập train và tập test với tỉ
+0:01:24 - 0:01:30, lệ là 80% train và 20% để test. Sau
+0:01:28 - 0:01:32, đó chúng ta sẽ thử nghiệm với một mô hình.
+0:01:30 - 0:01:34, Thì với hai mô hình, mô hình đầu
+0:01:32 - 0:01:37, tiên đó chính là **Linear Regression**,
+0:01:34 - 0:01:38, và mô hình này cho cái **sai số** đó
+0:01:37 - 0:01:41, là
+0:01:38 - 0:01:43, 36.000đ. Sau đó thì chúng ta sẽ thử với
+0:01:41 - 0:01:46, lại cái mô hình thứ hai đó là mô hình
+0:01:43 - 0:01:49, **Decision Tree**, và chúng ta sẽ thử với
+0:01:46 - 0:01:51, phương pháp **Grid Search** để tìm cái **bộ siêu tham số tối ưu**. Thì tất cả những cái kiến
+0:01:51 - 0:01:56, thức này chúng ta đều đã học ở trong
+0:01:53 - 0:01:56, những cái bài trước
+0:01:57 - 0:02:02, đây. Và sau khi mô hình đã **vét cạn** để tìm
+0:02:00 - 0:02:06, ra cái bộ siêu tham số lớn nhất thì cái
+0:02:02 - 0:02:10, **best estimator** sẽ dự đoán trên cái giá
+0:02:06 - 0:02:12, trị **X_test**, và chúng ta sẽ đo coi cái **sai số**
+0:02:10 - 0:02:15, trên cái tập test là bao nhiêu. Thì
+0:02:12 - 0:02:17, **sai số** trên cái tập test set của mình
+0:02:15 - 0:02:20, sẽ là 23. Như vậy là giữa hai mô hình là
+0:02:17 - 0:02:23, **Linear Regression** với **sai số** là 36.000
+0:02:20 - 0:02:26, và **Decision Tree** với **sai số** là 23.000
+0:02:23 - 0:02:28, thì chúng ta sẽ quyết định sử dụng **mô hình Decision Tree**.
+0:02:26 - 0:02:33, Và sau đó thì chúng ta sẽ tiến
+0:02:28 - 0:02:35, hành **trực quan hóa** cái sơ đồ cây này.
+0:02:33 - 0:02:36, Thì đây là cái cấu trúc cây của cái mô
+0:02:35 - 0:02:38, hình. Tuy nhiên thì đây chỉ là mang tính
+0:02:36 - 0:02:41, chất gọi là trực quan, chúng ta không có
+0:02:38 - 0:02:42, sử dụng cái mô hình này về sau. Xin lỗi,
+0:02:41 - 0:02:45, chúng ta không có sử dụng cái hình này
+0:02:42 - 0:02:48, về sau. Và để mà có thể sử dụng được cái
+0:02:45 - 0:02:52, mô hình này á thì chúng ta sẽ phải lưu
+0:02:48 - 0:02:55, cái **best estimator** này xuống dưới file,
+0:02:52 - 0:02:58, và sau đó chúng ta sẽ load cái mô hình
+0:02:55 - 0:03:02, đó lên từ file để mà tiến hành dự đoán.
+0:02:58 - 0:03:03, Thế thì để mà lưu xuống dưới file thì
+0:03:02 - 0:03:05, chúng ta sẽ phải dùng một cái thư viện
+0:03:03 - 0:03:07, đó là
+0:03:05 - 0:03:11, **pickle**. Rồi, cái tên file mà chúng ta đặt
+0:03:07 - 0:03:14, sẽ là **best_model.pickle**.
+0:03:11 - 0:03:16, Rồi, sau khi thực thi cái lệnh này xong
+0:03:14 - 0:03:19, thì chúng ta thấy là ở bên cửa sổ bên
+0:03:16 - 0:03:22, trái nó sẽ hiển thị một cái file tên là
+0:03:19 - 0:03:27, **best_model.pickle**. Thì đây, cái cái mô hình mà mình đã
+0:03:22 - 0:03:29, huấn luyện nó sẽ nằm trong cái file **best_model.pickle**
+0:03:27 - 0:03:34, này. Và bây giờ thì chúng ta sẽ tiến hành
+0:03:29 - 0:03:38, **thử nghiệm** xem là cái thư cái cái cái
+0:03:34 - 0:03:40, model này sau khi chúng ta load lên từ
+0:03:38 - 0:03:44, file á thì nó dự đoán có còn chính xác
+0:03:40 - 0:03:46, được hay không. Rồi, thì chúng ta thấy là
+0:03:44 - 0:03:48, cái mô hình mà được load lên từ file nó
+0:03:46 - 0:03:51, cho cái **sai số** là
+0:03:48 - 0:03:55, 23.545. Nó trùng khớp với cái con số
+0:03:51 - 0:03:57, là 23.545 ở đây. Như vậy thì chúng ta
+0:03:55 - 0:04:00, thấy là rõ ràng cái mô hình này đã được
+0:03:57 - 0:04:04, load lên từ file đúng rồi đúng không. Bây
+0:04:00 - 0:04:04, giờ chúng ta sẽ tải cái **model** này
+0:04:05 - 0:04:11, xuống. Rồi sau đó chúng ta sẽ đưa vào cái
+0:04:09 - 0:04:14, thư mục mà **dự kiến** chúng ta sẽ làm
+0:04:11 - 0:04:17, việc và chúng ta sẽ tạo ra một cái đoạn
+0:04:14 - 0:04:19, code để mà có thể đọc cái mô hình này và
+0:04:17 - 0:04:22, tạo ra một cái file à, xin lỗi, tạo ra một
+0:04:19 - 0:04:24, cái trang web. Thế thì để tạo trang web á
+0:04:22 - 0:04:26, thì như hồi nãy chúng ta có đề cập, chúng
+0:04:24 - 0:04:27, ta có thể sử dụng công cụ Google nhưng
+0:04:26 - 0:04:30, mà gần đây chúng ta có một cái công cụ
+0:04:27 - 0:04:33, rất là hiệu quả để mà có thể lập, để mà
+0:04:30 - 0:04:36, có thể lập trình và tương tác để mà hỏi
+0:04:33 - 0:04:38, đáp về lập trình, đó chính là **ChatGPT**.
+0:04:36 - 0:04:41, Thì bây giờ chúng ta sẽ hỏi, chúng ta sẽ
+0:04:38 - 0:04:44, nhờ cái công cụ **ChatGPT** này xây dựng một cái
+0:04:41 - 0:04:45, ứng dụng web **với Streamlit**. Và cái
+0:04:44 - 0:04:47, cách mà chúng ta **prompt** sẽ là như sau:
+0:04:45 - 0:04:51, chúng ta sẽ phải mô tả rất là chi tiết
+0:04:47 - 0:04:57, ha. Tức là hãy lập
+0:04:51 - 0:05:00, trình bằng thư viện **Streamlit**
+0:04:57 - 0:05:05, để tạo
+0:05:00 - 0:05:05, một ứng dụng web với
+0:05:05 - 0:05:13, à cái thông số **bố cục** web để người
+0:05:10 - 0:05:17, dùng có thể
+0:05:13 - 0:05:18, nhập các cái thông tin như là **size**, kích
+0:05:17 - 0:05:20, thước
+0:05:18 - 0:05:23, và
+0:05:20 - 0:05:25, **trọng lượng** của cái hàng
+0:05:23 - 0:05:29, hóa. Sau
+0:05:25 - 0:05:33, đó, sau đó
+0:05:29 - 0:05:41, người dùng sẽ
+0:05:33 - 0:05:48, click vào button có nhãn là **predict**.
+0:05:41 - 0:05:51, **Predict** đúng không? Thì ứng dụng web sẽ load
+0:05:48 - 0:05:56, mô hình lên từ
+0:05:51 - 0:05:58, file, load cái mô hình lên từ file và dự
+0:05:56 - 0:06:01, đoán. Rồi,
+0:05:58 - 0:06:04, trả kết quả về
+0:06:01 - 0:06:07, được. Thì đây là cái mô tả mà mình mong
+0:06:04 - 0:06:11, muốn **ChatGPT** nó viết cho mình. Thì ở
+0:06:07 - 0:06:13, đây nó rất là tử tế đúng không? Tức là nó
+0:06:11 - 0:06:15, nói là để mà làm được cái việc này thì
+0:06:13 - 0:06:17, chúng ta sẽ phải bước một là cài đặt cái
+0:06:15 - 0:06:19, thư viện **Streamlit** và các thư viện cần
+0:06:17 - 0:06:22, thiết. Và nó dự đoán là chúng ta sẽ cần
+0:06:19 - 0:06:23, có cái thư viện **scikit-learn**.
+0:06:22 - 0:06:26, lên.
+0:06:23 - 0:06:28, Rồi, giả sử chúng ta sẽ có được một cái
+0:06:26 - 0:06:31, file mô hình đúng không? Có một cái file
+0:06:28 - 0:06:35, mô hình đã được **huấn luyện** trước đó, đó là **model.pickle**.
+0:06:31 - 0:06:38, Thì nó chính là cái **best_model.pickle** của
+0:06:35 - 0:06:41, mình. Thì chúng ta sẽ có cái đoạn code
+0:06:38 - 0:06:44, như sau. Nó sẽ **open** cái **pickle** này lên. Rồi,
+0:06:41 - 0:06:44, sau đó nó
+0:06:44 - 0:06:53, sẽ đọc đúng không? **st.number_input** nè, **st.number_input**
+0:06:50 - 0:06:55, nè. Nó sẽ trả ra hai cái biến là **size** và
+0:06:53 - 0:06:58, **weight**. Rồi sau đó nếu người dùng click vào
+0:06:55 - 0:07:00, cái button đó là **predict** thì nó sẽ
+0:06:58 - 0:07:03, tiến hành dự đoán. Nó sẽ tiến hành lấy
+0:07:00 - 0:07:05, cái **model** đã load ở cái file này. Thì ở đây
+0:07:03 - 0:07:07, chúng ta nếu mà chúng ta code, chúng ta sẽ
+0:07:05 - 0:07:09, phải sửa lại đúng không? Chúng ta sẽ phải
+0:07:07 - 0:07:12, sửa lại. Nhưng mà đầu tiên thì chúng ta
+0:07:09 - 0:07:14, sẽ phải **pip install** cái này. Nhưng mà để
+0:07:12 - 0:07:15, cài đặt cái này thì chúng ta nên tạo một
+0:07:14 - 0:07:18, cái
+0:07:15 - 0:07:21, **environment**, tạo một cái **environment** cho
+0:07:18 - 0:07:25, đó. Thì là **conda**
+0:07:21 - 0:07:28, **create --name**.
+0:07:25 - 0:07:30, Thì ở đây là tên của này sẽ là
+0:07:28 - 0:07:33, **streamlit**.
+0:07:30 - 0:07:36, Cái **environment** sẽ là **Streamlit** và
+0:07:33 - 0:07:40, chúng ta sẽ phải cài hai thư viện
+0:07:36 - 0:07:42, này. Tuy nhiên thì cái thư viện **scikit-learn**
+0:07:40 - 0:07:44, thì chúng ta sẽ phải sử dụng đúng cái
+0:07:42 - 0:07:46, phiên bản mà chúng ta đang dùng ở đây để
+0:07:44 - 0:07:48, tránh những cái lỗi về sau. Thế thì chúng
+0:07:46 - 0:07:51, ta sẽ xem cái phiên bản của mình là bao
+0:07:48 - 0:07:57, nhiêu. Và phiên bản của mình nó sẽ là
+0:07:51 - 0:08:00, **1.3.2**. Do đó thì ở đây chúng ta sẽ để là
+0:07:57 - 0:08:02, **1.3.2**. Rồi **Streamlit** thì chúng ta sẽ lấy cái
+0:08:00 - 0:08:04, phiên bản mới nhất. Còn **Python** thì chúng
+0:08:02 - 0:08:06, ta có thể để
+0:08:04 - 0:08:09, là phiên
+0:08:06 - 0:08:09, bản
+0:08:10 - 0:08:13, ờ
+0:08:14 - 0:08:17, 3.9.
+0:08:18 - 0:08:26, Rồi, và chúng ta sẽ chờ một thời gian để
+0:08:21 - 0:08:26, cho nó cài đặt các cái thư viện này ha.
+0:08:29 - 0:08:36, Rồi, tiếp theo thì chúng ta sẽ copy cái
+0:08:32 - 0:08:39, code này và đưa vào **Visual**
+0:08:36 - 0:08:44, **Studio**. Thì ở đây chúng ta tạo một cái
+0:08:39 - 0:08:51, file. Cái file này sẽ là dạng **Python**.
+0:08:44 - 0:08:54, Rồi, rồi ta sẽ lưu lại cái file vào **best_model.py**.
+0:08:51 - 0:08:58, Rồi, và ở đây thì chúng ta sẽ sửa lại
+0:08:54 - 0:08:58, là **best_model.pickle**.
+0:09:01 - 0:09:05, Rồi, sau khi chúng ta lưu lại thì chúng
+0:09:03 - 0:09:09, ta sẽ qua đây kiểm tra xem đã cài xong
+0:09:05 - 0:09:14, chưa. Thì ở đây nó thông báo là **package**
+0:09:09 - 0:09:16, **not found**. Tức là cái thư viện
+0:09:14 - 0:09:21, **conda** của mình nó không tìm thấy được cái
+0:09:16 - 0:09:25, **scikit-learn** phiên bản 1.3.2. Như vậy thì à
+0:09:21 - 0:09:28, mình sẽ bỏ đi cái **package**
+0:09:25 - 0:09:31, này và mình sẽ cài nó bằng **pip**. **Pip** thì
+0:09:28 - 0:09:34, nó sẽ có lưu đủ các cái phiên bản của
+0:09:31 - 0:09:36, **Anaconda**. Xin lỗi, nó sẽ lưu đủ hơn các
+0:09:34 - 0:09:39, phiên bản so với lại **Anaconda**, ví dụ như
+0:09:36 - 0:09:39, là **scikit-learn** phiên bản
+0:09:48 - 0:09:56, **1.3.2**. Rồi, và ở đây thì chúng ta sẽ xem.
+0:10:01 - 0:10:07, Thì trong quá trình mà cài đặt thì nó sẽ
+0:10:04 - 0:10:11, tìm tất cả những cái phiên bản thư viện
+0:10:07 - 0:10:15, có liên quan đến **Streamlit** cũng như là
+0:10:11 - 0:10:18, **Python** phiên bản 3.9 để mà nó bổ sung.
+0:10:15 - 0:10:22, Tức là mặc dù chúng ta chỉ cài có **Streamlit**,
+0:10:18 - 0:10:23, nhưng mà bên dưới thì nó sẽ cần có
+0:10:22 - 0:10:27, thêm những cái đơn những cái cái thư
+0:10:23 - 0:10:31, viện của bên thứ ba và **Anaconda** nó sẽ tự
+0:10:27 - 0:10:31, động nó cài.
+0:10:32 - 0:10:36, Rồi, thì tranh thủ thì chúng ta sẽ cùng
+0:10:34 - 0:10:38, xem cái đoạn code này nó có cái ý nghĩa
+0:10:36 - 0:10:42, gì. Thì đầu tiên á,
+0:10:38 - 0:10:46, là nó sẽ load cái model từ cái thư viện
+0:10:42 - 0:10:49, là **pickle**. Thì cái **pickle** này chính là
+0:10:46 - 0:10:52, cái mô hình mà chúng ta đã được huấn
+0:10:49 - 0:10:55, luyện sử dụng phương pháp **Grid Search** và
+0:10:52 - 0:10:58, với cái cấu trúc, với cái thuật toán đó
+0:10:55 - 0:11:00, là **Decision Tree**. Và sau khi chúng ta load
+0:10:58 - 0:11:04, xong thì cái model này sẽ được sử dụng
+0:11:00 - 0:11:07, để **predict**, để dự đoán. Và cái giá trị mà
+0:11:04 - 0:11:09, nó dự đoán thì nó sẽ được lấy từ một cái
+0:11:07 - 0:11:12, đối tượng tên là **NumPy array**, trong đó bao
+0:11:09 - 0:11:14, gồm hai cái thuộc tính là **size** và **weight**.
+0:11:12 - 0:11:18, **Size** và **weight** sẽ là hai cái thuộc tính đến
+0:11:14 - 0:11:21, từ cái **Streamlit number_input**. Thì
+0:11:18 - 0:11:24, **st.number_input** chính là cái cửa sổ **textbox**
+0:11:21 - 0:11:28, để cho người dùng có thể nhập hai cái
+0:11:24 - 0:11:28, thông số là kích thước và cân
+0:11:28 - 0:11:36, nặng. Rồi, còn cái **st.title** thì
+0:11:33 - 0:11:39, đây chỉ là cái câu thông báo của cái ứng
+0:11:36 - 0:11:41, dụng của mình, cái ứng dụng web của mình.
+0:11:39 - 0:11:43, Thì tổng thể đó là chúng ta thấy cái
+0:11:41 - 0:11:44, code mặc dù là chúng ta code web nhưng
+0:11:43 - 0:11:47, mà
+0:11:44 - 0:11:50, ờ bằng cái ngôn ngữ **Python**, và bên dưới
+0:11:47 - 0:11:54, thì nó đã tự động nó tạo ra các cái mã
+0:11:50 - 0:11:56, **HTML**, **JavaScript** để mà tương tác. Còn thư
+0:11:54 - 0:12:00, viện này thì chúng ta chỉ việc code nó dưới
+0:11:56 - 0:12:02, dạng là cú pháp của file **Python**, còn ngầm
+0:12:00 - 0:12:06, bên dưới thì nó vẫn đã có tạo ra cái
+0:12:02 - 0:12:08, **frontend**, **backend** dựa trên các cái **mã nguồn** chuẩn.

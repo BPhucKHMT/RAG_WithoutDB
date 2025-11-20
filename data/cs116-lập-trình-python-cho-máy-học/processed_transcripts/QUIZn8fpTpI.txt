@@ -1,0 +1,179 @@
+0:00:01 - 0:00:08, tiếp theo thì chúng ta sẽ cùng đến với
+0:00:03 - 0:00:11, các cái độ đo cho bài toán phân lớp thì
+0:00:08 - 0:00:12, tương tự như cho bài toán hồi quy thì
+0:00:11 - 0:00:16, đối với bài toán phần lớp thì chúng ta
+0:00:12 - 0:00:19, sẽ có một cái hàm là hàm độ lỗi dành cho
+0:00:16 - 0:00:22, cái mô hình dành cho cái mô hình khi
+0:00:19 - 0:00:22, huấn
+0:00:26 - 0:00:32, luyện rồi thì ở đây cũng chúng ta cũng
+0:00:30 - 0:00:36, sẽ có các cái biến đầu vào và cái biến
+0:00:32 - 0:00:38, phân loại đầu ra thì khác với lại cái
+0:00:36 - 0:00:41, bài toán hồi quy đó là đối với cái bài
+0:00:38 - 0:00:44, toán phân loại thì đầu ra của mình nó sẽ
+0:00:41 - 0:00:48, nhận các cái giá trị phân loại đó thì
+0:00:44 - 0:00:52, thông thường thì chúng ta sẽ là đặt tên
+0:00:48 - 0:00:55, chứ không có dùng số ví dụ bài toán spam
+0:00:52 - 0:01:00, hay không spam thì các bạn sẽ để là spam
+0:00:55 - 0:01:03, hoặc là not spam
+0:01:00 - 0:01:07, đó hoặc là nhưng mà chúng ta sẽ không
+0:01:03 - 0:01:10, có sử dụng các cái chuỗi ký tự để chúng
+0:01:07 - 0:01:14, ta mã hóa cho cái biến đồ ra mà Thông
+0:01:10 - 0:01:18, thường chúng ta sẽ mã hóa nó dưới dạng
+0:01:14 - 0:01:20, là các cái con số đó thì tại vì sao
+0:01:18 - 0:01:22, chúng ta phải mã hóa nó dới dạy các cái
+0:01:20 - 0:01:23, con số để giúp cho cái mô hình có thể
+0:01:22 - 0:01:25, thực hiện tính toán cộng trường nhân
+0:01:23 - 0:01:28, chia được chứ nếu chúng ta để các cái
+0:01:25 - 0:01:30, chuỗi ký tự như là spam hoặc là not spam
+0:01:28 - 0:01:33, thì dẫn đến là chúng ta không không thể
+0:01:30 - 0:01:35, tính toán được đó thì ở đây là bài toán
+0:01:33 - 0:01:37, à phân lớp nhị phân thì chúng ta sẽ có
+0:01:35 - 0:01:40, cái đầu ra của mình nó chỉ nhận ra chỉ
+0:01:37 - 0:01:44, nhận hai giá trị đó là 0 hoặc là
+0:01:40 - 0:01:46, 1 và cũng tương tự cho bài toán hội quy
+0:01:44 - 0:01:49, thì đối với bài toán phân lớp chúng ta
+0:01:46 - 0:01:51, sẽ lấy các cái biến đầu vào X trên tập
+0:01:49 - 0:01:54, dữ liệu Trend trên tập dữ liệu Trend
+0:01:51 - 0:01:56, Chúng ta đưa vào cái mô hình máy học và
+0:01:54 - 0:02:00, chúng ta sẽ ra được cái giá trị Dự đoán
+0:01:56 - 0:02:03, y ngã và so sánh cái y Ngã này với cái
+0:02:00 - 0:02:07, giá trị thực tế thì liệu chúng ta có sử
+0:02:03 - 0:02:10, dụng cái hàm độ lỗi mse tương tự như đối
+0:02:07 - 0:02:13, với cái bài toán hồi quy hay không thì
+0:02:10 - 0:02:16, Câu trả lời đó là chúng ta sẽ có thể sử
+0:02:13 - 0:02:19, dụng được cái độ đo này chúng ta có thể
+0:02:16 - 0:02:22, sử dụng được cái độ đo là cái hàm độ lỗi
+0:02:19 - 0:02:24, đó là Min Square ra Tuy nhiên cái Min
+0:02:22 - 0:02:26, Square ra này á thì nó sẽ có một cái
+0:02:24 - 0:02:28, điểm yếu đó là nó sẽ giúp cho cái quá
+0:02:26 - 0:02:30, trình huấn luyện nó sẽ làm cho cái quá
+0:02:28 - 0:02:33, trình huấn luyện của mình nó TH thự hiện
+0:02:30 - 0:02:36, trọng do cái sự trừng phạt khi chúng ta
+0:02:33 - 0:02:39, làm đối với cái bài toán hồi quy đó là
+0:02:36 - 0:02:42, rất là thấp Tại sao Tại vì các cái giá
+0:02:39 - 0:02:44, trị y và y Ngã này nè y và y ngã các bạn
+0:02:42 - 0:02:47, sẽ thấy là miền giá trị của nó là chỉ từ
+0:02:44 - 0:02:49, 0 cho đến 1 thôi Do đó cái size số này
+0:02:47 - 0:02:50, khi mà bình phương lên đó là con số rất
+0:02:49 - 0:02:53, là
+0:02:50 - 0:02:56, bé mà cái con số size số này bé nó sẽ
+0:02:53 - 0:02:58, khiến cho cái hàm mô hình của mình nó sẽ
+0:02:56 - 0:03:00, cập nhật rất là chọng nó sẽ cập nhật
+0:02:58 - 0:03:02, chọng do đó chúng ta sẽ sẽ có cái nhu
+0:03:00 - 0:03:06, cầu là muốn thay thế cái hàm lỗi Min
+0:03:02 - 0:03:09, Square ER này bằng một cái hàm khác và
+0:03:06 - 0:03:12, nó cho cái size số nó lớn hơn cho cái độ
+0:03:09 - 0:03:13, dốc của cái hàm Nó lớn hơn thì khi đó
+0:03:12 - 0:03:16, hàm của cái cái mô hình của mình nó sẽ
+0:03:13 - 0:03:18, huấn luyện nhanh hơn và đối với cái bài
+0:03:16 - 0:03:20, toán phân lớp thì thông thường người ta
+0:03:18 - 0:03:25, hay sử dụng cái hàm độ lỗi đó là hàm
+0:03:20 - 0:03:28, lock loss hàm log loss cho cái trường
+0:03:25 - 0:03:31, hợp mà có nhiều class Ví dụ như chúng ta
+0:03:28 - 0:03:33, có k class
+0:03:31 - 0:03:35, K này không nhất thiết là chỉ có hai
+0:03:33 - 0:03:38, class như ở đây ha K này có thể là ba
+0:03:35 - 0:03:39, class ba class 4 class vân vân thì cái
+0:03:38 - 0:03:44, công thức tổng quát cho cái log loss này
+0:03:39 - 0:03:46, á đó chính là nó sẽ là bằng trừ của tổng
+0:03:44 - 0:03:51, của i
+0:03:46 - 0:03:51, i log của y dự
+0:03:51 - 0:03:58, đoán và chúng ta sẽ có cái cái hàm độ
+0:03:54 - 0:04:04, lỗi như trên và với ở đây nó sẽ có một
+0:03:58 - 0:04:10, cái chỉ số k là chạy từ 1 K là chạy từ 1
+0:04:04 - 0:04:13, cho đến k l đó thì ở đây sẽ là k à sử ở
+0:04:10 - 0:04:15, đây là sẽ k k
+0:04:13 - 0:04:18, thường và chúng ta sẽ phải tính chung
+0:04:15 - 0:04:20, bình cộng cho tất cả các cái mẫ y Công
+0:04:18 - 0:04:23, thức này sẽ là công thức tính cho một
+0:04:20 - 0:04:27, vectơ thôi cho một
+0:04:23 - 0:04:30, vectơ Ví dụ nếu như chúng ta dùng cho
+0:04:27 - 0:04:30, cái bài toán
+0:04:31 - 0:04:37, phân lớp K lớp thì cái vectơ I của mình
+0:04:33 - 0:04:37, I của mình nó sẽ là một cái vectơ k
+0:04:38 - 0:04:46, chiều đây chính là y ngã thì cái sai số
+0:04:44 - 0:04:49, giữa y và y Ngã của mình nó chính là
+0:04:46 - 0:04:52, bằng giá trị này nhân cho log của giá
+0:04:49 - 0:04:56, trị dự đoán giá trị này nhân log giá trị
+0:04:52 - 0:04:59, Dự đoán và cộng lại các cái cái y với
+0:04:56 - 0:05:01, lại cái LCK y ngã thì cái thành phần K
+0:04:59 - 0:05:05, của mình cái chỉ số chạy K của mình nó
+0:05:01 - 0:05:08, sẽ chạy từ từ 1 cho đến 2 cho đến
+0:05:05 - 0:05:12, k că
+0:05:08 - 0:05:17, a và nó sẽ cứ Lấy từng cái cặp này
+0:05:12 - 0:05:19, y y thứ K nhân với lại cái y mũ thứ K
+0:05:17 - 0:05:21, cộng lại và lưu ý là chúng ta mới chỉ
+0:05:19 - 0:05:23, tính cho cái mẫu dự liệu thứ y thôi Đây
+0:05:21 - 0:05:28, là một
+0:05:23 - 0:05:30, mẫu một mẫu mẫu này là mẫu thứ mẫu thứ y
+0:05:28 - 0:05:33, và chúng ta sẽ phải tính sii số
+0:05:30 - 0:05:35, cho trung bình cộng của tất cả các cái
+0:05:33 - 0:05:39, mẫu dữ liệu do đó ở đây chúng ta sẽ có
+0:05:35 - 0:05:41, một cái tổng nữa là y y chạy từ 1 cho
+0:05:39 - 0:05:45, đến n và trung bình cộng thì chúng ta sẽ
+0:05:41 - 0:05:47, để là 1 phn rồi và để thêm cái dấu trừ ở
+0:05:45 - 0:05:49, đằng
+0:05:47 - 0:05:54, trước thì đây là cái công thức của cái
+0:05:49 - 0:05:57, hàm logl Tuy nhiên đối với bài toán phân
+0:05:54 - 0:06:00, lớp nhị phân thì chúng ta sẽ có cái công
+0:05:57 - 0:06:03, thức log L theo cái kiểu như sau
+0:06:00 - 0:06:05, đó là ở cái mẫu dữ liệu thứ y đúng không
+0:06:03 - 0:06:08, Ví dụ đây là cái mẫu dữ liệu thứ y đi
+0:06:05 - 0:06:12, thì chúng ta sẽ lấy cái y nhân log y ngã
+0:06:08 - 0:06:14, cộng cho 1 - y nhân cho log của 1 ph trừ
+0:06:12 - 0:06:16, y ngã thì hiểu một cách N ra đây chính
+0:06:14 - 0:06:18, là một cái trường hợp đặc biệt của cái n
+0:06:16 - 0:06:22, loss cho cái công thức ở trên
+0:06:18 - 0:06:25, đây tại vì nếu như chúng ta biểu diễn
+0:06:22 - 0:06:28, cái i này dưới dạng vectơ ha thì y này
+0:06:25 - 0:06:30, nó sẽ là bao gồm hai thành
+0:06:28 - 0:06:32, phần bao gồm ha thành phần cái Thành
+0:06:30 - 0:06:33, Phần đầu tiên là cho biết cái xác suất
+0:06:32 - 0:06:35, thuộc về cái lớp thứ nhất thành phần thứ
+0:06:33 - 0:06:38, hai là cho biết cái xác suất thuộc về
+0:06:35 - 0:06:40, lớp thứ hai rồi y ngã tương tự như vậy
+0:06:38 - 0:06:43, thì cũng sẽ có hai thành
+0:06:40 - 0:06:46, phần Tuy nhiên nếu như ở đây y của mình
+0:06:43 - 0:06:50, nó chỉ nhận một cái giá trị từ 0 cho đến
+0:06:46 - 0:06:53, 1 thôi từ 0 cho đến 1 thôi thì cái thành
+0:06:50 - 0:06:57, phần thứ nhất mà là y thì thành phần thứ
+0:06:53 - 0:06:59, hai nó sẽ là 1 - y thành phần thứ hai sẽ
+0:06:57 - 0:07:03, là 1 - y thành phần thứ nhất này mà là y
+0:06:59 - 0:07:04, ngã thì thành phần thứ hai nó sẽ là 1 -
+0:07:03 - 0:07:07, i
+0:07:04 - 0:07:09, ngã và lúc này thì mình sẽ không cần
+0:07:07 - 0:07:11, dùng cái dạng vector nữa mà mình sẽ dùng
+0:07:09 - 0:07:14, một cái giá trị
+0:07:11 - 0:07:17, scaler Thành Phần đầu tiên là xác suất
+0:07:14 - 0:07:20, thuộc về cái lớp của mình và thành phần
+0:07:17 - 0:07:22, thứ hai đó là 1 - y chính là cái xác
+0:07:20 - 0:07:25, suất thuộc về cái lớp còn lại do đó thì
+0:07:22 - 0:07:27, cái đây là cái công thức loog L cho cái
+0:07:25 - 0:07:30, trường đây là trường hợp đặc biệt so với
+0:07:27 - 0:07:32, lại cái công thức ở đây và
+0:07:30 - 0:07:36, clock loss thì nó có một cái tính chất
+0:07:32 - 0:07:39, đó chính là cái loss của mình càng nhỏ
+0:07:36 - 0:07:41, thì độ chính xác nó sẽ càng cao mọi hàm
+0:07:39 - 0:07:45, lỗi nó đều có cái tính chất này giá trị
+0:07:41 - 0:07:47, loss càng nhỏ thì cái độ chính xác của
+0:07:45 - 0:07:51, mình nó sẽ càng cao và
+0:07:47 - 0:07:53, tổng tổng của tất cả các cái mẫu dữ liệu
+0:07:51 - 0:07:55, thì chúng ta sẽ lấy trung bình cộng
+0:07:53 - 0:07:57, chúng ta sẽ lấy trung bình cộng của tất
+0:07:55 - 0:08:01, cả các mẫu dữ liệu ha Và đây là chúng ta
+0:07:57 - 0:08:04, sẽ có chỉ số y n thì ở đây thì cái cách
+0:08:01 - 0:08:08, tính của mình sẽ là lấy cái giá trị y
+0:08:04 - 0:08:12, này nè nhân với lại log của n y ngã đây
+0:08:08 - 0:08:16, chính là y đây chính là y ngã rồi cộng
+0:08:12 - 0:08:19, cho 1 - y nhân cho log của 1 - y ngã thì
+0:08:16 - 0:08:23, mình sẽ ra được cái giá trị này tương tự
+0:08:19 - 0:08:27, như vậy 1 nhân với lại log của
+0:08:23 - 0:08:30, 0.75 cộng cho 1 - 1 nhân cho log của 1 -
+0:08:27 - 0:08:32, 075 thì nó sẽ ra cái giá này à lưu ý là
+0:08:30 - 0:08:36, chúng ta phải có dấu trừ ở đằng trước có
+0:08:32 - 0:08:40, dấu trừ trước thì cái giá trị 1.4 này nó
+0:08:36 - 0:08:42, chính là bằng trừ của 0 nhân với lại log
+0:08:40 - 0:08:42, của
+0:08:43 - 0:08:53, 0.96 cộng cho à 1 - 0 tức là 1 nhân cho
+0:08:49 - 0:08:53, log của 1 trừ
+0:08:54 - 0:09:00, 0.96 thì nó sẽ ra là số này

@@ -1,0 +1,263 @@
+0:00:00 - 0:00:04, trong phần tiếp theo thì chúng ta sẽ
+0:00:02 - 0:00:06, cùng đến với một trong những cái mô hình
+0:00:04 - 0:00:10, rất là quan trọng đó chính là mô hình
+0:00:06 - 0:00:12, Cây quyết định Decision Tree và cây quyết
+0:00:10 - 0:00:16, định là một trong những cái mô hình nền
+0:00:12 - 0:00:19, tảng cho các cái mô hình học tổ hợp về
+0:00:16 - 0:00:22, sau Ví dụ như Random Forest thì chúng ta
+0:00:19 - 0:00:24, thấy là cái từ Random Forest là rừng
+0:00:22 - 0:00:27, đúng không Thì rừng là bao gồm rất nhiều
+0:00:24 - 0:00:28, cây thì mỗi một cái cây chính là cái cây
+0:00:27 - 0:00:31, quyết định mà mình đề cập trong bài ngày
+0:00:28 - 0:00:33, hôm nay tương tự như vậy cho các cái mô
+0:00:31 - 0:00:35, hình boosting thì cũng rất hay sử dụng
+0:00:33 - 0:00:36, những cái mô hình nền tảng là dạng cấu
+0:00:35 - 0:00:41, trúc
+0:00:36 - 0:00:44, cây thì với cái mô hình cây quyết định thì
+0:00:41 - 0:00:47, chúng ta sẽ sử dụng một cái dataset để
+0:00:44 - 0:00:49, minh họa cho cái việc sử dụng cái cây
+0:00:47 - 0:00:53, quyết định này đó là chúng ta sử dụng bộ
+0:00:49 - 0:00:56, tập bộ dữ liệu là Iris dataset thì Iris
+0:00:53 - 0:00:59, dataset này nó sẽ bao gồm các cái thành
+0:00:56 - 0:01:01, phần là X Iris data đó chính là các
+0:00:59 - 0:01:06, feature đầu vào, các cái đặc trưng
+0:01:01 - 0:01:08, đầu vào. Iris target chính là cái giá trị
+0:01:06 - 0:01:10, đầu ra của mình thì mình sẽ xem coi cái
+0:01:08 - 0:01:15, y này của mình nó là cái
+0:01:10 - 0:01:17, gì. Y này tương ứng là các cái nhãn phân
+0:01:15 - 0:01:21, lớp cho cái bài toán của mình nó sẽ có
+0:01:17 - 0:01:24, tất cả là ba phân lớp là 0 1 và 2 thì
+0:01:21 - 0:01:28, mỗi cái nhãn này nó tương ứng là tên của
+0:01:24 - 0:01:33, một cái loài hoa rồi và
+0:01:28 - 0:01:36, X thì nó là gì? X là một cái ma trận
+0:01:33 - 0:01:41, trong đó mỗi một hàng tương ứng là một
+0:01:36 - 0:01:43, cái đặc trưng của một cái mẫu dữ liệu. Và
+0:01:41 - 0:01:46, ở đây chúng ta có tất cả là bốn đặc
+0:01:43 - 0:01:49, trưng và tổng số hàng của mình sẽ là bao
+0:01:46 - 0:01:52, nhiêu thì chúng ta sẽ xem qua cái X.shape.
+0:01:49 - 0:01:56, Chúng ta có tất cả là 150 mẫu
+0:01:52 - 0:01:59, và mỗi mẫu thì có số lượng đặc trưng là
+0:01:56 - 0:02:03, 4. Tiếp theo thì chúng ta sẽ cùng xây
+0:01:59 - 0:02:04, dựng cái mô hình Decision Tree. Thì để xây
+0:02:03 - 0:02:08, dựng cái mô hình Decision Tree thì chúng ta
+0:02:04 - 0:02:10, cũng sử dụng một cái phong cách rất là
+0:02:08 - 0:02:14, tương tự như những cái mô hình trước đây.
+0:02:10 - 0:02:17, Chúng ta sử dụng thư viện sklearn.tree và
+0:02:14 - 0:02:21, chúng ta sẽ import cái module là Decision
+0:02:17 - 0:02:24,TreeClassifier. Là do cái bài toán này Y của
+0:02:21 - 0:02:26, mình, Y của mình là cái nhãn phân loại
+0:02:24 - 0:02:31, nên ở đây mình
+0:02:26 - 0:02:33, sẽ chọn cái cái cái loại mô hình đó là
+0:02:31 - 0:02:37, Classifier tức là cho bài toán phân loại.
+0:02:33 - 0:02:39, Decision Tree cũng có thể được sử dụng
+0:02:37 - 0:02:42, cho cái bài toán là hồi quy tức là dự
+0:02:39 - 0:02:45, đoán các cái giá trị output thuộc cái
+0:02:42 - 0:02:47, miền liên tục. Thì để mà sử dụng cái
+0:02:45 - 0:02:50, Decision Tree cho bài toán dự đoán giá
+0:02:47 - 0:02:51, trị liên tục chúng ta sẽ sử dụng
+0:02:50 - 0:02:55, DecisionTreeRegressor.
+0:02:51 - 0:02:57, Rồi và cách thức khai báo cho
+0:02:55 - 0:02:59, Decision Tree cũng rất là đơn giản và đi
+0:02:57 - 0:03:03, theo cùng một cái phong cách của scikit-learn
+0:02:59 - 0:03:05, trước giờ. Model sẽ là bằng Decision
+0:03:03 - 0:03:08,TreeClassifier và chúng ta sẽ fit cái dữ
+0:03:05 - 0:03:10, liệu huấn luyện vào. Sau khi chúng ta đã
+0:03:08 - 0:03:12, huấn luyện xong cái dữ liệu này thì
+0:03:10 - 0:03:15, chúng ta sẽ tiến hành trực quan hóa cái
+0:03:12 - 0:03:19, mô hình cây. Và để trực quan hóa thì
+0:03:15 - 0:03:23, chúng ta sẽ sử dụng module đó là tree và
+0:03:19 - 0:03:25, tree sẽ chấm export_text. Chúng ta sẽ
+0:03:23 - 0:03:28, truyền cái model đã được huấn luyện ở bước
+0:03:25 - 0:03:30, trước và khi export xong thì chúng ta sẽ
+0:03:28 - 0:03:32, ra được cái dạng biểu diễn thì chúng ta
+0:03:30 - 0:03:36, sẽ in
+0:03:32 - 0:03:39, ra. Rồi và cái cách này thì nó cũng khá
+0:03:36 - 0:03:41, giống với lại cái cách biểu diễn cây thư
+0:03:39 - 0:03:43, mục ở bên trong hệ điều hành Windows
+0:03:41 - 0:03:47, đúng không? Ở đây thì chúng ta sẽ có các
+0:03:43 - 0:03:51, cái feature số 2. Feature 2 là gì? Feature
+0:03:47 - 0:03:53, 2 nó tương ứng chính là cái cột thứ hai
+0:03:51 - 0:03:59, nó tương ứng là cái cột thứ hai trong
+0:03:53 - 0:03:59, cái X của mình ha. Rồi.
+0:04:08 - 0:04:14, Rồi và cái feature số 2 này nó sẽ kiểm
+0:04:11 - 0:04:17, tra xem là cái ngưỡng của mình là có bé
+0:04:14 - 0:04:21, hơn một cái ngưỡng là 2.45 hay không. Nếu
+0:04:17 - 0:04:25, cái feature số 2 mà có giá trị bé hơn ngưỡng
+0:04:21 - 0:04:29, 2.45 thì chúng ta sẽ kết luận luôn
+0:04:25 - 0:04:33, đó là class số 0. Nó sẽ kết luận là class
+0:04:29 - 0:04:37, số 0. Còn nếu như cái feature 2 mà lớn hơn
+0:04:33 - 0:04:39, 2.45 thì chúng ta sẽ qua cái nhánh
+0:04:37 - 0:04:42, này. Ngược lại chúng ta, chúng ta sẽ qua
+0:04:39 - 0:04:44, cái nhánh này, qua cái nhánh này và chúng
+0:04:42 - 0:04:47, ta sẽ tiếp tục kiểm
+0:04:44 - 0:04:51, tra. Rồi kiểm tra xem cái feature số 2
+0:04:47 - 0:04:54, này có thỏa mãn cái điều kiện
+0:04:51 - 0:04:57, là lớn hơn 2.45 thì chúng ta sẽ vào cái
+0:04:54 - 0:05:01, nhánh này để kiểm tra tiếp cái feature số
+0:04:57 - 0:05:03, 3 có bé hơn 1.75 không. Nếu feature số 3
+0:05:01 - 0:05:07, không bé hơn 1.75 thì chúng ta sẽ xuống
+0:05:03 - 0:05:09, nhánh này. Tức là feature 3 lớn hơn 1.75 thì
+0:05:07 - 0:05:14, chúng ta lại tiếp tục kiểm tra xem
+0:05:09 - 0:05:17, feature số 2 có bé hơn 4.85 hay không.
+0:05:14 - 0:05:20, Nếu bé hơn 4.85 thì chúng ta sẽ đến đây,
+0:05:17 - 0:05:23, đến cái nhánh này. Còn nếu không thì chúng
+0:05:20 - 0:05:25, ta sẽ xuống đây và đưa ra cái kết luận
+0:05:23 - 0:05:28, và class của mình sẽ lần lượt thuộc cái
+0:05:25 - 0:05:30, class số 2. Thế thì với cái cách biểu
+0:05:28 - 0:05:32, diễn cấu trúc cây như thế này chúng ta
+0:05:30 - 0:05:35, sẽ thấy có rất nhiều vấn đề. Vấn đề đầu
+0:05:32 - 0:05:38, tiên đó là chúng ta rất khó theo dõi đến
+0:05:35 - 0:05:41, đâu xuống nhánh thế nào rẽ nhánh thế nào. Mặc dù
+0:05:38 - 0:05:43, cái này nó cũng tương đối là đơn giản, dễ
+0:05:41 - 0:05:47, hiểu, nhưng mà khó cho chúng ta hình dung
+0:05:43 - 0:05:49, ở một số yếu tố. Yếu tố đầu tiên, feature
+0:05:47 - 0:05:51, 2 chúng ta sẽ không biết được cái tên ý
+0:05:49 - 0:05:54, nghĩa của cái feature số 2 đó là
+0:05:51 - 0:05:56, gì. Cái class số 0 đúng không? Chúng ta
+0:05:54 - 0:05:58, cũng không biết cái ý nghĩa của class số
+0:05:56 - 0:06:00, 0 là gì. Tại vì mọi thứ nó đều đưa về
+0:06:00 - 0:06:07, dạng con số. Thế thì ở đây chúng ta sẽ sử
+0:06:02 - 0:06:11, dụng thư viện
+0:06:07 - 0:06:14, với cái hàm/phương thức đó là tree.plot_tree.
+0:06:11 - 0:06:17, tree.plot_tree và chúng ta sẽ truyền
+0:06:14 - 0:06:21, cái model đã được huấn luyện trước đó
+0:06:17 - 0:06:24, vào cái phương thức này. Rồi sau đó chúng
+0:06:21 - 0:06:26, ta sẽ quan sát xem đồng thời là nó thực
+0:06:24 - 0:06:29, hiện một cái việc là gán cái tên của cái
+0:06:26 - 0:06:32, đặc trưng Iris.feature_names. Nó gán cái
+0:06:29 - 0:06:34, tên vào rồi nó gán cái nhãn của của cái
+0:06:32 - 0:06:36, output vào. Bình thường nhãn của output
+0:06:34 - 0:06:40, của mình đó là 012 thì nó gán vô cái
+0:06:36 - 0:06:42, target_names của mình nó tương ứng sẽ là
+0:06:40 - 0:06:45, các cái class có tên là gì thì chúng ta
+0:06:42 - 0:06:47, sẽ cùng quan sát ở
+0:06:45 - 0:06:49, đây. Sau khi vẽ cái cấu trúc cây Decision Tree,
+0:06:47 - 0:06:52, chúng ta thấy nó rất là trực quan, nó
+0:06:49 - 0:06:53, rất là đẹp đúng không? Nó đẹp. Đầu tiên đó
+0:06:52 - 0:06:56, là nó chia ra làm các cái nhánh rất là dễ
+0:06:53 - 0:06:59, theo dõi so với cái việc dùng text như ở
+0:06:56 - 0:07:01, trên. Và với một cái node ở đây chúng ta
+0:06:59 - 0:07:04, sẽ thấy có bốn, thông thường là sẽ có bốn
+0:07:01 - 0:07:06, cái giá trị. Giá trị đầu tiên là để thể
+0:07:04 - 0:07:10, hiện xem điều kiện mình đang muốn kiểm
+0:07:06 - 0:07:12, tra đó là gì, là petal length có bé hơn
+0:07:10 - 0:07:15, 2.45 hay không. Thì trong cái cách biểu
+0:07:12 - 0:07:19, diễn trước chúng ta chỉ dùng là feature
+0:07:15 - 0:07:23, 2 có bé hơn 2.45 hay không. Feature 2 đó
+0:07:19 - 0:07:27, là gì? Feature 2 đó chính là petal length đó là
+0:07:23 - 0:07:29, chiều dài của petal. Và nếu như nó bé hơn
+0:07:27 - 0:07:32, 2.45 thì chúng ta sẽ sang cái nhánh bên
+0:07:29 - 0:07:36, tay trái và chúng ta sẽ có cái hệ số
+0:07:32 - 0:07:39, Gini là bằng 0. Hệ số Gini nó sẽ là một
+0:07:36 - 0:07:42, cái hệ số để đo cái sự hỗn tạp. Hệ số
+0:07:39 - 0:07:45, Gini nó sẽ nhận cái giá trị là từ 0 cho
+0:07:42 - 0:07:48, đến 1. À, từ 0 cho đến 1. 0 có nghĩa là
+0:07:45 - 0:07:50, không hỗn tạp, 1 tức là rất hỗn tạp. Thì
+0:07:48 - 0:07:52, khi mà nó đạt được cái Gini bằng 0 tức
+0:07:50 - 0:07:55, là gần như không có sự hỗn tạp thì cái
+0:07:52 - 0:07:56, độ tin cậy của mình khi đưa ra kết luận
+0:07:55 - 0:07:58, rất là
+0:07:56 - 0:08:01, cao. Thì ở đây chúng ta thấy nè, khi đến
+0:07:58 - 0:08:03, được cái nhánh số, cái nhánh mà màu cam ở
+0:08:01 - 0:08:06, đây, chúng ta thấy cái số mẫu còn lại
+0:08:03 - 0:08:08, của mình trong cái tập dữ liệu huấn luyện á mà
+0:08:06 - 0:08:13, có cái petal length bé hơn 2.45 là sẽ có
+0:08:08 - 0:08:16, 50 mẫu. Và 50 mẫu này đều rớt vào bên
+0:08:13 - 0:08:19, trong cái class đầu tiên đó chính là
+0:08:16 - 0:08:22, Setosa. Còn hai cái class còn lại là không
+0:08:19 - 0:08:25, có mẫu nào nên cái sự pha trộn hỗn tạp
+0:08:22 - 0:08:27, của mình nó rất là thấp và cụ thể ở đây
+0:08:25 - 0:08:31, là bằng 0. Thì lúc này mình kết luận đó
+0:08:27 - 0:08:31, là Setosa.
+0:08:32 - 0:08:37, Nếu như petal length mà không có bé hơn 2.45,
+0:08:35 - 0:08:39, tức là nó đi theo cái nhánh này, thì mình
+0:08:37 - 0:08:44, sẽ kiểm tra cái điều kiện tiếp theo là
+0:08:39 - 0:08:47, petal width có bé hơn hoặc bằng 1.75 hay
+0:08:44 - 0:08:50, không. Và nếu như chúng ta đến được cái
+0:08:47 - 0:08:53, nhánh này thì cái số sample, số mẫu còn
+0:08:50 - 0:08:56, lại của mình nó sẽ là 100 mẫu. Tức là 100
+0:08:53 - 0:08:57, mẫu thỏa mãn cái điều kiện là petal length bé
+0:08:56 - 0:09:01, hơn
+0:08:57 - 0:09:05, 2.45 thì nó nó sẽ rải vô hai cái nhánh
+0:09:01 - 0:09:08, này. Lúc này là không, à cái cái class đầu
+0:09:05 - 0:09:09, tiên của mình là 0 và 100 cái mẫu còn
+0:09:08 - 0:09:12, lại của mình nó sẽ rớt vô hai cái class
+0:09:09 - 0:09:17, này. Như vậy thì cái hệ số Gini của mình
+0:09:12 - 0:09:21, trong trường hợp này là 50 50, tức là 50
+0:09:17 - 0:09:23, % thì nếu như đến đây chúng ta kết luận
+0:09:21 - 0:09:26, cái class của mình là Versicolor thì
+0:09:23 - 0:09:29, cái hệ số hỗn tạp của mình nó cũng còn
+0:09:26 - 0:09:31, tương đối cao, chưa có cái độ tin cậy cao.
+0:09:29 - 0:09:33, Chúng ta chỉ đưa ra cái kết luận có tin
+0:09:31 - 0:09:38, cậy cao khi cái Gini của mình nó rất là
+0:09:33 - 0:09:41, thấp, cụ thể là Gini bằng 0 ha. Rồi chúng
+0:09:38 - 0:09:44, ta sẽ rẽ nhánh như vậy. Rồi nếu petal width
+0:09:41 - 0:09:46, mà bé hơn 1.75 đúng thì nó sẽ qua nhánh
+0:09:44 - 0:09:51, bên tay trái, nó lại kiểm tra xem petal
+0:09:46 - 0:09:54, length có bé hơn 4.95 hay không. Thì đến
+0:09:51 - 0:09:58, đây là cái hệ số Gini của mình nó đã rất
+0:09:54 - 0:10:01, là thấp là 0.16. Tại vì sao? Tại vì không
+0:10:01 - 0:10:06, mẫu đến đây thì không mẫu rớt vô cái
+0:10:02 - 0:10:08, class đầu
+0:10:06 - 0:10:13, tiên, 49 mẫu rớt vô cái class ở giữa và
+0:10:08 - 0:10:16, 5 mẫu. Như vậy là có cái sự chênh lệch
+0:10:13 - 0:10:19, rất là lớn nhưng cái số 5 mẫu này nó
+0:10:16 - 0:10:24, rất bé so với 49 nên cái sự hỗn tạp của
+0:10:19 - 0:10:27, mình trong trường hợp này thấp. Nếu
+0:10:24 - 0:10:30, petal length mà bé hơn 4.95 nó lại xuống
+0:10:27 - 0:10:32, dưới đây. Còn xuống dưới đây thì chúng ta
+0:10:30 - 0:10:37, thấy là chỉ còn có 48 mẫu thôi. Chỉ
+0:10:32 - 0:10:39, còn có 48 mẫu đi theo cái con đường này
+0:10:37 - 0:10:41, đến đây và 48 mẫu nó phân ra là 47 mẫu
+0:01:41 - 0:01:45, là ở class thứ hai và một mẫu ở class
+0:01:44 - 0:01:48, thứ ba. Và đến đây thì chúng ta có thể
+0:01:45 - 0:01:51, kết luận đó là Versicolor nhưng nó cái
+0:01:48 - 0:01:53, độ hỗn tạp của mình nó vẫn chưa tuyệt
+0:01:51 - 0:01:58, đối, nó vẫn là
+0:01:53 - 0:01:59, 0.041. Xuống dưới, xuống dưới nữa đúng
+0:01:58 - 0:02:04, không? Tức là nếu cái điều kiện petal width
+0:01:59 - 0:02:07, này thỏa mãn là bé hơn 1.65 thật thì
+0:02:04 - 0:02:09, là toàn bộ 47 mẫu đều rớt vô cái class
+0:02:07 - 0:02:13, số 2 tức là class của mình là Versicolor.
+0:02:09 - 0:02:16, Thì đến đây mình có thể hoàn toàn an tâm
+0:02:13 - 0:02:21, kết luận đó là nhãn của mình là Versicolor với
+0:02:16 - 0:02:25, cái độ hỗn tạp bằng 0. Thì đây là cái cách
+0:02:21 - 0:02:26, mà mình vận hành cái cây của mình, cái
+0:02:25 - 0:02:29, cây quyết định của mình. Và cũng tương tự
+0:02:26 - 0:02:31, như các cái mô hình trước, đó là chúng ta
+0:02:29 - 0:02:33, sẽ phải đánh giá, chúng ta sẽ phải đánh
+0:02:31 - 0:02:35, giá thông qua cái hàm là model.predict.
+0:02:33 - 0:02:38, Chúng ta sẽ truyền cái X này vào. Và
+0:02:35 - 0:02:40, accuracy thì chúng ta có thể dùng cái
+0:02:38 - 0:02:43, hàm accuracy của scikit-learn hoặc nếu bạn
+0:02:40 - 0:02:45, nào thích code thì chúng ta có thể tự
+0:02:43 - 0:02:47, cài lại theo cái công thức như sau, đó là
+0:02:45 - 0:02:49, sẽ đếm tổng số lượng các cái giá trị dự
+0:02:47 - 0:02:52, đoán mà trúng với lại cái giá trị output
+0:02:49 - 0:02:53, chia cho tổng số mẫu thì nó sẽ ra
+0:02:52 - 0:02:58, accuracy ở đây của mình là bằng 100%,
+0:02:53 - 0:12:00, tức là
+0:02:58 - 0:12:03, 1.0. Rồi thì như vậy qua cái bài này thì
+0:12:00 - 0:12:05, chúng ta đã được tìm hiểu về một cái cấu
+0:12:03 - 0:12:08, trúc cây. Và chúng ta thấy là cái cây này
+0:12:05 - 0:12:10, nó cũng đi khá là sâu đúng không? Nó đi
+0:12:08 - 0:12:13, khá là sâu. Và cấu trúc cây này thì nó có
+0:12:10 - 0:12:16, một cái đặc điểm đó là nó sẽ dễ bị
+0:12:13 - 0:12:17, overfit, nó sẽ dễ bị overfit. Và để tránh
+0:12:16 - 0:12:20, cái hiện tượng overfit cho cái cấu trúc
+0:12:17 - 0:12:23, cây thì thường người ta sẽ làm cái
+0:12:20 - 0:12:27, phương pháp là cắt tỉa, sẽ làm các cái
+0:12:23 - 0:12:29, phương pháp cắt tỉa, cắt tỉa một số cái
+0:12:27 - 0:12:30, nhánh nào mà nó quá là tiểu tiết và cái
+0:12:29 - 0:12:32, hệ số Gini của mình nó quá thấp thì mình
+0:12:30 - 0:12:35, có thể dừng
+0:12:32 - 0:12:37, lại.
+0:12:35 - 0:12:40, Và một cái cách nữa đó là chúng ta có
+0:12:37 - 0:12:42, thể truyền các cái tham số để cho cái
+0:12:40 - 0:12:45, cây này của mình nó giới hạn độ sâu. Thay
+0:12:42 - 0:12:47, vì cắt tỉa, cái cây này chúng ta
+0:12:45 - 0:12:51, giới hạn cái độ sâu của cái cây này là
+0:12:47 - 0:12:54, tối đa là 5 tầng, 6 tầng hay là 7 tầng ví
+0:12:51 - 0:12:57, dụ vậy. Thì đó là các cái cách mà chúng
+0:12:54 - 0:13:02, ta thao tác ở trên cấu trúc Cây quyết
+0:12:57 - 0:13:02, định Decision Tree.

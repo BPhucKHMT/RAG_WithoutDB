@@ -108,7 +108,7 @@
 0:08:52 - 0:08:55, thì lim của nó sẽ là bằng 0
 0:08:55 - 0:08:57, Còn nếu như chúng ta muốn kiểm chứng
 0:08:57 - 0:08:59, bằng một cách gọi là
-0:08:59 - 0:09:02, trực quan và nó có thể tính toán được
+0:08:59 - 0:09:02, trực quan và nó có thể tính toán được hay
 0:09:02 - 0:09:04, thì chúng ta sẽ lấy một con số rất
 0:09:04 - 0:09:06, gần số 1 thôi là 0.9
 0:09:06 - 0:09:08, và chúng ta thử

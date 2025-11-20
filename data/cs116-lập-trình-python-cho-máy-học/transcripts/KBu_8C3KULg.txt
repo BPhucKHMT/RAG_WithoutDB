@@ -1,0 +1,276 @@
+0:00:00 - 0:00:05, trong phần tiếp theo thì chúng ta sẽ
+0:00:02 - 0:00:08, cùng tìm hiểu một số mô hình gong nhóm à
+0:00:05 - 0:00:13, nổi tiếng hiện nay đó là camin và DB
+0:00:08 - 0:00:16, scan thì khái niệm về gom nhóm dữ liệu
+0:00:13 - 0:00:19, thì đây là một cái bài toán mà chúng ta
+0:00:16 - 0:00:22, sẽ gom các cái đối tượng theo từng
+0:00:19 - 0:00:25, cụm sao cho các cái đối tượng mà trong
+0:00:22 - 0:00:27, cùng một cụm thì có cái sự tương đồng
+0:00:25 - 0:00:31, với nhau và cái sự tường Đồng sự tương
+0:00:27 - 0:00:33, đồng này nó sẽ lớn hơn hơn so với lại
+0:00:31 - 0:00:35, những cái đối tượng thuộc các cái nhóm
+0:00:33 - 0:00:37, khác tức là những cái điểm nào mà nằm
+0:00:35 - 0:00:40, trong cùng một cụng có sự tuên đồng lớn
+0:00:37 - 0:00:42, nhưng mà so với lại những cái điểm ở
+0:00:40 - 0:00:43, những cái cụm khác thì có cái sự Tuân
+0:00:42 - 0:00:47, đầu thấp
+0:00:43 - 0:00:49, hơn thì ở trong cái ví dụ trước chúng ta
+0:00:47 - 0:00:52, đã từng xét đến điểm Toán điểm vă của
+0:00:49 - 0:00:54, các bạn học sinh trong một lớp học thì
+0:00:52 - 0:00:57, những bạn học sinh mà trong cùng một cái
+0:00:54 - 0:01:01, cụm như thế này thì đều có sự tương đồng
+0:00:57 - 0:01:05, đó là gì đó là điểm Toán thì cao nhưng
+0:01:01 - 0:01:07, điểm Văn thì thấp và nó sẽ trái ngược so
+0:01:05 - 0:01:10, với lại những cái bạn mà nằm ở trong cái
+0:01:07 - 0:01:13, cụng khác ví dụ như ở đây có bạn ở trong
+0:01:10 - 0:01:16, cụm này thì là điểm Toán thì thấp điểm
+0:01:13 - 0:01:18, văng thì cao còn những bạn ở đây trong
+0:01:16 - 0:01:22, cái cụm này thì đều có cái sự tương đồng
+0:01:18 - 0:01:23, đó là điểm Toán và Văn đều cao đó thì
+0:01:22 - 0:01:28, cái sự tương đồng của mình nó thể hiện ở
+0:01:23 - 0:01:31, chỗ đó và ở đây đó là một cái hình ảnh
+0:01:28 - 0:01:33, động minh họa cho các cái bước chạy của
+0:01:31 - 0:01:35, thuật toán
+0:01:33 - 0:01:38, camin thì trong phần tiếp theo chúng ta
+0:01:35 - 0:01:39, sẽ tìm hiểu kỹ hơn cái ý tưởng của thuộc
+0:01:38 - 0:01:42, toán
+0:01:39 - 0:01:44, camin các cái thuộc toán nhóm dữ liệu
+0:01:42 - 0:01:48, thì nó sẽ có rất nhiều những cái thuộc
+0:01:44 - 0:01:50, toán khác nhau và ở đây thì chúng ta sẽ
+0:01:48 - 0:01:53, có camin và DB scan sẽ là hai cái thuật
+0:01:50 - 0:01:55, toán mà chúng ta sẽ tìm hiểu kỹ trong
+0:01:53 - 0:01:57, cái bài học ngày hôm nay còn các cái
+0:01:55 - 0:02:00, thật toán như là
+0:01:57 - 0:02:02, hierarchical clustering
+0:02:00 - 0:02:05, spectral clustering thì đây là những cái
+0:02:02 - 0:02:06, thập toán cũng nổi tiếng nhưng mà nó sẽ
+0:02:05 - 0:02:09, nằm ngoài cái phạm vi của buổi học ngày
+0:02:06 - 0:02:12, hôm nay hai cái thực toán camin và DB
+0:02:09 - 0:02:15, scan là hai thực Toán điển hình
+0:02:12 - 0:02:18, có đi theo hai cái hướng tiếp cận khác
+0:02:15 - 0:02:21, nhau đối với thực Toán camin thì nó sẽ
+0:02:18 - 0:02:24, gom nhóm khi biết trước cái số lượng K
+0:02:21 - 0:02:28, là cái số lượng cụng mà mình sẽ phân
+0:02:24 - 0:02:30, loại trong khi đó DD scan thì chúng ta
+0:02:28 - 0:02:34, sẽ không biết trước cái số lượng K này
+0:02:30 - 0:02:38, DB scan sẽ gom nhóm các cái cụm dựa trên
+0:02:34 - 0:02:41, các cái tiêu chí về mậc độ tức là những
+0:02:38 - 0:02:44, cái khu vực nào có cái mực độ lớn thì nó
+0:02:41 - 0:02:47, sẽ tách ra thành một cụm đó chứ nó không
+0:02:44 - 0:02:49, có dựa trên cái số lượng K chỉ định ban
+0:02:47 - 0:02:52, đầu tại vì cái việc chỉ định số lượng K
+0:02:49 - 0:02:55, này nó sẽ bị cái vấn đề đó là chủ Quang
+0:02:52 - 0:02:57, và trong các cái thuộc toán ở đây thì
+0:02:55 - 0:03:00, mỗi phương pháp thì đều có những cái Ưu
+0:02:57 - 0:03:01, điểm và quyết điểm riêng và cái việc sử
+0:03:00 - 0:03:03, dụng cái phương pháp nào á thì nó sẽ tùy
+0:03:01 - 0:03:06, thuộc vào cái tính chất dữ liệu cũng như
+0:03:03 - 0:03:09, là mục tiêu của cái việc mà mình đang
+0:03:06 - 0:03:12, muốn hướng tới ví dụ nếu như cái dữ liệu
+0:03:09 - 0:03:15, của mình có cái số lượng lớn số lập tập
+0:03:12 - 0:03:17, dữ liệu của mình cái số điểm trong cái
+0:03:15 - 0:03:19, không gian của mình nó lớn hoặc là cái
+0:03:17 - 0:03:21, số chiều của đặc trưng của mình nó lớn
+0:03:19 - 0:03:24, thì khi đó chúng ta phải chọn những cái
+0:03:21 - 0:03:26, thuật toán nào có cái độ phức tạp thấp
+0:03:24 - 0:03:28, thì camin là một trong những thuật toán
+0:03:26 - 0:03:30, của độ phức tạp thấp còn những thuật
+0:03:28 - 0:03:33, toán mà có độ phức tạp cao ví dụ như là
+0:03:30 - 0:03:35, DV scan hoặc là g mure Model thì khi đó
+0:03:33 - 0:03:38, nó lại không phù hợp cho những cái
+0:03:35 - 0:03:40, trường hợp mà dữ liệu của mình có cái
+0:03:38 - 0:03:42, khối lượng dữ liệu lớn hoặc là có cái
+0:03:40 - 0:03:45, đặc trưng của nó lớn và tùy theo cái mục
+0:03:42 - 0:03:47, tiêu cụ thể nếu như chúng ta cần giải
+0:03:45 - 0:03:49, quyết cái bài toán mang tính chất là
+0:03:47 - 0:03:52, tương đối chúng ta sẽ gom những cái điểm
+0:03:49 - 0:03:54, nào nó gần gần với nhau gom lại và sau
+0:03:52 - 0:03:58, đó thì chúng ta sẽ phục vụ cho cái việc
+0:03:54 - 0:04:00, là gán giãn dữ liệu hoặc là Nén dữ liệu
+0:03:58 - 0:04:02, thì khi đó ch chúng ta có thể sử dụng
+0:04:00 - 0:04:06, thuộc toán camin nhưng nếu như chúng ta
+0:04:02 - 0:04:08, cần biết chính xác là các cái Cụm nào nó
+0:04:06 - 0:04:12, đi theo những cái phân bố nào và các cái
+0:04:08 - 0:04:14, phân bố này phải có cái sự cô đặt có cái
+0:04:12 - 0:04:16, mực độ mà dày đặt nhất định thì chúng ta
+0:04:14 - 0:04:20, mới tạo ra một cùm còn những cái điểm mà
+0:04:16 - 0:04:23, rời rạt à những cái điểm lẻ và nhiễu
+0:04:20 - 0:04:25, không có nằm chung với lại những cái
+0:04:23 - 0:04:26, phân cụm khác thì chúng ta xem nó như là
+0:04:25 - 0:04:28, những cái out layer chúng ta sẽ loại bỏ
+0:04:26 - 0:04:30, nó ra ngoài chúng ta sẽ không còn xem
+0:04:28 - 0:04:32, xét đến nữa thì khi đó chúng ta sẽ chọn
+0:04:30 - 0:04:34, DB scan đó thì như vậy thì tùy vào tính
+0:04:32 - 0:04:37, chất và mục tiêu cụ thể mà chúng ta sẽ
+0:04:34 - 0:04:41, chọn cái thực toán tương
+0:04:37 - 0:04:44, ứng và tiếp theo thì chúng ta sẽ đến với
+0:04:41 - 0:04:46, mô hình camin thuộc toán caom nhóm camin
+0:04:44 - 0:04:49, thì ý tưởng của thuộc toán camin này á
+0:04:46 - 0:04:52, đó là chúng ta sẽ khởi tạo ngẫu nhiên ca
+0:04:49 - 0:04:54, cái tâm cụng ban đầu trong cái tập điểm
+0:04:52 - 0:04:57, này đó nó sẽ khởi tạo ngẫu nhiên tại
+0:04:54 - 0:04:59, những cái vị trí bất kỳ trong cái điểm D
+0:04:57 - 0:05:01, dệt của mình rồi sau đó chúng ta sẽ lặp
+0:04:59 - 0:05:05, đi lặp lại cái quá trình mà Cập nhật cái
+0:05:01 - 0:05:07, tâm cụng và cái cách thức mà mình lặp đi
+0:05:05 - 0:05:10, lặp lại đó chính là chúng ta sẽ gán giãn
+0:05:07 - 0:05:13, à các cái điểm dữ liệu của mình vào cái
+0:05:10 - 0:05:16, trọng tâm gần nhất vào cái trọng tâm gần
+0:05:13 - 0:05:18, nhất rồi sau đó chúng ta sẽ cập nhật lại
+0:05:16 - 0:05:20, cái trọng tâm chúng ta sẽ cập nhật lại
+0:05:18 - 0:05:22, cái trọng tâm rồi sau đó chúng ta lại
+0:05:20 - 0:05:25, tiếp tục gán nhãn cho các cái điểm dữ
+0:05:22 - 0:05:27, liệu vào cái trọng tâm gần nhất và quá
+0:05:25 - 0:05:29, trình này sẽ được lặp đi lặp lại cho đến
+0:05:27 - 0:05:33, khi các cái trọng tâm của mình nó không
+0:05:29 - 0:05:35, còn thay đổi nữa đó thì trong cái mô
+0:05:33 - 0:05:38, phỏng ở đây chúng ta thấy ban đầu nè nó
+0:05:35 - 0:05:40, tách ra và khi chúng ta cập nhật sang
+0:05:38 - 0:05:42, cái tâm cụn mới thì nó sẽ cập nhật lại
+0:05:40 - 0:05:44, đó chúng ta sẽ cập nhật lại các cái điểm
+0:05:42 - 0:05:47, mới và Càng về sau chúng ta thấy là số
+0:05:44 - 0:05:50, điểm mà mình Cập nhật cái tâm cập nhật
+0:05:47 - 0:05:52, lại cái cái nhãn cụm của nó nó càng ít
+0:05:50 - 0:05:54, tại những thời điểm đầu chúng ta thấy nè
+0:05:52 - 0:05:56, cái khu vực này nó cập nhật rất là nhiều
+0:05:54 - 0:05:59, Đúng không cho cái điểm màu đỏ nhưng mà
+0:05:56 - 0:06:01, sà đến cái những cái phòng đật cuối cùng
+0:05:59 - 0:06:04, thì các cái điểm dưng liệu này nó không
+0:06:01 - 0:06:04, còn cập nhật nhiều
+0:06:06 - 0:06:13, nữa rồi và thuật toán sẽ dừng khi tâm
+0:06:10 - 0:06:15, cụm không di chuyển hoặc là các cái điểm
+0:06:13 - 0:06:17, dữ liệu của mình nó không có cái sự thay
+0:06:15 - 0:06:19, đổi trạng thái hoặc là thay đổi trạng
+0:06:17 - 0:06:23, thái rất ít thì khi đó chúng ta sẽ
+0:06:19 - 0:06:26, dùng và để nhận xét cho cái thuật toán
+0:06:23 - 0:06:28, gom nhóm camin thì chúng ta cũng sẽ cùng
+0:06:26 - 0:06:32, xem xét ở hai cái góc độ đó là Ưu điểm
+0:06:28 - 0:06:33, và khuyết điểm về ưu điểm thì rõ ràng à
+0:06:32 - 0:06:37, Đây là một trong những cái tục toán đơn
+0:06:33 - 0:06:41, giản và dễ cài đặt và nó hiệu quả cho
+0:06:37 - 0:06:43, những cái dữ liệu lớn Tuy nhiên cái hiệu
+0:06:41 - 0:06:46, quả cho cái dữ liệu lớn này thì nó cũng
+0:06:43 - 0:06:48, tùy theo mức độ ví dụ nếu cái số mẫu dữ
+0:06:46 - 0:06:52, liệu của mình lên đến hàng triệu
+0:06:48 - 0:06:54, mẫu thì khi đó Cái thuộc toán camam của
+0:06:52 - 0:06:56, mình nó cũng bắt đầu nó chậm đi và nó
+0:06:54 - 0:06:58, cũng không còn hiệu quả nữa thì khi đó
+0:06:56 - 0:07:01, chúng ta sẽ có những cái biến thể của
+0:06:58 - 0:07:04, camin để mà có thể thực hiện được trên
+0:07:01 - 0:07:07, cái tập dữ liệu lớn đó chính là thuộc
+0:07:04 - 0:07:07, toán aamin
+0:07:08 - 0:07:14, aamin K Tứ A này á đó chính là
+0:07:14 - 0:07:21, approximate tức là xắp
+0:07:17 - 0:07:23, sỉ thì ở đây nó sẽ có các cái thuật toán
+0:07:21 - 0:07:26, để tìm ca cái giá trị gần nhất mà theo
+0:07:23 - 0:07:28, kiểu là xấp xỉ thì khi đó thuật toán của
+0:07:26 - 0:07:30, mình nó sẽ được chạy nhanh hơn và có thể
+0:07:28 - 0:07:32, làm việc được trên trên cái cái tập dữ
+0:07:30 - 0:07:34, liệu mà lên đến hàng triệu mẫu thậm chí
+0:07:32 - 0:07:37, là hàng trăm triệu mẫu thì nó vẫn có thể
+0:07:34 - 0:07:39, thực hiện được với aamin và khuyết điểm
+0:07:37 - 0:07:41, của cái thuật toán gom nhóm camin đó
+0:07:39 - 0:07:42, chính là nó cần phải biết trước cái số
+0:07:41 - 0:07:45, lượng cụm
+0:07:42 - 0:07:47, K thì trong nhiều tình huống chúng ta sẽ
+0:07:45 - 0:07:49, không thể biết trước được cái số cộm K
+0:07:47 - 0:07:51, này là gì Tại vì chúng ta không hề có
+0:07:49 - 0:07:53, nhãng dữ liệu này chúng ta không có
+0:07:51 - 0:07:56, giãng Do đó thì chúng ta sẽ không biết
+0:07:53 - 0:07:57, là cái tập dữ liệu của mình có bao nhiêu
+0:07:56 - 0:08:01, cái cụng bên trong
+0:07:57 - 0:08:04, đó thì khi đó là cái k của mình Nếu như
+0:08:01 - 0:08:05, mình chọn không đúng thì dẫn đến là Thục
+0:08:04 - 0:08:10, toán của mình nó sẽ chạy không có hiệu
+0:08:05 - 0:08:12, quả đó và điều tiếp theo đó là cái Thục
+0:08:10 - 0:08:15, toán này nó rất là dễ rơi vào cái cực
+0:08:12 - 0:08:18, tiểu cục bộ và nó sẽ phụ thuộc cái việc
+0:08:15 - 0:08:22, này nó sẽ phụ thuộc rất
+0:08:18 - 0:08:22, nhiều vào cái việc khởi
+0:08:23 - 0:08:32, tạo C cực Ban
+0:08:27 - 0:08:34, đầu nếu như chúng ta rải đều các cái tâm
+0:08:32 - 0:08:38, cụm này rải ra đều ra thì khi đó Hy vọng
+0:08:34 - 0:08:42, rằng là nó sẽ không bị bị dừng hoặc là
+0:08:38 - 0:08:44, bị không có cập nhật nữa Còn nếu như cái
+0:08:42 - 0:08:46, k cộng này mà chúng ta khởi tạo không
+0:08:44 - 0:08:48, tốt thì nó sẽ có dẫn đến cái tình huống
+0:08:46 - 0:08:51, đó là khi thuộc toán chạy đến một mức độ
+0:08:48 - 0:08:53, nào đó nó sẽ bị dừng không có cập nhật
+0:08:51 - 0:08:56, đi được thêm nữa Nhưng mặc dù lúc đó là
+0:08:53 - 0:09:00, cái số cụng của mình nó không có đảm bảo
+0:08:56 - 0:09:03, được là cái các cái tiêu chí về mực Độ
+0:09:00 - 0:09:05, và một trong những cái điểm yếu Tiếp
+0:09:03 - 0:09:06, theo và cũng khá là quan trọng của camin
+0:09:05 - 0:09:08, đó chính là nó phụ thuộc vào cái việc
+0:09:06 - 0:09:11, khởi tạo tâm cụm thì đây chính là cái
+0:09:08 - 0:09:13, nguyên nhân cái nguyên nhân gây ra cái
+0:09:11 - 0:09:16, tình trạng gọi là rơi vào cực tiểu cục
+0:09:13 - 0:09:19, bộ nó không thoát ra khỏi cái cái cách
+0:09:16 - 0:09:21, thức phân cụm tại một thời điểm nào đó
+0:09:19 - 0:09:24, thì cái việc phụ thuộc này là sau này nó
+0:09:21 - 0:09:26, cũng sẽ có một số cái thuật toán một số
+0:09:24 - 0:09:30, cái chiến thuật để chúng ta khởi tạo cái
+0:09:26 - 0:09:32, tâm cụng sao cho nó hiệu quả hơn
+0:09:30 - 0:09:35, và ở đây là một cái ví dụ đ chúng ta
+0:09:32 - 0:09:37, thấy là sau rất nhiều cái vòng lập thì
+0:09:35 - 0:09:40, cái tâm cụng của mình nó cũng gần như
+0:09:37 - 0:09:42, không di chuyển đến cái vòng lập thứ 18
+0:09:40 - 0:09:44, 19 nó vẫn gần như không di chuyển nhưng
+0:09:42 - 0:09:46, mà mãi cho đến những cái vòng lập mà
+0:09:44 - 0:09:48, từng thứ 20 trở về sau thì mới bắt đầu
+0:09:46 - 0:09:53, thoát ra được khỏi cái cực tiểu cực bộ
+0:09:48 - 0:09:55, đó thì đó là lý do là vì cái cái cái tâm
+0:09:53 - 0:09:57, cụng hình tròn này nè là ban đầu nó được
+0:09:55 - 0:10:00, khởi tạo ở đây đó nó khởi tạo ngay vị
+0:09:57 - 0:10:02, trí này thì nó sẽ tốn rất là nhiều thời
+0:10:00 - 0:10:04, gian để mà nó thoát nó nhảy ra và nó
+0:10:02 - 0:10:06, thoát ra khỏi cái cụm bên đây để sang
+0:10:04 - 0:10:09, cái cụm bên đây
+0:10:06 - 0:10:12, đó Còn nếu như cái điểm hình tròn này nè
+0:10:09 - 0:10:14, nếu như chúng ta khởi tạo tốt tức là
+0:10:12 - 0:10:15, chúng ta khởi tạo mà nằm trong những cái
+0:10:14 - 0:10:17, khu vực bên đây thì cái việc cập nhật sẽ
+0:10:15 - 0:10:20, cực kỳ nhanh nó không phải tốn một cái
+0:10:17 - 0:10:22, thời gian lớn để mà có thể thoát ra khỏi
+0:10:20 - 0:10:24, cái chỗ này và trong nhiều tình huống
+0:10:22 - 0:10:26, nếu như cái dữ liệu của mình mà phân bố
+0:10:24 - 0:10:27, không tốt á thậm chí là nó sẽ dừng ở bên
+0:10:26 - 0:10:29, đây nó không thể thoát ra khỏi khu vực
+0:10:27 - 0:10:33, bên đây được
+0:10:29 - 0:10:35, và cuối cùng đó là cái Thục toán camin
+0:10:33 - 0:10:38, này của mình nó chỉ hoạt độc tốt với
+0:10:35 - 0:10:40, những cái dữ liệu ờ có cái dạng hình cầu
+0:10:38 - 0:10:43, có cái dạng hình cầu thì nó sẽ hoạt động
+0:10:40 - 0:10:45, rất là tốt Còn những cái dữ liệu của
+0:10:43 - 0:10:47, mình mà không có dạng phân bố hình cầu
+0:10:45 - 0:10:49, mà nó có cái dạng phức tạp thì nó sẽ
+0:10:47 - 0:10:52, không còn thực hiện tốt nữa ta lấy ví dụ
+0:10:49 - 0:10:55, như lẽ ra ở đây là một cái hình vui ha
+0:10:52 - 0:10:58, Nó sẽ là hình mặt người mà đang cười thì
+0:10:55 - 0:11:01, lẽ ra ở đây sẽ phải là một cụm ở đây sẽ
+0:10:58 - 0:11:05, là một cụm rồi Ở đây sẽ là một cụn Tuy
+0:11:01 - 0:11:08, nhiên kỹ thuật toán của mình nó đã không
+0:11:05 - 0:11:11, học được theo cái mậc độ mà nó chỉ đơn
+0:11:08 - 0:11:14, giản đó là nó đi theo cái dạng cập nhật
+0:11:11 - 0:11:16, các cái tâm cụng cho cái vị trí gần nhất
+0:11:14 - 0:11:18, và nó đi xuyên qua cái khoản không Lấy
+0:11:16 - 0:11:20, ví dụ như tại một cái trạng thái cập
+0:11:18 - 0:11:22, nhật này chúng ta thấy rõ ràng tâm cụm
+0:11:20 - 0:11:24, của mình nó sẽ nằm ngoài cái phân bố dữ
+0:11:22 - 0:11:26, liệu đúng không ở đây là tâm cụm nó nằm
+0:11:24 - 0:11:29, ngoài phân bố dễn
+0:11:26 - 0:11:31, liệu trong khi đó nếu tâm cụm của mình
+0:11:29 - 0:11:34, nằm trong khu vực này nằm trong khu vực
+0:11:31 - 0:11:37, này nằm trong khu vực này thì nó sẽ hợp
+0:11:34 - 0:11:40, lý hơn đó còn ở đây là tâm chụ tâm cụm
+0:11:37 - 0:11:42, nó lại nằm nó ở nằm ở trong cái khu vực
+0:11:40 - 0:11:44, mà không hề có cái mẫu dữ liệu nào thì
+0:11:42 - 0:11:47, điều đó chính là cái điểm yếu của thực
+0:11:44 - 0:11:48, toán camin nó chỉ phù hợp với những cái
+0:11:47 - 0:11:52, dạng dữ liệu mà có cái dạng hình cầu như
+0:11:48 - 0:11:52, thế này tức là phân bố
+0:11:52 - 0:11:57, tròn phân bố tròn tỏa ra còn nếu như dữ
+0:11:56 - 0:11:59, liệu của mình nó sẽ là những cái cụng
+0:11:57 - 0:12:01, rải rác giống như cái hình mặt cười ở
+0:11:59 - 0:12:04, đây đây thì thuộc toán camin sẽ không có
+0:12:01 - 0:12:04, chạy tốt

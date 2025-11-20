@@ -1,0 +1,167 @@
+0:00:00 - 0:00:05, trong phần tiếp theo thì chúng ta sẽ
+0:00:02 - 0:00:08, cùng đến với các cái độ đo cho bài toán
+0:00:05 - 0:00:10, hồi quy thì ở đây chúng ta nhắc lại
+0:00:08 - 0:00:12, chúng ta sẽ có hai cái loại độ đo đầu
+0:00:10 - 0:00:16, tiên đó là độ đo
+0:00:12 - 0:00:22, của hàm
+0:00:16 - 0:00:26, lỗi và thứ hai đó là độ đo cho cái việc
+0:00:22 - 0:00:29, đánh giá độ đo cho vệ cái đánh giá mô
+0:00:26 - 0:00:30, hình thì cái độ đo cho Hạm lỗi á Nó sẽ
+0:00:29 - 0:00:33, được thực hiện ở ở trong cái quá trình
+0:00:30 - 0:00:33, huấn
+0:00:35 - 0:00:42, luyện còn độ đo đánh giá thì chúng ta sẽ
+0:00:39 - 0:00:42, thực hiện sau
+0:00:42 - 0:00:49, khi huấn
+0:00:46 - 0:00:52, luyện tại sao hai cái độ đo này nó phải
+0:00:49 - 0:00:54, khác nhau Tại vì có những cái độ đo nó
+0:00:52 - 0:00:56, phù hợp cho cái việc đánh giá nhưng mà
+0:00:54 - 0:00:59, nó không có phù hợp cho cái việc là huấn
+0:00:56 - 0:01:01, luyện ví dụ để huấn luyện được thì cái
+0:00:59 - 0:01:03, hàm của mình nó phải thỏa mãn một số cái
+0:01:01 - 0:01:06, tính chất về mặt toán học Ví dụ như có
+0:01:03 - 0:01:08, khả năng tính được đạo hàm đó ví dụ như
+0:01:06 - 0:01:12, có thể dễ dàng tính hoặc là tránh được
+0:01:08 - 0:01:14, một số cái hiện tượng như là độ lỗi của
+0:01:12 - 0:01:16, mình nó bị à Cái radian của mình nó bị
+0:01:14 - 0:01:19, tiêu tiêu Yến hoặc là nó sẽ khiến cho
+0:01:16 - 0:01:22, cái mô hình của mình khó huấn luyện hơn
+0:01:19 - 0:01:24, đó thì rõ ràng ở đây là cái hàm độ lỗi
+0:01:22 - 0:01:26, cho cái quá trình huấn luyện nó sẽ khác
+0:01:24 - 0:01:30, so với lại cái hàm để mà đánh giá cái
+0:01:26 - 0:01:33, hiệu quả của cái mô hình của mình
+0:01:30 - 0:01:36, thì đối với cái bài toán hồi quy thì cái
+0:01:33 - 0:01:39, việc chọn lựa cái hàm độ lỗi á cái việc
+0:01:36 - 0:01:43, chọn lựa cái hàm độ lỗi nó sẽ có cái vai
+0:01:39 - 0:01:46, trò đó là làm sao để cho cái giá trị Dự
+0:01:43 - 0:01:49, đoán và cái giá trị thực tế giống nhau
+0:01:46 - 0:01:51, trong cái quá trình huấn luyện cái hàm
+0:01:49 - 0:01:54, mà dự đoán của cái mô hình của mình nó
+0:01:51 - 0:01:56, phải gần giống xấp xỉ với lại cái hàm
+0:01:54 - 0:01:59, với lại xin lỗi với lại cái giá trị
+0:01:56 - 0:02:02, trong thực tế của dữ liệu của mình Thế
+0:01:59 - 0:02:04, thì ở đây chúng ta sẽ có cái tập dữ liệu
+0:02:02 - 0:02:08, mẫu ở đây chúng ta sẽ chia ra làm hai
+0:02:04 - 0:02:10, tập đó là tập Trend và tập test và ở đây
+0:02:08 - 0:02:14, chúng ta sẽ có cái biến đầu vào là bốn
+0:02:10 - 0:02:16, cái cột đầu tiên và cái biến đầu ra đó
+0:02:14 - 0:02:16, chính là cái cột
+0:02:17 - 0:02:22, profit với cái tập dữ liệu Trend chúng
+0:02:20 - 0:02:27, ta sẽ lấy ra cái biến đầu vào
+0:02:22 - 0:02:29, X là bốn cái cột này rồi sau đó chúng ta
+0:02:27 - 0:02:31, sẽ đưa vào mô hình máy học bản chất của
+0:02:29 - 0:02:34, một cái hạ của một cái mô hình máy học
+0:02:31 - 0:02:36, đó chính là một cái hàm số f th x nó
+0:02:34 - 0:02:39, nhận đầu vào của mình là x và nó sẽ đưa
+0:02:36 - 0:02:40, ra cái giá trị Dự đoán đưa ra cái giá
+0:02:39 - 0:02:45, trị Dự đoán và cái giá trị Dự đoán này
+0:02:40 - 0:02:47, thì ký hiệu bằng chữ y mũ và mình luôn
+0:02:45 - 0:02:50, mong muốn cái giá trị Dự đoán này nó
+0:02:47 - 0:02:52, phải xấp xỉ với lại cái giá trị thực tế
+0:02:50 - 0:02:54, nó phải xấp xỉ với cái giá trị thực tế
+0:02:52 - 0:02:58, và giá trị thực tế thì được ký hiệu bằng
+0:02:54 - 0:03:02, chữ y mong muốn hai thằng này sắp xỉ
+0:02:58 - 0:03:04, nhau và để để cho y và y ngã xắp xỉ nhau
+0:03:02 - 0:03:07, thì chúng ta sẽ phải có một cái hàm nó
+0:03:04 - 0:03:10, gọi là hàm độ lỗi để thể hiện cái sự sai
+0:03:07 - 0:03:13, khác giữa giá trị thực tế và giá trị Dự
+0:03:10 - 0:03:14, đoán và có rất nhiều những cái hàm độ
+0:03:13 - 0:03:16, lỗi khác nhau tuy nhiên đối với các cái
+0:03:14 - 0:03:18, bài toán hồi quy thì một trong những độ
+0:03:16 - 0:03:22, lỗi được sử dụng rất là phổ biến đó
+0:03:18 - 0:03:27, chính là độ lỗi msi hay là viết tắc của
+0:03:22 - 0:03:27, chữ Min Square error
+0:03:30 - 0:03:35, và công thức của cái Min Square chính là
+0:03:33 - 0:03:39, trung bình cộng của các cái sai số bình
+0:03:35 - 0:03:42, phương trong đó y y chính là cái giá trị
+0:03:39 - 0:03:45, thực tế còn y mũ chính là cái giá trị
+0:03:42 - 0:03:48, dựng
+0:03:45 - 0:03:50, đoán và chúng ta sẽ đến cái phần thứ hai
+0:03:48 - 0:03:53, của cái cái độ đo đánh giá cho mô hình
+0:03:50 - 0:03:55, hội quy đó chính là cái độ đo để giúp
+0:03:53 - 0:04:00, cho mình đánh giá mô hình cái này sẽ
+0:03:55 - 0:04:00, được thực hiện sau khi đã huấn luyện
+0:04:05 - 0:04:09, và cái như chúng ta đã đề cập trước đó
+0:04:07 - 0:04:11, đó thì cái độ đo đánh giá của mình nó
+0:04:09 - 0:04:14, không nhất thiết nó phải giống với lại
+0:04:11 - 0:04:17, cái cái hàm độ lỗi của cái mô hình khi
+0:04:14 - 0:04:21, mình huấn luyện đó thì tương tự như là
+0:04:17 - 0:04:23, cái độ độ lỗi thì chúng ta sẽ đưa cái dữ
+0:04:21 - 0:04:26, kiện đầu vào cái đặc trưng đầu vào của
+0:04:23 - 0:04:28, mình trên cái tập dữ liệu test trên cái
+0:04:26 - 0:04:30, tập test đưa vào cái mô hình đã được
+0:04:28 - 0:04:32, huấn luyện ch Chúng ta có một cái chú ý
+0:04:30 - 0:04:35, ở đây là mô hình này đã được huấn luyện
+0:04:32 - 0:04:38, tức là hàm f theta x này theta ở đây là
+0:04:35 - 0:04:40, cái theta đã được chọn lựa để làm sao
+0:04:38 - 0:04:43, cho tối ưu cái độ lỗi của tập dữ liệu
+0:04:40 - 0:04:45, Trend rồi và T cũng tương tự như vậy
+0:04:43 - 0:04:46, chúng ta sẽ đưa ra được cái giá trị Dự
+0:04:45 - 0:04:48, đoán và cái giá trị Dự đoán này là cho
+0:04:46 - 0:04:51, cái tập dữ liệu
+0:04:48 - 0:04:54, test và mình luôn mong muốn là cái giá
+0:04:51 - 0:04:56, trị Dự đoán này nó sẽ phải xắp xỉ với
+0:04:54 - 0:04:58, giá trị Dự đoán xin lỗi xấp xỉ với lại
+0:04:56 - 0:05:00, cái giá trị trong thực tế và để đánh giá
+0:04:58 - 0:05:03, được đúng không để đánh giá được cái
+0:05:00 - 0:05:05, size số này thì chúng ta sẽ sử dụng rất
+0:05:03 - 0:05:08, nhiều những cái độ đo khác nhau để tạo
+0:05:05 - 0:05:10, ra cái sự Khách quen khi chúng ta đánh
+0:05:08 - 0:05:12, giá cái hiệu quả của mô hình của mình
+0:05:10 - 0:05:16, thì ở đây chúng ta có những cái độ đo
+0:05:12 - 0:05:20, đánh giá ví dụ như là Mae mse và root me
+0:05:16 - 0:05:21, Square thì chi tiết thì chúng ta sẽ bàn
+0:05:20 - 0:05:25, trong cái slide tiếp
+0:05:21 - 0:05:29, theo thì các cái độ đo đánh giá cho cái
+0:05:25 - 0:05:32, bài toán hồi quy thì chúng ta sẽ xét cái
+0:05:29 - 0:05:36, ví dụ dụ như sau ha Ờ ở đây thì chúng ta
+0:05:32 - 0:05:39, sẽ thấy là đầu vào của mình sẽ là x và
+0:05:36 - 0:05:42, cái giá trị đầu ra của mình sẽ là y và
+0:05:39 - 0:05:44, cái đường thẳng ở đây cho cái bài toán
+0:05:42 - 0:05:48, hồi Q giả sử như chúng ta có một cái
+0:05:44 - 0:05:53, đường là dạng đường tuyến tính thì với
+0:05:48 - 0:05:55, một cái dữ kiện đầu vào xero x y ở đây x
+0:05:53 - 0:05:58, y ở đây thì chiếu lên trên cái mô hình
+0:05:55 - 0:06:01, chiếu lên trên mô hình thì chúng ta sẽ
+0:05:58 - 0:06:04, có được cái giá trị dự đoán là y mũ y
+0:06:01 - 0:06:06, rồi khi chúng ta chiếu lên chúng ta chạm
+0:06:04 - 0:06:08, vào cái mô Đường mô hình của mình cái
+0:06:06 - 0:06:10, đường hồi Q của mình thì nó sẽ ra được
+0:06:08 - 0:06:12, cái giá trị là dự đoán trong khi đó cái
+0:06:10 - 0:06:14, điểm thực tế của mình thì nó lại nằm ở
+0:06:12 - 0:06:18, đây cái điểm thực tế của mình nó nằm ở
+0:06:14 - 0:06:23, đây thì khoảng cách từ cái điểm thực tế
+0:06:18 - 0:06:26, yy cho đến cái giá trị Dự đoán y mũ y đó
+0:06:23 - 0:06:30, chính là cái sii số và chúng ta sẽ có
+0:06:26 - 0:06:33, các cái sii số để đánh giá để thể hiện
+0:06:30 - 0:06:36, cái sự sai sai biệt giữa dữ liệu thực
+0:06:33 - 0:06:39, với lại cái đường hồi quy ha và đầu tiên
+0:06:36 - 0:06:42, đó chính là độ
+0:06:39 - 0:06:45, đo Min absolute
+0:06:42 - 0:06:47, error và nó cũng tương tự như là Min
+0:06:45 - 0:06:49, Square thì đây sẽ là trung bình cộng của
+0:06:47 - 0:06:53, các cái size trị tuyệt đối của các cái
+0:06:49 - 0:06:56, size số tiếp theo đó là Min Square thì
+0:06:53 - 0:07:00, chúng ta đã đề cập ở trong cái phần hàm
+0:06:56 - 0:07:03, độ lỗi khi huấn luyện mô hình
+0:07:00 - 0:07:04, root Min Square eror cái từ này là quyết
+0:07:03 - 0:07:07, tắt của chữ
+0:07:04 - 0:07:11, root còn Min Square eror thì chúng ta đã
+0:07:07 - 0:07:15, đề cập ở trong slide trước chữ R AE thì
+0:07:11 - 0:07:15, r Ở đây nó không phải là root mà là
+0:07:18 - 0:07:24, relative tức là sai số tương đối sai số
+0:07:22 - 0:07:28, tương đối absolute
+0:07:24 - 0:07:30, ER rồi Tức là nó sẽ là bằng trung bình
+0:07:28 - 0:07:33, của các cái cái size tổng của các cái
+0:07:30 - 0:07:38, size số y và y m
+0:07:33 - 0:07:41, y chia cho cái Phương size thì ở ở đây
+0:07:38 - 0:07:44, lưu ý là nó sẽ là cái độ lạch trị tuyệt
+0:07:41 - 0:07:46, đối của độ lạch của y và cái giá trị y g
+0:07:44 - 0:07:50, y g ở đây chính là cái giá trị trung
+0:07:46 - 0:07:53, bình trung bình cộng giá trị trung
+0:07:50 - 0:07:55, bình rồi tương tự như vậy thì chúng ta
+0:07:53 - 0:07:58, sẽ có ờ
+0:07:55 - 0:08:01, relative Square error thì ở đây chúng ta
+0:07:58 - 0:08:02, sẽ dùng cái hàm là Bình Phương và tương
+0:08:01 - 0:08:04, tự như vậy thì cái y ở đây chính là cái
+0:08:02 - 0:08:07, giá trị trung bình của cái dự đoán của
+0:08:04 - 0:08:07, mình

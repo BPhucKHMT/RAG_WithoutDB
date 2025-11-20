@@ -1,0 +1,374 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:19, đầu tiên đó là chúng ta sẽ cùng tìm hiểu
+0:00:16 - 0:00:21, về một cái thư viện của Python được sử
+0:00:19 - 0:00:23, dụng rất là phổ biến hiện nay đó chính
+0:00:21 - 0:00:25, là thư viện npai thì đây là một trong
+0:00:23 - 0:00:27, những cái thư viện phổ biến nè Có hiệu
+0:00:25 - 0:00:30, năng rất là cao tốc độ tính toán rất là
+0:00:27 - 0:00:32, nhanh và có hỗ trợ rất nhiều những cái
+0:00:30 - 0:00:36, thao tác tính toán trên các cái đối
+0:00:32 - 0:00:40, tượng đại số ví dụ như là giá trị scaler
+0:00:36 - 0:00:42, giá trị khô hướng vector array một chiều
+0:00:40 - 0:00:45, hay còn gọi là array một chiều rồi ma
+0:00:42 - 0:00:48, trận hai chiều và tensor có số chiều từ
+0:00:45 - 0:00:50, ba trở lên thì để sử dụng thì chúng ta
+0:00:48 - 0:00:55, sẽ import thư
+0:00:50 - 0:00:57, viện là n snp thì snp này chính là alias
+0:00:55 - 0:01:00, là viết tắc của cái chữ N và chữ p ở đây
+0:00:57 - 0:01:02, thì sau này các cái hàm mà mình sử dụng
+0:01:00 - 0:01:05, á thì chúng ta chỉ cần gõ là NP chấm Cái
+0:01:02 - 0:01:07, gì đó thì như vậy thì nó sẽ tiết kiệm
+0:01:05 - 0:01:10, được cho chúng ta trong cái gọi là câu
+0:01:07 - 0:01:12, lệnh của mình nó gọn ràng hơn à các cái
+0:01:10 - 0:01:14, bước đầu tiên khi chúng ta tìm hiểu đó
+0:01:12 - 0:01:17, chính là khởi tạo một cái array như thế
+0:01:14 - 0:01:20, nào thì nếu như trong kiểu dữ liệu list
+0:01:17 - 0:01:22, các cái phần tử của mình Nó sẽ phải có
+0:01:20 - 0:01:25, cùng à khác kiểu dữ liệu cũng được đúng
+0:01:22 - 0:01:27, không Nhưng mà trong num array thì các
+0:01:25 - 0:01:30, cái phần tử của mình nó phải là những
+0:01:27 - 0:01:31, phần tử cùng kiểu dữ liệu thì ví dụ
+0:01:30 - 0:01:34, chúng ta thấy đây là chúng ta đang khởi
+0:01:31 - 0:01:36, tạo ra một cái array một chiều với các
+0:01:34 - 0:01:39, cái con số nguyên có giá trị lần lượt là
+0:01:36 - 0:01:41, 1 2 3 đó thì khi chúng ta tạo ra thì
+0:01:39 - 0:01:45, chúng ta sẽ có một cái nump array có giá
+0:01:41 - 0:01:48, trị như thế này
+0:01:45 - 0:01:51, rồi và điều gì xảy ra nếu như chúng ta
+0:01:48 - 0:01:53, đang xen giữa kiểu số nguyên và kiểu
+0:01:51 - 0:01:57, chuỗi đúng không Thì chúng ta cũng thử
+0:01:53 - 0:02:00, chạy thì nó sẽ tự động nó sẽ tự động ép
+0:01:57 - 0:02:03, cái các cái phần tử
+0:02:00 - 0:02:06, 1 và 3 về cái kiểu dữ liệu tổng quát hơn
+0:02:03 - 0:02:07, đó là kiểu chuỗi thì trong cái các cái
+0:02:06 - 0:02:09, kiểu dữ liệu của mình thì kiểu chuỗi là
+0:02:07 - 0:02:11, tổng quát nhất tại vì nó có khả năng
+0:02:09 - 0:02:13, biểu diễn được số ngyên số thực hoặc là
+0:02:11 - 0:02:15, bulling đúng không Nhưng mà ở đây trong
+0:02:13 - 0:02:18, ví dụ này thì chúng
+0:02:15 - 0:02:23, ta sử dụng đó là array của mình là chữu
+0:02:18 - 0:02:26, số nguyên rồi thì ở đây chúng ta sẽ
+0:02:23 - 0:02:30, có in ra một số cái hàm phụ trợ Ví dụ
+0:02:26 - 0:02:32, như kiểu dữ liệu của a là gì rồi kích
+0:02:30 - 0:02:35, thước theo từng chiều hoặc là dimension
+0:02:32 - 0:02:38, của a là gì thì chúng ta sẽ có lệnh là a
+0:02:35 - 0:02:40, chsf rồi chúng ta muốn try xuất đến ba
+0:02:38 - 0:02:41, cái phần tử đầu tiên thì cái cách thức
+0:02:40 - 0:02:44, chúng ta truy xuất cũng giống như trong
+0:02:41 - 0:02:47, list là a Mở ngặc vuông 0 a Mở ngặc
+0:02:44 - 0:02:49, vuông 1 và a v 2 và cái cách thức chúng
+0:02:47 - 0:02:53, ta thay đổi cái giá trị của mình cũng
+0:02:49 - 0:02:55, tương tự như list đó là A0 là bằng 5 rồi
+0:02:53 - 0:02:57, và a sau khi chúng ta cập nhật xong thì
+0:02:55 - 0:03:00, chúng ta sẽ có giá trị như thế nào thì
+0:02:57 - 0:03:04, chúng ta sẽ in ra màn hình thì ở đây ta
+0:03:00 - 0:03:11, sẽ in ra ha A của mình type của nó đó là
+0:03:04 - 0:03:13, kiểu num array ND thì N là n d là
+0:03:11 - 0:03:16, dimension tức là số chiều và array là
+0:03:13 - 0:03:18, kiểu array và trong cái ví dụ này thì
+0:03:16 - 0:03:22, chúng ta thấy đây là một vector nên số
+0:03:18 - 0:03:24, chiều của mình nó chỉ có một chiều chỉ g
+0:03:22 - 0:03:25, Đây là một cái Tole chỉ có một phần tử
+0:03:24 - 0:03:29, và
+0:03:25 - 0:03:33, à số phần tử Cho cái chiều duy nhất này
+0:03:29 - 0:03:36, á đó là 3 nó có ba phần tử thì đây sẽ là
+0:03:33 - 0:03:38, 3 rồi khi chúng ta truy xất đến các cái
+0:03:36 - 0:03:41, phần tử ba phần tử đầu tiên thì nó sẽ là
+0:03:38 - 0:03:43, 1 2 và 3 kết quả ở đây và chúng ta muốn
+0:03:41 - 0:03:45, thay đổi cái con số 1 này cái phần tử
+0:03:43 - 0:03:48, đầu tiên này bằng con số 5 thì chúng ta
+0:03:45 - 0:03:52, sẽ để là A0 = 5 và Kết quả nó sẽ ra là 5
+0:03:48 - 0:03:55, 2 1 x rồi 5 2
+0:03:52 - 0:03:59, 3 à tương tự như vậy khi chúng ta muốn
+0:03:55 - 0:04:00, làm việc trên kiểu ma trận thì số chiều
+0:03:59 - 0:04:04, của mình trong trường hợp này nó sẽ có
+0:04:00 - 0:04:07, hai chiều là bề cao và bề ngang chiều
+0:04:04 - 0:04:10, dọc và chiều ngang thì ở đây chúng ta sẽ
+0:04:07 - 0:04:13, tạo ra là mỗi ngoặc vuông Mỗ à Một cái
+0:04:10 - 0:04:16, list là 1 2 rồi một cái list là 34 rồi
+0:04:13 - 0:04:19, đóng ngoặc vuông rồi và chúng ta muốn
+0:04:16 - 0:04:22, tạo ra một cái tenser với số chiều là ba
+0:04:19 - 0:04:24, chiều thì ở đây chúng ta sẽ có là mẫ
+0:04:22 - 0:04:26, ngặc vuông của một cái T của một cái ma
+0:04:24 - 0:04:31, trận tiếp tục theo là một cái ma trận
+0:04:26 - 0:04:35, khác thì ở trên là ma trận 1 và 34 12 2
+0:04:31 - 0:04:38, 34 và tiếp theo sẽ là ma trận 56 78 56
+0:04:35 - 0:04:40, 78 thì nó sẽ nối hai cái thằng này lại
+0:04:38 - 0:04:43, với nhau để tạo ra thành một cái array
+0:04:40 - 0:04:47, có ba
+0:04:43 - 0:04:51, chiều thì ở đây là 1 2 3
+0:04:47 - 0:04:54, 4 rồi và SH của B nó sẽ là 2 x 2 tại vì
+0:04:51 - 0:04:56, có hai chiều theo chiều cao hai phần tử
+0:04:54 - 0:05:00, theo chiều cao và hai phần tử theo chiều
+0:04:56 - 0:05:03, ngang tức là xin lỗi ở đây chứ là hai Hà
+0:05:00 - 0:05:08, và hai cột à tương tự như vậy c ma trận
+0:05:03 - 0:05:13, c thì sẽ là cái tenser có kích thước
+0:05:08 - 0:05:15, là 2 x 2 x 2 tức là hai hàng hai cột và
+0:05:13 - 0:05:20, hai chiều theo độ
+0:05:15 - 0:05:22, sâu rồi và chúng ta muốn khởi tạo những
+0:05:20 - 0:05:24, cái giá trị cho trước thì chúng ta có n
+0:05:22 - 0:05:29, có hỗ trợ các cái hàm các cái phương
+0:05:24 - 0:05:31, thức như là on Zero và random thì np1
+0:05:29 - 0:05:34, truyền vào số 3 thì nó sẽ tạo ra một cái
+0:05:31 - 0:05:37, vectơ có ba chiều và gồm toài các số 1
+0:05:34 - 0:05:37, lp.zo88.win
+0:05:59 - 0:06:04, chiều thứ nhất là ba số phần tử theo
+0:06:01 - 0:06:06, chiều thứ hai là 2 tức là ba
+0:06:04 - 0:06:09, hàng hai
+0:06:06 - 0:06:13, cột thì tương tự như vậy cho các cái
+0:06:09 - 0:06:16, phương thức là np0 và NP
+0:06:13 - 0:06:19, random đối với tenser thì chúng ta sẽ có
+0:06:16 - 0:06:21, tuple gồm nhiều giá trị hơn ở đây là có
+0:06:19 - 0:06:23, ba chiều trong đó Chiều thứ nhất có bốn
+0:06:21 - 0:06:25, phần tử chiều thứ hai có ba phần tử và
+0:06:23 - 0:06:28, chiều thứ ba có hai phần
+0:06:25 - 0:06:30, tử chiều đầu tiên là bốn hàng chiều thứ
+0:06:28 - 0:06:34, hai đó là ba cục
+0:06:30 - 0:06:36, và 2 là hai độ sâu rồi thì ở đây chúng
+0:06:34 - 0:06:41, ta cũng sẽ có các cái câu lệnh tương ứng
+0:06:36 - 0:06:46, ha Đây là array vồng tàn Số 0 có hai
+0:06:41 - 0:06:49, chiều và mỗi chiều sẽ có hai phần tử đây
+0:06:46 - 0:06:54, là hai chiều và chiều thứ nhất có một
+0:06:49 - 0:07:00, phần tử tức là có một hàng có hai
+0:06:54 - 0:07:02, cột Rồi full thì là khởi tạo gồm Toàn
+0:07:00 - 0:07:04, cái giá trị là một cái hàng số thì ở đây
+0:07:02 - 0:07:06, chúng ta sẽ để vào là số 7 tức là chúng
+0:07:04 - 0:07:12, ta đang muốn tạo ra một cái ma trận kích
+0:07:06 - 0:07:15, thước là 2 x 2 gồm toàn bộ là số 7 đó 7
+0:07:12 - 0:07:18, 7 77 một cách tương đương đó là chúng ta
+0:07:15 - 0:07:21, có thể dùng np1 Sau đó chúng ta nhân với
+0:07:18 - 0:07:23, 7 thì cái cách này nó thực hiện cái theo
+0:07:21 - 0:07:26, tác nhân trên một
+0:07:23 - 0:07:28, cái array thì cái này chúng ta sẽ được
+0:07:26 - 0:07:33, tìm hiểu trong những cái phần
+0:07:28 - 0:07:36, sau đó nó cũng tạo ra gồm Toàn cái số bả
+0:07:33 - 0:07:39, A là một cái ma trận đơn vị trong đó các
+0:07:36 - 0:07:42, cái phần tử trên đường chéo chính nó sẽ
+0:07:39 - 0:07:44, bằng 1 còn các phần tử còn lại bằng 0 đó
+0:07:42 - 0:07:46, thì trên đường chéo chính nè Ở đây chúng
+0:07:44 - 0:07:47, ta sẽ truyền số 4 4 tức là bốn hàng và
+0:07:46 - 0:07:50, bốn
+0:07:47 - 0:07:53, cột số phần tử trên đường chéo chính là
+0:07:50 - 0:07:56, 1 và các phần tử còn lại bằng 0 random
+0:07:53 - 0:07:59, sẽ khởi tạo ngỗ nhiên các số từ 0 cho
+0:07:56 - 0:08:03, đến 1 rồi thì trên đây là một số cái cái
+0:07:59 - 0:08:06, phương thức khởi tạo cho các cái vector
+0:08:03 - 0:08:08, rồi ma trận aray ngoài ra thì chúng ta
+0:08:06 - 0:08:12, muốn khởi tạo các cái giá trị theo một
+0:08:08 - 0:08:15, cái gọi là theo một cái quy luật cấp số
+0:08:12 - 0:08:17, nhân rồi cấp số cộng thì ở đây chúng ta
+0:08:15 - 0:08:20, sẽ có các cái phương thức là NP arrange
+0:08:17 - 0:08:24, Ví dụ ở đây chúng ta thấy là arrange 10
+0:08:20 - 0:08:26, 50 và 5 thì hàm ý đó là chúng ta tạo ra
+0:08:24 - 0:08:29, một cái array gồm một chuỗi bắt đầu từ
+0:08:26 - 0:08:32, số 10 và đến dưới à lưu ý là nó sẽ sẽ
+0:08:29 - 0:08:35, không chạm đến cái số 50 Tức là nó sẽ
+0:08:32 - 0:08:38, chạm đến tối đa là 49 thôi với cái bước
+0:08:35 - 0:08:40, nhảy của các phần tử của mình là 5 như
+0:08:38 - 0:08:45, vậy Ở đây kết quả của mình nó sẽ ra là
+0:08:40 - 0:08:49, 10 15 20 25 30 cho đến 45 nó sẽ không
+0:08:45 - 0:08:51, chạm đến cái phần tử 50 ha rồi nó sẽ có
+0:08:49 - 0:08:55, một cái phương thức khác để khởi tạo một
+0:08:51 - 0:08:57, cấp số nhân có điều là s nó sẽ khởi tạo
+0:08:55 - 0:08:59, ra một cái chuỗi các cái giá trị được
+0:08:57 - 0:09:02, chia đều đó là link Space l space là
+0:08:59 - 0:09:05, biết tắt của linear Space à số đầu tiên
+0:09:02 - 0:09:09, là số bắt đầu và số 1 ở đây là số Kết
+0:09:05 - 0:09:12, thúc và num bằng 11 ở đây hàm ý đó là từ
+0:09:09 - 0:09:16, 0 cho đến 11 mình sẽ lấy mẫu là 11 phần
+0:09:12 - 0:09:19, tử Ví dụ ở đây chúng ta để là 5 thì từ 0
+0:09:16 - 0:09:20, cho đến 1 mà chúng ta lấy mẫ 5 phần tử
+0:09:19 - 0:09:27, thì nó sẽ
+0:09:20 - 0:09:30, là 0 0.25 0.5 và 0.75 rồi
+0:09:27 - 0:09:35, 1 ở đây chúng ta để là bằng 11
+0:09:30 - 0:09:37, hơn thì nó sẽ là 0 0.1 0.2 cho đến 0.9
+0:09:35 - 0:09:40, và 1 thì tất cả phần tử ở đây số lượng
+0:09:37 - 0:09:42, phần tử ở đây sẽ là 11 phần tử nó sẽ
+0:09:40 - 0:09:44, được rãi đều lấy đều trong cái khoảng là
+0:09:42 - 0:09:49, từ 0 cho đến
+0:09:44 - 0:09:50, 1 nếu như chúng ta muốn cái mãng cái
+0:09:49 - 0:09:53, hoặc là cái array của mình tạo ra nó
+0:09:50 - 0:09:56, được tạo bởi từ các cái array trước đó
+0:09:53 - 0:10:00, thì có hai cái thao tác
+0:09:56 - 0:10:02, trồng hai cái thao tác rất là sử dụng
+0:10:00 - 0:10:06, phổ biến đó là trồng chúng ta sẽ trồng
+0:10:02 - 0:10:09, theo chiều vertical tức là theo chiều
+0:10:06 - 0:10:15, dọc hoặc là trồn theo chiều ngang là
+0:10:09 - 0:10:18, horizontal stu thì vertical stu thì 1 2
+0:10:15 - 0:10:20, 3 nó sẽ trồng lên trên là 4 56 do đó kết
+0:10:18 - 0:10:23, quả sẽ ra là một cái ma trận một cái
+0:10:20 - 0:10:27, array là ma dạng ma trận 1 2 3 trồng lên
+0:10:23 - 0:10:30, trên là 456 còn ở đây chúng ta thấy là A
+0:10:27 - 0:10:34, của mình là gồm
+0:10:30 - 0:10:37, 7 88 9 tức là các cái giá trị là 7 8 9
+0:10:34 - 0:10:43, và 4 5 6 thì 7 889 mà ráp với lại 456
+0:10:37 - 0:10:47, theo chiều cột thì nó sẽ ra là 7
+0:10:43 - 0:10:50, 74 85 và 96 nó sẽ ráp hai cái cột này
+0:10:47 - 0:10:53, lại với nhau Nó sẽ ráp hai cái cột này
+0:10:50 - 0:10:56, lại với nhau rồi Tiếp theo thì chúng ta
+0:10:53 - 0:10:59, sẽ tìm hiểu về cái cơ chế indexing thì
+0:10:56 - 0:11:02, tương tự như là các cái kiểu dữ liệu cơ
+0:10:59 - 0:11:05, bản trong pyon thì NP cũng sẽ có các cái
+0:11:02 - 0:11:06, cơ chế đánh chỉ mục giống như vậy cái
+0:11:05 - 0:11:10, giống đầu tiên đó là chỉ mục của mình sẽ
+0:11:06 - 0:11:13, đánh từ 0 0 1 2 nó sẽ đánh từ 0 cái việc
+0:11:10 - 0:11:16, tr xất các phần tử của mình thì chúng ta
+0:11:13 - 0:11:19, sẽ truyền vô các cái chỉ số dạng đơn
+0:11:16 - 0:11:22, hoặc là dạng một cái lá cắt thì cái lá
+0:11:19 - 0:11:24, cắt này á hay còn gọi là slide này thì
+0:11:22 - 0:11:27, cho chúng ta các cái giá trị là từ bao
+0:11:24 - 0:11:30, nhiêu đến bao nhiêu ví dụ 0 2.2 thì hàm
+0:11:27 - 0:11:33, ý đó là chạy từ 0 cho đến cái phần tử
+0:11:30 - 0:11:36, trước cái phần tử số 2 đó là số 1 như
+0:11:33 - 0:11:38, vậy là data 02 tức là lấy ra hai phần tử
+0:11:36 - 0:11:42, đầu tiên
+0:11:38 - 0:11:46, là chỉ số 0 và 1 ở đây tương ống là hai
+0:11:42 - 0:11:47, giá trị là 1 và 2 data 1 hai chấm thì
+0:11:46 - 0:11:49, cái dấu hai chấm này ngay phía sau hai
+0:11:47 - 0:11:51, chấm chúng ta không thấy nó điền cái giá
+0:11:49 - 0:11:55, trị gì đúng không Tức là hàm ý là đi lấy
+0:11:51 - 0:12:00, hết từ 1 trở đi thì từ 1 trở đi Tức là
+0:11:55 - 0:12:04, bao gồm 2 và 3 2 và 3 tương tự như vậy
+0:12:00 - 0:12:06, cho ma trận thì ở đây là nếu như chúng
+0:12:04 - 0:12:09, ta chỉ truyền data 01 tức là chúng ta
+0:12:06 - 0:12:13, lấy hàng số 0 và cột số
+0:12:09 - 0:12:16, 1 rồi nếu như chúng ta truyền vô là data
+0:12:13 - 0:12:18, 12.3 Chúng ta không có cái dấu phẩy ở
+0:12:16 - 0:12:22, đây để cho biết cái cột là gì thì hàm ý
+0:12:18 - 0:12:25, cột của mình sẽ là lấy hết rồi Như vậy Ở
+0:12:22 - 0:12:28, đây chúng ta sẽ lấy là hàng từ 1 cho đến
+0:12:25 - 0:12:30, trước số 3 tức là hàng 1 hàng 2 cột thì
+0:12:28 - 0:12:32, sẽ l lấy hết tất cả các cột tức là giá
+0:12:30 - 0:12:34, trị của cái mãng con của mình lấy ra là
+0:12:32 - 0:12:39, 34
+0:12:34 - 0:12:43, 56 data 2 chấm 0 2.2 tức là lấy hai dòng
+0:12:39 - 0:12:45, đầu tiên hai dòng đầu tiên và cột sẽ lấy
+0:12:43 - 0:12:47, cột 0 như vậy là cái mãng con mình lấy
+0:12:45 - 0:12:49, ra sẽ là 1 và
+0:12:47 - 0:12:53, 3
+0:12:49 - 0:12:58, rồi Ở đây là một cái ví dụ ha a góc của
+0:12:53 - 0:12:59, mình sẽ là 1 2 3 4 5 6 7 8 9 10 11 12 và
+0:12:58 - 0:13:01, b
+0:12:59 - 0:13:06, là bằng
+0:13:01 - 0:13:10, a 2.2 13 2.2 có nghĩa là gì Là hai hàng
+0:13:06 - 0:13:11, đầu tiên từ đầu cho đến trước số 2 tức
+0:13:10 - 0:13:16, là hai hàng đầu
+0:13:11 - 0:13:21, tiên rồi cột sẽ lấy là cột 1 cho đến
+0:13:16 - 0:13:23, trước số 3 tức là cột 1 cột 2 0 1 nè 1 2
+0:13:21 - 0:13:26, như vậy là nó sẽ lấy ra hai cái phần
+0:13:23 - 0:13:30, tượng này xin lỗi lấy hai cái cột này
+0:13:26 - 0:13:32, như vậy nó sẽ là 23 và
+0:13:30 - 0:13:34, 67 như vậy Đáp số của B của mình nó sẽ
+0:13:32 - 0:13:37, là
+0:13:34 - 0:13:42, 2367 và chúng ta có một cái lưu ý đó là
+0:13:37 - 0:13:44, khi chúng ta gán b là bằng a2.2 13 thì b
+0:13:42 - 0:13:48, là tham chiếu chứ không phải là b nó
+0:13:44 - 0:13:51, đang tạo ra một cái đối tượng mới có cái
+0:13:48 - 0:13:54, giá trị là 2 3 và 67 B ở đây nó đang
+0:13:51 - 0:13:58, tham chiếu trực tiếp vô cái phần tửng
+0:13:54 - 0:14:00, này trực tiếp vô cái ma trận câu này do
+0:13:58 - 0:14:01, đó thì nếu như đây chúng ta b để cập
+0:14:00 - 0:14:06, nhật là
+0:14:01 - 0:14:08, B 00 là bằng 77 thì hàm ý đó là cái phần
+0:14:06 - 0:14:11, tử 00 là phần tử này nè đúng không phần
+0:14:08 - 0:14:12, tử 0 là phần tử này số 2 này sẽ được
+0:14:11 - 0:14:15, thay bằng số
+0:14:12 - 0:14:19, 77
+0:14:15 - 0:14:23, rồi Dạ sẽ thay số 2 sẽ được thay bằng số
+0:14:19 - 0:14:26, 77 a01 ban đầu là phần tử này giá trị
+0:14:23 - 0:14:32, của nó là 2 nhưng khi chúng ta lấy B cập
+0:14:26 - 0:14:35, nhật mới là 00 b00 bằng 77 á thì a ở đây
+0:14:32 - 0:14:37, chúng ta in lại a01 một lần nữa thì số
+0:14:35 - 0:14:40, của mình nó không còn là số 2 nữa mà là
+0:14:37 - 0:14:42, số 77 ở đây thì chúng ta sửa số 7 à Xin
+0:14:40 - 0:14:45, lỗi ở đây chúng ta sửa là trên cái biến
+0:14:42 - 0:14:48, là biến B Nhưng thực tế là nó đang thay
+0:14:45 - 0:14:52, đổi trên cái cái mạng cái array A của
+0:14:48 - 0:14:55, mình thì ở đây chúng ta sẽ in ra là toàn
+0:14:52 - 0:14:56, bộ cái A của mình ha thì chúng ta thấy
+0:14:55 - 0:15:00, bình thường ở đây là có số 2 nè bây giờ
+0:14:56 - 0:15:03, nó đã chuyển sang là thành số 77
+0:15:00 - 0:15:05, rồi rồi và chú ý là trong một số trường
+0:15:03 - 0:15:08, hợp thì chúng ta có thể giảm chiều của
+0:15:05 - 0:15:11, array khi tạo ra cái lá cắt thì ở đây
+0:15:08 - 0:15:16, chúng ta sẽ có một cái ví dụ ha chúng ta
+0:15:11 - 0:15:19, khởi tạo ra một cái mạng a có hai chiều
+0:15:16 - 0:15:23, A có hai chiều và chiều đầu tiên là có
+0:15:19 - 0:15:25, ba dòng chiều thứ hai là có bốn Cột rồi
+0:15:23 - 0:15:29, thì chúng ta sẽ thấy là có ba cái cách
+0:15:25 - 0:15:30, thức để lấy ra cái dòng thứ hai cùng là
+0:15:29 - 0:15:34, cái nội dung dòng thứ hai nhưng chúng ta
+0:15:30 - 0:15:36, có ba cách row R1 chúng ta để là A1 ha
+0:15:34 - 0:15:40, chấm tức là lấy dòng số
+0:15:36 - 0:15:43, 1 dòng số 1 và cột thì là lấy hết nhưng
+0:15:40 - 0:15:46, cũng như vậy chúng ta để là row
+0:15:43 - 0:15:47, R2 và cái chỉ số dầu của mình là từ 1
+0:15:46 - 0:15:50, cho đến
+0:15:47 - 0:15:52, 2 thì cái sự khác biệt giữa cái cách ở
+0:15:50 - 0:15:54, dưới đây với cái cách ở đây cái cách ở
+0:15:52 - 0:15:57, trên nó sẽ trả về cho mình một cái array
+0:15:54 - 0:16:00, có một chiều thôi Còn cái cách ở dưới là
+0:15:57 - 0:16:03, nó sẽ tạo ra cho mình một cái hai chiều
+0:16:00 - 0:16:06, Tại vì nó sẽ chiều đầu tiên là từ 1 cho
+0:16:03 - 0:16:09, đến 2 thì mặc dù từ 1 cho đến 2 là nó
+0:16:06 - 0:16:11, chỉ có một hàng nhưng mà vì cái chỉ thị
+0:16:09 - 0:16:13, là từ bao nhiêu đến bao nhiêu Nên nó đã
+0:16:11 - 0:16:16, đóng gói cái thằng này trong một cái
+0:16:13 - 0:16:19, array hai chiều tương tự như vậy chúng
+0:16:16 - 0:16:21, ta để là mở ngoặc vuông một Mặc dù trong
+0:16:19 - 0:16:24, cái list này nó chỉ có một phần tử là
+0:16:21 - 0:16:27, cái hàng số 1 Nhưng cái việc chúng ta
+0:16:24 - 0:16:30, đưa nó vô cái list thì hàm ý cho
+0:16:27 - 0:16:32, cái thư biện nó biết rằng là ở đây chúng
+0:16:30 - 0:16:35, ta đang muốn tạo ra một array hai chiều
+0:16:32 - 0:16:38, Tuy nhiên hai chiều nhưng mà số phần tử
+0:16:35 - 0:16:41, trong cái chiều hàng của mình cái hàng
+0:16:38 - 0:16:41, của mình là chỉ có một phần tử
+0:16:41 - 0:16:47, Thôi thì hai cách đầu ha à Cách cách đầu
+0:16:45 - 0:16:50, tiên nè R1 nè Thì nó tạo ra cho chúng ta
+0:16:47 - 0:16:53, là một cái mãng một cái vector có kích
+0:16:50 - 0:16:55, thước là 5 678 nhưng mà nó chỉ có số
+0:16:53 - 0:16:58, chiều của mình là 1 còn hai cái cách ở
+0:16:55 - 0:17:02, dưới thì nó đều tạo ra là 5 6 7 8 nhưng
+0:16:58 - 0:17:04, mà set của nó là 1 b tức là à hai chiều
+0:17:02 - 0:17:07, bao gồm là một hàng bốn
+0:17:04 - 0:17:09, cột thì tương tự như vậy Khi chúng ta
+0:17:07 - 0:17:15, làm việc trên
+0:17:09 - 0:17:18, cột rồi và trong cái cơ chế đánh chỉ mục
+0:17:15 - 0:17:20, của numi nó có một cái điểm đặc thù
+0:17:18 - 0:17:23, riêng biệt khác so với lại những cái
+0:17:20 - 0:17:26, kiểu dữ liệu như là list đó chính là
+0:17:23 - 0:17:28, chúng ta có thể đưa vô mãng số nguyên ở
+0:17:26 - 0:17:33, đây chúng ta sẽ có một cái array gó là
+0:17:28 - 0:17:38, 12 2 3 4 56 rồi bây giờ chúng ta thử ha
+0:17:33 - 0:17:40, truyền vô là a vở ngặc vuông là một list
+0:17:38 - 0:17:45, là
+0:17:40 - 0:17:48, 012 và 0 10 thì hàm ý ở đây nó đang muốn
+0:17:45 - 0:17:51, trả về là một cái list nó trả về một cái
+0:17:48 - 0:17:56, array bao gồm các cái phần tử là
+0:17:51 - 0:17:58, 0 1 1 và 20 thì cái cách ở trên đây nó
+0:17:56 - 0:18:00, tương đương với cái cách bên dưới đó là
+0:17:58 - 0:18:04, trả về một cái array bao gồm các phần tử
+0:18:00 - 0:18:09, là a00 nè A11 nè và
+0:18:04 - 0:18:12, a20 rồi thì a góc của mình là 1 2 3 4 5
+0:18:09 - 0:18:15, 6 và khi chúng ta muốn lấy là 00 tức là
+0:18:12 - 0:18:20, con số này 1
+0:18:15 - 0:18:25, nè 1 1 nè tức là hàng 1 cột 1 tức là con
+0:18:20 - 0:18:29, số 4 nè giá trị Trạo Ngà đây 20 tức là
+0:18:25 - 0:18:32, hàng 2 cộ 0 tức là con số 5 số 5 nà Vậy
+0:18:29 - 0:18:34, thì đây là cái cách thức để chỉ mục của
+0:18:32 - 0:18:38, mình đó là một cái mạng các cái số
+0:18:34 - 0:18:41, ng và chúng ta hoàn toàn làm tương tự ha
+0:18:38 - 0:18:41, các cái ví dụ ở
+0:18:44 - 0:18:53, đây thì B của mình là array là 2 là
+0:18:49 - 0:18:56, 0201 rồi chúng ta trả về là A là NP
+0:18:53 - 0:18:59, arrange arrange của mình arrange 4 á Tức
+0:18:56 - 0:19:04, là nó sẽ trả về một cái array gồn các
+0:18:59 - 0:19:08, con số là 0 1 2 3 0 1 2 3 b của mình sẽ
+0:19:04 - 0:19:16, là 0 2 0 1 021 như vậy Kết quả của mình
+0:19:08 - 0:19:21, sẽ trả về là 0 1 2 20 và 31 ví dụ
+0:19:16 - 0:19:26, 00 00 thì tương ứng nó sẽ là con số 1 nó
+0:19:21 - 0:19:29, sẽ trả về đây 1 2 hàng 1 cột 2 tức là
+0:19:26 - 0:19:35, con số 6 số 6
+0:19:29 - 0:19:41, 20 tức là hàng 2 cộ 0 tức là con số 7 và
+0:19:35 - 0:19:41, 3 1 tức là hàng 3 cột 1 tức là con số 11

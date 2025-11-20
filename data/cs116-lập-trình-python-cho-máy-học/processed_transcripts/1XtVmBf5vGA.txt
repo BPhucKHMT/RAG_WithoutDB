@@ -1,0 +1,71 @@
+0:00:00 - 0:00:04, Kỹ thuật ensemble model nâng cao.
+0:00:04 - 0:00:12, Kỹ thuật như stacking, blending, bagging, boosting.
+0:00:12 - 0:00:22, Đối với stacking, chúng ta tiến hành chồng lớp các mô hình với nhau.
+0:00:22 - 0:00:28, Sau đó, chúng ta huấn luyện tiếp một mô hình để học dựa trên kết quả dự đoán đó.
+0:00:28 - 0:00:39, Blending là việc trộn dữ liệu gốc với kết quả dự đoán của từng mô hình
+0:00:39 - 0:00:47, sau đó xây dựng một mô hình, huấn luyện với mô hình mới để học trên dữ liệu mà đã trộn.
+0:00:47 - 0:00:53, Bagging là cơ chế học các mô hình thực hiện một cách gọi là song song.
+0:00:53 - 0:01:00, Boosting là học các mô hình theo trình tự tuần tự.
+0:01:00 - 0:01:06, Tức là những mô hình sau sẽ được học dựa trên kết quả của mô hình trước.
+0:01:06 - 0:01:09, Để khắc phục những điểm yếu của các mô hình trước.
+0:01:09 - 0:01:14, Sau đây chúng ta sẽ đi đến chi tiết hơn cho từng thuật toán.
+0:01:14 - 0:01:27, Kỹ thuật Stacking là kỹ thuật sử dụng kết quả dự đoán của tập Train như đặc trưng để huấn luyện.
+0:01:27 - 0:01:38, Kết quả dự đoán của tập Train làm đặc trưng để huấn luyện cho mô hình tổ hợp Meta-Learner.
+0:01:38 - 0:01:49, Với dữ liệu Train của mình, nó sẽ đưa qua n mô hình. Mỗi mô hình này có thể là những mô hình rất khác nhau.
+0:01:49 - 0:01:58, Sau khi đã Train xong, chúng ta sẽ đưa ra dự đoán trên dữ liệu Train này.
+0:01:58 - 0:02:17, Mỗi mô hình sẽ có một kết quả dự đoán và tất cả các giá trị dự đoán sẽ chồng lên nhau.
+0:02:17 - 0:02:29, sau đó toàn bộ các giá trị đã chồng lên, chúng ta sẽ xem nó như là một input feature
+0:02:34 - 0:02:44, để chúng ta huấn luyện cho Meta-Learner, tức là một mô hình máy học khác, một mô hình máy học tổng hợp ở tầng thứ 2.
+0:02:44 - 0:02:48, Còn các mô hình số 1, số 2, số 3 cho đến n ở đây
+0:02:48 - 0:02:51, đó là những mô hình ở tầng thứ 1.
+0:02:51 - 0:02:55, Còn tầng thứ 2 chúng ta sẽ gọi là Meta-Learner.
+0:02:55 - 0:03:00, Và với Meta-Learner này, nó học dựa trên các đặc trưng
+0:03:00 - 0:03:03, đã được dự đoán từ các mô hình ở tầng thứ 1.
+0:03:03 - 0:03:07, Rồi nó sẽ đưa ra được kết quả dự đoán cuối cùng.
+0:03:07 - 0:03:13, Như vậy thì có thể nói, Meta-Learner giống như là một người lớp trưởng
+0:03:13 - 0:03:23, nó sẽ thực hiện huấn luyện và khai thác được những cái giá trị dự đoán của từng thành viên trong lớp
+0:03:23 - 0:03:26, để từ đó nó sẽ đưa ra cái quyết định cuối cùng.
+0:03:26 - 0:03:31, Thì ở đây chính là cái ý tưởng của kỹ thuật stacking.
+0:03:31 - 0:03:36, Tiếp theo thì chúng ta sẽ đến với kỹ thuật blending.
+0:03:36 - 0:03:42, Kỹ thuật blending, blending có nghĩa là sự pha trộn.
+0:03:42 - 0:03:47, Đó là sự pha trộn của hai loại dữ liệu khác nhau.
+0:03:47 - 0:03:51, Cái loại dữ liệu đầu tiên chính là dữ liệu đặc trưng.
+0:03:51 - 0:03:55, Còn cái dữ liệu thứ hai đó là kết quả dự đoán.
+0:03:55 - 0:03:59, Và tất cả ở đây đều thực hiện trên tập validation.
+0:03:59 - 0:04:04, Đặc trưng này là đặc trưng từ tập validation.
+0:04:04 - 0:04:08, Kết quả dự đoán này cũng là kết quả dự đoán trên tập validation.
+0:04:08 - 0:04:11, Chúng ta kết hợp lại với nhau, chúng ta pha trộn với nhau.
+0:04:11 - 0:04:18, và hai cái này nó sẽ tạo ra thành một đặc trưng để huấn luyện cho mô hình tổng hợp.
+0:04:18 - 0:04:21, Thì ở đây chúng ta sẽ có bước số 1.
+0:04:21 - 0:04:25, Bước số 1, đó là chúng ta sẽ lấy dữ liệu Train.
+0:04:25 - 0:04:30, Vì vậy là toàn bộ data huấn luyện của mình sẽ chia nó ra làm 2 phần.
+0:04:30 - 0:04:34, Phần đầu tiên đó là Train và phần thứ 2 là Validation.
+0:04:34 - 0:04:49, Đối với tập dữ liệu Train, chúng ta sẽ đưa vào bên trong từ mô hình 1, 2 cho đến mô hình thứ n, chúng ta sẽ tiến hành huấn luyện để cho nó có thể giải quyết được trên tập dữ liệu Train này.
+0:04:49 - 0:05:01, Sau đó qua bước số 2, chúng ta sẽ tiến hành không sử dụng tập Train nữa và chúng ta chỉ sử dụng tập Validation thôi.
+0:05:01 - 0:05:06, và đưa vào các mô hình số 1, số 2, số 3 cho đến số n
+0:05:06 - 0:05:10, và ứng với mỗi mô hình thì chúng ta sẽ có kết quả tương ứng
+0:05:10 - 0:05:12, là thể hiện ở trong các dấu chấm ở đây
+0:05:12 - 0:05:17, và chúng ta sẽ kết hợp, chúng ta sẽ trộn lại toàn bộ
+0:05:17 - 0:05:20, Ở đây là chúng ta sẽ trộn cái gì?
+0:05:20 - 0:05:22, Chúng ta sẽ trộn cái tập validation
+0:05:22 - 0:05:24, chính là cái tập này
+0:05:24 - 0:05:28, Với các mô hình này, chúng ta sẽ trộn thêm kết quả dự đoán của chúng.
+0:05:28 - 0:05:39, Với các giá trị dự đoán của mô hình, đó chính là các kết quả dự đoán này.
+0:05:39 - 0:05:53, Vì vậy, tổ hợp cả hai loại dữ liệu. Đây là dữ liệu gốc, đây là dữ liệu gốc.
+0:05:53 - 0:06:00, Còn đây là các dữ liệu của các mô hình có sự đóng góp vào dữ liệu gốc này.
+0:06:00 - 0:06:03, Tức là mỗi mô hình này sẽ thể hiện một quan điểm.
+0:06:03 - 0:06:10, Thì mô hình Meta-Learner sẽ tiến hành huấn luyện trên dữ liệu tổng hợp này.
+0:06:10 - 0:06:19, Tức là thay vì trong mô hình stacking, Meta-Learner chỉ có thể khai thác được các kết quả dự đoán của từng mô hình.
+0:06:19 - 0:06:22, Tức là các giá trị này thôi.
+0:06:22 - 0:06:30, và nó sẽ bị một cái vấn đề đó là lan truyền lỗi, tức là nếu như model số 1, số 2, số 3, cho đến số n,
+0:06:30 - 0:06:34, và các cái model này nó bị lỗi, nó sẽ khiến cho Meta-Learner cũng sẽ bị ảnh hưởng theo.
+0:06:34 - 0:06:45, Cái việc mà chúng ta đưa cái dữ liệu gốc tập validation vào bên trong này, nó sẽ giúp cho chúng ta truyền được cái thông tin nguyên bản
+0:06:45 - 0:06:51, đến trong Meta-Learner để Meta-Learner có thể học được cả dữ liệu gốc
+0:06:51 - 0:06:57, cũng như khai thác được quan điểm, điểm mạnh của từng mô hình này.
+0:06:57 - 0:07:02, Vì vậy thì rõ ràng là Meta-Learner sẽ giúp cho chúng ta học toàn diện hơn.
+0:07:05 - 0:07:10, Tại vì nó có thể học được dữ liệu gốc ban đầu
+0:07:10 - 0:07:13, và đồng thời cũng có thể khai thác được điểm mạnh
+0:07:13 - 0:07:18, những cái quan điểm của từng mô hình thành phần ở cái tầng thứ nhất.
+0:07:18 - 0:07:24, Và cuối cùng thì Meta-Learner sẽ đưa ra cái quyết định cuối cùng là
+0:07:24 - 0:07:27, dự đoán xem cái giá trị output của mình sẽ là gì.
+0:07:27 - 0:07:33, Thì đây chính là cái ý tưởng của thuật toán của cái kỹ thuật là blending.

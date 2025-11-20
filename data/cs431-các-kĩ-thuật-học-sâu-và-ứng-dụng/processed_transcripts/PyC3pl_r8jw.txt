@@ -63,7 +63,7 @@
 0:05:56 - 0:06:03, và ở đây chúng ta sẽ có K filter
 0:06:03 - 0:06:11, và khi chúng ta thực hiện K filter này thì output của mình cũng sẽ có độ sâu tương ứng là K
 0:06:11 - 0:06:22, Chúng ta sẽ nhớ các cách thức để setup cho độ sâu của filter và output trong quá trình lập trình
-0:06:22 - 0:06:30, Vậy chúng ta đã ôn qua một số kiến thức về cấu tạo chung của mạng CNN
+0:06:22 - 0:06:30, Vậy chúng ta đã ôn qua một số kiến thức về những kiến trúc phổ biến
 0:06:30 - 0:06:34, Cấu tạo chung của một cái mạng CNN
 0:06:34 - 0:06:38, Bây giờ chúng ta sẽ đến với một số kiến trúc mạng CNN phổ biến
 0:06:38 - 0:06:48, Rồi, trên đây là sơ đồ về kết quả, về độ lỗi khi nhận diện hình ảnh.

@@ -1,0 +1,72 @@
+0:00:00 - 0:00:05, trong phần tiếp theo thì chúng ta sẽ tìm
+0:00:02 - 0:00:07, hiểu về một cái thư viện cũng rất là nổi
+0:00:05 - 0:00:10, tiếng của Python trong cái việc trực
+0:00:07 - 0:00:14, quan hóa dữ liệu đó chính là thư viện
+0:00:10 - 0:00:17, mli thì đây thư viện mli là một trong
+0:00:14 - 0:00:20, những cái thư viện mà trực quan hóa phổ
+0:00:17 - 0:00:21, biến trong cái ngôn ngữ Python và một số
+0:00:20 - 0:00:24, cái
+0:00:21 - 0:00:28, hàm cơ bản một số cái hàm cơ bản trong
+0:00:24 - 0:00:31, MP đầu tiên đó là cái hàm blot hàm blot
+0:00:28 - 0:00:35, này có thể giúp cho chúng ta vẽ các cái
+0:00:31 - 0:00:36, đồ thị Ờ dưới dạng đường ví dụ như là
+0:00:35 - 0:00:40, dạng như thế
+0:00:36 - 0:00:42, này đó thì chúng ta sẽ có hai cái chiều
+0:00:40 - 0:00:47, là chiều
+0:00:42 - 0:00:48, X và chiều y trong đó x là cái biến độc
+0:00:47 - 0:00:51, lập và y là cái biến phụ thuộc của mình
+0:00:48 - 0:00:53, đó thì nếu như biến độc lập và biến phụ
+0:00:51 - 0:00:55, thuộc chúng ta sẽ vẽ các cái điểm rồi
+0:00:53 - 0:00:56, sau đó chúng ta sẽ nối các cái điểm lại
+0:00:55 - 0:01:00, với nhau
+0:00:56 - 0:01:02, đó thì đây là cái kiểu vẽ đầu tiên vẽ
+0:01:00 - 0:01:05, dưới dạng đường vẽ dưới dạng Line dạng
+0:01:02 - 0:01:09, đường cái kiểu thứ hai đó là chúng ta có
+0:01:05 - 0:01:11, thể vẽ dưới dạng là điểm rời rạng hay
+0:01:09 - 0:01:14, còn gọi là scatter đó thì thay vì chúng
+0:01:11 - 0:01:17, ta nối lại thì chúng ta có thể vẽ dưới
+0:01:14 - 0:01:17, dạng là như thế
+0:01:18 - 0:01:25, này đó thì các cái điểm này sẽ là các
+0:01:21 - 0:01:29, cái điểm rời rạt và chúng ta có hỗ trợ
+0:01:25 - 0:01:32, cái hàm là splot tức là trong trường hợp
+0:01:29 - 0:01:34, chúng ta không muốn vẽ Ờ các cái ảnh các
+0:01:32 - 0:01:37, cái biểu đồ này là các cái biểu đồ rời
+0:01:34 - 0:01:40, rạt mà chúng ta muốn đưa nó về cùng một
+0:01:37 - 0:01:42, cái cụm biểu diễn để chi để sau này
+0:01:40 - 0:01:45, chúng ta có thể dễ dàng so sánh được các
+0:01:42 - 0:01:48, cái biểu đồ với nhau đó thì ở đây chúng
+0:01:45 - 0:01:50, ta sẽ vẽ như thế này chúng ta sẽ chia
+0:01:48 - 0:01:54, cái màn hình vẽ của mình ra thành à
+0:01:50 - 0:01:56, Nhiều cái vùng nhỏ hơn nó gọi là splot
+0:01:54 - 0:01:58, và sau đó chúng ta có thể vẽ các cái
+0:01:56 - 0:02:01, loại biểu đồ ở trên đây ở đây chúng ta
+0:01:58 - 0:02:04, có thể vẽ là biểu đồ tròn
+0:02:01 - 0:02:08, biểu đồ p hoặc là chúng ta sẽ vẽ biểu đồ
+0:02:04 - 0:02:10, box spot à Xin lỗi chúng ta có thể biểu
+0:02:08 - 0:02:12, đồ dạng đường như thế
+0:02:10 - 0:02:15, này hoặc là chúng ta có thể vẽ biểu đồ
+0:02:12 - 0:02:15, dướ dạng
+0:02:20 - 0:02:25, histogram
+0:02:22 - 0:02:25, đó
+0:02:26 - 0:02:31, rồi thì đây là slock
+0:02:33 - 0:02:39, và các cái loại biểu đồ trong thư viện m
+0:02:37 - 0:02:42, list có hỗ trợ
+0:02:39 - 0:02:45, thì vì cái thư viện M là một trong những
+0:02:42 - 0:02:47, cái thư viện mà rất là nổi tiếng và được
+0:02:45 - 0:02:50, sử dụng rất là nhiều trong cộng đồng
+0:02:47 - 0:02:52, khoa học nên gần như tất cả mọi cái loại
+0:02:50 - 0:02:55, biểu đồ nào mà chúng ta có nhu cầu cần
+0:02:52 - 0:03:00, thiết để trình diễn dữ liệu thì các cái
+0:02:55 - 0:03:02, biểu đồ đó đều có trong thư viện m clip
+0:03:00 - 0:03:04, Ví dụ như ở đây là những cái biểu đồ trộ
+0:03:02 - 0:03:07, biểu đồ đường biểu đồ histogram Vân Vân
+0:03:04 - 0:03:10, biểu đồ dạng scatter thì đều có hỗ trợ
+0:03:07 - 0:03:13, trong cái thư viện à m le và cuối cùng
+0:03:10 - 0:03:15, thì chúng ta sẽ cùng tìm hiểu về à các
+0:03:13 - 0:03:19, cái phương thức để giúp cho chúng ta có
+0:03:15 - 0:03:23, thể đọc load và hiển thị một cái ảnh
+0:03:19 - 0:03:26, trên thư viện marp như thế nào thì toàn
+0:03:23 - 0:03:28, bộ những cái thao tác xử lý này đều có ở
+0:03:26 - 0:03:30, bên trong cái file collab ở dưới đây và
+0:03:28 - 0:03:33, chúng ta có thể thực hành
+0:03:30 - 0:03:33, về sau

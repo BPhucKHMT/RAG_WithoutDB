@@ -1,0 +1,301 @@
+0:00:01 - 0:00:07, dưới đây là những cái hình ảnh minh họa
+0:00:03 - 0:00:10, cho các cái dạng thức biểu đồ ở đây các
+0:00:07 - 0:00:10, cái biểu đồ dạng thanh chính là cái
+0:00:11 - 0:00:18, histogram rồi cái biểu đồ đường này đó
+0:00:14 - 0:00:21, là biểu đồ về mậc độ và đây chính là
+0:00:18 - 0:00:21, box
+0:00:22 - 0:00:29, cl rồi về phân tích ví dụ về phân tích
+0:00:27 - 0:00:34, đơn biến thì chúng ta sẽ có các cái biểu
+0:00:29 - 0:00:37, đồ như sau đó là các cái biểu đồ về đếm
+0:00:34 - 0:00:40, số lượng theo cái giá trị của cái room
+0:00:37 - 0:00:41, service đó thì chúng ta sẽ thấy là cái
+0:00:40 - 0:00:43, biểu đồ này với cái biểu đồ này thì
+0:00:41 - 0:00:46, chúng ta sẽ cảm nhận được là dữ liệu của
+0:00:43 - 0:00:48, mình nó có cái tính chất như thế nào Tức
+0:00:46 - 0:00:50, là những cái giá trị từ 0 cho đến 10
+0:00:48 - 0:00:52, Hoặc là những cái giá trị đầu tiên chúng
+0:00:50 - 0:00:54, ta sẽ thấy là giá trị của mình nó tập
+0:00:52 - 0:00:57, trung chủ yếu là trong cái phạm vi này
+0:00:54 - 0:01:00, Nhưng mà từ cái vị trí ngưỡng này trở về
+0:00:57 - 0:01:03, sau Ví dụ như là từ khoảng 1000 trở về
+0:01:00 - 0:01:06, sau thì có xu hướng là giảm rất là đáng
+0:01:03 - 0:01:08, kể thì từ cái biểu đồ histogram này thì
+0:01:06 - 0:01:11, chúng ta thấy là dữ liệu của mình nó có
+0:01:08 - 0:01:14, cái tính Thiên lệch nó có cái tính Thiên
+0:01:11 - 0:01:17, lệch rất là cao tương tự như vậy cho cái
+0:01:14 - 0:01:20, biểu đồ về foodc đúng không Thì chúng ta
+0:01:17 - 0:01:23, thấy là nó bị Thiên lạch rất là lớn rồi
+0:01:20 - 0:01:25, và khi chúng ta chuyển về cái dạng biểu
+0:01:23 - 0:01:27, đồ histogram thông qua một cái phép biến
+0:01:25 - 0:01:29, đổi thì chúng ta thấy là cái tính chất
+0:01:27 - 0:01:30, cái phân bố của dữ liệu của mình nó cũng
+0:01:29 - 0:01:33, đã khác
+0:01:30 - 0:01:36, so với lại cái phiên bản ban đầu thì đây
+0:01:33 - 0:01:36, chính là cái phân tích đơn
+0:01:37 - 0:01:44, biến rồi đối với cái phân tích hai biến
+0:01:41 - 0:01:46, thì chúng ta sẽ xác định xem là có tồn
+0:01:44 - 0:01:48, tại cái mối liên hệ về thống kê cái mối
+0:01:46 - 0:01:51, liên hệ về thống kê giữa hai cái miếng
+0:01:48 - 0:01:53, hay không đó thì chúng ta sẽ có ba cái
+0:01:51 - 0:01:56, loại chính cái loại đầu tiên đó là phân
+0:01:53 - 0:01:58, tích giữa hai cái biến mà đều là cùng ở
+0:01:56 - 0:02:02, dạng số numeric
+0:01:58 - 0:02:05, numeric S với số rồi phân tích cái dạng
+0:02:02 - 0:02:09, là số và cái dữ liệu loại phân loại
+0:02:05 - 0:02:12, numeric và category và cuối cùng đó là
+0:02:09 - 0:02:15, giữa hai cái biến mà có cái kiểu là phân
+0:02:12 - 0:02:18, loại và phân loại category và
+0:02:15 - 0:02:21, category thì đối với cái phân tích dạng
+0:02:18 - 0:02:24, số số thì chúng ta
+0:02:21 - 0:02:26, có hai cái biến này cần và được hai cái
+0:02:24 - 0:02:29, biến được so sánh với nhau thì nó đều là
+0:02:26 - 0:02:32, dữ liệu dạng số ha và chúng ta có một số
+0:02:29 - 0:02:34, cái phương pháp để trực quan đó là chúng
+0:02:32 - 0:02:37, ta có thể sử dụng cái biểu đồ dạng phân
+0:02:34 - 0:02:40, tán scatter plot biểu đồ dạng cặp pair
+0:02:37 - 0:02:42, plot hoặc là biểu đồ về cái ma hoặc là
+0:02:40 - 0:02:46, về cái ma trận tương quan correlation
+0:02:42 - 0:02:48, Matrix và dưới đây là cái các cái ví dụ
+0:02:46 - 0:02:51, biểu độ phân tán thì chúng ta sẽ vẽ nó
+0:02:48 - 0:02:54, dưới dạng là các cái điểm rời rạt trong
+0:02:51 - 0:02:56, đó thì điểm rời rạt này nó sẽ được tạo
+0:02:54 - 0:02:59, bởi một cặp giá trị là trục hoành và
+0:02:56 - 0:03:02, trục tung Còn đối với cái ma trận tương
+0:02:59 - 0:03:04, quan thì chúng ta sẽ thấy là chúng ta sẽ
+0:03:02 - 0:03:07, có một cái ma trận trong đó mỗi một cái
+0:03:04 - 0:03:09, ô ví dụ ô ở đây nó sẽ thể hiện cái mối
+0:03:07 - 0:03:13, mất tương quan giữa room service và cái
+0:03:09 - 0:03:15, shopping m còn các cái giá trị mà trên
+0:03:13 - 0:03:19, cái trục đường chéo này thì nó luôn luôn
+0:03:15 - 0:03:22, là là một tại vì giữa cái Phú C đúng
+0:03:19 - 0:03:23, không Ví dụ ở đây là Phú C với lại Phú c
+0:03:22 - 0:03:25, thì độ tương quan của nó luôn luôn là
+0:03:23 - 0:03:29, bài
+0:03:25 - 0:03:31, 1 và dựa trên cái biểu đồ cái ma trận
+0:03:29 - 0:03:34, tương qu này thì chúng ta sẽ phát hiện
+0:03:31 - 0:03:36, ra là những cái cặp dữ liệu nào có cái
+0:03:34 - 0:03:39, mối tương quan cao những cái cặp dữ liệu
+0:03:36 - 0:03:41, nào có cái mối tương quan thấp thì chúng
+0:03:39 - 0:03:43, ta sẽ đi tiến hành phân tích trên những
+0:03:41 - 0:03:44, cái cặp dữ liệu đó Những cái đặt cặp đặc
+0:03:43 - 0:03:48, trưng
+0:03:44 - 0:03:52, đó và đối với cái dữ liệu dạng số và
+0:03:48 - 0:03:54, phân loại thì một biến sẽ là kiểu số và
+0:03:52 - 0:03:57, biến khác thì nó sẽ là kiểu phân loại
+0:03:54 - 0:04:00, thì ở đây chúng ta có thể sử dụng cái
+0:03:57 - 0:04:03, phương pháp đó là multiple CT tức là
+0:04:00 - 0:04:06, chúng ta sẽ có nhiều À cái biểu đồ mật
+0:04:03 - 0:04:08, độ trong cùng một cái sơ đồ đó ví dụ như
+0:04:06 - 0:04:11, ở
+0:04:08 - 0:04:15, đây chúng ta sẽ có cái
+0:04:11 - 0:04:17, à chúng ta sẽ sử dụng cái hai cái giá
+0:04:15 - 0:04:20, trị là Male và female thì đây là hai cái
+0:04:17 - 0:04:22, giá trị phân
+0:04:20 - 0:04:24, loại và ứng với từng cái giá trị phân
+0:04:22 - 0:04:29, loại này thì chúng ta sẽ vẽ cái biểu đồ
+0:04:24 - 0:04:32, à mật độ tương ứng đó rồi đối với cái
+0:04:29 - 0:04:34, Box spot thì chúng ta sẽ phân ra Ví dụ
+0:04:32 - 0:04:37, như mỗi một cái box
+0:04:34 - 0:04:40, này thì nó tương ứng với lại một cái giá
+0:04:37 - 0:04:43, trị của cái kiểu phân loại và cái chiều
+0:04:40 - 0:04:44, còn lại cái biến còn lại tức là kiểu số
+0:04:43 - 0:04:49, thì chúng ta sẽ
+0:04:44 - 0:04:52, Ờ vẽ nó dưới dạng là hình là cái box là
+0:04:49 - 0:04:55, cái hộp như vậy mỗi một cái box là tương
+0:04:52 - 0:04:59, ứng với một cái giá trị của kiểu phân
+0:04:55 - 0:05:02, loại và cái giải các cái giá trị min max
+0:04:59 - 0:05:06, rồi Q1 q3 và medi ở đây thì nó được tổng
+0:05:02 - 0:05:10, hợp Nó được thống kê từ cái cột dữ liệu
+0:05:06 - 0:05:12, cái đặc trưng mà dạng dạng số thì đó
+0:05:10 - 0:05:15, chính là cái cách để mà phân tích dưới
+0:05:12 - 0:05:19, dạng là biểu đồ dạng số là dạng số và
+0:05:15 - 0:05:21, phân loại tiếp theo đó là cái dữ liệu
+0:05:19 - 0:05:24, dạng phân loại với phân loại thì cả hai
+0:05:21 - 0:05:27, biến đều Đó là kiểu dư liệ phân loại thì
+0:05:24 - 0:05:29, chúng ta sẽ có một số cái phương pháp
+0:05:27 - 0:05:31, trực Quang để có thể sử dụng được trong
+0:05:29 - 0:05:34, cái trườ hợp này đó là chúng ta có thể
+0:05:31 - 0:05:36, sử dụng biểu đồ dạng xếp trồng st ba trạ
+0:05:34 - 0:05:39, hoặc là chúng ta có thể sử dụng biểu đồ
+0:05:36 - 0:05:43, theo cụng là cluster ba
+0:05:39 - 0:05:47, ch thì ở đây là cái biểu đồ theo dạng là
+0:05:43 - 0:05:48, nhóm theo cụng Ví dụ như với cái trục
+0:05:47 - 0:05:51, hoành đúng không thì chúng ta sẽ thấy là
+0:05:48 - 0:05:55, có các cái giá
+0:05:51 - 0:05:56, trị đó là các cái giá trị của một cái
+0:05:55 - 0:05:59, đặc trưng dữ liệu của mình Ví dụ ở đây
+0:05:56 - 0:06:02, là age là tuổi đó thì chúng ta có cái
+0:05:59 - 0:06:03, khoảng độ tuổi khác nhau và tương ứng
+0:06:02 - 0:06:05, với một cái khoảng độ tuổi thì chúng ta
+0:06:03 - 0:06:08, sẽ có
+0:06:05 - 0:06:10, ờ một cái trường thuộc tính khác cái
+0:06:08 - 0:06:13, trường thuộc tính khác và nó nhận hai
+0:06:10 - 0:06:15, cái giá trị hai giá trị là true và phone
+0:06:13 - 0:06:18, thì đây là hai cái giá trị dạng phân
+0:06:15 - 0:06:22, loại luôn đó thì tuổi nó đã được phân
+0:06:18 - 0:06:25, loại thành các cái khoảng tuổi và cái
+0:06:22 - 0:06:27, thuộc tính thứ hai đó là transported thì
+0:06:25 - 0:06:29, nó cũng là cái giá trị phân loại như vậy
+0:06:27 - 0:06:30, thì ở đây có bao nhiêu cái giá trị phân
+0:06:29 - 0:06:33, loại này thì chúng ta sẽ có bấy nhiêu
+0:06:30 - 0:06:35, cột song hành song song với nhau Ví dụ ở
+0:06:33 - 0:06:37, đây sẽ là có hai giá trị là Phone và
+0:06:35 - 0:06:40, true thì ở đây chúng ta sẽ có là hai cái
+0:06:37 - 0:06:43, cột thì đây là cái
+0:06:40 - 0:06:47, kiểu biểu đồ cột theo
+0:06:43 - 0:06:49, cụm hoặc là chúng ta có thể sử dụng biểu
+0:06:47 - 0:06:51, đồ cột xếp trồng tức là theo cái trục
+0:06:49 - 0:06:53, ngang này thì chúng ta cũng sẽ là các
+0:06:51 - 0:06:57, cái giá trị của một cái biến
+0:06:53 - 0:07:00, số và nếu như cái biến số còn lại của
+0:06:57 - 0:07:02, mình nó có nh nhều giá trị nó không phải
+0:07:00 - 0:07:04, là hai giá trị mà nó có nhiều giá trị
+0:07:02 - 0:07:07, này thì chúng ta cũng có thể là mỗi một
+0:07:04 - 0:07:10, cái chồng như thế này đó sẽ tương ứng
+0:07:07 - 0:07:14, cho một cái giá trị của một cái biến
+0:07:10 - 0:07:16, biến số thì chúng ta có thể sử dụng hai
+0:07:14 - 0:07:19, cái loại này một đó là chúng ta xếp
+0:07:16 - 0:07:23, ngang song song với nhau cho từng cái
+0:07:19 - 0:07:23, giá trị hai đó là chúng ta sẽ trồng lên
+0:07:26 - 0:07:33, nhau và phân tích đa biến thì Nếu như à
+0:07:30 - 0:07:36, chúng ta phân tích mà có nhiều hơn hai
+0:07:33 - 0:07:38, biến nhiều hơn hai biến cùng một lúc đó
+0:07:36 - 0:07:40, thì để Trực Quan Hóa thì chúng ta cần
+0:07:38 - 0:07:42, phải sử dụng dòng nhuyễn các cái loại
+0:07:40 - 0:07:44, biểu đồ tương quan à chúng ta sẽ sử dụng
+0:07:42 - 0:07:48, các cái loại biểu đồ tương ứng với cái
+0:07:44 - 0:07:49, tổ hợp biến đó Tức là nó sẽ tùy vô các
+0:07:48 - 0:07:50, cái biến của mình Ví dụ như ở đây Chúng
+0:07:49 - 0:07:54, ta có ba biến
+0:07:50 - 0:07:56, đi và số tổ hợp của cái ba biến này nó
+0:07:54 - 0:08:01, cũng rất là đa dạng nó có thể vừa là ở
+0:07:56 - 0:08:02, dạng số số và số nó cũng có thể là số
+0:08:01 - 0:08:07, rồi phân
+0:08:02 - 0:08:09, loại và phân loại rồi Nó có thể là ở
+0:08:07 - 0:08:11, dạng là tất cả ba đều cùng là phân loại
+0:08:09 - 0:08:13, thì khi đó chúng ta sẽ phải sử dụng một
+0:08:11 - 0:08:16, cách nhồn nhuyễn các cái loại biểu đồ
+0:08:13 - 0:08:18, tương ứng với lại các cái Ờ cái tính
+0:08:16 - 0:08:20, chất của các cái biến này ví dụ như
+0:08:18 - 0:08:23, trong cái sơ đồ này chúng ta thấy đó là
+0:08:20 - 0:08:26, trục hoành đúng không Thì là các cái giá
+0:08:23 - 0:08:28, trị dạng số và trục tung là các cái giá
+0:08:26 - 0:08:30, trị dạng số luôn và từng cái màu ở đây
+0:08:28 - 0:08:34, thì chúng ta sẽ thấy là nó có hai màu
+0:08:30 - 0:08:36, tương ứng cho cái đặc trưng thứ ba đó là
+0:08:34 - 0:08:40, giới tính thì mỗi màu này nó sẽ là một
+0:08:36 - 0:08:42, số à Mỗi màu này tương ứng là một cái
+0:08:40 - 0:08:44, giá trị trong cái cột à trong cái đặc
+0:08:42 - 0:08:46, trưng dạng phân
+0:08:44 - 0:08:49, loại đó tương tự như vậy thì chúng ta có
+0:08:46 - 0:08:52, thể sử dụng cái biểu đồ dạng box spot
+0:08:49 - 0:08:56, thì trục hoành đó là biểu biểu trượ biểu
+0:08:52 - 0:08:58, tượng cho cái à giá trị đó là cái đặc
+0:08:56 - 0:09:01, trưng đó là giới tính và nó nhận hai cái
+0:08:58 - 0:09:03, giá trị đó là mail và female trục tung
+0:09:01 - 0:09:05, đó là giá trị dạng số
+0:09:03 - 0:09:11, Ờ
+0:09:05 - 0:09:14, numeric rồi Trong đó thì với một
+0:09:11 - 0:09:17, cái giá trị của cái biến
+0:09:14 - 0:09:21, Ờ giới tính thì chúng ta lại có hai cái
+0:09:17 - 0:09:24, box plot tương ứng cho cái feature thứ
+0:09:21 - 0:09:28, ba đúng không thì đây là cái feature số
+0:09:24 - 0:09:29, 1 nè Đây là cái feature số 2 nè Và khi
+0:09:28 - 0:09:31, chúng ta chia ra làm hai loại như thế
+0:09:29 - 0:09:33, này và mỗi loại là một màu thì nó tương
+0:09:31 - 0:09:36, ứng là chúng ta đang phân tích cho cái
+0:09:33 - 0:09:41, feature số
+0:09:36 - 0:09:43, 3 và để phát hiện cái dữ liệu bị thiếu
+0:09:41 - 0:09:46, thì chúng ta có thể sử dụng các cái hàm
+0:09:43 - 0:09:49, là isn của dataframe Như vậy thì trong
+0:09:46 - 0:09:52, cái slide Từ đây trở về sau thì chúng ta
+0:09:49 - 0:09:54, sẽ liên quan đến cái công việc đó là
+0:09:52 - 0:09:57, phát hiện ra những cái vấn đề trong cái
+0:09:54 - 0:09:58, dữ liệu của mình thì cái vấn đề đầu tiên
+0:09:57 - 0:10:00, đó chính là vấn đề dữ liệu bị thiếu
+0:09:58 - 0:10:02, chúng ta nhìn vô cái bản dữ liệu đây
+0:10:00 - 0:10:06, chúng ta sẽ thấy có một số cái vị trí là
+0:10:02 - 0:10:08, dữ liệu của mình nó bị n đó thì đây
+0:10:06 - 0:10:11, chính là một số cái tình huống dữ liệu
+0:10:08 - 0:10:13, bị thiếu và chúng ta có thể loại bỏ các
+0:10:11 - 0:10:15, cái giá trị bị thiếu này thông qua cái
+0:10:13 - 0:10:19, hàm là root
+0:10:15 - 0:10:21, n rồi phát hiện chữ liệu bị
+0:10:19 - 0:10:24, nhiễu thì chúng ta sẽ dựa trên các cái
+0:10:21 - 0:10:27, phương pháp đó là thống kê Ví dụ nếu như
+0:10:24 - 0:10:30, cái dữ liệu của mình mà nó tuân theo cái
+0:10:27 - 0:10:32, phân bố gion hoặc là tương tự như g thì
+0:10:30 - 0:10:36, chúng ta có thể sử dụng các cái giá trị
+0:10:32 - 0:10:38, đó là giá trị trung bình và với cái giá
+0:10:36 - 0:10:42, trị ở đây chúng ta sẽ có các cái khoảng
+0:10:38 - 0:10:46, giá trị nếu như mu mà trừ 2 Sigma đúng
+0:10:42 - 0:10:49, không Chúng ta có giá trị ở đây đó thì
+0:10:46 - 0:10:52, nếu như cái giá trị nào mà nhỏ hơn 2
+0:10:49 - 0:10:55, Sigma Tức là nó chỉ chiếm khoảng là 2,1
+0:10:52 - 0:10:56, ph Thôi thì những cái giá trị nào mà rớt
+0:10:55 - 0:10:59, vàoo trong cái khoảng này thì chúng ta
+0:10:56 - 0:11:03, xem nó là out layer
+0:10:59 - 0:11:04, tương tự như vậy cho Pi cộng 2 Sigma thì
+0:11:03 - 0:11:06, nếu như giá trị của mình mà rớt trong
+0:11:04 - 0:11:10, khoảng này thì chúng ta sẽ xem nó là
+0:11:06 - 0:11:12, outl còn đối với những cái dữ liệu mà
+0:11:10 - 0:11:15, không có tuân theo phân bố chuẩn không
+0:11:12 - 0:11:18, theo không có tuân theo phân bố g thì
+0:11:15 - 0:11:21, chúng ta sẽ dùng cái phương pháp là iqa
+0:11:18 - 0:11:24, là inter Wat
+0:11:21 - 0:11:29, Range bằng cách đó là chúng ta sẽ xác
+0:11:24 - 0:11:31, định các cái giá trị Q1 và q3 rồi sau đó
+0:11:29 - 0:11:34, lới q3 - Q1 thì chúng ta sẽ có cái
+0:11:31 - 0:11:38, khoảng giá trị là
+0:11:34 - 0:11:43, i QR đó iqr và với cái khoảng giá trị
+0:11:38 - 0:11:46, này chúng ta lấy Q1 trừ cho 1,5 iqa thì
+0:11:43 - 0:11:48, chúng ta ra được cái giá trị này lấy q3
+0:11:46 - 0:11:50, cộng cho 1,5 iqa thì chúng ta sẽ ra được
+0:11:48 - 0:11:53, cái giá trị này và tất cả những cái giá
+0:11:50 - 0:11:56, trị nào mà nằm ngoài cái giá trị minimum
+0:11:53 - 0:11:58, và maximum trong nháy kép nà Tức là ở
+0:11:56 - 0:12:00, đây cái giá trị này nó không thực sự là
+0:11:58 - 0:12:01, cái giá trị nhỏ nhất và giá trị này nó
+0:12:00 - 0:12:04, không thực sự là giá trị lớn nhất nên
+0:12:01 - 0:12:06, mình mới để giống giấy ké đó thì nếu như
+0:12:04 - 0:12:09, cái giá trị nào mà vượt quá cái giá trị
+0:12:06 - 0:12:10, này thì nó được gọi là aler và giá trị
+0:12:09 - 0:12:13, nào mà vượt qua cái giá trị ở đây thì nó
+0:12:10 - 0:12:17, là out ler thì đây là cái phương pháp
+0:12:13 - 0:12:19, các cái phương pháp để mà phân tích và
+0:12:17 - 0:12:21, xác định dữ liệu là nhiễu giữa trên
+0:12:19 - 0:12:24, thống
+0:12:21 - 0:12:27, kê
+0:12:24 - 0:12:29, và trong cái phần tiền xử lý dữ liệu thì
+0:12:27 - 0:12:32, chúng ta sẽ à
+0:12:29 - 0:12:35, xem thêm chúng ta sẽ sử dụng các cái
+0:12:32 - 0:12:36, phân tích Thống kê này để đưa vào cái
+0:12:35 - 0:12:38, quá trình tiền xử lý dữ liệu trong tiền
+0:12:36 - 0:12:40, xử lý lý dữ liệu chúng ta sẽ nhắc lại
+0:12:38 - 0:12:42, cái vấn đề này một lần nữa và chúng ta
+0:12:40 - 0:12:45, sẽ có các cái giải pháp để xử lý các cái
+0:12:42 - 0:12:48, giá trị out layer này như thế
+0:12:45 - 0:12:51, nào như vậy thì trong bài Ngày hôm nay
+0:12:48 - 0:12:54, chúng ta đã cùng tìm hiểu về machine
+0:12:51 - 0:12:54, learning
+0:12:54 - 0:12:59, pipeline machine learning pipeline là
+0:12:56 - 0:13:02, một trong những cái nội dung rất là quan
+0:12:59 - 0:13:04, trọng Tại vì nó định hình cho chúng ta
+0:13:02 - 0:13:07, biết là cái quy trình Chúng ta cần phải
+0:13:04 - 0:13:11, xây dựng à Một cái mô hình máy học là
+0:13:07 - 0:13:14, như thế nào rồi và đồng thời là vai trò
+0:13:11 - 0:13:16, của từng cái bước trong cái mô hình máy
+0:13:14 - 0:13:20, học trong cái quy trình xây dựng máy học
+0:13:16 - 0:13:24, đó ra sao và chúng ta sẽ tiến hành
+0:13:20 - 0:13:26, Ờ phân tích và tìm hiểu các cái phương
+0:13:24 - 0:13:29, pháp cho cái bước đầu tiên đó là phân
+0:13:26 - 0:13:31, tích dữ liệu
+0:13:29 - 0:13:33, các cái phương pháp để mà phân tích dữ
+0:13:31 - 0:13:36, liệu đó là gì
+0:13:33 - 0:13:38, rồi các cái vấn đề chúng ta sẽ phát hiện
+0:13:36 - 0:13:41, các cái vấn đề trong cái dữ liệu của
+0:13:38 - 0:13:43, mình ra sao để làm tiền đề cho cái bước
+0:13:41 - 0:13:46, là data reprocessing tiền đề cho cái
+0:13:43 - 0:13:50, bước là tiền xử lý dữ liệu về sau thì đó
+0:13:46 - 0:13:55, là các cái phương pháp được gọi là ed là
+0:13:50 - 0:13:55, exploratory data analysis

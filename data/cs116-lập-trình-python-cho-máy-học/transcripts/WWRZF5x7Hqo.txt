@@ -1,0 +1,285 @@
+0:00:00 - 0:00:06, Cuối cùng thì chúng ta sẽ tiến hành giám
+0:00:03 - 0:00:08, sát mô hình sau khi đã triển khai
+0:00:06 - 0:00:12, thì sau khi mô hình đã triển khai Thì
+0:00:08 - 0:00:16, liệu rằng cái độ chính xác của mô hình
+0:00:12 - 0:00:17, có có còn được đảm bảo nữa hay không
+0:00:16 - 0:00:21, biết rằng là cái mô hình của mình khi
+0:00:17 - 0:00:23, chúng ta đánh giá trên cái tập dữ liệu
+0:00:21 - 0:00:25, validation á thì cái kết quả nó rất là
+0:00:23 - 0:00:28, tốt nhưng mà trong cái quá trình triển
+0:00:25 - 0:00:31, khai thì liệu có những cái rủi ro gì
+0:00:28 - 0:00:34, khiến cho cái mô hình của mình bị giảm
+0:00:31 - 0:00:37, cái độ chính xác một cách đột ngột hoặc
+0:00:34 - 0:00:39, là không còn chính xác một cách gọi là
+0:00:37 - 0:00:42, xuất sắc như ban đầu hay không thì một
+0:00:39 - 0:00:44, số cái khả năng nó có khả năng xảy ra
+0:00:42 - 0:00:48, đầu tiên đó là do cái phân bố của cái dữ
+0:00:44 - 0:00:51, liệu trong cái quá trình mà triển khai á
+0:00:48 - 0:00:55, thì nó đã bị thay đổi Tức là cái này nó
+0:00:51 - 0:01:00, đơn thuần là liên quan đến cái dữ liệu
+0:00:55 - 0:01:02, khi mà mình dự đoán trong thực tế và
+0:01:00 - 0:01:06, yếu tố thứ hai đó là do cái mô hình tức
+0:01:02 - 0:01:09, là dữ liệu thì vẫn ổn nhưng mà cái mô
+0:01:06 - 0:01:12, hình của mình á thì nó bị thay đổi trong
+0:01:09 - 0:01:14, cái quá trình mà vận hành đó thì ở đây
+0:01:12 - 0:01:15, chính là hai cái lý do chính cái lý do
+0:01:14 - 0:01:18, liên quan đến cái dữ liệu mình đưa vào
+0:01:15 - 0:01:19, mô hình và cái lý do liên quan đến bản
+0:01:18 - 0:01:23, thân cái mô hình của mình nó cũng bị
+0:01:19 - 0:01:25, biến động có một số cái việc có một số
+0:01:23 - 0:01:27, cái cái cách triển khai Đó là mô hình
+0:01:25 - 0:01:28, của mình nó sẽ cập nhật theo thời gian
+0:01:27 - 0:01:30, cứ sau một khoảng thời gian thì nó sẽ
+0:01:28 - 0:01:33, update thì cái m mô hình của mình nó
+0:01:30 - 0:01:38, cũng sẽ bị biến đổi theo thì đây Có thể
+0:01:33 - 0:01:41, là một số cái khả năng và ờ dưới đây là
+0:01:38 - 0:01:43, một cái số cái loại thay đổi của cái dữ
+0:01:41 - 0:01:45, liệu ha đầu tiên mình sẽ bàn về cái yếu
+0:01:43 - 0:01:49, tố về dữ liệu đây là cái trục thời gian
+0:01:45 - 0:01:51, Đây là cái trục thời gian từ quá khứ cho
+0:01:49 - 0:01:55, đến hiện tại và đến tương lai và đây là
+0:01:51 - 0:01:58, cái giá trị cái trục giá trị của mình
+0:01:55 - 0:02:02, Thế thì cái giá trị này nó có thể là cái
+0:01:58 - 0:02:05, sở thích của người dùng Nó có thể là cái
+0:02:02 - 0:02:08, kết quả kinh doanh vân vân Thế thì mình
+0:02:05 - 0:02:11, sẽ kỳ vọng rằng là theo cái chuỗi thời
+0:02:08 - 0:02:13, gian thì cái trục giá trị của mình nó sẽ
+0:02:11 - 0:02:15, không có biến động nó sẽ đi đứng yên như
+0:02:13 - 0:02:18, thế này thì đây là trường hợp hoàn hảo
+0:02:15 - 0:02:20, nhất Tuy nhiên thực tế thì dữ liệu của
+0:02:18 - 0:02:22, mình nó sẽ bị biến động theo thời gian
+0:02:20 - 0:02:25, và dưới đây là một số
+0:02:22 - 0:02:28, cái dạng thay đổi của những đền theo
+0:02:25 - 0:02:31, thời gian Ví dụ như chúng ta thấy ở đây
+0:02:28 - 0:02:34, Từ Quá Khứ cho đến hiện tại đúng không
+0:02:31 - 0:02:37, Thì nó đi ngang như thế này sau đó nó đã
+0:02:34 - 0:02:40, đột ngột nó đã đột ngột hay là tức thì
+0:02:37 - 0:02:43, dịch chuyển lên một cái mức độ khác nó
+0:02:40 - 0:02:45, lên một cái giải giá trị khác thì cái
+0:02:43 - 0:02:48, này nó gọi là dữ liệu bị dịch chuyển
+0:02:45 - 0:02:50, tích thì hay còn gọi
+0:02:48 - 0:02:54, là
+0:02:50 - 0:02:56, instantaneous bri Thì cái này nó có khả
+0:02:54 - 0:03:00, năng đó là
+0:02:56 - 0:03:03, do cái môi trường của mình nó bị
+0:03:00 - 0:03:06, áp dụng nó khác ví dụ như cái dữ liệu
+0:03:03 - 0:03:10, của mình trước đây thì mình áp dụng cho
+0:03:06 - 0:03:13, dữ liệu của một cái lĩnh vực là lĩnh vực
+0:03:10 - 0:03:15, về kinh tế nhưng mà sau đó thì chúng ta
+0:03:13 - 0:03:17, lại đi áp dụng nó trong một cái lĩnh vực
+0:03:15 - 0:03:18, khác hoàn toàn Ví dụ như trong lĩnh vực
+0:03:17 - 0:03:22, về
+0:03:18 - 0:03:25, ờ quảng cáo về Marketing thì đó là hai
+0:03:22 - 0:03:28, cái domain khác hoàn toàn dẫn đến là đây
+0:03:25 - 0:03:31, là cái tình huống mà chúng ta train n là
+0:03:28 - 0:03:31, một cái domain
+0:03:32 - 0:03:40, Còn đây là trong cái tình huống thực tế
+0:03:36 - 0:03:40, nè thì nó lại là một domain
+0:03:41 - 0:03:49, khác đó thì nó sẽ có cái sự ph bị bị
+0:03:46 - 0:03:52, chênh lệch về môi trường áp dụng và một
+0:03:49 - 0:03:54, cái lý do nữa đó là do có cái sự biến
+0:03:52 - 0:03:56, động đột ngột của dữ liệu thì ở đây
+0:03:54 - 0:04:00, chúng ta có thể thấy lấy một cái ví dụ
+0:03:56 - 0:04:02, mà kinh điển nhất đó chính là đại dịch
+0:04:00 - 0:04:05, covid chúng ta thấy là khi mà đại dịch
+0:04:02 - 0:04:08, covid diễn ra thì cái hành vi của con
+0:04:05 - 0:04:11, người là thay đổi đột ngột rất là đột
+0:04:08 - 0:04:12, ngột do là cái chính sách gọi là cách ly
+0:04:11 - 0:04:15, xã hội đúng không Thì cái hành vi của
+0:04:12 - 0:04:18, chúng ta cũng bị biến đổi một cách đột
+0:04:15 - 0:04:21, ngột nếu như trước đây trước cái đại
+0:04:18 - 0:04:25, dịch á cái cách mà chúng ta sử dụng tiền
+0:04:21 - 0:04:29, cách mà chúng ta tiêu dùng và mua bán là
+0:04:25 - 0:04:32, chúng ta sẽ gọi là khác hoàn toàn so với
+0:04:29 - 0:04:34, lại kh khi đại dịch Nó diễn ra Ví dụ khi
+0:04:32 - 0:04:37, chúng ta mua bán trao đổi các cái giao
+0:04:34 - 0:04:39, dịch thì trước đại dịch chúng ta thường
+0:04:37 - 0:04:41, mua bán trực tiếp Nhưng mà kể từ khi đại
+0:04:39 - 0:04:46, dịch Nó diễn ra các cái chính phủ họ
+0:04:41 - 0:04:48, tiến hành gọi là cách ly xã hội á thì
+0:04:46 - 0:04:51, giao dịch đã chuyển hoàn toàn sang cái
+0:04:48 - 0:04:55, môi trường ảo đó tức là chúng ta sẽ mua
+0:04:51 - 0:04:58, bán thanh toán qua các cái tài khoản Ờ
+0:04:55 - 0:05:00, tài khoản ảo ở trên internet thay vì
+0:04:58 - 0:05:02, chúng ta sẽ cầm tiền tr tiếp thì đó
+0:05:00 - 0:05:04, chính là một cái ví dụ cho cái việc là
+0:05:02 - 0:05:07, hành vi của người dùng thay đổi một cách
+0:05:04 - 0:05:09, đột ngột và khi cái hành vi của người
+0:05:07 - 0:05:12, dùng thay đổi đột ngộ như vậy thì nó sẽ
+0:05:09 - 0:05:15, dẫn đến là cái dữ liệu của mình nó không
+0:05:12 - 0:05:17, còn phù hợp với lại cái mô hình của mình
+0:05:15 - 0:05:19, nữa đúng không Thì khi đó chúng ta buộc
+0:05:17 - 0:05:23, sẽ phải thay đổi cái mô hình của mình
+0:05:19 - 0:05:26, sao cho nó thích thích ứng với lại cái
+0:05:23 - 0:05:28, dữ liệu mới của mình đó thì đây là một
+0:05:26 - 0:05:30, cái tình huống mà đầu tiên đó là dữ liệu
+0:05:28 - 0:05:32, của mình thay đổi một cách tích thì thay
+0:05:30 - 0:05:35, đổi một cách đột
+0:05:32 - 0:05:38, ngột tình huống thứ hai đó là dữ liệu
+0:05:35 - 0:05:43, của mình nó dịch chuyển một cách gọi là
+0:05:38 - 0:05:44, dần dần trái với lại cái lần D trái với
+0:05:43 - 0:05:46, cái trường hợp đầu tiên đó là dữ liệu
+0:05:44 - 0:05:50, của mình nó di chuyển một cách gọi là
+0:05:46 - 0:05:52, đột ngột và tức thì thì ở trong cái dạng
+0:05:50 - 0:05:55, thứ hai dữ liệu của mình Chúng ta thấy
+0:05:52 - 0:05:58, nè Nó di chuyển lên từ từ từ từ từ từ đó
+0:05:55 - 0:06:01, chứ nó không có cái sự đột ngột như vậy
+0:05:58 - 0:06:04, thì Cái này à Có thể một số cái nguyên
+0:06:01 - 0:06:07, nhân dẫn đến cái việc mà dữ liệu của
+0:06:04 - 0:06:10, mình nó gây ra như vậy đầu tiên đó là
+0:06:07 - 0:06:13, theo dòng thời gian theo dòng thời gian
+0:06:10 - 0:06:15, thì cái sở thích của con người đúng
+0:06:13 - 0:06:17, không cái nhu cầu cái sự quan tâm của
+0:06:15 - 0:06:21, con người Nó cũng thay đổi giật Ví dụ
+0:06:17 - 0:06:23, như khi còn trẻ chúng ta sẽ có những cái
+0:06:21 - 0:06:25, sở thích khác mà khi lớn tuổi thì chúng
+0:06:23 - 0:06:27, ta lại có cái sở thích tiêu dùng khác ví
+0:06:25 - 0:06:30, dụ như khi còn trẻ chúng ta thích sử
+0:06:27 - 0:06:32, dụng những cái sản phẩm là công nghệ
+0:06:30 - 0:06:35, Hoặc là những cái sản phẩm mang cái tính
+0:06:32 - 0:06:38, chất là sáng tạo đột phá nhưng mà khi
+0:06:35 - 0:06:42, chúng ta dần dần chuyển sang cái độ tuổi
+0:06:38 - 0:06:45, trưởng thành và lớn tuổi hơn thì cái cái
+0:06:42 - 0:06:47, gu sử dụng sản phẩm của chúng ta Nó tiến
+0:06:45 - 0:06:52, đến là sử dụng những sản phẩm chất lượng
+0:06:47 - 0:06:55, hơn rồi tốt cho sức khỏe hơn đó và thuận
+0:06:52 - 0:06:57, tiện hơn thì đó chính là cái sự thay đổi
+0:06:55 - 0:07:00, sở thích của con người theo cái dòng
+0:06:57 - 0:07:03, thời gian thì đó là một cái sự dịch
+0:07:00 - 0:07:06, chuyển
+0:07:03 - 0:07:09, rồi các cái khái niệm của mình nó cũng
+0:07:06 - 0:07:12, sẽ thay đổi dần theo thời gian Ví dụ như
+0:07:09 - 0:07:16, cách đây 20 năm cách đây 20 năm thì khi
+0:07:12 - 0:07:19, chúng ta nói về mạng xã hội khi chúng ta
+0:07:16 - 0:07:22, nói về internet thì chúng ta sẽ nghĩ đến
+0:07:19 - 0:07:25, các cái trang web Hoặc là các cái trang
+0:07:22 - 0:07:26, blog với dạng
+0:07:25 - 0:07:31, là
+0:07:26 - 0:07:33, chữ là hình ảnh
+0:07:31 - 0:07:35, rất là phổ biến khi mà trong cái giai
+0:07:33 - 0:07:38, đoạn đầu của internet nhưng mà trong
+0:07:35 - 0:07:41, thời gian là 5 năm trở lại đây chúng ta
+0:07:38 - 0:07:43, thấy là với các cái concept mới xuất
+0:07:41 - 0:07:45, hiện ví dụ như chúng ta sẽ không có cái
+0:07:43 - 0:07:46, khái niệm là Block mà nó sẽ có khái niệm
+0:07:45 - 0:07:50, là
+0:07:46 - 0:07:51, vblock tức là video blog rồi chúng ta sẽ
+0:07:50 - 0:07:55, không có sử dụng những cái mạng truyền
+0:07:51 - 0:07:57, thống đơn thuần ví dụ như là Facebook
+0:07:55 - 0:07:59, hoặc là Twitter mà chúng ta sẽ có những
+0:07:57 - 0:08:02, cái dạng blog chúng ta có những cái mạng
+0:07:59 - 0:08:04, xã hội mà video với cái thời gian ngán
+0:08:02 - 0:08:08, ví dụ như là
+0:08:04 - 0:08:11, tiktok dạ và trước đây thì chúng ta mua
+0:08:08 - 0:08:13, bán hàng chúng ta sẽ bán hàng giao dịch
+0:08:11 - 0:08:15, trực tiếp hoặc là thông qua các cái
+0:08:13 - 0:08:18, trang thương mại điện tử truyền thống
+0:08:15 - 0:08:20, thì bây giờ với cái sự phát triển của
+0:08:18 - 0:08:22, tiktok đúng không thì chúng ta có thể
+0:08:20 - 0:08:25, bán hàng ngay trên chính cái trang mạng
+0:08:22 - 0:08:28, xã hội này đó gọi là tiktok
+0:08:25 - 0:08:31, shop thì đây là những cái khái niệm mới
+0:08:28 - 0:08:34, xuất hiện trong thời gian là 5 năm trở
+0:08:31 - 0:08:36, lại đây và chúng ta cũng sẽ không biết
+0:08:34 - 0:08:39, được là trong 5 năm tiếp theo với cái sự
+0:08:36 - 0:08:42, phát triển của tiến bộ của khoa học công
+0:08:39 - 0:08:44, nghệ của trí tuệ nhân tạo hoặc là với
+0:08:42 - 0:08:46, cái sự phát triển của xã hội loài người
+0:08:44 - 0:08:49, thì chúng ta sẽ không biết là nó sẽ có
+0:08:46 - 0:08:51, những cái khái niệm mới gì đó thì mỗi
+0:08:49 - 0:08:55, một cái chu kỳ phát triển của con người
+0:08:51 - 0:08:57, Nó sẽ để ra thêm một cái khái niệm mới
+0:08:55 - 0:08:58, thì chính những cái sự thay đổi về khái
+0:08:57 - 0:09:00, niệm theo thời gian chính cái sự thay
+0:08:58 - 0:09:03, đổi về sở thích của người dùng theo thời
+0:09:00 - 0:09:04, gian nó sẽ tạo ra cái sự dịch chuyển Và
+0:09:03 - 0:09:08, cái sự dịch chuyển này nó sẽ không đột
+0:09:04 - 0:09:12, bột nó sẽ đi từ từ thì nó gọi là radial
+0:09:08 - 0:09:14, th và một cái loại nữa đó là cái sự dịch
+0:09:12 - 0:09:17, chuyển theo chu kỳ thì cái chu kì này nó
+0:09:14 - 0:09:21, có thể là chu kỳ theo
+0:09:17 - 0:09:25, mùa ví dụ như là mùa hạ mùa xuân hạ thu
+0:09:21 - 0:09:26, đông Nó có thể là theo thời gian chu kỳ
+0:09:25 - 0:09:29, 10
+0:09:26 - 0:09:34, năm ví dụ như chu kỳ của của khủng hoảng
+0:09:29 - 0:09:34, chẳng hạn khủng hoảng kinh
+0:09:37 - 0:09:43, tế hoặc là chu kỳ theo múi
+0:09:40 - 0:09:46, [âm nhạc]
+0:09:43 - 0:09:49, giờ thì đây là những cái yếu tố về mặt
+0:09:46 - 0:09:51, chu kỳ thời gian thì sở thích của con
+0:09:49 - 0:09:55, người cũng thay đổi theo cái chu kỳ thời
+0:09:51 - 0:09:57, gian à theo chu kỳ ví dụ khi mùa đông
+0:09:55 - 0:10:00, đúng không thì chúng ta sẽ có cái xu
+0:09:57 - 0:10:04, hướng là chọn những cái sản phẩm
+0:10:00 - 0:10:05, gọi là để giữ ấm Nhưng mà khi mùa hè thì
+0:10:04 - 0:10:08, chúng ta sẽ chọn những cái sản phẩm mát
+0:10:05 - 0:10:09, rồi những cái giả sản phẩm mang tính
+0:10:08 - 0:10:11, chất gọi là giải nhiệt Thì đó chính là
+0:10:09 - 0:10:13, những cái sở thích của con người Nó thay
+0:10:11 - 0:10:17, đổi theo theo mùa do đó thì cái mô hình
+0:10:13 - 0:10:19, của mình nó không thể đúng được khi áp
+0:10:17 - 0:10:21, dụng cho những cái mùa khác nhau ví dụ
+0:10:19 - 0:10:24, mô hình của chúng ta được huấn luyện
+0:10:21 - 0:10:27, trên cái dữ liệu về mùa đông thì khi
+0:10:24 - 0:10:29, chúng ta chuyển sang cái mùa mùa hạ thì
+0:10:27 - 0:10:31, cái mô hình của mình nó sẽ không còn
+0:10:29 - 0:10:33, đúng nữa Do đó khi chúng ta xây dựng cái
+0:10:31 - 0:10:35, mô hình của mình khi chúng ta lấy mẫu
+0:10:33 - 0:10:38, ngĩ liệu chúng ta cũng cần phải chú ý
+0:10:35 - 0:10:40, đến cái yếu tố về cái tính chu kì này để
+0:10:38 - 0:10:43, làm sao cho cái dữ liệu của mình nó đảm
+0:10:40 - 0:10:47, bảo được cái yếu tố về sự thay đổi theo
+0:10:43 - 0:10:50, thời gian có tính chu
+0:10:47 - 0:10:53, kỳ và một cái loại biến động nữa đó
+0:10:50 - 0:10:55, chính là sự dịch chuyển tạm thời sự dịch
+0:10:53 - 0:10:59, chuyển tạm thời này nó sẽ hơi khác so
+0:10:55 - 0:11:02, với lại cái sự dịch chuyển đột ngột đó
+0:10:59 - 0:11:04, chính là khi ở đây chúng ta đi ngang
+0:11:02 - 0:11:09, đúng không sau đó đột ngột dịch chuyển
+0:11:04 - 0:11:12, lên thay đổi cái cách sử dụng dữ liệu
+0:11:09 - 0:11:15, sau đó chúng ta lại trở lại về cái dạng
+0:11:12 - 0:11:18, ban đầu thì đây là cái sự dịch chuyển
+0:11:15 - 0:11:21, trong ngắn hạn đó Sự dịch chuyển trong
+0:11:18 - 0:11:23, ngắn hạn và cái sự dịch chuyển này thì
+0:11:21 - 0:11:25, thường là do một số nguyên nhân sau Ví
+0:11:23 - 0:11:29, dụ như do người dùng độc hại tấn công
+0:11:25 - 0:11:30, tức là sẽ có những cái ví dụ như mình có
+0:11:29 - 0:11:33, những cái đợt Tống con mạng trong một
+0:11:30 - 0:11:35, cái mạng thời gian ngắn thì cái traffic
+0:11:33 - 0:11:37, cái lượng truy cập của người dùng trong
+0:11:35 - 0:11:40, nó sẽ tăng lên một cách đột ngột trong
+0:11:37 - 0:11:42, một cái khoảng thời gian ngắn rồi sau đó
+0:11:40 - 0:11:43, nó sẽ trở lại trạng thái bình thường khi
+0:11:42 - 0:11:45, chúng ta đã phát hiện ra cái hệ thống
+0:11:43 - 0:11:49, của mình bị tấn câu thì cái dữ liệu của
+0:11:45 - 0:11:51, mình nó cũng sẽ bị thay đổi theo trong
+0:11:49 - 0:11:52, cái giai đoạn mà chúng ta bị tấn công
+0:11:51 - 0:11:55, hoặc là khi có những cái người dùng họ
+0:11:52 - 0:11:59, muốn thử nghiệm à những cái mô hình của
+0:11:55 - 0:12:02, mình Ví dụ như khi chat chat gpt mới ra
+0:11:59 - 0:12:04, ra đời thì có rất nhiều người tìm cách đ
+0:12:02 - 0:12:06, là tìm ra những cái lỗ hổng của chat
+0:12:04 - 0:12:09, Unity nên chúng ta tìm cách là chat với
+0:12:06 - 0:12:12, cái cái mô hình và mình nhồi những cái
+0:12:09 - 0:12:14, dữ liệu xấu cho Mô hình để khiến cho tìm
+0:12:12 - 0:12:16, cách bẫy cái mô hình để khiến cho nó có
+0:12:14 - 0:12:20, khả năng là trả lời những cái câu hỏi
+0:12:16 - 0:12:22, không có được Đúng đó thì đó là nhưng mà
+0:12:20 - 0:12:25, cái việc đó thì nó chỉ diễn ra trong một
+0:12:22 - 0:12:28, cái khoảng thời gian rất là nhắn mà thôi
+0:12:25 - 0:12:31, Và khi chúng ta có cái sự tham gia của
+0:12:28 - 0:12:35, một cái nhóm đối tượng mới hoàn toàn
+0:12:31 - 0:12:37, trước đây là chúng ta sẽ lấy cái dữ liệu
+0:12:35 - 0:12:42, trên một cái nhóm người cho trước và nằm
+0:12:37 - 0:12:44, trong một cái tập demography là do chúng
+0:12:42 - 0:12:46, ta lấy mẫu nhưng khi chúng ta tiến hành
+0:12:44 - 0:12:49, triển khai cái mô hình của mình Trong
+0:12:46 - 0:12:50, thực tế thì nó sẽ xuất hiện những cái
+0:12:49 - 0:12:53, nhóm đối tượng và đối tượng này chưa
+0:12:50 - 0:12:56, từng được lấy mẫu nó gọi là mới Hoà toàn
+0:12:53 - 0:12:57, thì cũng có khả năng đó là xuất hiện
+0:12:56 - 0:13:00, những cái đối tượng như vậy trong cái
+0:12:57 - 0:13:03, khoảng thời gian ngắn hạn khiến cho cái
+0:13:00 - 0:13:05, dữ liệu của mình nó bị biến động và cái
+0:13:03 - 0:13:09, sự biến động này thì có thể là chỉ biến
+0:13:05 - 0:13:09, động tạm thời mà thôi

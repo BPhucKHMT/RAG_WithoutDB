@@ -1,0 +1,233 @@
+0:00:01 - 0:00:08, đầu tiên khi ôn tập về Python thì
+0:00:05 - 0:00:10, chúng ta sẽ tìm hiểu về kiểu dữ liệu thì
+0:00:08 - 0:00:13, cũng tương tự như các cái ngôn ngữ lập
+0:00:10 - 0:00:15, trình khác như là C++ và các ngôn ngữ
+0:00:13 - 0:00:19, nó cũng có những cái kiểu dữ liệu cơ bản
+0:00:15 - 0:00:22, ví dụ như là kiểu số nguyên kiểu số thực
+0:00:19 - 0:00:25, kiểu số phức kiểu boolean hay kiểu luận lý
+0:00:22 - 0:00:28, và kiểu chuỗi và tương ứng ở đây thì
+0:00:25 - 0:00:30, chúng ta sẽ có các cái ví dụ về các cái
+0:00:28 - 0:00:34, loại kiểu dữ liệu này thì cái này là rất
+0:00:30 - 0:00:35, là cơ bản rồi và để xác định xem một cái
+0:00:34 - 0:00:39, biến của mình nó có cái kiểu dữ liệu gì
+0:00:35 - 0:00:43, thì chúng ta sẽ dùng cái hàm type
+0:00:39 - 0:00:43, và chúng ta sẽ truyền cái biến vào đây
+0:00:46 - 0:00:52, để kiểm tra
+0:00:48 - 0:00:53, rồi và trong Python cái tính uyển
+0:00:52 - 0:00:56, chuyển nó được thể hiện đó là chúng ta
+0:00:53 - 0:00:59, hoàn toàn có thể ép kiểu dữ liệu kiểu
+0:00:56 - 0:01:02, biến Ví dụ như chúng ta ép kiểu thì
+0:01:02 - 0:01:06, chúng ta sẽ để cái tên kiểu và để mở
+0:01:04 - 0:01:10, ngoặc rồi đưa cái biến vào tên kiểu
+0:01:06 - 0:01:13, để kiểm tra thì bây giờ
+0:01:10 - 0:01:17, chúng ta sẽ tiến hành thử nghiệm trên
+0:01:13 - 0:01:17, các cái ví dụ này ha
+0:01:18 - 0:01:25, Đây chính là cái giao diện của Colab và
+0:01:22 - 0:01:29, để mà sử dụng được cái Google Colab này
+0:01:25 - 0:01:31, thì chúng ta sẽ phải kết nối Nhấn vào
+0:01:29 - 0:01:34, cái nút Connect
+0:01:31 - 0:01:36, Thì tại thời điểm này là cái tài khoản
+0:01:34 - 0:01:39, của chúng ta đang kết nối vào server của
+0:01:36 - 0:01:44, Google và từ đó là giúp cho
+0:01:39 - 0:01:46, chúng ta khởi tạo cái một cái con server
+0:01:44 - 0:01:51, thì như chúng ta thấy là cái con Server
+0:01:46 - 0:01:53, này nó sẽ có 12,68 GB và 100gb ổ cứng
+0:01:51 - 0:01:55, rất là dư giả để cho chúng ta có thể làm
+0:01:53 - 0:01:57, được thí nghiệm và lưu ý là cái con
+0:01:55 - 0:01:59, Server này thì chỉ được lưu trữ tạm thời
+0:01:57 - 0:02:02, trong vòng vài tiếng đồng hồ để cho
+0:01:59 - 0:02:03, chúng ta có sử dụng và nó sẽ ngắt và đâu
+0:02:02 - 0:02:05, đó khoảng 12 tiếng nếu như chúng ta
+0:02:03 - 0:02:09, không sử dụng
+0:02:05 - 0:02:11, để tạo ra một biến thì chúng ta sẽ gán
+0:02:09 - 0:02:14, là x = 3
+0:02:11 - 0:02:18, rồi sau đó thì chúng ta sẽ in ra
+0:02:14 - 0:02:21, Ví dụ như X và chúng ta sẽ chạy để chạy
+0:02:18 - 0:02:24, thì chúng ta có thể nhấn Ctrl
+0:02:21 - 0:02:25, enter hoặc là nhấn vào cái nút ở đây thì
+0:02:24 - 0:02:28, chúng ta thấy biến x của mình là bằng 3
+0:02:25 - 0:02:30, Tuy nhiên 3 ở đây nó có thể là kiểu Số
+0:02:28 - 0:02:32, nguyên có thể là kiểu số thực hay là
+0:02:30 - 0:02:35, kiểu chuỗi mình không biết do đó thì
+0:02:32 - 0:02:39, mình sẽ ép kiểu Anh xin lỗi mình sẽ dùng
+0:02:35 - 0:02:41, cái hàm type và truyền vào cái biến để
+0:02:39 - 0:02:47, xem cái kiểu dữ liệu của nó là gì thì ở
+0:02:41 - 0:02:50, đây 3 mặc định nó sẽ hiểu là int
+0:02:47 - 0:02:54, để ép cái số 3 này về cái kiểu số thực
+0:02:50 - 0:02:58, thì chúng ta có thể để cái tên của cái
+0:02:54 - 0:03:00, kiểu và ép kiểu và truyền cái biến
+0:02:58 - 0:03:02, chúng ta muốn ép rồi sau đó gán ngược trở
+0:03:00 - 0:03:04, lại vào chính biến x lưu ý là chúng ta
+0:03:02 - 0:03:08, phải có một cái bước gán ngược trở lại
+0:03:04 - 0:03:11, vì nếu không cái lệnh ép X thì nó sẽ
+0:03:08 - 0:03:13, tạo ra một cái biến số thực nhưng mà nó
+0:03:11 - 0:03:16, không được gán vào bất cứ cái biến nào
+0:03:13 - 0:03:18, khác do đó x của mình nó vẫn sẽ giữ
+0:03:16 - 0:03:20, nguyên X sẽ giữ nguyên cái kiểu gốc ban
+0:03:18 - 0:03:22, đầu là kiểu số nguyên do đó để đổi kiểu
+0:03:20 - 0:03:25, của X thì chúng ta sẽ phải gán liền trở
+0:03:22 - 0:03:27, lại vào X rồi
+0:03:25 - 0:03:29, và bây giờ thì
+0:03:27 - 0:03:31, chúng ta sẽ
+0:03:29 - 0:03:35, in ra
+0:03:31 - 0:03:38, cái kiểu của X
+0:03:35 - 0:03:42, của x Xem coi
+0:03:38 - 0:03:47, nó sẽ là kiểu gì thì chúng sẽ ghi ra là
+0:03:42 - 0:03:47, kiểu dữ liệu mới
+0:03:53 - 0:03:57, rồi kiểu dữ liệu mới của chúng ta chính
+0:03:55 - 0:04:00, là float trong khi trước đây nó là số
+0:03:57 - 0:04:05, nguyên như vậy thì đây là một cái ví dụ
+0:04:00 - 0:04:05, để minh họa cho cái việc ép kiểu dữ liệu
+0:04:06 - 0:04:12, trong Python thì các cái toán tử cũng
+0:04:10 - 0:04:14, tương tự như là các cái toán tử của các
+0:04:12 - 0:04:15, cái ngôn ngữ lập trình khác nó sẽ có các
+0:04:14 - 0:04:19, phép toán tử như là cộng trừ nhân chia
+0:04:15 - 0:04:21, và có một kế toán tử mà mình cũng rất
+0:04:19 - 0:04:23, thích sử dụng trong Python đó là
+0:04:21 - 0:04:25, toán tử sau sao thì ý nghĩa của nó đó
+0:04:23 - 0:04:29, chính là cái phép mũ hay là phép lũy
+0:04:25 - 0:04:33, thừa thì ở đây ta ví dụ như là x sao sao
+0:04:29 - 0:04:34, 3 thì nó sẽ tương đương với lại là x lũy
+0:04:33 - 0:04:37, thừa 3
+0:04:34 - 0:04:40, Ngoài ra thì Python cũng có hỗ trợ các
+0:04:37 - 0:04:44, thao tác So sánh bé so sánh lớn so sánh
+0:04:40 - 0:04:46, bằng So sánh khác và kết quả của các toán
+0:04:44 - 0:04:50, tử của các toán tử này nó sẽ là các
+0:04:46 - 0:04:50, giá trị luận lý
+0:04:54 - 0:05:01, Ngoài ra thì trong Python cũng có hỗ
+0:04:58 - 0:05:03, trợ các kế toán tử trên cái kiểu dữ liệu
+0:05:01 - 0:05:08, luận lý Ví dụ như ở đây chúng ta sẽ có
+0:05:03 - 0:05:11, cái toán tử là AND, OR thì
+0:05:08 - 0:05:14, ở đây chúng ta sẽ có một cái ví dụ để
+0:05:11 - 0:05:17, minh họa cho cái việc sử dụng các cái
+0:05:14 - 0:05:17, toán tử này
+0:05:17 - 0:05:22, ví dụ như ở đây chúng ta khởi tạo X là
+0:05:20 - 0:05:26, bằng 4.0
+0:05:22 - 0:05:28, và chúng ta sẽ in ra kế toán tử in ra
+0:05:26 - 0:05:32, kết quả của Toán tử là x sao sao ví dụ
+0:05:28 - 0:05:35, như là bình phương Tức là sao Sao 2 rồi
+0:05:32 - 0:05:37, thì 4 Bình Phương nó sẽ ra là 16 Ngoài
+0:05:35 - 0:05:40, ra thì một trong những cái kiểu dữ liệu
+0:05:37 - 0:05:43, khác mà Python mình cũng rất hay sử dụng
+0:05:40 - 0:05:43, đó chính là kiểu string
+0:05:46 - 0:05:49, là Hello
+0:05:51 - 0:05:56, Và nếu như chúng ta thực hiện
+0:06:03 - 0:06:06, [âm nhạc]
+0:06:12 - 0:06:17, [âm nhạc]
+0:06:24 - 0:06:27, [âm nhạc]
+0:06:39 - 0:06:46, tiếp theo thì chúng ta sẽ cùng qua cái
+0:06:43 - 0:06:48, nội dung về các cái cấu trúc dữ liệu phổ
+0:06:46 - 0:06:50, biến trên ngôn ngữ lập trình Python thì
+0:06:48 - 0:06:52, trong Python có 4 cái cấu trúc dữ
+0:06:50 - 0:06:57, liệu rất là phổ biến đó chính là list
+0:06:52 - 0:06:58, Tuple, set và dictionary đối với list thì
+0:06:57 - 0:07:02, đây là một trong những cái cấu trúc dữ
+0:06:58 - 0:07:05, liệu mà mình sử dụng nhiều nhất và nó để
+0:07:02 - 0:07:07, lưu trữ các đối tượng khác nhau lưu trữ
+0:07:05 - 0:07:10, các đối tượng khác nhau và có thể thêm
+0:07:07 - 0:07:13, bớt thay đổi giá trị và các cái giá trị
+0:07:10 - 0:07:15, của các đối tượng này có thể trùng nhau
+0:07:13 - 0:07:18, ví dụ như là list có thể chứa các cái
+0:07:15 - 0:07:21, phần tử là có cùng một giá trị thì ở đây
+0:07:18 - 0:07:24, chúng ta sẽ lấy một cái cú pháp minh họa
+0:07:21 - 0:07:26, cho một cái cú pháp thì trong Python
+0:07:24 - 0:07:29, chúng ta sẽ sử dụng cái dấu mở ngoặc
+0:07:26 - 0:07:32, vuông và đóng ngoặc vuông để bao các
+0:07:29 - 0:07:33, cái dữ liệu mà mình muốn khởi tạo Ví dụ
+0:07:32 - 0:07:36, như ở đây chúng ta muốn khởi tạo ra một
+0:07:33 - 0:07:38, cái list bao gồm các cái số là 3.0
+0:07:36 - 0:07:39, 5 và hello
+0:07:38 - 0:07:43, [âm nhạc]
+0:07:39 - 0:07:45, thì chúng ta có thể thấy là ba cái giá
+0:07:43 - 0:07:48, trị này nó sẽ có 3 cái kiểu dữ liệu khác
+0:07:45 - 0:07:51, nhau đó là 3.0 là số thực 5 là số nguyên
+0:07:48 - 0:07:52, và hello là kiểu string thì đây chính là
+0:07:51 - 0:07:53, cái tính
+0:07:52 - 0:07:56, uyển chuyển của cái cấu trúc dữ liệu
+0:07:53 - 0:07:58, list và Chính điều đó khiến cho cái việc
+0:07:56 - 0:08:01, lập trình nó sẽ tiện lợi hơn
+0:07:58 - 0:08:03, và ở đây chúng ta sẽ ví dụ là chúng ta
+0:08:01 - 0:08:07, sẽ khai báo một list các cái số tự nhiên
+0:08:03 - 0:08:10, từ 1 cho đến 10 và chúng ta sẽ lấy ra
+0:08:07 - 0:08:14, một cái phần tử ở vị trí thứ 5 lưu ý là
+0:08:10 - 0:08:15, ở vị trí thứ năm của cái list này và
+0:08:14 - 0:08:18, chúng ta sẽ lọc lấy 5 phần tử đầu tiên
+0:08:15 - 0:08:22, của list thì đây là mình sẽ lập trình
+0:08:18 - 0:08:22, thử cho các bạn cùng theo dõi
+0:08:23 - 0:08:27, Ví dụ như chúng ta sẽ có
+0:08:26 - 0:08:29, list
+0:08:27 - 0:08:31, [âm nhạc]
+0:08:29 - 0:08:34, là bằng mở ngoặc vuông và nếu như chúng
+0:08:31 - 0:08:36, ta tạo một cái
+0:08:34 - 0:08:39, list gồm có 10 cái phần tử này thì cái
+0:08:36 - 0:08:41, cách đơn giản nhất mà mình có thể làm đó
+0:08:39 - 0:08:44, chính là gõ ra từng phần tử như thế này
+0:08:41 - 0:08:46, tuy nhiên cái việc này thì sau này chúng
+0:08:44 - 0:08:47, ta sẽ rất là bất tiện Nếu như mà cái số
+0:08:46 - 0:08:51, phần tử của mình nó rất là lớn lên đến
+0:08:47 - 0:08:52, hàng trăm hoặc là hàng ngàn phần tử thì
+0:08:51 - 0:08:54, lúc đó chúng ta sẽ có những cái cách
+0:08:52 - 0:08:55, thức để khởi tạo riêng sử dụng NumPy Tuy
+0:08:54 - 0:08:58, nhiên ở trong các trường hợp này chúng
+0:08:55 - 0:09:00, ta sẽ minh họa đó là khai báo tường minh
+0:08:58 - 0:09:04, tất cả các phần tử ở bên trong các danh
+0:09:00 - 0:09:04, sách và chúng ta sẽ in ra
+0:09:04 - 0:09:10, cái list này
+0:09:07 - 0:09:12, thì đây là tất cả các phần tử và bây giờ
+0:09:10 - 0:09:17, mình sẽ in ra phần tử ở vị trí thứ 5
+0:09:12 - 0:09:18, thì lưu ý là chúng ta có thể có hai cái
+0:09:17 - 0:09:21, cách hiểu cái khái niệm đầu tiên đó là
+0:09:18 - 0:09:23, vị trí thứ vị trí thứ năm như vậy thì
+0:09:21 - 0:09:25, nếu như chúng ta đánh cái chỉ mục của
+0:09:23 - 0:09:27, mình là bắt đầu từ vị trí thứ nhất vị
+0:09:25 - 0:09:29, trí thứ hai vị trí thứ ba vị trí thứ tư
+0:09:27 - 0:09:31, vị trí thứ năm thì để lấy ra cái vị trí
+0:09:29 - 0:09:35, thứ năm thì chúng ta lưu ý chúng ta sẽ
+0:09:31 - 0:09:37, không dùng cái chỉ số gọi là 5 đó chúng
+0:09:35 - 0:09:39, ta sẽ để mở ngoặc vuông là 5 như thế này
+0:09:37 - 0:09:43, các bạn có thể đoán được nó ra kết quả
+0:09:39 - 0:09:46, là bao nhiêu hay không nó sẽ ra là 6
+0:09:43 - 0:09:50, Tức là nó sẽ ra kết quả là 6
+0:09:46 - 0:09:52, Tại vì sao tại vì trong Python cái chỉ
+0:09:50 - 0:10:00, mục của mình cái chỉ mục Tức là cái con
+0:09:52 - 0:10:00, số mà mình sẽ truyền vào cái dấu mở
+0:09:57 - 0:10:02, ngoặc vuông đóng ngoặc vuông này nè Để
+0:10:00 - 0:10:04, lấy cái phần tử đó ra thì nó bắt đầu từ
+0:10:02 - 0:10:09, 0 chứ nó không phải bắt đầu từ 1 do đó
+0:10:04 - 0:10:12, nếu cái phần tử đầu tiên này nó sẽ là
+0:10:09 - 0:10:15, chỉ số là 0 chỉ số 1 2 3 4 5 và do đó
+0:10:12 - 0:10:18, thì tại cái chỉ số 5 thì tương ứng nó sẽ
+0:10:15 - 0:10:21, lấy ra cái giá trị là 6 do đó thì muốn
+0:10:18 - 0:10:22, lấy cái phần tử tại cái vị trí thứ 5 thì
+0:10:21 - 0:10:25, chúng ta sẽ truyền vô đó là chỉ số thứ
+0:10:22 - 0:10:28, tư
+0:10:25 - 0:10:33, thì nó sẽ lấy ra cái giá trị của cái số
+0:10:28 - 0:10:35, thứ Năm rồi bây giờ chúng ta muốn thực
+0:10:33 - 0:10:38, hiện in ra ở 5 cái phần tử đầu tiên
+0:10:35 - 0:10:42, thì chúng ta sẽ thực hiện cái câu lệnh
+0:10:38 - 0:10:42, đó là print list
+0:10:46 - 0:10:50, thực hiện một cách tường minh để cái chỉ
+0:10:48 - 0:10:54, số một cách tường minh đó là
+0:10:50 - 0:10:56, print list[0:5] Tức là nó sẽ chạy từ
+0:10:54 - 0:11:00, phần tử đầu tiên
+0:10:56 - 0:11:03, là 0 rồi cho đến phần tử trước khi
+0:11:00 - 0:11:05, con số 5 này tức là 4 0 1 2 3 4 tức là
+0:11:03 - 0:11:09, có 5 cái phần tử thì đây là cái cách
+0:11:05 - 0:11:10, khai báo tường minh là 0:5 chúng ta sẽ
+0:11:09 - 0:11:12, lấy ra 5 phần tử đầu tiên còn một cái
+0:11:10 - 0:11:14, cách khác viết tắt hơn đó chính là chúng
+0:11:12 - 0:11:18, ta không để cái chỉ số 0 mà chúng ta sẽ
+0:11:14 - 0:11:20, để là :5 Ví dụ như :5 tức là lấy ra 5
+0:11:18 - 0:11:24, phần tử đầu tiên
+0:11:20 - 0:11:27, rồi các bạn sẽ nói là
+0:11:24 - 0:11:31, vậy thì cái ý nghĩa của cái chỉ số này
+0:11:27 - 0:11:33, cái con số 5 này nó là gì Và nó có gọi
+0:11:31 - 0:11:35, là không có tự nhiên trong cái cách mình
+0:11:33 - 0:11:37, suy luận đúng không Tuy nhiên thì ở đây
+0:11:35 - 0:11:40, nó cũng thuộc về cái phạm trù gọi là quy
+0:11:37 - 0:11:43, ước ví dụ như là :5 thì chúng ta sẽ
+0:11:40 - 0:11:46, hiểu ý Đó là chúng ta sẽ chạy từ cái chỉ
+0:11:43 - 0:11:48, số đầu tiên cho đến trước trước thì chỉ
+0:11:46 - 0:11:52, số mà nó có thông số ghi ở đây tức là
+0:11:48 - 0:11:56, trước cái chỉ số 5 chỉ số 4 từ 0 cho đến
+0:11:52 - 0:11:56, 4 thì nó sẽ có tất cả là 5 phần tử

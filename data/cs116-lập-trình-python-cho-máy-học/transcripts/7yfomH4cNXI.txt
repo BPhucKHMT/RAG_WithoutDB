@@ -1,0 +1,95 @@
+0:00:00 - 0:00:06, Kỷ thuật cơ bản của Ensemble Model
+0:00:06 - 0:00:23, Vô tinh, trung bình, weighted averaging, vô tinh, bầu cử
+0:00:23 - 0:00:31, Đây là một mô hình thường được sử dụng cho bài toán phân loại.
+0:00:31 - 0:00:39, Bài toán phân loại là gì? Tức là output của mình trả ra là một giá trị thuộc một tập.
+0:00:39 - 0:00:41, Tập này là tập rơi rạt nào đấy?
+0:00:41 - 0:00:51, Các giá trị C1, C2 cho đến CN này là các giá trị rơi rạt và không có tính thứ tự.
+0:00:51 - 0:01:02, và chúng ta sẽ phải chọn ra là cái output y của mình, nó sẽ là c1, c2 hay là cn
+0:01:02 - 0:01:11, và như vậy thì cái cơ chế này, cái cơ chế chọn lựa ra một cái giá trị dự đoán cuối cùng, cái giá trị output cuối cùng
+0:01:11 - 0:01:15, nó giống giống như là một cái cơ chế trong bầu cử một người đến đầu vậy đó
+0:01:15 - 0:01:22, Mỗi một cái model là một cái đóng vai trò như là một cái cử tri
+0:01:22 - 0:01:28, Ví dụ như ở đây chúng ta có 4 model, thì model 1, model 2, model 3, model 4 chính là những cái cử tri đi bầu
+0:01:28 - 0:01:34, Và cái quyết định cuối cùng, cái quyết định cuối cùng, tức là cái output này của mình
+0:01:34 - 0:01:38, Nó sẽ thuộc về số đông
+0:01:38 - 0:01:40, Nó sẽ thuộc về số đông
+0:01:40 - 0:01:55, Ví dụ, model số 1 đưa ra dự đoán cho phần lớp 1, model số 2 đưa ra dự đoán 2, model số 3 đưa ra kết quả dự đoán 1, model số 4 đưa ra kết quả dự đoán 4.
+0:01:55 - 0:02:05, Vì vậy, tổng hợp lại, chúng ta thấy là với cái nhãn số 1 thì chúng ta có tất cả là 3 phiếu bầu
+0:02:05 - 0:02:10, Với cái nhãn số 2 thì chúng ta đã có 1 phiếu bầu
+0:02:10 - 0:02:21, Vì vậy, theo nguyên tắc về số đông thì rõ ràng kết quả của mình, output cuối cùng của mình chính là 1
+0:02:21 - 0:02:23, Tại vì số feeble của nó là cao nhất
+0:02:23 - 0:02:27, Thì đây chính là ý tưởng của kỹ thuật vô tinh
+0:02:27 - 0:02:34, Và đây cũng là một trong những kỹ thuật rất là đơn giản, dễ hiểu và dễ kể đo
+0:02:34 - 0:02:40, Tiếp theo là kỹ thuật về everything, tức là cộng trung bình
+0:02:40 - 0:02:44, Trung bình cộng
+0:02:44 - 0:02:58, Thì nói về everything, tức là chúng ta sẽ tính tổng sau đó chúng ta sẽ chia cho số cái phần tử, số cái kết quả mình dự đoán, tham gia vào.
+0:02:58 - 0:03:04, Thì cái kết quả mà cộng trung bình này thì thông thường nó dùng cho bài toán hồi quy.
+0:03:04 - 0:03:06, Bài toán hồi quy nghĩa là sao?
+0:03:06 - 0:03:10, là cái giá trị output của mình thì nó sẽ thuộc một cái giá trị liên tục.
+0:03:10 - 0:03:12, Nó sẽ thuộc một giá trị liên tục.
+0:03:12 - 0:03:17, Và chính vì nó thuộc cái giá trị liên tục và có tính thứ tự.
+0:03:17 - 0:03:22, Nó sẽ có tính thứ tự.
+0:03:22 - 0:03:24, Nên khi chúng ta cộng chung bình,
+0:03:24 - 0:03:29, thì cái giá trị output của mình nó mới là một cái giá trị hợp lệ.
+0:03:29 - 0:03:29, Nghĩa là sao?
+0:03:29 - 0:03:33, Từng cái phần tử trong cái model của mình
+0:03:33 - 0:03:34, là một cái giá trị liên tục.
+0:03:34 - 0:03:40, khi chúng ta cộng lại và chia cho bình quân ra thì nó cũng sẽ ra một cái giá trị liên tục
+0:03:40 - 0:03:42, và thì nó mới có nghĩa
+0:03:42 - 0:03:47, còn cái việc mà nếu chúng ta áp dụng cho cái bài toán là phân lớp
+0:03:47 - 0:03:54, ví dụ như là C1, C2, Cn thì rõ ràng là các cái giá trị này là các giá trị không có thiết là nó không có tính thứ tự
+0:03:54 - 0:04:00, cái thứ 2 đó là nó cũng có khả năng nó không phải là những cái giá trị mang tính chất số học
+0:04:00 - 0:04:02, để mà có thể cộng thu hình cộng được
+0:04:02 - 0:04:06, có thể thôi, tại vì người ta cũng có cách để có thể mả hóa được chuyện đấy
+0:04:06 - 0:04:09, Vì nhiên thì về mặt ý nghĩa đó là không có tính thư tự
+0:04:09 - 0:04:13, mà khi không có tính thư tự thì khi chúng ta cộng trung bình cộng
+0:04:13 - 0:04:19, thì nó sẽ tạo ra những cái giá trị mà không chắc là nó có nằm trong tập này hay không
+0:04:19 - 0:04:23, Đó là lý do tại sao kỹ thuật averaging
+0:04:23 - 0:04:26, thì thông thường lại được áp dụng cho bài toán hồi quy
+0:04:26 - 0:04:29, chứ không có áp dụng cho bài toán về phần lớp
+0:04:29 - 0:04:39, Ký tưởng của Everything là chúng ta sẽ tính trung bình cộng kết quả của mô hình để tổng hợp lại.
+0:04:39 - 0:04:47, Ví dụ, với một input đầu vào, chúng ta đưa qua mô hình số 1, thì nó sẽ trả ra kết quả 120,
+0:04:47 - 0:04:50, 1 cái kết quả dịa đáng là 120
+0:04:50 - 0:04:54, đưa vào môn số 2 thì nó ra kết quả dịa đáng là 90
+0:04:54 - 0:04:57, đưa vào cái môn số 3 thì nó ra kết quả là 100
+0:04:57 - 0:05:00, và đưa vào môn số 4 nó ra là 110
+0:05:00 - 0:05:04, thì tính trung bình cộng 4 cái kết quả này lại
+0:05:04 - 0:05:07, thì chúng ta sẽ ra được cái output của mình
+0:05:07 - 0:05:10, đó chính là 105
+0:05:10 - 0:05:13, thì cái ý tưởng của kỹ thuật averaging này
+0:05:13 - 0:05:16, cũng rất là đơn giản và dễ hiểu
+0:05:16 - 0:05:29, Tuy nhiên, chúng ta sẽ có thêm một cái bấn đề đó là nếu như trong kỹ thuật về averaging, thì các mô hình đóng ngoài trò là như nhau, tức là trọng số là như nhau.
+0:05:29 - 0:05:39, Nhưng thực tế thì có phải là như vậy không? Các mô hình số 1, số 2, số 3 cho đến mô hình số n, thì nó sẽ là những cái thể loại mô hình khác nhau.
+0:05:39 - 0:05:47, Có những cái ưu, khuyết điểm khác nhau dẫn đến là cái việc cộng thương bình thì nó sẽ không công bằng lắm.
+0:05:47 - 0:05:55, Do đó weighted everything là một cái mô hình mà có cái hiệu quả và trọng số khác nhau.
+0:05:55 - 0:06:04, Tức là mỗi một cái mô hình mà có cái sự hiệu quả hay trọng số khác nhau thì nó nên có cái trọng số khác nhau.
+0:06:04 - 0:06:09, Tức là không có đánh đồng, chúng ta sẽ không kèo bằng tất cả các mô hình này
+0:06:09 - 0:06:12, Mỗi mô hình nên có một trọng số
+0:06:12 - 0:06:14, Và trọng số này lấy đâu ra?
+0:06:14 - 0:06:16, Trọng số này lấy đâu ra?
+0:06:16 - 0:06:22, Một cách đơn giản và dễ hiệu nhất là chúng ta sẽ lấy từng mô hình này
+0:06:22 - 0:06:28, Chúng ta đi test, test trên, hay là chúng ta sẽ đi thử nghiệm
+0:06:28 - 0:06:31, Nhưng từ test sẽ dễ nhầm lẫn với tập yếu viện test
+0:06:31 - 0:06:41, Chúng ta sẽ đi thử, chúng ta sẽ đi dừng đoán trên tập validation
+0:06:41 - 0:06:49, Rồi sau đó chúng ta sẽ đi tính accuracy cho mode số 1
+0:06:49 - 0:06:57, Tương tự như vậy thì chúng ta cũng lấy mode số 2 đi dừng đoán trên tập validation và sẽ tính accuracy số 2
+0:06:57 - 0:07:04, Rồi, accuracy số 3 và accuracy số n.
+0:07:04 - 0:07:12, Vừa trên các accuracy 1, 2, 3 cho đến n này, chúng ta sẽ đi tính trọng số tương ứng cho nó.
+0:07:12 - 0:07:25, Ở đây có nhiều kỹ thuật, ví dụ như W1 này cũng có thể được tính bằng công thức accuracy của phương pháp số 1 chia cho tổng tất cả các accuracy.
+0:07:25 - 0:07:32, Với Y chạy từ 1 cho đến nơi nào thì đây là một kỹ thuật đơn giản nhất.
+0:07:32 - 0:07:40, Nó vừa có thể đưa ra được trọng số mà nó tỷ lệ thuận với độ chính xác của mô hình của mình.
+0:07:40 - 0:07:48, Đồng thời nó đáp ứng được điều kiện đó là các mô hình của mình sẽ không có đánh đồng vây trò như nhau
+0:07:48 - 0:07:52, mà nó sẽ phải có sự liên kết về mặt trọng số
+0:07:53 - 0:07:56, để phụ thuộc vào tính hiệu quả của mình
+0:07:57 - 0:07:59, thay vì là đấy đồng, đấy trung bình cọng.
+0:08:00 - 0:08:02, Vậy thì cuối cùng, chúng ta sẽ ra được giá trị output
+0:08:02 - 0:08:05, dựa trên giá trị trung bình cọng có trọng số này.
+0:08:05 - 0:08:08, Thực sự mà nói thì phương pháp averaging này,
+0:08:08 - 0:08:10, quy tình averaging này thì nó cũng đơn giản.
+0:08:11 - 0:08:15, Tuy nhiên, đâu đó nó vẫn sẽ có một điểm yếu
+0:08:15 - 0:08:17, đó chính là chúng ta sẽ phải tính trọng số này.
+0:08:18 - 0:08:20, làm sao chúng ta có được cái trọng số này một cách phù hợp
+0:08:20 - 0:08:24, và trong nhiều thình huống nếu như chúng ta sử dụng cái độ chính xác
+0:08:24 - 0:08:30, trên tập train hoặc tập validation này thì đâu đó nó sẽ tốn chi phí để tính toán
+0:08:30 - 0:08:34, rồi nó sẽ tốn chi phí tính toán ra các cái bộ trọng số này
+0:08:34 - 0:08:45, thì đó chính là 3 cái kỹ thuật chính nhất cho hướng tiếp cận là các phương pháp ensemble cơ bản
+0:08:45 - 0:08:51, bao gồm là vô tình, trung bình và trung bình trọng số, weighted everything.

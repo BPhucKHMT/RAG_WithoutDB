@@ -34,10 +34,10 @@
 0:02:44 - 0:02:48, Và depth đầu vào của mình là 32
 0:02:48 - 0:02:51, Đây là kích thước của filter
 0:02:51 - 0:02:59, Nhân với 64 filter như vậy thì nó sẽ ra là khoảng 18.000 tham số
-0:02:59 - 0:03:15, Còn nếu chúng ta thực hiện Depthwise Separable Convolution thì ở đây chúng ta sẽ có là kích thước của filter của mình sẽ là 3x3 và áp dụng cho 32 kênh
+0:02:59 - 0:03:15, Còn nếu chúng ta thực hiện Depthwise Separable Convolution thì ở đây chúng ta sẽ có là kích thước của filter của mình sẽ là 32 x 3
 0:03:15 - 0:03:23, Tức là sao? Ở đây kích thước của filter của mình là 3 x 3 và mình sẽ có độ sâu tương ứng là 32
 0:03:23 - 0:03:28, Độ sâu là 32, với thằng này có độ sâu là 32
-0:03:28 - 0:03:31, Cái filter này có độ sâu là 32 và nó sẽ áp dụng độc lập trên từng kênh
+0:03:28 - 0:03:31, Cái filter này có độ sâu là 32 và nó sẽ chia sẻ trọng số với các kênh này
 0:03:31 - 0:03:37, Vậy tổng số tham số của mình sẽ là 3 x 3 x 32 cho cái bước số 1
 0:03:37 - 0:03:40, Đối với cái bước số 2, đây là bước 1
 0:03:40 - 0:03:47, Đối với cái bước số 2 thì cái filter của mình nó sẽ có kích thước là 1 x 1 x 32
@@ -55,7 +55,7 @@
 0:04:38 - 0:04:42, Một trong những mạng CNN có khả năng triển khai trên thiết bị di động
 0:04:42 - 0:04:43, sử dụng những phần cứng
 0:04:44 - 0:04:45, không có quá đắt tiền
-0:04:46 - 0:04:48, và với khối lượng xử lý nhỏ
+0:04:46 - 0:04:48, và có khối lượng xử lý lớn
 0:04:48 - 0:05:00, MobileNet có số lượng citation khá là lớn, đó là 24 ngàn citation.
 0:05:00 - 0:05:04, Đây cũng là một trong những kiến trúc mạng rất là nổi tiếng.
 0:05:04 - 0:05:13, Vì vậy, chúng ta sẽ tóm tắt lại một số thành tựu của các kiến trúc mạng.
@@ -78,7 +78,7 @@
 0:07:02 - 0:07:06, 1. Sử dụng bottleneck 1 nhân 1, Convolution
 0:07:06 - 0:07:12, Và hai, đó là Inception Module.
 0:07:12 - 0:07:18, Thì hai cái cải tiến này sẽ giúp cho chúng ta giảm số lượng tham số.
-0:07:18 - 0:07:28, Đồng thời, Inception này sẽ giúp cho chúng ta tận dụng được các đặc trưng
+0:07:18 - 0:07:28, Đồng thời, đó là do giúp cho chúng ta, Inception này sẽ giúp cho chúng ta tận dụng được các đặc trưng
 0:07:28 - 0:07:41, Từ nhiều loại, từ nhiều filter có kích thước khác nhau, ví dụ filter 3x3, filter 1x1, filter 5x5
 0:07:41 - 0:07:48, Tại vì giả định của GoogleNet là họ không biết filter kích thước bao nhiêu là tối ưu thì họ sẽ sử dụng hết
 0:07:48 - 0:07:56, Đây chính là cái cải tiến của GoogleNet, giảm tham số này sẽ giúp chúng ta giảm hiện tượng overfitting
@@ -96,13 +96,13 @@
 0:08:55 - 0:09:00, không sử dụng 3x3 Convolution nữa mà chúng ta sẽ kết hợp
 0:09:00 - 0:09:05, Depthwise Convolution
 0:09:05 - 0:09:11, cộng với lại phép 1x1 Convolution
-0:09:11 - 0:09:14, hay còn gọi là Pointwise Convolution
+0:09:11 - 0:09:14, hay còn tên là Pointwise Convolution
 0:09:14 - 0:09:18, thì việc này sẽ giúp chúng ta giảm được số lượng tham số
 0:09:18 - 0:09:23, và cụ thể ở đây là giảm xuống còn 1 phần 9, tức là đã giảm 8 phần 9
 0:09:23 - 0:09:28, tại vì từ ban đầu giảm xuống 1 phần 9 thì nó đã giảm 8 phần 9 số lượng tham số
 0:09:30 - 0:09:33, và việc giảm tham số này sẽ có hai tác dụng
 0:09:33 - 0:09:34, đó là chống được overfitting
-0:09:36 - 0:09:39, và đồng thời nó sẽ tăng tốc độ
+0:09:36 - 0:09:39, và đồng thời nó sẽ tăng speed
 0:09:39 - 0:09:41, tốc độ tính toán của mình lên
 0:09:41 - 0:09:47, Như vậy thì ở trên đây, chúng ta đã tóm tắt qua các kiến trúc mạng và những cái cải tiến chính
 0:09:47 - 0:09:53, thì chúng ta thấy là hai cái vấn đề lớn nhất mà các kiến trúc mạng tập trung giải quyết
@@ -112,12 +112,12 @@
 0:10:15 - 0:10:22, Cái vấn đề về overfitting là xảy ra khi các kiến trúc mạng càng lúc càng sâu thì số lượng tham số càng tăng
 0:10:22 - 0:10:28, hoặc là số tham số càng tăng thì mô hình càng phức tạp, nó sẽ dễ dẫn đến hiện tượng overfitting
 0:10:28 - 0:10:36, Và để giải quyết vấn đề này thì chúng ta sẽ phải thiết kế để làm giảm số lượng tham số
-0:10:36 - 0:10:43, giảm số lượng tham số, hoặc tăng cường dữ liệu lên.
+0:10:36 - 0:10:43, tham số, giảm số lượng tham số, hoặc tăng cường dữ liệu lên.
 0:10:43 - 0:10:51, Còn đối với vấn đề về vanishing gradient, nó sẽ gây ra việc tham số theta cập nhật, nó sẽ chậm.
 0:10:51 - 0:10:57, Tham số theta sẽ cập nhật, do giá trị đạo hàm này nó bé.
 0:10:57 - 0:11:08, Để chống hiện tượng vanishing gradient này, người ta sẽ có những giải pháp liên quan đến việc tăng giá trị đạo hàm từng thành phần trong hàm loss này lên.
-0:11:08 - 0:11:18, ResNet chỉ với một cái cải tiến rất tí ti, rất là nhỏ, đó là cộng thêm cái x đầu vào,
-0:11:18 - 0:11:24, thì nó đã giúp cho chúng ta tăng giá trị đạo hàm và giảm được hiện tượng vanishing.
+0:11:08 - 0:11:18, ResNet chỉ với một cái cải tiến rất tí ti, rất là nhỏ, đó là cộng thêm cái x đầu vào, cộng thêm cái dữ kiện đầu vào,
+0:11:18 - 0:11:24, thì nó đã giúp cho chúng ta tăng giá trị đạo hàm và tăng giá trị đạo hàm giảm được hiện tượng vanishing.
 0:11:24 - 0:11:31, Đối với ResNet thì chúng ta có một cách giải thích khác cho việc cộng x này.
 0:11:31 - 0:11:35, Convolution này là tạo ra một feature.
 0:11:35 - 0:11:42, Nhưng feature này sẽ không còn giữ được thông tin của dữ kiện đầu vào nữa.

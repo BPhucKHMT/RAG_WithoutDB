@@ -1,0 +1,283 @@
+0:00:01 - 0:00:15, [âm nhạc]
+0:00:13 - 0:00:17, rồi trong những phần trước thì chúng ta
+0:00:15 - 0:00:19, đã tìm hiểu qua cái các cái thành phần
+0:00:17 - 0:00:22, cấu tạo của một cái mạng CNN rồi sau đó
+0:00:19 - 0:00:24, chúng ta đã tiến hành cài đặt cái mạng
+0:00:22 - 0:00:28, CNN này với một cái kiến trúc rất là đơn
+00:00:24 - 0:00:30, giản đó là kiến trúc LeNet và để mà hiểu
+0:00:28 - 0:00:32, rõ hơn cái mạng CNN này thì không cách
+0:00:30 - 0:00:35, nào khác đó là chúng ta sẽ phải trực
+0:00:32 - 0:00:36, quan trực quan hóa cái mạng CNN Thế thì
+0:00:35 - 0:00:38, có rất nhiều cái cách thức để chúng ta
+0:00:36 - 0:00:42, có thể trực quan hóa được cái mạng CNN
+0:00:38 - 0:00:46, cách đầu tiên đó là chúng ta sẽ hiển thị
+0:00:42 - 0:00:48, tất cả các cái feature map mà thực hiện
+0:00:46 - 0:00:50, được trong suốt cái quá trình mà mạng
+0:00:48 - 0:00:53, CNN thực hiện các cái phép biến đổi như
+0:00:50 - 0:00:56, là convolution, pooling, ReLU thì đầu vào
+0:00:53 - 0:00:59, chúng ta thấy là có một cái ảnh độ sâu
+0:00:56 - 0:01:01, là ba tức là tương ứng ba kênh màu thì
+0:01:00 - 0:01:03, cái này là chúng ta trực quan hóa và con
+0:01:01 - 0:01:05, người nhìn vô là có thể hiểu một cách dễ
+0:01:03 - 0:01:07, dàng sau đó thì chúng ta sẽ tiến hành
+0:01:05 - 0:01:09, cái phép biến đổi là convolution thì ở cái
+0:01:07 - 0:01:12, phép biến đổi convolution ở cái lớp đầu tiên
+0:01:09 - 0:01:15, thì nó sẽ tạo ra một cái mà, xin lỗi,
+0:01:12 - 0:01:18, nó sẽ tạo ra một cái feature
+0:01:15 - 0:01:21, map và cái feature map này có cái độ sâu
+0:01:18 - 0:01:25, là D thì chúng ta sẽ trực quan hóa bằng
+0:01:21 - 0:01:28, cách đó là cắt ra các cái lát cắt ở D cái
+0:01:25 - 0:01:31, độ sâu này và ứng với mỗi cái lát cắt
+0:01:28 - 0:01:33, chúng ta sẽ hiển thị nó trên màn hình để
+0:01:31 - 0:01:39, xem coi là cái gì Nằm ở bên trong cái
+0:01:33 - 0:01:41, lát cắt này thì từ từ trong ra bên ngoài
+0:01:39 - 0:01:43, đúng không thì chúng ta sẽ có D cái lát
+0:01:41 - 0:01:46, cắt và có bao nhiêu cái lát cắt thì chúng
+0:01:43 - 0:01:49, ta sẽ hiển thị lên trên hết cái màn hình
+0:01:46 - 0:01:51, đó từ trong ra ngoài có bao nhiêu cái lát
+0:01:49 - 0:01:54, cắt thì chúng ta sẽ hiển thị lên
+0:01:51 - 0:01:58, hết thì đây là cái cách trực quan đầu
+0:01:54 - 0:02:01, tiên và cách trực quan thứ hai đó là
+0:01:58 - 0:02:04, chúng ta khi mà mô hình mạng CNN nó huấn
+0:02:01 - 0:02:08, luyện xong thì nó sẽ có các cái
+0:02:04 - 0:02:11, filter và filter này là các cái trọng số
+0:02:08 - 0:02:14, mà mạng CNN nó đã huấn luyện và tự động
+0:02:11 - 0:02:16, nó điền các cái giá trị ở bên trong cái
+0:02:14 - 0:02:19, filter này và chúng ta sẽ trực quan
+0:02:16 - 0:02:21, hóa cái filter này để xem coi sau khi
+0:02:19 - 0:02:22, huấn luyện xong thì các cái filter này
+0:02:21 - 0:02:25, nó nhìn như thế nào thì đây là hai cái
+0:02:22 - 0:02:29, cách chính để giúp cho chúng ta có thể
+0:02:25 - 0:02:29, trực quan hóa một cái mạng CNN
+0:02:30 - 0:02:36, rồi thì ở đây có các cái nhà khoa học họ
+0:02:33 - 0:02:38, đã tạo ra một cái công cụ đó là Deep
+0:02:36 - 0:02:40, Visualization Toolbox thì chúng ta có
+0:02:38 - 0:02:42, thể gõ với cái từ khóa là Deep
+0:02:40 - 0:02:45, Visualization Toolbox như ở trên và nó
+0:02:42 - 0:02:48, sẽ ra cái video đầu tiên với cái video
+0:02:45 - 0:02:50, đầu tiên này thì chúng ta sẽ cùng quan
+00:02:48 - 0:02:52, sát xem là các cái tác giả họ đã tiến
+00:02:50 - 0:02:55, hành trực quan hóa như thế nào thì đây
+00:02:52 - 0:02:56, là tên của cái công trình nghiên cứu của
+000:02:55 - 0:03:00, các cái tác giả làm về Deep
+00:02:56 - 0:03:00, Visualization Toolbox
+00:03:02 - 0:03:08, rồi thì chúng ta sẽ xem qua cái giao
+000:03:05 - 0:03:11, diện Chúng ta sẽ cùng Xem qua cái giao
+00:03:08 - 0:03:13, diện của cái ứng dụng này ha đầu tiên ở
+000:03:11 - 0:03:16, phía trên bên tay trái đó chính là cái
+000:03:13 - 0:03:19, tấm ảnh đầu vào của cái mạng CNN đây
+000:03:16 - 0:03:21, chính là cái ảnh màu và các tác giả đã
+000:03:19 - 0:03:24, thiết kế cái chương trình để cho phép là
+000:03:21 - 0:03:26, chúng ta có thể truyền vào cái ảnh tĩnh
+000:03:24 - 0:03:28, hoặc là chúng ta có thể truyền vào một
+000:03:26 - 0:03:31, cái đoạn video thì khi mà chúng ta đưa
+000:03:28 - 0:03:34, vào cái video thì chúng ta sẽ quan sát
+000:03:31 - 0:03:36, xem cái feature map nó sẽ biến đổi như
+000:03:34 - 0:03:39, thế nào trong suốt quá trình mà chúng ta
+000:03:36 - 0:03:41, chuyển động ở bên trong cái video rồi ở
+000:03:39 - 0:03:44, phía trên thì chúng ta sẽ thấy là có các
+000:03:41 - 0:03:48, cái lớp biến đổi ví dụ như là convolution,
+000:03:44 - 0:03:52, pooling, normalization, convolution số 2 và convolution số
+000:03:48 - 0:03:55, 3, convolution số 5 rồi các cái lớp biến đổi là
+000:03:52 - 0:03:56, FC và lớp cuối cùng là softmax để tạo ra các
+000:03:55 - 0:03:59, cái phân bố xác suất
+000:03:56 - 0:04:03, probabilities thì ở đây người ta đang
+000:03:59 - 0:04:05, focus vào cái lớp convolution số 1 và
+000:04:03 - 0:04:08, nhìn vào cái hình này thì các bạn có thể
+000:04:05 - 0:04:12, đoán ra xem cái feature map Sau khi thực
+000:04:08 - 0:04:15, hiện cái lớp convolution số 1 đó là có độ
+000:04:12 - 0:04:20, sâu là bao nhiêu các bạn thử tính toán
+000:04:15 - 0:04:23, xem rồi thì chúng ta để ý ha là xét trên
+000:04:20 - 0:04:26, hàng nè thì chúng ta có 3 nè 6 nè 9, 10
+000:04:23 - 0:04:29, như vậy là ở trên hàng này có 10 10 cái
+000:04:26 - 0:04:32, ô tương ứng là 10 cái lát cắt còn theo
+000:04:29 - 0:04:35, chiều dọc thì chúng ta có 3 nè 6 nè 9
+000:04:32 - 0:04:39, như vậy là nguyên cái khối này là có 10
+000:04:35 - 0:04:43, x 9 tức là 90 cái lát cắt cộng thêm 6
+000:04:39 - 0:04:45, cái feature map ở phía cuối nữa
+000:04:43 - 0:04:48, Như vậy là tổng chúng ta sẽ có là 96 như
+000:04:45 - 0:04:51, vậy là cái lớp feature map đầu tiên cái
+000:04:48 - 0:04:53, lớp feature map đầu tiên đó chính là có
+000:04:51 - 0:04:56, 96 cái lát
+000:04:53 - 0:04:59, cắt rồi và chúng ta sẽ nhìn vô cái hình
+000:04:56 - 0:05:00, thù của các cái lát cắt này nó như
+000:04:59 - 0:05:03, thế nào
+000:05:00 - 0:05:06, ha Thì ở đây chúng ta sẽ nhìn vô đâu đó
+000:05:03 - 0:05:08, chúng ta có thể đoán được hình dáng của
+000:05:06 - 0:05:11, của cái đối tượng trên ảnh gốc Ví dụ ở
+000:05:08 - 0:05:12, đây chúng ta thấy có ngựa vằn thì ở
+000:05:11 - 0:05:15, trên cái feature map các bạn cũng có thể
+000:05:12 - 0:05:16, thấy đâu đó có cái bóng dáng của cái đối
+000:05:15 - 0:05:19, tượng chính của mình đó là cái con ngựa
+000:05:16 - 0:05:21, vằn nhưng mà đương nhiên là ở đây mình
+000:05:19 - 0:05:23, đoán trước khi mình thấy được cái ảnh đầu
+000:05:21 - 0:05:23, vào
+000:05:23 - 0:05:28, thôi và khi thay đổi các cái hình này
+000:05:26 - 0:05:31, thì cái feature map của mình sẽ thay
+000:05:28 - 0:05:31, đổi
+000:05:32 - 0:05:38, rồi bây giờ sẽ đến một cái phần rất là
+000:05:35 - 0:05:41, quan trọng đó chính là chúng ta sẽ thử
+000:05:38 - 0:05:44, nghiệm đưa vào một cái chuỗi video frame
+000:05:41 - 0:05:46, ở bên phía trên bên trái ha và chúng ta
+000:05:44 - 0:05:49, sẽ xem cái feature map ở bên phải nó thay
+000:05:46 - 0:05:53, đổi như thế nào thì chúng ta sẽ quan sát
+000:05:49 - 0:05:56, là có một số cái feature map có cái độ
+000:05:53 - 0:05:58, response hay là cái độ sáng nó rất là sáng
+000:05:56 - 0:06:00, so với lại những feature map khác ví dụ
+000:05:58 - 0:06:03, như chúng ta thấy ở trung tâm màn
+000:06:00 - 0:06:05, hình có hai cái feature map này nó rất
+000:06:03 - 0:06:08, là sáng còn các cái feature map này thì
+000:06:05 - 0:06:10, chúng ta nhìn thấy có bóng dáng của cái
+000:06:08 - 0:06:12, người đang thực hiện cái demo ở đây
+000:06:10 - 0:06:14, nhưng mà cái độ sáng nó yếu hơn vậy thì
+000:06:12 - 0:06:18, hai cái feature map này nó có cái ý
+000:06:14 - 0:06:18, nghĩa là gì Các bạn có thể đoán được hay
+00:06:26 - 0:06:33, không Bây giờ chúng ta sẽ có thêm
+00:06:30 - 0:06:36, một cái cửa sổ nữa Ở đây đó là cái cửa
+00:06:33 - 0:06:38, sổ này đó là phóng to của cái feature
+00:06:36 - 0:06:40, map mà chúng ta đang highlight ở đây đó
+000:06:38 - 0:06:42, chúng ta nhấp vô chọn ha cái feature map
+000:06:40 - 0:06:45, ở đây và bên đây nó sẽ phóng to ra thì
+000:06:42 - 0:06:48, các bạn có thể đoán ra được là cái tính
+000:06:45 - 0:06:52, chất của cái feature map này đó chính là
+000:06:48 - 0:06:54, tạo ra các cái biên cạnh theo chiều dọc
+000:06:52 - 0:06:56, tạo ra các biên cạnh theo chiều dọc Tuy
+000:06:54 - 0:06:58, nhiên các bạn có để ý là cái biên cạnh
+000:06:56 - 0:07:01, theo chiều dọc thì cái phần bên phải cái
+000:06:58 - 0:07:04, feature map bên phải nó cũng có cái hình
+000:07:01 - 0:07:05, thù tương tự như vậy và cũng tạo ra các
+000:07:04 - 0:07:07, cái biên cạnh theo chiều dọc tương tự
+000:07:05 - 0:07:11, như vậy Vậy thì cái sự khác nhau giữa
+000:07:07 - 0:07:11, hai cái feature map này đó là
+000:07:12 - 0:07:19, gì rồi bây giờ chúng ta sẽ thử đưa vô
+000:07:17 - 0:07:21, một cái tờ giấy đúng không thì các bạn
+000:07:19 - 0:07:24, sẽ thấy nè Cái feature map ở bên tay
+000:07:21 - 0:07:26, trái là nó sẽ phát sáng lên cái đường
+000:07:24 - 0:07:29, biên theo chiều dọc đúng như cái gì
+000:07:26 - 0:07:30, chúng ta dự đoán Nhưng tại sao cũng là
+000:07:29 - 0:07:33, đường biên theo chiều dọc nhưng mà cái
+000:07:30 - 0:07:35, feature map bên tay phải không phát sáng
+000:07:33 - 0:07:38, đó thì ở đây hai cái feature map này đều
+000:07:35 - 0:07:40, là feature map để thể hiện cái biên cạnh
+000:07:38 - 0:07:42, theo chiều dọc nhưng mà nó sẽ có hai cái
+000:07:40 - 0:07:46, ý nghĩa khác nhau cái feature map bên tay
+000:07:42 - 0:07:50, trái là nó sẽ phát sáng nó sẽ phản hồi
+000:07:46 - 0:07:54, khi bên trái là cái vùng sáng và bên
+000:07:50 - 0:07:57, phải nó là vùng tối đó thì nó sẽ respond
+000:07:54 - 0:07:57, nó sẽ phản
+000:07:58 - 0:08:02, hồi rồi khi đưa tờ giấy này
+000:08:02 - 0:08:08, qua khi đưa cái tờ giấy này qua bên đây
+000:08:05 - 0:08:10, thì các bạn sẽ cùng xem cùng theo dõi
+000:08:08 - 0:08:12, cái feature map bên tay phải ha Thì
+000:08:10 - 0:08:14, chiếu lại lên đây chúng ta thấy là cái
+000:08:12 - 0:08:16, feature map bên tay phải cũng là biên cạnh
+000:08:14 - 0:08:18, theo chiều dọc và nó mới bắt đầu nó phát
+000:08:16 - 0:08:20, sáng trong khi đó Cái feature map bên
+000:08:18 - 0:08:23, tay trái nó đã tối nó không còn phát
+000:08:20 - 0:08:24, sáng cái biên cạnh nữa thì cái biên cạnh
+000:08:23 - 0:08:28, theo chiều dọc này nó có cái ý nghĩa Đó
+000:08:24 - 0:08:31, là nó dịch chuyển từ vùng tối sang cái
+000:08:28 - 0:08:33, vùng sáng hơn bên trái chúng ta thấy là
+000:08:31 - 0:08:36, cái gương mặt đó là có cái màu nó tối
+000:08:33 - 0:08:39, còn bên phải nó là vùng sáng thì nó trái
+000:08:36 - 0:08:41, ngược với lại cái loại feature map
+000:08:39 - 0:08:45, này ha feature map này là bên trái sáng
+000:08:41 - 0:08:46, bên phải tối thì nó sẽ
+000:08:45 - 0:08:50, respond
+000:08:46 - 0:08:53, còn feature map bên đây thì là bên trái
+000:08:50 - 0:08:54, tối bên phải sáng thì nó mới respond thì
+000:08:53 - 0:08:58, đó chính là cái ý nghĩa của hai cái
+000:08:54 - 0:08:58, feature map này
+000:08:59 - 0:09:04, Vậy tương tự như hồi nãy đã đề cập thì
+000:09:02 - 0:09:06, hai cái feature map tương ứng ở hai cái
+000:09:04 - 0:09:09, vị trí này thì nó được tạo ra bởi các
+000:09:06 - 0:09:12, cái filter khác nhau và ở đây thì chúng
+000:09:09 - 0:09:14, ta sẽ cùng trực quan hóa cái filter của
+000:09:12 - 0:09:16, hai cái feature map này đối với cái
+000:09:14 - 0:09:18, feature map bên tay phải á thì chúng ta
+000:09:16 - 0:09:21, sẽ trực quan lên thì chúng ta thấy là à
+000:09:18 - 0:09:24, những cái vùng nào mà có giá trị thấp nó
+000:09:21 - 0:09:26, sẽ là màu tối và vùng nào có giá trị cao
+000:09:24 - 0:09:29, thì nó sẽ là màu sáng thì chúng ta thấy
+000:09:26 - 0:09:31, là Ừ đúng như là cái hình minh họa của
+000:09:29 - 0:09:33, cái feature map thì đối với cái filter nó
+000:09:31 - 0:09:35, cũng có tính chất tương tự như vậy
+000:09:33 - 0:09:39, filter chúng ta sẽ thấy là bên trái sẽ
+000:09:35 - 0:09:42, có vùng tối và bên phải nó sẽ có vùng
+000:09:39 - 0:09:45, sáng tương tự cái filter ở
+000:09:42 - 0:09:48, bên tay trái bên trái sẽ là vùng sáng và
+000:09:45 - 0:09:50, bên phải sẽ là vùng tối đó thì ý nghĩa
+000:09:48 - 0:09:53, của hai cái filter này đó chính là lọc
+000:09:50 - 0:09:57, các cái biên cạnh theo chiều dọc Nhưng mà
+000:09:53 - 0:09:59, bên cái filter này thì sẽ là chuyển từ
+000:09:57 - 0:10:04, tối sang sáng còn cái filter này thì
+000:09:59 - 0:10:04, chuyển từ sáng từ sáng sang
+0:10:09 - 0:10:15, tối rồi sau đó thì chúng ta sẽ tiến hành
+0:10:11 - 0:10:17, trực quan hóa các cái lớp pooling,
+0:10:15 - 0:10:18, normalization thì trong cái bài học
+0:10:17 - 0:10:20, chúng ta không đề cập đến normalization
+0:10:18 - 0:10:22, nhưng mà normalization chính là một cái phép mà
+0:10:20 - 0:10:26, để chuẩn hóa cái feature map của
+0:10:22 - 0:10:28, mình rồi lớp convolution số 3 thì chúng ta
+0:10:26 - 0:10:31, thấy là đến cái lớp convolution số 3 thì cái
+0:10:28 - 0:10:33, số lượng feature map của mình nhiều hơn và
+0:10:31 - 0:10:35, đồng thời là cái kích thước của nó cũng
+010:33 - 0:10:37, sẽ nhỏ hơn nhưng mà đồng thời thì khi
+010:35 - 0:10:39, chúng ta nhìn vô các cái feature map này
+010:37 - 0:10:42, chúng ta sẽ khó mường tượng hơn cái đối
+010:39 - 0:10:44, tượng gốc ở đây đúng không Chúng ta sẽ
+010:42 - 0:10:46, thấy các cái Đốm sáng còn chúng ta sẽ
+010:44 - 0:10:50, không còn thấy cái bóng dáng của cái đối
+010:46 - 0:10:50, tượng gốc ở trên cái ảnh đầu vào
+010:54 - 0:11:00, nữa và đến cái lớp convolution cuối cùng
+010:57 - 0:11:04, đó là lớp convolution số 5 thì chúng ta
+011:00 - 0:11:05, sẽ trực quan hóa một vài cái feature map
+011:04 - 0:11:08, và ở đây chúng ta thấy là có một cái
+011:05 - 0:11:11, feature map nó rất là
+011:08 - 0:11:14, sáng và khi phóng to lên ở đây chúng ta
+011:11 - 0:11:17, thấy là nó sẽ có một số cái tính chất gì
+011:14 - 0:11:20, đấy thì để làm sao biết cái ý nghĩa của
+011:17 - 0:11:23, cái feature map này là gì thì người ta
+011:20 - 0:11:27, có một cái trick có một cái mẹo như
+011:23 - 0:11:31, sau đó là với cái feature map này người
+011:27 - 0:11:35, ta sẽ thống kê lại tất cả chín cái tấm ảnh
+011:31 - 0:11:37, chín cái tấm ảnh mà làm cho cái feature
+011:35 - 0:11:41, map này nó sáng nhiều nhất nó sáng rực
+011:37 - 0:11:44, nhất thì các bạn đoán xem điểm chung của
+011:41 - 0:11:46, tất cả chín cái tấm ảnh này đó là gì
+011:44 - 0:11:49, thì chúng ta sẽ biết được cái concept
+011:46 - 0:11:52, cái ý nghĩa của cái feature map này là
+011:49 - 0:11:54, gì thì chắc là các bạn có thể đoán ra
+011:52 - 0:11:56, được rồi đúng không chín cái tấm ảnh
+011:54 - 0:12:00, này điểm chung của nó nó đều là có cái
+011:56 - 0:12:02, gương mặt và chúng ta cũng để ý đó đó
+012:00 - 0:12:05, là trên cái khu vực mà nó phát sáng ở
+012:02 - 0:12:07, đây đúng không Thì chúng ta ánh xạ lên
+012:05 - 0:12:09, trên cái ảnh gốc á chúng ta ánh xạ lên
+012:07 - 0:12:14, trên ảnh gốc thì chúng ta cũng thấy đó
+012:09 - 0:12:16, là cái vùng gương mặt là nó phát sáng à
+012:14 - 0:12:19, Cái vùng gương mặt nó cũng tương ứng là
+012:16 - 0:12:22, cái vị trí mà mình phát sáng ở đây đó
+012:19 - 0:12:25, thì đó là chúng ta hình dung cái concept
+012:22 - 0:12:27, của cái lớp convolution số 5 tại cái feature
+012:25 - 0:12:30, map này ha cái ý nghĩa của cái concept
+012:27 - 0:12:32, này đó là thể hiện cái sự xuất hiện của
+012:30 - 0:12:32, gương
+012:39 - 0:12:45, mặt rồi và khi cái người đàn ông này họ
+012:42 - 0:12:46, di chuyển về tay phải họ di chuyển về
+012:45 - 0:12:48, tay phải thì cái feature map tương ứng
+012:46 - 0:12:50, các bạn thấy là cái vùng Đốm sáng của
+012:48 - 0:12:53, mình cũng dịch chuyển về tay phải thì
+012:50 - 0:12:55, điều này nó thể hiện cái chuyện gì thì
+012:53 - 0:12:58, chút nữa chúng ta sẽ cùng bình luận
+012:55 - 0:13:00, thôi. Sau đó có một cái người đàn ông mà áo
+012:58 - 0:13:02, đen họ bước vào cái khung hình và chúng
+013:00 - 0:13:04, ta thấy lại có một cái sự xuất hiện của
+013:02 - 0:13:06, một cái Đốm sáng nữa thì chúng ta thấy
+013:04 - 0:13:09, là ok như vậy cái giả thuyết của chúng
+013:06 - 0:13:11, ta là đã đúng Đó là cái concept của
+013:09 - 0:13:14, chung của chín cái tấm hình này đó chính
+013:11 - 0:13:16, là có cái sự xuất hiện của gương mặt thì
+013:14 - 0:13:17, khi có một cái gương mặt mới đi vào thì
+013:16 - 0:13:21, cái Đốm sáng của cái gương mặt đó nó
+013:17 - 0:13:21, cũng phát sáng

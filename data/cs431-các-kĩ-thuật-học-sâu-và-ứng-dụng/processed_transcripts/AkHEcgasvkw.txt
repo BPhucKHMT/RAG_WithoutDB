@@ -118,7 +118,7 @@
 0:12:25 - 0:12:28, nó vẫn có những mối quan hệ khác nữa.
 0:12:28 - 0:12:32, Và mối quan hệ về thủ đô đất nước, mối quan hệ về so sánh hơn,
 0:12:32 - 0:12:41, rồi mối quan hệ về đất nước, rồi mối quan hệ về kim loại và ký hiệu
-0:12:41 - 0:12:43, và ký hiệu trong cái bảng tuần hoàn,
+0:12:41 - 0:12:43, và ký hiệu trong cái bảng phân loại tuần hoàn,
 0:12:43 - 0:12:47, rồi mối quan hệ về các công ty sản phẩm v.v.
 0:12:47 - 0:12:53, thì mô hình Word2Vec thể hiện được trong không gian embedding.
 0:12:53 - 0:13:00, Và như vậy thì chúng ta đã tìm hiểu về mô hình,

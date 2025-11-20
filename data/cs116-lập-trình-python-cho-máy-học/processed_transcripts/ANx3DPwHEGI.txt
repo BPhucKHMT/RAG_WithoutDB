@@ -1,0 +1,271 @@
+0:00:01 - 0:00:13, [âm nhạc]
+0:00:14 - 0:00:19, Hôm nay chúng ta sẽ cùng đến với bài học
+0:00:16 - 0:00:22, tiếp theo đó là các cái mô hình học
+0:00:19 - 0:00:24, không giám sát và tên tiếng Anh của cái
+0:00:22 - 0:00:25, mô hình học không giám sát đó chính là un-
+0:00:24 - 0:00:28, supervised
+0:00:25 - 0:00:31, learning. Đầu tiên thì chúng ta sẽ cùng
+0:00:28 - 0:00:34, giới thiệu về các khái niệm trong học
+0:00:31 - 0:00:36, không giám sát và sau đó thì chúng ta sẽ
+0:00:34 - 0:00:39, cùng tìm hiểu chi tiết hơn các cái thuật
+0:00:36 - 0:00:41, toán trong học không giám sát bao gồm
+0:00:39 - 0:00:43, các cái mô hình gom nhóm hoặc là
+0:00:41 - 0:00:46, clustering, mô hình giảm chiều dữ liệu
+0:00:43 - 0:00:47, hay là dimension reduction, tức là giảm
+0:00:46 - 0:00:50, chiều dữ
+0:00:47 - 0:00:53, liệu. Đối với cái khái niệm về học không
+0:00:50 - 0:00:55, giám sát thì đây là một cái nhánh trong
+0:00:53 - 0:00:57, cái lĩnh vực về Machine Learning và nó
+0:00:55 - 0:00:59, có cái nhiệm vụ, hai cái nhiệm vụ chính.
+0:00:57 - 0:01:02, Nhiệm vụ đầu tiên đó là nó học ra được
+0:00:59 - 0:01:04, cái phân bố của cái dữ liệu và tiếp theo
+0:01:02 - 0:01:06, sau khi chúng ta đã học được cái phân bố
+0:01:04 - 0:01:09, của dữ liệu rồi thì nó sẽ tiến hành là
+0:01:06 - 0:01:12, biểu diễn cái dữ liệu của mình sao cho
+0:01:09 - 0:01:14, nó hiệu quả hơn. Thì chi tiết về các cái
+0:01:12 - 0:01:16, khái niệm học phân bố dữ liệu hoặc là
+0:01:14 - 0:01:18, biểu diễn dữ liệu hiệu quả hơn thì chúng
+0:01:16 - 0:01:23, ta sẽ được trình bày trong những cái
+0:01:18 - 0:01:25, phần tiếp theo và đầu vào cho cái thuật
+0:01:23 - 0:01:27, toán học không giám sát của mình đó
+0:01:25 - 0:01:31, chính là chúng ta chỉ cần có cái dữ liệu
+0:01:27 - 0:01:34, X. Nếu như các cái mô hình dự đoán
+0:01:31 - 0:01:37, chúng ta sẽ phải có cái dữ liệu X và cái
+0:01:34 - 0:01:40, giá trị Y là cái giá trị dự đoán với
+0:01:37 - 0:01:43, cái đặc trưng đầu vào là X thì đây chính
+0:01:40 - 0:01:46, là học có giám sát hay còn gọi là
+0:01:43 - 0:01:46, supervised
+0:01:49 - 0:01:56, learning. Rồi thì đối với học không giám
+0:01:53 - 0:01:59, sát thì chúng ta sẽ không cần có cái
+0:01:56 - 0:02:03, thông tin đầu ra này mà chúng ta chỉ cần
+0:01:59 - 0:02:05, có cái dữ kiện đầu vào này thôi. Và như
+0:02:03 - 0:02:08, đã đề cập ở trước, tức là chúng ta sẽ tìm
+0:02:05 - 0:02:11, cách để gom nhóm các cái dữ liệu này sao
+0:02:08 - 0:02:13, cho nó đưa vô những cái phân bố, chúng ta
+0:02:11 - 0:02:15, sẽ gom nhóm dựa trên cái phân bố của cái
+0:02:13 - 0:02:17, dữ liệu. Và khi chúng ta đã phân nhóm
+0:02:15 - 0:02:21, xong rồi thì chúng ta có thể chuyển đổi
+0:02:17 - 0:02:23, cái X này thành một cái dạng thức là X'
+0:02:21 - 0:02:26, và cái X' này thì nó là một cái dạng
+0:02:23 - 0:02:28, biểu diễn mới, nó hiệu quả hơn so với X.
+0:02:26 - 0:02:31, Thì đó chính là cái mục tiêu của học
+0:02:28 - 0:02:34, không giám sát. Và dưới đây đó là một số
+0:02:31 - 0:02:36, cái chủ đề chính trong học giám sát bao
+0:02:34 - 0:02:38, gồm là chủ đề gom nhóm dữ liệu hay còn
+0:02:36 - 0:02:38, gọi là
+0:02:39 - 0:02:44, clustering và giảm chiều dữ liệu đó là
+0:02:44 - 0:02:47, dimension
+0:02:48 - 0:02:53, reduction. Đây là hai chủ đề chính được
+0:02:51 - 0:02:56, thảo luận rất là nhiều trong các cái mô
+0:02:53 - 0:02:58, hình học không giám sát. Đầu tiên chúng
+0:02:56 - 0:03:00, ta sẽ nói về cái khái niệm phân bố của
+0:02:58 - 0:03:03, dữ liệu, thế nào gọi là phân bố của dữ
+0:03:00 - 0:03:06, liệu thì chúng ta sẽ xét một cái ví dụ
+0:03:03 - 0:03:09, sau. Đầu tiên đó là chúng ta có một cái
+0:03:06 - 0:03:13, câu hỏi là An có điểm trung bình môn
+0:03:09 - 0:03:16, học của bạn á là 8,8. Và câu hỏi
+0:03:13 - 0:03:20, đặt ra đó là điểm của bạn An sẽ được xếp
+0:03:16 - 0:03:23, vào loại là giỏi, khá hay là trung bình?
+0:03:20 - 0:03:25, Chắc hẳn đa số các bạn ở đây sẽ chọn cái
+0:03:23 - 0:03:27, đáp án của mình là giỏi. Tuy nhiên các
+0:03:25 - 0:03:31, bạn cần phải nhớ rằng chúng ta không
+0:03:27 - 0:03:33, biết trước điểm của bạn An là 8,8 là
+0:03:31 - 0:03:35, nó nằm trong cái khoảng giá trị từ bao
+0:03:33 - 0:03:38, nhiêu nhỏ nhất là bao nhiêu cho đến cao
+0:03:35 - 0:03:41, nhất là bao nhiêu. Muốn biết điểm của bạn
+0:03:38 - 0:03:43, An được xếp loại là giỏi, khá hay là
+0:03:41 - 0:03:46, Trung bình thì chúng ta phải đưa cái
+0:03:43 - 0:03:50, điểm của bạn An vào trong cái bố cục
+0:03:46 - 0:03:52, trong cái phân bố tổng thể của điểm của
+0:03:50 - 0:03:54, các cái bạn khác trong lớp thì khi đó
+0:03:52 - 0:03:57, chúng ta mới biết trước là mới biết được
+0:03:54 - 0:04:01, là bạn An là giỏi, khá hay là trung bình.
+0:03:57 - 0:04:05, Ví dụ với cái phân bố điểm như sau thì
+0:04:01 - 0:04:08, chúng ta thấy là điểm của bạn An là nằm
+0:04:05 - 0:04:10, ở cái nửa sau đúng không, nằm ở nửa sau
+0:04:08 - 0:04:12, của cái phân bố. Như vậy điểm của bạn An
+0:04:10 - 0:04:16, là thuộc loại
+0:04:12 - 0:04:16, giỏi hoặc là xuất
+0:04:18 - 0:04:24, sắc. Và với cái phân bố điểm như thế này
+0:04:22 - 0:04:27, thì chúng ta hiểu rằng là à, có lẽ đây là
+0:04:24 - 0:04:29, cái điểm ở trong lớp của bạn. Điểm của
+0:04:27 - 0:04:32, bạn là nhỏ nhất của mình là 0 và lớn nhất
+0:04:29 - 0:04:36, của mình là 10. Tuy nhiên nếu như
+0:04:32 - 0:04:40, chúng ta nhìn ở trong một cái phân bố
+0:04:36 - 0:04:42, khác đúng không, điểm 8,8 của bạn nằm ở
+0:04:40 - 0:04:45, đây, tức là nó nằm ở khoảng giữa của cái
+0:04:42 - 0:04:48, phân bố điểm thì rõ ràng là với cái phân
+0:04:45 - 0:04:50, bố này, với cái phân bố này điểm của bạn
+0:04:48 - 0:04:52, An sẽ nằm ở mức độ là trung bình so với
+0:04:50 - 0:04:55, mặt bằng chung của lớp. Và chúng ta thấy
+0:04:52 - 0:04:57, rằng là có rất nhiều cái cuộc thi hoặc
+0:04:55 - 0:04:59, là có rất nhiều những cái chương trình
+0:04:57 - 0:05:02, mà điểm của mình nó sẽ không từ 0
+0:04:59 - 0:05:06, cho đến 10 mà nó có thể là từ 0 cho đến
+0:05:02 - 0:05:08, 20. Do đó thì với cái điểm 8,8 của bạn
+0:05:06 - 0:05:10, thì nó sẽ nằm ở cái mức độ là ở giữa, tức
+0:05:08 - 0:05:14, là mức độ trung
+0:05:10 - 0:05:18, bình. Và cuối cùng đó là nếu như cái phân
+0:05:14 - 0:05:19, bố điểm của bạn mà nằm ở đây thì rõ ràng
+0:05:18 - 0:05:23, là điểm của bạn nằm trong cái nhóm gọi
+0:05:19 - 0:05:23, là kém hoặc là
+0:05:23 - 0:05:29, yếu. Thì có một số
+0:05:27 - 0:05:33, cái chương trình học điểm của mình
+0:05:29 - 0:05:36, nó trải dài từ 0 cho đến 100, tức là cái
+0:05:33 - 0:05:38, hệ 100 điểm. Như vậy thì cái điểm 8,8 này
+0:05:36 - 0:05:42, là một cái điểm rất là thấp. Như vậy thì
+0:05:38 - 0:05:45, cả ba cái phân bố ở đây thì nó tượng
+0:05:42 - 0:05:47, trưng cho ba cái tình huống, nó sẽ tượng
+0:05:45 - 0:05:50, trưng cho ba cái tình huống và nó chỉ có
+0:05:47 - 0:05:52, thể tính toán ra được, vẽ ra được các cái
+0:05:50 - 0:05:55, biểu đồ này khi chúng ta đặt cái điểm
+0:05:52 - 0:05:57, của bạn An với những cái bạn khác ở
+0:05:55 - 0:06:00, trong cùng một cái lớp học thì khi đó
+0:05:57 - 0:06:04, chúng ta mới có được cái sự so sánh.
+0:06:00 - 0:06:07, Và cái biểu đồ này thì nó được gọi là
+0:06:04 - 0:06:10, phân bố của dữ liệu hoặc là một cái tên
+0:06:07 - 0:06:12, gọi khác đó là cái biểu đồ histogram. Tuy
+0:06:10 - 0:06:14, nhiên với cái biểu đồ histogram thì nó
+0:06:12 - 0:06:16, sẽ là ở dạng biểu đồ cột, còn ở đây là ở
+0:06:14 - 0:06:20, cái dạng đường liên tục nên mình sẽ gọi
+0:06:16 - 0:06:21, đó là phân bố của cái dữ liệu. Histogram
+0:06:20 - 0:06:23, chỉ là một cái trường hợp rời rạc của
+0:06:21 - 0:06:25, cái phân bố của dữ liệu thôi. Ví dụ như
+0:06:23 - 0:06:27, nếu chúng ta thay vì chúng ta vẽ cái
+0:06:25 - 0:06:31, đường liên tục như thế này, chúng ta vẽ
+0:06:27 - 0:06:31, dưới dạng là biểu đồ cột
+0:06:33 - 0:06:39, thì khi đó là nó gọi là biểu đồ histogram
+0:06:36 - 0:06:42, đó. Thì ở cái dạng rời rạc như thế này.
+0:06:39 - 0:06:44, Và như vậy thì kết luận của chúng ta đó
+0:06:42 - 0:06:47, là chúng ta không thể biết được cái xếp
+0:06:44 - 0:06:49, loại của bạn An nếu như chúng ta
+0:06:47 - 0:06:52, không biết được cái phân bố của dữ
+0:06:49 - 0:06:54, liệu. Và như vậy thì cái khả năng biểu
+0:06:52 - 0:06:55, diễn dữ liệu này nó còn cho chúng ta
+0:06:54 - 0:06:59, thấy
+0:06:55 - 0:07:01, cái ẩn ý ở đằng phía sau đó là gì? Chúng
+0:06:59 - 0:07:05, ta xét đến một cái ví dụ tiếp theo:
+0:07:01 - 0:07:07, cho trước hai cái điểm môn Văn và môn
+0:07:05 - 0:07:10, Toán của các bạn trong lớp học và chúng
+0:07:07 - 0:07:13, ta sẽ phân loại học lực của từng bạn như
+0:07:10 - 0:07:14, thế nào? Thì giả sử như đây là cái thang
+0:07:13 - 0:07:16, điểm ha. Ví dụ như đây là điểm thấp nhất
+0:07:14 - 0:07:19, của mình là 0 và điểm cao nhất của mình
+0:07:16 - 0:07:21, là ví dụ như là 10. Tương tự như vậy điểm
+0:07:19 - 0:07:24, Văn thấp nhất là 0 và điểm cao nhất là 10.
+0:07:21 - 0:07:27, Thì chúng ta thấy rằng là ở đây những
+0:07:24 - 0:07:30, cái bạn, ba cái bạn này nè, có cái cùng
+0:07:27 - 0:07:34, một cái tính chất đó là điểm môn Toán và
+0:07:30 - 0:07:36, điểm môn Văn đều thấp. Thì điều đó có
+0:07:34 - 0:07:38, nghĩa là gì? Tức là đây là những bạn có
+0:07:36 - 0:07:41, học lực rất là yếu đúng không? Điểm Toán
+0:07:38 - 0:07:45, và điểm Văn đều là thấp.
+0:07:41 - 0:07:48, Rồi đây là những cái tính chất
+0:07:45 - 0:07:51, của các cái bạn khác trong lớp. Ví dụ như
+0:07:48 - 0:07:54, nhóm các bạn ở đây. Đây là những bạn mà
+0:07:51 - 0:07:57, có điểm Văn rất là cao nhưng mà điểm
+0:07:54 - 0:07:59, Toán thì là thấp. Các bạn ở trong nhóm
+0:07:57 - 0:08:03, này thì là những bạn có điểm Toán và
+0:07:59 - 0:08:04, điểm Văn đều rất là cao. Thì hay nói cách
+0:08:03 - 0:08:07, khác đó là những bạn này là những bạn có
+0:08:04 - 0:08:10, cái thành tích học lực rất là xuất
+0:08:07 - 0:08:13, sắc. Và ở đây là những bạn mà có điểm
+0:08:10 - 0:08:15, Toán rất là cao và điểm Văn thì lại rất
+0:08:13 - 0:08:17, là thấp. Thì đây là mình xếp vào loại
+0:08:15 - 0:08:20, trung bình. Còn nếu như hai cái trung
+0:08:17 - 0:08:22, bình này chúng ta ánh xạ nó sang cái cái
+0:08:20 - 0:08:24, khái niệm trong cái cuộc sống của mình á,
+0:08:22 - 0:08:26, khi mà chúng ta học ở chương trình cấp
+0:08:24 - 0:08:29, hai, cấp ba thì những bạn nằm ở đây chính
+0:08:26 - 0:08:31, là những bạn mà có học lực trung bình
+0:08:29 - 0:08:35, nhưng mà theo kiểu đó là học lệch. Các
+0:08:31 - 0:08:39, bạn ở đây sẽ là học lệch
+0:08:35 - 0:08:39, Toán. Còn các bạn ở đây là học
+0:08:39 - 0:08:45, lệch
+0:08:42 - 0:08:47, Văn. Như vậy thì chúng ta thấy là với
+0:08:45 - 0:08:52, cái điểm số của hai môn Toán và Văn,
+0:08:47 - 0:08:54, chúng ta đã có được bốn cụm. Mỗi cụm thì
+0:08:52 - 0:08:58, sẽ bao gồm các cái bạn có cùng một cái
+0:08:54 - 0:08:59, tính chất. Ví dụ ba bạn ở đây là ba bạn
+0:08:58 - 0:09:02, có cùng một tính chất đó là điểm Toán
+0:08:59 - 0:09:05, và Văn đều rất là thấp hay là những bạn
+0:09:02 - 0:09:08, có học lực rất là yếu. Những bạn ở đây
+0:09:05 - 0:09:10, đúng không, năm bạn ở đây thì đều có một
+0:09:08 - 0:09:14, chung một cái tính chất đó là điểm Toán
+0:09:10 - 0:09:16, và điểm Văn thì ở mức độ là cộng lại thì
+0:09:14 - 0:09:18, đó là trung bình. Nhưng mà những bạn ở
+0:09:16 - 0:09:20, trong nhóm này thì thuộc xếp vào loại đó
+0:09:18 - 0:09:22, là học lệch Toán. Còn những bạn ở đây thì
+0:09:20 - 0:09:26, được xếp vào loại là học lệch Văn. Và
+0:09:22 - 0:09:28, cuối cùng đó là bốn cái bạn ở đây thì
+0:09:26 - 0:09:32, đều có chung một cái tính chất đó chính
+0:09:28 - 0:09:35, là học lực xuất sắc. Và như vậy thì thay
+0:09:32 - 0:09:37, vì chúng ta biểu diễn cái dữ liệu thô,
+0:09:35 - 0:09:41, thay vì chúng ta biểu diễn dữ liệu thô
+0:09:37 - 0:09:44, tức là bao gồm điểm Toán và
+0:09:41 - 0:09:47, Văn thì chúng ta chỉ cần lưu cái đặc
+0:09:44 - 0:09:49, trưng học lực của cái bạn đó thôi. Chúng
+0:09:47 - 0:09:51, ta chỉ cần lưu đây là bạn xuất sắc, đây
+0:09:49 - 0:09:53, là bạn yếu, đây là bạn Trung Bình học
+0:09:51 - 0:09:56, lệch Văn, đây là bạn Trung Bình mà học
+0:09:53 - 0:09:59, lệch Toán thì điều đó là nó để góp phần
+0:09:56 - 0:10:01, giúp cho chúng ta giảm chiều của dữ liệu.
+0:10:01 - 0:10:02, Bình thường chúng ta phải lưu hai trường
+0:10:01 - 0:10:05, là Toán và
+0:10:02 - 0:10:07, Văn. Bây giờ chúng ta chỉ cần lưu đúng
+0:10:05 - 0:10:10, một trường thôi đó là học lực của bạn.
+0:10:07 - 0:10:12, Bạn đó là yếu, là trung bình lệch Toán
+0:10:10 - 0:10:14, hay là trung bình lệch Văn hay là bạn đó
+0:10:12 - 0:10:16, xuất sắc. Như vậy thì từ hai trường, chúng
+0:10:14 - 0:10:18, ta giảm xuống dưới còn một trường, tức là
+0:10:16 - 0:10:22, chúng ta đã giảm được 50% số thuộc
+0:10:18 - 0:10:27, tính. Khi giảm từ hai cái feature, từ hai
+0:10:22 - 0:10:27, feature xuống còn một
+0:10:28 - 0:10:33, feature thì đã giảm cho mình được là 50%
+0:10:31 - 0:10:35, cái số lượng thuộc tính rồi. Và giảm
+0:10:33 - 0:10:38, chiều dữ liệu sẽ được thảo luận chi tiết
+0:10:35 - 0:10:41, hơn ở trong cái phần tiếp theo.
+0:10:38 - 0:10:44, Và tiếp theo đó là nó đã thể hiện được
+0:10:41 - 0:10:48, cái đặc trưng theo nhóm của mẫu dữ liệu.
+0:10:44 - 0:10:51, Nghĩa là sao? Tất cả những bạn mà nằm
+0:10:48 - 0:10:54, trong cùng một cái nhóm như thế này thì
+0:10:51 - 0:10:58, nó sẽ có cùng một cái đặc trưng với nhau.
+0:10:54 - 0:10:59, Thì như đã nói ở trước đây thì ba cái
+0:10:58 - 0:11:03, bạn này là đều có chung một cái đặc
+0:11:00 - 0:11:05, trưng đó là yếu cả về Toán và Văn. Trong
+0:11:03 - 0:11:07, khi đó những bạn ở đây thì đều là có
+0:11:05 - 0:11:09, chung một cái đặc trưng theo nhóm đó là
+0:11:07 - 0:11:13, những bạn có thành tích xuất
+0:11:09 - 0:11:15, sắc. Và lưu ý đó là ở đây các cái khái
+0:11:13 - 0:11:17, niệm yếu, xuất sắc, học lệch Toán, học lệch
+0:11:15 - 0:11:22, Văn đó là những cái khái niệm mà chúng
+0:01:17 - 0:11:24, ta ánh xạ từ cái môi trường bên ngoài, từ
+0:01:22 - 0:11:27, cái kinh nghiệm trong thực tế của chúng
+0:01:24 - 0:11:29, ta để chúng ta đặt tên cho nó là yếu,
+0:01:27 - 0:11:32, xuất sắc hay là trung bình. Còn thực tế
+0:01:29 - 0:11:35, thì các cái thuật toán gom nhóm nó không
+0:01:32 - 0:11:38, quan tâm đến cái tên gọi đó. Mỗi nhóm này
+0:01:35 - 0:11:41, nó chỉ được gán bởi một cái cluster ID,
+0:01:38 - 0:11:45, một cái định danh thôi. Ví dụ, trung
+0:01:41 - 0:11:48, bình thì nó sẽ được gán là 3, yếu thì nó
+0:01:45 - 0:11:51, sẽ gán là 2, trung bình bên đây thì nó sẽ
+0:01:48 - 0:11:54, gán là 1 và xuất sắc ở bên đây thì nó sẽ
+0:01:51 - 0:11:56, gán là 0. Và lưu ý là các cái con số 0, 1,
+0:01:54 - 0:12:00, 2, 3 này nó không có thể hiện cái sự tăng
+0:01:56 - 0:12:02, giảm, cái sự gọi là tính thứ tự ở đây.
+0:02:00 - 0:12:05, Thôi có thể là các cái nhãn này có thể
+0:02:02 - 0:12:08, đặt là nhãn bất kỳ và không nhất thiết
+0:02:05 - 0:12:10, là nhãn nào, ví dụ những bạn xuất sắc thì
+0:02:08 - 0:12:11, là cái ID của mình nó sẽ cao hơn, không
+0:02:10 - 0:12:13, nhất thiết như vậy. Ở đây là các cái giá
+0:02:11 - 0:12:16, trị nó được gán ngẫu nhiên. Như vậy thì
+0:02:13 - 0:12:20, với cái thuật toán gom cụm nó sẽ được
+0:02:16 - 0:12:24, gán các cái điểm, các cái đặc trưng mà có
+0:02:20 - 0:12:27, cùng một cái tính chất vào cùng một cái
+0:02:24 - 0:12:29, ID. Và việc đặt tên cho nó thì đó là dựa
+0:02:27 - 0:12:31, trên kinh nghiệm của chúng ta, chứ nó
+0:02:29 - 0:12:33, không phải là thuật toán, nó sẽ không có
+0:02:31 - 0:12:36, cần quan tâm và nó cũng không cần biết
+0:02:33 - 0:12:37, đó là những bạn đó trong cái cuộc sống
+0:02:36 - 0:12:40, thực của mình thì bạn đó gọi tên như thế
+0:02:37 - 0:12:40, nào.

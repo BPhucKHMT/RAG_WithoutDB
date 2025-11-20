@@ -1,0 +1,189 @@
+0:00:01 - 0:00:07, tiếp theo đó là cấu trúc dữ liệu touble
+0:00:04 - 0:00:09, thì đây là một cái đối tượng dùng để lưu
+0:00:07 - 0:00:12, trữ tập hợp các các đối tượng khác nhau
+0:00:09 - 0:00:15, và touble thì nó không thể nó không thể
+0:00:12 - 0:00:17, thực hiện nó không thể thực hiện cái
+0:00:15 - 0:00:20, thao tác thêm bớt Thay đổi cái giá trị
+0:00:17 - 0:00:22, thay đổi các giá trị của cái touble thì
+0:00:20 - 0:00:24, đây là một cái đặc tính mà khiến cho
+0:00:22 - 0:00:27, toppo nó ít được sử dụng nhất Tuy nhiên
+0:00:24 - 0:00:29, nó vẫn có cái giá trị nhất định Vì túc
+0:00:27 - 0:00:32, hồ không được phép thay đổi giá trị do
+0:00:29 - 0:00:36, đó thì tốc độ thường được sử dụng để làm
+0:00:32 - 0:00:37, cái kết quả trả về của một cái hàm số nó
+0:00:36 - 0:00:39, thường được dùng để đóng gói các cái kết
+0:00:37 - 0:00:42, quả trả về của một hàm số để đảm bảo là
+0:00:39 - 0:00:45, trong quá trình mà trẻ Tri Tôn Các kết
+0:00:42 - 0:00:47, quả về thì nó sẽ không bị thay đổi ở
+0:00:45 - 0:00:49, trong cái quá trình mà chuyển đổi dữ
+0:00:47 - 0:00:51, liệu từ cái hàm ra bên ngoài hàng từ
+0:00:49 - 0:00:55, trong hẻm ra bên ngoài hẹp
+0:00:51 - 0:00:57, và cái cú pháp của touble đó chính là
+0:00:55 - 0:00:59, chúng ta sẽ dùng cái dấu cặp dấu mở
+0:00:57 - 0:01:01, ngoặc và đóng ngoặc tròn này và chúng ta
+0:00:59 - 0:01:03, sẽ điền các quay trở lại và các giá trị
+0:01:01 - 0:01:06, giá trị 1 2 ở đây thì nó có thể thuộc
+0:01:03 - 0:01:10, các cái kiểu dữ liệu khác nhau
+0:01:06 - 0:01:12, thì vì chính touble nó không có thể thực
+0:01:10 - 0:01:14, hiện được các cái thao tác thêm bớt thay
+0:01:12 - 0:01:16, đổi giá trị nó chỉ có nhiệm vụ là đóng
+0:01:14 - 0:01:18, gói các cái những gì giá trị lại chính
+0:01:16 - 0:01:20, vì vậy nên cái bộ nhớ được sử dụng cho
+0:01:18 - 0:01:21, Oppo nó thường sẽ nhỏ hơn list Tại vì nó
+0:01:20 - 0:01:25, không có hỗ trợ các cái thao tác thêm
+0:01:21 - 0:01:27, xóa sửa và đồng thời thì cái touble có
+0:01:25 - 0:01:31, nó sẽ có cái tốc độ xử lý nhanh hơn so
+0:01:27 - 0:01:33, với list Chính vì nó ít hỗ trợ các cái
+0:01:31 - 0:01:36, thao tác kia nên nó đơn giản hơn list
+0:01:33 - 0:01:38, nên tốc độ xử lý của nó sẽ nhanh hơn
+0:01:36 - 0:01:40, và một trong những cái cấu trúc dữ liệu
+0:01:38 - 0:01:43, khác cũng được sử dụng
+0:01:40 - 0:01:47, không có quá phổ biến bằng đó chính là
+0:01:43 - 0:01:51, tập hợp đó là xét thì xét nó có một cái
+0:01:47 - 0:01:53, đặc tính đó là nó không chứa nó không
+0:01:51 - 0:01:55, chứa nó không thể chứa các cái phần tử
+0:01:53 - 0:01:58, trùng nhau tại vì trong Toán học chúng
+0:01:55 - 0:01:59, ta biết rồi nguyên tắc của tập hợp đó là
+0:01:58 - 0:02:02, các cái phần tử trong tập hợp nó không
+0:01:59 - 0:02:03, được phép cùng nhau Do đó nếu chúng ta
+0:02:02 - 0:02:07, khai báo
+0:02:03 - 0:02:12, tập hợp là bao gồm số 1 số 3 rồi lại số
+0:02:07 - 0:02:16, 1 số 5 đổi lại số 3 ví dụ vậy thì nó sẽ
+0:02:12 - 0:02:19, tự động nó sẽ tự động ép về đó là chúng
+0:02:16 - 0:02:22, ta chỉ có các giá trị là 1 3 và 5 mà
+0:02:19 - 0:02:23, thôi đương nhiên cái thứ tự 135 này thì
+0:02:22 - 0:02:26, ở đây mình chọn là như vậy nhưng mà
+0:02:23 - 0:02:27, trong tùy vào cái ngôn ngữ lập trình
+0:02:26 - 0:02:29, Python trong quá trình thực thi nó có
+0:02:27 - 0:02:32, thể thứ tự nó đã đảo lại mình không biết
+0:02:29 - 0:02:34, được và trong cái tập hợp trong cái set
+0:02:32 - 0:02:38, nó còn một cái tính chất nữa đó là nó
+0:02:34 - 0:02:40, không thể truy theo chỉ số tại vì cái
+0:02:38 - 0:02:43, thứ tự 135 nó có thể lúc thì nó sẽ lưu
+0:02:40 - 0:02:45, là 3 1 5 nên chính vì vậy chúng ta không
+0:02:43 - 0:02:49, thể lấy theo cái chỉ số được
+0:02:45 - 0:02:53, vậy thì xét nó sẽ có các cái thao tác gì
+0:02:49 - 0:02:55, xét nó sẽ có các cái toán tử có các thao
+0:02:53 - 0:02:58, tác trên các cái phép ví dụ như là phép
+0:02:55 - 0:03:00, giao phép hiệu phép Phần bù hoặc là phép
+0:02:58 - 0:03:03, hợp Ví dụ
+0:03:00 - 0:03:07, và cuối cùng đó là một cái cấu trúc dữ
+0:03:03 - 0:03:10, liệu cũng rất là hay được sử dụng và nó
+0:03:07 - 0:03:13, cũng gần gũi với một cái kiểu một cái
+0:03:10 - 0:03:16, loại file mà các bạn thấy rất là phổ
+0:03:13 - 0:03:16, biến hiện nay đó là file
+0:03:16 - 0:03:19, jasonic
+0:03:20 - 0:03:25, để lưu trữ đó là file
+0:03:22 - 0:03:27, là gì đó là một danh sách các cái phần
+0:03:25 - 0:03:31, tử trong đó thì mỗi phần tử sẽ là một
+0:03:27 - 0:03:34, cái cặp khóa và giá trị tức là khi khi
+0:03:31 - 0:03:37, là khóa và nó sẽ ánh xạ đến một cái
+0:03:34 - 0:03:39, value là giá trị này nó sẽ bao gồm một
+0:03:37 - 0:03:42, tập hợp các cái cây và lưu này
+0:03:39 - 0:03:45, và mỗi khóa nó phải đảm bảo cái tính
+0:03:42 - 0:03:48, chất đó là duy nhất là không được trùng
+0:03:45 - 0:03:49, thì cái Nissan nary này thì các bạn nghe
+0:03:48 - 0:03:53, cái tên thì chắc các bạn cũng có thể
+0:03:49 - 0:03:56, đoán ra được là nó có thể dùng để làm
+0:03:53 - 0:03:58, cái cái ứng dụng gì rồi đúng không nó
+0:03:56 - 0:03:59, chính là làm từ điển nó có thể ánh xạ từ
+0:03:58 - 0:04:01, một cái từ tiếng Anh sang một từ tiếng
+0:03:59 - 0:04:05, Việt ví dụ vậy
+0:04:01 - 0:04:07, và cái cú pháp nó chúng ta lưu ý là khi
+0:04:05 - 0:04:09, cú pháp nó cũng sẽ sử dụng các cái cặp
+0:04:07 - 0:04:11, dấu là mở ngoặc nhọn và đóng ngoặc nhọn
+0:04:09 - 0:04:13, Tuy nhiên cái việc khai báo từng cái
+0:04:11 - 0:04:16, phần tử trong đây nó sẽ phải tuân theo
+0:04:13 - 0:04:18, cái cú pháp đó là khóa 1 giá trị 1 và 2
+0:04:16 - 0:04:20, 200 giá trị 2 Còn nếu chúng ta chỉ để là
+0:04:18 - 0:04:22, giá trị giá trị giá trị thì nó sẽ được
+0:04:20 - 0:04:25, hiểu là xét
+0:04:22 - 0:04:29, Rồi ví dụ như chúng ta khai báo một cái
+0:04:25 - 0:04:29, từ điển Anh Việt như sau
+0:04:37 - 0:04:42, [âm nhạc]
+0:04:40 - 0:04:46, rồi chúng ta sẽ có cái từ là Hello
+0:04:42 - 0:04:49, thì nó sẽ made in sang cái từ là xin
+0:04:46 - 0:04:49, chào
+0:04:50 - 0:04:54, và cái từ
+0:04:51 - 0:04:54, word
+0:04:56 - 0:05:00, thì nó sẽ mát sang cái từ là thế giới
+0:05:02 - 0:05:10, chúng ta sẽ dùng không dấu như vậy thì
+0:05:06 - 0:05:13, chúng ta sẽ truy cập vô cái giá trị
+0:05:10 - 0:05:16, của cái từ
+0:05:13 - 0:05:19, hello thì chúng ta sẽ để là mở ngoặc
+0:05:16 - 0:05:21, vuông để truy xuất vô cái cái là Hello
+0:05:19 - 0:05:22, thì chúng ta sẽ để nằm ngủ mở ngoặc
+0:05:21 - 0:05:23, vuông và truyền cái kia vào ví dụ như
+0:05:22 - 0:05:26, Hello
+0:05:23 - 0:05:27, thì chúng ta sẽ hiểu rằng kết quả của
+0:05:26 - 0:05:29, cái thao tác nắp bên này nó chính là từ
+0:05:27 - 0:05:32, xin chào
+0:05:29 - 0:05:32, [âm nhạc]
+0:05:33 - 0:05:37, và chúng ta sẽ lấy ra ký tự
+0:05:43 - 0:05:49, rồi thì vậy Kết quả của cái phép này thì
+0:05:47 - 0:05:51, chúng ta sẽ có một cái câu đó là xin
+0:05:49 - 0:05:53, chào thế giới thay vì là Hero World nó
+0:05:51 - 0:05:54, sẽ dịch sang tiếng Việt đó là xin chào
+0:05:53 - 0:05:57, thế giới
+0:05:54 - 0:05:59, Xin chào thế giới thì ở đây để cho nó
+0:05:57 - 0:06:02, đẹp thì chúng ta sẽ thêm vô một cái con
+0:05:59 - 0:06:03, rắn nữa và thêm vô một cái câu thông báo
+0:06:02 - 0:06:06, ví dụ như là
+0:06:03 - 0:06:06, [âm nhạc]
+0:06:07 - 0:06:13, nghĩa tiếng Việt
+0:06:10 - 0:06:17, của hello
+0:06:13 - 0:06:17, [âm nhạc]
+0:06:26 - 0:06:31, thì ở đây chúng ta dùng cái dấu là nháy
+0:06:28 - 0:06:34, đơn ở bên trong cái cụm từ hello hello
+0:06:31 - 0:06:36, nên nó sẽ bị nhầm lẫn với lại cái dấu
+0:06:34 - 0:06:38, nháy bên ngoài do đó để có thể đóng gói
+0:06:36 - 0:06:40, được một cái ký hiệu là dấu nháy thì
+0:06:38 - 0:06:41, chúng ta bên ngoài chúng ta sẽ dùng là
+0:06:40 - 0:06:43, giá đôi
+0:06:41 - 0:06:45, và bên trong thì chúng ta sẽ dùng dây
+0:06:43 - 0:06:49, kép như vậy là nghĩa tiếng Việt của
+0:06:45 - 0:06:53, hello world chính là
+0:06:49 - 0:06:53, xin chào thế giới
+0:07:00 - 0:07:07, để tóm tắt cho các cấu trúc dữ liệu cơ
+0:07:05 - 0:07:10, bản trong bài thơ thì chúng ta sẽ có một
+0:07:07 - 0:07:13, cái bảng như thế này đầu tiên đó là kiểu
+0:07:10 - 0:07:16, dữ liệu list thì nó có thể
+0:07:13 - 0:07:19, chứa bất kỳ cái kiểu dữ liệu nào và có
+0:07:16 - 0:07:21, tính thứ tự có tính thứ tự tức là chúng
+0:07:19 - 0:07:23, ta khai báo phụ nữ nào ở trước thì nó sẽ
+0:07:21 - 0:07:26, xuất hiện trước và khai báo phụ nữ nào
+0:07:23 - 0:07:29, sau thì nó sẽ xuất hiện sau và có các
+0:07:26 - 0:07:31, giá trị này thì có thể thay đổi có thứ
+0:07:29 - 0:07:34, tự và có thể thay đổi các giá trị còn
+0:07:31 - 0:07:37, tốt rồi thì sao tour thì các cái giá trị
+0:07:34 - 0:07:38, không thể thay đổi và Tuy nhiên nó vẫn
+0:07:37 - 0:07:40, có cái tính thứ tự tức là phần tử nào
+0:07:38 - 0:07:43, khai báo trước thì nó sẽ được có thể lấy
+0:07:40 - 0:07:46, trước phần tử nào khai báo sau thì có
+0:07:43 - 0:07:46, thể lấy ra sau và không thể thay đổi giá
+0:07:46 - 0:07:49, trị
+0:07:46 - 0:07:53, còn đối với xét Tức là nó sẽ chứa các
+0:07:49 - 0:07:56, giá trị không trùng lặp nhau và xét thì
+0:07:53 - 0:07:59, có thể có thứ tự và có thể thay đổi được
+0:07:56 - 0:08:03, các cái nội dung bên trong cái xác
+0:07:59 - 0:08:05, Thì theo cái cơ chế là khóa 72 chấm Giá
+0:08:03 - 0:08:08, trị tức là ánh xạ từ khóa sang giá trị
+0:08:05 - 0:08:10, và nó sẽ các cái khóa này thì không được
+0:08:08 - 0:08:12, phép trùng lặp nhau lưu ý là trong
+0:08:10 - 0:08:15, dictionary thì một cái khóa là duy nhất
+0:08:12 - 0:08:18, và về cú pháp thì đối với list chúng ta
+0:08:15 - 0:08:22, sẽ sử dụng cặp dấu mở ngoặc vuông toppo
+0:08:18 - 0:08:23, mở ngoặc tròn xác cảm mở ngoặc nhỏ và
+0:08:22 - 0:08:25, discory nằm ở mục nhỏ nhưng mà nó sẽ có
+0:08:23 - 0:08:28, cái cấu trúc đó là khóa hai chấm Giá trị
+0:08:25 - 0:08:32, và thường thì cái mục đích của list dùng
+0:08:28 - 0:08:36, để lưu trữ các danh sách còn của Total
+0:08:32 - 0:08:38, thì chúng ta sẽ lưu tập hợp không thay
+0:08:36 - 0:08:41, đổi cái giá trị và đòi hỏi cái tốc độ
+0:08:38 - 0:08:44, đòi hỏi cái tốc độ xử lý nhanh và set
+0:08:41 - 0:08:46, thì thường sử dụng cho biểu diễn các
+0:08:44 - 0:08:49, khái niệm tập hợp trong Toán học và
+0:08:46 - 0:08:52, dictionary thì đường sẽ sử dụng cái để
+0:08:49 - 0:08:55, lưu trữ các dữ liệu có cấu trúc và nó sẽ
+0:08:52 - 0:08:57, ánh xạ từ một cái cây sang một cái ba lô
+0:08:55 - 0:08:57, nào đó

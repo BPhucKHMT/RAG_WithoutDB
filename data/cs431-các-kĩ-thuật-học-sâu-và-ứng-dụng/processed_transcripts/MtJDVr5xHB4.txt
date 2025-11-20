@@ -122,30 +122,30 @@
 0:09:43 - 0:09:48, Tại vì cái x của mình bao gồm m biến
 0:09:48 - 0:09:52, Theta của mình thì nó sẽ là bao gồm m cộng 1 thành phần
 0:09:53 - 0:10:00, Theta sẽ là bao gồm theta 0, theta 1 cho đến theta m
-0:10:00 - 0:10:02, m cộng 1 thành phần
-0:10:03 - 0:10:05, Và các cái thành phần này chúng ta sẽ khởi tạo ngẫu nhiên
-0:10:05 - 0:10:11, Hai siêu tham số alpha và epsilon cũng khởi tạo các con số nhỏ
-0:10:11 - 0:10:15, chúng ta sẽ lặp và theta sẽ được cập nhật bằng theta
-0:10:15 - 0:10:22, trừ cho alpha nhân đạo hàm gradient của L theo theta
-0:10:22 - 0:10:26, nó sẽ có công thức là 1 phần n nhân X nhân (theta chuyển vị nhân X trừ Y)
-0:10:26 - 0:10:31, do đó chúng ta chép nó qua đây và chúng ta sẽ có công thức cập nhật
-0:10:31 - 0:10:45, Điều kiện dừng là nếu giá trị sai số đủ nhỏ thì chúng ta sẽ dừng lặp
-0:10:45 - 0:10:53, Chúng ta lưu ý là cái nabla của L theo theta nó là cái vector gradient hay nói cách khác nó là bằng các đạo hàm thành phần theo theta 0, đạo hàm của L theo theta 1, theo theta m.
-0:10:53 - 0:11:02, Thì đây là một cái vector, do đó chúng ta hoàn toàn có thể sử dụng cái giá trị độ lớn của cái vector này để làm cái điều kiện dừng.
-0:11:02 - 0:11:09, khi giá trị độ lớn của vector đạo hàm này, vector gradient này đủ nhỏ, chúng ta sẽ kết thúc vòng lặp.
-0:11:09 - 0:11:16, Đây chính là tổng quát hóa và vector hóa cho mô hình Linear Regression.
-0:11:16 - 0:11:25, Trong phần tiếp theo, chúng ta sẽ tiến hành cài đặt bằng hai phương pháp vector hóa và phương pháp không vector hóa.
-0:11:25 - 0:11:32, Và cuối cùng cho phần Linear Regression này, chúng ta sẽ biểu diễn mô hình dưới dạng là đồ thị
-0:11:32 - 0:11:40, Đầu vào chúng ta sẽ có thành phần là bias, rồi các cái biến x1, x2, cho đến xm
-0:11:40 - 0:11:48, Và tương ứng từng đầu vào này chúng ta sẽ có các tham số theta 0, theta 1, theta 2 và theta m
-0:11:48 - 0:11:54, Và khi từng thành phần này nhân vô, chúng ta sẽ qua một hàm tính tổng
-0:11:54 - 0:11:58, Tại sao lại tổng? Tại vì tổng của từng các tích này
-0:11:58 - 0:12:05, 1 x theta 0, x1 x theta 1, x2 x theta 2, xm x theta m
-0:12:05 - 0:12:09, sau đó chúng ta cộng lại, chúng ta sẽ ra được giá trị dự đoán
-0:12:09 - 0:12:12, và đây là cái dạng viết với dạng vector hóa
-0:12:14 - 0:12:19, Với một đồ thị này chúng ta có thể hiểu được cách mà chúng ta lan truyền thông tin
-0:12:19 - 0:12:28, Và cái độ dài của các cạnh này tương ứng cho trọng số của thông tin.
-0:12:28 - 0:12:34, Thông tin này đưa vào có trọng số theta 0, thông tin này đưa vào có trọng số theta 1.
-0:12:34 - 0:12:36, Mỗi cái này sẽ có một cái trọng số.
-0:12:36 - 0:12:48, Rồi, tổng hợp thông tin để đưa ra giá trị dự đoán.
-0:12:48 - 0:12:52, thì đó là toàn bộ nội dung của phần Linear Regression.
+0:01:00 - 0:01:02, m cộng 1 thành phần
+0:01:03 - 0:01:05, Và các cái thành phần này chúng ta sẽ khởi tạo ngẫu nhiên
+0:01:05 - 0:01:11, Hai siêu tham số alpha và epsilon cũng khởi tạo các con số nhỏ
+0:01:11 - 0:01:15, chúng ta sẽ lặp và theta sẽ được cập nhật bằng theta
+0:01:15 - 0:01:22, trừ cho alpha nhân đạo hàm gradient của L theo theta
+0:01:22 - 0:01:26, nó sẽ có công thức là 1 phần n nhân X nhân (theta chuyển vị nhân X trừ Y)
+0:01:26 - 0:01:31, do đó chúng ta chép nó qua đây và chúng ta sẽ có công thức cập nhật
+0:01:31 - 0:01:45, Điều kiện dừng là nếu giá trị sai số đủ nhỏ thì chúng ta sẽ dừng lặp
+0:01:45 - 0:01:53, Chúng ta lưu ý là cái nabla của L theo theta nó là cái vector gradient hay nói cách khác nó là bằng các đạo hàm thành phần theo theta 0, đạo hàm của L theo theta 1, theo theta m.
+0:01:53 - 0:02:02, Thì đây là một cái vector, do đó chúng ta hoàn toàn có thể sử dụng cái giá trị độ lớn của cái vector này để làm cái điều kiện dừng.
+0:02:02 - 0:02:09, khi giá trị độ lớn của vector đạo hàm này, vector gradient này đủ nhỏ, chúng ta sẽ kết thúc vòng lặp.
+0:02:09 - 0:02:16, Đây chính là tổng quát hóa và vector hóa cho mô hình Linear Regression.
+0:02:16 - 0:02:25, Trong phần tiếp theo, chúng ta sẽ tiến hành cài đặt bằng hai phương pháp vector hóa và phương pháp không vector hóa.
+0:02:25 - 0:02:32, Và cuối cùng cho phần Linear Regression này, chúng ta sẽ biểu diễn mô hình dưới dạng là đồ thị
+0:02:32 - 0:02:40, Đầu vào chúng ta sẽ có thành phần là bias, rồi các cái biến x1, x2, cho đến xm
+0:02:40 - 0:02:48, Và tương ứng từng đầu vào này chúng ta sẽ có các tham số theta 0, theta 1, theta 2 và theta m
+0:02:48 - 0:02:54, Và khi từng thành phần này nhân vô, chúng ta sẽ qua một hàm tính tổng
+0:02:54 - 0:02:58, Tại sao lại tổng? Tại vì tổng của từng các tích này
+0:02:58 - 0:03:05, 1 x theta 0, x1 x theta 1, x2 x theta 2, xm x theta m
+0:03:05 - 0:03:09, sau đó chúng ta cộng lại, chúng ta sẽ ra được giá trị dự đoán
+0:03:09 - 0:03:12, và đây là cái dạng viết với dạng vector hóa
+0:03:14 - 0:03:19, Với một đồ thị này chúng ta có thể hiểu được cách mà chúng ta lan truyền thông tin
+0:03:19 - 0:03:28, Và cái độ dài của các cạnh này tương ứng cho trọng số của thông tin.
+0:03:28 - 0:03:34, Thông tin này đưa vào có trọng số theta 0, thông tin này đưa vào có trọng số theta 1.
+0:03:34 - 0:03:36, Mỗi cái này sẽ có một cái trọng số.
+0:03:36 - 0:03:48, Rồi, tổng hợp thông tin để đưa ra giá trị dự đoán.
+0:03:48 - 0:03:52, thì đó là toàn bộ nội dung của phần Linear Regression.

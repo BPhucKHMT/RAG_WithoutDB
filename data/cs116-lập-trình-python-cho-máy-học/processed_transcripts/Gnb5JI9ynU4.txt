@@ -1,0 +1,203 @@
+0:00:00 - 0:00:04, bây giờ chúng ta sẽ tiến hành đánh giá
+0:00:02 - 0:00:05, cái mô hình này thì để đánh giá mô hình
+0:00:04 - 0:00:09, này chúng ta sẽ sử dụng cái độ lỗi đó là
+0:00:05 - 0:00:12, Mean Squared Error Mean Squared Error thì chúng
+0:00:09 - 0:00:13, ta sẽ có Đương nhiên trong scikit-learn có cái
+0:00:12 - 0:00:17, hàm đó nhưng mà ở đây chúng ta sẽ cài
+0:00:13 - 0:00:20, đặt rất là nhanh cái hàm cái cái cái
+0:00:17 - 0:00:23, cách để tính Mean Squared Error ha Thì
+0:00:20 - 0:00:26, prediction nó sẽ là bằng regression.predict và chúng
+0:00:23 - 0:00:29, ta sẽ truyền vào cái
+0:00:26 - 0:00:33, x chúng ta sẽ truyền vào cái x để ra cái
+0:00:29 - 0:00:34, giá trị dự đoán và predict trừ cho Y
+0:00:33 - 0:00:37, chính là cái sai
+0:00:34 - 0:00:40, số và mình sẽ phải lấy bình phương cái
+0:00:37 - 0:00:43, sai số này lên rồi sau đó mình sẽ tính
+0:00:40 - 0:00:47, tổng đúng không tổng các cái sai số và
+0:00:43 - 0:00:50, chia bình quân thì bình quân của mình sẽ
+0:00:47 - 0:00:53, là số phần tử đúng không số phần tử của
+0:00:50 - 0:00:55, mình chính là len của y số phần tử của
+0:00:53 - 0:00:58, số mẫu của mình sẽ là len của y Và khi đó
+0:00:55 - 0:01:01, thì cái error của mình nó sẽ là bằng
+0:01:01 - 0:01:06, đặt rất là nhanh mình có thể dùng hàm
+0:01:04 - 0:01:09, của scikit-learn cũng được nhưng mà ở đây
+0:01:06 - 0:01:10, mình cài luôn rồi thì error của mình
+0:01:09 - 0:01:11, trong trường hợp này là bằng bao nhiêu
+0:01:10 - 0:01:14, error của mình trong trường hợp này là
+0:01:11 - 0:01:18, bằng 13.
+0:01:14 - 0:01:21,1 rồi thì bây giờ chúng ta sẽ có cái
+0:01:18 - 0:01:23, sai số là à chúng ta quên chúng ta phải
+0:01:21 - 0:01:25, lấy căn nữa đúng không
+0:01:23 - 0:01:27, sqrt sai số của mình Tại vì ở đây là
+0:01:25 - 0:01:31, bình phương nó không đúng cái thứ nguyên
+0:01:27 - 0:01:31, nó mình phải lấy căn nữa
+0:01:31 - 0:01:37, np.
+0:01:34 - 0:01:42, sqrt rồi thì ở đây chúng ta có sai số là
+0:01:37 - 0:01:44, bằng 3,6 đó như vậy thì chúng ta đã hoàn
+0:01:42 - 0:01:47, thành một cái bước để thực hiện cái
+0:01:44 - 0:01:50, build mô hình, train mô hình và đánh giá
+0:01:47 - 0:01:50, một cái mô hình
+0:01:52 - 0:01:57, đó rồi Tiếp theo thì chúng ta sẽ xét đến
+0:01:55 - 0:02:01, cái tình huống đó là cái dữ liệu của
+0:01:57 - 0:02:02, mình là dạng phi tuyến nghĩa là sao y
+0:02:01 - 0:02:05, của mình bình thường là sẽ phụ thuộc
+0:02:02 - 0:02:08, bằng một cái hàm tuyến tính thì chúng ta
+0:02:05 - 0:02:10, sẽ thử nghiệm đó là y của mình sẽ là
+0:02:08 - 0:02:12, bằng một cái hàm bậc hai tức là một cái
+0:02:10 - 0:02:15, tình huống đơn giản nhất của phi tuyến
+0:02:12 - 0:02:18, ha thì chúng ta sẽ có công thức đó là y
+0:02:15 - 0:02:20, sẽ là bằng x bình phương nhân với một
+0:02:18 - 0:02:24, cái hệ số ví dụ ở đây hệ số của chúng ta
+0:02:20 - 0:02:28, là bằng trừ 6 thôi chúng ta sẽ cho con
+0:02:24 - 0:02:31, số khác đi bằng 10 nhân với lại x bình
+0:02:28 - 0:02:36, phương trừ cho
+0:02:31 - 0:02:39, 7x cộng cho 2 đúng không và cộng cho
+0:02:36 - 0:02:42, thêm cái phần noise Ừ thì noise này
+0:02:39 - 0:02:45, chúng ta có thể cho là bằng 10
+0:02:42 - 0:02:47, đi rồi thì bây giờ chúng ta sẽ cùng plot
+0:02:45 - 0:02:50, lên trên cái biểu đồ chúng ta sẽ thấy là nó
+0:02:47 - 0:02:52, có các cái giá trị đi theo cái đường là
+0:02:50 - 0:02:55, dạng parabol tuy nhiên với cái sai số
+0:02:52 - 0:02:58, bằng 10 thì cái nhiễu này nó Cái đường này
+0:02:55 - 0:03:01, nó nó chưa có cái sự phù hợp cho lắm
+0:02:58 - 0:03:04, chúng ta sẽ cho cái giá trị này là 20
+0:03:01 - 0:03:07, đó thì nó đã có cái sự phù hợp nhiều hơn
+0:03:04 - 0:03:10, có thể là do cái giá trị này nó lớn thì
+0:03:07 - 0:03:12, cái cái cái cái bằng cái mắt thường mình
+0:03:10 - 0:03:14, sẽ khó thấy cái sai số này có thể cho
+0:03:12 - 0:03:17, cái thằng này là khoảng
+0:03:14 - 0:03:19, bằng 3 thôi
+0:03:17 - 0:03:22, ha đó thì chúng ta đã thấy được cái sai
+0:03:19 - 0:03:25, số của nó tốt hơn và bây giờ chúng ta sẽ
+0:03:22 - 0:03:28, cùng tiến hành sử dụng cái mô hình hồi
+0:03:25 - 0:03:33, quy như hồi nãy để xem coi là điều gì
+0:03:28 - 0:03:33, xảy ra thì X.reshape
+0:03:33 - 0:03:41, rồi sau khi reshape xong thì chúng
+0:03:37 - 0:03:41, ta sẽ gọi cái hàm
+0:03:42 - 0:03:47, linear
+0:03:43 - 0:03:53, regression rồi cũng là
+0:03:47 - 0:03:57, reg bằng rồi reg.
+0:03:53 - 0:03:57, fit x và
+0:03:57 - 0:04:05, y rồi và chúng ta sẽ cùng xem cái độ lỗi
+0:04:01 - 0:04:08, ha chúng ta sẽ cùng xem cái độ
+0:04:05 - 0:04:11, lỗi rồi độ lỗi của mình trong trường hợp
+0:04:08 - 0:04:14, này là một con số rất là lớn là một con
+0:04:11 - 0:04:17, số rất là lớn thế thì bây giờ mình sẽ
+0:04:14 - 0:04:20, trực quan hóa cái mô hình của mình Mình
+0:04:17 - 0:04:25, sẽ copy cái hàm ở đây ha hàm trực quan
+0:04:20 - 0:04:25, hóa đây để cho nó tiết kiệm thời
+0:04:28 - 0:04:33, gian thì rõ ràng là ở đây chúng ta vẫn
+0:04:30 - 0:04:35, đang sử dụng cái phương trình bậc hai à
+0:04:33 - 0:04:37, Xin lỗi phương trình bậc 1 đó thì nó sẽ
+0:04:35 - 0:04:39, ra một cái đường thẳng ở đây muốn lấy
+0:04:37 - 0:04:41, cái điểm bên trái ngoài cùng bên đây
+0:04:39 - 0:04:41, chúng ta sẽ cho là
+0:04:42 - 0:04:48, -10 và ở đây sẽ là nhân
+0:04:46 - 0:04:52, cho
+0:04:48 - 0:04:55, -10 rồi thì khi đó Cái đường thẳng của
+0:04:52 - 0:04:57, mình nó sẽ ra là một cái đường như thế
+0:04:55 - 0:04:59, này đó nó sẽ đi xuyên qua như thế này và
+0:04:57 - 0:05:03, rõ ràng đây là thuộc cái tình huống
+0:04:59 - 0:05:05, underfitting Thế thì để chúng ta có thể
+0:05:03 - 0:05:07, vẫn sử dụng mô hình linear regression cho
+0:05:05 - 0:05:09, cái trường hợp là phi tuyến thì một
+0:05:07 - 0:05:11, trong những cái cách à chúng ta đã thảo
+0:05:09 - 0:05:12, luận trên lớp đó chính là chúng ta sẽ
+0:05:11 - 0:05:17, dùng phương pháp
+0:05:12 - 0:05:19, à gọi là thêm cái biến thêm vô cái đặc
+0:05:17 - 0:05:22, trưng nó gọi là feature engineering mà
+0:05:19 - 0:05:25, cụ thể trong trường hợp này là thêm đặc
+0:05:22 - 0:05:27, trưng là x bình phương Tại vì chúng ta
+0:05:25 - 0:05:29, dựa trên cái trực quan hóa dữ liệu chúng
+0:05:27 - 0:05:31, ta dự đoán rằng là à cái mối quan hệ này
+0:05:29 - 0:05:33, nó không thể là một mối quan hệ tuyến
+0:05:31 - 0:05:36, tính Thì mình đoán mình đoán xem cái mối
+0:05:33 - 0:05:38, quan hệ này là bậc hai do đó thì mình sẽ
+0:05:36 - 0:05:41, add thêm một cái cột nữa là cột x bình
+0:05:38 - 0:05:46, phương đó thì khi đó ở đây chúng ta sẽ
+0:05:41 - 0:05:48, nối X là bằng nối X và x bình phương thêm
+0:05:46 - 0:05:52, vô cái thành phần x bình phương ha rồi
+0:05:48 - 0:05:53, thì sau khi chúng ta đã concatenate nối thêm
+0:05:52 - 0:05:55, vô cái thành phần x bình phương thì
+0:05:53 - 0:06:01, chúng ta sẽ có cái đặc trưng X như thế
+0:05:55 - 0:06:01, này và X trong trường hợp này thì X.shape
+0:06:01 - 0:06:09, đó là bằng 40 nhân 2 tức là 2 của mình
+0:06:06 - 0:06:11, là hai chiều trong đó có một chiều là
+0:06:09 - 0:06:14, cái giá trị đặc trưng gốc và một chiều
+0:06:11 - 0:06:16, là x bình phương rồi sau đó chúng ta sẽ
+0:06:14 - 0:06:18, chạy lại cái mô hình này và chúng ta sẽ
+0:06:16 - 0:06:21, tiến hành đánh giá thì đánh giá chúng ta
+0:06:18 - 0:06:21, sẽ gọi lại cái hàm ở đây
+0:06:22 - 0:06:27, ha để xem coi là độ lỗi của mình à Cái
+0:06:26 - 0:06:30, này chúng ta sẽ không gọi lại cái này
+0:06:27 - 0:06:30, nữa
+0:06:33 - 0:06:43, Ok X à ở đây thì chúng ta sẽ phải dự
+0:06:39 - 0:06:45, đoán ở đây chúng ta sẽ phải dự đoán lại
+0:06:43 - 0:06:48, cái prediction đúng không Tại prediction
+0:06:45 - 0:06:50, ở đây đang dùng là cái prediction cũ Tức
+0:06:48 - 0:06:52, là cái giá trị dự đoán ở phía trên đây
+0:06:50 - 0:06:55, nó kéo xuống do đó thì chúng ta sẽ phải
+0:06:52 - 0:06:57, gọi lại cái hàm này chúng ta sẽ gọi lại
+0:06:55 - 0:07:01, cái hàm predict
+0:06:57 - 0:07:01, này rồi
+0:07:06 - 0:07:13, đó thì như vậy thì cái độ lỗi của mình
+0:07:08 - 0:07:16, đang từ 91 từ 91 và nó đã giảm xuống còn
+0:07:13 - 0:07:18, à trong trường hợp này là 25 như vậy là
+0:07:16 - 0:07:20, đã giảm rất là nhiều và bây giờ chúng ta
+0:07:18 - 0:07:24, sẽ cùng quan sát chúng ta sẽ cùng trực
+0:07:20 - 0:07:27, quan hóa cái mô hình này đó thì thay vì à
+0:07:24 - 0:07:29, chúng ta sử dụng cái hàm bậc hai xin lỗi
+0:07:27 - 0:07:32, hàm bậc một thì bây giờ chúng ta sẽ dùng
+0:07:29 - 0:07:36, cái hàm bậc hai trong đó nè trong đó cái
+0:07:32 - 0:07:38, hệ số của mình trước đây á là nó chỉ có
+0:07:36 - 0:07:40, một phần tử thôi bây giờ cái coefficient
+0:07:38 - 0:07:43, của mình nó đã có hai phần tử cái phần
+0:07:40 - 0:07:48, tử đầu tiên tương ứng là cái trọng
+0:07:43 - 0:07:52, số của cái thành phần X này và cái hệ số
+0:07:48 - 0:07:55, thứ hai là 2,96 nó tương ứng với lại cái
+0:07:52 - 0:07:56, x bình phương và chúng ta thấy là
+0:07:55 - 0:07:58, -8
+0:07:56 - 0:08:03, x
+0:07:58 - 0:08:04, -8x à cộng cho 2x bình à Xin lỗi ở đây
+0:08:03 - 0:08:07, nếu mà chúng ta xét cái x bình phương
+0:08:04 - 0:08:09, trước đúng không Thì cái phương trình
+0:08:07 - 0:08:12, của mình nó sẽ là
+0:08:09 - 0:08:15, 2.96 nhân cho x mũ
+0:08:12 - 0:08:17, 2 tại vì cái thành phần này là x bình
+0:08:15 - 0:08:23, phương nó tương ứng với cái này là x
+0:08:17 - 0:08:25, bình phương rồi à thành phần này -8.3
+0:08:23 - 0:08:28, đúng không trừ
+0:08:25 - 0:08:30, 8.3 nhân cho x và chúng ta sẽ xem coi
+0:08:28 - 0:08:33, cái thành phần bias của mình là bao
+0:08:30 - 0:08:38, nhiêu ha bias của mình đó là regression.
+0:08:33 - 0:08:38, intercept_
+0:08:41 - 0:08:48, rồi là bằng -
+0:08:45 - 0:08:50, 0.78 - 0.78 thì chúng ta sẽ xem cái
+0:08:48 - 0:08:54, phương trình này so với lại cái dữ liệu
+0:08:50 - 0:08:56, gốc à cái cái cái mô hình để tạo ra cái
+0:08:54 - 0:08:59, dữ liệu gốc của mình ha thì chúng ta
+0:08:56 - 0:09:03, thấy là khá là gần đúng không x bình
+0:08:59 - 0:09:08, phương ở đây thì đó là 2.96 còn ở đây là
+0:09:03 - 0:09:10, -7 thì ở đây sẽ là - 8.3 và 2 sẽ ở đây
+0:09:08 - 0:09:14, là trừ 0.78 như vậy cái mô hình của mình
+0:09:10 - 0:09:16, đã tạo ra khá là khớp với lại cái mô
+0:09:14 - 0:09:19, hình gốc của mình khi tạo ra cái dữ liệu
+0:09:16 - 0:09:21, huấn luyện rồi bây giờ chúng ta sẽ trực quan
+0:09:19 - 0:09:23, hóa thì thay vì chúng ta sử dụng hàm bậc
+0:09:21 - 0:09:26, 1 như ở trên thì chúng ta sẽ phải sử
+0:09:23 - 0:09:29, dụng công thức mới đó là x bình phương
+0:09:26 - 0:09:30, nhân với hệ số coefficient[1] và x nhân
+0:09:29 - 0:09:32, với
+0:09:30 - 0:09:35, hệ số coefficient[0] rồi cộng cho thành phần
+0:09:32 - 0:09:38, bias đó thì như vậy chúng ta đã ra được
+0:09:35 - 0:09:41, một cái đường cong giống như một cái
+0:09:38 - 0:09:43, đường parabol và đi xuyên qua các cái
+0:09:41 - 0:09:47, điểm trong cái tập dữ liệu huấn luyện
+0:09:43 - 0:09:50, của mình thì trên đây đó là một cái bài
+0:09:47 - 0:09:53, hướng dẫn cài đặt mô hình linear
+0:09:50 - 0:09:55, regression với thư viện scikit-learn và
+0:09:53 - 0:09:58, trong cái bài này thì chúng ta cùng trực
+0:09:55 - 0:10:01, quan hóa được cái hàm mô hình của mình
+0:09:58 - 0:10:03, với các cái tham số đã được huấn luyện
+0:10:01 - 0:10:07, đó là regression.coefficient_ và
+0:10:03 - 0:10:07, regression.intercept_
