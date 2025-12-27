@@ -1,7 +1,9 @@
 # 🤖 Hệ Thống Hỏi Đáp CS315 (RAG QABot)
 
 <!-- Logo hoặc hình minh họa nếu có -->
-![RAG Chain Diagram](rag_chain.png)
+<p align="center">
+  <img src="notebook_baseline/architecture.png" alt="Overall Framework" width="600"/>
+</p>
 
 ---
 
