@@ -16,6 +16,8 @@ from retriever.reranking import CrossEncoderReranker
 from retriever.keyword_search import BM25KeywordSearch
 from retriever.hybrid_search import HybridSearch
 
+import torch 
+device = "cuda" if torch.cuda.is_available() else "cpu"
 def build_rag_chain():
     llm = get_llm()
     vector_db = VectorDB()
@@ -24,7 +26,7 @@ def build_rag_chain():
     bm25_search = BM25KeywordSearch(documents).get_retriever()
     hybrid_search = HybridSearch(bm25_search, vector_retriever).get_retriever()
     print("Loading reranker model...")
-    reranker = CrossEncoderReranker(device="cuda")
+    reranker = CrossEncoderReranker(device=device)
     print("Reranker model loaded.")
     rag_chain = Offline_RAG(llm, hybrid_search, reranker)
     return rag_chain.get_chain()

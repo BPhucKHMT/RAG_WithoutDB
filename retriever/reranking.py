@@ -12,7 +12,7 @@ reranker = CrossEncoderReranker()
 
 
 class CrossEncoderReranker:
-    def __init__(self, model_name: str = "BAAI/bge-reranker-base", device: str = "cuda"):
+    def __init__(self, model_name: str = "BAAI/bge-reranker-base", device: str ="cpu"):
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name )
         self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
