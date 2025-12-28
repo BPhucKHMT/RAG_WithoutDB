@@ -103,6 +103,14 @@ settings:
   limit_per_playlist: null
 ```
 
+Sau khi đã cập nhập link playlist, bạn có thể chạy
+
+```bash
+python -m data_loader.pipeline
+```
+
+để cập nhập lại kiến thức cho model
+
 ---
 
 ## 📊 Đánh giá & kiểm thử
