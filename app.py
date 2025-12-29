@@ -235,7 +235,10 @@ with st.sidebar:
     st.divider()
     
     # Search box
-    search_query = st.text_input("🔍 Tìm kiếm", placeholder="Nhập từ khóa...")
+    if "search_query" not in st.session_state:
+        st.session_state["search_query"] = ""
+    search_query = st.text_input("🔍 Tìm kiếm", value=st.session_state["search_query"], placeholder="Nhập từ khóa...")
+    st.session_state["search_query"] = search_query
     
     st.subheader("Gần đây")
     
