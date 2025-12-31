@@ -9,9 +9,8 @@ from pathlib import Path
 from typing import Dict, List, Any
 
 # ============ CONFIGURATION ============
-API_BASE_URL = "http://localhost:8000"  # FastAPI backend
-CONVERSATIONS_DIR = "saved_conversations"  # Not used anymore (using MongoDB via API)
-Path(CONVERSATIONS_DIR).mkdir(exist_ok=True)  # Keep for backward compatibility
+CONVERSATIONS_DIR = "saved_conversations"
+Path(CONVERSATIONS_DIR).mkdir(exist_ok=True)
 
 # ============ UTILITIES ============
 def truncate_text(text, max_length=35):
@@ -88,58 +87,20 @@ def render_response(response):
     else:
         st.error(f"⚠️ Unknown response format: {type(response)}")
 
-# ============ API CLIENT FUNCTIONS ============
-def api_request(method: str, endpoint: str, **kwargs) -> Any:
-    """Generic API request wrapper with error handling"""
-    try:
-        url = f"{API_BASE_URL}{endpoint}"
-        response = requests.request(method, url, timeout=60, **kwargs)
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        st.error(f"API Error: {str(e)}")
-        return None
-
+# ============ LOCAL CONVERSATION FUNCTIONS ============
 def load_all_conversations():
-    """Load tất cả conversations từ API (MongoDB)"""
-    try:
-        data = api_request("GET", "/conversations")
-        if not data:
-            return {}
-        
-        conversations = {}
-        for item in data:
-            conversations[item["id"]] = {
-                "title": item["title"],
-                "messages": [],  # Will be loaded on demand
-                "created_at": item["created_at"],
-                "updated_at": item["updated_at"]
-            }
-        return conversations
-    except Exception as e:
-        st.error(f"Failed to load conversations: {e}")
-        return {}
+    """Load all conversations from session state (local only)"""
+    return {}
 
 def load_conversation_messages(convo_id: str) -> List[Dict]:
-    """Load full message history for a conversation"""
-    try:
-        data = api_request("GET", f"/conversations/{convo_id}")
-        if data:
-            return data.get("messages", [])
-        return []
-    except Exception as e:
-        st.error(f"Failed to load messages: {e}")
-        return []
+    """Load full message history for a conversation (local only)"""
+    return st.session_state.conversations.get(convo_id, {}).get("messages", [])
 
 def delete_conversation(convo_id: str):
-    """Xóa conversation via API"""
+    """Delete conversation from local session state only"""
     try:
-        result = api_request("DELETE", f"/conversations/{convo_id}")
-        if result:
-            # Xóa khỏi session state
-            if convo_id in st.session_state.conversations:
-                del st.session_state.conversations[convo_id]
-        
+        if convo_id in st.session_state.conversations:
+            del st.session_state.conversations[convo_id]
         # Reset current ID nếu đang active
         if st.session_state.current_conversation_id == convo_id:
             remaining_convos = list(st.session_state.conversations.keys())
@@ -147,42 +108,34 @@ def delete_conversation(convo_id: str):
                 st.session_state.current_conversation_id = remaining_convos[-1]
             else:
                 create_new_conversation()
-        
         return True
     except:
         return False
 
 def reset_conversation(convo_id: str):
-    """Reset conversation via API"""
+    """Reset conversation in local session state only"""
     try:
-        result = api_request("POST", f"/conversations/{convo_id}/reset")
-        if result:
-            # Update local state
-            st.session_state.conversations[convo_id] = {
-                "title": "Cuộc trò chuyện mới",
-                "messages": [{"role": "assistant", "content": "Bạn muốn hỏi gì hôm nay?"}],
-                "created_at": datetime.now().isoformat()
-            }
-            return True
-        return False
+        st.session_state.conversations[convo_id] = {
+            "title": "Cuộc trò chuyện mới",
+            "messages": [{"role": "assistant", "content": "Bạn muốn hỏi gì hôm nay?"}],
+            "created_at": datetime.now().isoformat()
+        }
+        return True
     except:
         return False
 
 # ============ SESSION MANAGEMENT ============
+import uuid
 def create_new_conversation():
-    """Tạo conversation mới via API"""
+    """Tạo conversation mới (local only)"""
     try:
-        result = api_request("POST", "/conversations", json={"title": "Cuộc trò chuyện mới"})
-        if result:
-            convo_id = result["id"]
-            st.session_state.conversations[convo_id] = {
-                "title": result["title"],
-                "messages": result["messages"],
-                "created_at": result["created_at"]
-            }
-            st.session_state.current_conversation_id = convo_id
-        else:
-            st.error("Failed to create conversation")
+        convo_id = str(uuid.uuid4())
+        st.session_state.conversations[convo_id] = {
+            "title": "Cuộc trò chuyện mới",
+            "messages": [{"role": "assistant", "content": "Bạn muốn hỏi gì hôm nay?"}],
+            "created_at": datetime.now().isoformat()
+        }
+        st.session_state.current_conversation_id = convo_id
     except Exception as e:
         st.error(f"Error creating conversation: {e}")
 
@@ -210,12 +163,13 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+
 st.title("🤖 PUQ Q&A")
 
 # ============ INITIALIZE SESSION STATE ============
 if "conversations" not in st.session_state:
-    # Load từ disk
-    st.session_state.conversations = load_all_conversations()
+    # Initialize empty conversations dict
+    st.session_state.conversations = {}
 
 if "current_conversation_id" not in st.session_state:
     st.session_state.current_conversation_id = None
@@ -226,25 +180,27 @@ if not st.session_state.conversations:
 # ============ SIDEBAR ============
 with st.sidebar:
     st.title("💬 Cuộc trò chuyện")
-    
-    # New conversation button
+
     if st.button("➕ Cuộc trò chuyện mới", use_container_width=True):
         create_new_conversation()
         st.rerun()
-    
+
     st.divider()
-    
-    # Search box
+
     if "search_query" not in st.session_state:
         st.session_state["search_query"] = ""
-    search_query = st.text_input("🔍 Tìm kiếm", value=st.session_state["search_query"], placeholder="Nhập từ khóa...")
+
+    search_query = st.text_input(
+        "🔍 Tìm kiếm",
+        value=st.session_state["search_query"],
+        placeholder="Nhập từ khóa..."
+    )
     st.session_state["search_query"] = search_query
-    
+
     st.subheader("Gần đây")
-    
+
     convo_ids = list(st.session_state.conversations.keys())
-    
-    # Filter by search
+
     if search_query:
         filtered_ids = [
             cid for cid in convo_ids
@@ -252,17 +208,29 @@ with st.sidebar:
         ]
     else:
         filtered_ids = convo_ids
-    
-    # Display conversations
+
+    st.markdown("""
+    <style>
+    .sidebar-row button {
+        height: 38px !important;
+        padding: 0 !important;
+    }
+    .icon-btn button {
+        min-width: 38px !important;
+        max-width: 38px !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     for convo_id in reversed(filtered_ids):
         convo = st.session_state.conversations[convo_id]
         title = convo["title"]
-        is_active = (convo_id == st.session_state.current_conversation_id)
-        
-        # Conversation item với delete/reset
-        col1, col2, col3 = st.columns([7, 1.5, 1.5])
-        
+        is_active = convo_id == st.session_state.current_conversation_id
+
+        col1, col2, col3 = st.columns([5, 3, 3], gap="small")
+
         with col1:
+            st.markdown("<div class='sidebar-row'>", unsafe_allow_html=True)
             if st.button(
                 title,
                 key=f"select_{convo_id}",
@@ -271,25 +239,28 @@ with st.sidebar:
             ):
                 set_current_conversation(convo_id)
                 st.rerun()
-        
+            st.markdown("</div>", unsafe_allow_html=True)
+
         with col2:
-            if st.button("🗑️", key=f"delete_{convo_id}", help="Xóa"):
+            st.markdown("<div class='icon-btn'>", unsafe_allow_html=True)
+            if st.button("🗑️", key=f"delete_{convo_id}", use_container_width=True):
                 if delete_conversation(convo_id):
                     st.rerun()
-        
+            st.markdown("</div>", unsafe_allow_html=True)
+
         with col3:
-            if st.button("🔄", key=f"reset_{convo_id}", help="Reset"):
+            st.markdown("<div class='icon-btn'>", unsafe_allow_html=True)
+            if st.button("🔄", key=f"reset_{convo_id}", use_container_width=True):
                 if reset_conversation(convo_id):
                     st.rerun()
+            st.markdown("</div>", unsafe_allow_html=True)
 
 # ============ MAIN CHAT AREA ============
 current_id = st.session_state.current_conversation_id
 
 if current_id and current_id in st.session_state.conversations:
     current_convo = st.session_state.conversations[current_id]
-    # Load full messages from API if not already loaded
-    if not current_convo.get("messages") or len(current_convo["messages"]) == 0:
-        current_convo["messages"] = load_conversation_messages(current_id)
+    # Messages are always in session state now
     messages = current_convo["messages"]
     
     # Display messages
@@ -321,40 +292,34 @@ if current_id and current_id in st.session_state.conversations:
             if isinstance(content, dict):
                 content = response_to_display_text(content)
             chat_history.append({"role": m["role"], "content": content})
-        
-        # Call backend API for RAG response
+        # Call backend API for RAG response (still uses /chat, but no conversation_id persistence)
         with st.chat_message("assistant"):
             with st.spinner("Bot đang suy nghĩ..."):
                 try:
-                    # Call /chat endpoint
-                    result = api_request(
-                        "POST",
-                        "/chat",
+                    import requests
+                    result = requests.post(
+                        "http://localhost:8000/chat",
                         json={
                             "conversation_id": current_id,
                             "messages": chat_history,
                             "user_message": prompt
-                        }
+                        },
+                        timeout=360
                     )
-                    
-                    if result:
-                        response = result["response"]
+                    if result.status_code == 200:
+                        response = result.json()["response"]
                         render_response(response)
                         messages.append({"role": "assistant", "content": response})
-                        
-                        # Update title if changed
                         if current_convo["title"] == "Cuộc trò chuyện mới":
                             current_convo["title"] = truncate_text(prompt)
                     else:
                         error_msg = "⚠️ Không thể kết nối với server"
                         st.error(error_msg)
                         messages.append({"role": "assistant", "content": error_msg})
-                    
                 except Exception as e:
                     error_msg = f"⚠️ Có lỗi xảy ra: {str(e)}"
                     st.error(error_msg)
                     messages.append({"role": "assistant", "content": error_msg})
-        
         st.rerun()
 
 else:
